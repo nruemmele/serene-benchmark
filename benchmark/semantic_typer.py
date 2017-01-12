@@ -13,6 +13,10 @@ from serene.exceptions import InternalError
 from serene.utils import construct_labelData
 from karmaDSL import KarmaSession
 import time
+import pandas as pd
+import numpy as np
+
+import sklearn.metrics
 
 
 domains = ["soccer", "dbpedia", "museum", "weather"]
@@ -48,6 +52,9 @@ class SemanticTyper(object):
         # only these sources can be used for training or testing by different classifiers of SemanticTyper
         allowed_sources += sources
 
+    metrics = ['categorical_accuracy', 'fmeasure', 'MRR']  # list of performance metrics to compare column labelers with
+    metrics_average = 'macro'  # 'macro', 'micro', or 'weighted'
+
     def __init__(self, model_type, description=""):
         self.model_type = model_type
         self.description = description
@@ -63,6 +70,51 @@ class SemanticTyper(object):
 
     def predict(self, source):
         pass
+
+    def evaluate(self, predicted_df):
+        """
+        Evaluate the performance of the model.
+        :param predicted_df: Dataframe which contains predictions and obligatory columns
+            user_label
+            label
+            scores_*
+        :return:
+        """
+        logging.info("Evaluating model: {}".format(self.model_type))
+        y_true = predicted_df["user_label"].as_matrix()
+        y_pred = predicted_df["label"].as_matrix()
+
+        scores_cols = [col for col in predicted_df.columns if col.startswith("scores_")]
+        print("scores_cols: {}".format(scores_cols))
+
+        y_pred_scores = predicted_df[scores_cols].copy().fillna(value=0).as_matrix()
+        print("predicted scores: {}".format(y_pred_scores))
+        y_true_scores = []
+        for lab in predicted_df["user_label"]:
+            trues = [0 for _ in range(len(scores_cols))]
+            if "scores_"+lab in scores_cols:
+                trues[scores_cols.index("scores_"+lab)] = 1
+            y_true_scores.append(trues)
+        print("true scores: {}".format(y_true_scores))
+        y_true_scores = np.array(y_true_scores)
+
+        performance = {"model": self.model_type, "description": self.description}
+        if 'categorical_accuracy' in self.metrics:
+            logging.info("Calculating categorical accuracy for {}".format(self))
+            performance['categorical_accuracy'] = sklearn.metrics.accuracy_score(y_true,
+                                                                                 y_pred)  # np.mean(y_pred == y_true)
+        if 'fmeasure' in self.metrics:
+            logging.info("Calculating fmeasure for {}".format(self))
+            performance['fmeasure'] = sklearn.metrics.f1_score(y_true, y_pred, average=self.metrics_average)
+        if 'MRR' in self.metrics:
+            logging.info("Calculating MRR for {}".format(self))
+            performance['MRR'] = sklearn.metrics.label_ranking_average_precision_score(y_true_scores, y_pred_scores)
+        logging.info("Calculated performance: {}".format(performance))
+        print(performance)
+        return pd.DataFrame(performance, index=[0])
+
+
+
 
     def __str__(self):
         return "<SemanticTyper: model_type={}, description={}>".format(self.model_type, self.description)
@@ -167,14 +219,15 @@ class DINTModel(SemanticTyper):
         :return:
         """
         logging.info("Training DINTModel.")
-        # TODO: track run time
-        return self.classifier.train()
+        start = time.time()
+        tr = self.classifier.train()
+        return  time.time() - start
 
     def predict(self, source):
         """
         Prediction with DINTModel for the source.
         :param source:
-        :return:
+        :return: A pandas dataframe with obligatory columns: column_name, source_name, label, user_label, scores
         """
         # TODO: track run time
         logging.info("Predicting with DINTModel for source {}".format(source))
@@ -185,7 +238,21 @@ class DINTModel(SemanticTyper):
         matcher_dataset = self.server.create_dataset(file_path=os.path.join("data", "sources", source + ".csv"),
                                                      description="testdata",
                                                      type_map={})
-        return self.classifier.predict(matcher_dataset)
+        start = time.time()
+        predict_df = self.classifier.predict(matcher_dataset).copy()
+        predict_df["running_time"] = time.time() - start
+        column_map = dict([(col.id, col.name) for col in matcher_dataset.columns])
+        predict_df["column_name"] = predict_df["column_id"].apply(lambda x: column_map[x])
+        predict_df["source_name"] = source
+        predict_df["model"] = self.model_type
+        predict_df["model_description"] = self.description
+        label_dict = construct_labelData(matcher_dataset,
+                                             filepath=os.path.join("data", "labels", source + ".columnmap.txt"),
+                                             header_column="column_name",
+                                             header_label="semantic_type")
+        predict_df["user_label"] = predict_df["column_id"].apply(
+            lambda x: label_dict[x] if x in label_dict else 'unknown')
+        return predict_df
 
 
 class KarmaDSLModel(SemanticTyper):
@@ -226,10 +293,11 @@ class KarmaDSLModel(SemanticTyper):
 
     def train(self):
         # TODO: track run time
+        start = time.time()
         if self.folder_names and self.train_sizes:
             logging.info("Training KarmaDSL...")
             self.karma_session.train_model(self.folder_names, self.train_sizes)
-            return True
+            return time.time() - start
         logging.error("KarmaDSL cannot be trained since training data is not specified.")
         raise InternalError("KarmaDSL train", "training data absent")
 
@@ -240,9 +308,35 @@ class KarmaDSLModel(SemanticTyper):
         :return:
         """
         # TODO: track run time
+        if source not in self.allowed_sources:
+            logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
+            return None
         resp = self.karma_session.post_folder("test_data", [source])
         logging.info("Posting source {} to karma dsl server: {}".format(source,resp))
-        return self.karma_session.predict_folder("test_data")
+        predicted = self.karma_session.predict_folder("test_data")
+        logging.info("KarmaDSL prediction finished: {}".format(predicted["running_time"]))
+        print("KarmaDSL prediction finished: {}".format(predicted["running_time"]))
+        df = []
+        for val in predicted["predictions"]:
+            correct_lab = val["correct_label"] if val["correct_label"] else 'unknown'
+            row = {"column_name": val["column_name"],
+                   "source_name": source,
+                   "user_label": correct_lab,
+                   "model": self.model_type,
+                   "model_description": self.description
+                   }
+            max = 0
+            label = "unknown"
+            for sc in val["scores"]:
+                row["scores_"+sc[1]] = sc[0]
+                if sc[0] > max:
+                    max = sc[0]
+                    label = sc[1]
+            row["label"] = label
+            df.append(row)
+        df = pd.DataFrame(df)
+        df["running_time"] = predicted["running_time"]
+        return df
 
 
 class NNetModel(SemanticTyper):
@@ -270,6 +364,12 @@ if __name__ == "__main__":
                         level=logging.DEBUG, filemode='w+',
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
+    # train/test
+    train_sources = benchmark["soccer"][:-1]
+    test_source = [benchmark["soccer"][-1]]
+    print("# sources in train: %d" % len(train_sources))
+    print("# sources in test: %d" % len(test_source))
+
     #******* setting up DINTModel
     dm = SchemaMatcher(host="localhost", port=8080)
     # dictionary with features
@@ -282,24 +382,22 @@ if __name__ == "__main__":
     resampling_strategy = "ResampleToMean"
     dint_model = DINTModel(dm, feature_config, resampling_strategy, "DINTModel with ResampleToMean")
 
-    #******** setting up KarmaDSL model
-    # dsl = KarmaSession(host="localhost", port=8000)
-    # dsl_model = KarmaDSLModel(dsl, "default KarmaDSL model")
-
-    # train/test
-    train_sources = benchmark["soccer"][:-1]
-    test_source = [benchmark["soccer"][-1]]
-    print("# sources in train: %d" % len(train_sources))
-    print("# sources in test: %d" % len(test_source))
-
     print("Define training data DINT %r" % dint_model.define_training_data(train_sources))
-    # print("Define training data KarmaDSL %r" % dsl_model.define_training_data(train_sources))
-    # print("Train dsl %r" % dsl_model.train())
-
-    # print(dsl_model.predict(test_source[0]))
-
     print("Train dint %r" % dint_model.train())
-    print(dint_model.predict(test_source[0]))
+    predicted_df = dint_model.predict(test_source[0])
+    print(predicted_df)
+    print(dint_model.evaluate(predicted_df))
+
+    # ******** setting up KarmaDSL model
+    dsl = KarmaSession(host="localhost", port=8000)
+    dsl_model = KarmaDSLModel(dsl, "default KarmaDSL model")
+
+    print("Define training data KarmaDSL %r" % dsl_model.define_training_data(train_sources))
+    print("Train dsl %r" % dsl_model.train())
+    predicted_df = dsl_model.predict(test_source[0])
+    print(predicted_df)
+    print(dsl_model.evaluate(predicted_df))
+
 
 
 
