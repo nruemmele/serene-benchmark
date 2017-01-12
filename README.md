@@ -11,7 +11,8 @@ To run evaluation benchmark,
 
 1. The server for [Karma DSL](https://github.com/NICTA/iswc-2016-semantic-labeling) needs to be installed.
 2. The server for [Serene](https://github.com/NICTA/serene) needs to be started.
-3. Neural nets
+3. Neural nets: tensorflow and keras python packages.
+4. [Serene Python client](https://github.com/NICTA/serene-python-client) should be installed.
 
 
 
