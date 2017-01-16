@@ -22,7 +22,8 @@ class Experiment(object):
     """
 
     """
-    domains = ["soccer", "dbpedia", "museum", "weather"]
+    # domains = ["museum", "weather", "soccer", "dbpedia"]
+    domains = ["museum"]
     benchmark = {
         "soccer": ['bundesliga-2015-2016-rosters.csv', 'world_cup_2010_squads.csv',
                    'fifa-soccer-12-ultimate-team-data-player-database.csv', 'world_cup_2014_squads.csv',
@@ -107,8 +108,11 @@ class Experiment(object):
                 logging.info("--> evaluating model: {}".format(model))
                 frames = []
                 for idx, source in enumerate(self.benchmark[domain]):
+                    # for debugging purposes
+                    # if idx > 2:
+                    #     break
                     logging.info("----> test source: {}".format(source))
-                    self.train_sources = self.benchmark[domain][:idx] +self.benchmark[domain][idx+1:]
+                    self.train_sources = self.benchmark[domain][:idx] + self.benchmark[domain][idx+1:]
                     self.test_sources = [source]
 
                     predicted_df = self._evaluate_model(model)
@@ -186,11 +190,12 @@ if __name__ == "__main__":
     dint_model = DINTModel(dm, feature_config, resampling_strategy, "DINTModel with ResampleToMean")
 
     # ******** setting up KarmaDSL model
-    dsl = KarmaSession(host="localhost", port=8000)
-    dsl_model = KarmaDSLModel(dsl, "default KarmaDSL model")
+    # dsl = KarmaSession(host="localhost", port=8000)
+    # dsl_model = KarmaDSLModel(dsl, "default KarmaDSL model")
 
     # models for experiments
-    models = [dint_model, dsl_model]
+    # models = [dint_model, dsl_model]
+    models = [dint_model]
 
     loo_experiment = Experiment(models,
                                 experiment_type="leave_one_out",

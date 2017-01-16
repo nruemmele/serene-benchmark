@@ -155,8 +155,45 @@ class DINTModel(SemanticTyper):
         logging.info("Resetting DINTModel.")
         if self.classifier:
             self.server.remove_model(self.classifier)
+            # for ds in self.server.datasets:
+            #     self.server.remove_dataset(ds)
         # TODO: remove datasets?
         self.classifier = None
+
+    def _construct_labelData(self, matcher_dataset, filepath, header_column="column_name", header_label="class"):
+        """
+        We want to construct a dictionary {column_id:class_label} for the dataset based on a .csv file.
+        This method reads in .csv as a Pandas data frame, selects columns "column_name" and "class",
+        drops NaN and coverts these two columns into dictionary.
+        We obtain a lookup dictionary
+        where the key is the column name and the value is the class label.
+        Then by using column_map the method builds the required dictionary.
+
+        Args:
+            filepath: string where .csv file is located.
+            header_column: header for the column with column names
+            header_label: header for the column with labels
+
+        Returns: dictionary
+
+        """
+        logging.debug("--> Labels in {}".format(filepath))
+        label_data = {}  # we need this dictionary (column_id, class_label)
+        try:
+            frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
+            logging.debug("  --> headers {}".format(frame.columns))
+            logging.debug("  --> dtypes {}".format(frame.dtypes))
+            # dictionary (column_name, class_label)
+            name_labels = frame[[header_column, header_label]].dropna().set_index(header_column)[header_label].to_dict()
+            column_map = [(col.id, col.name) for col in matcher_dataset.columns]
+            logging.debug("  --> column_map {}".format(column_map))
+            for col_id, col_name in column_map:
+                if col_name in name_labels:
+                    label_data[int(col_id)] = name_labels[col_name]
+        except Exception as e:
+            raise InternalError("construct_labelData", e)
+
+        return label_data
 
     def define_training_data(self, train_sources, train_labels=None):
         """
@@ -194,14 +231,14 @@ class DINTModel(SemanticTyper):
 
             # construct dictionary of labels for the uploaded dataset
             try:
-                label_dict.update(construct_labelData(matcher_dataset, train_labels[idx]))
+                label_dict.update(self._construct_labelData(matcher_dataset, train_labels[idx]))
             except:
                 # in case train_labels are not provided, we take default labels from the benchmark
-                label_dict.update(construct_labelData(matcher_dataset,
+                label_dict.update(self._construct_labelData(matcher_dataset,
                                                       filepath=os.path.join("data", "labels", source+".columnmap.txt"),
                                                       header_column="column_name",
                                                       header_label="semantic_type"))
-            logging.debug("DINT model label_dict updated: {}".format(label_dict))
+            logging.debug("DINT model label_dict for source {} updated: {}".format(source, label_dict))
 
         # create model on the server with the labels specified
         logging.debug("Creating model on the DINT server with proper config.")
@@ -246,7 +283,7 @@ class DINTModel(SemanticTyper):
         predict_df["source_name"] = source
         predict_df["model"] = self.model_type
         predict_df["model_description"] = self.description
-        label_dict = construct_labelData(matcher_dataset,
+        label_dict = self._construct_labelData(matcher_dataset,
                                              filepath=os.path.join("data", "labels", source + ".columnmap.txt"),
                                              header_column="column_name",
                                              header_label="semantic_type")
@@ -397,6 +434,7 @@ if __name__ == "__main__":
     predicted_df = dsl_model.predict(test_source[0])
     print(predicted_df)
     print(dsl_model.evaluate(predicted_df))
+
 
 
 

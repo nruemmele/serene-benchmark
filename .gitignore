@@ -1,7 +1,6 @@
 .idea/
 dist/
 build/
-data/
 serene-python-client.egg-info/
 __pycache__
 config/
