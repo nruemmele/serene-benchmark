@@ -18,6 +18,7 @@ import numpy as np
 
 import sklearn.metrics
 
+from neural_nets.nn_column_labeler import CNN, CNN_embedder, MLP
 
 domains = ["soccer", "dbpedia", "museum", "weather"]
 benchmark = {
@@ -377,19 +378,35 @@ class KarmaDSLModel(SemanticTyper):
 
 
 class NNetModel(SemanticTyper):
-    def __init__(self, description):
+    """
+        Wrapper for semantic labeller powered by Neural Network models (NN_Column_Labeler class from nn_column_labeler).
+        Originally the labeller can hold multiple classifier models (e.g., 'cnn@charseq', 'mlp@charfreq', etc., but here we assume 1 model per instance of NNetModel, for the purpose of benchmarking),
+    """
+    def __init__(self, classifier_types, description):
+        logging.info("Initializing NNetModel with",classifier_types,"classifiers...")
         super().__init__("NNetModel", description=description)
+        # self.classifier_types = classifier_types
+        # # Initialize a dict of classifiers to be trained:
+        # self.classifiers = {}
+        # for t in self.classifier_types:
+        #     self.classifiers[t] = None
 
     def reset(self):
-        pass
+        """ Reset the NNetModel """
+        logging.info("Resetting NNetModel...")
+        self.labeler = NN_Column_Labeler()
 
-    def define_training_data(self):
+    def define_training_data(self, train_sources, train_labels=None):
+        """ Extract training columns from train_sources, and assign semantic labels to them
+         The result should be train_cols - a list of Column objects to pass to labeler in self.train()"""
         pass
 
     def train(self):
+        """ Create an instance of NN_Column_Labeler, perform bagging, feature preparation, and training of the underlying classifier(s) """
         pass
 
-    def predict(self):
+    def predict(self, source):
+        """ Predict labels for all columns in source """
         pass
 
 

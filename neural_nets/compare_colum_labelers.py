@@ -4,8 +4,6 @@
 #
 # The aim is to compare the column labelers, and see whether they can mutually enforce each other when their predictions are combined.
 
-# In[51]:
-
 import pandas as pd
 from pandas import ExcelWriter
 import itertools as it
