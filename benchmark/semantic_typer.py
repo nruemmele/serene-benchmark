@@ -18,7 +18,7 @@ import numpy as np
 
 import sklearn.metrics
 
-from neural_nets.nn_column_labeler import CNN, CNN_embedder, MLP
+from neural_nets.nn_column_labeler import NN_Column_Labeler
 
 domains = ["soccer", "dbpedia", "museum", "weather"]
 benchmark = {
@@ -385,25 +385,25 @@ class NNetModel(SemanticTyper):
     def __init__(self, classifier_types, description):
         logging.info("Initializing NNetModel with",classifier_types,"classifiers...")
         super().__init__("NNetModel", description=description)
-        # self.classifier_types = classifier_types
-        # # Initialize a dict of classifiers to be trained:
-        # self.classifiers = {}
-        # for t in self.classifier_types:
-        #     self.classifiers[t] = None
+        self.train_cols = None
+        self.classifier_types = classifier_types
+        self.labeler = None
 
     def reset(self):
         """ Reset the NNetModel """
         logging.info("Resetting NNetModel...")
-        self.labeler = NN_Column_Labeler()
+        self.train_cols = None
+        self.labeler = None
 
     def define_training_data(self, train_sources, train_labels=None):
         """ Extract training columns from train_sources, and assign semantic labels to them
-         The result should be train_cols - a list of Column objects to pass to labeler in self.train()"""
+         The result should be self.train_cols - a list of Column objects to pass to labeler in self.train()"""
         pass
 
     def train(self):
         """ Create an instance of NN_Column_Labeler, perform bagging, feature preparation, and training of the underlying classifier(s) """
-        pass
+        self.labeler = NN_Column_Labeler(self.classifier_types, train_cols, split_by='source', test_frac=0)   # test_frac = 0 means no splitting into train and test sets
+        # TODO: rewrite NN_Column_Labeler to be initialized with train_cols only, instead of all_cols followed by internal splitting of all_cols into train, valid, ant test sets of columns
 
     def predict(self, source):
         """ Predict labels for all columns in source """
