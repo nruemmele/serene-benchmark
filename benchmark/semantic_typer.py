@@ -380,14 +380,18 @@ class KarmaDSLModel(SemanticTyper):
 class NNetModel(SemanticTyper):
     """
         Wrapper for semantic labeller powered by Neural Network models (NN_Column_Labeler class from nn_column_labeler).
-        Originally the labeller can hold multiple classifier models (e.g., 'cnn@charseq', 'mlp@charfreq', etc., but here we assume 1 model per instance of NNetModel, for the purpose of benchmarking),
+        Originally the labeller can hold multiple classifier models (e.g., 'cnn@charseq', 'mlp@charfreq', etc.,)
+        but here we assume 1 model per instance of NNetModel, for the purpose of benchmarking.
+
+        If only one classifier type is given in the arguments, this works for the following classifier types only:
+        'cnn@charseq', 'mlp@charfreq', 'rf@charfreq'
     """
     def __init__(self, classifier_types, description):
         logging.info("Initializing NNetModel with",classifier_types,"classifiers...")
         super().__init__("NNetModel", description=description)
-        self.train_cols = None
         self.classifier_types = classifier_types
         self.labeler = None
+        self.train_cols = None   # placeholder for a list of training cols (Column objects)
 
     def reset(self):
         """ Reset the NNetModel """

@@ -482,40 +482,44 @@ class NN_Column_Labeler(object):
 
                 # Evaluate after training:
                 # TO DO: replace with self.evaluate method?
-                print('Evaluating', t, 'on the training set...')
-                performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
-                print(' ' * 3 + 'loss:', performance[0])
-                for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                    print(' ' * 3 + m, ':', performance[i])
+                if len(self.X_train[t.split('@')[-1]])>0:
+                    print('Evaluating', t, 'on the training set...')
+                    performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
+                    print(' ' * 3 + 'loss:', performance[0])
+                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                        print(' ' * 3 + m, ':', performance[i])
 
-                print('\nEvaluating', t, 'on the validation set...')
-                performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
-                print(' ' * 3 + 'loss:', performance[0])
-                for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                    print(' ' * 3 + m, ':', performance[i])
+                if len(self.X_valid[t.split('@')[-1]])>0:
+                    print('\nEvaluating', t, 'on the validation set...')
+                    performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
+                    print(' ' * 3 + 'loss:', performance[0])
+                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                        print(' ' * 3 + m, ':', performance[i])
 
-                print('\nEvaluating', t, 'on the testing set...')
-                performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
-                print(' ' * 3 + 'loss:', performance[0])
-                for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                    print(' ' * 3 + m, ':', performance[i])
+                if len(self.X_test[t.split('@')[-1]])>0:
+                    print('\nEvaluating', t, 'on the testing set...')
+                    performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
+                    print(' ' * 3 + 'loss:', performance[0])
+                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                        print(' ' * 3 + m, ':', performance[i])
 
                 # Add 'charseq_embedded' and 'augmented' features:
-                self.cnn_embedder = CNN_embedder(self.classifiers['cnn@charseq'])
-                self.cnn_embedder.summary()
-                self.X_train['charseq_embedded'] = self.cnn_embedder.predict(self.X_train['charseq'])
-                self.X_valid['charseq_embedded'] = self.cnn_embedder.predict(self.X_valid['charseq'])
-                self.X_test['charseq_embedded'] = self.cnn_embedder.predict(self.X_test['charseq'])
+                if any(f in [t.split('@')[-1] for t in self.classifier_types] for f in ['charseq_embedded', 'augmented']):
+                    self.cnn_embedder = CNN_embedder(self.classifiers['cnn@charseq'])
+                    self.cnn_embedder.summary()
+                    self.X_train['charseq_embedded'] = self.cnn_embedder.predict(self.X_train['charseq'])
+                    self.X_valid['charseq_embedded'] = self.cnn_embedder.predict(self.X_valid['charseq'])
+                    self.X_test['charseq_embedded'] = self.cnn_embedder.predict(self.X_test['charseq'])
 
-                try:
-                    self.X_train['augmented'] = np.concatenate(
-                        (self.X_train['charseq_embedded'], self.X_train['charfreq']), axis=1)
-                    self.X_valid['augmented'] = np.concatenate(
-                        (self.X_valid['charseq_embedded'], self.X_valid['charfreq']), axis=1)
-                    self.X_test['augmented'] = np.concatenate(
-                        (self.X_test['charseq_embedded'], self.X_test['charfreq']), axis=1)
-                except:
-                    None
+                    try:
+                        self.X_train['augmented'] = np.concatenate(
+                            (self.X_train['charseq_embedded'], self.X_train['charfreq']), axis=1)
+                        self.X_valid['augmented'] = np.concatenate(
+                            (self.X_valid['charseq_embedded'], self.X_valid['charfreq']), axis=1)
+                        self.X_test['augmented'] = np.concatenate(
+                            (self.X_test['charseq_embedded'], self.X_test['charfreq']), axis=1)
+                    except:
+                        None
 
             elif t.split('@')[0] == 'rf':
                 self.classifiers[t] = RandomForestClassifier(n_estimators=500, oob_score=True, n_jobs=8)

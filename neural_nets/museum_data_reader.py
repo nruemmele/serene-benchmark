@@ -18,8 +18,8 @@ class Column(object):
         The Column object holds a single column from the dataset.
     """
     def __init__(self, filename, colname, title, lines):
-        self.filename = filename   # filename to which the column was extracted from
-        self.colname = colname     # column name
+        self.filename = filename   # filename from which the column was extracted (data source)
+        self.colname = colname     # column name (column title)
         self.title = title         # semantic label of the column (short title)
         self.lines = lines         # lines in the column
 
