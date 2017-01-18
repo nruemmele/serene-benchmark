@@ -538,10 +538,10 @@ class NN_Column_Labeler(object):
                     if 'fmeasure' in metrics:
                         test_fmeasure = sklearn.metrics.f1_score(self.y_test, y_pred, average=metrics_average)
                         print('Test fmeasure = ', test_fmeasure)
-                        #                 if 'MRR' in metrics:
-                        #                     y_pred_proba = self.classifiers[t].predict_proba(self.X_test[t.split('@')[-1]])
-                        #                     test_mrr = sklearn.metrics.label_ranking_average_precision_score(self.y_test_binary, y_pred_proba)
-                        #                     print('Test MRR = ',test_mrr)
+                    # if 'MRR' in metrics:
+                    #     y_pred_proba = self.classifiers[t].predict_proba(self.X_test[t.split('@')[-1]])
+                    #     test_mrr = sklearn.metrics.label_ranking_average_precision_score(self.y_test_binary, y_pred_proba)
+                    #     print('Test MRR = ',test_mrr)
 
             elif t.split('@')[0] == 'mlp':
                 self.classifiers[t] = MLP({**hp, **hp_mlp})
