@@ -530,17 +530,18 @@ class NN_Column_Labeler(object):
                 oob_acc = self.classifiers[t].oob_score_
                 print('OOB accuracy = ', oob_acc)
 
-                y_pred = self.classifiers[t].predict(self.X_test[t.split('@')[-1]])
-                if 'categorical_accuracy' in metrics:
-                    test_acc = sklearn.metrics.accuracy_score(self.y_test, y_pred)
-                    print('Test accuracy = ', test_acc)
-                if 'fmeasure' in metrics:
-                    test_fmeasure = sklearn.metrics.f1_score(self.y_test, y_pred, average=metrics_average)
-                    print('Test fmeasure = ', test_fmeasure)
-                    #                 if 'MRR' in metrics:
-                    #                     y_pred_proba = self.classifiers[t].predict_proba(self.X_test[t.split('@')[-1]])
-                    #                     test_mrr = sklearn.metrics.label_ranking_average_precision_score(self.y_test_binary, y_pred_proba)
-                    #                     print('Test MRR = ',test_mrr)
+                if len(self.X_test[t.split('@')[-1]])>0:
+                    y_pred = self.classifiers[t].predict(self.X_test[t.split('@')[-1]])
+                    if 'categorical_accuracy' in metrics:
+                        test_acc = sklearn.metrics.accuracy_score(self.y_test, y_pred)
+                        print('Test accuracy = ', test_acc)
+                    if 'fmeasure' in metrics:
+                        test_fmeasure = sklearn.metrics.f1_score(self.y_test, y_pred, average=metrics_average)
+                        print('Test fmeasure = ', test_fmeasure)
+                        #                 if 'MRR' in metrics:
+                        #                     y_pred_proba = self.classifiers[t].predict_proba(self.X_test[t.split('@')[-1]])
+                        #                     test_mrr = sklearn.metrics.label_ranking_average_precision_score(self.y_test_binary, y_pred_proba)
+                        #                     print('Test MRR = ',test_mrr)
 
             elif t.split('@')[0] == 'mlp':
                 self.classifiers[t] = MLP({**hp, **hp_mlp})
@@ -549,23 +550,26 @@ class NN_Column_Labeler(object):
                                           self.X_valid[t.split('@')[-1]], self.y_valid_binary)
 
                 # Evaluate after training:
-                print('Evaluating', t, 'on the training set...')
-                performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
-                print(' ' * 3 + 'loss:', performance[0])
-                for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                    print(' ' * 3 + m, ':', performance[i])
+                if len(self.X_train[t.split('@')[-1]])>0:
+                    print('Evaluating', t, 'on the training set...')
+                    performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
+                    print(' ' * 3 + 'loss:', performance[0])
+                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                        print(' ' * 3 + m, ':', performance[i])
 
-                print('\nEvaluating', t, 'on the validation set...')
-                performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
-                print(' ' * 3 + 'loss:', performance[0])
-                for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                    print(' ' * 3 + m, ':', performance[i])
+                if len(self.X_valid[t.split('@')[-1]])>0:
+                    print('\nEvaluating', t, 'on the validation set...')
+                    performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
+                    print(' ' * 3 + 'loss:', performance[0])
+                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                        print(' ' * 3 + m, ':', performance[i])
 
-                print('\nEvaluating', t, 'on the testing set...')
-                performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
-                print(' ' * 3 + 'loss:', performance[0])
-                for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                    print(' ' * 3 + m, ':', performance[i])
+                if len(self.X_test[t.split('@')[-1]])>0:
+                    print('\nEvaluating', t, 'on the testing set...')
+                    performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
+                    print(' ' * 3 + 'loss:', performance[0])
+                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                        print(' ' * 3 + m, ':', performance[i])
 
     def predict_proba(self, cols, verbose=False):
         """Predict semantic label probabilities for columns in cols, using self.classifiers"""
