@@ -23,6 +23,7 @@ nosetests
 ```
 
 ### Run
+For NNetModel, allowed model types are: 'cnn@charseq' (CNN on character sequences), 'mlp@charfreq' (MLP on character freqs + entropy), 'rf@charfreq' (RF on character freqs + entropy)
 
 To install the package 'serene-benchmark', run
 ```

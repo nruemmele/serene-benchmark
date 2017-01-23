@@ -31,26 +31,90 @@ from keras.utils.np_utils import to_categorical
 import keras.metrics
 
 from .museum_data_reader import Reader
+museum_reader = Reader()
 
-# Limit the allocated GPU memory to a fraction of total GPU memory, as per https://groups.google.com/forum/#!topic/keras-users/MFUEY9P1sc8:
-# This is for sharing GPU with other sessions/users
-import keras.backend.tensorflow_backend as KTF
+# ## Hyperparameters
+# ### Data sampling hyperparameters:
+VERBOSE = 0
+
+hp = {}
+hp['split_by'] = 'filename'  # name of the column attribute on which to randomly split columns into training and testing sets
+# 'id' for splitting by column attribute (title@filename)
+# 'filename' for splitting by data source filename
+hp['cols_test_frac'] = 0.2  # fraction of all data columns that are used for testing (the rest is for training)
+hp['subsize'] = 100  # number of row elements (rows) in each bagging subsample
+hp['n_samples'] = 1 * 150  # number of subsamples from each column to take when bagging
+hp['samples_validation_frac'] = 0.01  # fraction of training samples that are held-out for validation purposes
+
+# ### Hyperparameters for character sequences
+
+hp['maxlen'] = 200  # cut resulting character seqs after this number of chars (ensure all character seq inputs are of the same length)
+hp['max_features'] = 128  # number of 'bits' to use when encoding a character (i.e., the length of character vocabulary)
+
+# ### Hyperparameters for character frequencies
+
+hp['char_vocab'] = string.printable  # vocabulary of characters - all printable characters (includes the '\n' character)
+hp['entropy'] = True  # whether to add Shannon's entropy to the char_freq feature vectors
+
+# ### Performance metrics for labelers
+
+metrics = ['categorical_accuracy', 'fmeasure', 'MRR']  # list of performance metrics to compare column labelers with
+metrics_average = 'macro'  # 'macro', 'micro', or 'weighted'
+
+# ### Convolutional NN (CNN) hyperparameters:
+
+hp_cnn = {}
+hp_cnn['batch_size'] = 50  # batch training size; a good value is 25, but 50 is faster (while producing similar accuracy)
+hp_cnn['dropout'] = 0.5  # dropout value for the dropout layers; no difference between 0.5 and 0.1; reducing below 0.1 seems to slightly hurt the test accuracy (as expected)
+hp_cnn['nb_filter'] = 100  # number of filters for the conv layers
+hp_cnn['filter_length'] = 3  # 50 # length of the filter window in the conv layer
+hp_cnn['border_mode'] = 'valid'  # 'valid' (no zero-padding) or 'same' (with zero padding)
+hp_cnn['hidden_dims'] = 100  # number of units for the vanilla (fully connected) hidden layer
+hp_cnn['embedding_dims'] = 64  # 128 # dimensionality of character embedding (number of values to squash the initial max_features encoding)
+hp_cnn['nb_epoch'] = 10 # number of training epochs; increasing this beyond 6 does not improve the model
+hp_cnn['final_layer_act'] = 'softmax'  # 'linear' # activation function for the last layer
+hp_cnn['loss'] = 'categorical_crossentropy'  # 'mse' #'binary_crossentropy' # loss function to use
+hp_cnn['metrics'] = metrics
+hp_cnn['metrics_average'] = metrics_average
+hp_cnn['optimizer'] = 'adam'  # 'rmsprop' # 'adam' # optimization algorithm
+hp_cnn['initial_dropout'] = 0.01  # dropout value for the initial layer
+
+# ### Multi-Layer Perceptron (MLP) hyperparameters:
+
+hp_mlp = {}
+hp_mlp['batch_size'] = hp_cnn['batch_size']
+hp_mlp['pretrain_lr'] = 0.05  # not needed?
+hp_mlp['finetune_lr'] = 0.5  # not needed?
+hp_mlp['pretraining_epochs'] = 100
+hp_mlp['finetuning_epochs'] = 10
+hp_mlp['hidden_layers_sizes'] = [100, 100, 100]
+hp_mlp['corruption_levels'] = [0.5, 0.0, 0.0]
+hp_mlp['activation'] = 'tanh'  # 'tanh' or 'relu' or 'sigmoid'
+hp_mlp['final_layer_act'] = 'softmax'  # 'linear' # activation function for the last layer
+hp_mlp['loss'] = 'categorical_crossentropy'  # 'mse' #'binary_crossentropy' # loss function to use
+hp_mlp['metrics'] = metrics
+hp_mlp['metrics_average'] = metrics_average
+hp_mlp['optimizer'] = 'adam'  # 'rmsprop' # 'adam' # optimization algorithm
 
 
-def get_session(gpu_fraction=0.3):
-    '''Allocate a specified fraction of GPU memory for keras tf session'''
-
-    num_threads = os.environ.get('OMP_NUM_THREADS')
-    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_fraction)
-
-    if num_threads:
-        return tf.Session(config=tf.ConfigProto(
-            gpu_options=gpu_options, intra_op_parallelism_threads=num_threads))
-    else:
-        return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
-
-
-KTF.set_session(get_session())
+# # Limit the allocated GPU memory to a fraction of total GPU memory, as per https://groups.google.com/forum/#!topic/keras-users/MFUEY9P1sc8:
+# # This is for sharing GPU with other sessions/users
+# import keras.backend.tensorflow_backend as KTF
+#
+# def get_session(gpu_fraction=0.3):
+#     '''Allocate a specified fraction of GPU memory for keras tf session'''
+#
+#     num_threads = os.environ.get('OMP_NUM_THREADS')
+#     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_fraction)
+#
+#     if num_threads:
+#         return tf.Session(config=tf.ConfigProto(
+#             gpu_options=gpu_options, intra_op_parallelism_threads=num_threads))
+#     else:
+#         return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+#
+#
+# KTF.set_session(get_session())
 
 class CNN(object):
     """CNN model class"""
@@ -121,7 +185,7 @@ class CNN(object):
         self.model.fit(X_train, y_train,
                        batch_size=self.hp['batch_size'],
                        nb_epoch=self.hp['nb_epoch'],
-                       validation_data=[X_valid, y_valid])
+                       validation_data=[X_valid, y_valid], verbose=VERBOSE)
         print('Training is complete.')
 
     def predict(self, X):
@@ -229,7 +293,7 @@ class MLP(object):
         self.model.fit(X_train, y_train,
                        batch_size=self.hp['batch_size'],
                        nb_epoch=self.hp['finetuning_epochs'],
-                       validation_data=[X_valid, y_valid])
+                       validation_data=[X_valid, y_valid], verbose=VERBOSE)
         print('Training is complete.')
 
     def predict(self, X):
@@ -467,7 +531,7 @@ class NN_Column_Labeler(object):
         self.y_valid_binary = to_categorical(self.y_valid, len(self.labels))
         self.y_test_binary = to_categorical(self.y_test, len(self.labels))
 
-    def train(self, verbose=False):
+    def train(self, evaluate_after_training=False, verbose=False):
         """Train classifiers specified in self.classifier_types"""
         for t in self.classifier_types:
             print('\n' + '-' * 80)
@@ -482,26 +546,27 @@ class NN_Column_Labeler(object):
 
                 # Evaluate after training:
                 # TO DO: replace with self.evaluate method?
-                if len(self.X_train[t.split('@')[-1]])>0:
-                    print('Evaluating', t, 'on the training set...')
-                    performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
-                    print(' ' * 3 + 'loss:', performance[0])
-                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                        print(' ' * 3 + m, ':', performance[i])
+                if evaluate_after_training:
+                    if len(self.X_train[t.split('@')[-1]])>0:
+                        print('Evaluating', t, 'on the training set...')
+                        performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
+                        print(' ' * 3 + 'loss:', performance[0])
+                        for i, m in enumerate(self.classifiers[t].metrics, start=1):
+                            print(' ' * 3 + m, ':', performance[i])
 
-                if len(self.X_valid[t.split('@')[-1]])>0:
-                    print('\nEvaluating', t, 'on the validation set...')
-                    performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
-                    print(' ' * 3 + 'loss:', performance[0])
-                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                        print(' ' * 3 + m, ':', performance[i])
+                    if len(self.X_valid[t.split('@')[-1]])>0:
+                        print('\nEvaluating', t, 'on the validation set...')
+                        performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
+                        print(' ' * 3 + 'loss:', performance[0])
+                        for i, m in enumerate(self.classifiers[t].metrics, start=1):
+                            print(' ' * 3 + m, ':', performance[i])
 
-                if len(self.X_test[t.split('@')[-1]])>0:
-                    print('\nEvaluating', t, 'on the testing set...')
-                    performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
-                    print(' ' * 3 + 'loss:', performance[0])
-                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                        print(' ' * 3 + m, ':', performance[i])
+                    if len(self.X_test[t.split('@')[-1]])>0:
+                        print('\nEvaluating', t, 'on the testing set...')
+                        performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
+                        print(' ' * 3 + 'loss:', performance[0])
+                        for i, m in enumerate(self.classifiers[t].metrics, start=1):
+                            print(' ' * 3 + m, ':', performance[i])
 
                 # Add 'charseq_embedded' and 'augmented' features:
                 if any(f in [t.split('@')[-1] for t in self.classifier_types] for f in ['charseq_embedded', 'augmented']):
@@ -519,7 +584,7 @@ class NN_Column_Labeler(object):
                         self.X_test['augmented'] = np.concatenate(
                             (self.X_test['charseq_embedded'], self.X_test['charfreq']), axis=1)
                     except:
-                        None
+                        pass
 
             elif t.split('@')[0] == 'rf':
                 self.classifiers[t] = RandomForestClassifier(n_estimators=500, oob_score=True, n_jobs=8)
@@ -527,21 +592,22 @@ class NN_Column_Labeler(object):
                 self.classifiers[t].fit(self.X_train[t.split('@')[-1]], self.y_train)
 
                 # Evaluate after training:
-                oob_acc = self.classifiers[t].oob_score_
-                print('OOB accuracy = ', oob_acc)
+                if evaluate_after_training:
+                    oob_acc = self.classifiers[t].oob_score_
+                    print('OOB accuracy = ', oob_acc)
 
-                if len(self.X_test[t.split('@')[-1]])>0:
-                    y_pred = self.classifiers[t].predict(self.X_test[t.split('@')[-1]])
-                    if 'categorical_accuracy' in metrics:
-                        test_acc = sklearn.metrics.accuracy_score(self.y_test, y_pred)
-                        print('Test accuracy = ', test_acc)
-                    if 'fmeasure' in metrics:
-                        test_fmeasure = sklearn.metrics.f1_score(self.y_test, y_pred, average=metrics_average)
-                        print('Test fmeasure = ', test_fmeasure)
-                    # if 'MRR' in metrics:
-                    #     y_pred_proba = self.classifiers[t].predict_proba(self.X_test[t.split('@')[-1]])
-                    #     test_mrr = sklearn.metrics.label_ranking_average_precision_score(self.y_test_binary, y_pred_proba)
-                    #     print('Test MRR = ',test_mrr)
+                    if len(self.X_test[t.split('@')[-1]])>0:
+                        y_pred = self.classifiers[t].predict(self.X_test[t.split('@')[-1]])
+                        if 'categorical_accuracy' in metrics:
+                            test_acc = sklearn.metrics.accuracy_score(self.y_test, y_pred)
+                            print('Test accuracy = ', test_acc)
+                        if 'fmeasure' in metrics:
+                            test_fmeasure = sklearn.metrics.f1_score(self.y_test, y_pred, average=metrics_average)
+                            print('Test fmeasure = ', test_fmeasure)
+                        # if 'MRR' in metrics:
+                        #     y_pred_proba = self.classifiers[t].predict_proba(self.X_test[t.split('@')[-1]])
+                        #     test_mrr = sklearn.metrics.label_ranking_average_precision_score(self.y_test_binary, y_pred_proba)
+                        #     print('Test MRR = ',test_mrr)
 
             elif t.split('@')[0] == 'mlp':
                 self.classifiers[t] = MLP({**hp, **hp_mlp})
@@ -550,26 +616,27 @@ class NN_Column_Labeler(object):
                                           self.X_valid[t.split('@')[-1]], self.y_valid_binary)
 
                 # Evaluate after training:
-                if len(self.X_train[t.split('@')[-1]])>0:
-                    print('Evaluating', t, 'on the training set...')
-                    performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
-                    print(' ' * 3 + 'loss:', performance[0])
-                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                        print(' ' * 3 + m, ':', performance[i])
+                if evaluate_after_training:
+                    if len(self.X_train[t.split('@')[-1]])>0:
+                        print('Evaluating', t, 'on the training set...')
+                        performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
+                        print(' ' * 3 + 'loss:', performance[0])
+                        for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                            print(' ' * 3 + m, ':', performance[i])
 
-                if len(self.X_valid[t.split('@')[-1]])>0:
-                    print('\nEvaluating', t, 'on the validation set...')
-                    performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
-                    print(' ' * 3 + 'loss:', performance[0])
-                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                        print(' ' * 3 + m, ':', performance[i])
+                    if len(self.X_valid[t.split('@')[-1]])>0:
+                        print('\nEvaluating', t, 'on the validation set...')
+                        performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
+                        print(' ' * 3 + 'loss:', performance[0])
+                        for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                            print(' ' * 3 + m, ':', performance[i])
 
-                if len(self.X_test[t.split('@')[-1]])>0:
-                    print('\nEvaluating', t, 'on the testing set...')
-                    performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
-                    print(' ' * 3 + 'loss:', performance[0])
-                    for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
-                        print(' ' * 3 + m, ':', performance[i])
+                    if len(self.X_test[t.split('@')[-1]])>0:
+                        print('\nEvaluating', t, 'on the testing set...')
+                        performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
+                        print(' ' * 3 + 'loss:', performance[0])
+                        for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
+                            print(' ' * 3 + m, ':', performance[i])
 
     def predict_proba(self, cols, verbose=False):
         """Predict semantic label probabilities for columns in cols, using self.classifiers"""
@@ -678,7 +745,7 @@ class Ensemble_Average(object):
                 predictions_proba[i][
                     'paul'] = y_pred  # add Paul's model's predicted class probabilities to predictions_proba
         except:
-            None  # if paul_labeler is not passed as an argument, do nothing here, and just ensemble predictions_proba by 'my' classifiers only
+            pass  # if paul_labeler is not passed as an argument, do nothing here, and just ensemble predictions_proba by 'my' classifiers only
 
         for p in predictions_proba:  # loop over predictions_proba for query_cols
             p['ensemble_avg'] = np.mean(np.dstack([p.popitem()[1] for _ in range(len(p.items()))]),
@@ -736,7 +803,7 @@ class Paul_Code_Runner(object):
             shutil.rmtree(self.repo_path + "models/")
             shutil.rmtree(self.repo_path + "labels/predicted/")
         except:
-            None
+            pass
 
         os.mkdir(self.repo_path + "models/")
         os.mkdir(self.repo_path + "labels/predicted/")
@@ -859,229 +926,111 @@ class Paul_Labeler(object):
         return performance, y_pred, y_true
 
 
-# ## Hyperparameters
-# ### Data sampling hyperparameters:
 
-# In[61]:
+if __name__ == "__main__":
 
-hp = {}
-hp['split_by'] = 'filename'  # name of the column attribute on which to randomly split columns into training and testing sets
-# 'id' for splitting by column attribute (title@filename)
-# 'filename' for splitting by data source filename
-hp['cols_test_frac'] = 0.2  # fraction of all data columns that are used for testing (the rest is for training)
-hp['subsize'] = 100  # number of row elements (rows) in each bagging subsample
-hp['n_samples'] = 1 * 150  # number of subsamples from each column to take when bagging
-hp['samples_validation_frac'] = 0.01  # fraction of training samples that are held-out for validation purposes
+    # ## Read the data columns
+    # reader for the museum dataset
+    data_dir = 'data/museum/'
+    museum_reader = Reader()
+    files, all_cols = museum_reader.read_dir(data_dir)
+    print("Found", len(files), "files (sources) with a total of", len(all_cols), "columns in", data_dir)
 
-# ### Hyperparameters for character sequences
+    for c in all_cols:
+        c.id = c.title + '@' + c.filename
 
-# In[62]:
+    # TO DO: Split files (data sources) into train and test sets of files (sources), rather than splitting columns (after putting them all together) into train and test sets of columns:
+    all_cols[0].__dict__.keys()
 
-hp['maxlen'] = 200  # cut resulting character seqs after this number of chars (ensure all character seq inputs are of the same length)
-hp['max_features'] = 128  # number of 'bits' to use when encoding a character (i.e., the length of character vocabulary)
+    labeler = NN_Column_Labeler(
+        ['cnn@charseq', 'rf@charseq_embedded', 'mlp@charfreq', 'rf@charfreq', 'mlp@augmented', 'rf@augmented'],
+        all_cols, split_by=hp['split_by'], test_frac=hp['cols_test_frac'])
 
-# ### Hyperparameters for character frequencies
+    labels_train = list(OrderedDict.fromkeys(x.title for x in labeler.train_cols))
+    if 'unknown' in labels_train:
+        print('WARNING: \'unknown\' is in labels_train, which should not happen for the museum dataset!')
 
-# In[63]:
+    # # Relative fractions of semantic classes in the training set:
+    # for y in np.unique(labeler.y_train):
+    #     y_frac = np.sum(labeler.y_train == y)/len(labeler.y_train)
+    #     print(y,':',round(y_frac,3),labeler.inverted_lookup[y])
 
-hp['char_vocab'] = string.printable  # vocabulary of characters - all printable characters (includes the '\n' character)
-hp['entropy'] = True  # whether to add Shannon's entropy to the char_freq feature vectors
+    labeler.train()
 
-# ### Performance metrics for labelers
+    query_cols = copy.deepcopy(labeler.test_cols)
+    print('Evaluating on', len(query_cols), 'test columns...')
+    # label_pred = labeler.predict(query_cols, verbose=False)
+    performance = labeler.evaluate(query_cols)
 
-# In[64]:
+    ensemble_labeler = Ensemble_Average(labeler)  # ensemble classifiers in labeler by averaging their proba predictions
+    performance_ensemble_labeler, _, _ = ensemble_labeler.evaluate(query_cols)
 
-metrics = ['categorical_accuracy', 'fmeasure', 'MRR']  # list of performance metrics to compare column labelers with
-metrics_average = 'macro'  # 'macro', 'micro', or 'weighted'
+    for k in performance_ensemble_labeler.keys():
+        performance[k]['ensemble_avg_my'] = performance_ensemble_labeler[k]
 
-# ### Convolutional NN (CNN) hyperparameters:
+    repo_path = './data/museum_repo_jupyter/'
+    paul_labeler = Paul_Labeler(labeler, repo_path)
 
-# In[65]:
+    # RUN PAUL'S CODE:
+    resampling = 'NoResampling'
+    paul_code_runner = Paul_Code_Runner(
+        path='/home/yuriy/Projects/Data_integration/code/data-integration/prototype/semantic_type_classifier/',
+        repo='museum_repo_jupyter/', resampling=resampling)
+    print("Training Paul's model...", end=' ')
+    stdout_train, stderr_train, returncode_train = paul_code_runner.train()
 
-hp_cnn = {}
-hp_cnn[
-    'batch_size'] = 50  # batch training size; a good value is 25, but 50 is faster (while producing similar accuracy)
-hp_cnn[
-    'dropout'] = 0.5  # dropout value for the dropout layers; no difference between 0.5 and 0.1; reducing below 0.1 seems to slightly hurt the test accuracy (as expected)
-hp_cnn['nb_filter'] = 100  # number of filters for the conv layers
-hp_cnn['filter_length'] = 3  # 50 # length of the filter window in the conv layer
-hp_cnn['border_mode'] = 'valid'  # 'valid' (no zero-padding) or 'same' (with zero padding)
-hp_cnn['hidden_dims'] = 100  # number of units for the vanilla (fully connected) hidden layer
-hp_cnn[
-    'embedding_dims'] = 64  # 128 # dimensionality of character embedding (number of values to squash the initial max_features encoding)
-hp_cnn['nb_epoch'] = 10  # 7 # number of training epochs; increasing this beyond 6 does not improve the model
-hp_cnn['final_layer_act'] = 'softmax'  # 'linear' # activation function for the last layer
-hp_cnn['loss'] = 'categorical_crossentropy'  # 'mse' #'binary_crossentropy' # loss function to use
-hp_cnn['metrics'] = metrics
-hp_cnn['metrics_average'] = metrics_average
-hp_cnn['optimizer'] = 'adam'  # 'rmsprop' # 'adam' # optimization algorithm
-hp_cnn['initial_dropout'] = 0.01  # dropout value for the initial layer
-
-# ### Multi-Layer Perceptron (MLP) hyperparameters:
-
-# In[66]:
-
-hp_mlp = {}
-hp_mlp['batch_size'] = hp_cnn['batch_size']
-hp_mlp['pretrain_lr'] = 0.05  # not needed?
-hp_mlp['finetune_lr'] = 0.5  # not needed?
-hp_mlp['pretraining_epochs'] = 100
-hp_mlp['finetuning_epochs'] = 10
-hp_mlp['hidden_layers_sizes'] = [100, 100, 100]
-hp_mlp['corruption_levels'] = [0.5, 0.0, 0.0]
-hp_mlp['activation'] = 'tanh'  # 'tanh' or 'relu' or 'sigmoid'
-hp_mlp['final_layer_act'] = 'softmax'  # 'linear' # activation function for the last layer
-hp_mlp['loss'] = 'categorical_crossentropy'  # 'mse' #'binary_crossentropy' # loss function to use
-hp_mlp['metrics'] = metrics
-hp_mlp['metrics_average'] = metrics_average
-hp_mlp['optimizer'] = 'adam'  # 'rmsprop' # 'adam' # optimization algorithm
-
-# ## Read the data columns
-
-# In[67]:
-
-# reader for the museum dataset
-data_dir = 'data/museum/'
-museum_reader = Reader()
-files, all_cols = museum_reader.read_dir(data_dir)
-print("Found", len(files), "files (sources) with a total of", len(all_cols), "columns in", data_dir)
-
-for c in all_cols:
-    c.id = c.title + '@' + c.filename
-
-# In[68]:
-
-# TO DO: Split files (data sources) into train and test sets of files (sources), rather than splitting columns (after putting them all together) into train and test sets of columns:
-all_cols[0].__dict__.keys()
-
-# In[69]:
-
-labeler = NN_Column_Labeler(
-    ['cnn@charseq', 'rf@charseq_embedded', 'mlp@charfreq', 'rf@charfreq', 'mlp@augmented', 'rf@augmented'],
-    all_cols, split_by=hp['split_by'], test_frac=hp['cols_test_frac'])
-
-# In[70]:
-
-labels_train = list(OrderedDict.fromkeys(x.title for x in labeler.train_cols))
-if 'unknown' in labels_train:
-    print('WARNING: \'unknown\' is in labels_train, which should not happen for the museum dataset!')
-
-# In[71]:
-
-# # Relative fractions of semantic classes in the training set:
-# for y in np.unique(labeler.y_train):
-#     y_frac = np.sum(labeler.y_train == y)/len(labeler.y_train)
-#     print(y,':',round(y_frac,3),labeler.inverted_lookup[y])
-
-
-# In[72]:
-
-labeler.train()
-
-# In[73]:
-
-query_cols = copy.deepcopy(labeler.test_cols)
-print('Evaluating on', len(query_cols), 'test columns...')
-# label_pred = labeler.predict(query_cols, verbose=False)
-performance = labeler.evaluate(query_cols)
-performance
-
-# In[74]:
-
-ensemble_labeler = Ensemble_Average(labeler)  # ensemble classifiers in labeler by averaging their proba predictions
-performance_ensemble_labeler, _, _ = ensemble_labeler.evaluate(query_cols)
-
-for k in performance_ensemble_labeler.keys():
-    performance[k]['ensemble_avg_my'] = performance_ensemble_labeler[k]
-
-performance
-
-# In[75]:
-
-repo_path = './data/museum_repo_jupyter/'
-paul_labeler = Paul_Labeler(labeler, repo_path)
-
-# In[76]:
-
-# RUN PAUL'S CODE:
-resampling = 'NoResampling'
-paul_code_runner = Paul_Code_Runner(
-    path='/home/yuriy/Projects/Data_integration/code/data-integration/prototype/semantic_type_classifier/',
-    repo='museum_repo_jupyter/', resampling=resampling)
-print("Training Paul's model...", end=' ')
-stdout_train, stderr_train, returncode_train = paul_code_runner.train()
-
-if returncode_train is None or returncode_train == 0:
-    print('OK')
-    print('Predicting labels...', end=' ')
-    stdout_predict, stderr_predict, returncode_predict = paul_code_runner.predict()
-
-    if returncode_predict is None or returncode_predict == 0:
+    if returncode_train is None or returncode_train == 0:
         print('OK')
+        print('Predicting labels...', end=' ')
+        stdout_predict, stderr_predict, returncode_predict = paul_code_runner.predict()
+
+        if returncode_predict is None or returncode_predict == 0:
+            print('OK')
+        else:
+            print('FAILED:')
+            print('stderr:', stderr_predict)
+            print('stdout:', str(stdout_predict))
     else:
         print('FAILED:')
-        print('stderr:', stderr_predict)
-        print('stdout:', str(stdout_predict))
-else:
-    print('FAILED:')
-    print('stderr:', str(stderr_train))
-    print('stdout:', str(stdout_train))
+        print('stderr:', str(stderr_train))
+        print('stdout:', str(stdout_train))
 
-# In[77]:
+    os.getcwd()
 
-# os.chdir('/home/yuriy/Projects/Data_integration/code/semantic-classifier/')
-os.getcwd()
+    query_cols = copy.deepcopy(labeler.test_cols)
+    paul_predictions_file = repo_path + "labels/predicted/pred_test.csv.derivedfeatures.csv"
+    performance_paul, _, _ = paul_labeler.evaluate(query_cols, paul_predictions_file)
 
-# In[78]:
+    for k in performance_paul.keys():
+        performance[k]['paul' + '_' + resampling] = performance_paul[k]
 
-query_cols = copy.deepcopy(labeler.test_cols)
-paul_predictions_file = repo_path + "labels/predicted/pred_test.csv.derivedfeatures.csv"
-performance_paul, _, _ = paul_labeler.evaluate(query_cols, paul_predictions_file)
 
-for k in performance_paul.keys():
-    performance[k]['paul' + '_' + resampling] = performance_paul[k]
+    ensemble_all = Ensemble_Average(labeler, paul_labeler)  # ensemble all models (classifiers in labeler and Paul's model)
+    performance_ensemble_all, _, _ = ensemble_all.evaluate(query_cols)
 
-performance
+    for k in performance_ensemble_all.keys():
+        performance[k]['ensemble_avg_all'] = performance_ensemble_all[k]
 
-# In[79]:
+    performances = {}  # use this to collect results of runs
+    for m in metrics:
+        performances[m] = []  # use this to collect results of runs
 
-ensemble_all = Ensemble_Average(labeler, paul_labeler)  # ensemble all models (classifiers in labeler and Paul's model)
-performance_ensemble_all, _, _ = ensemble_all.evaluate(query_cols)
+    for m in metrics:
+        performances[m].append(performance[m])
 
-for k in performance_ensemble_all.keys():
-    performance[k]['ensemble_avg_all'] = performance_ensemble_all[k]
-performance
+    # results_dir = './results/'
+    # fname_progress = results_dir+'labeler_performances, data=museum, data_folds='+', model_folds='+' [IN PROGRESS].xlsx'
+    # writer = ExcelWriter(fname_progress)
+    performances_df = {}
+    for m in metrics:
+        performances_df[m] = pd.DataFrame.from_dict(performances[m])
+        # Save the progress:
+    #     performances_df[m].to_excel(excel_writer=writer,sheet_name=m, index=False)
 
-# In[80]:
+    # writer.save()
 
-performances = {}  # use this to collect results of runs
-for m in metrics:
-    performances[m] = []  # use this to collect results of runs
+    print(performances_df['categorical_accuracy'])
 
-# In[81]:
+    print(performances_df['fmeasure'])
 
-for m in metrics:
-    performances[m].append(performance[m])
-
-# In[82]:
-
-# results_dir = './results/'
-# fname_progress = results_dir+'labeler_performances, data=museum, data_folds='+', model_folds='+' [IN PROGRESS].xlsx'
-# writer = ExcelWriter(fname_progress)
-performances_df = {}
-for m in metrics:
-    performances_df[m] = pd.DataFrame.from_dict(performances[m])
-    # Save the progress:
-#     performances_df[m].to_excel(excel_writer=writer,sheet_name=m, index=False)
-
-# writer.save()
-
-performances_df['categorical_accuracy']
-
-# In[83]:
-
-performances_df['fmeasure']
-
-# In[84]:
-
-performances_df['MRR']
+    print(performances_df['MRR'])
