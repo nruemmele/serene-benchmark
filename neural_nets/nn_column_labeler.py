@@ -30,7 +30,7 @@ from keras.layers import Dense, Dropout, Embedding, Convolution1D, MaxPooling1D,
 from keras.utils.np_utils import to_categorical
 import keras.metrics
 
-from .museum_data_reader import Column, Reader
+from .museum_data_reader import Reader
 
 # Limit the allocated GPU memory to a fraction of total GPU memory, as per https://groups.google.com/forum/#!topic/keras-users/MFUEY9P1sc8:
 # This is for sharing GPU with other sessions/users
@@ -865,8 +865,7 @@ class Paul_Labeler(object):
 # In[61]:
 
 hp = {}
-hp[
-    'split_by'] = 'filename'  # name of the column attribute on which to randomly split columns into training and testing sets
+hp['split_by'] = 'filename'  # name of the column attribute on which to randomly split columns into training and testing sets
 # 'id' for splitting by column attribute (title@filename)
 # 'filename' for splitting by data source filename
 hp['cols_test_frac'] = 0.2  # fraction of all data columns that are used for testing (the rest is for training)
@@ -878,8 +877,7 @@ hp['samples_validation_frac'] = 0.01  # fraction of training samples that are he
 
 # In[62]:
 
-hp[
-    'maxlen'] = 200  # cut resulting character seqs after this number of chars (ensure all character seq inputs are of the same length)
+hp['maxlen'] = 200  # cut resulting character seqs after this number of chars (ensure all character seq inputs are of the same length)
 hp['max_features'] = 128  # number of 'bits' to use when encoding a character (i.e., the length of character vocabulary)
 
 # ### Hyperparameters for character frequencies

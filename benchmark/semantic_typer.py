@@ -18,7 +18,7 @@ import numpy as np
 
 import sklearn.metrics
 
-from neural_nets.nn_column_labeler import NN_Column_Labeler
+from neural_nets import Column, NN_Column_Labeler, hp, hp_cnn, hp_mlp
 
 domains = ["soccer", "dbpedia", "museum", "weather"]
 benchmark = {
@@ -42,6 +42,7 @@ benchmark = {
                's09-s-18-artists.json', 's01-cb.csv'],
     "weather": ['w1.txt', 'w3.txt', 'w2.txt', 'w4.txt']
 }
+
 
 class SemanticTyper(object):
     """
@@ -386,6 +387,27 @@ class NNetModel(SemanticTyper):
         If only one classifier type is given in the arguments, this works for the following classifier types only:
         'cnn@charseq', 'mlp@charfreq', 'rf@charfreq'
     """
+    def _read(self, source, label_source=None):
+        """ Read columns from source, and return them as a list of Column objects (as defined in neural_nets.museum_data_reader)"""
+        filename = os.path.join("data", "sources", source+".csv")
+        if label_source is None:
+            label_filename = os.path.join("data", "labels", source + ".columnmap.txt")
+        else:
+            label_filename = os.path.join("data", "labels", label_source)
+        df = pd.read_csv(filename)  # read the data source as a DataFrame
+        labels = pd.read_csv(label_filename)   # read the semantic labels of columns in df
+
+        source_cols = []
+        for c in df.columns:
+            label = str(labels.get_value(labels[labels['column_name'] == c].index[0], 'semantic_type'))   # extract semantic label of column c
+            if label == 'nan':
+                label = 'unknown'
+            col = Column(filename=filename, colname=c, title=label, lines=list(df[c]))
+            source_cols.append(col)
+
+        return source_cols
+
+
     def __init__(self, classifier_types, description):
         logging.info("Initializing NNetModel with",classifier_types,"classifiers...")
         super().__init__("NNetModel", description=description)
@@ -401,16 +423,33 @@ class NNetModel(SemanticTyper):
 
     def define_training_data(self, train_sources, train_labels=None):
         """ Extract training columns from train_sources, and assign semantic labels to them
-         The result should be self.train_cols - a list of Column objects to pass to labeler in self.train()"""
-        pass
+         The result should be self.train_cols - a list of Column objects (defined in museum_data_reader) to pass to labeler in self.train()"""
+        logging.info("Defining training data for NNetModel...")
+        self.train_cols = []
+        if train_labels is None:
+            for source in train_sources:
+                self.train_cols.append(self._read(source))
+        else:
+            for source, label in zip(train_sources, train_labels):
+                self.train_cols.append(self._read(source, label))
+
+        logging.info("Training data contains {} columns from {} sources".format(len(self.train_cols), len(train_sources)))
 
     def train(self):
         """ Create an instance of NN_Column_Labeler, perform bagging, feature preparation, and training of the underlying classifier(s) """
-        self.labeler = NN_Column_Labeler(self.classifier_types, train_cols, split_by='source', test_frac=0)   # test_frac = 0 means no splitting into train and test sets
+        self.labeler = NN_Column_Labeler(self.classifier_types, self.train_cols, split_by=hp['split_by'], test_frac=0)   # test_frac = 0 means no further splitting into train and test sets, i.e., use train_cols as all_cols
         # TODO: rewrite NN_Column_Labeler to be initialized with train_cols only, instead of all_cols followed by internal splitting of all_cols into train, valid, ant test sets of columns
+
+        # Train self.labeler:
+        self.labeler.train()
 
     def predict(self, source):
         """ Predict labels for all columns in source """
+
+        # First, we need to extract query Column objects from source
+        # Then, pass these query cols to self.labeler.predict as
+        # predictions = self.labeler.predict(query_cols)
+        # Finally, convert predictions to the pd dataframe in the required format
         pass
 
 
