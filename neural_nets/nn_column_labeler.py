@@ -131,7 +131,7 @@ class CNN(object):
             input_dim=self.hp['max_features'],
             # note that the embedding matrix W is learned (along with the weights of the other layers) when the whole model is trained, and hopefully the learned embedding matrix W is a "good" one
             output_dim=self.hp['embedding_dims'],
-            input_length=101, #self.hp['maxlen'],
+            input_length=self.hp['maxlen'],
             dropout=self.hp['initial_dropout']
         ))
 
