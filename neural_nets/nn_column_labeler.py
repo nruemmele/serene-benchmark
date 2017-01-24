@@ -725,8 +725,6 @@ class NN_Column_Labeler(object):
         return performance
 
 
-# In[59]:
-
 class Ensemble_Average(object):
     """Ensemble models (classifiers in labeler and, optionally, Paul's model in paul_labeler) via unweighted averaging of their class probability predictions"""
 
@@ -789,148 +787,6 @@ class Ensemble_Average(object):
         return performance, y_pred, y_true
 
 
-# In[60]:
-
-class Paul_Code_Runner(object):
-    """Train and predict semantic labels using Paul's model"""
-
-    def __init__(self, path, repo, resampling):
-        self.path = path
-        self.repo_path = path + repo
-        self.cwd = os.getcwd()
-        self.cmd_train = [
-            "./train_semtype_classifier.sh " + self.repo_path + "train_cols/ " + self.repo_path + "classes/class_list.csv " + self.repo_path + "labels/manual/ " + self.repo_path + "models/model.rf " + resampling + " " + self.repo_path + "config/features_config.json"]
-        self.cmd_predict = [
-            "./predict_semtypes.sh " + self.repo_path + "models/model.rf " + self.repo_path + "test_cols/ " + self.repo_path + "labels/predicted/pred_test.csv"]
-        # Clear the model and predictions:
-        try:
-            shutil.rmtree(self.repo_path + "models/")
-            shutil.rmtree(self.repo_path + "labels/predicted/")
-        except:
-            pass
-
-        os.mkdir(self.repo_path + "models/")
-        os.mkdir(self.repo_path + "labels/predicted/")
-
-    def train(self):
-        os.chdir(self.path)
-        cmd = self.cmd_train
-        #         print('Executing command',cmd)
-        proc = subprocess.Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True, executable="/bin/bash")
-        stdout, stderr = proc.communicate()
-        proc.poll()
-        os.chdir(self.cwd)  # restore the working directory
-        return stdout, stderr, proc.returncode
-
-    def predict(self):
-        os.chdir(self.path)
-        cmd = self.cmd_predict
-        #         print('Executing command',cmd)
-        proc = subprocess.Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True, executable="/bin/bash")
-        stdout, stderr = proc.communicate()
-        proc.poll()
-        os.chdir(self.cwd)  # restore the working directory
-        return stdout, stderr, proc.returncode
-
-
-class Paul_Labeler(object):
-    """Paul's column labeler"""
-
-    def _save_columns(self, directory, cols):
-        """Save columns from cols to data files with cols.title names, in specified directory"""
-        semtype_labels = []
-        for i, c in enumerate(cols, start=1):
-            # Save the column c to a unique csv file:
-            df = pd.DataFrame()  # columns=[c.title])
-            #             df[re.sub(c.title, '<CENSORED>', c.colname)] = c.lines  # we are removing c.title from c.colname, since c.title is the target label, and Paul's code uses colnames as predictors
-            df['<CENSORED>'] = c.lines  # we censor the column name completely, to avoid leaking the class label
-            filename = c.filename + '_' + str(i) + '.csv'
-            df.to_csv(directory + filename, index=False)
-
-            # Add the column's label to semtype_labels (to be later saved to the labels file)
-            label = c.title  # c.title is used as semantic class label
-            col_id = df.columns[0] + '@' + filename
-            c.id = col_id
-            semtype_labels.append([col_id, label])
-
-        return pd.DataFrame(semtype_labels, columns=['attr_id', 'class'])
-
-    def __init__(self, labeler, repo_path):
-        """Initialise Paul's labeler: save labeler.train_cols and labeler.test_cols to repo, etc."""
-        self.labels = labeler.labels
-        self.label_lookup = labeler.label_lookup
-        self.inverted_lookup = labeler.inverted_lookup
-        shutil.rmtree(repo_path + 'train_cols/')
-        os.mkdir(repo_path + 'train_cols/')
-        semtype_labels_train = self._save_columns(repo_path + 'train_cols/', labeler.train_cols)
-        semtype_labels_train.to_csv(repo_path + 'labels/manual/semtype_labels.csv', index=False)
-
-        shutil.rmtree(repo_path + 'test_cols/')
-        os.mkdir(repo_path + 'test_cols/')
-        self._save_columns(repo_path + 'test_cols/', labeler.test_cols)
-
-        with open(repo_path + 'classes/class_list.csv', 'w') as labels_file:
-            for l in [l for l in self.labels if l != 'unknown']:
-                labels_file.write("%s\n" % l)
-
-    def predict(self, cols, predictions_file, verbose=False):
-        """Predict labels of cols using predicted labels in label_file"""
-        self.predictions_file = predictions_file
-        if verbose: print('Extracting Paul code\'s predictions...')
-        paul_pred_df = pd.read_csv(self.predictions_file)
-        paul_pred_df = paul_pred_df[['id', 'label', 'confidence'] + list(self.labels)]
-
-        paul_soft_labels_pred = dict()
-        paul_hard_labels_pred = dict()
-        for i in paul_pred_df.index:
-            i_id = paul_pred_df.get_value(i, 'id')
-            paul_hard_labels_pred[i_id] = paul_pred_df.get_value(i, 'label')
-            paul_soft_labels_pred[i_id] = {k: paul_pred_df.get_value(i, k) for k in self.labels}
-
-        # for col in cols:
-        #             col.label_paul = paul_hard_labels_pred[col.id]
-        predictions_proba = []
-        predictions = []
-        for col in cols:
-            predictions_proba.append(paul_soft_labels_pred[col.id])
-            predictions.append(paul_hard_labels_pred[col.id])
-
-        return predictions_proba, predictions
-
-    def evaluate(self, cols, predictions_file):
-        """Evaluate Paul's labeler on cols"""
-        #         try:
-        #             assert(all([hasattr(c,'label_paul') for c in cols]))
-        #         except:
-        #             print("Labels not predicted for all passed columns. Extracting label predictions...",end=" ")
-        #             self.predict(cols,predictions_file,verbose=False)
-        #             print("done")
-
-        performance = {}
-        for m in metrics:
-            performance[m] = OrderedDict()
-
-        y_true = np.array([c.title for c in cols])
-        y_true_proba = to_categorical(np.array([self.label_lookup[y] for y in y_true]), nb_classes=len(self.labels))
-        y_pred_proba, y_pred = np.array(self.predict(cols, predictions_file,
-                                                     verbose=False))  # list of dictionaries with key=semantic class, value=probability
-
-        y_pred = np.array(y_pred)
-        y_pred_proba = np.array([np.array([y[l] for l in paul_labeler.inverted_lookup.values()]) for y in
-                                 y_pred_proba])  # convert into a 2d array, each row is a class probability vector
-
-        if 'categorical_accuracy' in metrics:
-            performance['categorical_accuracy'] = sklearn.metrics.accuracy_score(y_true,
-                                                                                 y_pred)  # np.mean(y_pred == y_true)
-        if 'fmeasure' in metrics:
-            performance['fmeasure'] = sklearn.metrics.f1_score(y_true, y_pred, average=metrics_average)
-        if 'MRR' in metrics:
-            performance['MRR'] = sklearn.metrics.label_ranking_average_precision_score(y_true_proba, y_pred_proba)
-
-        return performance, y_pred, y_true
-
-
-
 if __name__ == "__main__":
 
     # ## Read the data columns
@@ -971,49 +827,6 @@ if __name__ == "__main__":
 
     for k in performance_ensemble_labeler.keys():
         performance[k]['ensemble_avg_my'] = performance_ensemble_labeler[k]
-
-    repo_path = './data/museum_repo_jupyter/'
-    paul_labeler = Paul_Labeler(labeler, repo_path)
-
-    # RUN PAUL'S CODE:
-    resampling = 'NoResampling'
-    paul_code_runner = Paul_Code_Runner(
-        path='/home/yuriy/Projects/Data_integration/code/data-integration/prototype/semantic_type_classifier/',
-        repo='museum_repo_jupyter/', resampling=resampling)
-    print("Training Paul's model...", end=' ')
-    stdout_train, stderr_train, returncode_train = paul_code_runner.train()
-
-    if returncode_train is None or returncode_train == 0:
-        print('OK')
-        print('Predicting labels...', end=' ')
-        stdout_predict, stderr_predict, returncode_predict = paul_code_runner.predict()
-
-        if returncode_predict is None or returncode_predict == 0:
-            print('OK')
-        else:
-            print('FAILED:')
-            print('stderr:', stderr_predict)
-            print('stdout:', str(stdout_predict))
-    else:
-        print('FAILED:')
-        print('stderr:', str(stderr_train))
-        print('stdout:', str(stdout_train))
-
-    os.getcwd()
-
-    query_cols = copy.deepcopy(labeler.test_cols)
-    paul_predictions_file = repo_path + "labels/predicted/pred_test.csv.derivedfeatures.csv"
-    performance_paul, _, _ = paul_labeler.evaluate(query_cols, paul_predictions_file)
-
-    for k in performance_paul.keys():
-        performance[k]['paul' + '_' + resampling] = performance_paul[k]
-
-
-    ensemble_all = Ensemble_Average(labeler, paul_labeler)  # ensemble all models (classifiers in labeler and Paul's model)
-    performance_ensemble_all, _, _ = ensemble_all.evaluate(query_cols)
-
-    for k in performance_ensemble_all.keys():
-        performance[k]['ensemble_avg_all'] = performance_ensemble_all[k]
 
     performances = {}  # use this to collect results of runs
     for m in metrics:

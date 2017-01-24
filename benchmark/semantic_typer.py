@@ -553,8 +553,8 @@ if __name__ == "__main__":
 
 
     #******* setting up NNetModel:
-    # nnet_model = NNetModel(['rf@charseq'],'rf@charseq model')
-    nnet_model = NNetModel(['rf@charfreq'], 'rf@charfreq model')
+    nnet_model = NNetModel(['cnn@charseq'],'cnn@charseq model')
+    # nnet_model = NNetModel(['rf@charfreq'], 'rf@charfreq model')
     nnet_model.define_training_data(train_sources)
     # Train the nnet_model:
     nnet_model.train()
