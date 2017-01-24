@@ -49,7 +49,7 @@ hp['samples_validation_frac'] = 0.01  # fraction of training samples that are he
 # ### Hyperparameters for character sequences
 
 hp['maxlen'] = 200  # cut resulting character seqs after this number of chars (ensure all character seq inputs are of the same length)
-hp['max_features'] = 128  # number of 'bits' to use when encoding a character (i.e., the length of character vocabulary)
+hp['max_features'] = 128  # number of 'bits' to use when encoding a character (size of character vocabulary)
 
 # ### Hyperparameters for character frequencies
 
@@ -128,10 +128,10 @@ class CNN(object):
         """build the cnn model"""
 
         self.model.add(Embedding(  # embed the input vectors of dim=max_features to dense vectors of dim=embedding_dims
-            self.hp['max_features'],
-            # note that the embedding matrix W is learned (along with the weights of other layers) when the whole model is trained, and hopefully the learned embedding matrix W is a "good" one
-            self.hp['embedding_dims'],
-            input_length=self.hp['maxlen'],
+            input_dim=self.hp['max_features'],
+            # note that the embedding matrix W is learned (along with the weights of the other layers) when the whole model is trained, and hopefully the learned embedding matrix W is a "good" one
+            output_dim=self.hp['embedding_dims'],
+            input_length=101, #self.hp['maxlen'],
             dropout=self.hp['initial_dropout']
         ))
 
@@ -421,6 +421,7 @@ class NN_Column_Labeler(object):
                 X['augmented'] = np.concatenate((X['charseq_embedded'], X['charfreq']), axis=1)
             except:
                 X['augmented'] = None
+                # X['augmented'] = np.concatenate((X['charseq'], X['charfreq']), axis=1)
 
     def _predict_soft(self, classifier, X):
         """Predict average soft labels (class probabilities) of X by averaging predictions of classifier for all rows of X"""
@@ -569,13 +570,15 @@ class NN_Column_Labeler(object):
                             print(' ' * 3 + m, ':', performance[i])
 
                 # Add 'charseq_embedded' and 'augmented' features:
-                if any(f in [t.split('@')[-1] for t in self.classifier_types] for f in ['charseq_embedded', 'augmented']):
+                if any(f in [t.split('@')[-1] for t in self.classifier_types] for f in ['charseq_embedded']):
                     self.cnn_embedder = CNN_embedder(self.classifiers['cnn@charseq'])
                     self.cnn_embedder.summary()
                     self.X_train['charseq_embedded'] = self.cnn_embedder.predict(self.X_train['charseq'])
                     self.X_valid['charseq_embedded'] = self.cnn_embedder.predict(self.X_valid['charseq'])
                     self.X_test['charseq_embedded'] = self.cnn_embedder.predict(self.X_test['charseq'])
 
+                if any(f in [t.split('@')[-1] for t in self.classifier_types] for f in
+                       ['augmented']):
                     try:
                         self.X_train['augmented'] = np.concatenate(
                             (self.X_train['charseq_embedded'], self.X_train['charfreq']), axis=1)
@@ -584,10 +587,10 @@ class NN_Column_Labeler(object):
                         self.X_test['augmented'] = np.concatenate(
                             (self.X_test['charseq_embedded'], self.X_test['charfreq']), axis=1)
                     except:
-                        pass
+                        pass   # leave the 'augmented' features at None
 
             elif t.split('@')[0] == 'rf':
-                self.classifiers[t] = RandomForestClassifier(n_estimators=500, oob_score=True, n_jobs=8)
+                self.classifiers[t] = RandomForestClassifier(n_estimators=500, oob_score=True, n_jobs=-1)
                 # train the rf on the training set (validation set will only be used for model ensembling):
                 self.classifiers[t].fit(self.X_train[t.split('@')[-1]], self.y_train)
 
@@ -612,6 +615,7 @@ class NN_Column_Labeler(object):
             elif t.split('@')[0] == 'mlp':
                 self.classifiers[t] = MLP({**hp, **hp_mlp})
                 self.classifiers[t].build(input_dim=self.X_train[t.split('@')[-1]].shape[1], n_classes=len(self.labels))
+                self.classifiers[t].summary()
                 self.classifiers[t].train(self.X_train[t.split('@')[-1]], self.y_train_binary,
                                           self.X_valid[t.split('@')[-1]], self.y_valid_binary)
 

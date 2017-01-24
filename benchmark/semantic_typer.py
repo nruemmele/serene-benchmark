@@ -384,8 +384,8 @@ class NNetModel(SemanticTyper):
         Originally the labeller can hold multiple classifier models (e.g., 'cnn@charseq', 'mlp@charfreq', etc.,)
         but here we assume 1 model per instance of NNetModel, for the purpose of benchmarking.
 
-        If only one classifier type is given in the arguments, this works for the following classifier types only:
-        'cnn@charseq', 'mlp@charfreq', 'rf@charfreq'
+        If only one classifier type is given in the 'classifier_types' argument (as a list, e.g., classifier_types=['cnn@charseq']), this works for the following classifier types only:
+        'cnn@charseq', 'mlp@charseq' (poor performance!), 'rf@charseq'; 'mlp@charfreq', 'rf@charfreq'
     """
     def _read(self, source, label_source=None):
         """ Read columns from source, and return them as a list of Column objects (as defined in neural_nets.museum_data_reader)"""
@@ -478,7 +478,7 @@ class NNetModel(SemanticTyper):
             predictions_proba.append(y_proba[self.classifier_type])
             # predictions.append(y[self.classifier_type])
 
-        end = time.time() - start
+        time_elapsed = time.time() - start
         # Finally, convert predictions to the pd dataframe in the required format:
         predictions_proba_dict = []
         for i, c in enumerate(query_cols):
@@ -499,7 +499,7 @@ class NNetModel(SemanticTyper):
                     label = class_name
             row["label"] = label
             row["confidence"] = max
-            row["running_time"] = end
+            row["running_time"] = time_elapsed
             predictions_proba_dict.append(row)
 
 
@@ -553,13 +553,14 @@ if __name__ == "__main__":
 
 
     #******* setting up NNetModel:
-    # nnet_model = NNetModel(['cnn@charseq'],'cnn@charseq model')
-    nnet_model = NNetModel(['mlp@charfreq'], 'mlp@charfreq model')
+    # nnet_model = NNetModel(['rf@charseq'],'rf@charseq model')
+    nnet_model = NNetModel(['rf@charfreq'], 'rf@charfreq model')
     nnet_model.define_training_data(train_sources)
     # Train the nnet_model:
     nnet_model.train()
 
     predictions = nnet_model.predict(test_source)
+    print("PREDICTiONS:", predictions)
     # print('True labels:')
     # print(predictions['user_label'])
     # print('Predicted labels:')
