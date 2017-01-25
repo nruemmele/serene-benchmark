@@ -451,7 +451,7 @@ class NNetModel(SemanticTyper):
         # TODO: rewrite NN_Column_Labeler to be initialized with train_cols only, instead of all_cols followed by internal splitting of all_cols into train, valid, ant test sets of columns
 
         # Train self.labeler:
-        self.labeler.train(evaluate_after_training=False)
+        self.labeler.train(evaluate_after_training=True)
 
         return time.time() - start
 
@@ -471,13 +471,11 @@ class NNetModel(SemanticTyper):
         # Then, pass these query cols to self.labeler.predict as
         start = time.time()
         y_pred_proba = self.labeler.predict_proba(query_cols)
-        # y_pred = self.labeler.predict(query_cols)
 
         # predictions = []
         predictions_proba = []
         for y_proba in y_pred_proba:
             predictions_proba.append(y_proba[self.classifier_type])
-            # predictions.append(y[self.classifier_type])
 
         time_elapsed = time.time() - start
         # Finally, convert predictions to the pd dataframe in the required format:
@@ -506,7 +504,6 @@ class NNetModel(SemanticTyper):
 
 
         # Return the predictions df:
-        # return true_labels, predictions, predictions_proba,
         return pd.DataFrame(predictions_proba_dict)
 
 

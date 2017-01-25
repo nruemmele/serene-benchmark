@@ -23,14 +23,16 @@ class Column(object):
         self.title = title         # semantic label of the column (short title)
         self.lines = lines         # lines in the column
 
-    def bagging(self, size=200, n=100, addHeader=False):
+    def bagging(self, size=200, n=100, addHeader=False, p=0.7):
         """
             Sample with replacement (generate n samples of [size] lines each)
             withHeader tells whether to put the column name (header) in front of the bagging samples
+            p is the probability of adding the header to a sample
         """
         X = [np.random.choice(self.lines, size) for x in range(n)]
-        if addHeader:  # add column name in front of each element of X:
-            X = [np.append(self.colname, x) for x in X]
+        if addHeader:  # add column name in front of a fraction of elements of X:
+            n_headers = int(p*len(X))   # number of X elements to add the column header to
+            X = [np.append(self.colname, x) for x in X[:n_headers]] + X[n_headers:]  # adding colname to every element of X leads to overfitting to colnames. One way to combat this would be to add colname to a fraction of elements only, thus forcing the model to learn other features besides column headers.
         y = [self.title for _ in range(n)]
         return X, y
 

@@ -35,7 +35,7 @@ museum_reader = Reader()
 
 # ## Hyperparameters
 # ### Data sampling hyperparameters:
-VERBOSE = 0
+VERBOSE = 1
 
 hp = {}
 hp['split_by'] = 'filename'  # name of the column attribute on which to randomly split columns into training and testing sets
