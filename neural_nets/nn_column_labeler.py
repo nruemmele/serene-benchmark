@@ -394,13 +394,23 @@ def train_validation_split(X, y, valid_frac):
 class NN_Column_Labeler(object):
     """Predicts labels of Column objects passed as argument, using 'elementary' classifiers specified as a list of names"""
 
+    def _char_filter(self, X, max_ord):
+        """Remove characters with ord>max_ord from elements of X"""
+        X_filtered = []
+        for x in X:
+            x = [i for i in x if i <= max_ord]
+            X_filtered.append(x)
+
+        return X_filtered
+
     def _generate_features(self, X, suffix='', verbose=False):
         """Extract features from X['raw']"""
+
         if any(f in list(it.chain.from_iterable([t.split('@')[-1].split('_') for t in self.classifier_types]))
                for f in ['charseq', 'augmented']):
             if verbose: print("Padding character sequences in X" + suffix + "[\'raw\'] to maxlen =", hp['maxlen'],
                               "...")
-            X['charseq'] = sequence.pad_sequences(X['raw'], maxlen=hp['maxlen'], truncating='post')
+            X['charseq'] = sequence.pad_sequences(self._char_filter(X['raw'],hp['max_features']), maxlen=hp['maxlen'], truncating='post')  # Before padding, remove characters beyond hp['max_features'] from X['raw']:
 
         if any(f in list(it.chain.from_iterable([t.split('@')[-1].split('_') for t in self.classifier_types]))
                for f in ['charfreq', 'augmented']):

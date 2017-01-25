@@ -554,7 +554,7 @@ if __name__ == "__main__":
 
 
     #******* setting up NNetModel:
-    nnet_model = NNetModel(['cnn@charseq'],'cnn@charseq model', addHeaders=False)
+    nnet_model = NNetModel(['cnn@charseq'],'cnn@charseq model', addHeaders=True)
     # nnet_model = NNetModel(['rf@charfreq'], 'rf@charfreq model', addHeaders=False)
     nnet_model.define_training_data(train_sources)
     # Train the nnet_model:
