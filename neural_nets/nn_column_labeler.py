@@ -462,12 +462,13 @@ class NN_Column_Labeler(object):
 
         return y_pred, label_pred
 
-    def __init__(self, classifier_types, all_cols, split_by, test_frac, addHeaders):
+    def __init__(self, classifier_types, all_cols, split_by, test_frac, add_headers, p_header):
         """Arguments specify which classifier types to use, and a list of columns to use for training and testing
-        addHeaders argument specifies whether to add column headers in front of the bagged samples from columns"""
+        add_headers argument specifies whether to add column headers in front of the bagged samples from columns"""
         self.classifier_types = classifier_types
         self.all_cols = all_cols
-        self.addHeaders = addHeaders
+        self.add_headers = add_headers
+        self.p_header = p_header
 
         self.X_train = {}
         self.X_valid = {}
@@ -510,11 +511,11 @@ class NN_Column_Labeler(object):
 
         # Sample from self.train_cols and self.test_cols, mapping labels to label indices:
         (self.X_train['raw'], self.y_train), (_, _), _, _, _ = museum_reader.to_ml(  # sample from self.train_cols
-            self.train_cols, self.labels, hp['subsize'], hp['n_samples'], 1.0, addHeader=self.addHeaders, verbose=False
+            self.train_cols, self.labels, hp['subsize'], hp['n_samples'], 1.0, add_header=self.add_headers, p_header=self.p_header, verbose=False
         )
 
         (self.X_test['raw'], self.y_test), (_, _), _, _, _ = museum_reader.to_ml(  # sample from self.test_cols
-            self.test_cols, self.labels, hp['subsize'], hp['n_samples'], 1.0, addHeader=self.addHeaders, verbose=False
+            self.test_cols, self.labels, hp['subsize'], hp['n_samples'], 1.0, add_header=self.add_headers, p_header=1, verbose=False
         )
 
         # Further split (X_train, y_train) into (X_train, y_train) and (X_valid, y_valid):
@@ -661,7 +662,7 @@ class NN_Column_Labeler(object):
             if verbose: print("Predicting label probabilities for column", i + 1, "out of", len(cols))
             X_query = {}
             (X_query['raw'], _), (_, _), _, _, _ = museum_reader.to_ml(  # sample from col
-                [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, addHeader=self.addHeaders, verbose=False
+                [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, add_header=self.add_headers, p_header=1, verbose=False
             )
 
             # Prepare input for classifiers:
@@ -687,7 +688,7 @@ class NN_Column_Labeler(object):
             if verbose: print("Predicting label for column", i + 1, "out of", len(cols))
             X_query = {}
             (X_query['raw'], _), (_, _), _, _, _ = museum_reader.to_ml(  # sample from col
-                [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, addHeader=self.addHeaders, verbose=False
+                [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, add_header=self.add_headers, p_header=1, verbose=False
             )
 
             # Prepare input for classifiers:
