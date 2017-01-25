@@ -23,11 +23,14 @@ class Column(object):
         self.title = title         # semantic label of the column (short title)
         self.lines = lines         # lines in the column
 
-    def bagging(self, size=200, n=100):
+    def bagging(self, size=200, n=100, addHeader=False):
         """
             Sample with replacement (generate n samples of [size] lines each)
+            withHeader tells whether to put the column name (header) in front of the bagging samples
         """
         X = [np.random.choice(self.lines, size) for x in range(n)]
+        if addHeader:  # add column name in front of each element of X:
+            X = [np.append(self.colname, x) for x in X]
         y = [self.title for _ in range(n)]
         return X, y
 
@@ -113,7 +116,7 @@ class Reader(object):
                     all_cols += cols
         return files, all_cols
 
-    def to_ml(self, all_cols, labels=None, size=20, n=100, train_frac=0.5, verbose=True):
+    def to_ml(self, all_cols, labels=None, size=20, n=100, train_frac=0.5, addHeader=False, verbose=True):
         """
         Convert a list of columns ('Column' objects) into an X, y matrix
         
@@ -127,7 +130,7 @@ class Reader(object):
             X = []
             y = []
             for col in cols:
-                X_single, y_single = col.bagging(size, n)
+                X_single, y_single = col.bagging(size, n, addHeader)
                 for x_s, y_s in zip(X_single, y_single):
                     flattened = [ord(char) for char in '\n'.join(x_s)]   # replace chars with their unicode indices
                     X.append(flattened)

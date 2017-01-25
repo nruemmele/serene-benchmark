@@ -415,11 +415,12 @@ class NNetModel(SemanticTyper):
         return source_cols
 
 
-    def __init__(self, classifier_types, description):
+    def __init__(self, classifier_types, description, addHeaders=False):
         classifier_type = classifier_types[0]
         logging.info("Initializing NNetModel with {} classifier...".format(classifier_type))
         super().__init__("NNetModel", description=description)
         self.classifier_type = classifier_type
+        self.addHeaders = addHeaders
         self.labeler = None
         self.train_cols = None   # placeholder for a list of training cols (Column objects)
 
@@ -446,7 +447,7 @@ class NNetModel(SemanticTyper):
     def train(self):
         """ Create an instance of NN_Column_Labeler, perform bagging, feature preparation, and training of the underlying classifier(s) """
         start = time.time()
-        self.labeler = NN_Column_Labeler([self.classifier_type], self.train_cols, split_by=hp['split_by'], test_frac=0)   # test_frac = 0 means no further splitting into train and test sets, i.e., use train_cols as all_cols
+        self.labeler = NN_Column_Labeler([self.classifier_type], self.train_cols, split_by=hp['split_by'], test_frac=0, addHeaders=self.addHeaders)   # test_frac = 0 means no further splitting into train and test sets, i.e., use train_cols as all_cols
         # TODO: rewrite NN_Column_Labeler to be initialized with train_cols only, instead of all_cols followed by internal splitting of all_cols into train, valid, ant test sets of columns
 
         # Train self.labeler:
@@ -553,14 +554,14 @@ if __name__ == "__main__":
 
 
     #******* setting up NNetModel:
-    nnet_model = NNetModel(['cnn@charseq'],'cnn@charseq model')
-    # nnet_model = NNetModel(['rf@charfreq'], 'rf@charfreq model')
+    nnet_model = NNetModel(['cnn@charseq'],'cnn@charseq model', addHeaders=False)
+    # nnet_model = NNetModel(['rf@charfreq'], 'rf@charfreq model', addHeaders=False)
     nnet_model.define_training_data(train_sources)
     # Train the nnet_model:
     nnet_model.train()
 
     predictions = nnet_model.predict(test_source)
-    print("PREDICTiONS:", predictions)
+    # print("PREDICTiONS:", predictions)
     # print('True labels:')
     # print(predictions['user_label'])
     # print('Predicted labels:')
