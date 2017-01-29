@@ -6,3 +6,8 @@ __pycache__
 config/
 dataint/
 serene_python_client.egg-info/
+benchmark/data/backup/
+benchmark/data/write_columnmap_True/
+benchmark/data/write_csv_datasets_True/
+benchmark/data/t2k_gold/
+*.log

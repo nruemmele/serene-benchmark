@@ -42,10 +42,13 @@ benchmark = {
     "weather": ['w1.txt', 'w3.txt', 'w2.txt', 'w4.txt']
 }
 
+
 class SemanticTyper(object):
     """
     Fixed for 4 domains for now
     """
+    data_dir = os.path.join("data", "write_csv_datasets_True")
+    label_dir = os.path.join("data", "write_columnmap_True")
 
     allowed_sources = []
     for sources in benchmark.values():
@@ -53,11 +56,12 @@ class SemanticTyper(object):
         allowed_sources += sources
 
     metrics = ['categorical_accuracy', 'fmeasure', 'MRR']  # list of performance metrics to compare column labelers with
-    metrics_average = 'macro'  # 'macro', 'micro', or 'weighted'
+    metrics_average = 'micro'  # 'macro', 'micro', or 'weighted'
 
-    def __init__(self, model_type, description=""):
+    def __init__(self, model_type, description="", debug_csv=None):
         self.model_type = model_type
         self.description = description
+        self.debug_csv = debug_csv
 
     def reset(self):
         pass
@@ -84,18 +88,21 @@ class SemanticTyper(object):
         y_true = predicted_df["user_label"].as_matrix()
         y_pred = predicted_df["label"].as_matrix()
 
+        logging.debug("y_true: {}".format(y_true))
+        logging.debug("y_pred: {}".format(y_pred))
+
         scores_cols = [col for col in predicted_df.columns if col.startswith("scores_")]
-        print("scores_cols: {}".format(scores_cols))
+        logging.debug("scores_cols: {}".format(scores_cols))
 
         y_pred_scores = predicted_df[scores_cols].copy().fillna(value=0).as_matrix()
-        print("predicted scores: {}".format(y_pred_scores))
+        logging.debug("predicted scores: {}".format(y_pred_scores))
         y_true_scores = []
         for lab in predicted_df["user_label"]:
             trues = [0 for _ in range(len(scores_cols))]
             if "scores_"+lab in scores_cols:
                 trues[scores_cols.index("scores_"+lab)] = 1
             y_true_scores.append(trues)
-        print("true scores: {}".format(y_true_scores))
+        logging.debug("true scores: {}".format(y_true_scores))
         y_true_scores = np.array(y_true_scores)
 
         performance = {"model": self.model_type, "description": self.description}
@@ -105,7 +112,12 @@ class SemanticTyper(object):
                                                                                  y_pred)  # np.mean(y_pred == y_true)
         if 'fmeasure' in self.metrics:
             logging.info("Calculating fmeasure for {}".format(self))
-            performance['fmeasure'] = sklearn.metrics.f1_score(y_true, y_pred, average=self.metrics_average)
+            if len(y_true) == 2:
+                performance['fmeasure'] = sklearn.metrics.f1_score(y_true, y_pred,
+                                                                   average=self.metrics_average,
+                                                                   pos_label=y_true[0])
+            else:
+                performance['fmeasure'] = sklearn.metrics.f1_score(y_true, y_pred, average=self.metrics_average)
         if 'MRR' in self.metrics:
             logging.info("Calculating MRR for {}".format(self))
             performance['MRR'] = sklearn.metrics.label_ranking_average_precision_score(y_true_scores, y_pred_scores)
@@ -124,7 +136,7 @@ class DINTModel(SemanticTyper):
     """
     Wrapper for DINT schema matcher.
     """
-    def __init__(self, schema_matcher, feature_config, resampling_strategy, description):
+    def __init__(self, schema_matcher, feature_config, resampling_strategy, description, debug_csv=None):
         """
         Initializes DINT model with the specified feature configuration and resampling strategy.
         The model gets created at schema_matcher server.
@@ -138,7 +150,7 @@ class DINTModel(SemanticTyper):
             logging.error("DINTModel init: SchemaMatcher instance required.")
             raise InternalError("DINTModel init", "SchemaMatcher instance required")
 
-        super().__init__("DINTModel", description=description)
+        super().__init__("DINTModel", description=description, debug_csv=debug_csv)
 
         self.server = schema_matcher
         self.feature_config = feature_config
@@ -155,8 +167,8 @@ class DINTModel(SemanticTyper):
         logging.info("Resetting DINTModel.")
         if self.classifier:
             self.server.remove_model(self.classifier)
-            # for ds in self.server.datasets:
-            #     self.server.remove_dataset(ds)
+            for ds in self.server.datasets:
+                self.server.remove_dataset(ds)
         # TODO: remove datasets?
         self.classifier = None
 
@@ -209,25 +221,9 @@ class DINTModel(SemanticTyper):
                 logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
                 continue
             # upload source to the schema matcher server
-            try:
-                matcher_dataset = self.server.create_dataset(file_path=os.path.join("data", "sources", source+".csv"),
-                                                             description="traindata",
-                                                             type_map={})
-            except:
-                logging.warning("Ugly fix for tiny dataset upload...")
-                # FIXME: InMemoryFileUpload fails!!!
-                # ugly fix for this problem: we add empty rows to the file
-                filepath = os.path.join("data", "sources", source+".csv")
-                with open(filepath) as f:
-                    headers = f.readline()
-                    num = len(headers.split(","))
-                empty_line = ','.join(["" for _ in range(num)])
-                empty_lines = '\n'.join([empty_line for _ in range(10000)])
-                with open(filepath, 'a') as f:
-                    f.write(empty_lines)
-                matcher_dataset = self.server.create_dataset(file_path=os.path.join("data", "sources", source + ".csv"),
-                                                             description="traindata",
-                                                             type_map={})
+            matcher_dataset = self.server.create_dataset(file_path=os.path.join(self.data_dir, source+".csv"),
+                                                         description="traindata",
+                                                         type_map={})
 
             # construct dictionary of labels for the uploaded dataset
             try:
@@ -235,7 +231,7 @@ class DINTModel(SemanticTyper):
             except:
                 # in case train_labels are not provided, we take default labels from the benchmark
                 label_dict.update(self._construct_labelData(matcher_dataset,
-                                                      filepath=os.path.join("data", "labels", source+".columnmap.txt"),
+                                                      filepath=os.path.join(self.label_dir, source+".columnmap.txt"),
                                                       header_column="column_name",
                                                       header_label="semantic_type"))
             logging.debug("DINT model label_dict for source {} updated: {}".format(source, label_dict))
@@ -258,7 +254,7 @@ class DINTModel(SemanticTyper):
         logging.info("Training DINTModel.")
         start = time.time()
         tr = self.classifier.train()
-        return  time.time() - start
+        return time.time() - start
 
     def predict(self, source):
         """
@@ -272,7 +268,7 @@ class DINTModel(SemanticTyper):
             logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
             return None
         # upload source to the schema matcher server
-        matcher_dataset = self.server.create_dataset(file_path=os.path.join("data", "sources", source + ".csv"),
+        matcher_dataset = self.server.create_dataset(file_path=os.path.join(self.data_dir, source + ".csv"),
                                                      description="testdata",
                                                      type_map={})
         start = time.time()
@@ -284,7 +280,7 @@ class DINTModel(SemanticTyper):
         predict_df["model"] = self.model_type
         predict_df["model_description"] = self.description
         label_dict = self._construct_labelData(matcher_dataset,
-                                             filepath=os.path.join("data", "labels", source + ".columnmap.txt"),
+                                             filepath=os.path.join(self.label_dir, source + ".columnmap.txt"),
                                              header_column="column_name",
                                              header_label="semantic_type")
         predict_df["user_label"] = predict_df["column_id"].apply(
@@ -297,13 +293,13 @@ class KarmaDSLModel(SemanticTyper):
     Wrapper for Karma DSL semantic labeller.
     KarmaDSL server can hold only one model.
     """
-    def __init__(self, karma_session, description):
+    def __init__(self, karma_session, description, debug_csv=None):
         logging.info("Initializing KarmaDSL model.")
         if not (type(karma_session) is KarmaSession):
             logging.error("KarmaDSLModel init: KarmaSession instance required.")
             raise InternalError("KarmaDSLModel init", "KarmaSession instance required")
 
-        super().__init__("KarmaDSL", description=description)
+        super().__init__("KarmaDSL", description=description,debug_csv=debug_csv)
         self.karma_session = karma_session
         self.karma_session.reset_semantic_labeler() # we immediately reset their semantic labeller
         self.folder_names = None
@@ -355,7 +351,7 @@ class KarmaDSLModel(SemanticTyper):
         print("KarmaDSL prediction finished: {}".format(predicted["running_time"]))
         df = []
         for val in predicted["predictions"]:
-            correct_lab = val["correct_label"] if val["correct_label"] else 'unknown'
+            correct_lab = val["correct_label"] if val["correct_label"] is not None else 'unknown'
             row = {"column_name": val["column_name"],
                    "source_name": source,
                    "user_label": correct_lab,
@@ -434,6 +430,7 @@ if __name__ == "__main__":
     predicted_df = dsl_model.predict(test_source[0])
     print(predicted_df)
     print(dsl_model.evaluate(predicted_df))
+
 
 
 
