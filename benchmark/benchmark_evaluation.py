@@ -69,6 +69,7 @@ class Experiment(object):
             run_time = model.train()
             for test_source in self.test_sources:
                 predicted_df1 = model.predict(test_source)
+                logging.info("Experiment evaulate: Prediction done.")
                 predicted_df1["experiment"] = self.experiment_type
                 predicted_df1["experiment_description"] = self.description
                 predicted_df1["train_run_time"] = run_time
@@ -87,6 +88,7 @@ class Experiment(object):
             return predicted_df
         except Exception as e:
             logging.warning("Model evaluation failed: {}".format(e))
+            logging.warning("Model evaluation failed: {}".format(e.args))
             return None
 
 

@@ -379,23 +379,30 @@ class NNetModel(SemanticTyper):
         Originally the labeller can hold multiple classifier models (e.g., 'cnn@charseq', 'mlp@charfreq', etc.,)
         but here we assume 1 model per instance of NNetModel, for the purpose of benchmarking.
 
-        If only one classifier type is given in the 'classifier_types' argument (as a list, e.g., classifier_types=['cnn@charseq']), this works for the following classifier types only:
+        If only one classifier type is given in the 'classifier_types' argument
+        (as a list, e.g., classifier_types=['cnn@charseq']),
+        this works for the following classifier types only:
         'cnn@charseq', 'mlp@charseq' (poor performance!), 'rf@charseq'; 'mlp@charfreq', 'rf@charfreq'
     """
     def _read(self, source, label_source=None):
-        """ Read columns from source, and return them as a list of Column objects (as defined in neural_nets.museum_data_reader)"""
-        filename = os.path.join("data", "sources", source+".csv")
+        """
+        Read columns from source, and return them as a list of Column objects
+        (as defined in neural_nets.museum_data_reader)
+        """
+        filename = os.path.join(self.data_dir, source+".csv")
         if label_source is None:
-            label_filename = os.path.join("data", "labels", source + ".columnmap.txt")
+            label_filename = os.path.join(self.label_dir, source + ".columnmap.txt")
         else:
-            label_filename = os.path.join("data", "labels", label_source)
+            label_filename = os.path.join(self.label_dir, label_source)
+        logging.debug("Reading source for NNet: {}".format(filename))
         df = pd.read_csv(filename, dtype=str)  # read the data source as a DataFrame
         # labels = pd.read_csv(label_filename)   # read the semantic labels of columns in df
 
         labels_frame = pd.read_csv(label_filename, na_values=[""], dtype={'column_name': 'str'})
         # dictionary (column_name, class_label)
-        labels = labels_frame[['column_name', 'semantic_type']].dropna().set_index('column_name')['semantic_type'].to_dict()
-        # logging.info("labels:{}".format(labels))
+        labels = labels_frame[['column_name', 'semantic_type']].dropna().set_index(
+            'column_name')['semantic_type'].to_dict()
+        logging.debug("Labels read for NNet.")
 
         source_cols = []
         for c in df.columns:
@@ -410,10 +417,10 @@ class NNetModel(SemanticTyper):
         return source_cols
 
 
-    def __init__(self, classifier_types, description, add_headers=False, p_header=0):
+    def __init__(self, classifier_types, description, add_headers=False, p_header=0, debug_csv=None):
         classifier_type = classifier_types[0]
         logging.info("Initializing NNetModel with {} classifier...".format(classifier_type))
-        super().__init__("NNetModel", description=description)
+        super().__init__("NNetModel", description=description, debug_csv=debug_csv)
         self.classifier_type = classifier_type
         self.add_headers = add_headers
         self.p_header = p_header
@@ -442,6 +449,7 @@ class NNetModel(SemanticTyper):
 
     def train(self):
         """ Create an instance of NN_Column_Labeler, perform bagging, feature preparation, and training of the underlying classifier(s) """
+        logging.info("NNetModel training starts...")
         start = time.time()
         self.labeler = NN_Column_Labeler([self.classifier_type], self.train_cols, split_by=hp['split_by'], test_frac=0, add_headers=self.add_headers, p_header=self.p_header)   # test_frac = 0 means no further splitting into train and test sets, i.e., use train_cols as all_cols
         # TODO: rewrite NN_Column_Labeler to be initialized with train_cols only, instead of all_cols followed by internal splitting of all_cols into train, valid, ant test sets of columns
@@ -453,28 +461,27 @@ class NNetModel(SemanticTyper):
 
     def predict(self, source):
         """ Predict labels for all columns in source """
-
+        if source not in self.allowed_sources:
+            logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
+            return None
         # First, we need to extract query Column objects from source:
-        query_cols = []
-        for s in source:
-            query_cols += self._read(s)
+        query_cols = self._read(source)
         logging.info("NNetModel: Predicting for {} columns from {} sources".format(len(query_cols), len(source)))
 
-        true_labels = []
-        for c in query_cols:
-            true_labels.append(c.title)
+        true_labels = [c.title for c in query_cols]
+        logging.debug("NNetModel predict: True labels set.")
 
         # Then, pass these query cols to self.labeler.predict as
         start = time.time()
         y_pred_proba = self.labeler.predict_proba(query_cols)
+        logging.debug("NNetModel predict: Class probabilities calculated.")
 
         # predictions = []
-        predictions_proba = []
-        for y_proba in y_pred_proba:
-            predictions_proba.append(y_proba[self.classifier_type])
+        predictions_proba = [y_proba[self.classifier_type] for y_proba in y_pred_proba]
 
         time_elapsed = time.time() - start
         # Finally, convert predictions to the pd dataframe in the required format:
+        logging.info("NNetModel predict: Converting to dataframe...")
         predictions_proba_dict = []
         for i, c in enumerate(query_cols):
             row = {"column_name": c.colname,
@@ -488,7 +495,8 @@ class NNetModel(SemanticTyper):
             label = "unknown"
             for j, score in enumerate(preds):
                 class_name = self.labeler.inverted_lookup[j]
-                row["scores_"+class_name] = score
+                logging.debug("     NNetModel predict: class_name found {}".format(class_name))
+                row["scores_"+str(class_name)] = score
                 if score > max:
                     max = score
                     label = class_name
@@ -496,9 +504,7 @@ class NNetModel(SemanticTyper):
             row["confidence"] = max
             row["running_time"] = time_elapsed
             predictions_proba_dict.append(row)
-
-
-
+        logging.info("NNetModel predict: success.")
         # Return the predictions df:
         return pd.DataFrame(predictions_proba_dict)
 
@@ -516,6 +522,7 @@ if __name__ == "__main__":
     test_source = [benchmark["soccer"][-1]]
     print("# sources in train: %d" % len(train_sources))
     print("# sources in test: %d" % len(test_source))
+    print("test source: ", test_source)
 
     # #******* setting up DINTModel
     # dm = SchemaMatcher(host="localhost", port=8080)
@@ -553,7 +560,7 @@ if __name__ == "__main__":
     # Train the nnet_model:
     nnet_model.train()
 
-    predictions = nnet_model.predict(test_source)
+    predictions = nnet_model.predict(test_source[0])
     # print("PREDICTiONS:", predictions)
     # print('True labels:')
     # print(predictions['user_label'])
