@@ -1,18 +1,11 @@
 
 import pandas as pd
-from pandas import ExcelWriter
 import itertools as it
-import os
-import os.path
 import numpy as np
 import string
 import random
 import copy
-import re
-import shutil
-
-import subprocess
-from subprocess import STDOUT, PIPE
+import logging
 
 from sklearn.ensemble import RandomForestClassifier
 import sklearn.metrics
@@ -182,11 +175,13 @@ class CNN(object):
 
     def train(self, X_train, y_train, X_valid, y_valid):
         print('Training the cnn model...')
+        logging.debug('nn_column_labeler: Training the cnn model...')
         self.model.fit(X_train, y_train,
                        batch_size=self.hp['batch_size'],
                        nb_epoch=self.hp['nb_epoch'],
                        validation_data=[X_valid, y_valid], verbose=VERBOSE)
         print('Training is complete.')
+        logging.debug('nn_column_labeler: Training is complete.')
 
     def predict(self, X):
         return self.model.predict(X)
@@ -267,13 +262,17 @@ class MLP(object):
                                                  start=1):
                 activation = self.hp['activation']
                 print('adding layer', i, 'with', units, 'units, dropout =', dropout, ', and', activation, 'activation')
+                logging.debug('     adding layer {} with {} units, dropout={} and activation={}'
+                              .format(i, units, dropout, activation))
                 self.model.add(Dense(units, input_shape=(input_dim,)))
                 self.model.add(Activation(activation))
                 self.model.add(Dropout(dropout))
             print('adding the final layer on top with', self.hp['final_layer_act'], 'activation...')
+            logging.debug('     adding the final layer on top with {} activation...'.format(self.hp['final_layer_act']))
             self.model.add(Dense(n_classes, activation=self.hp['final_layer_act']))
 
             print('Compiling the model...')
+            logging.debug('Compiling the model...')
             self.model.compile(
                 optimizer=self.hp['optimizer'],
                 loss=self.hp['loss'],
@@ -282,6 +281,7 @@ class MLP(object):
         else:
             '''pretraining+finetuning'''
             print('Pretraining not yet implemented')
+            logging.warning('Pretraining not yet implemented')
 
     def summary(self):
         print("\nModel structure:")
@@ -290,11 +290,13 @@ class MLP(object):
 
     def train(self, X_train, y_train, X_valid, y_valid):
         print('Training the mlp model...')
+        logging.debug('Training the mlp model...')
         self.model.fit(X_train, y_train,
                        batch_size=self.hp['batch_size'],
                        nb_epoch=self.hp['finetuning_epochs'],
                        validation_data=[X_valid, y_valid], verbose=VERBOSE)
         print('Training is complete.')
+        logging.debug('Training is complete.')
 
     def predict(self, X):
         return self.model.predict(X)
@@ -408,14 +410,16 @@ class NN_Column_Labeler(object):
 
         if any(f in list(it.chain.from_iterable([t.split('@')[-1].split('_') for t in self.classifier_types]))
                for f in ['charseq', 'augmented']):
-            if verbose: print("Padding character sequences in X" + suffix + "[\'raw\'] to maxlen =", hp['maxlen'],
+            if verbose:
+                print("Padding character sequences in X" + suffix + "[\'raw\'] to maxlen =", hp['maxlen'],
                               "...")
             X['charseq'] = sequence.pad_sequences(self._char_filter(X['raw'],hp['max_features']), maxlen=hp['maxlen'], truncating='post')  # Before padding, remove characters beyond hp['max_features'] from X['raw']:
 
         if any(f in list(it.chain.from_iterable([t.split('@')[-1].split('_') for t in self.classifier_types]))
                for f in ['charfreq', 'augmented']):
             # prepare the character frequencies data for the models that take character frequencies as input
-            if verbose: print("Calculating character frequencies in X" + suffix + "[\'raw\'] sequences...")
+            if verbose:
+                print("Calculating character frequencies in X" + suffix + "[\'raw\'] sequences...")
             X['charfreq'] = char_freq(X['raw'], freq=True, lowercase=True, entropy=hp['entropy'])
 
         if any(f in [t.split('@')[-1] for t in self.classifier_types]
@@ -481,6 +485,7 @@ class NN_Column_Labeler(object):
 
         # Randomly split all_cols on split_by attribute into train and test cols, and sample from train and test cols:
         print('Randomly splitting columns on', split_by, '...')
+        logging.debug('Randomly splitting columns on {}'.format(split_by))
         attributes = list(np.unique([c.__dict__[split_by] for c in all_cols]))
         attributes_test = random.sample(attributes, int(
             np.ceil(len(attributes) * test_frac)))  # leave test_fract (randomly selected) data sources out for testing
@@ -491,7 +496,11 @@ class NN_Column_Labeler(object):
 
         print('\nTraining set:', len(attributes_train), 'unique attributes [', split_by, '],', len(self.train_cols),
               'columns')
+        logging.debug('Training set: {} unique attributes [{}], {} columns'
+                      .format(len(attributes_train), split_by, len(self.train_cols)))
         print('Test set:', len(attributes_test), 'unique attributes [', split_by, '],', len(self.test_cols), 'columns')
+        logging.debug('Test set: {} unique attributes [{}], {} columns'
+                      .format(len(attributes_test), split_by, len(self.test_cols)))
 
         labels_train = list(OrderedDict.fromkeys(x.title for x in self.train_cols))
 
@@ -501,6 +510,7 @@ class NN_Column_Labeler(object):
             self.labels = np.append(self.labels, 'unknown')
             print('Updated semantic labels:')
             print(self.labels)
+        logging.debug("Semantic labels: {}".format(self.labels))
         self.label_lookup = {k: v for v, k in enumerate(self.labels)}
         self.inverted_lookup = {v: k for k, v in self.label_lookup.items()}
 
@@ -521,18 +531,22 @@ class NN_Column_Labeler(object):
         # Further split (X_train, y_train) into (X_train, y_train) and (X_valid, y_valid):
         (self.X_train['raw'], self.y_train), (self.X_valid['raw'], self.y_valid) = train_validation_split(
             self.X_train['raw'], self.y_train, hp['samples_validation_frac'])
-        print('len(X_train[\'raw\']):', len(self.X_train['raw']))
-        print('len(X_valid[\'raw\']):', len(self.X_valid['raw']))
-        print('len(X_test[\'raw\']):', len(self.X_test['raw']))
 
-        print('Semantic labels in training set:  ', np.unique(self.y_train))
-        print('Semantic labels in validation set:', np.unique(self.y_valid))
-        print('Semantic labels in testing set:   ', np.unique(self.y_test))
+        logging.debug('len(X_train[\'raw\']): {}'.format(len(self.X_train['raw'])))
+        logging.debug('len(X_valid[\'raw\']): {}'.format(len(self.X_valid['raw'])))
+        logging.debug('len(X_test[\'raw\']): {}'.format(len(self.X_test['raw'])))
+
+        logging.debug('Semantic labels in training set: {}'.format( np.unique(self.y_train)))
+        logging.debug('Semantic labels in validation set: {}'.format(np.unique(self.y_valid)))
+        logging.debug('Semantic labels in testing set: {}'.format(np.unique(self.y_test)))
         if not set(self.y_train) == set(self.y_valid):
             print(
                 "WARNING: validation set does not have same set of semantic labels as training set! This might cause ensemble models to perform poorly.")
+            logging.warning("WARNING: validation set does not have same set of "
+                            "semantic labels as training set! This might cause ensemble models to perform poorly.")
 
-        print('\n\nGenerating inputs for classifiers...')
+
+        logging.debug('Generating inputs for classifiers...')
         self._generate_features(self.X_train, '_train')
         self._generate_features(self.X_valid, '_valid')
         self._generate_features(self.X_test, '_test')
@@ -549,6 +563,7 @@ class NN_Column_Labeler(object):
         for t in self.classifier_types:
             print('\n' + '-' * 80)
             print('\nTraining a', t, 'classifier...')
+            logging.debug('Training a {} classifier...'.format(t))
 
             if t.split('@')[0] == 'cnn':
                 self.classifiers[t] = CNN({**hp, **hp_cnn})
@@ -562,24 +577,34 @@ class NN_Column_Labeler(object):
                 if evaluate_after_training:
                     if len(self.X_train[t.split('@')[-1]])>0:
                         print('Evaluating', t, 'on the training set...')
+                        logging.debug('Evaluating {} on the training set...'.format(t))
                         performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
                         print(' ' * 3 + 'loss:', performance[0])
+                        logging.debug('     loss: {}'.format(performance[0]))
                         for i, m in enumerate(self.classifiers[t].metrics, start=1):
                             print(' ' * 3 + m, ':', performance[i])
+                            logging.debug(' {}: {}'.format(m,performance[i]))
 
                     if len(self.X_valid[t.split('@')[-1]])>0:
                         print('\nEvaluating', t, 'on the validation set...')
+                        logging.debug('Evaluating {} on the validation set...'.format(t))
                         performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
                         print(' ' * 3 + 'loss:', performance[0])
+                        logging.debug('     loss: {}'.format(performance[0]))
                         for i, m in enumerate(self.classifiers[t].metrics, start=1):
                             print(' ' * 3 + m, ':', performance[i])
+                            logging.debug(' {}: {}'.format(m, performance[i]))
 
                     if len(self.X_test[t.split('@')[-1]])>0:
                         print('\nEvaluating', t, 'on the testing set...')
+                        logging.debug('Evaluating {} on the testing set...'.format(t))
                         performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
                         print(' ' * 3 + 'loss:', performance[0])
+                        logging.debug(' ' * 3 + 'loss:', performance[0])
+                        logging.debug('     loss: {}'.format(performance[0]))
                         for i, m in enumerate(self.classifiers[t].metrics, start=1):
                             print(' ' * 3 + m, ':', performance[i])
+                            logging.debug(' {}: {}'.format(m, performance[i]))
 
                 # Add 'charseq_embedded' and 'augmented' features:
                 if any(f in [t.split('@')[-1] for t in self.classifier_types] for f in ['charseq_embedded']):
@@ -610,15 +635,18 @@ class NN_Column_Labeler(object):
                 if evaluate_after_training:
                     oob_acc = self.classifiers[t].oob_score_
                     print('OOB accuracy = ', oob_acc)
+                    logging.debug('OOB accuracy = {}'.format(oob_acc))
 
                     if len(self.X_test[t.split('@')[-1]])>0:
                         y_pred = self.classifiers[t].predict(self.X_test[t.split('@')[-1]])
                         if 'categorical_accuracy' in metrics:
                             test_acc = sklearn.metrics.accuracy_score(self.y_test, y_pred)
                             print('Test accuracy = ', test_acc)
+                            logging.debug('Test accuracy = {}'.format(test_acc))
                         if 'fmeasure' in metrics:
                             test_fmeasure = sklearn.metrics.f1_score(self.y_test, y_pred, average=metrics_average)
                             print('Test fmeasure = ', test_fmeasure)
+                            logging.debug('Test fmeasure = {}'.format(test_fmeasure))
                         # if 'MRR' in metrics:
                         #     y_pred_proba = self.classifiers[t].predict_proba(self.X_test[t.split('@')[-1]])
                         #     test_mrr = sklearn.metrics.label_ranking_average_precision_score(self.y_test_binary, y_pred_proba)
@@ -635,13 +663,15 @@ class NN_Column_Labeler(object):
                 if evaluate_after_training:
                     if len(self.X_train[t.split('@')[-1]])>0:
                         print('Evaluating', t, 'on the training set...')
+                        logging.debug('Evaluating {} on the training set...'.format(t))
                         performance = self.classifiers[t].evaluate(self.X_train[t.split('@')[-1]], self.y_train_binary)
                         print(' ' * 3 + 'loss:', performance[0])
                         for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
                             print(' ' * 3 + m, ':', performance[i])
 
-                    if len(self.X_valid[t.split('@')[-1]])>0:
+                    if len(self.X_valid[t.split('@')[-1]]) > 0:
                         print('\nEvaluating', t, 'on the validation set...')
+                        logging.debug('Evaluating {} on the validation set...'.format(t))
                         performance = self.classifiers[t].evaluate(self.X_valid[t.split('@')[-1]], self.y_valid_binary)
                         print(' ' * 3 + 'loss:', performance[0])
                         for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
@@ -649,6 +679,7 @@ class NN_Column_Labeler(object):
 
                     if len(self.X_test[t.split('@')[-1]])>0:
                         print('\nEvaluating', t, 'on the testing set...')
+                        logging.debug('Evaluating {} on the testing set...'.format(t))
                         performance = self.classifiers[t].evaluate(self.X_test[t.split('@')[-1]], self.y_test_binary)
                         print(' ' * 3 + 'loss:', performance[0])
                         for i, m in enumerate(labeler.classifiers[t].metrics, start=1):
@@ -659,24 +690,35 @@ class NN_Column_Labeler(object):
         predictions = []
         for i, col in enumerate(cols):
             predictions.append({t: None for t in self.classifier_types})
-            if verbose: print("Predicting label probabilities for column", i + 1, "out of", len(cols))
+            if verbose:
+                print("Predicting label probabilities for column", i + 1, "out of", len(cols))
+            logging.debug("Predicting label probabilities for column {} out of {}".format(i + 1, len(cols)))
             X_query = {}
+            if col.title not in self.labels:
+                logging.debug("Adding test column label {}".format(col.title))
+                self.labels = np.append(self.labels, col.title)
             (X_query['raw'], _), (_, _), _, _, _ = museum_reader.to_ml(  # sample from col
-                [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, add_header=self.add_headers, p_header=1, verbose=False
-            )
+                [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, add_header=
+                self.add_headers, p_header=1, verbose=False)
 
             # Prepare input for classifiers:
             self._generate_features(X_query, '_query')  # after this, X_query should have feature matrix of samples
-            if verbose: print('Generated features of X_query:', X_query.keys())
+            if verbose:
+                print('Generated features of X_query:', X_query.keys())
+            logging.debug('Generated features of X_query: '.format(X_query.keys()))
             # Loop over self.classifiers:
             # For each classifier, predict hard label of col by argmax of mean soft label predictions of all rows in X_query
             for t, classifier in self.classifiers.items():
-                if verbose: print(" " * 3 + "using", t, "classifier...", end=" ")
+                if verbose:
+                    print(" " * 3 + "using", t, "classifier...", end=" ")
+                logging.debug("     using {} classifier...".format(t))
 
                 y_soft_pred = self._predict_soft(classifier, X_query[t.split('@')[-1]])
 
                 predictions[i][t] = y_soft_pred
-                if verbose: print("done")
+                if verbose:
+                    print("done")
+                logging.debug("predict_proba done.")
 
         return predictions
 
@@ -685,7 +727,9 @@ class NN_Column_Labeler(object):
         predictions = []
         for i, col in enumerate(cols):
             predictions.append({t: None for t in self.classifier_types})
-            if verbose: print("Predicting label for column", i + 1, "out of", len(cols))
+            if verbose:
+                print("Predicting label for column", i + 1, "out of", len(cols))
+            logging.debug("Predicting label for column {} out of {}".format(i + 1, len(cols)))
             X_query = {}
             (X_query['raw'], _), (_, _), _, _, _ = museum_reader.to_ml(  # sample from col
                 [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, add_header=self.add_headers, p_header=1, verbose=False
@@ -693,17 +737,22 @@ class NN_Column_Labeler(object):
 
             # Prepare input for classifiers:
             self._generate_features(X_query, '_query')  # after this, X_query should have feature matrix of samples
-            if verbose: print('Generated features of X_query:', X_query.keys())
+            if verbose:
+                print('Generated features of X_query:', X_query.keys())
+            logging.debug('Generated features of X_query: {}'.format(X_query.keys()))
             # Loop over self.classifiers:
             # For each classifier, predict hard label of col by argmax of mean soft label predictions of all rows in X_query
             for t, classifier in self.classifiers.items():
-                if verbose: print(" " * 3 + "using", t, "classifier...", end=" ")
+                if verbose:
+                    print(" " * 3 + "using", t, "classifier...", end=" ")
 
                 y_soft_pred = self._predict_soft(classifier, X_query[t.split('@')[-1]])
                 y_pred, label_pred = self._predict_hard(y_soft_pred)
 
                 predictions[i][t] = label_pred
-                if verbose: print("done. Predicted label:", label_pred)
+                if verbose:
+                    print("done. Predicted label:", label_pred)
+                logging.debug("done. Predicted label: {}".format(label_pred))
 
         return predictions
 

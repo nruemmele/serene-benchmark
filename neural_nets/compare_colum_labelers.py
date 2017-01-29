@@ -15,6 +15,7 @@ import random
 import copy
 import re
 import shutil
+import logging
 
 import subprocess
 from subprocess import STDOUT, PIPE
@@ -588,7 +589,9 @@ class Column_Labeler(object):
         predictions = []
         for i, col in enumerate(cols):
             predictions.append({t: None for t in self.classifier_types})
-            if verbose: print("Predicting label probabilities for column", i + 1, "out of", len(cols))
+            if verbose:
+                print("Predicting label probabilities for column", i + 1, "out of", len(cols))
+            logging.debug("Predicting label probabilities for column {} out of {}".format(i + 1, len(cols)))
             X_query = {}
             (X_query['raw'], _), (_, _), _, _, _ = museum_reader.to_ml(  # sample from col
                 [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, False
