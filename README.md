@@ -32,8 +32,8 @@ There are three different approaches for semantic typing which can be currently 
 
 For NNetModel, allowed model types are: 'cnn@charseq' (CNN on character sequences), 'mlp@charfreq' (MLP on character freqs + entropy), 'rf@charfreq' (RF on character freqs + entropy)
 
-DINT feature configuration is explained [here]{https://github.com/NICTA/serene/blob/master/matcher/dirstruct/semantic_type_classifier/repo/docs/features.txt},
-and resampling strategy [here]{https://github.com/NICTA/serene/blob/master/matcher/dirstruct/semantic_type_classifier/HOWTO}.
+DINT feature configuration is explained [here](https://github.com/NICTA/serene/blob/master/matcher/dirstruct/semantic_type_classifier/repo/docs/features.txt),
+and resampling strategy [here](https://github.com/NICTA/serene/blob/master/matcher/dirstruct/semantic_type_classifier/HOWTO).
 
 DSL has only one default model with no further configuration available to the user.
 
