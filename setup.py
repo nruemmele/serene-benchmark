@@ -32,7 +32,9 @@ install_requires = [
     'unittest2',
     'numpy',
     'coverage>=3.6,<4.99',
-    'requests'
+    'requests',
+    'keras',
+    'tensorflow'
 ]
 
 long_desc = """The Serene Benchmark is a framework to evaluate different schema matching and mapping approaches."""
