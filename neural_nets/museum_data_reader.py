@@ -23,7 +23,7 @@ class Column(object):
         self.title = title         # semantic label of the column (short title)
         self.lines = lines         # lines in the column
 
-    def bagging(self, size=200, n=100, add_header=False, p_header=0.0):
+    def bagging(self, size=200, n=100, add_header=False, p_header=0.):
         """
             Sample with replacement (generate n samples of [size] lines each)
             withHeader tells whether to put the column name (header) in front of the bagging samples
