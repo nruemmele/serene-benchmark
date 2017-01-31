@@ -8,22 +8,15 @@ Evaluation will be based on this abstract model.
 import logging
 import os
 
-from benchmark.semantic_typer import KarmaDSLModel, DINTModel, NNetModel, SemanticTyper
-from serene.core import SchemaMatcher
-from serene.exceptions import InternalError
-from karmaDSL import KarmaSession
-import time
 import pandas as pd
-import numpy as np
-import sklearn.metrics
 
 
 class Experiment(object):
     """
 
     """
-    # domains = ["museum", "weather", "soccer", "dbpedia"]
-    domains = ["museum"]
+    domains = ["museum", "weather", "soccer", "dbpedia"]
+    # domains = ["museum"]
     benchmark = {
         "soccer": ['bundesliga-2015-2016-rosters.csv', 'world_cup_2010_squads.csv',
                    'fifa-soccer-12-ultimate-team-data-player-database.csv', 'world_cup_2014_squads.csv',
@@ -76,20 +69,26 @@ class Experiment(object):
             run_time = model.train()
             for test_source in self.test_sources:
                 predicted_df1 = model.predict(test_source)
+                logging.info("Experiment evaulate: Prediction done.")
                 predicted_df1["experiment"] = self.experiment_type
                 predicted_df1["experiment_description"] = self.description
                 predicted_df1["train_run_time"] = run_time
                 frames.append(predicted_df1)
                 if self.debug_csv:
-                    if os.path.exists(self.debug_csv):
-                        predicted_df1.to_csv(self.debug_csv, index=False, header=False, mode="a")
+                    if model.debug_csv:
+                        debug_csv = model.debug_csv
                     else:
-                        predicted_df1.to_csv(self.debug_csv, index=False, header=True, mode="w+")
+                        debug_csv = self.debug_csv
+                    if os.path.exists(debug_csv):
+                        predicted_df1.to_csv(debug_csv, index=False, header=False, mode="a")
+                    else:
+                        predicted_df1.to_csv(debug_csv, index=False, header=True, mode="w+")
 
             predicted_df = pd.concat(frames, ignore_index=True)
             return predicted_df
         except Exception as e:
             logging.warning("Model evaluation failed: {}".format(e))
+            logging.warning("Model evaluation failed: {}".format(e.args))
             return None
 
 
@@ -103,14 +102,14 @@ class Experiment(object):
         logging.info("Leave one out experiment")
         performance_frames = []
         for domain in self.domains:
+            print("Working on domain: {}".format(domain))
             logging.info("Working on domain: {}".format(domain))
             for model in self.models:
                 logging.info("--> evaluating model: {}".format(model))
                 frames = []
                 for idx, source in enumerate(self.benchmark[domain]):
-                    # for debugging purposes
-                    # if idx > 2:
-                    #     break
+                    print("----> test source: {}, {}".format(idx, source))
+
                     logging.info("----> test source: {}".format(source))
                     self.train_sources = self.benchmark[domain][:idx] + self.benchmark[domain][idx+1:]
                     self.test_sources = [source]
@@ -164,44 +163,3 @@ class Experiment(object):
         else:
             logging.warning("Unsupported experiment type!!!")
             return False
-
-
-
-
-if __name__ == "__main__":
-
-    # setting up the logging
-    log_file = 'benchmark.log'
-    logging.basicConfig(filename=os.path.join('data', log_file),
-                        level=logging.DEBUG, filemode='w+',
-                        format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
-
-
-    #******* setting up DINTModel
-    dm = SchemaMatcher(host="localhost", port=8080)
-    # dictionary with features
-    feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals"],
-                "activeFeatureGroups": ["stats-of-text-length", "prop-instances-per-class-in-knearestneighbours"],
-                "featureExtractorParams": [
-                    {"name": "prop-instances-per-class-in-knearestneighbours", "num-neighbours": 5}]
-                }
-    # resampling strategy
-    resampling_strategy = "ResampleToMean"
-    dint_model = DINTModel(dm, feature_config, resampling_strategy, "DINTModel with ResampleToMean")
-
-    # ******** setting up KarmaDSL model
-    # dsl = KarmaSession(host="localhost", port=8000)
-    # dsl_model = KarmaDSLModel(dsl, "default KarmaDSL model")
-
-    # models for experiments
-    # models = [dint_model, dsl_model]
-    models = [dint_model]
-
-    loo_experiment = Experiment(models,
-                                experiment_type="leave_one_out",
-                                description="plain loo",
-                                result_csv=os.path.join('data', "performance.csv"),
-                                debug_csv=os.path.join("data","debug.csv"))
-
-    loo_experiment.run()
-
