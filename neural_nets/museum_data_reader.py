@@ -134,7 +134,7 @@ class Reader(object):
             for col in cols:
                 X_single, y_single = col.bagging(size, n, add_header, p_header)
                 for x_s, y_s in zip(X_single, y_single):
-                    flattened = [ord(char) for char in '\n'.join(x_s)]   # replace chars with their unicode indices
+                    flattened = [ord(char) for char in '\n'.join(x_s)]   # concatenate elements of x_s (column lines) into one string, and replace chars with their unicode indices
                     X.append(flattened)
                     y.append(label_lookup[y_s])
             return X, y

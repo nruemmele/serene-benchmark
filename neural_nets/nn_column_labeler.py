@@ -331,11 +331,8 @@ def char_freq(X, freq=True, lowercase=True, entropy=True):
         entr = 0
         max_entr = -np.log2(1. / len(all_chars))  # maximum entropy, in bits per character, for a text made of all_chars
         if entropy:
-            for x in string.printable:
-                if freq:
-                    p_x = char_dic[x]
-                else:
-                    p_x = float(char_dic[x]) / len(text)
+            for x in all_chars:
+                p_x = char_dic[x]
                 if p_x > 0:
                     entr += - p_x * np.log2(p_x)  # entropy of text, in bits per character
 

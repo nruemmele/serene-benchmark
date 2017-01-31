@@ -558,7 +558,8 @@ if __name__ == "__main__":
     add_headers = True
     p_step = 0.05
     p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
-    n_runs = 10
+    # p_header_list = [0.]
+    n_runs = 100
     results_dir = '/Users/tys017/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
     results_file = 'adding_headers_to_samples ' + '(' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
     fname_progress = results_dir + results_file + ' [IN PROGRESS].xlsx'
