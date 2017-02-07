@@ -5,8 +5,10 @@ Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
 Abstract model for semantic labelling/typing.
 Evaluation will be based on this abstract model.
 """
+
 import logging
 import os
+# import benchmark.globals
 
 # from serene.core import SchemaMatcher
 # from serene.exceptions import InternalError
@@ -18,7 +20,8 @@ import numpy as np
 
 import sklearn.metrics
 
-from neural_nets import Column, NN_Column_Labeler, hp, hp_mlp, hp_cnn
+from neural_nets import Column, NN_Column_Labeler, hp
+from keras import backend as K
 
 domains = ["soccer", "dbpedia", "museum", "weather"]
 benchmark = {
@@ -508,8 +511,7 @@ class NNetModel(SemanticTyper):
         return pd.DataFrame(predictions_proba_dict)
 
 
-if __name__ == "__main__":
-
+def main():
     # setting up the logging
     log_file = 'benchmark.log'
     logging.basicConfig(filename=os.path.join('data', log_file),
@@ -553,14 +555,14 @@ if __name__ == "__main__":
 
     #******* setting up NNetModel:
 
-    classifier_type = 'rf@charfreq'
+    classifier_type = 'cnn@charseq'
     model_description = classifier_type + ' model'
     add_headers = True
     p_step = 0.05
     p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
     # p_header_list = [0.]
     n_runs = 100
-    results_dir = '/Users/tys017/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
+    results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
     results_file = 'adding_headers_to_samples ' + '(' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
     fname_progress = results_dir + results_file + ' [IN PROGRESS].xlsx'
     logging.info("Experiment on probabilistic inclusion of column headers to column samples")
@@ -568,6 +570,7 @@ if __name__ == "__main__":
 
     results = pd.DataFrame(columns=['runs','add_header','p_header','accuracy_mean','accuracy_std','fmeasure_mean','fmeasure_std','MRR_mean','MRR_std'])
     for p_header in p_header_list:
+        K.clear_session()    # Destroys the current TF graph and creates a new one. Useful to avoid clutter from old models / layers.
         for run in range(n_runs):
             logging.info("p_header={}, run {} of {}...".format(p_header,run+1,n_runs))
             nnet_model = NNetModel([classifier_type], model_description, add_headers=add_headers, p_header=p_header)
@@ -607,3 +610,5 @@ if __name__ == "__main__":
     print(results)
 
 
+if __name__ == "__main__":
+    main()
