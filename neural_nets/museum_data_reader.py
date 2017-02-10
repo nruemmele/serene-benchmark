@@ -32,7 +32,7 @@ class Column(object):
         X = [np.random.choice(self.lines, size) for x in range(n)]
         if add_header:  # add column name in front of a fraction of elements of X:
             n_headers = int(p_header*len(X))   # number of X elements to add the column header to
-            X = [np.append(self.colname, x) for x in X[:n_headers]] + X[n_headers:]  # adding colname to every element of X leads to overfitting to colnames. One way to combat this would be to add colname to a fraction of elements only, thus forcing the model to learn other features besides column headers.
+            X = [np.append(self.colname, x) for x in X[:n_headers]] + X[n_headers:]  # adding colname to every element of X leads to overfitting to colnames. One way to combat this would be to add colname to a fraction of elements only, thus forcing the model(s) to learn other features besides column headers.
         y = [self.title for _ in range(n)]
         return X, y
 
@@ -118,7 +118,7 @@ class Reader(object):
                     all_cols += cols
         return files, all_cols
 
-    def to_ml(self, all_cols, labels=None, size=20, n=100, train_frac=0.5, add_header=False, p_header=0.0, verbose=True):
+    def to_ml(self, all_cols, labels=None, size=20, n=100, train_frac=0.5, add_header=False, p_header=0., verbose=True):
         """
         Convert a list of columns ('Column' objects) into an X, y matrix
         
@@ -164,6 +164,8 @@ class Reader(object):
         if verbose:
             print("train data semantic labels:", sorted(set(y_train)))
             print("test data semantic labels: ", sorted(set(y_test)))
+            # print("\ntrain column headers:", set([c.colname for c in train_cols]))
+            # print("test column headers:", set([c.colname for c in test_cols]))
 
         return (X_train, y_train), (X_test, y_test), label_lookup, train_cols, test_cols
 

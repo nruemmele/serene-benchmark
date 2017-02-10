@@ -160,10 +160,11 @@ class CNN(object):
         self.model.add(Flatten())
         self.model.add(Dropout(self.hp['dropout']))
 
-        # add a vanilla (fully connected) hidden layer:
+        # add a fully connected hidden layer:
         self.model.add(Dense(self.hp['hidden_dims'], activation='relu'))
         #         self.model.add(Dropout(self.hp['dropout']))
 
+        # Finally, add the final fully connected layer to perform classification:
         self.model.add(Dense(
             n_classes,
             activation=self.hp['final_layer_act']))  # ,

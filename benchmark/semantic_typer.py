@@ -20,8 +20,25 @@ import numpy as np
 
 import sklearn.metrics
 
+import tensorflow as tf
 from neural_nets import Column, NN_Column_Labeler, hp
 from keras import backend as K
+
+import keras.backend.tensorflow_backend as KTF
+
+def get_session(gpu_fraction=0.7):
+    '''Allocate a specified fraction of GPU memory for keras tf session'''
+
+    num_threads = os.environ.get('OMP_NUM_THREADS')
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_fraction)
+
+    if num_threads:
+        return tf.Session(config=tf.ConfigProto(
+            gpu_options=gpu_options, intra_op_parallelism_threads=num_threads))
+    else:
+        return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+
+KTF.set_session(get_session())
 
 domains = ["soccer", "dbpedia", "museum", "weather"]
 benchmark = {
@@ -519,8 +536,10 @@ def main():
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
     # train/test
-    train_sources = benchmark["soccer"][:-1]
-    test_source = [benchmark["soccer"][-1]]
+    domain = "soccer"
+    train_sources = benchmark[domain][:-1]
+    test_source = [benchmark[domain][-1]]
+    print("Domain:",domain)
     print("# sources in train: %d" % len(train_sources))
     print("# sources in test: %d" % len(test_source))
 
@@ -559,20 +578,20 @@ def main():
     model_description = classifier_type + ' model'
     add_headers = True
     p_step = 0.05
-    p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
+    p_header_list = np.arange(0.65, 1. + p_step, p_step)  # range from 0. to 1. with p_step
     # p_header_list = [0.]
     n_runs = 100
     results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
-    results_file = 'adding_headers_to_samples ' + '(' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
+    results_file = 'adding_headers_to_samples ' + '(' + domain + ', ' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
     fname_progress = results_dir + results_file + ' [IN PROGRESS].xlsx'
     logging.info("Experiment on probabilistic inclusion of column headers to column samples")
     logging.info("Results are saved to file {}".format(fname_progress))
 
     results = pd.DataFrame(columns=['runs','add_header','p_header','accuracy_mean','accuracy_std','fmeasure_mean','fmeasure_std','MRR_mean','MRR_std'])
     for p_header in p_header_list:
-        K.clear_session()    # Destroys the current TF graph and creates a new one. Useful to avoid clutter from old models / layers.
         for run in range(n_runs):
             logging.info("p_header={}, run {} of {}...".format(p_header,run+1,n_runs))
+            K.clear_session()  # Destroys the current TF graph and creates a new one. Useful to avoid clutter from old models / layers.
             nnet_model = NNetModel([classifier_type], model_description, add_headers=add_headers, p_header=p_header)
             nnet_model.define_training_data(train_sources)
             # Train the nnet_model:
