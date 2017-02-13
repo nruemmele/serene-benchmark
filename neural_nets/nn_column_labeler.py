@@ -66,6 +66,7 @@ metrics_average = 'macro'  # 'macro', 'micro', or 'weighted'
 hp_cnn = {}
 hp_cnn['batch_size'] = 50  # batch training size; a good value is 25, but 50 is faster (while producing similar accuracy)
 hp_cnn['dropout'] = 0.5  # dropout value for the dropout layers; no difference between 0.5 and 0.1; reducing below 0.1 seems to slightly hurt the test accuracy (as expected)
+hp_cnn['n_conv_layers'] = 3 # number of convolutional layers
 hp_cnn['nb_filter'] = 100  # number of filters for the conv layers
 hp_cnn['filter_length'] = 3  # 50 # length of the filter window in the conv layer
 hp_cnn['border_mode'] = 'valid'  # 'valid' (no zero-padding) or 'same' (with zero padding)
@@ -137,20 +138,14 @@ class CNN(object):
 
         # we add a Convolution1D, which will learn nb_filter
         # character group filters of size filter_length:
-        self.model.add(Convolution1D(nb_filter=self.hp['nb_filter'],
-                                     filter_length=self.hp['filter_length'],
-                                     border_mode=self.hp['border_mode'],
-                                     activation='relu',
-                                     subsample_length=1))
+        for l in range(self.hp['n_conv_layers']):
+            self.model.add(Convolution1D(nb_filter=self.hp['nb_filter'],
+                                         filter_length=self.hp['filter_length'],
+                                         border_mode=self.hp['border_mode'],
+                                         activation='relu',
+                                         subsample_length=1))
 
-        # model.add(Dropout(hp['dropout']))
-        self.model.add(Convolution1D(nb_filter=self.hp['nb_filter'],
-                                     filter_length=self.hp['filter_length'],
-                                     border_mode=self.hp['border_mode'],
-                                     activation='relu',
-                                     subsample_length=1))
-
-        # model.add(Dropout(hp['dropout']))
+            # model.add(Dropout(hp['dropout']))
 
         # add max pooling:
         self.model.add(MaxPooling1D(pool_length=self.model.output_shape[1]))

@@ -21,12 +21,12 @@ import numpy as np
 import sklearn.metrics
 
 import tensorflow as tf
-from neural_nets import Column, NN_Column_Labeler, hp
+from neural_nets import Column, NN_Column_Labeler, hp, hp_cnn
 from keras import backend as K
 
 import keras.backend.tensorflow_backend as KTF
 
-def get_session(gpu_fraction=0.7):
+def get_session(gpu_fraction=0.5):
     '''Allocate a specified fraction of GPU memory for keras tf session'''
 
     num_threads = os.environ.get('OMP_NUM_THREADS')
@@ -575,10 +575,10 @@ def main():
     #******* setting up NNetModel:
 
     classifier_type = 'cnn@charseq'
-    model_description = classifier_type + ' model'
+    model_description = classifier_type + ' model with ' + str(hp_cnn['n_conv_layers']) + ' conv layers'
     add_headers = True
     p_step = 0.05
-    p_header_list = np.arange(0.65, 1. + p_step, p_step)  # range from 0. to 1. with p_step
+    p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
     # p_header_list = [0.]
     n_runs = 100
     results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
