@@ -577,12 +577,14 @@ def main():
     classifier_type = 'cnn@charseq'
     model_description = classifier_type + ' model with ' + str(hp_cnn['n_conv_layers']) + ' conv layers'
     add_headers = True
-    p_step = 0.05
+    p_step = 0.1
     p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
     # p_header_list = [0.]
     n_runs = 100
     results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
     results_file = 'adding_headers_to_samples ' + '(' + domain + ', ' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
+    if not add_headers:
+        results_file = 'not '+results_file
     fname_progress = results_dir + results_file + ' [IN PROGRESS].xlsx'
     logging.info("Experiment on probabilistic inclusion of column headers to column samples")
     logging.info("Results are saved to file {}".format(fname_progress))
