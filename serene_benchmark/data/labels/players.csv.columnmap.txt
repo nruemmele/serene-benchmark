@@ -1,0 +1,8 @@
+"key","column_name","source_name","semantic_type"
+"leagueName","leagueName","data/datasets/soccer/data/players.csv","League---name"
+"shortName","shortName","data/datasets/soccer/data/players.csv","Player---name"
+"firstName","firstName","data/datasets/soccer/data/players.csv","Player---givenName"
+"fullName","fullName","data/datasets/soccer/data/players.csv","Player---name"
+"leagueShortname","leagueShortname","data/datasets/soccer/data/players.csv","League---name"
+"lastName","lastName","data/datasets/soccer/data/players.csv","Player---familyName"
+"displayName","displayName","data/datasets/soccer/data/players.csv","Player---name"

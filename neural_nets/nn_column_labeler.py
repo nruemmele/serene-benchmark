@@ -566,7 +566,10 @@ class NN_Column_Labeler(object):
             logging.debug('Training a {} classifier...'.format(t))
 
             if t.split('@')[0] == 'cnn':
+                print("===> hp: ", hp, type(hp))
+                print("===> hp_cnn: ", hp_cnn, type(hp_cnn))
                 self.classifiers[t] = CNN({**hp, **hp_cnn})
+                # self.classifiers[t] = CNN(hp.update(hp_cnn))
                 self.classifiers[t].build(n_classes=len(self.labels))
                 self.classifiers[t].summary()
                 self.classifiers[t].train(self.X_train[t.split('@')[-1]], self.y_train_binary,
@@ -654,6 +657,7 @@ class NN_Column_Labeler(object):
 
             elif t.split('@')[0] == 'mlp':
                 self.classifiers[t] = MLP({**hp, **hp_mlp})
+                # self.classifiers[t] = MLP(hp.update(hp_mlp))
                 self.classifiers[t].build(input_dim=self.X_train[t.split('@')[-1]].shape[1], n_classes=len(self.labels))
                 self.classifiers[t].summary()
                 self.classifiers[t].train(self.X_train[t.split('@')[-1]], self.y_train_binary,

@@ -1,0 +1,5 @@
+"key","column_name","source_name","semantic_type"
+"name","name","data/datasets/soccer/data/fifa-soccer-12-ultimate-team-data-player-database.csv","Player---name"
+"height","height","data/datasets/soccer/data/fifa-soccer-12-ultimate-team-data-player-database.csv","Player---height"
+"foot","foot","data/datasets/soccer/data/fifa-soccer-12-ultimate-team-data-player-database.csv","Player---strongFoot"
+"position","position","data/datasets/soccer/data/fifa-soccer-12-ultimate-team-data-player-database.csv","Player---playPosition"

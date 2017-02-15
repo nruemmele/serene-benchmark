@@ -1,0 +1,5 @@
+"key","column_name","source_name","semantic_type"
+"Image_URL","Image_URL","data/datasets/museum/data/s20-s-lacma.xml","E38_Image---dev#classLink"
+"Artwork_Details","Artwork_Details","data/datasets/museum/data/s20-s-lacma.xml","E22_Man-Made_Object---P3_has_note"
+"Artist_Name","Artist_Name","data/datasets/museum/data/s20-s-lacma.xml","E82_Actor_Appellation---rdf-schema#label"
+"Artwork_in_Focus","Artwork_in_Focus","data/datasets/museum/data/s20-s-lacma.xml","E21_Person---P3_has_note"
