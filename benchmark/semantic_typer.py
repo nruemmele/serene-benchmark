@@ -534,7 +534,7 @@ def main():
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
     # train/test
-    domain = "weather"
+    domain = "soccer"
     train_sources = benchmark[domain][:-1]
     test_source = [benchmark[domain][-1]]
     print("Domain:",domain)
@@ -572,7 +572,8 @@ def main():
 
     #******* setting up NNetModel:
 
-    classifier_type = 'cnn@charseq'
+    classifier_type = 'rf@charfreq'
+
     if classifier_type == 'cnn@charseq':
         KTF.set_session(get_session())
         model_description = classifier_type + ' model with ' + str(hp_cnn['n_conv_layers']) + ' conv layers,' + str(hp['maxlen']) + ' charseq_length'
