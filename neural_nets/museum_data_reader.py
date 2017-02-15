@@ -136,10 +136,10 @@ class Reader(object):
                 for x_s, y_s in zip(X_single, y_single):
                     flattened = [ord(char) for char in '\n'.join(x_s)]   # concatenate elements of x_s (column lines) into one string, and replace chars with their unicode indices
                     X.append(flattened)
-                    try:
+                    if y_s in labels:
                         y.append(label_lookup[y_s])
-                    except:
-                        y.append(None)
+                    else:
+                        y.append(label_lookup['unknown'])
             return X, y
 
         if labels is None:

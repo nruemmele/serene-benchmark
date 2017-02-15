@@ -572,7 +572,7 @@ def main():
 
     #******* setting up NNetModel:
 
-    classifier_type = 'rf@charfreq'
+    classifier_type = 'cnn@charseq'
     if classifier_type == 'cnn@charseq':
         KTF.set_session(get_session())
         model_description = classifier_type + ' model with ' + str(hp_cnn['n_conv_layers']) + ' conv layers,' + str(hp['maxlen']) + ' charseq_length'
