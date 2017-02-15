@@ -65,7 +65,7 @@ class SemanticTyper(object):
         allowed_sources += sources
 
     metrics = ['categorical_accuracy', 'fmeasure', 'MRR']  # list of performance metrics to compare column labelers with
-    metrics_average = 'micro'  # 'macro', 'micro', or 'weighted'
+    metrics_average = 'macro'  # 'macro', 'micro', or 'weighted'
 
     def __init__(self, model_type, description="", debug_csv=None):
         self.model_type = model_type
@@ -463,7 +463,7 @@ class NNetModel(SemanticTyper):
         # TODO: rewrite NN_Column_Labeler to be initialized with train_cols only, instead of all_cols followed by internal splitting of all_cols into train, valid, ant test sets of columns
 
         # Train self.labeler:
-        self.labeler.train(evaluate_after_training=True)
+        self.labeler.train(evaluate_after_training=False)
 
         return time.time() - start
 
@@ -562,19 +562,58 @@ if __name__ == "__main__":
 
 
     #******* setting up NNetModel:
-    nnet_model = NNetModel(['cnn@charseq'],'cnn@charseq model', add_headers=True, p_header=0)
-    # nnet_model = NNetModel(['rf@charfreq'], 'rf@charfreq model', add_headers=False)
-    nnet_model.define_training_data(train_sources)
-    # Train the nnet_model:
-    nnet_model.train()
 
-    predictions = nnet_model.predict(test_source[0])
-    # print("PREDICTiONS:", predictions)
-    # print('True labels:')
-    # print(predictions['user_label'])
-    # print('Predicted labels:')
-    # print(predictions['label'])
-    # print('Accuracy:',sklearn.metrics.accuracy_score(predictions['user_label'],predictions['label']))
+    classifier_type = 'rf@charfreq'
+    model_description = classifier_type + ' model'
+    add_headers = True
+    p_step = 0.05
+    p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
+    # p_header_list = [0.]
+    n_runs = 100
+    results_dir = '/Users/tys017/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
+    results_file = 'adding_headers_to_samples ' + '(' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
+    fname_progress = results_dir + results_file + ' [IN PROGRESS].xlsx'
+    logging.info("Experiment on probabilistic inclusion of column headers to column samples")
+    logging.info("Results are saved to file {}".format(fname_progress))
+
+    results = pd.DataFrame(columns=['runs','add_header','p_header','accuracy_mean','accuracy_std','fmeasure_mean','fmeasure_std','MRR_mean','MRR_std'])
+    for p_header in p_header_list:
+        for run in range(n_runs):
+            logging.info("p_header={}, run {} of {}...".format(p_header,run+1,n_runs))
+            nnet_model = NNetModel([classifier_type], model_description, add_headers=add_headers, p_header=p_header)
+            nnet_model.define_training_data(train_sources)
+            # Train the nnet_model:
+            nnet_model.train()
+
+            predictions = nnet_model.predict(test_source[0])
+
+            if run==0:
+                performance = nnet_model.evaluate(predictions)
+            else:
+                performance = performance.append(nnet_model.evaluate(predictions))
+
+        performance_mean = (performance.mean(axis=0, numeric_only=True))
+        performance_std = (performance.std(axis=0, numeric_only=True))
+        print("\nPERFORMANCE:")
+        print(performance)
+        print("\nMEAN:")
+        print(performance_mean)
+        print("\nSTD:")
+        print(performance_std)
+
+        results_row = [{'runs':n_runs,'add_header':add_headers,'p_header':p_header,'accuracy_mean':performance_mean['categorical_accuracy'],'accuracy_std':performance_std['categorical_accuracy'],
+                        'fmeasure_mean':performance_mean['fmeasure'],'fmeasure_std':performance_std['fmeasure'],'MRR_mean':performance_mean['MRR'],'MRR_std':performance_std['MRR']}]
+        results = results.append(results_row, ignore_index=True)
+
+        writer = pd.ExcelWriter(fname_progress)
+        results.to_excel(excel_writer=writer, index=False)   # save the progress so far
+        writer.save()
+
+    fname_final = results_dir + results_file + ' ['+time.strftime("%d-%m-%Y")+'].xlsx'
+    os.rename(fname_progress, fname_final)
+    logging.info("Results are saved to file {}".format(fname_final))
+
+    print("\n\nEXPERIMENT RESULTS:")
+    print(results)
 
 
-    print("evaluate: ", nnet_model.evaluate(predictions))

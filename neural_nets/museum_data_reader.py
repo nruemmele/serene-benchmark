@@ -22,7 +22,7 @@ class Column(object):
         self.title = title         # semantic label of the column (short title)
         self.lines = lines         # lines in the column
 
-    def bagging(self, size=200, n=100, add_header=False, p_header=0.0):
+    def bagging(self, size=200, n=100, add_header=False, p_header=0.):
         """
             Sample with replacement (generate n samples of [size] lines each)
             withHeader tells whether to put the column name (header) in front of the bagging samples
@@ -134,7 +134,7 @@ class Reader(object):
             for col in cols:
                 X_single, y_single = col.bagging(size, n, add_header, p_header)
                 for x_s, y_s in zip(X_single, y_single):
-                    flattened = [ord(char) for char in '\n'.join(x_s)]   # replace chars with their unicode indices
+                    flattened = [ord(char) for char in '\n'.join(x_s)]   # concatenate elements of x_s (column lines) into one string, and replace chars with their unicode indices
                     X.append(flattened)
                     y.append(label_lookup[y_s])
             return X, y
