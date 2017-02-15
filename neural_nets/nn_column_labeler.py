@@ -41,7 +41,7 @@ hp = {}
 hp['split_by'] = 'filename'  # name of the column attribute on which to randomly split columns into training and testing sets
 # 'id' for splitting by column attribute (title@filename)
 # 'filename' for splitting by data source filename
-hp['cols_test_frac'] = 0.2  # fraction of all data columns that are used for testing (the rest is for training)
+hp['cols_test_frac'] = 0.0  # fraction of all data columns that are used for testing (the rest is for training)
 hp['subsize'] = 100  # number of row elements (rows) in each bagging subsample
 hp['n_samples'] = 1 * 150  # number of subsamples from each column to take when bagging
 hp['samples_validation_frac'] = 0.01  # fraction of training samples that are held-out for validation purposes
@@ -66,7 +66,7 @@ metrics_average = 'macro'  # 'macro', 'micro', or 'weighted'
 hp_cnn = {}
 hp_cnn['batch_size'] = 50  # batch training size; a good value is 25, but 50 is faster (while producing similar accuracy)
 hp_cnn['dropout'] = 0.5  # dropout value for the dropout layers; no difference between 0.5 and 0.1; reducing below 0.1 seems to slightly hurt the test accuracy (as expected)
-hp_cnn['n_conv_layers'] = 3 # number of convolutional layers
+hp_cnn['n_conv_layers'] = 2 # number of 1d convolutional layers in CNN model
 hp_cnn['nb_filter'] = 100  # number of filters for the conv layers
 hp_cnn['filter_length'] = 3  # 50 # length of the filter window in the conv layer
 hp_cnn['border_mode'] = 'valid'  # 'valid' (no zero-padding) or 'same' (with zero padding)
@@ -144,13 +144,13 @@ class CNN(object):
                                          border_mode=self.hp['border_mode'],
                                          activation='relu',
                                          subsample_length=1))
-
             # model.add(Dropout(hp['dropout']))
 
         # add max pooling:
         self.model.add(MaxPooling1D(pool_length=self.model.output_shape[1]))
 
-        # Flatten the output of the conv layer,
+
+        # Flatten the output of the top conv block,
         # so that we can add a vanilla dense layer:
         self.model.add(Flatten())
         self.model.add(Dropout(self.hp['dropout']))
@@ -216,22 +216,15 @@ class CNN_embedder(object):
 
         # we add a Convolution1D, which has learned nb_filter
         # character group filters of size filter_length:
-        self.model.add(Convolution1D(nb_filter=self.hp['nb_filter'],
-                                     filter_length=self.hp['filter_length'],
-                                     border_mode=self.hp['border_mode'],
-                                     activation='relu',
-                                     subsample_length=1,
-                                     weights=self.cnn.model.layers[
-                                         1].get_weights()))  # initialize the weights to those of layers[1] (the 1st conv layer) of cnn model
-
-        self.model.add(Convolution1D(nb_filter=self.hp['nb_filter'],
-                                     filter_length=self.hp['filter_length'],
-                                     border_mode=self.hp['border_mode'],
-                                     activation='relu',
-                                     subsample_length=1,
-                                     weights=self.cnn.model.layers[
-                                         2].get_weights()))  # initialize the weights to those of layers[2] (the 2nd conv layer) of cnn model
-
+        for l in range(self.hp['n_conv_layers']):
+            self.model.add(Convolution1D(nb_filter=self.hp['nb_filter'],
+                                         filter_length=self.hp['filter_length'],
+                                         border_mode=self.hp['border_mode'],
+                                         activation='relu',
+                                         subsample_length=1,
+                                         weights=self.cnn.model.layers['convolution1d_'+str(l+1)].get_weights()
+                                         ))
+        # model.add(Dropout(hp['dropout']))
         # add max pooling:
         self.model.add(MaxPooling1D(pool_length=self.model.output_shape[1]))
 

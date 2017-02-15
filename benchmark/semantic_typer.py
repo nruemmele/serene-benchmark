@@ -38,8 +38,6 @@ def get_session(gpu_fraction=0.5):
     else:
         return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
-KTF.set_session(get_session())
-
 domains = ["soccer", "dbpedia", "museum", "weather"]
 benchmark = {
     "soccer": ['bundesliga-2015-2016-rosters.csv', 'world_cup_2010_squads.csv',
@@ -536,7 +534,7 @@ def main():
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
     # train/test
-    domain = "soccer"
+    domain = "weather"
     train_sources = benchmark[domain][:-1]
     test_source = [benchmark[domain][-1]]
     print("Domain:",domain)
@@ -574,11 +572,16 @@ def main():
 
     #******* setting up NNetModel:
 
-    classifier_type = 'cnn@charseq'
-    model_description = classifier_type + ' model with ' + str(hp_cnn['n_conv_layers']) + ' conv layers'
-    add_headers = True
+    classifier_type = 'rf@charfreq'
+    if classifier_type == 'cnn@charseq':
+        KTF.set_session(get_session())
+        model_description = classifier_type + ' model with ' + str(hp_cnn['n_conv_layers']) + ' conv layers,' + str(hp['maxlen']) + ' charseq_length'
+    else:
+        model_description = classifier_type + ' model'
+
+    add_headers = False
     p_step = 0.1
-    p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
+    p_header_list = np.arange(0., 0. + p_step, p_step)  # range from 0. to 1. with p_step
     # p_header_list = [0.]
     n_runs = 100
     results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
