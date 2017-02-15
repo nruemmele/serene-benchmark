@@ -581,8 +581,11 @@ def main():
 
     add_headers = False
     p_step = 0.1
-    p_header_list = np.arange(0., 0. + p_step, p_step)  # range from 0. to 1. with p_step
-    # p_header_list = [0.]
+    if add_headers:
+        p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
+    else:
+        p_header_list = [0.]
+
     n_runs = 100
     results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
     results_file = 'adding_headers_to_samples ' + '(' + domain + ', ' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
