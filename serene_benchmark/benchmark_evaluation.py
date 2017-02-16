@@ -15,8 +15,8 @@ class Experiment(object):
     """
 
     """
-    # domains = ["soccer", "weather", "museum", "dbpedia"]
-    domains = ["weather"]
+    domains = ["soccer", "weather", "museum", "dbpedia"]
+    # domains = ["weather"]
     benchmark = {
         "soccer": ['bundesliga-2015-2016-rosters.csv', 'world_cup_2010_squads.csv',
                    'fifa-soccer-12-ultimate-team-data-player-database.csv', 'world_cup_2014_squads.csv',

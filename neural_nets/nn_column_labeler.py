@@ -695,9 +695,9 @@ class NN_Column_Labeler(object):
                 print("Predicting label probabilities for column", i + 1, "out of", len(cols))
             logging.debug("Predicting label probabilities for column {} out of {}".format(i + 1, len(cols)))
             X_query = {}
-            if col.title not in self.labels:
-                logging.debug("Adding test column label {}".format(col.title))
-                self.labels = np.append(self.labels, col.title)
+            # if col.title not in self.labels:
+            #     logging.debug("Adding test column label {}".format(col.title))
+            #     self.labels = np.append(self.labels, col.title)
             (X_query['raw'], _), (_, _), _, _, _ = museum_reader.to_ml(  # sample from col
                 [col], self.labels, hp['subsize'], hp['n_samples'], 1.0, add_header=
                 self.add_headers, p_header=1, verbose=False)

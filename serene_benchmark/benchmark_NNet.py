@@ -16,7 +16,7 @@ def test_cnn():
                            debug_csv=os.path.join("results", "debug_nnet_rf.csv"))
 
     # models for experiments
-    models = [cnn_model, rf_model, cnn_model_head]
+    models = [rf_model, cnn_model]
     loo_experiment = Experiment(models,
                                 experiment_type="leave_one_out",
                                 description="plain loo",

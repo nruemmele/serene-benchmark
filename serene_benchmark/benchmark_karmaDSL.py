@@ -14,8 +14,8 @@ def test_karma():
     loo_experiment = Experiment(models,
                                 experiment_type="leave_one_out",
                                 description="plain loo",
-                                result_csv=os.path.join('data', "performance_karma2.csv"),
-                                debug_csv=os.path.join("data", "debug_karma2.csv"))
+                                result_csv=os.path.join('data', "performance_karma.csv"),
+                                debug_csv=os.path.join("data", "debug_karma.csv"))
 
     loo_experiment.run()
 
