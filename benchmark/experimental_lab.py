@@ -24,20 +24,6 @@ def get_session(gpu_fraction=0.5):
         return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
 def main():
-    # setting up the logging
-    log_file = 'benchmark.log'
-    logging.basicConfig(filename=os.path.join('data', log_file),
-                        level=logging.DEBUG, filemode='w+',
-                        format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
-
-    # train/test
-    domain = "weather"
-    assert domain in domains
-    train_sources = benchmark[domain][:-1]
-    test_source = [benchmark[domain][-1]]
-    print("Domain:",domain)
-    print("# sources in train: %d" % len(train_sources))
-    print("# sources in test: %d" % len(test_source))
 
     # #******* setting up DINTModel
     # dm = SchemaMatcher(host="localhost", port=8080)
@@ -139,4 +125,18 @@ def main():
 
 if __name__ == "__main__":
     print('EXPERIMENT')
+    # setting up the logging
+    log_file = 'benchmark.log'
+    logging.basicConfig(filename=os.path.join('data', log_file),
+                        level=logging.DEBUG, filemode='w+',
+                        format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+
+    # train/test
+    domain = "weather"
+    assert domain in domains
+    train_sources = benchmark[domain][:-1]
+    test_source = [benchmark[domain][-1]]
+    print("Domain:", domain)
+    print("# sources in train: %d" % len(train_sources))
+    print("# sources in test: %d" % len(test_source))
     main()
