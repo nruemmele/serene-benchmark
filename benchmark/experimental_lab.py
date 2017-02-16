@@ -23,7 +23,7 @@ def get_session(gpu_fraction=0.5):
     else:
         return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
-def main():
+def experiment():
 
     # #******* setting up DINTModel
     # dm = SchemaMatcher(host="localhost", port=8080)
@@ -52,24 +52,6 @@ def main():
     # predicted_df = dsl_model.predict(test_source[0])
     # print(predicted_df)
     # print(dsl_model.evaluate(predicted_df))
-
-
-    #******* setting up NNetModel:
-
-    classifier_type = 'cnn@charseq'
-
-    if classifier_type == 'cnn@charseq':
-        KTF.set_session(get_session())
-        model_description = classifier_type + ' model with ' + str(hp_cnn['n_conv_layers']) + ' conv layers, ' + 'charseq_length=' + str(hp['maxlen'])
-    else:
-        model_description = classifier_type + ' model'
-
-    add_headers = True
-    p_step = 0.1
-    if add_headers:
-        p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
-    else:
-        p_header_list = [0.]
 
     n_runs = 100
     results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
@@ -139,4 +121,23 @@ if __name__ == "__main__":
     print("Domain:", domain)
     print("# sources in train: %d" % len(train_sources))
     print("# sources in test: %d" % len(test_source))
-    main()
+
+    # ******* setting up NNetModel:
+
+    classifier_type = 'cnn@charseq'
+
+    if classifier_type == 'cnn@charseq':
+        KTF.set_session(get_session())
+        model_description = classifier_type + ' model with ' + str(
+            hp_cnn['n_conv_layers']) + ' conv layers, ' + 'charseq_length=' + str(hp['maxlen'])
+    else:
+        model_description = classifier_type + ' model'
+
+    add_headers = True
+    p_step = 0.1
+    if add_headers:
+        p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
+    else:
+        p_header_list = [0.]
+
+    experiment()
