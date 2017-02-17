@@ -5,12 +5,15 @@ import time
 import numpy as np
 import pandas as pd
 
-import tensorflow as tf
-from keras import backend as K
-import keras.backend.tensorflow_backend as KTF
 from neural_nets import hp, hp_cnn
 from benchmark.semantic_typer import NNetModel, domains, benchmark
 
+
+# Limit the allocated GPU memory to a fraction of total GPU memory, as per https://groups.google.com/forum/#!topic/keras-users/MFUEY9P1sc8:
+# This is for sharing GPU with other sessions/users
+import tensorflow as tf
+import keras.backend.tensorflow_backend as KTF
+from keras import backend as K
 def get_session(gpu_fraction=0.5):
     '''Allocate a specified fraction of GPU memory for keras tf session'''
 
@@ -56,6 +59,7 @@ def experiment():
     n_runs = 100
     results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
     results_file = 'adding_headers_to_samples ' + '(' + domain + ', ' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
+    print('Results will be saved to',results_file)
     if not add_headers:
         results_file = 'not '+results_file
     fname_progress = results_dir + results_file + ' [IN PROGRESS].xlsx'
@@ -113,7 +117,7 @@ if __name__ == "__main__":
                         level=logging.DEBUG, filemode='w+',
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    domain = "weather"
+    domain = "soccer"
     assert domain in domains
 
     # train/test
@@ -130,11 +134,11 @@ if __name__ == "__main__":
     if classifier_type == 'cnn@charseq':
         KTF.set_session(get_session())
         model_description = classifier_type + ' model with ' + str(
-            hp_cnn['n_conv_layers']) + ' conv layers, ' + 'charseq_length=' + str(hp['maxlen'])
+            hp_cnn['n_conv_layers']) + ' conv layers of ' + str(hp_cnn['nb_filter']) + ' filters, ' + 'charseq_length=' + str(hp['maxlen'])
     else:
         model_description = classifier_type + ' model'
 
-    add_headers = True
+    add_headers = False
     p_step = 0.1
     if add_headers:
         p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step

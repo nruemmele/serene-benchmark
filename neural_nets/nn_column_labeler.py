@@ -48,7 +48,7 @@ hp['samples_validation_frac'] = 0.01  # fraction of training samples that are he
 
 # ### Hyperparameters for character sequences
 
-hp['maxlen'] = 200  # cut resulting character seqs after this number of chars (ensure all character seq inputs are of the same length)
+hp['maxlen'] = 250 #200  # cut resulting character seqs after this number of chars (ensure all character seq inputs are of the same length)
 hp['max_features'] = 128  # number of 'bits' to use when encoding a character (size of character vocabulary)
 
 # ### Hyperparameters for character frequencies
@@ -96,26 +96,6 @@ hp_mlp['loss'] = 'categorical_crossentropy'  # 'mse' #'binary_crossentropy' # lo
 hp_mlp['metrics'] = metrics
 hp_mlp['metrics_average'] = metrics_average
 hp_mlp['optimizer'] = 'adam'  # 'rmsprop' # 'adam' # optimization algorithm
-
-
-# # Limit the allocated GPU memory to a fraction of total GPU memory, as per https://groups.google.com/forum/#!topic/keras-users/MFUEY9P1sc8:
-# # This is for sharing GPU with other sessions/users
-# import keras.backend.tensorflow_backend as KTF
-#
-# def get_session(gpu_fraction=0.3):
-#     '''Allocate a specified fraction of GPU memory for keras tf session'''
-#
-#     num_threads = os.environ.get('OMP_NUM_THREADS')
-#     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_fraction)
-#
-#     if num_threads:
-#         return tf.Session(config=tf.ConfigProto(
-#             gpu_options=gpu_options, intra_op_parallelism_threads=num_threads))
-#     else:
-#         return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
-#
-#
-# KTF.set_session(get_session())
 
 class CNN(object):
     """CNN model class"""
