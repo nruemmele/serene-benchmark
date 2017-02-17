@@ -113,9 +113,10 @@ if __name__ == "__main__":
                         level=logging.DEBUG, filemode='w+',
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    # train/test
     domain = "weather"
     assert domain in domains
+
+    # train/test
     train_sources = benchmark[domain][:-1]
     test_source = [benchmark[domain][-1]]
     print("Domain:", domain)
