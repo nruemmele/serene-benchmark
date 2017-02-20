@@ -15,8 +15,8 @@ class Experiment(object):
     """
 
     """
-    domains = ["soccer", "weather", "museum", "dbpedia"]
-    # domains = ["weather"]
+    domains = ["soccer", "dbpedia", "museum", "weather", "weapons"]
+    # domains = ["weapons"]
     benchmark = {
         "soccer": ['bundesliga-2015-2016-rosters.csv', 'world_cup_2010_squads.csv',
                    'fifa-soccer-12-ultimate-team-data-player-database.csv', 'world_cup_2014_squads.csv',
@@ -36,10 +36,26 @@ class Experiment(object):
                    's18-s-indianapolis-artists.xml', 's23-s-national-portrait-gallery.json',
                    's03-ima-artists.xml', 's24-s-norton-simon.json', 's06-npg.json',
                    's09-s-18-artists.json', 's01-cb.csv'],
-        "weather": ['w1.txt', 'w3.txt', 'w2.txt', 'w4.txt']
+        "weather": ['w1.txt', 'w3.txt', 'w2.txt', 'w4.txt'],
+        "weapons": ["www.theoutdoorstrader.com.csv", "www.tennesseegunexchange.com.csv",
+                    "www.shooterswap.com.csv", "www.nextechclassifieds.com.csv", "www.msguntrader.com.csv",
+                    "www.montanagunclassifieds.com.csv", "www.kyclassifieds.com.csv",
+                    "www.hawaiiguntrader.com.csv", "www.gunsinternational.com.csv",
+                    "www.floridaguntrader.com.csv", "www.floridagunclassifieds.com.csv",
+                    "www.elpasoguntrader.com.csv", "www.dallasguns.com.csv",
+                    "www.armslist.com.csv", "www.alaskaslist.com.csv"
+                    ]
     }
 
     def __init__(self, models, experiment_type, description, result_csv, debug_csv):
+        """
+        Initialize experiment. To run the experiment, please call "run" explicitly.
+        :param models:
+        :param experiment_type:
+        :param description:
+        :param result_csv:
+        :param debug_csv:
+        """
         logging.info("Initializing experiment...")
         self.models = models
         self.experiment_type = experiment_type
@@ -51,8 +67,8 @@ class Experiment(object):
 
     def _evaluate_model(self, model):
         """
-
-        :param model:
+        Evaluate one model by training first on the specified train_sources and testing on the specified test_sources.
+        :param model: instance of the class SemanticTyper
         :return:
         """
         if self.train_sources is None:
@@ -81,8 +97,7 @@ class Experiment(object):
             logging.warning("Model evaluation failed: {}".format(e.args))
             return None
 
-
-    def leave_one_out(self):
+    def _leave_one_out(self):
         """
         This experiment does serene_benchmark evaluation for each domain:
             - one dataset is left out for testing
@@ -155,7 +170,7 @@ class Experiment(object):
         :return:
         """
         if self.experiment_type == "leave_one_out":
-            self.leave_one_out()
+            self._leave_one_out()
             return True
         else:
             logging.warning("Unsupported experiment type!!!")

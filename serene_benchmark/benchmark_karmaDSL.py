@@ -14,8 +14,8 @@ def test_karma():
     loo_experiment = Experiment(models,
                                 experiment_type="leave_one_out",
                                 description="plain loo",
-                                result_csv=os.path.join('data', "performance_karma.csv"),
-                                debug_csv=os.path.join("data", "debug_karma.csv"))
+                                result_csv=os.path.join('results', "performance_karma.csv"),
+                                debug_csv=os.path.join("results", "debug_karma.csv"))
 
     loo_experiment.run()
 
@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     # setting up the logging
     log_file = 'benchmark_karma.log'
-    logging.basicConfig(filename=os.path.join('data', log_file),
+    logging.basicConfig(filename=os.path.join('results', log_file),
                         level=logging.DEBUG, filemode='w+',
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
