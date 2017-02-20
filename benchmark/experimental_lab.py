@@ -26,7 +26,7 @@ def get_session(gpu_fraction=0.5):
     else:
         return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
-def experiment():
+def experiment(domain, classifier_type, model_description, add_headers, p_step, n_runs, results_dir):
 
     # #******* setting up DINTModel
     # dm = SchemaMatcher(host="localhost", port=8080)
@@ -56,15 +56,22 @@ def experiment():
     # print(predicted_df)
     # print(dsl_model.evaluate(predicted_df))
 
-    n_runs = 100
-    results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
+    if add_headers:
+        p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
+    else:
+        p_header_list = [0.]
+
     results_file = 'adding_headers_to_samples ' + '(' + domain + ', ' + model_description + ', ' + str(n_runs) + ' runs per p_header value)'
-    print('Results will be saved to',results_file)
     if not add_headers:
         results_file = 'not '+results_file
     fname_progress = results_dir + results_file + ' [IN PROGRESS].xlsx'
+
     logging.info("Experiment on probabilistic inclusion of column headers to column samples")
-    logging.info("Results are saved to file {}".format(fname_progress))
+    logging.info('Parameters of the experiment:')
+    logging.info('  domain: {}, classifier_type: {}'.format(domain, classifier_type))
+    logging.info('  model description: {}'.format(model_description))
+    logging.info('  add_headers={}, p_step={}'.format(add_headers, p_step))
+    logging.info('RESULTS will be saved to file \'{}\''.format(results_file))
 
     results = pd.DataFrame(columns=['runs','add_header','p_header','accuracy_mean','accuracy_std','fmeasure_mean','fmeasure_std','MRR_mean','MRR_std'])
     for p_header in p_header_list:
@@ -117,9 +124,11 @@ if __name__ == "__main__":
                         level=logging.DEBUG, filemode='w+',
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
+    results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
+
+    # ******* setting up a bunch of experiments:
     domain = "soccer"
     assert domain in domains
-
     # train/test
     train_sources = benchmark[domain][:-1]
     test_source = [benchmark[domain][-1]]
@@ -127,22 +136,32 @@ if __name__ == "__main__":
     print("# sources in train: %d" % len(train_sources))
     print("# sources in test: %d" % len(test_source))
 
-    # ******* setting up NNetModel:
+    trials = {}
+    n_experiments = 5  # each experiment should check some hypothesis
+    n_trials = n_experiments*2   # *2 since we have pairs of trials with add_headers=[False, True] for each experiment
+    trials['classifier_type'] = ['cnn@charseq']*n_trials
+    trials['add_headers'] = [False,True]*n_experiments
+    trials['n_conv_layers'] = [2]*2 + [2]*2 + [3]*2 + [2]*2 + [2]*2
+    trials['nb_filter'] = [100]*2 + [100]*2 + [100]*2 + [200]*2 + [200]*2
+    trials['maxlen'] = [250]*2 + [500]*2 + [250]*2 + [200]*2 + [250]*2
 
-    classifier_type = 'cnn@charseq'
-
-    if classifier_type == 'cnn@charseq':
-        KTF.set_session(get_session())
-        model_description = classifier_type + ' model with ' + str(
-            hp_cnn['n_conv_layers']) + ' conv layers of ' + str(hp_cnn['nb_filter']) + ' filters, ' + 'charseq_length=' + str(hp['maxlen'])
-    else:
-        model_description = classifier_type + ' model'
-
-    add_headers = False
     p_step = 0.1
-    if add_headers:
-        p_header_list = np.arange(0., 1. + p_step, p_step)  # range from 0. to 1. with p_step
-    else:
-        p_header_list = [0.]
+    n_runs = 100   # models per value of p, to be averaged
 
-    experiment()
+    for t in range(n_trials):
+        # Specify the parameters of the run:
+        classifier_type = trials['classifier_type'][t]
+        add_headers = trials['add_headers'][t]
+        hp_cnn['n_conv_layers'] = trials['n_conv_layers'][t]
+        hp_cnn['nb_filter'] = trials['nb_filter'][t]
+        hp['maxlen'] = trials['maxlen'][t]
+
+        if classifier_type == 'cnn@charseq':
+            KTF.set_session(get_session())
+            model_description = classifier_type + ' model with ' + \
+                str(hp_cnn['n_conv_layers']) + ' conv layers of ' + \
+                str(hp_cnn['nb_filter']) + ' filters, ' + 'charseq_length=' + str(hp['maxlen'])
+        else:
+            model_description = classifier_type + ' model'
+
+        experiment(domain, classifier_type, model_description, add_headers, p_step, n_runs, results_dir)
