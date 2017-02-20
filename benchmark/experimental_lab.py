@@ -27,6 +27,7 @@ def get_session(gpu_fraction=0.5):
         return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
 def experiment(domain, classifier_type, model_description, add_headers, p_step, n_runs, results_dir):
+    """Run an experiment with the specified domain, classifier type, etc."""
 
     # #******* setting up DINTModel
     # dm = SchemaMatcher(host="localhost", port=8080)
@@ -117,37 +118,37 @@ def experiment(domain, classifier_type, model_description, add_headers, p_step, 
 
 
 if __name__ == "__main__":
-    print('EXPERIMENT')
     # setting up the logging
     log_file = 'benchmark.log'
     logging.basicConfig(filename=os.path.join('data', log_file),
                         level=logging.DEBUG, filemode='w+',
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'
+    results_dir = '/home/yuriy/Projects/Data_integration/code/serene-benchmark/benchmark/experiments/'   # dir to which the results of experiments will be saved
 
-    # ******* setting up a bunch of experiments:
+    # ******* setting up a batch of experiments:
     domain = "soccer"
     assert domain in domains
-    # train/test
+    # train/test sets:
     train_sources = benchmark[domain][:-1]
     test_source = [benchmark[domain][-1]]
     print("Domain:", domain)
     print("# sources in train: %d" % len(train_sources))
     print("# sources in test: %d" % len(test_source))
 
-    trials = {}
-    n_experiments = 5  # each experiment should check some hypothesis
-    n_trials = n_experiments*2   # *2 since we have pairs of trials with add_headers=[False, True] for each experiment
+    n_experiments = 5  # number of experiments to run
+    trials = {}   #initialize a batch of trials
+    n_trials = n_experiments*2   # number of trials, *2 since we have a pair of trials with add_headers=[False, True] for each experiment
     trials['classifier_type'] = ['cnn@charseq']*n_trials
     trials['add_headers'] = [False,True]*n_experiments
     trials['n_conv_layers'] = [2]*2 + [2]*2 + [3]*2 + [2]*2 + [2]*2
     trials['nb_filter'] = [100]*2 + [100]*2 + [100]*2 + [200]*2 + [200]*2
     trials['maxlen'] = [250]*2 + [500]*2 + [250]*2 + [200]*2 + [250]*2
 
-    p_step = 0.1
-    n_runs = 100   # models per value of p, to be averaged
+    p_step = 0.1   # use the same p_step in all experiments
+    n_runs = 100   # number of models per value of p, to be averaged
 
+    # run the experiments:
     for t in range(n_trials):
         # Specify the parameters of the run:
         classifier_type = trials['classifier_type'][t]
