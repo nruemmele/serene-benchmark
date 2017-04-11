@@ -381,6 +381,34 @@ def test_upsampletomax():
 
     loo_experiment.run()
 
+def test_resampletomean():
+    # ******* setting up DINTModel
+    dm = SchemaMatcher(host="localhost", port=8080)
+
+    logging.info("Cleaning models from DINT server")
+    for m in dm.models:
+        dm.remove_model(m)
+    logging.info("Cleaning datasets from DINT server")
+    for ds in dm.datasets:
+        dm.remove_dataset(ds)
+
+    m1 = create_dint_model(dm, "full", "ResampleToMean")
+    m2 = create_dint_model(dm, "single", "ResampleToMean")
+    m3 = create_dint_model(dm, "full_chardist", "ResampleToMean")
+    m4 = create_dint_model(dm, "noheader", "ResampleToMean")
+    m5 = create_dint_model(dm, "chardistonly", "ResampleToMean")
+
+    models = [m1, m2, m3, m4, m5]
+
+    loo_experiment = Experiment(models,
+                                experiment_type="leave_one_out",
+                                description="plain loo",
+                                result_csv=os.path.join('results', "performance_dint_resampletomean.csv"),
+                                debug_csv=os.path.join("results", "debug_dint_resampletomean.csv"))
+
+    loo_experiment.run()
+
+
 
 if __name__ == "__main__":
 
@@ -390,5 +418,7 @@ if __name__ == "__main__":
                         level=logging.DEBUG, filemode='w+',
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    # test_models()
     test_upsampletomax()
+    test_resampletomean()
+    test_models()
+    test_bagging()
