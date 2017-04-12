@@ -1,10 +1,9 @@
-
-import pandas as pd
 import itertools as it
 import os
 import os.path
 import numpy as np
 import random
+import logging
 
 
 from collections import OrderedDict
@@ -18,16 +17,21 @@ class Column(object):
         The Column object holds a single column from the dataset.
     """
     def __init__(self, filename, colname, title, lines):
-        self.filename = filename   # filename to which the column was extracted from
-        self.colname = colname     # column name
+        self.filename = filename   # filename from which the column was extracted (data source)
+        self.colname = colname     # column name (column title)
         self.title = title         # semantic label of the column (short title)
         self.lines = lines         # lines in the column
 
-    def bagging(self, size=200, n=100):
+    def bagging(self, size=200, n=100, add_header=False, p_header=0.):
         """
             Sample with replacement (generate n samples of [size] lines each)
+            withHeader tells whether to put the column name (header) in front of the bagging samples
+            p is the probability of adding the header to a sample
         """
         X = [np.random.choice(self.lines, size) for x in range(n)]
+        if add_header:  # add column name in front of a fraction of elements of X:
+            n_headers = int(p_header*len(X))   # number of X elements to add the column header to
+            X = [np.append(self.colname, x) for x in X[:n_headers]] + X[n_headers:]  # adding colname to every element of X leads to overfitting to colnames. One way to combat this would be to add colname to a fraction of elements only, thus forcing the model to learn other features besides column headers.
         y = [self.title for _ in range(n)]
         return X, y
 
@@ -113,7 +117,8 @@ class Reader(object):
                     all_cols += cols
         return files, all_cols
 
-    def to_ml(self, all_cols, labels=None, size=20, n=100, train_frac=0.5, verbose=True):
+    def to_ml(self, all_cols, labels=None, size=20, n=100,
+              train_frac=0.5, add_header=False, p_header=0.0, verbose=True):
         """
         Convert a list of columns ('Column' objects) into an X, y matrix
         
@@ -127,11 +132,14 @@ class Reader(object):
             X = []
             y = []
             for col in cols:
-                X_single, y_single = col.bagging(size, n)
+                X_single, y_single = col.bagging(size, n, add_header, p_header)
                 for x_s, y_s in zip(X_single, y_single):
-                    flattened = [ord(char) for char in '\n'.join(x_s)]   # replace chars with their unicode indices
+                    flattened = [ord(char) for char in '\n'.join(x_s)]   # concatenate elements of x_s (column lines) into one string, and replace chars with their unicode indices
                     X.append(flattened)
-                    y.append(label_lookup[y_s])
+                    if y_s in label_lookup:
+                        y.append(label_lookup[y_s])
+                    else:
+                        y.append(label_lookup['unknown'])
             return X, y
 
         if labels is None:
@@ -140,16 +148,18 @@ class Reader(object):
                 print("semantic labels:")
                 print(labels)
             if 'unknown' not in labels:
-                if verbose: print('Adding \'unknown\' semantic label')
+                if verbose:
+                    print('Adding \'unknown\' semantic label')
                 labels = np.append(labels, 'unknown')
                 if verbose:
                     print('Updated semantic labels:')
                     print(labels)
-            
+        logging.debug("semantic labels: {}".format(labels))
         label_lookup = {k: v for v, k in enumerate(labels)}
         if verbose:
             print("semantic label lookup table:")
             print(label_lookup)
+        logging.debug("semantic label lookup table: {}".format(label_lookup))
 
         # here we randomly spit all_cols into training and test sets of columns 50/50, and then convert those sets of columns to X_train, y_train and X_test, y_test via bagging the rows from those columns
         train_cols = random.sample(all_cols, int(np.ceil(len(all_cols)*train_frac)))    #all_cols[::2]
@@ -159,6 +169,8 @@ class Reader(object):
         if verbose:
             print("train data semantic labels:", sorted(set(y_train)))
             print("test data semantic labels: ", sorted(set(y_test)))
+        logging.debug("train data semantic labels: {}".format(sorted(set(y_train))))
+        logging.debug("test data semantic labels: {}".format(sorted(set(y_test))))
 
         return (X_train, y_train), (X_test, y_test), label_lookup, train_cols, test_cols
 
@@ -167,34 +179,34 @@ class Reader(object):
         return (X[n:], y[n:]), (X[:n], y[:n])
 
 
-if __name__ == "__main__":
-
-    # reader for the museum dataset
-    reader = Reader()
-    files, all_cols = reader.read_dir('data')
-    print("Found", len(all_cols), "columns")
-
-    # First we load up the data...
-    print('Loading data...')
-    (X_train, y_train), (X_test, y_test), label_lookup = reader.to_ml(
-        all_cols, subsize, n_samples
-    )
-    print(label_lookup)
-    # we can use the inverted lookup to look at the labels for analysis
-    inverted_lookup = { v:k for k, v in label_lookup.items() }
-    labels = label_lookup.keys()
-
-    # next we prepare the data for the network...
-    print("Pad sequences (samples x time)")
-    X_train = sequence.pad_sequences(X_train, maxlen=maxlen)
-    X_test = sequence.pad_sequences(X_test, maxlen=maxlen)
-    print('X_train shape:', X_train.shape)
-    print('X_test shape:', X_test.shape)
-#    print('samples of X_train rows:')
-#    for i in np.random.randint(0,X_train.shape[0],size=5):
-#        print([[chr(c) for c in X_train[i,:]], inverted_lookup[y_train[i]]])
-
-    y_train = to_categorical(np.array(y_train), len(labels))
-    y_test = to_categorical(np.array(y_test), len(labels))
-
-    # now we build the model...
+# if __name__ == "__main__":
+#
+#     # reader for the museum dataset
+#     reader = Reader()
+#     files, all_cols = reader.read_dir('data')
+#     print("Found", len(all_cols), "columns")
+#
+#     # First we load up the data...
+#     print('Loading data...')
+#     (X_train, y_train), (X_test, y_test), label_lookup = reader.to_ml(
+#         all_cols, subsize, n_samples
+#     )
+#     print(label_lookup)
+#     # we can use the inverted lookup to look at the labels for analysis
+#     inverted_lookup = { v:k for k, v in label_lookup.items() }
+#     labels = label_lookup.keys()
+#
+#     # next we prepare the data for the network...
+#     print("Pad sequences (samples x time)")
+#     X_train = sequence.pad_sequences(X_train, maxlen=maxlen)
+#     X_test = sequence.pad_sequences(X_test, maxlen=maxlen)
+#     print('X_train shape:', X_train.shape)
+#     print('X_test shape:', X_test.shape)
+# #    print('samples of X_train rows:')
+# #    for i in np.random.randint(0,X_train.shape[0],size=5):
+# #        print([[chr(c) for c in X_train[i,:]], inverted_lookup[y_train[i]]])
+#
+#     y_train = to_categorical(np.array(y_train), len(labels))
+#     y_test = to_categorical(np.array(y_test), len(labels))
+#
+#     # now we build the model...

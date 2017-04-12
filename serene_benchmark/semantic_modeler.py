@@ -1,0 +1,2 @@
+# ontology map for museum suite
+# Map(0 -> 120_dcterms.rdf, 5 -> 260_aac-ont.owl, 10 -> 105_Rdf-schema.owl, 1 -> 220_edm_from_xuming.owl, 6 -> 175_frbr_core.rdf, 9 -> 230_saam-ont.owl, 2 -> 140_foaf.owl, 7 -> 180_rdaGr2.rdf, 3 -> 100_rdf.owl, 8 -> 190_ore.owl, 4 -> 250_skos.owl)

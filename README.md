@@ -23,6 +23,7 @@ nosetests
 ```
 
 ### Run
+For NNetModel, allowed model types are: 'cnn@charseq' (CNN on character sequences), 'mlp@charfreq' (MLP on character freqs + entropy), 'rf@charfreq' (RF on character freqs + entropy)
 
 There are three different approaches for semantic typing which can be currently evaluated in this project:
 

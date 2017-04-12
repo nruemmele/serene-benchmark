@@ -1,0 +1,3 @@
+"key","column_name","source_name","semantic_type"
+"name","name","data/datasets/museum/data/s09-s-18-artists.json","Person---nameOfThePerson"
+"biography","biography","data/datasets/museum/data/s09-s-18-artists.json","Person---biographicalInformation"

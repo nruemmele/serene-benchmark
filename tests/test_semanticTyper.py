@@ -1,5 +1,5 @@
 from unittest import TestCase
-from benchmark.semantic_typer import SemanticTyper
+from serene_benchmark.semantic_typer import SemanticTyper
 import pandas as pd
 
 class TestSemanticTyper(TestCase):

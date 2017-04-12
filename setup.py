@@ -24,7 +24,7 @@ if sys.version_info < (3, 1):
     sys.exit(1)
 
 packages = [
-    'benchmark', 'karmaDSL'
+    'serene_benchmark', 'karmaDSL', 'neural_nets'
 ]
 
 install_requires = [
@@ -33,27 +33,30 @@ install_requires = [
     'numpy',
     'coverage>=3.6,<4.99',
     'requests',
-    'keras',
-    'tensorflow'
+    'keras'
+    # 'tensorflow-gpu'
 ]
 
 long_desc = """The Serene Benchmark is a framework to evaluate different schema matching and mapping approaches."""
 
-import benchmark as serene_benchmark
+import serene_benchmark
 version = serene_benchmark.__version__
 
 setup(
     name="serene-benchmark",
     version=version,
-    description="Semantic Modelling API Client Library for Python",
+    description="Serene benchmark to evaluate data integration approaches",
     long_description=long_desc,
     author="Data61 | CSIRO",
     url="http://github.com/NICTA/serene-benchmark/",
     install_requires=install_requires,
     packages=packages,
-    package_data={},
+    package_data={
+        # 'serene_benchmark': ['data/sources/*', 'data/labels/*']
+    },
     license="Apache 2.0",
-    keywords="semantic modelling client serene",
+    keywords="serene benchmark semantic labelling",
+    # include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
