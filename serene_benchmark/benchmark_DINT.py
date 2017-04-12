@@ -1,8 +1,13 @@
+"""
+Copyright (C) 2016 Data61 CSIRO
+Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
+
+"""
+
 from serene_benchmark import Experiment, DINTModel
-from serene.core import SchemaMatcher
+from serene.matcher.core import SchemaMatcher
 import os
 import logging
-
 
 
 def create_dint_model(dm, features="full", resampling_strategy="NoResampling"):
@@ -416,9 +421,10 @@ if __name__ == "__main__":
     log_file = 'benchmark_dint.log'
     logging.basicConfig(filename=os.path.join('results', log_file),
                         level=logging.DEBUG, filemode='w+',
-                        format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+                        format='%(asctime)s %(module)s %(funcName)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    test_upsampletomax()
-    test_resampletomean()
-    test_models()
-    test_bagging()
+    test_singlefeatures()
+    # test_upsampletomax()
+    # test_resampletomean()
+    # test_models()
+    # test_bagging()

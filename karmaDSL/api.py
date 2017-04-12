@@ -9,7 +9,7 @@ import requests
 import os
 import datetime
 
-from serene.exceptions import BadRequestError, NotFoundError, OtherError, InternalError
+from serene.api.exceptions import BadRequestError, NotFoundError, OtherError, InternalError
 from urllib.parse import urljoin
 
 

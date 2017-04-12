@@ -2,8 +2,7 @@
 Copyright (C) 2016 Data61 CSIRO
 Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
 
-Abstract model for semantic labelling/typing.
-Evaluation will be based on this abstract model.
+Module for experiment design
 """
 import logging
 import os
@@ -49,7 +48,8 @@ class Experiment(object):
 
     def __init__(self, models, experiment_type, description, result_csv, debug_csv):
         """
-        Initialize experiment. To run the experiment, please call "run" explicitly.
+        Initialize experiment.
+        To run the experiment, please call "run" explicitly.
         :param models:
         :param experiment_type:
         :param description:

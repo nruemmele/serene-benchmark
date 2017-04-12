@@ -1,3 +1,9 @@
+"""
+Copyright (C) 2016 Data61 CSIRO
+Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
+
+"""
+
 from serene_benchmark import Experiment, KarmaDSLModel
 import os
 from karmaDSL import KarmaSession

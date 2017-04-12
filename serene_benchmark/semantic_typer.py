@@ -2,14 +2,13 @@
 Copyright (C) 2016 Data61 CSIRO
 Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
 
-Abstract model for semantic labelling/typing.
-Evaluation will be based on this abstract model.
+This module provides high level wrappers for semantic typers within this benchmark.
 """
 import logging
 import os
 
-from serene.core import SchemaMatcher
-from serene.exceptions import InternalError
+from serene.matcher.core import SchemaMatcher
+from serene.api.exceptions import InternalError
 from karmaDSL import KarmaSession
 import time
 import pandas as pd
@@ -55,7 +54,9 @@ benchmark = {
 
 class SemanticTyper(object):
     """
-    Fixed for 4 domains for now
+    Abstract model for semantic labelling/typing.
+    Evaluation will be based on this abstract model.
+    Fixed for 4 domains for now.
     """
     if "SERENEPATH" in os.environ:
         data_dir = os.path.join(os.environ["SERENEPATH"], "sources")
@@ -180,8 +181,9 @@ class DINTModel(SemanticTyper):
         :return:
         """
         logging.info("Resetting DINTModel.")
-        # if self.classifier:
-        #     self.server.remove_model(self.classifier)
+        # now serene will not allow dataset deletion if there is a dependent model
+        if self.classifier:
+            self.server.remove_model(self.classifier)
         for ds in self.server.datasets:
             self.server.remove_dataset(ds)
         self.classifier = None
@@ -190,7 +192,7 @@ class DINTModel(SemanticTyper):
         """
         We want to construct a dictionary {column_id:class_label} for the dataset based on a .csv file.
         This method reads in .csv as a Pandas data frame, selects columns "column_name" and "class",
-        drops NaN and coverts these two columns into dictionary.
+        drops NaN and converts these two columns into dictionary.
         We obtain a lookup dictionary
         where the key is the column name and the value is the class label.
         Then by using column_map the method builds the required dictionary.
@@ -262,8 +264,8 @@ class DINTModel(SemanticTyper):
 
     def train(self):
         """
-        Train DINTModel and return True.
-        :return:
+        Train DINTModel and return run time.
+        :return: run time in seconds
         """
         logging.info("Training DINTModel.")
         start = time.time()
@@ -276,7 +278,6 @@ class DINTModel(SemanticTyper):
         :param source:
         :return: A pandas dataframe with obligatory columns: column_name, source_name, label, user_label, scores
         """
-        # TODO: track run time
         logging.info("Predicting with DINTModel for source {}".format(source))
         if source not in self.allowed_sources:
             logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
@@ -339,7 +340,6 @@ class KarmaDSLModel(SemanticTyper):
         return True
 
     def train(self):
-        # TODO: track run time
         start = time.time()
         if self.folder_names and self.train_sizes:
             logging.info("Training KarmaDSL...")
@@ -354,7 +354,6 @@ class KarmaDSLModel(SemanticTyper):
         :param source:
         :return:
         """
-        # TODO: track run time
         if source not in self.allowed_sources:
             logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
             return None
@@ -400,7 +399,10 @@ class NNetModel(SemanticTyper):
     def _read(self, source, label_source=None):
         """
         Read columns from source, and return them as a list of Column objects
-        (as defined in neural_nets.museum_data_reader)
+        (as defined in neural_nets.museum_data_reader).
+        :param source:
+        :param label_source:
+        :return:
         """
         filename = os.path.join(self.data_dir, source+".csv")
         if label_source is None:
@@ -429,8 +431,15 @@ class NNetModel(SemanticTyper):
 
         return source_cols
 
-
     def __init__(self, classifier_types, description, add_headers=False, p_header=0, debug_csv=None):
+        """
+        Initialize NNetModel.
+        :param classifier_types:
+        :param description:
+        :param add_headers:
+        :param p_header:
+        :param debug_csv:
+        """
         classifier_type = classifier_types[0]
         logging.info("Initializing NNetModel with {} classifier...".format(classifier_type))
         super().__init__("NNetModel", description=description, debug_csv=debug_csv)
@@ -441,15 +450,23 @@ class NNetModel(SemanticTyper):
         self.train_cols = None   # placeholder for a list of training cols (Column objects)
 
     def reset(self):
-        """ Reset the NNetModel """
+        """
+        Reset the NNetModel.
+        """
         logging.info("Resetting NNetModel...")
         K.clear_session()  # Destroys the current TF graph and creates a new one. Useful to avoid clutter from old models / layers.
         self.train_cols = None
         self.labeler = None
 
     def define_training_data(self, train_sources, train_labels=None):
-        """ Extract training columns from train_sources, and assign semantic labels to them
-         The result should be self.train_cols - a list of Column objects (defined in museum_data_reader) to pass to labeler in self.train()"""
+        """
+        Extract training columns from train_sources, and assign semantic labels to them.
+        The result should be self.train_cols - a list of Column objects (defined in museum_data_reader)
+        to pass to labeler in self.train()
+        :param train_sources:
+        :param train_labels:
+        :return:
+        """
         logging.info("Defining training data for NNetModel...")
         self.train_cols = []
         if train_labels is None:
@@ -462,10 +479,18 @@ class NNetModel(SemanticTyper):
         logging.info("NNetModel: Training data contains {} columns from {} sources".format(len(self.train_cols), len(train_sources)))
 
     def train(self):
-        """ Create an instance of NN_Column_Labeler, perform bagging, feature preparation, and training of the underlying classifier(s) """
+        """
+        Create an instance of NN_Column_Labeler, perform bagging,
+        feature preparation, and training of the underlying classifier(s).
+        """
         logging.info("NNetModel training starts...")
         start = time.time()
-        self.labeler = NN_Column_Labeler([self.classifier_type], self.train_cols, split_by=hp['split_by'], test_frac=0, add_headers=self.add_headers, p_header=self.p_header)   # test_frac = 0 means no further splitting into train and test sets, i.e., use train_cols as all_cols
+        self.labeler = NN_Column_Labeler([self.classifier_type],
+                                         self.train_cols,
+                                         split_by=hp['split_by'],
+                                         test_frac=0, # no further splitting into train and test sets, i.e., use train_cols as all_cols
+                                         add_headers=self.add_headers,
+                                         p_header=self.p_header)
         # TODO: rewrite NN_Column_Labeler to be initialized with train_cols only, instead of all_cols followed by internal splitting of all_cols into train, valid, ant test sets of columns
 
         # Train self.labeler:
@@ -474,7 +499,11 @@ class NNetModel(SemanticTyper):
         return time.time() - start
 
     def predict(self, source):
-        """ Predict labels for all columns in source """
+        """
+        Predict labels for all columns in source.
+        :param source:
+        :return:
+        """
         if source not in self.allowed_sources:
             logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
             return None
