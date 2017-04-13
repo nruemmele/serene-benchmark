@@ -304,6 +304,62 @@ def test_singlefeatures():
 
     loo_experiment.run()
 
+
+def test_simple():
+    # ******* setting up DINTModel
+    dm = SchemaMatcher(host="localhost", port=8080)
+    # dictionary with features
+
+    single_feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
+                                                "ratio-alpha-chars", "prop-numerical-chars",
+                                                "prop-whitespace-chars", "prop-entries-with-at-sign"]
+                             }
+    # resampling strategy
+    resampling_strategy = "NoResampling"
+    dint_model = DINTModel(dm, single_feature_config,
+                           resampling_strategy,
+                           "DINTModel with simple feature config",
+                           debug_csv=os.path.join("results","debug_dint_simple.csv"))
+
+    models = [dint_model]
+
+    loo_experiment = Experiment(models,
+                                experiment_type="leave_one_out",
+                                description="plain loo",
+                                result_csv=os.path.join('results', "performance_simple.csv"),
+                                debug_csv=os.path.join("results", "debug_simple.csv"))
+
+    loo_experiment.run()
+
+
+def test_simple_holdout():
+    # ******* setting up DINTModel
+    dm = SchemaMatcher(host="localhost", port=8080)
+    # dictionary with features
+
+    single_feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
+                                                "ratio-alpha-chars", "prop-numerical-chars",
+                                                "prop-whitespace-chars", "prop-entries-with-at-sign"]
+                             }
+    # resampling strategy
+    resampling_strategy = "NoResampling"
+    dint_model = DINTModel(dm, single_feature_config,
+                           resampling_strategy,
+                           "DINTModel with simple feature config",
+                           debug_csv=os.path.join("results","debug_dint_simple_holdout.csv"))
+
+    models = [dint_model]
+
+    loo_experiment = Experiment(models,
+                                experiment_type="repeated_holdout",
+                                description="repeated_holdout_0.5_2",
+                                result_csv=os.path.join('results', "performance_simple_holdout.csv"),
+                                debug_csv=os.path.join("results", "debug_simple_holdout.csv"),
+                                holdout=0.5,
+                                num=2)
+
+    loo_experiment.run()
+
 def test_models():
     # ******* setting up DINTModel
     dm = SchemaMatcher(host="localhost", port=8080)
@@ -421,9 +477,9 @@ if __name__ == "__main__":
     log_file = 'benchmark_dint.log'
     logging.basicConfig(filename=os.path.join('results', log_file),
                         level=logging.DEBUG, filemode='w+',
-                        format='%(asctime)s %(module)s %(funcName)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+                        format='%(asctime)s %(levelname)s %(module)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    test_singlefeatures()
+    test_simple_holdout()
     # test_upsampletomax()
     # test_resampletomean()
     # test_models()

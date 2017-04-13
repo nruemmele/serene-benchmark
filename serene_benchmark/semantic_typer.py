@@ -172,6 +172,7 @@ class DINTModel(SemanticTyper):
         self.feature_config = feature_config
         self.resampling_strategy = resampling_strategy
         self.classifier = None
+        self.datasets = [] # list of associated datasets for this model
 
     def reset(self):
         """
@@ -183,9 +184,16 @@ class DINTModel(SemanticTyper):
         logging.info("Resetting DINTModel.")
         # now serene will not allow dataset deletion if there is a dependent model
         if self.classifier:
-            self.server.remove_model(self.classifier)
-        for ds in self.server.datasets:
-            self.server.remove_dataset(ds)
+            try:
+                self.server.remove_model(self.classifier)
+            except Exception as e:
+                logging.warning("Failed to delete DINTModel: {}".format(e))
+        for ds in self.datasets:
+            try:
+                self.server.remove_dataset(ds)
+            except Exception as e:
+                logging.warning("Failed to delete dataset: {}".format(e))
+
         self.classifier = None
 
     def _construct_labelData(self, matcher_dataset, filepath, header_column="column_name", header_label="class"):
@@ -240,6 +248,7 @@ class DINTModel(SemanticTyper):
             matcher_dataset = self.server.create_dataset(file_path=os.path.join(self.data_dir, source+".csv"),
                                                          description="traindata",
                                                          type_map={})
+            self.datasets.append(matcher_dataset)
 
             # construct dictionary of labels for the uploaded dataset
             try:
@@ -259,7 +268,12 @@ class DINTModel(SemanticTyper):
                                                    classes=classes,
                                                    description=self.description,
                                                    labels=label_dict,
-                                                   resampling_strategy=self.resampling_strategy)
+                                                   resampling_strategy=self.resampling_strategy,
+                                                   num_bags=50,
+                                                   bag_size=100)
+
+        logging.debug("DINT model created on the server!")
+
         return True
 
     def train(self):
@@ -267,7 +281,8 @@ class DINTModel(SemanticTyper):
         Train DINTModel and return run time.
         :return: run time in seconds
         """
-        logging.info("Training DINTModel.")
+        logging.info("Training DINTModel:")
+        logging.info("  model type: {}".format(type(self.classifier)))
         start = time.time()
         tr = self.classifier.train()
         return time.time() - start
@@ -286,8 +301,10 @@ class DINTModel(SemanticTyper):
         matcher_dataset = self.server.create_dataset(file_path=os.path.join(self.data_dir, source + ".csv"),
                                                      description="testdata",
                                                      type_map={})
+        self.datasets.append(matcher_dataset)
+        logging.debug("Test data added to the server.")
         start = time.time()
-        predict_df = self.classifier.predict(matcher_dataset).copy()
+        predict_df = self.classifier.predict(matcher_dataset.id).copy()
         predict_df["running_time"] = time.time() - start
         column_map = dict([(col.id, col.name) for col in matcher_dataset.columns])
         predict_df["column_name"] = predict_df["column_id"].apply(lambda x: column_map[x])

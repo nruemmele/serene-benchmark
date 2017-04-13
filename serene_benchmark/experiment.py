@@ -8,14 +8,16 @@ import logging
 import os
 
 import pandas as pd
+import random
+from collections import defaultdict
 
 
 class Experiment(object):
     """
 
     """
-    domains = ["soccer", "dbpedia", "museum", "weather", "weapons"]
-    # domains = ["weapons"]
+    # domains = ["soccer", "dbpedia", "museum", "weather", "weapons"]
+    domains = ["weapons"]
     benchmark = {
         "soccer": ['bundesliga-2015-2016-rosters.csv', 'world_cup_2010_squads.csv',
                    'fifa-soccer-12-ultimate-team-data-player-database.csv', 'world_cup_2014_squads.csv',
@@ -46,15 +48,18 @@ class Experiment(object):
                     ]
     }
 
-    def __init__(self, models, experiment_type, description, result_csv, debug_csv):
+    def __init__(self, models, experiment_type, description, result_csv, debug_csv,
+                 holdout=None, num=None):
         """
         Initialize experiment.
         To run the experiment, please call "run" explicitly.
         :param models:
-        :param experiment_type:
+        :param experiment_type: "leave_one_out", "repeated_holdout"
         :param description:
         :param result_csv:
         :param debug_csv:
+        :param holdout: (0,1) range float number
+        :param num: integer > 0
         """
         logging.info("Initializing experiment...")
         self.models = models
@@ -64,6 +69,14 @@ class Experiment(object):
         self.performance_csv = result_csv
         self.train_sources = None
         self.test_sources = None
+        if holdout and 0 < holdout < 1:
+            self.holdout = holdout
+        else:
+            self.holdout = 0.5
+        if num and num > 0:
+            self.num = num
+        else:
+            self.num = 10
 
     def _evaluate_model(self, model):
         """
@@ -85,7 +98,7 @@ class Experiment(object):
             run_time = model.train()
             for test_source in self.test_sources:
                 predicted_df1 = model.predict(test_source)
-                logging.info("Experiment evaulate: Prediction done.")
+                logging.info("Experiment evaluate: Prediction done.")
                 predicted_df1["experiment"] = self.experiment_type
                 predicted_df1["experiment_description"] = self.description
                 predicted_df1["train_run_time"] = run_time
@@ -94,7 +107,6 @@ class Experiment(object):
             return predicted_df
         except Exception as e:
             logging.warning("Model evaluation failed: {}".format(e))
-            logging.warning("Model evaluation failed: {}".format(e.args))
             return None
 
     def _leave_one_out(self):
@@ -164,13 +176,108 @@ class Experiment(object):
 
         return True
 
-    def run(self):
+    def _contruct_holdout_samples(self, domain, holdout=0.5):
+        """
+        Helper function to construct train and test samples based on holdout ratio.
+        :param domain: domain
+        :param holdout: holdout ratio
+        :return: train and test samples
+        """
+        sources = self.benchmark[domain]
+        # we make sure that train_size will leave something for the test sample as well
+        train_size = min(max(round(holdout * len(sources)), 1), len(sources)-1)
+        train = random.sample(sources, train_size)
+
+        return train, list(set(sources) - set(train))
+
+
+    def _repeated_holdout(self, holdout=0.5, num=10):
+        """
+        This experiment does serene_benchmark evaluation for each domain using repeated holdout validation:
+            - domain data sources are split into train/test according to holdout
+            - we repeat num times random splitting, then training and then prediction
+        :return:
+        """
+        logging.info("Repeated holdout experiment: holdout={}, num={}".format(holdout, num))
+        performance_frames = []
+        # we just set key on models
+        model_lookup = {i: model for i, model in enumerate(self.models)}
+
+        for domain in self.domains:
+            print("Working on domain: {}".format(domain))
+            logging.info("Working on domain: {}".format(domain))
+
+            # keep track of evaluated models in this dictionary
+            frames = defaultdict(list)
+
+            # we repeat holdout num times
+            for i in range(num):
+                logging.info("-- holdout iteration: {}".format(i))
+                print("-- holdout iteration: {}".format(i))
+                self.train_sources, self.test_sources = self._contruct_holdout_samples(domain, holdout)
+                logging.info("----> {} test sources: {}".format(len(self.test_sources), self.test_sources))
+
+                for idx, model in model_lookup.items():
+                    logging.info("--> evaluating model: {}".format(model))
+                    predicted_df = self._evaluate_model(model)
+                    if predicted_df is not None:
+                        logging.info("---- appending frame")
+                        frames[idx].append(predicted_df)
+
+            for idx, model in model_lookup.items():
+                logging.info("Concatenating performance frames per model")
+                if len(frames[idx]) > 0:
+                    predicted_df = pd.concat(frames[idx])
+                    if self.debug_csv:
+                        if model.debug_csv:
+                            debug_csv = model.debug_csv + "_" + domain + ".csv"
+                        else:
+                            debug_csv = self.debug_csv + "_" + domain + ".csv"
+                        predicted_df.to_csv(debug_csv, index=False, header=True, mode="w+")
+
+                    performance = model.evaluate(predicted_df)
+                    performance["train_run_time"] = predicted_df["train_run_time"].mean()
+                    performance["experiment"] = self.experiment_type
+                    performance["experiment_description"] = self.description
+                    performance["predict_run_time"] = predicted_df["running_time"].mean()
+                    performance["domain"] = domain
+                    if len(frames) == num:
+                        performance["status"] = "success"
+                    else:
+                        performance["status"] = "completed_" + str(len(frames))
+                    performance["model"] = model.model_type
+                    performance["model_description"] = model.description
+                else:
+                    res = {"model": model.model_type,
+                           "model_description": model.description,
+                           "experiment": self.experiment_type,
+                           "experiment_description": self.description,
+                           "status": "failure",
+                           "domain": domain}
+                    performance = pd.DataFrame(res, index=[0])
+                performance_frames.append(performance)
+                # print("performance: ", performance)
+
+        logging.info("Concatenating performance frames for all models")
+        performance = pd.concat(performance_frames, ignore_index=True)
+        if self.performance_csv:
+            if os.path.exists(self.performance_csv):
+                performance.to_csv(self.performance_csv, index=False, header=False, mode="a")
+            else:
+                performance.to_csv(self.performance_csv, index=False, header=True, mode="w+")
+
+        return True
+
+    def run(self, ):
         """
         Execute experiment
         :return:
         """
         if self.experiment_type == "leave_one_out":
             self._leave_one_out()
+            return True
+        elif self.experiment_type == "repeated_holdout":
+            self._repeated_holdout(self.holdout, self.num)
             return True
         else:
             logging.warning("Unsupported experiment type!!!")
