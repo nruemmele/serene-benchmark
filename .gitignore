@@ -13,3 +13,5 @@ benchmark/data/t2k_gold/
 *.log
 docker/Dockerfile (copy)
 serene_benchmark/results/
+docker/serene-benchmark/
+docker/serene-python-client/

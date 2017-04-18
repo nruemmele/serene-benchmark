@@ -24,7 +24,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-
 # make some useful symlinks that are expected to exist
 RUN cd /usr/local/bin \
 #	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } \
@@ -60,7 +59,7 @@ RUN pip3 --no-cache-dir install \
     python3 -m ipykernel.kernelspec
 
 # Install TensorFlow GPU version.
-RUN pip3 --no-cache-dir install tensorflow_gpu
+RUN pip3 --no-cache-dir install tensorflow_gpu==0.10.0rc0
 # http://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-manylinux1_x86_64.whl
 # http://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-linux_x86_64.whl
 # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
@@ -79,7 +78,7 @@ COPY jupyter_notebook_config.py /root/.jupyter/
 COPY run_jupyter.sh /
 
 # For CUDA profiling, TensorFlow requires CUPTI.
-ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:/usr/lib:$LD_LIBRARY_PATH
 
 #
 # Next we create a benchmark user...
@@ -90,18 +89,29 @@ RUN mkdir -p /home/$username && chown -R $username:$username /home/$username
 WORKDIR /home/$username
 
 #
+# Install keras and other python dependencies
+#
+RUN pip3 install keras && \
+    pip3 install pandas && \
+    pip3 install requests && \
+    pip3 install rdflib && \
+    pip3 install networkx
+
+#
+# Install pygraphviz
+#
+RUN apt-get update
+RUN apt-get install -y graphviz libgraphviz-dev
+#RUN apt-get install libgraphviz-dev
+#RUN apt-get install libgraphviz4
+RUN pip3 install pygraphviz
+
+#
 # clean up...
 #
 RUN apt-get clean autoclean && \
     apt-get autoremove -y && \
         rm -rf /var/lib/{apt,dpkg,cache,log}/
-
-#
-# Install keras and other python dependencies
-#
-RUN pip3 install keras && \
-    pip3 install pandas && \
-    pip3 install requests
 
 #
 # Copy serene-python-client and serene-benchmark

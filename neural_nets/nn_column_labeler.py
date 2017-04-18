@@ -13,8 +13,9 @@ import sklearn.metrics
 # A hack to fix the AttributeError: module 'tensorflow.python' has no attribute 'control_flow_ops':
 # https://github.com/fchollet/keras/issues/3857 :
 import tensorflow as tf
-
 tf.python.control_flow_ops = tf
+# from tensorflow.python.ops import control_flow_ops
+# tf.python.control_flow_ops = control_flow_ops
 
 from collections import OrderedDict
 from keras.preprocessing import sequence

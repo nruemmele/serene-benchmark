@@ -4,7 +4,7 @@ Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
 
 """
 
-from serene_benchmark import Experiment, DINTModel
+from serene_benchmark import Experiment, DINTModel, NNetModel
 from serene.matcher.core import SchemaMatcher
 import os
 import logging
@@ -376,8 +376,10 @@ def test_models():
     m3 = create_dint_model(dm, "chardist", "NoResampling")
     m4 = create_dint_model(dm, "noheader", "NoResampling")
     m5 = create_dint_model(dm, "chardistonly", "NoResampling")
+    rf_model = NNetModel(['rf@charfreq'], 'rf@charfreq model: no headers', add_headers=False, p_header=0,
+                         debug_csv=os.path.join("results", "debug_nnet_rf.csv"))
 
-    models = [m1, m2, m3, m4, m5]
+    models = [m1, m2, m3, m4, m5, rf_model]
 
     loo_experiment = Experiment(models,
                                 experiment_type="leave_one_out",
@@ -386,6 +388,38 @@ def test_models():
                                 debug_csv=os.path.join("results", "debug_dint.csv"))
 
     loo_experiment.run()
+
+
+def test_models_holdout():
+    # ******* setting up DINTModel
+    dm = SchemaMatcher(host="localhost", port=8080)
+
+    logging.info("Cleaning models from DINT server")
+    for m in dm.models:
+        dm.remove_model(m)
+    logging.info("Cleaning datasets from DINT server")
+    for ds in dm.datasets:
+        dm.remove_dataset(ds)
+
+    m1 = create_dint_model(dm, "full", "NoResampling")
+    m2 = create_dint_model(dm, "single", "NoResampling")
+    m3 = create_dint_model(dm, "chardist", "NoResampling")
+    m4 = create_dint_model(dm, "noheader", "NoResampling")
+    m5 = create_dint_model(dm, "chardistonly", "NoResampling")
+    rf_model = NNetModel(['rf@charfreq'], 'rf@charfreq model: no headers', add_headers=False, p_header=0,
+                         debug_csv=os.path.join("results", "debug_nnet_rf_holdout.csv"))
+
+    models = [m1, m2, m3, m4, m5, rf_model]
+
+    rhold_experiment = Experiment(models,
+                                experiment_type="repeated_holdout",
+                                description="repeated_holdout_0.5_2",
+                                result_csv=os.path.join('results', "performance_models_holdout.csv"),
+                                debug_csv=os.path.join("results", "debug_holdout.csv"),
+                                holdout=0.5,
+                                num=2)
+
+    rhold_experiment.run()
 
 def test_bagging():
     # ******* setting up DINTModel
@@ -480,7 +514,9 @@ if __name__ == "__main__":
                         format='%(asctime)s %(levelname)s %(module)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
     test_simple_holdout()
-    # test_upsampletomax()
-    # test_resampletomean()
-    # test_models()
-    # test_bagging()
+    test_models()
+    test_models_holdout()
+    test_bagging()
+    test_upsampletomax()
+    test_resampletomean()
+
