@@ -16,8 +16,8 @@ class Experiment(object):
     """
 
     """
-    # domains = ["soccer", "dbpedia", "museum", "weather", "weapons"]
-    domains = ["weapons"]
+    domains = ["soccer", "dbpedia", "museum", "weather", "weapons"]
+    # domains = ["weapons"]
     benchmark = {
         "soccer": ['bundesliga-2015-2016-rosters.csv', 'world_cup_2010_squads.csv',
                    'fifa-soccer-12-ultimate-team-data-player-database.csv', 'world_cup_2014_squads.csv',
@@ -241,10 +241,10 @@ class Experiment(object):
                     performance["experiment_description"] = self.description
                     performance["predict_run_time"] = predicted_df["running_time"].mean()
                     performance["domain"] = domain
-                    if len(frames) == num:
+                    if len(frames[idx]) == num:
                         performance["status"] = "success"
                     else:
-                        performance["status"] = "completed_" + str(len(frames))
+                        performance["status"] = "completed_" + str(len(frames[idx]))
                     performance["model"] = model.model_type
                     performance["model_description"] = model.description
                 else:

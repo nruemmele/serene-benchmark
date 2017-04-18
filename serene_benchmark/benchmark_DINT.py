@@ -384,8 +384,8 @@ def test_models():
     loo_experiment = Experiment(models,
                                 experiment_type="leave_one_out",
                                 description="plain loo",
-                                result_csv=os.path.join('results', "performance_dint.csv"),
-                                debug_csv=os.path.join("results", "debug_dint.csv"))
+                                result_csv=os.path.join('results', "performance_models_loo.csv"),
+                                debug_csv=os.path.join("results", "debug_models_loo.csv"))
 
     loo_experiment.run()
 
@@ -413,11 +413,11 @@ def test_models_holdout():
 
     rhold_experiment = Experiment(models,
                                 experiment_type="repeated_holdout",
-                                description="repeated_holdout_0.5_2",
+                                description="repeated_holdout_0.5_10",
                                 result_csv=os.path.join('results', "performance_models_holdout.csv"),
                                 debug_csv=os.path.join("results", "debug_holdout.csv"),
                                 holdout=0.5,
-                                num=2)
+                                num=10)
 
     rhold_experiment.run()
 
