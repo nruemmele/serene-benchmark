@@ -15,3 +15,12 @@ docker/Dockerfile (copy)
 serene_benchmark/results/
 docker/serene-benchmark/
 docker/serene-python-client/
+
+# backup folders with resources
+serene_benchmark/data/dbpedia/
+serene_benchmark/data/labels (copy)/
+serene_benchmark/data/museum/
+serene_benchmark/data/soccer/
+serene_benchmark/data/sources (copy)/
+serene_benchmark/data/weapons/
+serene_benchmark/data/weather/

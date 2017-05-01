@@ -305,13 +305,13 @@ def test_singlefeatures():
     loo_experiment.run()
 
 
-def test_simple():
+def test_simple(ignore_uknown=True, domains=None):
     # ******* setting up DINTModel
     dm = SchemaMatcher(host="localhost", port=8080)
     # dictionary with features
 
     single_feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
-                                                "ratio-alpha-chars", "prop-numerical-chars",
+                                                "ratio-alpha-chars", "prop-numerical-chars", "shannon-entropy",
                                                 "prop-whitespace-chars", "prop-entries-with-at-sign"]
                              }
     # resampling strategy
@@ -319,7 +319,8 @@ def test_simple():
     dint_model = DINTModel(dm, single_feature_config,
                            resampling_strategy,
                            "DINTModel with simple feature config",
-                           debug_csv=os.path.join("results","debug_dint_simple.csv"))
+                           debug_csv=os.path.join("results","debug_dint_simple.csv"),
+                           ignore_unknown=ignore_uknown)
 
     models = [dint_model]
 
@@ -329,6 +330,17 @@ def test_simple():
                                 result_csv=os.path.join('results', "performance_simple.csv"),
                                 debug_csv=os.path.join("results", "debug_simple.csv"))
 
+    weapons = ["www.theoutdoorstrader.com.csv", "www.tennesseegunexchange.com.csv",
+                    "www.montanagunclassifieds.com.csv", "www.kyclassifieds.com.csv",
+                    "www.hawaiiguntrader.com.csv", "www.gunsinternational.com.csv",
+                    "www.floridaguntrader.com.csv", "www.floridagunclassifieds.com.csv",
+                    "www.elpasoguntrader.com.csv", "www.dallasguns.com.csv",
+                    "www.armslist.com.csv", "www.alaskaslist.com.csv"
+                    ]
+    loo_experiment.add_domain("weapons", weapons)
+
+    if domains:
+        loo_experiment.change_domains(domains)
     loo_experiment.run()
 
 
@@ -513,10 +525,11 @@ if __name__ == "__main__":
                         level=logging.DEBUG, filemode='w+',
                         format='%(asctime)s %(levelname)s %(module)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    test_simple_holdout()
-    test_models()
-    test_models_holdout()
-    test_bagging()
-    test_upsampletomax()
-    test_resampletomean()
+    # test_simple_holdout()
+    # test_models()
+    # test_models_holdout()
+    # test_bagging()
+    # test_upsampletomax()
+    # test_resampletomean()
+    test_simple(ignore_uknown=True, domains=["weapons"])
 

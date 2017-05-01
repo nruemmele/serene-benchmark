@@ -10,14 +10,22 @@ import os
 import pandas as pd
 import random
 from collections import defaultdict
+from serene.api.exceptions import InternalError
 
 
 class Experiment(object):
     """
 
     """
+    # this is the path to benchmark resources
+    if "SERENEPATH" in os.environ:
+        data_dir = os.path.join(os.environ["SERENEPATH"], "sources")
+        label_dir = os.path.join(os.environ["SERENEPATH"], "labels")
+    else:
+        data_dir = os.path.join("data", "sources")
+        label_dir = os.path.join("data", "labels")
+
     domains = ["soccer", "dbpedia", "museum", "weather", "weapons"]
-    # domains = ["weapons"]
     benchmark = {
         "soccer": ['bundesliga-2015-2016-rosters.csv', 'world_cup_2010_squads.csv',
                    'fifa-soccer-12-ultimate-team-data-player-database.csv', 'world_cup_2014_squads.csv',
@@ -78,6 +86,53 @@ class Experiment(object):
         else:
             self.num = 10
 
+    def add_domain(self, domain_name, sources):
+        """
+        Add a domain to the benchmark.
+        Csv sources and their labels need to be added.
+        All source files need to end with .csv.
+        All label files need to end with .columnmap.txt.
+        Label files have names as source_file_name + .columnmap.txt.
+        Source files have names as source_file_name + .csv.
+        :param domain_name: name to be assigned to the new domain
+        :param sources: list of source_file_name in the domain
+        :return:
+        """
+        logging.info("Adding new domain {}".format(domain_name))
+        if not(isinstance(sources, list)):
+            logging.error("sources must be a list in add_domain.")
+            raise InternalError("add_domain in experiment", "sources must be a list")
+
+        if domain_name in self.domains:
+            logging.error("Can't add a domain since this name already exists in the experiment. Change domain_name")
+            raise InternalError("add_domain in experiment", "Can't add a domain since this name "
+                                                            "already exists in the experiment. Change domain_name")
+        avail_sources = os.listdir(self.data_dir)
+        avail_labels = os.listdir(self.label_dir)
+
+        new_sources = [s for s in sources
+                       if s + ".csv" in avail_sources and s + ".columnmap.txt" in avail_labels]
+        if len(new_sources) < len(sources):
+            logging.warning("Not all source/label files have been copied to the data_dir/label_dir.")
+        logging.info("{} sources will be added to the domain {}".format(len(new_sources), domain_name))
+        print("{} sources will be added to the domain {}".format(len(new_sources), domain_name))
+        self.benchmark[domain_name] = new_sources
+        self.domains.append(domain_name)
+
+    def change_domains(self, domains):
+        """
+        Change list of domains for evaluation in this experiment.
+        :param domains: list of domain names
+        :return:
+        """
+        logging.info("Changing experiment domains. Current domains {}".format(self.domains))
+        if not(isinstance(domains, list)):
+            logging.error("Domains can't be changed since provided parameter is not a list")
+            raise InternalError("change_domains in experiment", "parameter domains must be a list")
+        new_domains = [domain for domain in domains if domain in self.domains]
+        self.domains = new_domains
+        logging.info("New domains in the experiment {}".format(self.domains))
+
     def _evaluate_model(self, model):
         """
         Evaluate one model by training first on the specified train_sources and testing on the specified test_sources.
@@ -102,6 +157,7 @@ class Experiment(object):
                 predicted_df1["experiment"] = self.experiment_type
                 predicted_df1["experiment_description"] = self.description
                 predicted_df1["train_run_time"] = run_time
+                # TODO: change labels in the test resource to unknown if the correct label is not among those in the training set
                 frames.append(predicted_df1)
             predicted_df = pd.concat(frames, ignore_index=True)
             return predicted_df
@@ -273,6 +329,10 @@ class Experiment(object):
         Execute experiment
         :return:
         """
+        if len(self.domains) < 1:
+            logging.warning("Experiment is not possible: there are no domains.")
+            print("Experiment is not possible: there are no domains.")
+            return False
         if self.experiment_type == "leave_one_out":
             self._leave_one_out()
             return True
@@ -281,4 +341,5 @@ class Experiment(object):
             return True
         else:
             logging.warning("Unsupported experiment type!!!")
+            print("Unsupported experiment type!!!")
             return False

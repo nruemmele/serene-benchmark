@@ -13,6 +13,7 @@ from karmaDSL import KarmaSession
 import time
 import pandas as pd
 import numpy as np
+import tempfile
 
 import sklearn.metrics
 
@@ -56,28 +57,33 @@ class SemanticTyper(object):
     """
     Abstract model for semantic labelling/typing.
     Evaluation will be based on this abstract model.
-    Fixed for 4 domains for now.
+    We do not fix domains here, though Karma evaluation is possible only for 4 domains.
     """
-    if "SERENEPATH" in os.environ:
-        data_dir = os.path.join(os.environ["SERENEPATH"], "sources")
-        label_dir = os.path.join(os.environ["SERENEPATH"], "labels")
+    if "SERENEBENCH" in os.environ:
+        data_dir = os.path.join(os.environ["SERENEBENCH"], "sources")
+        label_dir = os.path.join(os.environ["SERENEBENCH"], "labels")
     else:
         data_dir = os.path.join("data", "sources")
         label_dir = os.path.join("data", "labels")
 
-
-    allowed_sources = []
-    for sources in benchmark.values():
-        # only these sources can be used for training or testing by different classifiers of SemanticTyper
-        allowed_sources += sources
-
     metrics = ['categorical_accuracy', 'fmeasure', 'MRR']  # list of performance metrics to compare column labelers with
     metrics_average = 'macro'  # 'macro', 'micro', or 'weighted'
 
-    def __init__(self, model_type, description="", debug_csv=None):
+    def __init__(self, model_type, description="", debug_csv=None, ignore_unknown=True):
+        """
+        General initialization of semantic typer
+        :param model_type:
+        :param description:
+        :param debug_csv:
+        :param ignore_unknown: boolean to filter out columns of unknown class from training and testing
+        """
         self.model_type = model_type
         self.description = description
         self.debug_csv = debug_csv
+        self.ignore_unknown = ignore_unknown
+        # this will keep track of classes which are present in the semantic typer at the training stage
+        # it will be initialized only for DINTModel and NNetModel
+        self.classes = None
 
     def reset(self):
         pass
@@ -91,6 +97,27 @@ class SemanticTyper(object):
     def predict(self, source):
         pass
 
+    def _filter_unknown(self, predicted_df):
+        """
+        Depending on ignore_unknown, we either filter out unknown (value True) or include them into evaluation (False).
+        When including unknowns, we also make sure that those columns from the test source, which have labels not present
+        in the training set, are changed to unknown.
+
+        :param predicted_df: pandas dataframe
+        :return:
+        """
+        logging.info("Size of the predicted df before unknown filter: {}".format(predicted_df.size))
+        if self.ignore_unknown:
+            # filter rows where correct label is unknown
+            predicted_df = predicted_df[predicted_df["user_label"] != "unknown"]
+        else:
+            # change correct labels to unknown if correct label is absent in training classes
+            if self.classes and len(self.classes):
+                predicted_df["user_label"] = predicted_df["user_label"].apply(
+                    lambda x: "unknown" if x not in self.classes else x)
+        logging.info("Size of the predicted df after unknown filter: {}".format(predicted_df.size))
+        return predicted_df
+
     def evaluate(self, predicted_df):
         """
         Evaluate the performance of the model.
@@ -101,6 +128,8 @@ class SemanticTyper(object):
         :return:
         """
         logging.info("Evaluating model: {}".format(self.model_type))
+        # we filter out unknown or include unknowns!
+        predicted_df = self._filter_unknown(predicted_df)
         y_true = predicted_df["user_label"].as_matrix()
         y_pred = predicted_df["label"].as_matrix()
 
@@ -152,7 +181,8 @@ class DINTModel(SemanticTyper):
     """
     Wrapper for DINT schema matcher.
     """
-    def __init__(self, schema_matcher, feature_config, resampling_strategy, description, debug_csv=None):
+    def __init__(self, schema_matcher, feature_config, resampling_strategy,
+                 description, debug_csv=None, ignore_unknown=True):
         """
         Initializes DINT model with the specified feature configuration and resampling strategy.
         The model gets created at schema_matcher server.
@@ -166,7 +196,7 @@ class DINTModel(SemanticTyper):
             logging.error("DINTModel init: SchemaMatcher instance required.")
             raise InternalError("DINTModel init", "SchemaMatcher instance required")
 
-        super().__init__("DINTModel", description=description, debug_csv=debug_csv)
+        super().__init__("DINTModel", description=description, debug_csv=debug_csv, ignore_unknown=ignore_unknown)
 
         self.server = schema_matcher
         self.feature_config = feature_config
@@ -183,16 +213,16 @@ class DINTModel(SemanticTyper):
         """
         logging.info("Resetting DINTModel.")
         # now serene will not allow dataset deletion if there is a dependent model
-        if self.classifier:
-            try:
-                self.server.remove_model(self.classifier)
-            except Exception as e:
-                logging.warning("Failed to delete DINTModel: {}".format(e))
-        for ds in self.datasets:
-            try:
-                self.server.remove_dataset(ds)
-            except Exception as e:
-                logging.warning("Failed to delete dataset: {}".format(e))
+        # if self.classifier:
+        #     try:
+        #         self.server.remove_model(self.classifier)
+        #     except Exception as e:
+        #         logging.warning("Failed to delete DINTModel: {}".format(e))
+        # for ds in self.datasets:
+        #     try:
+        #         self.server.remove_dataset(ds)
+        #     except Exception as e:
+        #         logging.warning("Failed to delete dataset: {}".format(e))
 
         self.classifier = None
 
@@ -206,6 +236,7 @@ class DINTModel(SemanticTyper):
         Then by using column_map the method builds the required dictionary.
 
         Args:
+            matcher_dataset: Dataset object returned by serene python client when uploading dataset to the server
             filepath: string where .csv file is located.
             header_column: header for the column with column names
             header_label: header for the column with labels
@@ -214,41 +245,82 @@ class DINTModel(SemanticTyper):
 
         """
         logging.debug("--> Labels in {}".format(filepath))
+        # TODO: we filter out unknown or include unkowns!
         label_data = {}  # we need this dictionary (column_id, class_label)
         try:
             frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
             logging.debug("  --> headers {}".format(frame.columns))
             logging.debug("  --> dtypes {}".format(frame.dtypes))
-            # dictionary (column_name, class_label)scr
+            # dictionary (column_name, class_label)
             name_labels = frame[[header_column, header_label]].dropna().set_index(header_column)[header_label].to_dict()
             column_map = [(col.id, col.name) for col in matcher_dataset.columns]
             logging.debug("  --> column_map {}".format(column_map))
             for col_id, col_name in column_map:
                 if col_name in name_labels:
                     label_data[int(col_id)] = name_labels[col_name]
+                else: # we add unknown class
+                    label_data[int(col_id)] = "unknown"
         except Exception as e:
             raise InternalError("construct_labelData", e)
 
         return label_data
 
+    def _upload_dataset(self, source, description="data"):
+        """
+        Upload source to schema matcher server and if needed filter out unknown class
+        :param source:
+        :return:
+        """
+        filename = os.path.join(self.data_dir, source + ".csv")
+        if self.ignore_unknown:
+            # upload source to the schema matcher server and we do not make any alterations to the original source
+            matcher_dataset = self.server.create_dataset(file_path=filename,
+                                                         description="traindata",
+                                                         type_map={})
+            self.datasets.append(matcher_dataset)
+        else:
+            try:
+                # we need to filter out unknown columns
+                logging.info("Removing unknown class columns from the source {}".format(source))
+                df = pd.read_csv(filename, dtype=str)  # read the data source as a DataFrame
+                filepath = os.path.join(self.label_dir, source + ".columnmap.txt") # labels here
+                header_column = "column_name"
+                header_label = "semantic_type"
+                frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
+                # dictionary (column_name, class_label)
+                name_labels = frame[[header_column, header_label]].dropna().set_index(
+                    header_column)[header_label].to_dict()
+                for col_name in df.columns:
+                    if col_name in name_labels:
+                        if name_labels[col_name] == "unknown":
+                            del df[col_name]
+                    else:  # we remove unknown class column from the source
+                        del df[col_name]
+                path = os.path.join(tempfile.gettempdir(), source + ".csv")
+                df.to_csv(path, index=False)
+            except Exception as e:
+                logging.warning("unknown class column removal failed {} due {}".format(source, e))
+                path = filename
+            # upload source to the schema matcher server
+            matcher_dataset = self.server.create_dataset(file_path=path,
+                                                         description=description,
+                                                         type_map={})
+            self.datasets.append(matcher_dataset)
+
+
+        return matcher_dataset
+
     def define_training_data(self, train_sources, train_labels=None):
         """
 
-        :param train_sources: List of sources. For now it's hard coded for the allowed_sources.
+        :param train_sources: List of sources.
         :param train_labels: List of files with labels, optional. If not present, the default labels will be used.
         :return:
         """
         logging.info("Defining training data for DINTModel.")
         label_dict = {}
         for idx, source in enumerate(train_sources):
-            if source not in self.allowed_sources:
-                logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
-                continue
-            # upload source to the schema matcher server
-            matcher_dataset = self.server.create_dataset(file_path=os.path.join(self.data_dir, source+".csv"),
-                                                         description="traindata",
-                                                         type_map={})
-            self.datasets.append(matcher_dataset)
+            matcher_dataset = self._upload_dataset(source, description="traindata")
 
             # construct dictionary of labels for the uploaded dataset
             try:
@@ -263,9 +335,9 @@ class DINTModel(SemanticTyper):
 
         # create model on the server with the labels specified
         logging.debug("Creating model on the DINT server with proper config.")
-        classes = list(set(label_dict.values())) + ["unknown"]
+        self.classes = list(set(label_dict.values())) + ["unknown"]
         self.classifier = self.server.create_model(self.feature_config,
-                                                   classes=classes,
+                                                   classes=self.classes,
                                                    description=self.description,
                                                    labels=label_dict,
                                                    resampling_strategy=self.resampling_strategy,
@@ -282,6 +354,7 @@ class DINTModel(SemanticTyper):
         :return: run time in seconds
         """
         logging.info("Training DINTModel:")
+        logging.info("  number of classes: {}".format(len(self.classes)))
         logging.info("  model type: {}".format(type(self.classifier)))
         start = time.time()
         tr = self.classifier.train()
@@ -294,14 +367,8 @@ class DINTModel(SemanticTyper):
         :return: A pandas dataframe with obligatory columns: column_name, source_name, label, user_label, scores
         """
         logging.info("Predicting with DINTModel for source {}".format(source))
-        if source not in self.allowed_sources:
-            logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
-            return None
-        # upload source to the schema matcher server
-        matcher_dataset = self.server.create_dataset(file_path=os.path.join(self.data_dir, source + ".csv"),
-                                                     description="testdata",
-                                                     type_map={})
-        self.datasets.append(matcher_dataset)
+        matcher_dataset = self._upload_dataset(source, description="testdata")
+
         logging.debug("Test data added to the server.")
         start = time.time()
         predict_df = self.classifier.predict(matcher_dataset.id).copy()
@@ -325,6 +392,13 @@ class KarmaDSLModel(SemanticTyper):
     Wrapper for Karma DSL semantic labeller.
     KarmaDSL server can hold only one model.
     """
+
+    # Karma can work only with these sources
+    allowed_sources = []
+    for sources in benchmark.values():
+        # only these sources can be used for training or testing by different classifiers of SemanticTyper
+        allowed_sources += sources
+
     def __init__(self, karma_session, description, debug_csv=None):
         logging.info("Initializing KarmaDSL model.")
         if not (type(karma_session) is KarmaSession):
@@ -389,7 +463,7 @@ class KarmaDSLModel(SemanticTyper):
                    "model_description": self.description
                    }
             max = 0
-            label = "unknown"
+            label = "fail"
             for sc in val["scores"]:
                 row["scores_"+sc[1]] = sc[0]
                 if sc[0] > max:
@@ -413,6 +487,27 @@ class NNetModel(SemanticTyper):
         this works for the following classifier types only:
         'cnn@charseq', 'mlp@charseq' (poor performance!), 'rf@charseq'; 'mlp@charfreq', 'rf@charfreq'
     """
+    def __init__(self, classifier_types, description, add_headers=False, p_header=0, debug_csv=None,
+                 ignore_unknown=True):
+        """
+        Initialize NNetModel.
+        :param classifier_types:
+        :param description:
+        :param add_headers:
+        :param p_header:
+        :param debug_csv:
+        :param ignore_unknown: boolean to filter out columns of unknown class from training and testing
+        """
+        classifier_type = classifier_types[0]
+        logging.info("Initializing NNetModel with {} classifier...".format(classifier_type))
+        super().__init__("NNetModel", description=description, debug_csv=debug_csv, ignore_unknown=ignore_unknown)
+        self.classifier_type = classifier_type
+        self.add_headers = add_headers
+        self.p_header = p_header
+        self.labeler = None
+        self.train_cols = None   # placeholder for a list of training cols (Column objects)
+        self.classes = []
+
     def _read(self, source, label_source=None):
         """
         Read columns from source, and return them as a list of Column objects
@@ -421,6 +516,7 @@ class NNetModel(SemanticTyper):
         :param label_source:
         :return:
         """
+        # TODO: we filter out unknown or include unknowns!
         filename = os.path.join(self.data_dir, source+".csv")
         if label_source is None:
             label_filename = os.path.join(self.label_dir, source + ".columnmap.txt")
@@ -443,28 +539,14 @@ class NNetModel(SemanticTyper):
                 label = labels[c]
             else:
                 label = 'unknown'
+            if self.ignore_unknown and label == "unknown":
+                # we skip unknown columns
+                continue
             col = Column(filename=filename, colname=c, title=label, lines=list(df[c]))
             source_cols.append(col)
+            self.classes.append(label)
 
         return source_cols
-
-    def __init__(self, classifier_types, description, add_headers=False, p_header=0, debug_csv=None):
-        """
-        Initialize NNetModel.
-        :param classifier_types:
-        :param description:
-        :param add_headers:
-        :param p_header:
-        :param debug_csv:
-        """
-        classifier_type = classifier_types[0]
-        logging.info("Initializing NNetModel with {} classifier...".format(classifier_type))
-        super().__init__("NNetModel", description=description, debug_csv=debug_csv)
-        self.classifier_type = classifier_type
-        self.add_headers = add_headers
-        self.p_header = p_header
-        self.labeler = None
-        self.train_cols = None   # placeholder for a list of training cols (Column objects)
 
     def reset(self):
         """
@@ -493,7 +575,9 @@ class NNetModel(SemanticTyper):
             for source, label in zip(train_sources, train_labels):
                 self.train_cols += self._read(source, label)
 
-        logging.info("NNetModel: Training data contains {} columns from {} sources".format(len(self.train_cols), len(train_sources)))
+        self.classes = list(set(self.classes))
+        logging.info("NNetModel: Training data contains {} columns from {} sources".format(
+            len(self.train_cols), len(train_sources)))
 
     def train(self):
         """
@@ -501,6 +585,7 @@ class NNetModel(SemanticTyper):
         feature preparation, and training of the underlying classifier(s).
         """
         logging.info("NNetModel training starts...")
+        logging.info("  number of classes: {}".format(len(self.classes)))
         start = time.time()
         self.labeler = NN_Column_Labeler([self.classifier_type],
                                          self.train_cols,
@@ -521,9 +606,6 @@ class NNetModel(SemanticTyper):
         :param source:
         :return:
         """
-        if source not in self.allowed_sources:
-            logging.warning("Source '{}' not in allowed_sources. Skipping it.".format(source))
-            return None
         # First, we need to extract query Column objects from source:
         query_cols = self._read(source)
         logging.info("NNetModel: Predicting for {} columns from {} sources".format(len(query_cols), len(source)))
