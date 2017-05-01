@@ -337,7 +337,6 @@ def test_simple(ignore_uknown=True, domains=None):
                     "www.elpasoguntrader.com.csv", "www.dallasguns.com.csv",
                     "www.armslist.com.csv", "www.alaskaslist.com.csv"
                     ]
-    loo_experiment.add_domain("weapons", weapons)
 
     if domains:
         loo_experiment.change_domains(domains)
@@ -531,5 +530,8 @@ if __name__ == "__main__":
     # test_bagging()
     # test_upsampletomax()
     # test_resampletomean()
-    test_simple(ignore_uknown=True, domains=["weapons"])
+    # test_simple(ignore_uknown=True, domains=["weapons"])
+
+    test_simple(ignore_uknown=True, domains=["museum"])
+    # test_simple(ignore_uknown=False)
 

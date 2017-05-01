@@ -11,6 +11,7 @@ import pandas as pd
 import random
 from collections import defaultdict
 from serene.api.exceptions import InternalError
+import numpy as np
 
 
 class Experiment(object):
@@ -166,6 +167,58 @@ class Experiment(object):
             logging.warning("Model evaluation failed: {}".format(e))
             return None
 
+    def _process_frames(self, frames, model, domain):
+        """
+
+        :param frames: pandas stuff
+        :param model: SemanticTyper object
+        :param domain: string
+        :return:
+        """
+        if len(frames) > 0:
+            predicted_df = pd.concat(frames)
+            if self.debug_csv:
+                if model.debug_csv:
+                    debug_csv = model.debug_csv + "_" + domain + ".csv"
+                else:
+                    debug_csv = self.debug_csv + "_" + domain + ".csv"
+                predicted_df.to_csv(debug_csv, index=False, header=True, mode="w+")
+
+            performance = model.evaluate(predicted_df)
+            performance["train_run_time"] = predicted_df["train_run_time"].mean()
+            performance["experiment"] = self.experiment_type
+            performance["experiment_description"] = self.description
+            performance["predict_run_time"] = predicted_df["running_time"].mean()
+            performance["domain"] = domain
+            if len(frames) == len(self.benchmark[domain]):
+                performance["status"] = "success"
+            else:
+                performance["status"] = "completed_" + str(len(frames))
+            performance["model"] = model.model_type
+            performance["model_description"] = model.description
+            performance["ignore_unknown"] = model.ignore_unknown
+            performance["resampling_strategy"] = model.resampling_strategy
+            performance["model_parameters"] = model.parameters
+        else:
+            res = {"model": model.model_type,
+                   "model_description": model.description,
+                   "ignore_unknown": model.ignore_unknown,
+                   "experiment": self.experiment_type,
+                   "experiment_description": self.description,
+                   "status": "failure",
+                   "domain": domain}
+            performance = pd.DataFrame(res, index=[0])
+
+        # ensure that these columns are in the frame
+        columns = ["model", "domain", "status", "MRR", "categorical_accuracy", "fmeasure",
+                   "experiment", "ignore_unknown", "train_run_time", "predict_run_time",
+                   "experiment_description", "description",
+                   "model_description", "resampling_strategy", "parameters"]
+        for c in columns:
+            if c not in performance.columns:
+                performance[c] = np.nan
+        return performance[columns] # fixing order of the columns
+
     def _leave_one_out(self):
         """
         This experiment does serene_benchmark evaluation for each domain:
@@ -192,35 +245,7 @@ class Experiment(object):
                     if predicted_df is not None:
                         frames.append(predicted_df)
 
-                if len(frames) > 0:
-                    predicted_df = pd.concat(frames)
-                    if self.debug_csv:
-                        if model.debug_csv:
-                            debug_csv = model.debug_csv + "_" + domain + ".csv"
-                        else:
-                            debug_csv = self.debug_csv + "_" + domain + ".csv"
-                        predicted_df.to_csv(debug_csv, index=False, header=True, mode="w+")
-
-                    performance = model.evaluate(predicted_df)
-                    performance["train_run_time"] = predicted_df["train_run_time"].mean()
-                    performance["experiment"] = self.experiment_type
-                    performance["experiment_description"] = self.description
-                    performance["predict_run_time"] = predicted_df["running_time"].mean()
-                    performance["domain"] = domain
-                    if len(frames) == len(self.benchmark[domain]):
-                        performance["status"] = "success"
-                    else:
-                        performance["status"] = "completed_" + str(len(frames))
-                    performance["model"] = model.model_type
-                    performance["model_description"] = model.description
-                else:
-                    res = {"model": model.model_type,
-                           "model_description": model.description,
-                           "experiment": self.experiment_type,
-                           "experiment_description": self.description,
-                           "status": "failure",
-                           "domain": domain}
-                    performance = pd.DataFrame(res, index=[0])
+                performance = self._process_frames(frames, model, domain)
                 performance_frames.append(performance)
                 # print("performance: ", performance)
 
@@ -283,35 +308,36 @@ class Experiment(object):
 
             for idx, model in model_lookup.items():
                 logging.info("Concatenating performance frames per model")
-                if len(frames[idx]) > 0:
-                    predicted_df = pd.concat(frames[idx])
-                    if self.debug_csv:
-                        if model.debug_csv:
-                            debug_csv = model.debug_csv + "_" + domain + ".csv"
-                        else:
-                            debug_csv = self.debug_csv + "_" + domain + ".csv"
-                        predicted_df.to_csv(debug_csv, index=False, header=True, mode="w+")
-
-                    performance = model.evaluate(predicted_df)
-                    performance["train_run_time"] = predicted_df["train_run_time"].mean()
-                    performance["experiment"] = self.experiment_type
-                    performance["experiment_description"] = self.description
-                    performance["predict_run_time"] = predicted_df["running_time"].mean()
-                    performance["domain"] = domain
-                    if len(frames[idx]) == num:
-                        performance["status"] = "success"
-                    else:
-                        performance["status"] = "completed_" + str(len(frames[idx]))
-                    performance["model"] = model.model_type
-                    performance["model_description"] = model.description
-                else:
-                    res = {"model": model.model_type,
-                           "model_description": model.description,
-                           "experiment": self.experiment_type,
-                           "experiment_description": self.description,
-                           "status": "failure",
-                           "domain": domain}
-                    performance = pd.DataFrame(res, index=[0])
+                performance = self._process_frames(frames[idx], model, domain)
+                # if len(frames[idx]) > 0:
+                #     predicted_df = pd.concat(frames[idx])
+                #     if self.debug_csv:
+                #         if model.debug_csv:
+                #             debug_csv = model.debug_csv + "_" + domain + ".csv"
+                #         else:
+                #             debug_csv = self.debug_csv + "_" + domain + ".csv"
+                #         predicted_df.to_csv(debug_csv, index=False, header=True, mode="w+")
+                #
+                #     performance = model.evaluate(predicted_df)
+                #     performance["train_run_time"] = predicted_df["train_run_time"].mean()
+                #     performance["experiment"] = self.experiment_type
+                #     performance["experiment_description"] = self.description
+                #     performance["predict_run_time"] = predicted_df["running_time"].mean()
+                #     performance["domain"] = domain
+                #     if len(frames[idx]) == num:
+                #         performance["status"] = "success"
+                #     else:
+                #         performance["status"] = "completed_" + str(len(frames[idx]))
+                #     performance["model"] = model.model_type
+                #     performance["model_description"] = model.description
+                # else:
+                #     res = {"model": model.model_type,
+                #            "model_description": model.description,
+                #            "experiment": self.experiment_type,
+                #            "experiment_description": self.description,
+                #            "status": "failure",
+                #            "domain": domain}
+                #     performance = pd.DataFrame(res, index=[0])
                 performance_frames.append(performance)
                 # print("performance: ", performance)
 

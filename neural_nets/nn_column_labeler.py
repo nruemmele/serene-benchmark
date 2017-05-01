@@ -36,8 +36,8 @@ hp['split_by'] = 'filename'  # name of the column attribute on which to randomly
 # 'id' for splitting by column attribute (title@filename)
 # 'filename' for splitting by data source filename
 hp['cols_test_frac'] = 0.2  # fraction of all data columns that are used for testing (the rest is for training)
-hp['subsize'] = 100  # number of row elements (rows) in each bagging subsample
-hp['n_samples'] = 1 * 150  # number of subsamples from each column to take when bagging
+hp['subsize'] = 100  # number of row elements (rows) in each bagging subsample -- bagSize
+hp['n_samples'] = 1 * 150  # number of subsamples from each column to take when bagging -- numBags
 hp['samples_validation_frac'] = 0.01  # fraction of training samples that are held-out for validation purposes
 
 # ### Hyperparameters for character sequences

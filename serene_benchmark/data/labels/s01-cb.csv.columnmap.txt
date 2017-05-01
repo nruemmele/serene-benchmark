@@ -2,7 +2,7 @@ key,column_name,source_name,semantic_type
 Medium,Medium,s01-cb.csv,CulturalHeritageObject---medium
 Title,Title,s01-cb.csv,CulturalHeritageObject---title
 Dimensions,Dimensions,s01-cb.csv,CulturalHeritageObject---extent
-EndDate,EndDate,s01-cb.csv,Person---dateOfDeath
+"End Date","End Date",s01-cb.csv,Person---dateOfDeath
 Dated,Dated,s01-cb.csv,CulturalHeritageObject---created
 Attribution,Attribution,s01-cb.csv,Person---nameOfThePerson
-BeginDate,BeginDate,s01-cb.csv,Person---dateOfBirth
+"Begin Date","Begin Date",s01-cb.csv,Person---dateOfBirth

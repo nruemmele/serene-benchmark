@@ -1,737 +1,737 @@
-"Equipe","Club","Datedenaissance","Selections","Championnat","Age","Position","Joueur","No.","ClassementFIFA"
-"Bresil","Botafogo","2 janvier 1983","9","Bresil","31","1. Gardien","Jefferson","1","3"
-"Bresil","Toronto FC","3 septembre 1979","80","Etats-Unis","34","1. Gardien","Julio Cesar","12","3"
-"Bresil","Atletico Mineiro","21 janvier 1983","6","Bresil","31","1. Gardien","Victor","22","3"
-"Bresil","Barcelona","6 mai 1983","75","Espagne","31","2. Defenseur","Dani Alves","2","3"
-"Bresil","Bayern Munich","18 octobre 1983","12","Allemagne","30","2. Defenseur","Dante","13","3"
-"Bresil","Chelsea","22 avril 1987","36","Angleterre","27","2. Defenseur","David Luiz","4","3"
-"Bresil","Napoli","14 octobre 1986","5","Italie","27","2. Defenseur","Henrique","15","3"
-"Bresil","Roma","26 juillet 1981","72","Italie","32","2. Defenseur","Maicon","23","3"
-"Bresil","Real Madrid","12 mai 1988","31","Espagne","26","2. Defenseur","Marcelo","6","3"
-"Bresil","Paris Saint-Germain","27 aot 1981","9","France","32","2. Defenseur","Maxwell","14","3"
-"Bresil","Paris Saint-Germain","22 septembre 1984","46","France","29","2. Defenseur","Thiago Silva (c)","3","3"
-"Bresil","Shakhtar Donetsk","8 septembre 1992","11","Ukraine","21","3. Milieu","Bernard","20","3"
-"Bresil","Manchester City","4 mai 1985","7","Angleterre","29","3. Milieu","Fernandinho","5","3"
-"Bresil","Internazionale","29 mai 1985","24","Italie","29","3. Milieu","Hernanes","18","3"
-"Bresil","VfL Wolfsburg","23 juillet 1987","19","Allemagne","26","3. Milieu","Luiz Gustavo","17","3"
-"Bresil","Chelsea","9 septembre 1991","31","Angleterre","22","3. Milieu","Oscar","11","3"
-"Bresil","Tottenham Hotspur","25 juillet 1988","26","Angleterre","25","3. Milieu","Paulinho","8","3"
-"Bresil","Chelsea","24 mars 1987","42","Angleterre","27","3. Milieu","Ramires","16","3"
-"Bresil","Chelsea","9 aot 1988","7","Angleterre","25","3. Milieu","Willian","19","3"
-"Bresil","Fluminense","3 octobre 1983","33","Bresil","30","4. Attaquant","Fred","9","3"
-"Bresil","Zenit Saint Petersburg","25 juillet 1986","35","Russie","27","4. Attaquant","Hulk","7","3"
-"Bresil","Atletico Mineiro","20 mars 1987","17","Bresil","27","4. Attaquant","J","21","3"
-"Bresil","Barcelona","5 fvrier 1992","49","Espagne","22","4. Attaquant","Neymar","10","3"
-"Cameroun","Konyaspor","2 novembre 1982","9","Turquie","31","1. Gardien","Charles Itandje","16","56"
-"Cameroun","Coton Sport","14 avril 1992","2","Cameroun","22","1. Gardien","Loec Feudjou","1","56"
-"Cameroun","Fethiyespor","25 fvrier 1990","3","Turquie","24","1. Gardien","Sammy N'Djock","23","56"
-"Cameroun","Granada","10 mai 1988","10","Espagne","26","2. Defenseur","Allan Nyom","22","56"
-"Cameroun","Galatasaray","20 juin 1985","31","Turquie","28","2. Defenseur","Aurelien Chedjou","14","56"
-"Cameroun","Queens Park Rangers","24 mars 1984","22","Angleterre","30","2. Defenseur","Benot Assou-Ekotto","2","56"
-"Cameroun","Coton Sport","28 aot 1992","3","Cameroun","21","2. Defenseur","Cedric Djeugoue","4","56"
-"Cameroun","Besiktas","11 avril 1986","16","Turquie","28","2. Defenseur","Dany Nounkeu","5","56"
-"Cameroun","Lyon","4 juin 1984","31","France","30","2. Defenseur","Henri Bedimo","12","56"
-"Cameroun","Marseille","27 mars 1990","48","France","24","2. Defenseur","Nicolas N'Koulou","3","56"
-"Cameroun","Barcelona","9 septembre 1987","47","Espagne","26","3. Milieu","Alex Song","6","56"
-"Cameroun","Lens","17 aot 1992","9","France","21","3. Milieu","Edgar Salli","20","56"
-"Cameroun","Antalyaspor","23 mars 1986","38","Turquie","28","3. Milieu","Eyong Enoh","18","56"
-"Cameroun","Rennes","29 mai 1983","66","France","31","3. Milieu","Jean Makoun","11","56"
-"Cameroun","Schalke 4","8 aot 1991","23","Allemagne","22","3. Milieu","Joel Matip","21","56"
-"Cameroun","Bordeaux","28 novembre 1985","40","France","28","3. Milieu","Landry N'Guemo","7","56"
-"Cameroun","Sevilla","20 mai 1986","49","Espagne","28","3. Milieu","Stephane Mbia","17","56"
-"Cameroun","Nancy","12 novembre 1988","17","France","25","4. Attaquant","Benjamin Moukandjo","8","56"
-"Cameroun","Zulte Waregem","12 mai 1996","8","Belgique","18","4. Attaquant","Fabrice Olinga","19","56"
-"Cameroun","Mainz 5","23 mars 1989","26","Allemagne","25","4. Attaquant","Maxim Choupo-Moting","13","56"
-"Cameroun","Fenerbahce","20 janvier 1982","56","Turquie","32","4. Attaquant","Pierre Webo","15","56"
-"Cameroun","Chelsea","10 mars 1981","117","Angleterre","33","4. Attaquant","Samuel Eto'o (c)","9","56"
-"Cameroun","Lorient","22 janvier 1992","24","France","22","4. Attaquant","Vincent Aboubakar","10","56"
-"Croatie","Monaco","27 octobre 1984","6","France","29","1. Gardien","Danijel Subasic","23","18"
-"Croatie","Lokomotiva","14 mai 1993","0","Croatie","21","1. Gardien","Oliver Zelenika","12","18"
-"Croatie","Rostov","8 janvier 1979","111","Russie","35","1. Gardien","Stipe Pletikosa","1","18"
-"Croatie","Panathinaikos","2 dcembre 1981","50","Grece","32","2. Defenseur","Danijel Pranjic","3","18"
-"Croatie","Shakhtar Donetsk","1 mai 1982","112","Ukraine","32","2. Defenseur","Darijo Srna (c)","11","18"
-"Croatie","Southampton","5 juillet 1989","25","Angleterre","24","2. Defenseur","Dejan Lovren","6","18"
-"Croatie","Dynamo Kyiv","29 avril 1989","23","Ukraine","25","2. Defenseur","Domagoj Vida","21","18"
-"Croatie","Panathinaikos","18 mars 1985","21","Grece","29","2. Defenseur","Gordon Schildenfeld","13","18"
-"Croatie","Genoa","10 janvier 1992","7","Italie","22","2. Defenseur","Sime Vrsaljko","2","18"
-"Croatie","Lokomotiv Moscow","5 fvrier 1986","72","Russie","28","2. Defenseur","Vedran Corluka","5","18"
-"Croatie","Hamburger SV","25 fvrier 1989","9","Allemagne","25","3. Milieu","Milan Badelj","15","18"
-"Croatie","VfL Wolfsburg","2 fvrier 1989","29","Allemagne","25","3. Milieu","Ivan Perisic","4","18"
-"Croatie","Sevilla","10 mars 1988","62","Espagne","26","3. Milieu","Ivan Rakitic","7","18"
-"Croatie","Real Madrid","9 septembre 1985","75","Espagne","28","3. Milieu","Luka Modric","10","18"
-"Croatie","Dinamo Zagreb","16 octobre 1992","1","Croatie","21","3. Milieu","Marcelo Brozovic","14","18"
-"Croatie","Internazionale","6 mai 1994","10","Italie","20","3. Milieu","Mateo Kovacic","20","18"
-"Croatie","Dynamo Kyiv","20 dcembre 1983","55","Ukraine","30","3. Milieu","Ognjen Vukojevic","8","18"
-"Croatie","Getafe","23 avril 1987","6","Espagne","27","3. Milieu","Sammir","19","18"
-"Croatie","Fiorentina","21 septembre 1993","5","Italie","20","4. Attaquant","Ante Rebic","16","18"
-"Croatie","Shakhtar Donetsk","25 fvrier 1983","63","Ukraine","31","4. Attaquant","Eduardo","22","18"
-"Croatie","VfL Wolfsburg","14 septembre 1979","92","Allemagne","34","4. Attaquant","Ivica Olic","18","18"
-"Croatie","Bayern Munich","21 mai 1986","50","Allemagne","28","4. Attaquant","Mario Mandzukic","17","18"
-"Croatie","Hull City","27 aot 1985","33","Angleterre","28","4. Attaquant","Nikica Jelavic","9","18"
-"Mexique","Toluca","18 septembre 1982","14","Mexique","31","1. Gardien","Alfredo Talavera","12","20"
-"Mexique","Ajaccio","13 juillet 1985","59","France","28","1. Gardien","Guillermo Ochoa","13","20"
-"Mexique","Cruz Azul","26 janvier 1981","34","Mexique","33","1. Gardien","Jose de Jesus Corona","1","20"
-"Mexique","Bayer Leverkusen","28 septembre 1986","104","Allemagne","27","2. Defenseur","Andres Guardado","18","20"
-"Mexique","UANL","2 avril 1980","122","Mexique","34","2. Defenseur","Carlos Salcido","3","20"
-"Mexique","Porto","19 septembre 1992","14","Portugal","21","2. Defenseur","Diego Reyes","5","20"
-"Mexique","America","20 octobre 1981","95","Mexique","32","2. Defenseur","Francisco Javier Rodriguez","2","20"
-"Mexique","Espanyol","17 janvier 1988","53","Espagne","26","2. Defenseur","Hector Moreno","15","20"
-"Mexique","Toluca","12 avril 1989","8","Mexique","25","2. Defenseur","Miguel Angel Ponce","16","20"
-"Mexique","America","25 juin 1988","15","Mexique","25","2. Defenseur","Miguel Layun","7","20"
-"Mexique","America","6 mars 1986","30","Mexique","28","2. Defenseur","Paul Aguilar","22","20"
-"Mexique","Leon","13 fvrier 1979","120","Mexique","35","2. Defenseur","Rafael Marquez (c)","4","20"
-"Mexique","Leon","29 mars 1990","16","Mexique","24","3. Milieu","Carlos Pena","21","20"
-"Mexique","Porto","19 avril 1990","13","Portugal","24","3. Milieu","Hector Herrera","6","20"
-"Mexique","Toluca","28 aot 1990","7","Mexique","23","3. Milieu","Isaac Brizuela","17","20"
-"Mexique","Villarreal","11 fvrier 1990","22","Espagne","24","3. Milieu","Javier Aquino","20","20"
-"Mexique","Leon","14 mars 1988","5","Mexique","26","3. Milieu","Jose Juan Vazquez","23","20"
-"Mexique","Cruz Azul","21 juillet 1989","15","Mexique","24","3. Milieu","Marco Fabian","8","20"
-"Mexique","UANL","8 mars 1991","6","Mexique","23","4. Attaquant","Alan Pulido","11","20"
-"Mexique","Villarreal","11 mai 1989","76","Espagne","25","4. Attaquant","Giovani dos Santos","10","20"
-"Mexique","Manchester United","1 juin 1988","62","Angleterre","26","4. Attaquant","Javier Hernandez","14","20"
-"Mexique","Santos Laguna","12 janvier 1984","33","Mexique","30","4. Attaquant","Oribe Peralta","19","20"
-"Mexique","America","5 mai 1991","25","Mexique","23","4. Attaquant","Raul Jimenez","9","20"
-"Australie","Adelaide United","12 juin 1981","8","Australie","32","1. Gardien","Eugene Galekovic","18","62"
-"Australie","Club Brugge","8 avril 1992","7","Belgique","22","1. Gardien","Mathew Ryan","1","62"
-"Australie","Borussia Dortmund","22 aot 1988","3","Allemagne","25","1. Gardien","Mitchell Langerak","12","62"
-"Australie","Jeonbuk Hyundai Motors","13 aot 1984","3","Coree du Sud","29","2. Defenseur","Alex Wilkinson","22","62"
-"Australie","Preston North End","28 juillet 1992","0","Angleterre","21","2. Defenseur","Bailey Wright","8","62"
-"Australie","Brisbane Roar","10 septembre 1987","9","Australie","26","2. Defenseur","Ivan Franjic","2","62"
-"Australie","Heracles Almelo","29 juin 1991","7","Pays-Bas","22","2. Defenseur","Jason Davidson","3","62"
-"Australie","Western Sydney Wanderers","27 juin 1988","18","Australie","25","2. Defenseur","Matthew Spiranovic","6","62"
-"Australie","Shandong Luneng Taishan","15 aot 1989","9","Chine","24","2. Defenseur","Ryan McGowan","19","62"
-"Australie","Fortuna Dsseldorf","14 juin 1992","2","Allemagne","21","3. Milieu","Ben Halloran","10","62"
-"Australie","Sion","8 avril 1987","23","Suisse","27","3. Milieu","Dario Vidosic","20","62"
-"Australie","Autriche Wien","15 mai 1989","14","Autriche","25","3. Milieu","James Holland","16","62"
-"Australie","Atalanta","3 juillet 1988","11","Italie","25","3. Milieu","James Troisi","14","62"
-"Australie","Al-Gharafa","11 fvrier 1980","74","Qatar","34","3. Milieu","Mark Bresciano","23","62"
-"Australie","Melbourne Victory","4 aot 1985","29","Australie","28","3. Milieu","Mark Milligan","5","62"
-"Australie","Swindon Town","25 septembre 1992","1","Angleterre","21","3. Milieu","Massimo Luongo","21","62"
-"Australie","Brisbane Roar","11 janvier 1983","47","Australie","31","3. Milieu","Matt McKay","17","62"
-"Australie","Crystal Palace","3 aot 1984","44","Angleterre","29","3. Milieu","Mile Jedinak (c)","15","62"
-"Australie","Luzern","8 janvier 1989","3","Suisse","25","3. Milieu","Oliver Bozanic","13","62"
-"Australie","Utrecht","10 dcembre 1991","15","Pays-Bas","22","3. Milieu","Tommy Oar","11","62"
-"Australie","Newcastle Jets","2 juin 1993","5","Australie","21","4. Attaquant","Adam Taggart","9","62"
-"Australie","FSV Frankfurt","4 fvrier 1991","8","Allemagne","23","4. Attaquant","Mathew Leckie","7","62"
-"Australie","New York Red Bulls","6 dcembre 1979","69","Etats-Unis","34","4. Attaquant","Tim Cahill","4","62"
-"Chili","Real Sociedad","13 avril 1983","79","Espagne","31","1. Gardien","Claudio Bravo (c)","1","14"
-"Chili","Universidad Catolica","22 juin 1988","4","Chili","25","1. Gardien","Cristopher Toselli","12","14"
-"Chili","Universidad de Chili","9 mai 1981","8","Chili","33","1. Gardien","Johnny Herrera","23","14"
-"Chili","Santos","18 juillet 1988","25","Bresil","25","2. Defenseur","Eugenio Mena","2","14"
-"Chili","Cardiff City","3 aot 1987","61","Angleterre","26","2. Defenseur","Gary Medel","17","14"
-"Chili","Nottingham Forest","29 aot 1985","65","Angleterre","28","2. Defenseur","Gonzalo Jara","18","14"
-"Chili","Universidad de Chili","3 juin 1983","19","Chili","31","2. Defenseur","Jose Rojas","13","14"
-"Chili","Malm FF","3 novembre 1990","2","Suede","23","2. Defenseur","Miiko Albornoz","3","14"
-"Chili","Juventus","22 mai 1987","54","Italie","27","3. Milieu","Arturo Vidal","8","14"
-"Chili","Atalanta","21 fvrier 1987","44","Italie","27","3. Milieu","Carlos Carmona","6","14"
-"Chili","Internacional","17 avril 1989","21","Bresil","25","3. Milieu","Charles Aranguiz","20","14"
-"Chili","Celta Vigo","27 janvier 1986","26","Espagne","28","3. Milieu","Fabian Orellana","14","14"
-"Chili","Twente","8 octobre 1990","18","Pays-Bas","23","3. Milieu","Felipe Gutierrez","16","14"
-"Chili","Osasuna","11 fvrier 1986","12","Espagne","28","3. Milieu","Francisco Silva","5","14"
-"Chili","Wigan Athletic","3 juin 1984","59","Angleterre","30","3. Milieu","Jean Beausejour","15","14"
-"Chili","Palmeiras","3 octobre 1983","57","Bresil","30","3. Milieu","Jorge Valdivia","10","14"
-"Chili","Colo-Colo","22 fvrier 1985","23","Chili","29","3. Milieu","Jose Pedro Fuenzalida","19","14"
-"Chili","Basel","30 dcembre 1986","21","Suisse","27","3. Milieu","Marcelo Diaz","21","14"
-"Chili","Juventus","12 juin 1988","47","Italie","25","3. Milieu","Mauricio Isla","4","14"
-"Chili","Barcelona","19 dcembre 1988","67","Espagne","25","4. Attaquant","Alexis Sanchez","7","14"
-"Chili","Valencia","20 novembre 1989","30","Espagne","24","4. Attaquant","Eduardo Vargas","11","14"
-"Chili","Colo-Colo","1 aot 1980","35","Chili","33","4. Attaquant","Esteban Paredes","22","14"
-"Chili","Cagliari","4 fvrier 1984","27","Italie","30","4. Attaquant","Mauricio Pinilla","9","14"
-"Espagne","Manchester United","7 novembre 1990","1","Angleterre","23","1. Gardien","David de Gea","12","1"
-"Espagne","Real Madrid","20 mai 1981","154","Espagne","33","1. Gardien","Iker Casillas (c)","1","1"
-"Espagne","Napoli","31 aot 1982","32","Italie","31","1. Gardien","Pepe Reina","23","1"
-"Espagne","Chelsea","28 aot 1989","6","Angleterre","24","2. Defenseur","Cesar Azpilicueta","22","1"
-"Espagne","Barcelona","2 fvrier 1987","60","Espagne","27","2. Defenseur","Gerard Pique","3","1"
-"Espagne","Barcelona","21 mars 1989","26","Espagne","25","2. Defenseur","Jordi Alba","18","1"
-"Espagne","Atletico Madrid","9 janvier 1985","8","Espagne","29","2. Defenseur","Juanfran","5","1"
-"Espagne","Napoli","4 septembre 1985","46","Italie","28","2. Defenseur","Raul Albiol","2","1"
-"Espagne","Real Madrid","30 mars 1986","117","Espagne","28","2. Defenseur","Sergio Ramos","15","1"
-"Espagne","Barcelona","11 mai 1984","97","Espagne","30","3. Milieu","Andres Iniesta","6","1"
-"Espagne","Barcelona","4 mai 1987","89","Espagne","27","3. Milieu","Cesc Fabregas","10","1"
-"Espagne","Manchester City","8 janvier 1986","80","Angleterre","28","3. Milieu","David Silva","21","1"
-"Espagne","Bayern Munich","2 septembre 1988","17","Allemagne","25","3. Milieu","Javi Martinez","4","1"
-"Espagne","Manchester United","28 avril 1988","33","Angleterre","26","3. Milieu","Juan Mata","13","1"
-"Espagne","Atletico Madrid","8 janvier 1992","8","Espagne","22","3. Milieu","Koke","17","1"
-"Espagne","Arsenal","13 dcembre 1984","64","Angleterre","29","3. Milieu","Santi Cazorla","20","1"
-"Espagne","Barcelona","16 juillet 1988","65","Espagne","25","3. Milieu","Sergio Busquets","16","1"
-"Espagne","Real Madrid","25 novembre 1981","111","Espagne","32","3. Milieu","Xabi Alonso","14","1"
-"Espagne","Barcelona","25 janvier 1980","132","Espagne","34","3. Milieu","Xavi","8","1"
-"Espagne","Atletico Madrid","3 dcembre 1981","96","Espagne","32","4. Attaquant","David Villa","7","1"
-"Espagne","Atletico Madrid","7 octobre 1988","2","Espagne","25","4. Attaquant","Diego Costa","19","1"
-"Espagne","Chelsea","20 mars 1984","107","Angleterre","30","4. Attaquant","Fernando Torres","9","1"
-"Espagne","Barcelona","28 juillet 1987","40","Espagne","26","4. Attaquant","Pedro","11","1"
-"Pays-Bas","Ajax","22 avril 1989","8","Pays-Bas","25","1. Gardien","Jasper Cillessen","1","15"
-"Pays-Bas","Swansea City","3 octobre 1983","14","Angleterre","30","1. Gardien","Michel Vorm","22","15"
-"Pays-Bas","Newcastle United","3 avril 1988","5","Angleterre","26","1. Gardien","Tim Krul","23","15"
-"Pays-Bas","Feyenoord","8 fvrier 1992","16","Pays-Bas","22","2. Defenseur","Bruno Martins Indi","4","15"
-"Pays-Bas","Ajax","9 mars 1990","12","Pays-Bas","24","2. Defenseur","Daley Blind","5","15"
-"Pays-Bas","Feyenoord","22 juillet 1989","16","Pays-Bas","24","2. Defenseur","Daryl Janmaat","7","15"
-"Pays-Bas","Ajax","15 janvier 1992","2","Pays-Bas","22","2. Defenseur","Joel Veltman","13","15"
-"Pays-Bas","Augsburg","1 septembre 1983","2","Allemagne","30","2. Defenseur","Paul Verhaegh","12","15"
-"Pays-Bas","Aston Villa","16 fvrier 1985","24","Angleterre","29","2. Defenseur","Ron Vlaar","2","15"
-"Pays-Bas","Feyenoord","5 fvrier 1992","12","Pays-Bas","22","2. Defenseur","Stefan de Vrij","3","15"
-"Pays-Bas","Feyenoord","14 fvrier 1994","1","Pays-Bas","20","2. Defenseur","Terence Kongolo","14","15"
-"Pays-Bas","Bayern Munich","23 janvier 1984","75","Allemagne","30","3. Milieu","Arjen Robben","11","15"
-"Pays-Bas","PSV","11 novembre 1990","5","Pays-Bas","23","3. Milieu","Georginio Wijnaldum","20","15"
-"Pays-Bas","Swansea City","13 septembre 1987","10","Angleterre","26","3. Milieu","Jonathan de Guzman","6","15"
-"Pays-Bas","Feyenoord","27 juin 1991","8","Pays-Bas","22","3. Milieu","Jordy Clasie","16","15"
-"Pays-Bas","Norwich City","5 janvier 1990","6","Angleterre","24","3. Milieu","Leroy Fer","18","15"
-"Pays-Bas","PSV","13 fvrier 1994","6","Pays-Bas","20","3. Milieu","Memphis Depay","21","15"
-"Pays-Bas","Milan","13 novembre 1984","71","Italie","29","3. Milieu","Nigel de Jong","8","15"
-"Pays-Bas","Galatasaray","9 juin 1984","99","Turquie","29","3. Milieu","Wesley Sneijder","10","15"
-"Pays-Bas","Fenerbahce","22 juillet 1980","98","Turquie","33","4. Attaquant","Dirk Kuyt","15","15"
-"Pays-Bas","Dynamo Kyiv","24 novembre 1987","22","Ukraine","26","4. Attaquant","Jeremain Lens","17","15"
-"Pays-Bas","Schalke 4","12 aot 1983","62","Allemagne","30","4. Attaquant","Klaas-Jan Huntelaar","19","15"
-"Pays-Bas","Manchester United","6 aot 1983","85","Angleterre","30","4. Attaquant","Robin van Persie (c)","9","15"
-"Colombie","Santa Fe","1 septembre 1989","0","Colombie","24","1. Gardien","Camilo Vargas","12","8"
-"Colombie","Nice","31 aot 1988","44","France","25","1. Gardien","David Ospina","1","8"
-"Colombie","Deportivo Cali","21 juin 1971","50","Colombie","42","1. Gardien","Faryd Mondragon","22","8"
-"Colombie","San Lorenzo","22 mai 1985","14","Argentine","29","2. Defenseur","Carlos Valdes","23","8"
-"Colombie","Milan","30 septembre 1986","24","Italie","27","2. Defenseur","Cristian Zapata","2","8"
-"Colombie","River Plate","28 fvrier 1993","3","Argentine","21","2. Defenseur","Eder Alvarez Balanta","16","8"
-"Colombie","Napoli","14 dcembre 1985","50","Italie","28","2. Defenseur","Juan Camilo Zuniga","18","8"
-"Colombie","Atalanta","13 janvier 1976","98","Italie","38","2. Defenseur","Mario Yepes (c)","3","8"
-"Colombie","West Ham United","2 novembre 1986","53","Angleterre","27","2. Defenseur","Pablo Armero","7","8"
-"Colombie","PSV","13 janvier 1992","6","Pays-Bas","22","2. Defenseur","Santiago Arias","4","8"
-"Colombie","Toulouse","6 janvier 1985","49","France","29","3. Milieu","Abel Aguilar","8","8"
-"Colombie","River Plate","25 juillet 1990","1","Argentine","23","3. Milieu","Carlos Carbonero","5","8"
-"Colombie","Atletico Nacional","7 septembre 1988","8","Colombie","25","3. Milieu","Alexander Mejia","15","8"
-"Colombie","Elche","6 fvrier 1986","44","Espagne","28","3. Milieu","Carlos Sanchez","6","8"
-"Colombie","Internazionale","30 juin 1986","49","Italie","27","3. Milieu","Fredy Guarin","13","8"
-"Colombie","Monaco","12 juillet 1991","22","France","22","3. Milieu","James Rodriguez","10","8"
-"Colombie","Porto","18 janvier 1993","4","Portugal","21","3. Milieu","Juan Fernando Quintero","20","8"
-"Colombie","Fiorentina","26 mai 1988","28","Italie","26","3. Milieu","Juan Guillermo Cuadrado","11","8"
-"Colombie","Cagliari","19 mai 1990","9","Italie","24","3. Milieu","Victor Ibarbo","14","8"
-"Colombie","Hertha BSC","22 janvier 1986","26","Allemagne","28","4. Attaquant","Adrian Ramos","19","8"
-"Colombie","Sevilla","8 septembre 1986","11","Espagne","27","4. Attaquant","Carlos Bacca","17","8"
-"Colombie","Porto","3 octobre 1986","27","Portugal","27","4. Attaquant","Jackson Martinez","21","8"
-"Colombie","River Plate","28 mai 1985","30","Argentine","29","4. Attaquant","Teofilo Gutierrez","9","8"
-"Cote d'Ivoire","Lokeren","30 dcembre 1979","79","Belgique","34","1. Gardien","Boubacar Barry","1","23"
-"Cote d'Ivoire","Stabk","5 juin 1993","1","Norvege","21","1. Gardien","Sayouba Mande","23","23"
-"Cote d'Ivoire","Sewe Sport","29 octobre 1988","1","Cote d'Ivoire","25","1. Gardien","Sylvain Gbohouo","16","23"
-"Cote d'Ivoire","VfB Stuttgart","2 avril 1983","79","Allemagne","31","2. Defenseur","Arthur Boka","3","23"
-"Cote d'Ivoire","Eintracht Frankfurt","17 octobre 1986","4","Allemagne","27","2. Defenseur","Constant Djakpa","18","23"
-"Cote d'Ivoire","Trabzonspor","14 dcembre 1980","119","Turquie","33","2. Defenseur","Didier Zokora","5","23"
-"Cote d'Ivoire","Toulouse","11 octobre 1992","1","France","21","2. Defenseur","Jean-Daniel Akpa-Akpro","7","23"
-"Cote d'Ivoire","Liverpool","19 mars 1981","106","Angleterre","33","2. Defenseur","Kolo Toure","4","23"
-"Cote d'Ivoire","caykur Rizespor","21 dcembre 1986","3","Turquie","27","2. Defenseur","Ousmane Viera","2","23"
-"Cote d'Ivoire","Toulouse","24 dcembre 1992","8","France","21","2. Defenseur","Serge Aurier","17","23"
-"Cote d'Ivoire","Trabzonspor","13 janvier 1985","43","Turquie","29","2. Defenseur","Sol Bamba","22","23"
-"Cote d'Ivoire","Newcastle United","21 juin 1986","44","Angleterre","27","3. Milieu","Cheick Tiote","9","23"
-"Cote d'Ivoire","Hannover 96","25 fvrier 1984","25","Allemagne","30","3. Milieu","Didier Ya Konan","13","23"
-"Cote d'Ivoire","Saint-etienne","28 aot 1992","1","France","21","3. Milieu","Ismael Diomande","14","23"
-"Cote d'Ivoire","Basel","7 novembre 1984","6","Suisse","29","3. Milieu","Serey Die","20","23"
-"Cote d'Ivoire","Manchester City","13 mai 1983","83","Angleterre","31","3. Milieu","Yaya Toure","19","23"
-"Cote d'Ivoire","Galatasaray","11 mars 1978","100","Turquie","36","4. Attaquant","Didier Drogba (c)","11","23"
-"Cote d'Ivoire","Roma","27 mai 1987","53","Italie","27","4. Attaquant","Gervinho","10","23"
-"Cote d'Ivoire","Basel","31 mars 1989","7","Suisse","25","4. Attaquant","Giovanni Sio","21","23"
-"Cote d'Ivoire","Fortuna Dsseldorf","14 novembre 1990","3","Allemagne","23","4. Attaquant","Mathis Bolly","6","23"
-"Cote d'Ivoire","Saint-etienne","30 novembre 1987","25","France","26","4. Attaquant","Max Gradel","15","23"
-"Cote d'Ivoire","Lille","5 aot 1985","64","France","28","4. Attaquant","Salomon Kalou","8","23"
-"Cote d'Ivoire","Swansea City","10 dcembre 1988","24","Angleterre","25","4. Attaquant","Wilfried Bony","12","23"
-"Grece","Granada","11 juillet 1985","19","Espagne","28","1. Gardien","Orestis Karnezis","1","12"
-"Grece","PAOK","3 juin 1986","2","Grece","28","1. Gardien","Panagiotis Glykos","12","12"
-"Grece","Panathinaikos","18 mars 1994","2","Grece","20","1. Gardien","Stefanos Kapino","13","12"
-"Grece","Olympiacos","12 octobre 1986","30","Grece","27","3. Milieu","Giannis Maniatis","2","12"
-"Grece","PAOK","26 novembre 1987","13","Grece","26","2. Defenseur","Giorgos Tzavellas","3","12"
-"Grece","Olympiacos","27 juin 1984","22","Grece","29","2. Defenseur","Jose Holebas","20","12"
-"Grece","Olympiacos","14 juin 1991","9","Grece","22","2. Defenseur","Kostas Manolas","4","12"
-"Grece","Levante","5 fvrier 1981","50","Espagne","33","2. Defenseur","Loukas Vyntra","11","12"
-"Grece","Borussia Dortmund","9 juin 1988","47","Allemagne","25","2. Defenseur","Sokratis Papastathopoulos","19","12"
-"Grece","Verona","26 aot 1981","19","Italie","32","2. Defenseur","Vangelis Moras","5","12"
-"Grece","Roma","10 juin 1985","66","Italie","28","2. Defenseur","Vasilis Torosidis","15","12"
-"Grece","Kayserispor","13 fvrier 1985","49","Turquie","29","3. Milieu","Alexandros Tziolis","6","12"
-"Grece","Olympiacos","13 juin 1989","4","Grece","24","3. Milieu","Andreas Samaris","22","12"
-"Grece","Genoa","21 dcembre 1990","19","Italie","23","3. Milieu","Giannis Fetfatzidis","18","12"
-"Grece","Fulham","6 mars 1977","135","Angleterre","37","3. Milieu","Giorgos Karagounis (c)","10","12"
-"Grece","PAOK","21 juin 1979","111","Grece","34","3. Milieu","Kostas Katsouranis","21","12"
-"Grece","Bologna","19 dcembre 1986","19","Italie","27","3. Milieu","Lazaros Christodoulopoulos","16","12"
-"Grece","Bologna","26 juillet 1987","16","Italie","26","3. Milieu","Panagiotis Kone","8","12"
-"Grece","Torino","15 fvrier 1991","6","Italie","23","3. Milieu","Panagiotis Tachtsidis","23","12"
-"Grece","PAOK","18 aot 1981","76","Grece","32","4. Attaquant","Dimitris Salpingidis","14","12"
-"Grece","Celtic","21 fvrier 1985","74","Ecosse","29","4. Attaquant","Giorgos Samaras","7","12"
-"Grece","Fulham","12 mars 1988","32","Angleterre","26","4. Attaquant","Kostas Mitroglou","9","12"
-"Grece","Konyaspor","23 mai 1980","72","Turquie","34","4. Attaquant","Theofanis Gekas","17","12"
-"Japon","Standard Liege","20 mars 1983","56","Belgique","31","1. Gardien","Eiji Kawashima","1","46"
-"Japon","F.C. Tokyo","3 mars 1989","2","Japon","25","1. Gardien","Shichi Gonda","23","46"
-"Japon","Urawa Red Diamonds","18 juin 1986","12","Japon","27","1. Gardien","Shusaku Nishikawa","12","46"
-"Japon","Schalke 4","27 mars 1988","67","Allemagne","26","2. Defenseur","Atsuto Uchida","2","46"
-"Japon","VfB Stuttgart","14 fvrier 1991","12","Allemagne","23","2. Defenseur","Gtoku Sakai","3","46"
-"Japon","Hannover 96","12 avril 1990","17","Allemagne","24","2. Defenseur","Hiroki Sakai","21","46"
-"Japon","Jubilo Iwata","28 aot 1983","21","Japon","30","2. Defenseur","Masahiko Inoha","19","46"
-"Japon","F.C. Tokyo","21 mai 1987","9","Japon","27","2. Defenseur","Masato Morishige","6","46"
-"Japon","Southampton","24 aot 1988","40","Angleterre","25","2. Defenseur","Maya Yoshida","22","46"
-"Japon","Gamba Osaka","25 janvier 1983","80","Japon","31","2. Defenseur","Yasuyuki Konno","15","46"
-"Japon","Internazionale","12 septembre 1986","69","Italie","27","2. Defenseur","Yuto Nagatomo","5","46"
-"Japon","1. FC Nrnberg","12 novembre 1989","25","Allemagne","24","3. Milieu","Hiroshi Kiyotake","8","46"
-"Japon","Cerezo Osaka","6 octobre 1990","11","Japon","23","3. Milieu","Hotaru Yamaguchi","16","46"
-"Japon","Milan","13 juin 1986","55","Italie","27","3. Milieu","Keisuke Honda","4","46"
-"Japon","1. FC Nrnberg","18 janvier 1984","78","Allemagne","30","3. Milieu","Makoto Hasebe (c)","17","46"
-"Japon","Manchester United","17 mars 1989","56","Angleterre","25","3. Milieu","Shinji Kagawa","10","46"
-"Japon","Sanfrecce Hiroshima","22 fvrier 1986","5","Japon","28","3. Milieu","Toshihiro Aoyama","14","46"
-"Japon","Gamba Osaka","28 janvier 1980","143","Japon","34","3. Milieu","Yasuhito End","7","46"
-"Japon","Yokohama F. Marinos","4 avril 1990","4","Japon","24","4. Attaquant","Manabu Sait","20","46"
-"Japon","Mainz 5","16 avril 1986","75","Allemagne","28","4. Attaquant","Shinji Okazaki","9","46"
-"Japon","Cerezo Osaka","3 janvier 1990","11","Japon","24","4. Attaquant","Yoichiro Kakitani","11","46"
-"Japon","Kawasaki Frontale","9 juin 1982","56","Japon","31","4. Attaquant","Yoshito kubo","13","46"
-"Japon","1860 Mnchen","18 mai 1990","8","Allemagne","24","4. Attaquant","Yuya Osako","18","46"
-"Angleterre","West Bromwich Albion","3 mai 1983","6","Angleterre","31","1. Gardien","Ben Foster","13","10"
-"Angleterre","Celtic","17 mars 1988","1","Ecosse","26","1. Gardien","Fraser Forster","22","10"
-"Angleterre","Manchester City","19 mai 1987","40","Angleterre","27","1. Gardien","Joe Hart","1","10"
-"Angleterre","Manchester United","22 novembre 1989","11","Angleterre","24","2. Defenseur","Chris Smalling","12","10"
-"Angleterre","Chelsea","19 dcembre 1985","23","Angleterre","28","2. Defenseur","Gary Cahill","5","10"
-"Angleterre","Liverpool","23 aot 1984","51","Angleterre","29","2. Defenseur","Glen Johnson","2","10"
-"Angleterre","Everton","11 dcembre 1984","23","Angleterre","29","2. Defenseur","Leighton Baines","3","10"
-"Angleterre","Southampton","12 juillet 1995","1","Angleterre","18","2. Defenseur","Luke Shaw","23","10"
-"Angleterre","Everton","17 aot 1982","25","Angleterre","31","2. Defenseur","Phil Jagielka","6","10"
-"Angleterre","Manchester United","21 fvrier 1992","9","Angleterre","22","2. Defenseur","Phil Jones","16","10"
-"Angleterre","Southampton","10 mai 1988","4","Angleterre","26","3. Milieu","Adam Lallana","20","10"
-"Angleterre","Arsenal","15 aot 1993","14","Angleterre","20","3. Milieu","Alex Oxlade-Chamberlain","15","10"
-"Angleterre","Chelsea","20 juin 1978","103","Angleterre","35","3. Milieu","Frank Lampard","8","10"
-"Angleterre","Arsenal","1 janvier 1992","16","Angleterre","22","3. Milieu","Jack Wilshere","7","10"
-"Angleterre","Manchester City","4 janvier 1986","46","Angleterre","28","3. Milieu","James Milner","17","10"
-"Angleterre","Liverpool","17 juin 1990","9","Angleterre","23","3. Milieu","Jordan Henderson","14","10"
-"Angleterre","Liverpool","8 dcembre 1994","3","Angleterre","19","3. Milieu","Raheem Sterling","19","10"
-"Angleterre","Everton","5 dcembre 1993","4","Angleterre","20","3. Milieu","Ross Barkley","21","10"
-"Angleterre","Liverpool","30 mai 1980","110","Angleterre","34","3. Milieu","Steven Gerrard (c)","4","10"
-"Angleterre","Liverpool","1 septembre 1989","11","Angleterre","24","4. Attaquant","Daniel Sturridge","9","10"
-"Angleterre","Manchester United","26 novembre 1990","22","Angleterre","23","4. Attaquant","Danny Welbeck","11","10"
-"Angleterre","Southampton","16 fvrier 1982","4","Angleterre","32","4. Attaquant","Rickie Lambert","18","10"
-"Angleterre","Manchester United","24 octobre 1985","90","Angleterre","28","4. Attaquant","Wayne Rooney","10","10"
-"Costa Rica","Herediano","8 janvier 1986","2","Costa Rica","28","1. Gardien","Daniel Cambronero","23","28"
-"Costa Rica","Levante","15 dcembre 1986","53","Espagne","27","1. Gardien","Keylor Navas","1","28"
-"Costa Rica","Alajuelense","24 avril 1982","21","Costa Rica","32","1. Gardien","Patrick Pemberton","18","28"
-"Costa Rica","Rosenborg","24 octobre 1989","24","Norvege","24","2. Defenseur","Cristian Gamboa","16","28"
-"Costa Rica","Columbus Crew","8 fvrier 1988","34","Etats-Unis","26","2. Defenseur","Giancarlo Gonzalez","3","28"
-"Costa Rica","Saprissa","20 juin 1984","22","Costa Rica","29","2. Defenseur","Heiner Mora","8","28"
-"Costa Rica","Alajuelense","21 juillet 1983","27","Costa Rica","30","2. Defenseur","Johnny Acosta","2","28"
-"Costa Rica","Mainz 5","12 septembre 1983","58","Allemagne","30","2. Defenseur","Junior Diaz","15","28"
-"Costa Rica","Saprissa","16 juillet 1982","79","Costa Rica","31","2. Defenseur","Michael Umana","4","28"
-"Costa Rica","Club Brugge","3 juin 1989","11","Belgique","25","2. Defenseur","Oscar Duarte","6","28"
-"Costa Rica","New York Red Bulls","24 novembre 1984","47","Etats-Unis","29","2. Defenseur","Roy Miller","19","28"
-"Costa Rica","Columbus Crew","20 septembre 1990","1","Etats-Unis","23","2. Defenseur","Waylon Francis","12","28"
-"Costa Rica","AIK","27 mai 1988","63","Suede","26","3. Milieu","Celso Borges","5","28"
-"Costa Rica","Copenhagen","17 mai 1984","55","Danemark","30","3. Milieu","Christian Bolanos","7","28"
-"Costa Rica","Vlerenga","25 mars 1991","10","Norvege","23","3. Milieu","Diego Calvo","20","28"
-"Costa Rica","Herediano","25 octobre 1985","11","Costa Rica","28","3. Milieu","Esteban Granados","13","28"
-"Costa Rica","Herediano","14 fvrier 1987","36","Costa Rica","27","3. Milieu","Jose Miguel Cubero","22","28"
-"Costa Rica","Aalesund","4 octobre 1983","51","Norvege","30","3. Milieu","Michael Barrantes","11","28"
-"Costa Rica","Saprissa","17 mars 1992","22","Costa Rica","22","3. Milieu","Yeltsin Tejeda","17","28"
-"Costa Rica","PSV","18 aot 1985","62","Pays-Bas","28","4. Attaquant","Bryan Ruiz (c)","10","28"
-"Costa Rica","Olympiacos","26 juin 1992","33","Grece","21","4. Attaquant","Joel Campbell","9","28"
-"Costa Rica","Kuban Krasnodar","5 mars 1990","25","Russie","24","4. Attaquant","Marco Urena","21","28"
-"Costa Rica","Cartagines","13 aot 1983","37","Costa Rica","30","4. Attaquant","Randall Brenes","14","28"
-"Italie","Juventus","28 janvier 1978","139","Italie","36","1. Gardien","Gianluigi Buffon (c)","1","9"
-"Italie","Genoa","10 novembre 1992","0","Italie","21","1. Gardien","Mattia Perin","13","9"
-"Italie","Paris Saint-Germain","12 janvier 1987","8","France","27","1. Gardien","Salvatore Sirigu","12","9"
-"Italie","Juventus","8 mai 1981","47","Italie","33","2. Defenseur","Andrea Barzagli","15","9"
-"Italie","Parma","15 fvrier 1986","2","Italie","28","2. Defenseur","Gabriel Paletta","20","9"
-"Italie","Juventus","14 aot 1984","67","Italie","29","2. Defenseur","Giorgio Chiellini","3","9"
-"Italie","Milan","12 novembre 1986","19","Italie","27","2. Defenseur","Ignazio Abate","7","9"
-"Italie","Juventus","1 mai 1987","36","Italie","27","2. Defenseur","Leonardo Bonucci","19","9"
-"Italie","Torino","2 dcembre 1989","1","Italie","24","2. Defenseur","Matteo Darmian","4","9"
-"Italie","Milan","20 octobre 1992","10","Italie","21","2. Defenseur","Mattia De Sciglio","2","9"
-"Italie","Fiorentina","7 juillet 1984","34","Italie","29","3. Milieu","Alberto Aquilani","14","9"
-"Italie","Juventus","19 mai 1979","108","Italie","35","3. Milieu","Andrea Pirlo","21","9"
-"Italie","Lazio","28 fvrier 1987","19","Italie","27","3. Milieu","Antonio Candreva","6","9"
-"Italie","Juventus","19 janvier 1986","43","Italie","28","3. Milieu","Claudio Marchisio","8","9"
-"Italie","Roma","24 juillet 1983","94","Italie","30","3. Milieu","Daniele De Rossi","16","9"
-"Italie","Parma","25 janvier 1985","3","Italie","29","3. Milieu","Marco Parolo","18","9"
-"Italie","Paris Saint-Germain","5 novembre 1992","5","France","21","3. Milieu","Marco Verratti","23","9"
-"Italie","Paris Saint-Germain","28 aot 1982","20","France","31","3. Milieu","Thiago Motta","5","9"
-"Italie","Torino","23 juillet 1987","11","Italie","26","4. Attaquant","Alessio Cerci","11","9"
-"Italie","Parma","12 juillet 1982","36","Italie","31","4. Attaquant","Antonio Cassano","10","9"
-"Italie","Torino","20 fvrier 1990","2","Italie","24","4. Attaquant","Ciro Immobile","17","9"
-"Italie","Napoli","4 juin 1991","4","Italie","23","4. Attaquant","Lorenzo Insigne","22","9"
-"Italie","Milan","12 aot 1990","29","Italie","23","4. Attaquant","Mario Balotelli","9","9"
-"Uruguay","Galatasaray","16 juin 1986","57","Turquie","27","1. Gardien","Fernando Muslera","1","7"
-"Uruguay","Vasco da Gama","25 mars 1983","4","Bresil","31","1. Gardien","Martin Silva","23","7"
-"Uruguay","Libertad","22 janvier 1982","0","Paraguay","32","1. Gardien","Rodrigo Munoz","12","7"
-"Uruguay","Atletico Madrid","16 fvrier 1986","76","Espagne","28","2. Defenseur","Diego Godin","3","7"
-"Uruguay","West Bromwich Albion","2 novembre 1980","93","Angleterre","33","2. Defenseur","Diego Lugano (c)","2","7"
-"Uruguay","Porto","19 novembre 1984","41","Portugal","29","2. Defenseur","Jorge Fucile","13","7"
-"Uruguay","Atletico Madrid","20 janvier 1995","5","Espagne","19","2. Defenseur","Jose Maria Gimenez","19","7"
-"Uruguay","Juventus","7 avril 1987","56","Italie","27","2. Defenseur","Martin Caceres","22","7"
-"Uruguay","Benfica","8 juin 1984","89","Portugal","29","2. Defenseur","Maxi Pereira","16","7"
-"Uruguay","Nacional","7 octobre 1990","14","Uruguay","23","2. Defenseur","Sebastian Coates","4","7"
-"Uruguay","Lazio","29 octobre 1984","42","Italie","29","3. Milieu","alvaro Gonzalez","20","7"
-"Uruguay","So Paulo","28 novembre 1985","56","Bresil","28","3. Milieu","alvaro Pereira","6","7"
-"Uruguay","Atletico Madrid","30 septembre 1985","72","Espagne","28","3. Milieu","Cristian Rodriguez","7","7"
-"Uruguay","Bologna","18 mai 1980","89","Italie","34","3. Milieu","Diego Perez","15","7"
-"Uruguay","Morelia","1 janvier 1982","54","Mexique","32","3. Milieu","Egidio Arevalo Rios","17","7"
-"Uruguay","Southampton","2 dcembre 1990","28","Angleterre","23","3. Milieu","Gaston Ramirez","18","7"
-"Uruguay","Botafogo","21 mars 1989","26","Bresil","25","3. Milieu","Nicolas Lodeiro","14","7"
-"Uruguay","Parma","23 juillet 1984","62","Italie","29","3. Milieu","Walter Gargano","5","7"
-"Uruguay","Palermo","8 aot 1990","12","Italie","23","4. Attaquant","Abel Hernandez","8","7"
-"Uruguay","Espanyol","12 octobre 1986","9","Espagne","27","4. Attaquant","Christian Stuani","11","7"
-"Uruguay","Cerezo Osaka","19 mai 1979","109","Japon","35","4. Attaquant","Diego Forlan","10","7"
-"Uruguay","Paris Saint-Germain","14 fvrier 1987","61","France","27","4. Attaquant","Edinson Cavani","21","7"
-"Uruguay","Liverpool","24 janvier 1987","77","Angleterre","27","4. Attaquant","Luis Suarez","9","7"
-"Equateur","El Nacional","8 septembre 1988","3","Equateur","25","1. Gardien","Adrian Bone","12","26"
-"Equateur","LDU Quito","5 juin 1987","18","Equateur","27","1. Gardien","Alexander Dominguez","22","26"
-"Equateur","Barcelona","16 dcembre 1985","24","Equateur","28","1. Gardien","Maximo Banguera","1","26"
-"Equateur","Flamengo","5 mai 1988","36","Bresil","26","2. Defenseur","Frickson Erazo","3","26"
-"Equateur","Emelec","24 mars 1985","22","Equateur","29","2. Defenseur","Gabriel Achilier","21","26"
-"Equateur","Emelec","28 septembre 1981","58","Equateur","32","2. Defenseur","Jorge Guagua","2","26"
-"Equateur","Barcelona","8 juillet 1987","37","Equateur","26","2. Defenseur","Juan Carlos Paredes","4","26"
-"Equateur","Emelec","10 dcembre 1982","21","Equateur","31","2. Defenseur","oscar Bagi","18","26"
-"Equateur","Pachuca","11 aot 1979","89","Mexique","34","2. Defenseur","Walter Ayovi","10","26"
-"Equateur","Manchester United","4 aot 1985","70","Angleterre","28","3. Milieu","Antonio Valencia (c)","16","26"
-"Equateur","VfB Stuttgart","19 avril 1995","2","Allemagne","19","3. Milieu","Carlos Gruezo","23","26"
-"Equateur","Dynamo Moscow","9 avril 1985","41","Russie","29","3. Milieu","Christian Noboa","6","26"
-"Equateur","Santa Fe","15 mars 1979","109","Colombie","35","3. Milieu","Edison Mendez","8","26"
-"Equateur","Tijuana","15 fvrier 1990","8","Mexique","24","3. Milieu","Fidel Martinez","20","26"
-"Equateur","Morelia","1 septembre 1989","39","Mexique","24","3. Milieu","Jefferson Montero","7","26"
-"Equateur","Cruz Azul","14 juin 1989","29","Mexique","24","3. Milieu","Joao Rojas","9","26"
-"Equateur","Barcelona","20 octobre 1983","48","Equateur","30","3. Milieu","Luis Saritama","19","26"
-"Equateur","Atlante","23 avril 1987","20","Mexique","27","3. Milieu","Michael Arroyo","15","26"
-"Equateur","Vitesse","20 janvier 1991","17","Pays-Bas","23","3. Milieu","Renato Ibarra","5","26"
-"Equateur","Al-Hilal","15 mai 1982","81","Arabie Saoudite","32","3. Milieu","Segundo Castillo","14","26"
-"Equateur","Pachuca","11 avril 1989","9","Mexique","25","4. Attaquant","Enner Valencia","13","26"
-"Equateur","Al-Jazira","5 septembre 1988","49","EAU","25","4. Attaquant","Felipe Caicedo","11","26"
-"Equateur","Tijuana","21 fvrier 1988","30","Mexique","26","4. Attaquant","Jaime Ayovi","17","26"
-"France","Tottenham Hotspur","26 dcembre 1986","56","Angleterre","27","1. Gardien","Hugo Lloris (c)","1","17"
-"France","Bastia","14 mai 1979","11","France","35","1. Gardien","Mickael Landreau","23","17"
-"France","Saint-etienne","27 septembre 1986","2","France","27","1. Gardien","Stephane Ruffier","16","17"
-"France","Arsenal","14 fvrier 1983","40","Angleterre","31","2. Defenseur","Bacary Sagna","15","17"
-"France","Porto","13 fvrier 1991","3","Portugal","23","2. Defenseur","Eliaquim Mangala","13","17"
-"France","Arsenal","10 septembre 1985","17","Angleterre","28","2. Defenseur","Laurent Koscielny","21","17"
-"France","Paris Saint-Germain","20 juillet 1993","2","France","20","2. Defenseur","Lucas Digne","17","17"
-"France","Liverpool","13 fvrier 1990","18","Angleterre","24","2. Defenseur","Mamadou Sakho","5","17"
-"France","Newcastle United","28 juillet 1985","20","Angleterre","28","2. Defenseur","Mathieu Debuchy","2","17"
-"France","Manchester United","15 mai 1981","57","Angleterre","33","2. Defenseur","Patrice Evra","3","17"
-"France","Real Madrid","25 avril 1993","5","Espagne","21","2. Defenseur","Raphael Varane","4","17"
-"France","Real Sociedad","21 mars 1991","3","Espagne","23","3. Milieu","Antoine Griezmann","11","17"
-"France","Paris Saint-Germain","9 avril 1987","22","France","27","3. Milieu","Blaise Matuidi","14","17"
-"France","Southampton","8 novembre 1989","1","Angleterre","24","3. Milieu","Morgan Schneiderlin","22","17"
-"France","Montpellier","8 mars 1990","1","France","24","3. Milieu","Remy Cabella","7","17"
-"France","Marseille","28 septembre 1984","33","France","29","3. Milieu","Mathieu Valbuena","8","17"
-"France","Newcastle United","16 aot 1989","16","Angleterre","24","3. Milieu","Moussa Sissoko","18","17"
-"France","Juventus","15 mars 1993","10","Italie","21","3. Milieu","Paul Pogba","19","17"
-"France","Lille","8 mars 1984","11","France","30","3. Milieu","Rio Mavuba","12","17"
-"France","Paris Saint-Germain","14 janvier 1986","29","France","28","3. Milieu","Yohan Cabaye","6","17"
-"France","Real Madrid","19 dcembre 1987","65","Espagne","26","4. Attaquant","Karim Benzema","10","17"
-"France","Newcastle United","2 janvier 1987","24","Angleterre","27","4. Attaquant","Loec Remy","20","17"
-"France","Arsenal","30 septembre 1986","29","Angleterre","27","4. Attaquant","Olivier Giroud","9","17"
-"Honduras","Olimpia","3 fvrier 1980","26","Honduras","34","1. Gardien","Donis Escober","22","33"
-"Honduras","Real Espana","13 septembre 1993","0","Honduras","20","1. Gardien","Luis Lopez","1","33"
-"Honduras","Olimpia","3 mai 1977","121","Honduras","37","1. Gardien","Noel Valladares (c)","18","33"
-"Honduras","Olimpia","28 novembre 1985","22","Honduras","28","2. Defenseur","Brayan Beckeles","23","33"
-"Honduras","Celtic","10 mai 1986","67","Ecosse","28","2. Defenseur","Emilio Izaguirre","7","33"
-"Honduras","Wigan Athletic","8 mars 1988","33","Angleterre","26","2. Defenseur","Juan Carlos Garcia","6","33"
-"Honduras","Motagua","26 octobre 1985","11","Honduras","28","2. Defenseur","Juan Pablo Montes","4","33"
-"Honduras","Hull City","2 mai 1983","104","Angleterre","31","2. Defenseur","Maynor Figueroa","3","33"
-"Honduras","Qingdao Jonoon","29 juillet 1984","54","Chine","29","2. Defenseur","Osman Chavez","2","33"
-"Honduras","San Jose Earthquakes","24 mai 1982","77","Etats-Unis","32","2. Defenseur","Victor Bernardez","5","33"
-"Honduras","Anderlecht","16 mars 1993","16","Belgique","21","3. Milieu","Andy Najar","21","33"
-"Honduras","Real Espana","20 novembre 1986","25","Honduras","27","3. Milieu","Edder Delgado","12","33"
-"Honduras","Motagua","8 janvier 1986","48","Honduras","28","3. Milieu","Jorge Claros","20","33"
-"Honduras","Olimpia","5 novembre 1990","19","Honduras","23","3. Milieu","Luis Garrido","19","33"
-"Honduras","Real Espana","30 juillet 1989","35","Honduras","24","3. Milieu","Mario Martinez","10","33"
-"Honduras","Chivas USA","3 novembre 1983","41","Etats-Unis","30","3. Milieu","Marvin Chavez","17","33"
-"Honduras","Houston Dynamo","4 septembre 1984","92","Etats-Unis","29","3. Milieu","oscar Garcia","14","33"
-"Honduras","Wigan Athletic","25 octobre 1986","41","Angleterre","27","3. Milieu","Roger Espinoza","15","33"
-"Honduras","Stoke City","29 juillet 1984","94","Angleterre","29","3. Milieu","Wilson Palacios","8","33"
-"Honduras","Real Espana","18 juillet 1982","69","Honduras","31","4. Attaquant","Carlo Costly","13","33"
-"Honduras","New Angleterre Revolution","8 avril 1987","43","Etats-Unis","27","4. Attaquant","Jerry Bengtson","11","33"
-"Honduras","Alajuelense","1 novembre 1981","23","Costa Rica","32","4. Attaquant","Jerry Palacios","9","33"
-"Honduras","Real Sociedad","16 octobre 1988","12","Honduras","25","4. Attaquant","Rony Martinez","16","33"
-"Suisse","VfL Wolfsburg","8 septembre 1983","56","Allemagne","30","1. Gardien","Diego Benaglio","1","6"
-"Suisse","Grasshopper","14 novembre 1990","0","Suisse","23","1. Gardien","Roman Brki","21","6"
-"Suisse","Basel","17 dcembre 1988","6","Suisse","25","1. Gardien","Yann Sommer","12","6"
-"Suisse","Basel","20 dcembre 1991","5","Suisse","22","2. Defenseur","Fabian Schr","22","6"
-"Suisse","Hamburger SV","18 janvier 1987","44","Allemagne","27","2. Defenseur","Johan Djourou","20","6"
-"Suisse","Grasshopper","8 fvrier 1991","5","Suisse","23","2. Defenseur","Michael Lang","6","6"
-"Suisse","Valencia","14 fvrier 1985","53","Espagne","29","2. Defenseur","Philippe Senderos","4","6"
-"Suisse","Sassuolo","16 janvier 1986","35","Italie","28","2. Defenseur","Reto Ziegler","3","6"
-"Suisse","VfL Wolfsburg","25 aot 1992","20","Allemagne","21","2. Defenseur","Ricardo Rodriguez","13","6"
-"Suisse","Juventus","16 janvier 1984","62","Italie","30","2. Defenseur","Stephan Lichtsteiner","2","6"
-"Suisse","Young Boys","10 juin 1983","40","Suisse","30","2. Defenseur","Steve von Bergen","5","6"
-"Suisse","Napoli","12 avril 1986","33","Italie","28","3. Milieu","Blerim Dzemaili","15","6"
-"Suisse","SC Freiburg","2 septembre 1986","47","Allemagne","27","3. Milieu","Gelson Fernandes","16","6"
-"Suisse","Napoli","27 juin 1984","71","Italie","29","3. Milieu","Gkhan Inler (c)","8","6"
-"Suisse","Borussia Mnchengladbach","27 septembre 1992","25","Allemagne","21","3. Milieu","Granit Xhaka","10","6"
-"Suisse","Eintracht Frankfurt","22 mai 1985","73","Allemagne","29","3. Milieu","Tranquillo Barnetta","7","6"
-"Suisse","Basel","12 avril 1989","23","Suisse","25","3. Milieu","Valentin Stocker","14","6"
-"Suisse","Napoli","19 avril 1985","47","Italie","29","3. Milieu","Valon Behrami","11","6"
-"Suisse","Bayern Munich","10 octobre 1991","32","Allemagne","22","3. Milieu","Xherdan Shaqiri","23","6"
-"Suisse","SC Freiburg","16 mars 1991","20","Allemagne","23","4. Attaquant","Admir Mehmedi","18","6"
-"Suisse","Real Sociedad","22 fvrier 1992","10","Espagne","22","4. Attaquant","Haris Seferovic","9","6"
-"Suisse","1. FC Nrnberg","8 aot 1992","6","Allemagne","21","4. Attaquant","Josip Drmic","19","6"
-"Suisse","Zrich","24 novembre 1989","10","Suisse","24","4. Attaquant","Mario Gavranovic","17","6"
-"Argentine","Boca Juniors","26 juillet 1981","3","Argentine","32","1. Gardien","Agustin Orion","12","5"
-"Argentine","Catania","30 juillet 1983","10","Italie","30","1. Gardien","Mariano Andujar","21","5"
-"Argentine","Monaco","22 fvrier 1987","45","France","27","1. Gardien","Sergio Romero","1","5"
-"Argentine","Benfica","10 octobre 1986","18","Portugal","27","2. Defenseur","Ezequiel Garay","2","5"
-"Argentine","Napoli","21 fvrier 1989","24","Italie","25","2. Defenseur","Federico Fernandez","17","5"
-"Argentine","Internazionale","27 juin 1980","13","Italie","33","2. Defenseur","Hugo Campagnaro","3","5"
-"Argentine","Monterrey","3 avril 1984","8","Mexique","30","2. Defenseur","Jose Maria Basanta","23","5"
-"Argentine","Sporting","20 mars 1990","20","Portugal","24","2. Defenseur","Marcos Rojo","16","5"
-"Argentine","Manchester City","20 dcembre 1980","37","Angleterre","33","2. Defenseur","Martin Demichelis","15","5"
-"Argentine","Manchester City","16 janvier 1985","36","Angleterre","29","2. Defenseur","Pablo Zabaleta","4","5"
-"Argentine","Real Madrid","14 fvrier 1988","45","Espagne","26","3. Milieu","angel di Maria","7","5"
-"Argentine","Celta Vigo","10 avril 1986","7","Espagne","28","3. Milieu","Augusto Fernandez","13","5"
-"Argentine","Benfica","22 fvrier 1986","5","Portugal","28","3. Milieu","Enzo Perez","8","5"
-"Argentine","Boca Juniors","10 avril 1986","47","Argentine","28","3. Milieu","Fernando Gago","5","5"
-"Argentine","Barcelona","8 juin 1984","96","Espagne","29","3. Milieu","Javier Mascherano","14","5"
-"Argentine","Lazio","30 janvier 1986","16","Italie","28","3. Milieu","Lucas Biglia","6","5"
-"Argentine","Newell's Old Boys","2 janvier 1981","53","Argentine","33","3. Milieu","Maxi Rodriguez","11","5"
-"Argentine","Internazionale","12 avril 1988","5","Italie","26","3. Milieu","Ricardo alvarez","19","5"
-"Argentine","Paris Saint-Germain","3 mai 1985","29","France","29","4. Attaquant","Ezequiel Lavezzi","22","5"
-"Argentine","Napoli","10 dcembre 1987","36","Italie","26","4. Attaquant","Gonzalo Higuain","9","5"
-"Argentine","Barcelona","24 juin 1987","84","Espagne","26","4. Attaquant","Lionel Messi (c)","10","5"
-"Argentine","Internazionale","5 fvrier 1982","15","Italie","32","4. Attaquant","Rodrigo Palacio","18","5"
-"Argentine","Manchester City","2 juin 1988","50","Angleterre","26","4. Attaquant","Sergio Agero","20","5"
-"Bosnie-Herzegovine","and Herzegovina Borac Banja","13 mai 1981","3","Bosnie-Herzegovine","33","1. Gardien","Asmir Avdukic","22","21"
-"Bosnie-Herzegovine","Stoke City","20 juin 1987","30","Angleterre","26","1. Gardien","Asmir Begovic","1","21"
-"Bosnie-Herzegovine","VfR Aalen","15 mai 1986","0","Allemagne","28","1. Gardien","Jasmin Fejzic","12","21"
-"Bosnie-Herzegovine","Hajduk Split","6 mars 1986","13","Croatie","28","2. Defenseur","Avdija Vrsajevic","2","21"
-"Bosnie-Herzegovine","Bayer Leverkusen","18 aot 1980","74","Allemagne","33","2. Defenseur","Emir Spahic (c)","4","21"
-"Bosnie-Herzegovine","Eintracht Braunschweig","24 janvier 1990","7","Allemagne","24","2. Defenseur","Ermin Bicakcic","3","21"
-"Bosnie-Herzegovine","SC Freiburg","28 mars 1984","24","Allemagne","30","2. Defenseur","Mensur Mujdza","13","21"
-"Bosnie-Herzegovine","Ferencvaros","10 septembre 1992","9","Hongrie","21","2. Defenseur","Muhamed Besic","7","21"
-"Bosnie-Herzegovine","Elazspor","24 octobre 1989","13","Turquie","24","2. Defenseur","Ognjen Vranjes","6","21"
-"Bosnie-Herzegovine","Schalke 4","20 juin 1993","4","Allemagne","20","2. Defenseur","Sead Kolasinac","5","21"
-"Bosnie-Herzegovine","Zorya Luhansk","15 dcembre 1988","7","Ukraine","25","2. Defenseur","Toni sunjic","15","21"
-"Bosnie-Herzegovine","Sturm Graz","16 aot 1989","2","Autriche","24","3. Milieu","Anel Hadzic","20","21"
-"Bosnie-Herzegovine","Gaziantepspor","8 mars 1985","35","Turquie","29","3. Milieu","Haris Medunjanin","18","21"
-"Bosnie-Herzegovine","Galatasaray","4 aot 1991","7","Turquie","22","3. Milieu","Izet Hajrovic","14","21"
-"Bosnie-Herzegovine","Roma","2 avril 1990","48","Italie","24","3. Milieu","Miralem Pjanic","8","21"
-"Bosnie-Herzegovine","1899 Hoffenheim","8 octobre 1984","42","Allemagne","29","3. Milieu","Sejad Salihovic","23","21"
-"Bosnie-Herzegovine","Lazio","18 janvier 1986","33","Italie","28","3. Milieu","Senad Lulic","16","21"
-"Bosnie-Herzegovine","Kayseri Erciyesspor","26 septembre 1985","42","Turquie","28","3. Milieu","Senijad Ibricic","17","21"
-"Bosnie-Herzegovine","Hajduk Split","13 fvrier 1992","2","Croatie","22","3. Milieu","Tino-Sven Susic","21","21"
-"Bosnie-Herzegovine","Guizhou Renhe","5 juin 1982","82","Chine","32","3. Milieu","Zvjezdan Misimovic","10","21"
-"Bosnie-Herzegovine","Manchester City","17 mars 1986","62","Angleterre","28","4. Attaquant","Edin Dzeko","11","21"
-"Bosnie-Herzegovine","stanbul BB","17 fvrier 1990","10","Turquie","24","4. Attaquant","Edin Visca","19","21"
-"Bosnie-Herzegovine","VfB Stuttgart","6 aot 1984","55","Allemagne","29","4. Attaquant","Vedad Ibisevic","9","21"
-"Iran","Sporting Covilh","2 mai 1988","5","Portugal","26","1. Gardien","Alireza Haghighi","12","43"
-"Iran","Eintracht Braunschweig","6 janvier 1988","4","Allemagne","26","1. Gardien","Daniel Davari","22","43"
-"Iran","Sepahan","30 juillet 1980","10","Iran","33","1. Gardien","Rahman Ahmadi","1","43"
-"Iran","Naft Tehran","10 octobre 1982","9","Iran","31","2. Defenseur","Ahmad Alnameh","17","43"
-"Iran","Esteghlal","6 septembre 1981","16","Iran","32","2. Defenseur","Amir Hossein Sadeghi","5","43"
-"Iran","Esteghlal","22 janvier 1984","17","Iran","30","2. Defenseur","Hashem Beikzadeh","19","43"
-"Iran","Persepolis","16 septembre 1986","21","Iran","27","2. Defenseur","Hossein Mahini","13","43"
-"Iran","Persepolis","3 fvrier 1982","84","Iran","32","2. Defenseur","Jalal Hosseini","4","43"
-"Iran","Persepolis","26 fvrier 1987","19","Iran","27","2. Defenseur","Mehrdad Pouladi","23","43"
-"Iran","Umm Salal","6 septembre 1983","21","Qatar","30","2. Defenseur","Pejman Montazeri","15","43"
-"Iran","Vancouver Whitecaps","1 fvrier 1987","6","Etats-Unis","27","2. Defenseur","Steven Beitashour","20","43"
-"Iran","Esteghlal","6 mars 1983","78","Iran","31","3. Milieu","Andranik Teymourian","14","43"
-"Iran","Fulham","5 juillet 1986","13","Angleterre","27","3. Milieu","Ashkan Dejagah","21","43"
-"Iran","Foolad","23 septembre 1991","4","Iran","22","3. Milieu","Bakhtiar Rahmani","18","43"
-"Iran","Sepahan","25 fvrier 1990","61","Iran","24","3. Milieu","Ehsan Hajsafi","3","43"
-"Iran","Zob Ahan","12 juillet 1983","16","Iran","30","3. Milieu","Ghasem Haddadifar","11","43"
-"Iran","Al-Kuwait","7 octobre 1980","139","Koweit","33","3. Milieu","Javad Nekounam (c)","6","43"
-"Iran","Esteghlal","14 septembre 1983","48","Iran","30","3. Milieu","Khosro Heydari","2","43"
-"Iran","Las Palmas","9 juin 1984","49","Espagne","29","3. Milieu","Masoud Shojaei","7","43"
-"Iran","Persepolis","1 fvrier 1989","7","Iran","25","3. Milieu","Reza Haghighi","8","43"
-"Iran","NEC","11 aot 1993","6","Pays-Bas","20","4. Attaquant","Alireza Jahanbakhsh","9","43"
-"Iran","Tractor Sazi","3 avril 1990","41","Iran","24","4. Attaquant","Karim Ansarifard","10","43"
-"Iran","Charlton Athletic","20 septembre 1987","13","Angleterre","26","4. Attaquant","Reza Ghoochannejhad","16","43"
-"Nigeria","Hapoel Be'er Sheva","8 avril 1984","32","Israel","30","1. Gardien","Austin Ejide","16","44"
-"Nigeria","Gombe United","28 novembre 1984","11","Nigeria","29","1. Gardien","Chigozie Agbim","21","44"
-"Nigeria","Lille","29 aot 1982","90","France","31","1. Gardien","Vincent Enyeama (c)","1","44"
-"Nigeria","Warri Wolves","16 juillet 1989","32","Nigeria","24","2. Defenseur","Azubuike Egwuekwe","6","44"
-"Nigeria","Celtic","18 octobre 1988","36","Ecosse","25","2. Defenseur","Efe Ambrose","5","44"
-"Nigeria","caykur Rizespor","16 aot 1990","35","Turquie","23","2. Defenseur","Go2. Defenseurrey Oboabona","14","44"
-"Nigeria","Norwich City","6 septembre 1980","96","Angleterre","33","2. Defenseur","Joseph Yobo","2","44"
-"Nigeria","Ashdod","14 septembre 1990","10","Israel","23","2. Defenseur","Juwon Oshaniwa","13","44"
-"Nigeria","Middlesbrough","17 octobre 1993","17","Angleterre","20","2. Defenseur","Kenneth Omeruo","22","44"
-"Nigeria","Sunshine Stars","5 mars 1990","10","Nigeria","24","2. Defenseur","Kunle Odunlami","12","44"
-"Nigeria","Monaco","20 janvier 1988","42","France","26","2. Defenseur","Uwa Elderson Echiejile","3","44"
-"Nigeria","Chelsea","22 avril 1987","59","Angleterre","27","3. Milieu","John Obi Mikel","10","44"
-"Nigeria","Volyn Lutsk","24 dcembre 1992","4","Ukraine","21","3. Milieu","Michael Babatunde","18","44"
-"Nigeria","Lazio","25 dcembre 1992","20","Italie","21","3. Milieu","Ogenyi Onazi","17","44"
-"Nigeria","Almeria","12 dcembre 1992","1","Espagne","21","3. Milieu","Ramon Azeez","15","44"
-"Nigeria","Waasland-Beveren","25 septembre 1990","11","Belgique","23","3. Milieu","Reuben Gabriel","4","44"
-"Nigeria","Liverpool","12 dcembre 1990","20","Angleterre","23","3. Milieu","Victor Moses","11","44"
-"Nigeria","CSKA Moscow","14 octobre 1992","35","Russie","21","4. Attaquant","Ahmed Musa","7","44"
-"Nigeria","Fenerbahce","10 mai 1987","22","Turquie","27","4. Attaquant","Emmanuel Emenike","9","44"
-"Nigeria","Cercle Brugge","2 fvrier 1990","3","Belgique","24","4. Attaquant","Michael Uchebo","20","44"
-"Nigeria","Stoke City","15 juillet 1981","60","Angleterre","32","4. Attaquant","Peter Odemwingie","8","44"
-"Nigeria","Newcastle United","12 octobre 1981","6","Angleterre","32","4. Attaquant","Shola Ameobi","23","44"
-"Nigeria","Heerenveen","17 septembre 1991","6","Pays-Bas","22","4. Attaquant","Uche Nwofor","19","44"
-"Allemagne","Bayern Munich","27 mars 1986","45","Allemagne","28","1. Gardien","Manuel Neuer","1","2"
-"Allemagne","Borussia Dortmund","6 aot 1980","2","Allemagne","33","1. Gardien","Roman Weidenfeller","22","2"
-"Allemagne","Hannover 96","12 fvrier 1989","3","Allemagne","25","1. Gardien","Ron-Robert Zieler","12","2"
-"Allemagne","Schalke 4","29 fvrier 1988","20","Allemagne","26","2. Defenseur","Benedikt Hwedes","4","2"
-"Allemagne","Borussia Dortmund","12 mai 1992","1","Allemagne","22","2. Defenseur","Erik Durm","15","2"
-"Allemagne","Bayern Munich","3 septembre 1988","38","Allemagne","25","2. Defenseur","Jerme Boateng","20","2"
-"Allemagne","Borussia Dortmund","19 juillet 1988","4","Allemagne","25","2. Defenseur","Kevin Grokreutz","2","2"
-"Allemagne","Borussia Dortmund","16 dcembre 1988","29","Allemagne","25","2. Defenseur","Mats Hummels","5","2"
-"Allemagne","Arsenal","29 septembre 1984","97","Angleterre","29","2. Defenseur","Per Mertesacker","17","2"
-"Allemagne","Bayern Munich","11 novembre 1983","105","Allemagne","30","2. Defenseur","Philipp Lahm (c)","16","2"
-"Allemagne","Chelsea","6 novembre 1990","32","Angleterre","23","3. Milieu","Andre Schrrle","9","2"
-"Allemagne","Bayern Munich","1 aot 1984","101","Allemagne","29","3. Milieu","Bastian Schweinsteiger","7","2"
-"Allemagne","Borussia Mnchengladbach","12 fvrier 1991","2","Allemagne","23","3. Milieu","Christoph Kramer","23","2"
-"Allemagne","Schalke 4","20 septembre 1993","11","Allemagne","20","3. Milieu","Julian Draxler","14","2"
-"Allemagne","Bayern Munich","3 juin 1992","28","Allemagne","22","3. Milieu","Mario Gtze","19","2"
-"Allemagne","SC Freiburg","19 janvier 1994","2","Allemagne","20","3. Milieu","Matthias Ginter","3","2"
-"Allemagne","Arsenal","15 octobre 1988","54","Angleterre","25","3. Milieu","Mesut zil","8","2"
-"Allemagne","Real Madrid","4 avril 1987","45","Espagne","27","3. Milieu","Sami Khedira","6","2"
-"Allemagne","Bayern Munich","13 septembre 1989","48","Allemagne","24","3. Milieu","Thomas Mller","13","2"
-"Allemagne","Bayern Munich","4 janvier 1990","43","Allemagne","24","3. Milieu","Toni Kroos","18","2"
-"Allemagne","Arsenal","4 juin 1985","113","Angleterre","29","4. Attaquant","Lukas Podolski","10","2"
-"Allemagne","Lazio","9 juin 1978","131","Italie","35","4. Attaquant","Miroslav Klose","11","2"
-"Allemagne","Sampdoria","17 avril 1992","1","Italie","22","Dfenseur","Shkodran Mustafi","21","2"
-"Etats-Unis","Aston Villa","9 septembre 1984","25","Angleterre","29","1. Gardien","Brad Guzan","12","13"
-"Etats-Unis","Real Salt Lake","17 juin 1979","14","Etats-Unis","34","1. Gardien","Nick Rimando","22","13"
-"Etats-Unis","Everton","6 mars 1979","99","Angleterre","35","1. Gardien","Tim Howard","1","13"
-"Etats-Unis","Puebla","24 mai 1982","115","Mexique","32","2. Defenseur","DaMarcus Beasley","7","13"
-"Etats-Unis","Seattle Sounders FC","9 juillet 1993","4","Etats-Unis","20","2. Defenseur","DeAndre Yedlin","2","13"
-"Etats-Unis","1899 Hoffenheim","11 dcembre 1987","21","Allemagne","26","2. Defenseur","Fabian Johnson","23","13"
-"Etats-Unis","Stoke City","11 juillet 1985","26","Angleterre","28","2. Defenseur","Geoff Cameron","20","13"
-"Etats-Unis","Hertha BSC","28 janvier 1993","4","Allemagne","21","2. Defenseur","John Brooks","6","13"
-"Etats-Unis","Sporting Kansas City","11 fvrier 1987","16","Etats-Unis","27","2. Defenseur","Matt Besler","5","13"
-"Etats-Unis","Los Angeles Galaxy","11 octobre 1988","19","Etats-Unis","25","2. Defenseur","Omar Gonzalez","3","13"
-"Etats-Unis","1. FC Nrnberg","29 mars 1990","12","Allemagne","24","2. Defenseur","Timothy Chandler","21","13"
-"Etats-Unis","Nantes","29 avril 1987","27","France","27","3. Milieu","Alejandro Bedoya","11","13"
-"Etats-Unis","Houston Dynamo","8 novembre 1981","16","Etats-Unis","32","3. Milieu","Brad Davis","14","13"
-"Etats-Unis","Sporting Kansas City","18 aot 1986","22","Etats-Unis","27","3. Milieu","Graham Zusi","19","13"
-"Etats-Unis","Besiktas","3 novembre 1981","41","Turquie","32","3. Milieu","Jermaine Jones","13","13"
-"Etats-Unis","Bayern Munich","6 juin 1995","2","Allemagne","19","3. Milieu","Julian Green","16","13"
-"Etats-Unis","Real Salt Lake","23 avril 1982","36","Etats-Unis","32","3. Milieu","Kyle Beckerman","15","13"
-"Etats-Unis","Toronto FC","31 juillet 1987","85","Etats-Unis","26","3. Milieu","Michael Bradley","4","13"
-"Etats-Unis","Rosenborg","2 octobre 1990","19","Norvege","23","3. Milieu","Mikkel Diskerud","10","13"
-"Etats-Unis","AZ","10 novembre 1990","8","Pays-Bas","23","4. Attaquant","Aron Johannsson","9","13"
-"Etats-Unis","San Jose Earthquakes","28 janvier 1983","20","Etats-Unis","31","4. Attaquant","Chris Wondolowski","18","13"
-"Etats-Unis","Seattle Sounders FC","9 mars 1983","104","Etats-Unis","31","4. Attaquant","Clint Dempsey (c)","8","13"
-"Etats-Unis","Sunderland","6 novembre 1989","69","Angleterre","24","4. Attaquant","Jozy Altidore","17","13"
-"Ghana","Strmsgodset","12 dcembre 1987","21","Norvege","26","1. Gardien","Adam Kwarasey","12","37"
-"Ghana","Orlando Pirates","6 avril 1985","17","Afrique du Sud","29","1. Gardien","Fatau Dauda","16","37"
-"Ghana","Aduana Stars","28 septembre 1989","7","Ghana","24","1. Gardien","Steven Adams","1","37"
-"Ghana","Standard Liege","18 octobre 1990","16","Belgique","23","2. Defenseur","Daniel Opare","4","37"
-"Ghana","Esperance","24 juin 1986","40","Tunisie","27","2. Defenseur","Harrison Afful","23","37"
-"Ghana","Rennes","23 avril 1987","29","France","27","2. Defenseur","John Boye","21","37"
-"Ghana","evian","13 juillet 1990","26","France","23","2. Defenseur","Jonathan Mensah","19","37"
-"Ghana","Mamelodi Sundowns","18 dcembre 1992","6","Afrique du Sud","21","2. Defenseur","Rashid Sumaila","15","37"
-"Ghana","Platanias","1 juin 1989","46","Grece","25","2. Defenseur","Samuel Inkoom","2","37"
-"Ghana","Parma","5 janvier 1992","4","Italie","22","3. Milieu","Acquah Afriyie","6","37"
-"Ghana","Middlesbrough","13 dcembre 1987","14","Angleterre","26","3. Milieu","Albert Adomah","14","37"
-"Ghana","Marseille","17 dcembre 1989","48","France","24","3. Milieu","Andre Ayew","10","37"
-"Ghana","Vitesse","10 janvier 1992","22","Pays-Bas","22","3. Milieu","Christian Atsu","7","37"
-"Ghana","Udinese","2 dcembre 1990","48","Italie","23","3. Milieu","Emmanuel Agyemang-Badu","8","37"
-"Ghana","Juventus","9 dcembre 1988","61","Italie","25","3. Milieu","Kwadwo Asamoah","20","37"
-"Ghana","Milan","3 dcembre 1982","57","Italie","31","3. Milieu","Michael Essien","5","37"
-"Ghana","Kuban Krasnodar","31 dcembre 1989","16","Russie","24","3. Milieu","Mohammed Rabiu","17","37"
-"Ghana","Milan","27 aot 1984","81","Italie","29","3. Milieu","Sulley Muntari","11","37"
-"Ghana","Rubin Kazan","25 juillet 1990","16","Russie","23","3. Milieu","Wakaso Mubarak","22","37"
-"Ghana","Al-Ain","22 novembre 1985","78","EAU","28","4. Attaquant","Asamoah Gyan (c)","3","37"
-"Ghana","Sochaux","11 septembre 1991","12","France","22","4. Attaquant","Jordan Ayew","13","37"
-"Ghana","Schalke 4","6 mars 1987","12","Allemagne","27","4. Attaquant","Kevin-Prince Boateng","9","37"
-"Ghana","Valenciennes","19 septembre 1991","9","France","22","4. Attaquant","Majeed Waris","18","37"
-"Portugal","Sevilla","1 mai 1982","7","Espagne","32","1. Gardien","Beto","22","4"
-"Portugal","Braga","19 septembre 1982","33","Portugal","31","1. Gardien","Eduardo","1","4"
-"Portugal","Sporting","15 fvrier 1988","29","Portugal","26","1. Gardien","Rui Patricio","12","4"
-"Portugal","Benfica","10 septembre 1990","3","Portugal","23","2. Defenseur","Andre Almeida","19","4"
-"Portugal","Fenerbahce","27 novembre 1981","71","Turquie","32","2. Defenseur","Bruno Alves","2","4"
-"Portugal","Real Madrid","11 mars 1988","43","Espagne","26","2. Defenseur","Fabio Coentro","5","4"
-"Portugal","Valencia","25 fvrier 1984","35","Espagne","30","2. Defenseur","Joo Pereira","21","4"
-"Portugal","Zenit Saint Petersburg","26 mai 1988","7","Russie","26","2. Defenseur","Luis Neto","14","4"
-"Portugal","Real Madrid","26 fvrier 1983","57","Espagne","31","2. Defenseur","Pepe","3","4"
-"Portugal","Valencia","16 mai 1981","18","Espagne","33","2. Defenseur","Ricardo Costa","13","4"
-"Portugal","Monaco","8 septembre 1986","66","France","27","3. Milieu","Joo Moutinho","8","4"
-"Portugal","Dynamo Kyiv","11 mai 1986","47","Ukraine","28","3. Milieu","Miguel Veloso","4","4"
-"Portugal","Manchester United","17 novembre 1986","73","Angleterre","27","3. Milieu","Nani","17","4"
-"Portugal","Braga","17 mai 1993","2","Portugal","21","3. Milieu","Rafa Silva","15","4"
-"Portugal","Fenerbahce","17 mars 1983","73","Turquie","31","3. Milieu","Raul Meireles","16","4"
-"Portugal","Benfica","27 janvier 1985","11","Portugal","29","3. Milieu","Ruben Amorim","20","4"
-"Portugal","Porto","2 fvrier 1985","22","Portugal","29","3. Milieu","Silvestre Varela","18","4"
-"Portugal","VfL Wolfsburg","24 janvier 1986","7","Allemagne","28","3. Milieu","Vieirinha","10","4"
-"Portugal","Sporting","7 avril 1992","3","Portugal","22","3. Milieu","William Carvalho","6","4"
-"Portugal","Real Madrid","5 fvrier 1985","110","Espagne","29","4. Attaquant","Cristiano Ronaldo (c)","7","4"
-"Portugal","Braga","22 dcembre 1987","7","Portugal","26","4. Attaquant","eder","11","4"
-"Portugal","Lazio","2 aot 1982","67","Italie","31","4. Attaquant","Helder Postiga","23","4"
-"Portugal","Besiktas","23 mai 1984","54","Turquie","30","4. Attaquant","Hugo Almeida","9","4"
-"Algerie","CS Constantine","9 janvier 1985","1","Algerie","29","1. Gardien","Cedric Si Mohamed","1","22"
-"Algerie","USM Alger","19 mars 1985","7","Algerie","29","1. Gardien","Mohamed Zemmamouche","16","22"
-"Algerie","CSKA Sofia","25 avril 1986","27","Bulgarie","28","1. Gardien","Raes M'Bolhi","23","22"
-"Algerie","Reims","22 octobre 1991","2","France","22","2. Defenseur","Aissa Mandi","20","22"
-"Algerie","Valenciennes","15 mai 1985","25","France","29","2. Defenseur","Carl Medjani","7","22"
-"Algerie","Livorno","9 octobre 1984","26","Italie","29","2. Defenseur","Djamel Mesbah","6","22"
-"Algerie","Watford","1 janvier 1989","13","Angleterre","25","2. Defenseur","Essaed Belkalem","4","22"
-"Algerie","Napoli","1 fvrier 1991","5","Italie","23","2. Defenseur","Faouzi Ghoulam","3","22"
-"Algerie","Mallorca","5 mars 1988","6","Espagne","26","2. Defenseur","Liassine Cadamuro-Bentaeba","17","22"
-"Algerie","Lekhwiya","7 octobre 1982","61","Qatar","31","2. Defenseur","Madjid Bougherra (c)","2","22"
-"Algerie","Academica","2 septembre 1986","28","Portugal","27","2. Defenseur","Rafik Halliche","5","22"
-"Algerie","Club Africain","31 janvier 1987","76","Tunisie","27","3. Milieu","Abdelmoumene Djabou","18","22"
-"Algerie","Udinese","14 mai 1984","24","Italie","30","3. Milieu","Hassan Yebda","8","22"
-"Algerie","Getafe","15 mai 1984","29","Espagne","30","3. Milieu","Medhi Lacen","12","22"
-"Algerie","Ajaccio","30 aot 1983","22","France","30","3. Milieu","Mehdi Mostefa","22","22"
-"Algerie","Tottenham Hotspur","24 novembre 1994","2","Angleterre","19","3. Milieu","Nabil Bentaleb","14","22"
-"Algerie","Leicester City","21 fvrier 1991","1","Angleterre","23","3. Milieu","Riyad Mahrez","21","22"
-"Algerie","Internazionale","29 fvrier 1992","10","Italie","22","3. Milieu","Saphir Taeder","19","22"
-"Algerie","Valencia","26 dcembre 1989","18","Espagne","24","3. Milieu","Sofiane Feghouli","10","22"
-"Algerie","Granada","8 fvrier 1990","5","Espagne","24","3. Milieu","Yacine Brahimi","11","22"
-"Algerie","Dinamo Zagreb","25 novembre 1987","21","Croatie","26","4. Attaquant","El Arbi Hillel Soudani","15","22"
-"Algerie","Sporting CP","18 juin 1988","19","Portugal","25","4. Attaquant","Islam Slimani","13","22"
-"Algerie","Porto","20 avril 1990","5","Portugal","24","4. Attaquant","Nabil Ghilas","9","22"
-"Belgique","Zulte Waregem","11 aot 1985","1","Belgique","28","1. Gardien","Sammy Bossut","13","11"
-"Belgique","Liverpool","6 aot 1988","14","Angleterre","25","1. Gardien","Simon Mignolet","12","11"
-"Belgique","Atletico Madrid","11 mai 1992","16","Espagne","22","1. Gardien","Thibaut Courtois","1","11"
-"Belgique","Anderlecht","24 octobre 1987","25","Belgique","26","2. Defenseur","Anthony Vanden Borre","21","11"
-"Belgique","Bayern Munich","7 fvrier 1978","79","Allemagne","36","2. Defenseur","Daniel Van Buyten","15","11"
-"Belgique","Tottenham Hotspur","24 avril 1987","56","Angleterre","27","2. Defenseur","Jan Vertonghen","5","11"
-"Belgique","Standard Liege","5 aot 1985","8","Belgique","28","2. Defenseur","Laurent Ciman","23","11"
-"Belgique","Zenit Saint Petersburg","20 mars 1985","26","Russie","29","2. Defenseur","Nicolas Lombaerts","18","11"
-"Belgique","Arsenal","14 novembre 1985","48","Angleterre","28","2. Defenseur","Thomas Vermaelen","3","11"
-"Belgique","Atletico Madrid","2 mars 1989","34","Espagne","25","2. Defenseur","Toby Alderweireld","2","11"
-"Belgique","Manchester City","10 avril 1986","59","Angleterre","28","2. Defenseur","Vincent Kompany (c)","4","11"
-"Belgique","Manchester United","5 fvrier 1995","1","Angleterre","19","3. Milieu","Adnan Januzaj","20","11"
-"Belgique","Zenit Saint Petersburg","12 janvier 1989","48","Russie","25","3. Milieu","Axel Witsel","6","11"
-"Belgique","Chelsea","7 janvier 1991","45","Angleterre","23","3. Milieu","Eden Hazard","10","11"
-"Belgique","VfL Wolfsburg","28 juin 1991","22","Allemagne","22","3. Milieu","Kevin De Bruyne","7","11"
-"Belgique","Everton","5 octobre 1987","44","Angleterre","26","3. Milieu","Kevin Mirallas","11","11"
-"Belgique","Manchester United","22 novembre 1987","50","Angleterre","26","3. Milieu","Marouane Fellaini","8","11"
-"Belgique","Tottenham Hotspur","16 juillet 1987","55","Angleterre","26","3. Milieu","Mousa Dembele","19","11"
-"Belgique","Tottenham Hotspur","2 octobre 1989","20","Angleterre","24","3. Milieu","Nacer Chadli","22","11"
-"Belgique","Porto","15 avril 1988","43","Portugal","26","3. Milieu","Steven Defour","16","11"
-"Belgique","Lille","18 avril 1995","2","France","19","4. Attaquant","Divock Origi","17","11"
-"Belgique","Napoli","6 mai 1987","24","Italie","27","4. Attaquant","Dries Mertens","14","11"
-"Belgique","Everton","13 mai 1993","29","Angleterre","21","4. Attaquant","Romelu Lukaku","9","11"
-"Coree du Sud","Suwon Bluewings","4 janvier 1985","60","Coree du Sud","29","1. Gardien","Jung Sung-Ryong","1","57"
-"Coree du Sud","Ulsan Hyundai","30 septembre 1990","5","Coree du Sud","23","1. Gardien","Kim Seung-Gyu","21","57"
-"Coree du Sud","Busan I'Park","2 avril 1989","0","Coree du Sud","25","1. Gardien","Lee Bum-Young","23","57"
-"Coree du Sud","FC Augsburg","12 aot 1989","24","Allemagne","24","2. Defenseur","Hong Jeong-Ho","20","57"
-"Coree du Sud","Sanfrecce Hiroshima","27 juin 1989","3","Japon","24","2. Defenseur","Hwang Seok-Ho","6","57"
-"Coree du Sud","Kashiwa Reysol","12 septembre 1985","8","Japon","28","2. Defenseur","Kim Chang-Soo","2","57"
-"Coree du Sud","Guangzhou Evergrande","27 fvrier 1990","20","Chine","24","2. Defenseur","Kim Young-Gwon","5","57"
-"Coree du Sud","Al-Hilal","8 juillet 1981","34","Arabie Saoudite","32","2. Defenseur","Kwak Tae-Hwi","4","57"
-"Coree du Sud","Ulsan Hyundai","24 dcembre 1986","11","Coree du Sud","27","2. Defenseur","Lee Yong","12","57"
-"Coree du Sud","Mainz 5","16 janvier 1987","13","Allemagne","27","2. Defenseur","Park Joo-Ho","22","57"
-"Coree du Sud","Queens Park Rangers","13 fvrier 1990","3","Angleterre","24","2. Defenseur","Yun Suk-Young","3","57"
-"Coree du Sud","Beijing Guoan","2 mars 1985","13","Chine","29","3. Milieu","Ha Dae-Sung","8","57"
-"Coree du Sud","Kashiwa Reysol","19 avril 1990","9","Japon","24","3. Milieu","Han Kook-Young","14","57"
-"Coree du Sud","Sunderland","24 janvier 1989","58","Angleterre","25","3. Milieu","Ki Sung-Yueng","16","57"
-"Coree du Sud","Cardiff City","6 octobre 1989","27","Angleterre","24","3. Milieu","Kim Bo-Kyung","7","57"
-"Coree du Sud","Mainz 5","27 fvrier 1989","36","Allemagne","25","3. Milieu","Koo Ja-Cheol (c)","13","57"
-"Coree du Sud","Bolton Wanderers","2 juillet 1988","54","Angleterre","25","3. Milieu","Lee Chung-Yong","17","57"
-"Coree du Sud","Guangzhou R&F","10 mars 1989","10","Chine","25","3. Milieu","Park Jong-Woo","15","57"
-"Coree du Sud","FC Augsburg","28 mai 1991","27","Allemagne","23","4. Attaquant","Ji Dong-Won","19","57"
-"Coree du Sud","Ulsan Hyundai","14 avril 1988","26","Coree du Sud","26","4. Attaquant","Kim Shin-Wook","18","57"
-"Coree du Sud","Sangju Sangmu","11 avril 1985","63","Coree du Sud","29","4. Attaquant","Lee Keun-Ho","11","57"
-"Coree du Sud","Watford","10 juillet 1985","63","Angleterre","28","4. Attaquant","Park Chu-Young","10","57"
-"Coree du Sud","Bayer Leverkusen","8 juillet 1992","24","Allemagne","21","4. Attaquant","Son Heung-Min","9","57"
-"Russie","CSKA Moscow","8 avril 1986","67","Russie","28","1. Gardien","Igor Akinfeev","1","19"
-"Russie","Rubin Kazan","19 septembre 1980","1","Russie","33","1. Gardien","Sergey Ryzhikov","16","19"
-"Russie","Zenit Saint Petersburg","26 mai 1990","2","Russie","24","1. Gardien","Yuri Lodygin","12","19"
-"Russie","Dynamo Moscow","16 novembre 1986","10","Russie","27","2. Defenseur","Aleksei Kozlov","2","19"
-"Russie","Terek Grozny","24 mars 1989","1","Russie","25","2. Defenseur","Andrei Semyonov","6","19"
-"Russie","Anzhi Makhachkala","9 fvrier 1984","11","Russie","30","2. Defenseur","Andrey Yeshchenko","22","19"
-"Russie","Spartak Moscow","22 janvier 1987","21","Russie","27","2. Defenseur","Dmitri Kombarov","23","19"
-"Russie","CSKA Moscow","27 avril 1991","3","Russie","23","2. Defenseur","Georgi Shchennikov","3","19"
-"Russie","CSKA Moscow","14 juillet 1979","95","Russie","34","2. Defenseur","Sergei Ignashevich","4","19"
-"Russie","CSKA Moscow","20 juin 1982","77","Russie","31","2. Defenseur","Vasili Berezutski","14","19"
-"Russie","Dynamo Moscow","22 mai 1987","4","Russie","27","2. Defenseur","Vladimir Granat","13","19"
-"Russie","CSKA Moscow","17 juin 1990","31","Russie","23","3. Milieu","Alan Dzagoev","10","19"
-"Russie","Spartak Moscow","27 janvier 1987","26","Russie","27","3. Milieu","Denis Glushakov","8","19"
-"Russie","Dynamo Moscow","17 mai 1984","42","Russie","30","3. Milieu","Igor Denisov","7","19"
-"Russie","Zenit Saint Petersburg","29 juillet 1990","6","Russie","23","3. Milieu","Oleg Shatov","17","19"
-"Russie","Rubin Kazan","25 janvier 1993","1","Russie","21","3. Milieu","Pavel Mogilevets","15","19"
-"Russie","Zenit Saint Petersburg","22 avril 1986","18","Russie","28","3. Milieu","Viktor Fayzulin","20","19"
-"Russie","Zenit Saint Petersburg","27 novembre 1982","79","Russie","31","4. Attaquant","Aleksandr Kerzhakov","11","19"
-"Russie","Dynamo Moscow","19 mars 1991","20","Russie","23","4. Attaquant","Aleksandr Kokorin","9","19"
-"Russie","Lokomotiv Moscow","19 juillet 1984","16","Russie","29","4. Attaquant","Aleksandr Samedov","19","19"
-"Russie","Dynamo Moscow","18 fvrier 1989","5","Russie","25","4. Attaquant","Aleksei Ionov","18","19"
-"Russie","Rubin Kazan","14 juillet 1991","2","Russie","22","4. Attaquant","Maksim Kanunnikov","21","19"
-"Russie","Dynamo Moscow","20 aot 1983","59","Russie","30","4. Attaquant","Yuri Zhirkov","5","19"
+Groupe,Actu groupe,Equipe,Classement FIFA,Selectionneur,Nat. Selectionneur,Date Annonce,No.,ID,Joueur,Position,Date de naissance,Age,Selections,Championnat,Club,Championnat domestique,Nb jours présents
+A,http://bit.ly/1kEE0r14,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,1,325,Jefferson,1. Gardien,2 janvier 1983,31,9,Bresil,Botafogo   ,OUI,46
+A,http://bit.ly/1kEE0r16,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,12,378,Julio Cesar,1. Gardien,3 septembre 1979,34,80,Etats-Unis,Toronto FC  ,NON,46
+A,http://bit.ly/1kEE0r13,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,22,699,Victor,1. Gardien,21 janvier 1983,31,6,Bresil,Atletico Mineiro  ,OUI,46
+A,http://bit.ly/1kEE0r17,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,2,136,Dani Alves,2. Defenseur,6 mai 1983,31,75,Espagne,Barcelona   ,NON,46
+A,http://bit.ly/1kEE0r4,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,13,146,Dante,2. Defenseur,18 octobre 1983,30,12,Allemagne,Bayern Munich  ,NON,46
+A,http://bit.ly/1kEE0r6,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,4,152,David Luiz,2. Defenseur,22 avril 1987,27,36,Angleterre,Chelsea   ,NON,46
+A,http://bit.ly/1kEE0r23,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,15,280,Henrique,2. Defenseur,14 octobre 1986,27,5,Italie,Napoli   ,NON,46
+A,http://bit.ly/1kEE0r24,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,23,438,Maicon,2. Defenseur,26 juillet 1981,32,72,Italie,Roma   ,NON,46
+A,http://bit.ly/1kEE0r19,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,6,445,Marcelo,2. Defenseur,12 mai 1988,26,31,Espagne,Real Madrid  ,NON,46
+A,http://bit.ly/1kEE0r21,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,14,493,Maxwell,2. Defenseur,27 août 1981,32,9,France,Paris Saint-Germain  ,NON,46
+A,http://bit.ly/1kEE0r20,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,3,675,Thiago Silva (c),2. Defenseur,22 septembre 1984,29,46,France,Paris Saint-Germain  ,NON,46
+A,http://bit.ly/1kEE0r26,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,20,86,Bernard,3. Milieu,8 septembre 1992,21,11,Ukraine,Shakhtar Donetsk  ,NON,46
+A,http://bit.ly/1kEE0r10,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,5,223,Fernandinho,3. Milieu,4 mai 1985,29,7,Angleterre,Manchester City  ,NON,46
+A,http://bit.ly/1kEE0r22,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,18,281,Hernanes,3. Milieu,29 mai 1985,29,24,Italie,Internazionale   ,NON,46
+A,http://bit.ly/1kEE0r5,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,17,433,Luiz Gustavo,3. Milieu,23 juillet 1987,26,19,Allemagne,VfL Wolfsburg  ,NON,46
+A,http://bit.ly/1kEE0r7,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,11,548,Oscar,3. Milieu,9 septembre 1991,22,31,Angleterre,Chelsea   ,NON,46
+A,http://bit.ly/1kEE0r11,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,8,567,Paulinho,3. Milieu,25 juillet 1988,25,26,Angleterre,Tottenham Hotspur  ,NON,46
+A,http://bit.ly/1kEE0r8,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,16,585,Ramires,3. Milieu,24 mars 1987,27,42,Angleterre,Chelsea   ,NON,46
+A,http://bit.ly/1kEE0r9,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,19,717,Willian,3. Milieu,9 août 1988,25,7,Angleterre,Chelsea   ,NON,46
+A,http://bit.ly/1kEE0r15,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,9,233,Fred,4. Attaquant,3 octobre 1983,30,33,Bresil,Fluminense   ,OUI,46
+A,http://bit.ly/1kEE0r25,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,7,290,Hulk,4. Attaquant,25 juillet 1986,27,35,Russie,Zenit Saint Petersburg ,NON,46
+A,http://bit.ly/1kEE0r12,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,21,333,Jô,4. Attaquant,20 mars 1987,27,17,Bresil,Atletico Mineiro  ,OUI,46
+A,http://bit.ly/1kEE0r18,Bresil,3,Luiz Felipe Scolari,Bresil,2-juin,10,530,Neymar,4. Attaquant,5 février 1992,22,49,Espagne,Barcelona   ,NON,46
+A,http://bit.ly/1kEE0r49,Cameroun,56,Volker Finke,Allemagne,2-juin,16,113,Charles Itandje,1. Gardien,2 novembre 1982,31,9,Turquie,Konyaspor   ,NON,26
+A,http://bit.ly/1kEE0r33,Cameroun,56,Volker Finke,Allemagne,2-juin,1,422,Loec Feudjou,1. Gardien,14 avril 1992,22,2,Cameroun,Coton Sport  ,OUI,26
+A,http://bit.ly/1kEE0r47,Cameroun,56,Volker Finke,Allemagne,2-juin,23,625,Sammy N'Djock,1. Gardien,25 février 1990,24,3,Turquie,Fethiyespor   ,NON,26
+A,http://bit.ly/1kEE0r35,Cameroun,56,Volker Finke,Allemagne,2-juin,22,38,Allan Nyom,2. Defenseur,10 mai 1988,26,10,Espagne,Granada   ,NON,26
+A,http://bit.ly/1kEE0r48,Cameroun,56,Volker Finke,Allemagne,2-juin,14,72,Aurelien Chedjou,2. Defenseur,20 juin 1985,28,31,Turquie,Galatasaray   ,NON,26
+A,http://bit.ly/1kEE0r30,Cameroun,56,Volker Finke,Allemagne,2-juin,2,85,Benoît Assou-Ekotto,2. Defenseur,24 mars 1984,30,22,Angleterre,Queens Park Rangers ,NON,26
+A,http://bit.ly/1kEE0r32,Cameroun,56,Volker Finke,Allemagne,2-juin,4,107,Cedric Djeugoue,2. Defenseur,28 août 1992,21,3,Cameroun,Coton Sport  ,OUI,26
+A,http://bit.ly/1kEE0r45,Cameroun,56,Volker Finke,Allemagne,2-juin,5,147,Dany Nounkeu,2. Defenseur,11 avril 1986,28,16,Turquie,Besiktas   ,NON,26
+A,http://bit.ly/1kEE0r40,Cameroun,56,Volker Finke,Allemagne,2-juin,12,279,Henri Bedimo,2. Defenseur,4 juin 1984,30,31,France,Lyon   ,NON,26
+A,http://bit.ly/1kEE0r41,Cameroun,56,Volker Finke,Allemagne,2-juin,3,534,Nicolas N'Koulou,2. Defenseur,27 mars 1990,24,48,France,Marseille   ,NON,26
+A,http://bit.ly/1kEE0r34,Cameroun,56,Volker Finke,Allemagne,2-juin,6,29,Alex Song,3. Milieu,9 septembre 1987,26,47,Espagne,Barcelona   ,NON,26
+A,http://bit.ly/1kEE0r38,Cameroun,56,Volker Finke,Allemagne,2-juin,20,182,Edgar Salli,3. Milieu,17 août 1992,21,9,France,Lens   ,NON,26
+A,http://bit.ly/1kEE0r44,Cameroun,56,Volker Finke,Allemagne,2-juin,18,209,Eyong Enoh,3. Milieu,23 mars 1986,28,38,Turquie,Antalyaspor   ,NON,26
+A,http://bit.ly/1kEE0r43,Cameroun,56,Volker Finke,Allemagne,2-juin,11,323,Jean Makoun,3. Milieu,29 mai 1983,31,66,France,Rennes   ,NON,26
+A,http://bit.ly/1kEE0r28,Cameroun,56,Volker Finke,Allemagne,2-juin,21,339,Joel Matip,3. Milieu,8 août 1991,22,23,Allemagne,Schalke 4  ,NON,26
+A,http://bit.ly/1kEE0r37,Cameroun,56,Volker Finke,Allemagne,2-juin,7,409,Landry N'Guemo,3. Milieu,28 novembre 1985,28,40,France,Bordeaux   ,NON,26
+A,http://bit.ly/1kEE0r36,Cameroun,56,Volker Finke,Allemagne,2-juin,17,661,Stephane Mbia,3. Milieu,20 mai 1986,28,49,Espagne,Sevilla   ,NON,26
+A,http://bit.ly/1kEE0r42,Cameroun,56,Volker Finke,Allemagne,2-juin,8,84,Benjamin Moukandjo,4. Attaquant,12 novembre 1988,25,17,France,Nancy   ,NON,26
+A,http://bit.ly/1kEE0r31,Cameroun,56,Volker Finke,Allemagne,2-juin,19,216,Fabrice Olinga,4. Attaquant,12 mai 1996,18,8,Belgique,Zulte Waregem  ,NON,26
+A,http://bit.ly/1kEE0r27,Cameroun,56,Volker Finke,Allemagne,2-juin,13,491,Maxim Choupo-Moting,4. Attaquant,23 mars 1989,25,26,Allemagne,Mainz 5  ,NON,26
+A,http://bit.ly/1kEE0r46,Cameroun,56,Volker Finke,Allemagne,2-juin,15,578,Pierre Webo,4. Attaquant,20 janvier 1982,32,56,Turquie,Fenerbahce   ,NON,26
+A,http://bit.ly/1kEE0r29,Cameroun,56,Volker Finke,Allemagne,2-juin,9,626,Samuel Eto'o (c),4. Attaquant,10 mars 1981,33,117,Angleterre,Chelsea   ,NON,26
+A,http://bit.ly/1kEE0r39,Cameroun,56,Volker Finke,Allemagne,2-juin,10,705,Vincent Aboubakar,4. Attaquant,22 janvier 1992,22,24,France,Lorient   ,NON,26
+A,http://bit.ly/1kEE0r61,Croatie,18,Niko Kovac,Croatie,31-mai,23,144,Danijel Subasic,1. Gardien,27 octobre 1984,29,6,France,Monaco   ,NON,27
+A,http://bit.ly/1kEE0r56,Croatie,18,Niko Kovac,Croatie,31-mai,12,543,Oliver Zelenika,1. Gardien,14 mai 1993,21,0,Croatie,Lokomotiva   ,OUI,27
+A,http://bit.ly/1kEE0r68,Croatie,18,Niko Kovac,Croatie,31-mai,1,668,Stipe Pletikosa,1. Gardien,8 janvier 1979,35,111,Russie,Rostov   ,NON,27
+A,http://bit.ly/1kEE0r62,Croatie,18,Niko Kovac,Croatie,31-mai,3,143,Danijel Pranjic,2. Defenseur,2 décembre 1981,32,50,Grece,Panathinaikos   ,NON,27
+A,http://bit.ly/1kEE0r71,Croatie,18,Niko Kovac,Croatie,31-mai,11,148,Darijo Srna (c),2. Defenseur,1 mai 1982,32,112,Ukraine,Shakhtar Donetsk  ,NON,27
+A,http://bit.ly/1kEE0r54,Croatie,18,Niko Kovac,Croatie,31-mai,6,157,Dejan Lovren,2. Defenseur,5 juillet 1989,24,25,Angleterre,Southampton   ,NON,27
+A,http://bit.ly/1kEE0r69,Croatie,18,Niko Kovac,Croatie,31-mai,21,175,Domagoj Vida,2. Defenseur,29 avril 1989,25,23,Ukraine,Dynamo Kyiv  ,NON,27
+A,http://bit.ly/1kEE0r63,Croatie,18,Niko Kovac,Croatie,31-mai,13,263,Gordon Schildenfeld,2. Defenseur,18 mars 1985,29,21,Grece,Panathinaikos   ,NON,27
+A,http://bit.ly/1kEE0r65,Croatie,18,Niko Kovac,Croatie,31-mai,2,652,Sime Vrsaljko,2. Defenseur,10 janvier 1992,22,7,Italie,Genoa   ,NON,27
+A,http://bit.ly/1kEE0r67,Croatie,18,Niko Kovac,Croatie,31-mai,5,698,Vedran Corluka,2. Defenseur,5 février 1986,28,72,Russie,Lokomotiv Moscow  ,NON,27
+A,http://bit.ly/1kEE0r57,Croatie,18,Niko Kovac,Croatie,31-mai,15,300,Milan Badelj,3. Milieu,25 février 1989,25,9,Allemagne,Hamburger SV  ,NON,27
+A,http://bit.ly/1kEE0r52,Croatie,18,Niko Kovac,Croatie,31-mai,4,301,Ivan Perisic,3. Milieu,2 février 1989,25,29,Allemagne,VfL Wolfsburg  ,NON,27
+A,http://bit.ly/1kEE0r60,Croatie,18,Niko Kovac,Croatie,31-mai,7,302,Ivan Rakitic,3. Milieu,10 mars 1988,26,62,Espagne,Sevilla   ,NON,27
+A,http://bit.ly/1kEE0r59,Croatie,18,Niko Kovac,Croatie,31-mai,10,434,Luka Modric,3. Milieu,9 septembre 1985,28,75,Espagne,Real Madrid  ,NON,27
+A,http://bit.ly/1kEE0r55,Croatie,18,Niko Kovac,Croatie,31-mai,14,446,Marcelo Brozovic,3. Milieu,16 octobre 1992,21,1,Croatie,Dinamo Zagreb  ,OUI,27
+A,http://bit.ly/1kEE0r66,Croatie,18,Niko Kovac,Croatie,31-mai,20,472,Mateo Kovacic,3. Milieu,6 mai 1994,20,10,Italie,Internazionale   ,NON,27
+A,http://bit.ly/1kEE0r70,Croatie,18,Niko Kovac,Croatie,31-mai,8,540,Ognjen Vukojevic,3. Milieu,20 décembre 1983,30,55,Ukraine,Dynamo Kyiv  ,NON,27
+A,http://bit.ly/1kEE0r58,Croatie,18,Niko Kovac,Croatie,31-mai,19,623,Sammir,3. Milieu,23 avril 1987,27,6,Espagne,Getafe   ,NON,27
+A,http://bit.ly/1kEE0r64,Croatie,18,Niko Kovac,Croatie,31-mai,16,56,Ante Rebic,4. Attaquant,21 septembre 1993,20,5,Italie,Fiorentina   ,NON,27
+A,http://bit.ly/1kEE0r72,Croatie,18,Niko Kovac,Croatie,31-mai,22,187,Eduardo,4. Attaquant,25 février 1983,31,63,Ukraine,Shakhtar Donetsk  ,NON,27
+A,http://bit.ly/1kEE0r51,Croatie,18,Niko Kovac,Croatie,31-mai,18,303,Ivica Olic,4. Attaquant,14 septembre 1979,34,92,Allemagne,VfL Wolfsburg  ,NON,27
+A,http://bit.ly/1kEE0r50,Croatie,18,Niko Kovac,Croatie,31-mai,17,458,Mario Mandzukic,4. Attaquant,21 mai 1986,28,50,Allemagne,Bayern Munich  ,NON,27
+A,http://bit.ly/1kEE0r53,Croatie,18,Niko Kovac,Croatie,31-mai,9,536,Nikica Jelavic,4. Attaquant,27 août 1985,28,33,Angleterre,Hull City  ,NON,27
+A,http://bit.ly/1kEE0r90,Mexique,20,Miguel Herrera,Mexique,9-mai,12,35,Alfredo Talavera,1. Gardien,18 septembre 1982,31,14,Mexique,Toluca   ,OUI,32
+A,http://bit.ly/1kEE0r78,Mexique,20,Miguel Herrera,Mexique,9-mai,13,267,Guillermo Ochoa,1. Gardien,13 juillet 1985,28,59,France,Ajaccio   ,NON,32
+A,http://bit.ly/1kEE0r83,Mexique,20,Miguel Herrera,Mexique,9-mai,1,357,Jose de Jesus Corona,1. Gardien,26 janvier 1981,33,34,Mexique,Cruz Azul  ,OUI,32
+A,http://bit.ly/1kEE0r73,Mexique,20,Miguel Herrera,Mexique,9-mai,18,50,Andres Guardado,2. Defenseur,28 septembre 1986,27,104,Allemagne,Bayer Leverkusen  ,NON,32
+A,http://bit.ly/1kEE0r92,Mexique,20,Miguel Herrera,Mexique,9-mai,3,104,Carlos Salcido,2. Defenseur,2 avril 1980,34,122,Mexique,UANL   ,OUI,32
+A,http://bit.ly/1kEE0r94,Mexique,20,Miguel Herrera,Mexique,9-mai,5,169,Diego Reyes,2. Defenseur,19 septembre 1992,21,14,Portugal,Porto   ,NON,32
+A,http://bit.ly/1kEE0r79,Mexique,20,Miguel Herrera,Mexique,9-mai,2,228,Francisco Javier Rodriguez,2. Defenseur,20 octobre 1981,32,95,Mexique,America   ,OUI,32
+A,http://bit.ly/1kEE0r75,Mexique,20,Miguel Herrera,Mexique,9-mai,15,276,Hector Moreno,2. Defenseur,17 janvier 1988,26,53,Espagne,Espanyol   ,NON,32
+A,http://bit.ly/1kEE0r89,Mexique,20,Miguel Herrera,Mexique,9-mai,16,512,Miguel Angel Ponce,2. Defenseur,12 avril 1989,25,8,Mexique,Toluca   ,OUI,32
+A,http://bit.ly/1kEE0r80,Mexique,20,Miguel Herrera,Mexique,9-mai,7,513,Miguel Layun,2. Defenseur,25 juin 1988,25,15,Mexique,America   ,OUI,32
+A,http://bit.ly/1kEE0r81,Mexique,20,Miguel Herrera,Mexique,9-mai,22,564,Paul Aguilar,2. Defenseur,6 mars 1986,28,30,Mexique,America   ,OUI,32
+A,http://bit.ly/1kEE0r85,Mexique,20,Miguel Herrera,Mexique,9-mai,4,581,Rafael Marquez (c),2. Defenseur,13 février 1979,35,120,Mexique,Leon   ,OUI,32
+A,http://bit.ly/1kEE0r86,Mexique,20,Miguel Herrera,Mexique,9-mai,21,103,Carlos Pena,3. Milieu,29 mars 1990,24,16,Mexique,Leon   ,OUI,32
+A,http://bit.ly/1kEE0r95,Mexique,20,Miguel Herrera,Mexique,9-mai,6,275,Hector Herrera,3. Milieu,19 avril 1990,24,13,Portugal,Porto   ,NON,32
+A,http://bit.ly/1kEE0r91,Mexique,20,Miguel Herrera,Mexique,9-mai,17,296,Isaac Brizuela,3. Milieu,28 août 1990,23,7,Mexique,Toluca   ,OUI,32
+A,http://bit.ly/1kEE0r77,Mexique,20,Miguel Herrera,Mexique,9-mai,20,319,Javier Aquino,3. Milieu,11 février 1990,24,22,Espagne,Villarreal   ,NON,32
+A,http://bit.ly/1kEE0r87,Mexique,20,Miguel Herrera,Mexique,9-mai,23,359,Jose Juan Vazquez,3. Milieu,14 mars 1988,26,5,Mexique,Leon   ,OUI,32
+A,http://bit.ly/1kEE0r84,Mexique,20,Miguel Herrera,Mexique,9-mai,8,448,Marco Fabian,3. Milieu,21 juillet 1989,24,15,Mexique,Cruz Azul  ,OUI,32
+A,http://bit.ly/1kEE0r93,Mexique,20,Miguel Herrera,Mexique,9-mai,11,17,Alan Pulido,4. Attaquant,8 mars 1991,23,6,Mexique,UANL   ,OUI,32
+A,http://bit.ly/1kEE0r76,Mexique,20,Miguel Herrera,Mexique,9-mai,10,256,Giovani dos Santos,4. Attaquant,11 mai 1989,25,76,Espagne,Villarreal   ,NON,32
+A,http://bit.ly/1kEE0r74,Mexique,20,Miguel Herrera,Mexique,9-mai,14,320,Javier Hernandez,4. Attaquant,1 juin 1988,26,62,Angleterre,Manchester United  ,NON,32
+A,http://bit.ly/1kEE0r88,Mexique,20,Miguel Herrera,Mexique,9-mai,19,547,Oribe Peralta,4. Attaquant,12 janvier 1984,30,33,Mexique,Santos Laguna  ,OUI,32
+A,http://bit.ly/1kEE0r82,Mexique,20,Miguel Herrera,Mexique,9-mai,9,591,Raul Jimenez,4. Attaquant,5 mai 1991,23,25,Mexique,America   ,OUI,32
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,18,207,Eugene Galekovic,1. Gardien,12 juin 1981,32,8,Australie,Adelaide United  ,OUI,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,1,474,Mathew Ryan,1. Gardien,8 avril 1992,22,7,Belgique,Club Brugge  ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,12,520,Mitchell Langerak,1. Gardien,22 août 1988,25,3,Allemagne,Borussia Dortmund  ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,22,30,Alex Wilkinson,2. Defenseur,13 août 1984,29,3,Coree du Sud,Jeonbuk Hyundai Motors ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,8,78,Bailey Wright,2. Defenseur,28 juillet 1992,21,0,Angleterre,Preston North End ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,2,299,Ivan Franjic,2. Defenseur,10 septembre 1987,26,9,Australie,Brisbane Roar  ,OUI,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,3,315,Jason Davidson,2. Defenseur,29 juin 1991,22,7,Pays-Bas,Heracles Almelo  ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,6,482,Matthew Spiranovic,2. Defenseur,27 juin 1988,25,18,Australie,Western Sydney Wanderers ,OUI,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,19,619,Ryan McGowan,2. Defenseur,15 août 1989,24,9,Chine,Shandong Luneng Taishan ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,10,82,Ben Halloran,3. Milieu,14 juin 1992,21,2,Allemagne,Fortuna Düsseldorf  ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,20,149,Dario Vidosic,3. Milieu,8 avril 1987,27,23,Suisse,Sion   ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,16,309,James Holland,3. Milieu,15 mai 1989,25,14,Autriche,Autriche Wien  ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,14,312,James Troisi,3. Milieu,3 juillet 1988,25,11,Italie,Atalanta   ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,23,461,Mark Bresciano,3. Milieu,11 février 1980,34,74,Qatar,Al-Gharafa   ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,5,462,Mark Milligan,3. Milieu,4 août 1985,28,29,Australie,Melbourne Victory  ,OUI,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,21,471,Massimo Luongo,3. Milieu,25 septembre 1992,21,1,Angleterre,Swindon Town  ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,17,480,Matt McKay,3. Milieu,11 janvier 1983,31,47,Australie,Brisbane Roar  ,OUI,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,15,517,Mile Jedinak (c),3. Milieu,3 août 1984,29,44,Angleterre,Crystal Palace  ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,13,542,Oliver Bozanic,3. Milieu,8 janvier 1989,25,3,Suisse,Luzern   ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,11,685,Tommy Oar,3. Milieu,10 décembre 1991,22,15,Pays-Bas,Utrecht   ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,9,6,Adam Taggart,4. Attaquant,2 juin 1993,21,5,Australie,Newcastle Jets  ,OUI,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,7,473,Mathew Leckie,4. Attaquant,4 février 1991,23,8,Allemagne,FSV Frankfurt  ,NON,26
+B,http://bit.ly/1kEEugB,Australie,62,Ange Postecoglou,Australie,3-juin,4,679,Tim Cahill,4. Attaquant,6 décembre 1979,34,69,Etats-Unis,New York Red Bulls,NON,26
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,1,124,Claudio Bravo (c),1. Gardien,13 avril 1983,31,79,Espagne,Real Sociedad  ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,12,133,Cristopher Toselli,1. Gardien,22 juin 1988,25,4,Chili,Universidad Catolica  ,OUI,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,23,346,Johnny Herrera,1. Gardien,9 mai 1981,33,8,Chili,Universidad de Chili ,OUI,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,2,208,Eugenio Mena,2. Defenseur,18 juillet 1988,25,25,Bresil,Santos   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,17,239,Gary Medel,2. Defenseur,3 août 1987,26,61,Angleterre,Cardiff City  ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,18,262,Gonzalo Jara,2. Defenseur,29 août 1985,28,65,Angleterre,Nottingham Forest  ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,13,364,Jose Rojas,2. Defenseur,3 juin 1983,31,19,Chili,Universidad de Chili ,OUI,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,3,515,Miiko Albornoz,2. Defenseur,3 novembre 1990,23,2,Suede,Malmö FF  ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,8,65,Arturo Vidal,3. Milieu,22 mai 1987,27,54,Italie,Juventus   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,6,101,Carlos Carmona,3. Milieu,21 février 1987,27,44,Italie,Atalanta   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,20,112,Charles Aranguiz,3. Milieu,17 avril 1989,25,21,Bresil,Internacional   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,14,213,Fabian Orellana,3. Milieu,27 janvier 1986,28,26,Espagne,Celta Vigo  ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,16,222,Felipe Gutierrez,3. Milieu,8 octobre 1990,23,18,Pays-Bas,Twente   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,5,229,Francisco Silva,3. Milieu,11 février 1986,28,12,Espagne,Osasuna   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,15,322,Jean Beausejour,3. Milieu,3 juin 1984,30,59,Angleterre,Wigan Athletic  ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,10,356,Jorge Valdivia,3. Milieu,3 octobre 1983,30,57,Bresil,Palmeiras   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,19,363,Jose Pedro Fuenzalida,3. Milieu,22 février 1985,29,23,Chili,Colo-Colo   ,OUI,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,21,447,Marcelo Diaz,3. Milieu,30 décembre 1986,27,21,Suisse,Basel   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,4,486,Mauricio Isla,3. Milieu,12 juin 1988,25,47,Italie,Juventus   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,7,34,Alexis Sanchez,4. Attaquant,19 décembre 1988,25,67,Espagne,Barcelona   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,11,189,Eduardo Vargas,4. Attaquant,20 novembre 1989,24,30,Espagne,Valencia   ,NON,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,22,206,Esteban Paredes,4. Attaquant,1 août 1980,33,35,Chili,Colo-Colo   ,OUI,31
+B,http://bit.ly/1kEEugB,Chili,14,Jorge Sampaoli,Argentine,1-juin,9,487,Mauricio Pinilla,4. Attaquant,4 février 1984,30,27,Italie,Cagliari   ,NON,31
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,12,151,David de Gea,1. Gardien,7 novembre 1990,23,1,Angleterre,Manchester United  ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,1,295,Iker Casillas (c),1. Gardien,20 mai 1981,33,154,Espagne,Real Madrid  ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,23,571,Pepe Reina,1. Gardien,31 août 1982,31,32,Italie,Napoli   ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,22,110,Cesar Azpilicueta,2. Defenseur,28 août 1989,24,6,Angleterre,Chelsea   ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,3,245,Gerard Pique,2. Defenseur,2 février 1987,27,60,Espagne,Barcelona   ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,18,351,Jordi Alba,2. Defenseur,21 mars 1989,25,26,Espagne,Barcelona   ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,5,375,Juanfran,2. Defenseur,9 janvier 1985,29,8,Espagne,Atletico Madrid  ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,2,590,Raul Albiol,2. Defenseur,4 septembre 1985,28,46,Italie,Napoli   ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,15,644,Sergio Ramos,2. Defenseur,30 mars 1986,28,117,Espagne,Real Madrid  ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,6,51,Andres Iniesta,3. Milieu,11 mai 1984,30,97,Espagne,Barcelona   ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,10,111,Cesc Fabregas,3. Milieu,4 mai 1987,27,89,Espagne,Barcelona   ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,21,154,David Silva,3. Milieu,8 janvier 1986,28,80,Angleterre,Manchester City  ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,4,318,Javi Martinez,3. Milieu,2 septembre 1988,25,17,Allemagne,Bayern Munich  ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,13,373,Juan Mata,3. Milieu,28 avril 1988,26,33,Angleterre,Manchester United  ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,17,399,Koke,3. Milieu,8 janvier 1992,22,8,Espagne,Atletico Madrid  ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,20,628,Santi Cazorla,3. Milieu,13 décembre 1984,29,64,Angleterre,Arsenal   ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,16,643,Sergio Busquets,3. Milieu,16 juillet 1988,25,65,Espagne,Barcelona   ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,14,719,Xabi Alonso,3. Milieu,25 novembre 1981,32,111,Espagne,Real Madrid  ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,8,720,Xavi,3. Milieu,25 janvier 1980,34,132,Espagne,Barcelona   ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,7,155,David Villa,4. Attaquant,3 décembre 1981,32,96,Espagne,Atletico Madrid  ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,19,164,Diego Costa,4. Attaquant,7 octobre 1988,25,2,Espagne,Atletico Madrid  ,OUI,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,9,226,Fernando Torres,4. Attaquant,20 mars 1984,30,107,Angleterre,Chelsea   ,NON,26
+B,http://bit.ly/1kEEugB,Espagne,1,Vicente del Bosque,Espagne,31-mai,11,568,Pedro,4. Attaquant,28 juillet 1987,26,40,Espagne,Barcelona   ,OUI,26
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,1,316,Jasper Cillessen,1. Gardien,22 avril 1989,25,8,Pays-Bas,Ajax   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,22,510,Michel Vorm,1. Gardien,3 octobre 1983,30,14,Angleterre,Swansea City  ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,23,681,Tim Krul,1. Gardien,3 avril 1988,26,5,Angleterre,Newcastle United  ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,4,95,Bruno Martins Indi,2. Defenseur,8 février 1992,22,16,Pays-Bas,Feyenoord   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,5,134,Daley Blind,2. Defenseur,9 mars 1990,24,12,Pays-Bas,Ajax   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,7,150,Daryl Janmaat,2. Defenseur,22 juillet 1989,24,16,Pays-Bas,Feyenoord   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,13,340,Joel Veltman,2. Defenseur,15 janvier 1992,22,2,Pays-Bas,Ajax   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,12,566,Paul Verhaegh,2. Defenseur,1 septembre 1983,30,2,Allemagne,Augsburg   ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,2,612,Ron Vlaar,2. Defenseur,16 février 1985,29,24,Angleterre,Aston Villa  ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,3,658,Stefan de Vrij,2. Defenseur,5 février 1992,22,12,Pays-Bas,Feyenoord   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,14,672,Terence Kongolo,2. Defenseur,14 février 1994,20,1,Pays-Bas,Feyenoord   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,11,62,Arjen Robben,3. Milieu,23 janvier 1984,30,75,Allemagne,Bayern Munich  ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,20,244,Georginio Wijnaldum,3. Milieu,11 novembre 1990,23,5,Pays-Bas,PSV   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,6,347,Jonathan de Guzman,3. Milieu,13 septembre 1987,26,10,Angleterre,Swansea City  ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,16,352,Jordy Clasie,3. Milieu,27 juin 1991,22,8,Pays-Bas,Feyenoord   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,18,419,Leroy Fer,3. Milieu,5 janvier 1990,24,6,Angleterre,Norwich City  ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,21,499,Memphis Depay,3. Milieu,13 février 1994,20,6,Pays-Bas,PSV   ,OUI,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,8,535,Nigel de Jong,3. Milieu,13 novembre 1984,29,71,Italie,Milan   ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,10,714,Wesley Sneijder,3. Milieu,9 juin 1984,29,99,Turquie,Galatasaray   ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,15,171,Dirk Kuyt,4. Attaquant,22 juillet 1980,33,98,Turquie,Fenerbahce   ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,17,327,Jeremain Lens,4. Attaquant,24 novembre 1987,26,22,Ukraine,Dynamo Kyiv  ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,19,398,Klaas-Jan Huntelaar,4. Attaquant,12 août 1983,30,62,Allemagne,Schalke 4  ,NON,45
+B,http://bit.ly/1kEEugB,Pays-Bas,15,Louis van Gaal,Pays-Bas,31-mai,9,604,Robin van Persie (c),4. Attaquant,6 août 1983,30,85,Angleterre,Manchester United  ,NON,45
+C,http://bit.ly/1kEEz56,Colombie,8,Jose Pekerman,Argentine,2-juin,12,97,Camilo Vargas,1. Gardien,1 septembre 1989,24,0,Colombie,Santa Fe  ,OUI,36
+C,http://bit.ly/1kEEz59,Colombie,8,Jose Pekerman,Argentine,2-juin,1,153,David Ospina,1. Gardien,31 août 1988,25,44,France,Nice   ,NON,36
+C,http://bit.ly/1kEEz55,Colombie,8,Jose Pekerman,Argentine,2-juin,22,218,Faryd Mondragon,1. Gardien,21 juin 1971,42,50,Colombie,Deportivo Cali  ,OUI,36
+C,http://bit.ly/1kEEz53,Colombie,8,Jose Pekerman,Argentine,2-juin,23,106,Carlos Valdes,2. Defenseur,22 mai 1985,29,14,Argentine,San Lorenzo  ,NON,36
+C,http://bit.ly/1kEEz66,Colombie,8,Jose Pekerman,Argentine,2-juin,2,131,Cristian Zapata,2. Defenseur,30 septembre 1986,27,24,Italie,Milan   ,NON,36
+C,http://bit.ly/1kEEz51,Colombie,8,Jose Pekerman,Argentine,2-juin,16,181,Eder Alvarez Balanta,2. Defenseur,28 février 1993,21,3,Argentine,River Plate  ,NON,36
+C,http://bit.ly/1kEEz67,Colombie,8,Jose Pekerman,Argentine,2-juin,18,368,Juan Camilo Zuniga,2. Defenseur,14 décembre 1985,28,50,Italie,Napoli   ,NON,36
+C,http://bit.ly/1kEEz62,Colombie,8,Jose Pekerman,Argentine,2-juin,3,460,Mario Yepes (c),2. Defenseur,13 janvier 1976,38,98,Italie,Atalanta   ,NON,36
+C,http://bit.ly/1kEEz50,Colombie,8,Jose Pekerman,Argentine,2-juin,7,554,Pablo Armero,2. Defenseur,2 novembre 1986,27,53,Angleterre,West Ham United ,NON,36
+C,http://bit.ly/1kEEz69,Colombie,8,Jose Pekerman,Argentine,2-juin,4,629,Santiago Arias,2. Defenseur,13 janvier 1992,22,6,Pays-Bas,PSV   ,NON,36
+C,http://bit.ly/1kEEz60,Colombie,8,Jose Pekerman,Argentine,2-juin,8,2,Abel Aguilar,3. Milieu,6 janvier 1985,29,49,France,Toulouse   ,NON,36
+C,http://bit.ly/1kEEz68,Colombie,8,Jose Pekerman,Argentine,2-juin,5,20,Carlos Carbonero,3. Milieu,25 juillet 1990,23,1,Argentine,River Plate  ,NON,36
+C,http://bit.ly/1kEEz54,Colombie,8,Jose Pekerman,Argentine,2-juin,15,32,Alexander Mejia,3. Milieu,7 septembre 1988,25,8,Colombie,Atletico Nacional  ,OUI,36
+C,http://bit.ly/1kEEz57,Colombie,8,Jose Pekerman,Argentine,2-juin,6,105,Carlos Sanchez,3. Milieu,6 février 1986,28,44,Espagne,Elche   ,NON,36
+C,http://bit.ly/1kEEz65,Colombie,8,Jose Pekerman,Argentine,2-juin,13,234,Fredy Guarin,3. Milieu,30 juin 1986,27,49,Italie,Internazionale   ,NON,36
+C,http://bit.ly/1kEEz61,Colombie,8,Jose Pekerman,Argentine,2-juin,10,311,James Rodriguez,3. Milieu,12 juillet 1991,22,22,France,Monaco   ,NON,36
+C,http://bit.ly/1kEEz71,Colombie,8,Jose Pekerman,Argentine,2-juin,20,371,Juan Fernando Quintero,3. Milieu,18 janvier 1993,21,4,Portugal,Porto   ,NON,36
+C,http://bit.ly/1kEEz64,Colombie,8,Jose Pekerman,Argentine,2-juin,11,372,Juan Guillermo Cuadrado,3. Milieu,26 mai 1988,26,28,Italie,Fiorentina   ,NON,36
+C,http://bit.ly/1kEEz63,Colombie,8,Jose Pekerman,Argentine,2-juin,14,701,Victor Ibarbo,3. Milieu,19 mai 1990,24,9,Italie,Cagliari   ,NON,36
+C,http://bit.ly/1kEEz49,Colombie,8,Jose Pekerman,Argentine,2-juin,19,10,Adrian Ramos,4. Attaquant,22 janvier 1986,28,26,Allemagne,Hertha BSC  ,NON,36
+C,http://bit.ly/1kEEz58,Colombie,8,Jose Pekerman,Argentine,2-juin,17,100,Carlos Bacca,4. Attaquant,8 septembre 1986,27,11,Espagne,Sevilla   ,NON,36
+C,http://bit.ly/1kEEz70,Colombie,8,Jose Pekerman,Argentine,2-juin,21,306,Jackson Martinez,4. Attaquant,3 octobre 1986,27,27,Portugal,Porto   ,NON,36
+C,http://bit.ly/1kEEz52,Colombie,8,Jose Pekerman,Argentine,2-juin,9,671,Teofilo Gutierrez,4. Attaquant,28 mai 1985,29,30,Argentine,River Plate  ,NON,36
+C,http://bit.ly/1kEEz79,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,1,90,Boubacar Barry,1. Gardien,30 décembre 1979,34,79,Belgique,Lokeren   ,NON,26
+C,http://bit.ly/1kEEz87,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,23,631,Sayouba Mande,1. Gardien,5 juin 1993,21,1,Norvege,Stabæk   ,NON,26
+C,http://bit.ly/1kEEz80,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,16,670,Sylvain Gbohouo,1. Gardien,29 octobre 1988,25,1,Cote d'Ivoire,Sewe Sport  ,OUI,26
+C,http://bit.ly/1kEEz75,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,3,64,Arthur Boka,2. Defenseur,2 avril 1983,31,79,Allemagne,VfB Stuttgart  ,NON,26
+C,http://bit.ly/1kEEz72,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,18,128,Constant Djakpa,2. Defenseur,17 octobre 1986,27,4,Allemagne,Eintracht Frankfurt  ,NON,26
+C,http://bit.ly/1kEEz93,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,5,161,Didier Zokora,2. Defenseur,14 décembre 1980,33,119,Turquie,Trabzonspor   ,NON,26
+C,http://bit.ly/1kEEz84,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,7,324,Jean-Daniel Akpa-Akpro,2. Defenseur,11 octobre 1992,21,1,France,Toulouse   ,NON,26
+C,http://bit.ly/1kEEz76,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,4,400,Kolo Toure,2. Defenseur,19 mars 1981,33,106,Angleterre,Liverpool   ,NON,26
+C,http://bit.ly/1kEEz91,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,2,553,Ousmane Viera,2. Defenseur,21 décembre 1986,27,3,Turquie,caykur Rizespor  ,NON,26
+C,http://bit.ly/1kEEz85,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,17,639,Serge Aurier,2. Defenseur,24 décembre 1992,21,8,France,Toulouse   ,NON,26
+C,http://bit.ly/1kEEz94,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,22,656,Sol Bamba,2. Defenseur,13 janvier 1985,29,43,Turquie,Trabzonspor   ,NON,26
+C,http://bit.ly/1kEEz78,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,9,114,Cheick Tiote,3. Milieu,21 juin 1986,27,44,Angleterre,Newcastle United  ,NON,26
+C,http://bit.ly/1kEEz74,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,13,160,Didier Ya Konan,3. Milieu,25 février 1984,30,25,Allemagne,Hannover 96  ,NON,26
+C,http://bit.ly/1kEEz83,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,14,298,Ismael Diomande,3. Milieu,28 août 1992,21,1,France,Saint-etienne   ,NON,26
+C,http://bit.ly/1kEEz90,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,20,638,Serey Die,3. Milieu,7 novembre 1984,29,6,Suisse,Basel   ,NON,26
+C,http://bit.ly/1kEEz77,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,19,726,Yaya Toure,3. Milieu,13 mai 1983,31,83,Angleterre,Manchester City  ,NON,26
+C,http://bit.ly/1kEEz92,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,11,159,Didier Drogba (c),4. Attaquant,11 mars 1978,36,100,Turquie,Galatasaray   ,NON,26
+C,http://bit.ly/1kEEz86,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,10,246,Gervinho,4. Attaquant,27 mai 1987,27,53,Italie,Roma   ,NON,26
+C,http://bit.ly/1kEEz89,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,21,257,Giovanni Sio,4. Attaquant,31 mars 1989,25,7,Suisse,Basel   ,NON,26
+C,http://bit.ly/1kEEz73,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,6,477,Mathis Bolly,4. Attaquant,14 novembre 1990,23,3,Allemagne,Fortuna Düsseldorf  ,NON,26
+C,http://bit.ly/1kEEz82,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,15,488,Max Gradel,4. Attaquant,30 novembre 1987,26,25,France,Saint-etienne   ,NON,26
+C,http://bit.ly/1kEEz81,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,8,620,Salomon Kalou,4. Attaquant,5 août 1985,28,64,France,Lille   ,NON,26
+C,http://bit.ly/1kEEz88,Cote d'Ivoire,23,Sabri Lamouchi,France,1-juin,12,715,Wilfried Bony,4. Attaquant,10 décembre 1988,25,24,Angleterre,Swansea City  ,NON,26
+C,http://bit.ly/1kEEz99,Grece,12,Fernando Santos,Portugal,19-mai,1,546,Orestis Karnezis,1. Gardien,11 juillet 1985,28,19,Espagne,Granada   ,NON,31
+C,http://bit.ly/1kEEz108,Grece,12,Fernando Santos,Portugal,19-mai,12,556,Panagiotis Glykos,1. Gardien,3 juin 1986,28,2,Grece,PAOK   ,OUI,31
+C,http://bit.ly/1kEEz105,Grece,12,Fernando Santos,Portugal,19-mai,13,659,Stefanos Kapino,1. Gardien,18 mars 1994,20,2,Grece,Panathinaikos   ,OUI,31
+C,http://bit.ly/1kEEz101,Grece,12,Fernando Santos,Portugal,19-mai,2,251,Giannis Maniatis,3. Milieu,12 octobre 1986,27,30,Grece,Olympiacos   ,OUI,31
+C,http://bit.ly/1kEEz106,Grece,12,Fernando Santos,Portugal,19-mai,3,255,Giorgos Tzavellas,2. Defenseur,26 novembre 1987,26,13,Grece,PAOK   ,OUI,31
+C,http://bit.ly/1kEEz103,Grece,12,Fernando Santos,Portugal,19-mai,20,358,Jose Holebas,2. Defenseur,27 juin 1984,29,22,Grece,Olympiacos   ,OUI,31
+C,http://bit.ly/1kEEz102,Grece,12,Fernando Santos,Portugal,19-mai,4,403,Kostas Manolas,2. Defenseur,14 juin 1991,22,9,Grece,Olympiacos   ,OUI,31
+C,http://bit.ly/1kEEz100,Grece,12,Fernando Santos,Portugal,19-mai,11,425,Loukas Vyntra,2. Defenseur,5 février 1981,33,50,Espagne,Levante   ,NON,31
+C,http://bit.ly/1kEEz95,Grece,12,Fernando Santos,Portugal,19-mai,19,655,Sokratis Papastathopoulos,2. Defenseur,9 juin 1988,25,47,Allemagne,Borussia Dortmund  ,NON,31
+C,http://bit.ly/1kEEz115,Grece,12,Fernando Santos,Portugal,19-mai,5,694,Vangelis Moras,2. Defenseur,26 août 1981,32,19,Italie,Verona   ,NON,31
+C,http://bit.ly/1kEEz113,Grece,12,Fernando Santos,Portugal,19-mai,15,696,Vasilis Torosidis,2. Defenseur,10 juin 1985,28,66,Italie,Roma   ,NON,31
+C,http://bit.ly/1kEEz116,Grece,12,Fernando Santos,Portugal,19-mai,6,33,Alexandros Tziolis,3. Milieu,13 février 1985,29,49,Turquie,Kayserispor   ,NON,31
+C,http://bit.ly/1kEEz104,Grece,12,Fernando Santos,Portugal,19-mai,22,48,Andreas Samaris,3. Milieu,13 juin 1989,24,4,Grece,Olympiacos   ,OUI,31
+C,http://bit.ly/1kEEz112,Grece,12,Fernando Santos,Portugal,19-mai,18,250,Giannis Fetfatzidis,3. Milieu,21 décembre 1990,23,19,Italie,Genoa   ,NON,31
+C,http://bit.ly/1kEEz97,Grece,12,Fernando Santos,Portugal,19-mai,10,253,Giorgos Karagounis (c),3. Milieu,6 mars 1977,37,135,Angleterre,Fulham   ,NON,31
+C,http://bit.ly/1kEEz109,Grece,12,Fernando Santos,Portugal,19-mai,21,402,Kostas Katsouranis,3. Milieu,21 juin 1979,34,111,Grece,PAOK   ,OUI,31
+C,http://bit.ly/1kEEz111,Grece,12,Fernando Santos,Portugal,19-mai,16,412,Lazaros Christodoulopoulos,3. Milieu,19 décembre 1986,27,19,Italie,Bologna   ,NON,31
+C,http://bit.ly/1kEEz110,Grece,12,Fernando Santos,Portugal,19-mai,8,557,Panagiotis Kone,3. Milieu,26 juillet 1987,26,16,Italie,Bologna   ,NON,31
+C,http://bit.ly/1kEEz114,Grece,12,Fernando Santos,Portugal,19-mai,23,558,Panagiotis Tachtsidis,3. Milieu,15 février 1991,23,6,Italie,Torino   ,NON,31
+C,http://bit.ly/1kEEz107,Grece,12,Fernando Santos,Portugal,19-mai,14,170,Dimitris Salpingidis,4. Attaquant,18 août 1981,32,76,Grece,PAOK   ,OUI,31
+C,http://bit.ly/1kEEz98,Grece,12,Fernando Santos,Portugal,19-mai,7,254,Giorgos Samaras,4. Attaquant,21 février 1985,29,74,Ecosse,Celtic   ,NON,31
+C,http://bit.ly/1kEEz96,Grece,12,Fernando Santos,Portugal,19-mai,9,404,Kostas Mitroglou,4. Attaquant,12 mars 1988,26,32,Angleterre,Fulham   ,NON,31
+C,http://bit.ly/1kEEz117,Grece,12,Fernando Santos,Portugal,19-mai,17,673,Theofanis Gekas,4. Attaquant,23 mai 1980,34,72,Turquie,Konyaspor   ,NON,31
+C,http://bit.ly/1kEEz127,Japon,46,Alberto Zaccheroni,Italie,12-mai,1,193,Eiji Kawashima,1. Gardien,20 mars 1983,31,56,Belgique,Standard Liege  ,NON,26
+C,http://bit.ly/1kEEz133,Japon,46,Alberto Zaccheroni,Italie,12-mai,23,649,Shūichi Gonda,1. Gardien,3 mars 1989,25,2,Japon,F.C. Tokyo  ,OUI,26
+C,http://bit.ly/1kEEz139,Japon,46,Alberto Zaccheroni,Italie,12-mai,12,650,Shusaku Nishikawa,1. Gardien,18 juin 1986,27,12,Japon,Urawa Red Diamonds ,OUI,26
+C,http://bit.ly/1kEEz123,Japon,46,Alberto Zaccheroni,Italie,12-mai,2,70,Atsuto Uchida,2. Defenseur,27 mars 1988,26,67,Allemagne,Schalke 4  ,NON,26
+C,http://bit.ly/1kEEz124,Japon,46,Alberto Zaccheroni,Italie,12-mai,3,264,Gōtoku Sakai,2. Defenseur,14 février 1991,23,12,Allemagne,VfB Stuttgart  ,NON,26
+C,http://bit.ly/1kEEz121,Japon,46,Alberto Zaccheroni,Italie,12-mai,21,282,Hiroki Sakai,2. Defenseur,12 avril 1990,24,17,Allemagne,Hannover 96  ,NON,26
+C,http://bit.ly/1kEEz136,Japon,46,Alberto Zaccheroni,Italie,12-mai,19,468,Masahiko Inoha,2. Defenseur,28 août 1983,30,21,Japon,Jubilo Iwata  ,OUI,26
+C,http://bit.ly/1kEEz132,Japon,46,Alberto Zaccheroni,Italie,12-mai,6,469,Masato Morishige,2. Defenseur,21 mai 1987,27,9,Japon,F.C. Tokyo  ,OUI,26
+C,http://bit.ly/1kEEz126,Japon,46,Alberto Zaccheroni,Italie,12-mai,22,494,Maya Yoshida,2. Defenseur,24 août 1988,25,40,Angleterre,Southampton   ,NON,26
+C,http://bit.ly/1kEEz134,Japon,46,Alberto Zaccheroni,Italie,12-mai,15,725,Yasuyuki Konno,2. Defenseur,25 janvier 1983,31,80,Japon,Gamba Osaka  ,OUI,26
+C,http://bit.ly/1kEEz128,Japon,46,Alberto Zaccheroni,Italie,12-mai,5,734,Yuto Nagatomo,2. Defenseur,12 septembre 1986,27,69,Italie,Internazionale   ,NON,26
+C,http://bit.ly/1kEEz118,Japon,46,Alberto Zaccheroni,Italie,12-mai,8,283,Hiroshi Kiyotake,3. Milieu,12 novembre 1989,24,25,Allemagne,1. FC Nürnberg ,NON,26
+C,http://bit.ly/1kEEz131,Japon,46,Alberto Zaccheroni,Italie,12-mai,16,286,Hotaru Yamaguchi,3. Milieu,6 octobre 1990,23,11,Japon,Cerezo Osaka  ,OUI,26
+C,http://bit.ly/1kEEz129,Japon,46,Alberto Zaccheroni,Italie,12-mai,4,384,Keisuke Honda,3. Milieu,13 juin 1986,27,55,Italie,Milan   ,NON,26
+C,http://bit.ly/1kEEz119,Japon,46,Alberto Zaccheroni,Italie,12-mai,17,440,Makoto Hasebe (c),3. Milieu,18 janvier 1984,30,78,Allemagne,1. FC Nürnberg ,NON,26
+C,http://bit.ly/1kEEz125,Japon,46,Alberto Zaccheroni,Italie,12-mai,10,646,Shinji Kagawa,3. Milieu,17 mars 1989,25,56,Angleterre,Manchester United  ,NON,26
+C,http://bit.ly/1kEEz138,Japon,46,Alberto Zaccheroni,Italie,12-mai,14,688,Toshihiro Aoyama,3. Milieu,22 février 1986,28,5,Japon,Sanfrecce Hiroshima  ,OUI,26
+C,http://bit.ly/1kEEz135,Japon,46,Alberto Zaccheroni,Italie,12-mai,7,724,Yasuhito Endō,3. Milieu,28 janvier 1980,34,143,Japon,Gamba Osaka  ,OUI,26
+C,http://bit.ly/1kEEz140,Japon,46,Alberto Zaccheroni,Italie,12-mai,20,443,Manabu Saitō,4. Attaquant,4 avril 1990,24,4,Japon,Yokohama F. Marinos ,OUI,26
+C,http://bit.ly/1kEEz122,Japon,46,Alberto Zaccheroni,Italie,12-mai,9,647,Shinji Okazaki,4. Attaquant,16 avril 1986,28,75,Allemagne,Mainz 5  ,NON,26
+C,http://bit.ly/1kEEz130,Japon,46,Alberto Zaccheroni,Italie,12-mai,11,729,Yoichiro Kakitani,4. Attaquant,3 janvier 1990,24,11,Japon,Cerezo Osaka  ,OUI,26
+C,http://bit.ly/1kEEz137,Japon,46,Alberto Zaccheroni,Italie,12-mai,13,730,Yoshito Ōkubo,4. Attaquant,9 juin 1982,31,56,Japon,Kawasaki Frontale  ,OUI,26
+C,http://bit.ly/1kEEz120,Japon,46,Alberto Zaccheroni,Italie,12-mai,18,735,Yuya Osako,4. Attaquant,18 mai 1990,24,8,Allemagne,1860 München  ,NON,26
+D,http://bit.ly/1kEEAF30,Angleterre,10,Roy Hodgson,Angleterre,12-mai,13,81,Ben Foster,1. Gardien,3 mai 1983,31,6,Angleterre,West Bromwich Albion ,OUI,26
+D,http://bit.ly/1kEEAF31,Angleterre,10,Roy Hodgson,Angleterre,12-mai,22,232,Fraser Forster,1. Gardien,17 mars 1988,26,1,Ecosse,Celtic   ,NON,26
+D,http://bit.ly/1kEEAF21,Angleterre,10,Roy Hodgson,Angleterre,12-mai,1,337,Joe Hart,1. Gardien,19 mai 1987,27,40,Angleterre,Manchester City  ,OUI,26
+D,http://bit.ly/1kEEAF23,Angleterre,10,Roy Hodgson,Angleterre,12-mai,12,116,Chris Smalling,2. Defenseur,22 novembre 1989,24,11,Angleterre,Manchester United  ,OUI,26
+D,http://bit.ly/1kEEAF11,Angleterre,10,Roy Hodgson,Angleterre,12-mai,5,238,Gary Cahill,2. Defenseur,19 décembre 1985,28,23,Angleterre,Chelsea   ,OUI,26
+D,http://bit.ly/1kEEAF16,Angleterre,10,Roy Hodgson,Angleterre,12-mai,2,258,Glen Johnson,2. Defenseur,23 août 1984,29,51,Angleterre,Liverpool   ,OUI,26
+D,http://bit.ly/1kEEAF13,Angleterre,10,Roy Hodgson,Angleterre,12-mai,3,417,Leighton Baines,2. Defenseur,11 décembre 1984,29,23,Angleterre,Everton   ,OUI,26
+D,http://bit.ly/1kEEAF27,Angleterre,10,Roy Hodgson,Angleterre,12-mai,23,436,Luke Shaw,2. Defenseur,12 juillet 1995,18,1,Angleterre,Southampton   ,OUI,26
+D,http://bit.ly/1kEEAF14,Angleterre,10,Roy Hodgson,Angleterre,12-mai,6,574,Phil Jagielka,2. Defenseur,17 août 1982,31,25,Angleterre,Everton   ,OUI,26
+D,http://bit.ly/1kEEAF24,Angleterre,10,Roy Hodgson,Angleterre,12-mai,16,575,Phil Jones,2. Defenseur,21 février 1992,22,9,Angleterre,Manchester United  ,OUI,26
+D,http://bit.ly/1kEEAF29,Angleterre,10,Roy Hodgson,Angleterre,12-mai,20,5,Adam Lallana,3. Milieu,10 mai 1988,26,4,Angleterre,Southampton   ,OUI,26
+D,http://bit.ly/1kEEAF10,Angleterre,10,Roy Hodgson,Angleterre,12-mai,15,28,Alex Oxlade-Chamberlain,3. Milieu,15 août 1993,20,14,Angleterre,Arsenal   ,OUI,26
+D,http://bit.ly/1kEEAF12,Angleterre,10,Roy Hodgson,Angleterre,12-mai,8,231,Frank Lampard,3. Milieu,20 juin 1978,35,103,Angleterre,Chelsea   ,OUI,26
+D,http://bit.ly/1kEEAF9,Angleterre,10,Roy Hodgson,Angleterre,12-mai,7,305,Jack Wilshere,3. Milieu,1 janvier 1992,22,16,Angleterre,Arsenal   ,OUI,26
+D,http://bit.ly/1kEEAF22,Angleterre,10,Roy Hodgson,Angleterre,12-mai,17,310,James Milner,3. Milieu,4 janvier 1986,28,46,Angleterre,Manchester City  ,OUI,26
+D,http://bit.ly/1kEEAF19,Angleterre,10,Roy Hodgson,Angleterre,12-mai,14,350,Jordan Henderson,3. Milieu,17 juin 1990,23,9,Angleterre,Liverpool   ,OUI,26
+D,http://bit.ly/1kEEAF20,Angleterre,10,Roy Hodgson,Angleterre,12-mai,19,583,Raheem Sterling,3. Milieu,8 décembre 1994,19,3,Angleterre,Liverpool   ,OUI,26
+D,http://bit.ly/1kEEAF15,Angleterre,10,Roy Hodgson,Angleterre,12-mai,21,615,Ross Barkley,3. Milieu,5 décembre 1993,20,4,Angleterre,Everton   ,OUI,26
+D,http://bit.ly/1kEEAF18,Angleterre,10,Roy Hodgson,Angleterre,12-mai,4,667,Steven Gerrard (c),3. Milieu,30 mai 1980,34,110,Angleterre,Liverpool   ,OUI,26
+D,http://bit.ly/1kEEAF17,Angleterre,10,Roy Hodgson,Angleterre,12-mai,9,140,Daniel Sturridge,4. Attaquant,1 septembre 1989,24,11,Angleterre,Liverpool   ,OUI,26
+D,http://bit.ly/1kEEAF26,Angleterre,10,Roy Hodgson,Angleterre,12-mai,11,145,Danny Welbeck,4. Attaquant,26 novembre 1990,23,22,Angleterre,Manchester United  ,OUI,26
+D,http://bit.ly/1kEEAF28,Angleterre,10,Roy Hodgson,Angleterre,12-mai,18,601,Rickie Lambert,4. Attaquant,16 février 1982,32,4,Angleterre,Southampton   ,OUI,26
+D,http://bit.ly/1kEEAF25,Angleterre,10,Roy Hodgson,Angleterre,12-mai,10,713,Wayne Rooney,4. Attaquant,24 octobre 1985,28,90,Angleterre,Manchester United  ,OUI,26
+D,http://bit.ly/1kEEAF37,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,23,137,Daniel Cambronero,1. Gardien,8 janvier 1986,28,2,Costa Rica,Herediano   ,OUI,37
+D,http://bit.ly/1kEEAF44,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,1,390,Keylor Navas,1. Gardien,15 décembre 1986,27,53,Espagne,Levante   ,NON,37
+D,http://bit.ly/1kEEAF35,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,18,563,Patrick Pemberton,1. Gardien,24 avril 1982,32,21,Costa Rica,Alajuelense   ,OUI,37
+D,http://bit.ly/1kEEAF50,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,16,129,Cristian Gamboa,2. Defenseur,24 octobre 1989,24,24,Norvege,Rosenborg   ,NON,37
+D,http://bit.ly/1kEEAF45,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,3,248,Giancarlo Gonzalez,2. Defenseur,8 février 1988,26,34,Etats-Unis,Columbus Crew  ,NON,37
+D,http://bit.ly/1kEEAF41,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,8,277,Heiner Mora,2. Defenseur,20 juin 1984,29,22,Costa Rica,Saprissa   ,OUI,37
+D,http://bit.ly/1kEEAF34,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,2,345,Johnny Acosta,2. Defenseur,21 juillet 1983,30,27,Costa Rica,Alajuelense   ,OUI,37
+D,http://bit.ly/1kEEAF32,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,15,380,Junior Diaz,2. Defenseur,12 septembre 1983,30,58,Allemagne,Mainz 5  ,NON,37
+D,http://bit.ly/1kEEAF40,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,4,509,Michael Umana,2. Defenseur,16 juillet 1982,31,79,Costa Rica,Saprissa   ,OUI,37
+D,http://bit.ly/1kEEAF33,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,6,550,Oscar Duarte,2. Defenseur,3 juin 1989,25,11,Belgique,Club Brugge  ,NON,37
+D,http://bit.ly/1kEEAF47,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,19,616,Roy Miller,2. Defenseur,24 novembre 1984,29,47,Etats-Unis,New York Red Bulls,NON,37
+D,http://bit.ly/1kEEAF46,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,12,712,Waylon Francis,2. Defenseur,20 septembre 1990,23,1,Etats-Unis,Columbus Crew  ,NON,37
+D,http://bit.ly/1kEEAF54,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,5,109,Celso Borges,3. Milieu,27 mai 1988,26,63,Suede,AIK   ,NON,37
+D,http://bit.ly/1kEEAF43,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,7,119,Christian Bolanos,3. Milieu,17 mai 1984,30,55,Danemark,Copenhagen   ,NON,37
+D,http://bit.ly/1kEEAF51,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,20,163,Diego Calvo,3. Milieu,25 mars 1991,23,10,Norvege,Vålerenga   ,NON,37
+D,http://bit.ly/1kEEAF38,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,13,205,Esteban Granados,3. Milieu,25 octobre 1985,28,11,Costa Rica,Herediano   ,OUI,37
+D,http://bit.ly/1kEEAF39,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,22,362,Jose Miguel Cubero,3. Milieu,14 février 1987,27,36,Costa Rica,Herediano   ,OUI,37
+D,http://bit.ly/1kEEAF49,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,11,504,Michael Barrantes,3. Milieu,4 octobre 1983,30,51,Norvege,Aalesund   ,NON,37
+D,http://bit.ly/1kEEAF42,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,17,727,Yeltsin Tejeda,3. Milieu,17 mars 1992,22,22,Costa Rica,Saprissa   ,OUI,37
+D,http://bit.ly/1kEEAF52,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,10,96,Bryan Ruiz (c),4. Attaquant,18 août 1985,28,62,Pays-Bas,PSV   ,NON,37
+D,http://bit.ly/1kEEAF48,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,9,338,Joel Campbell,4. Attaquant,26 juin 1992,21,33,Grece,Olympiacos   ,NON,37
+D,http://bit.ly/1kEEAF53,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,21,451,Marco Urena,4. Attaquant,5 mars 1990,24,25,Russie,Kuban Krasnodar  ,NON,37
+D,http://bit.ly/1kEEAF36,Costa Rica,28,Jorge Luis Pinto,Colombie,31-mai,14,587,Randall Brenes,4. Attaquant,13 août 1983,30,37,Costa Rica,Cartagines   ,OUI,37
+D,http://bit.ly/1kEEAF63,Italie,9,Cesare Prandelli,Italie,1-juin,1,249,Gianluigi Buffon (c),1. Gardien,28 janvier 1978,36,139,Italie,Juventus   ,OUI,26
+D,http://bit.ly/1kEEAF59,Italie,9,Cesare Prandelli,Italie,1-juin,13,485,Mattia Perin,1. Gardien,10 novembre 1992,21,0,Italie,Genoa   ,OUI,26
+D,http://bit.ly/1kEEAF55,Italie,9,Cesare Prandelli,Italie,1-juin,12,621,Salvatore Sirigu,1. Gardien,12 janvier 1987,27,8,France,Paris Saint-Germain  ,NON,26
+D,http://bit.ly/1kEEAF61,Italie,9,Cesare Prandelli,Italie,1-juin,15,46,Andrea Barzagli,2. Defenseur,8 mai 1981,33,47,Italie,Juventus   ,OUI,26
+D,http://bit.ly/1kEEAF71,Italie,9,Cesare Prandelli,Italie,1-juin,20,237,Gabriel Paletta,2. Defenseur,15 février 1986,28,2,Italie,Parma   ,OUI,26
+D,http://bit.ly/1kEEAF60,Italie,9,Cesare Prandelli,Italie,1-juin,3,252,Giorgio Chiellini,2. Defenseur,14 août 1984,29,67,Italie,Juventus   ,OUI,26
+D,http://bit.ly/1kEEAF68,Italie,9,Cesare Prandelli,Italie,1-juin,7,292,Ignazio Abate,2. Defenseur,12 novembre 1986,27,19,Italie,Milan   ,OUI,26
+D,http://bit.ly/1kEEAF62,Italie,9,Cesare Prandelli,Italie,1-juin,19,418,Leonardo Bonucci,2. Defenseur,1 mai 1987,27,36,Italie,Juventus   ,OUI,26
+D,http://bit.ly/1kEEAF75,Italie,9,Cesare Prandelli,Italie,1-juin,4,481,Matteo Darmian,2. Defenseur,2 décembre 1989,24,1,Italie,Torino   ,OUI,26
+D,http://bit.ly/1kEEAF67,Italie,9,Cesare Prandelli,Italie,1-juin,2,484,Mattia De Sciglio,2. Defenseur,20 octobre 1992,21,10,Italie,Milan   ,OUI,26
+D,http://bit.ly/1kEEAF58,Italie,9,Cesare Prandelli,Italie,1-juin,14,19,Alberto Aquilani,3. Milieu,7 juillet 1984,29,34,Italie,Fiorentina   ,OUI,26
+D,http://bit.ly/1kEEAF65,Italie,9,Cesare Prandelli,Italie,1-juin,21,47,Andrea Pirlo,3. Milieu,19 mai 1979,35,108,Italie,Juventus   ,OUI,26
+D,http://bit.ly/1kEEAF66,Italie,9,Cesare Prandelli,Italie,1-juin,6,59,Antonio Candreva,3. Milieu,28 février 1987,27,19,Italie,Lazio   ,OUI,26
+D,http://bit.ly/1kEEAF64,Italie,9,Cesare Prandelli,Italie,1-juin,8,125,Claudio Marchisio,3. Milieu,19 janvier 1986,28,43,Italie,Juventus   ,OUI,26
+D,http://bit.ly/1kEEAF74,Italie,9,Cesare Prandelli,Italie,1-juin,16,142,Daniele De Rossi,3. Milieu,24 juillet 1983,30,94,Italie,Roma   ,OUI,26
+D,http://bit.ly/1kEEAF73,Italie,9,Cesare Prandelli,Italie,1-juin,18,449,Marco Parolo,3. Milieu,25 janvier 1985,29,3,Italie,Parma   ,OUI,26
+D,http://bit.ly/1kEEAF57,Italie,9,Cesare Prandelli,Italie,1-juin,23,452,Marco Verratti,3. Milieu,5 novembre 1992,21,5,France,Paris Saint-Germain  ,NON,26
+D,http://bit.ly/1kEEAF56,Italie,9,Cesare Prandelli,Italie,1-juin,5,674,Thiago Motta,3. Milieu,28 août 1982,31,20,France,Paris Saint-Germain  ,NON,26
+D,http://bit.ly/1kEEAF76,Italie,9,Cesare Prandelli,Italie,1-juin,11,27,Alessio Cerci,4. Attaquant,23 juillet 1987,26,11,Italie,Torino   ,OUI,26
+D,http://bit.ly/1kEEAF72,Italie,9,Cesare Prandelli,Italie,1-juin,10,60,Antonio Cassano,4. Attaquant,12 juillet 1982,31,36,Italie,Parma   ,OUI,26
+D,http://bit.ly/1kEEAF77,Italie,9,Cesare Prandelli,Italie,1-juin,17,123,Ciro Immobile,4. Attaquant,20 février 1990,24,2,Italie,Torino   ,OUI,26
+D,http://bit.ly/1kEEAF70,Italie,9,Cesare Prandelli,Italie,1-juin,22,424,Lorenzo Insigne,4. Attaquant,4 juin 1991,23,4,Italie,Napoli   ,OUI,26
+D,http://bit.ly/1kEEAF69,Italie,9,Cesare Prandelli,Italie,1-juin,9,455,Mario Balotelli,4. Attaquant,12 août 1990,23,29,Italie,Milan   ,OUI,26
+D,http://bit.ly/1kEEAF99,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,1,225,Fernando Muslera,1. Gardien,16 juin 1986,27,57,Turquie,Galatasaray   ,NON,30
+D,http://bit.ly/1kEEAF83,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,23,466,Martin Silva,1. Gardien,25 mars 1983,31,4,Bresil,Vasco da Gama ,NON,30
+D,http://bit.ly/1kEEAF96,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,12,605,Rodrigo Munoz,1. Gardien,22 janvier 1982,32,0,Paraguay,Libertad   ,NON,30
+D,http://bit.ly/1kEEAF84,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,3,166,Diego Godin,2. Defenseur,16 février 1986,28,76,Espagne,Atletico Madrid  ,NON,30
+D,http://bit.ly/1kEEAF80,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,2,167,Diego Lugano (c),2. Defenseur,2 novembre 1980,33,93,Angleterre,West Bromwich Albion ,NON,30
+D,http://bit.ly/1kEEAF98,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,13,354,Jorge Fucile,2. Defenseur,19 novembre 1984,29,41,Portugal,Porto   ,NON,30
+D,http://bit.ly/1kEEAF85,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,19,361,Jose Maria Gimenez,2. Defenseur,20 janvier 1995,19,5,Espagne,Atletico Madrid  ,NON,30
+D,http://bit.ly/1kEEAF90,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,22,464,Martin Caceres,2. Defenseur,7 avril 1987,27,56,Italie,Juventus   ,NON,30
+D,http://bit.ly/1kEEAF97,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,16,489,Maxi Pereira,2. Defenseur,8 juin 1984,29,89,Portugal,Benfica   ,NON,30
+D,http://bit.ly/1kEEAF100,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,4,633,Sebastian Coates,2. Defenseur,7 octobre 1990,23,14,Uruguay,Nacional   ,OUI,30
+D,http://bit.ly/1kEEAF91,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,20,39,alvaro Gonzalez,3. Milieu,29 octobre 1984,29,42,Italie,Lazio   ,NON,30
+D,http://bit.ly/1kEEAF82,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,6,40,alvaro Pereira,3. Milieu,28 novembre 1985,28,56,Bresil,São Paulo  ,NON,30
+D,http://bit.ly/1kEEAF86,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,7,130,Cristian Rodriguez,3. Milieu,30 septembre 1985,28,72,Espagne,Atletico Madrid  ,NON,30
+D,http://bit.ly/1kEEAF89,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,15,168,Diego Perez,3. Milieu,18 mai 1980,34,89,Italie,Bologna   ,NON,30
+D,http://bit.ly/1kEEAF95,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,17,191,Egidio Arevalo Rios,3. Milieu,1 janvier 1982,32,54,Mexique,Morelia   ,NON,30
+D,http://bit.ly/1kEEAF79,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,18,240,Gaston Ramirez,3. Milieu,2 décembre 1990,23,28,Angleterre,Southampton   ,NON,30
+D,http://bit.ly/1kEEAF81,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,14,532,Nicolas Lodeiro,3. Milieu,21 mars 1989,25,26,Bresil,Botafogo   ,NON,30
+D,http://bit.ly/1kEEAF93,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,5,711,Walter Gargano,3. Milieu,23 juillet 1984,29,62,Italie,Parma   ,NON,30
+D,http://bit.ly/1kEEAF92,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,8,3,Abel Hernandez,4. Attaquant,8 août 1990,23,12,Italie,Palermo   ,NON,30
+D,http://bit.ly/1kEEAF87,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,11,121,Christian Stuani,4. Attaquant,12 octobre 1986,27,9,Espagne,Espanyol   ,NON,30
+D,http://bit.ly/1kEEAF94,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,10,165,Diego Forlan,4. Attaquant,19 mai 1979,35,109,Japon,Cerezo Osaka  ,NON,30
+D,http://bit.ly/1kEEAF88,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,21,185,Edinson Cavani,4. Attaquant,14 février 1987,27,61,France,Paris Saint-Germain  ,NON,30
+D,http://bit.ly/1kEEAF78,Uruguay,7,Oscar Tabarez,Uruguay,31-mai,9,432,Luis Suarez,4. Attaquant,24 janvier 1987,27,77,Angleterre,Liverpool   ,NON,30
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,12,9,Adrian Bone,1. Gardien,8 septembre 1988,25,3,Equateur,El Nacional  ,OUI,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,22,31,Alexander Dominguez,1. Gardien,5 juin 1987,27,18,Equateur,LDU Quito  ,OUI,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,1,492,Maximo Banguera,1. Gardien,16 décembre 1985,28,24,Equateur,Barcelona   ,OUI,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,3,235,Frickson Erazo,2. Defenseur,5 mai 1988,26,36,Bresil,Flamengo   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,21,236,Gabriel Achilier,2. Defenseur,24 mars 1985,29,22,Equateur,Emelec   ,OUI,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,2,355,Jorge Guagua,2. Defenseur,28 septembre 1981,32,58,Equateur,Emelec   ,OUI,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,4,370,Juan Carlos Paredes,2. Defenseur,8 juillet 1987,26,37,Equateur,Barcelona   ,OUI,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,18,549,oscar Bagüi,2. Defenseur,10 décembre 1982,31,21,Equateur,Emelec   ,OUI,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,10,710,Walter Ayovi,2. Defenseur,11 août 1979,34,89,Mexique,Pachuca   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,16,61,Antonio Valencia (c),3. Milieu,4 août 1985,28,70,Angleterre,Manchester United  ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,23,102,Carlos Gruezo,3. Milieu,19 avril 1995,19,2,Allemagne,VfB Stuttgart  ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,6,120,Christian Noboa,3. Milieu,9 avril 1985,29,41,Russie,Dynamo Moscow  ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,8,186,Edison Mendez,3. Milieu,15 mars 1979,35,109,Colombie,Santa Fe  ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,20,227,Fidel Martinez,3. Milieu,15 février 1990,24,8,Mexique,Tijuana   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,7,326,Jefferson Montero,3. Milieu,1 septembre 1989,24,39,Mexique,Morelia   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,9,336,Joao Rojas,3. Milieu,14 juin 1989,24,29,Mexique,Cruz Azul  ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,19,431,Luis Saritama,3. Milieu,20 octobre 1983,30,48,Equateur,Barcelona   ,OUI,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,15,502,Michael Arroyo,3. Milieu,23 avril 1987,27,20,Mexique,Atlante   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,5,593,Renato Ibarra,3. Milieu,20 janvier 1991,23,17,Pays-Bas,Vitesse   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,14,634,Segundo Castillo,3. Milieu,15 mai 1982,32,81,Arabie Saoudite,Al-Hilal   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,13,200,Enner Valencia,4. Attaquant,11 avril 1989,25,9,Mexique,Pachuca   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,11,221,Felipe Caicedo,4. Attaquant,5 septembre 1988,25,49,EAU,Al-Jazira   ,NON,26
+E,http://bit.ly/1kEEEVi,Equateur,26,Reinaldo Rueda,Equateur,2-juin,17,307,Jaime Ayovi,4. Attaquant,21 février 1988,26,30,Mexique,Tijuana   ,NON,26
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,1,289,Hugo Lloris (c),1. Gardien,26 décembre 1986,27,56,Angleterre,Tottenham Hotspur  ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,23,511,Mickael Landreau,1. Gardien,14 mai 1979,35,11,France,Bastia   ,OUI,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,16,662,Stephane Ruffier,1. Gardien,27 septembre 1986,27,2,France,Saint-etienne   ,OUI,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,15,77,Bacary Sagna,2. Defenseur,14 février 1983,31,40,Angleterre,Arsenal   ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,13,195,Eliaquim Mangala,2. Defenseur,13 février 1991,23,3,Portugal,Porto   ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,21,411,Laurent Koscielny,2. Defenseur,10 septembre 1985,28,17,Angleterre,Arsenal   ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,17,427,Lucas Digne,2. Defenseur,20 juillet 1993,20,2,France,Paris Saint-Germain  ,OUI,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,5,442,Mamadou Sakho,2. Defenseur,13 février 1990,24,18,Angleterre,Liverpool   ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,2,475,Mathieu Debuchy,2. Defenseur,28 juillet 1985,28,20,Angleterre,Newcastle United  ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,3,562,Patrice Evra,2. Defenseur,15 mai 1981,33,57,Angleterre,Manchester United  ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,4,588,Raphael Varane,2. Defenseur,25 avril 1993,21,5,Espagne,Real Madrid  ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,11,58,Antoine Griezmann,3. Milieu,21 mars 1991,23,3,Espagne,Real Sociedad  ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,14,88,Blaise Matuidi,3. Milieu,9 avril 1987,27,22,France,Paris Saint-Germain  ,OUI,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,6-juin,22,126,Morgan Schneiderlin,3. Milieu,8 novembre 1989,24,1,Angleterre,Southampton   ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,6-juin,7,230,Remy Cabella,3. Milieu,8 mars 1990,24,1,France,Montpellier,OUI,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,8,476,Mathieu Valbuena,3. Milieu,28 septembre 1984,29,33,France,Marseille   ,OUI,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,18,524,Moussa Sissoko,3. Milieu,16 août 1989,24,16,Angleterre,Newcastle United  ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,19,565,Paul Pogba,3. Milieu,15 mars 1993,21,10,Italie,Juventus   ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,12,602,Rio Mavuba,3. Milieu,8 mars 1984,30,11,France,Lille   ,OUI,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,6,728,Yohan Cabaye,3. Milieu,14 janvier 1986,28,29,France,Paris Saint-Germain  ,OUI,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,10,383,Karim Benzema,4. Attaquant,19 décembre 1987,26,65,Espagne,Real Madrid  ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,20,423,Loec Remy,4. Attaquant,2 janvier 1987,27,24,Angleterre,Newcastle United  ,NON,35
+E,http://bit.ly/1kEEEVi,France,17,Didier Deschamps,France,13-mai,9,544,Olivier Giroud,4. Attaquant,30 septembre 1986,27,29,Angleterre,Arsenal   ,NON,35
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,22,176,Donis Escober,1. Gardien,3 février 1980,34,26,Honduras,Olimpia   ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,1,429,Luis Lopez,1. Gardien,13 septembre 1993,20,0,Honduras,Real Espana  ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,18,537,Noel Valladares (c),1. Gardien,3 mai 1977,37,121,Honduras,Olimpia   ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,23,93,Brayan Beckeles,2. Defenseur,28 novembre 1985,28,22,Honduras,Olimpia   ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,7,196,Emilio Izaguirre,2. Defenseur,10 mai 1986,28,67,Ecosse,Celtic   ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,6,369,Juan Carlos Garcia,2. Defenseur,8 mars 1988,26,33,Angleterre,Wigan Athletic  ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,4,374,Juan Pablo Montes,2. Defenseur,26 octobre 1985,28,11,Honduras,Motagua   ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,3,495,Maynor Figueroa,2. Defenseur,2 mai 1983,31,104,Angleterre,Hull City  ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,2,552,Osman Chavez,2. Defenseur,29 juillet 1984,29,54,Chine,Qingdao Jonoon  ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,5,700,Victor Bernardez,2. Defenseur,24 mai 1982,32,77,Etats-Unis,San Jose Earthquakes ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,21,53,Andy Najar,3. Milieu,16 mars 1993,21,16,Belgique,Anderlecht   ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,12,178,Edder Delgado,3. Milieu,20 novembre 1986,27,25,Honduras,Real Espana  ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,20,353,Jorge Claros,3. Milieu,8 janvier 1986,28,48,Honduras,Motagua   ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,19,428,Luis Garrido,3. Milieu,5 novembre 1990,23,19,Honduras,Olimpia   ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,10,459,Mario Martinez,3. Milieu,30 juillet 1989,24,35,Honduras,Real Espana  ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,17,467,Marvin Chavez,3. Milieu,3 novembre 1983,30,41,Etats-Unis,Chivas USA  ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,14,551,oscar Garcia,3. Milieu,4 septembre 1984,29,92,Etats-Unis,Houston Dynamo  ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,15,607,Roger Espinoza,3. Milieu,25 octobre 1986,27,41,Angleterre,Wigan Athletic  ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,8,718,Wilson Palacios,3. Milieu,29 juillet 1984,29,94,Angleterre,Stoke City  ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,13,99,Carlo Costly,4. Attaquant,18 juillet 1982,31,69,Honduras,Real Espana  ,OUI,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,11,330,Jerry Bengtson,4. Attaquant,8 avril 1987,27,43,Etats-Unis,New Angleterre Revolution ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,9,331,Jerry Palacios,4. Attaquant,1 novembre 1981,32,23,Costa Rica,Alajuelense   ,NON,26
+E,http://bit.ly/1kEEEVi,Honduras,33,Luis Fernando Suarez,Colombie,5-mai,16,614,Rony Martinez,4. Attaquant,16 octobre 1988,25,12,Honduras,Real Sociedad  ,OUI,26
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,1,162,Diego Benaglio,1. Gardien,8 septembre 1983,30,56,Allemagne,VfL Wolfsburg  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,21,608,Roman Bürki,1. Gardien,14 novembre 1990,23,0,Suisse,Grasshopper   ,OUI,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,12,723,Yann Sommer,1. Gardien,17 décembre 1988,25,6,Suisse,Basel   ,OUI,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,22,214,Fabian Schär,2. Defenseur,20 décembre 1991,22,5,Suisse,Basel   ,OUI,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,20,341,Johan Djourou,2. Defenseur,18 janvier 1987,27,44,Allemagne,Hamburger SV  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,6,507,Michael Lang,2. Defenseur,8 février 1991,23,5,Suisse,Grasshopper   ,OUI,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,4,577,Philippe Senderos,2. Defenseur,14 février 1985,29,53,Espagne,Valencia   ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,3,594,Reto Ziegler,2. Defenseur,16 janvier 1986,28,35,Italie,Sassuolo   ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,13,600,Ricardo Rodriguez,2. Defenseur,25 août 1992,21,20,Allemagne,VfL Wolfsburg  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,2,660,Stephan Lichtsteiner,2. Defenseur,16 janvier 1984,30,62,Italie,Juventus   ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,5,663,Steve von Bergen,2. Defenseur,10 juin 1983,30,40,Suisse,Young Boys  ,OUI,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,15,89,Blerim Dzemaili,3. Milieu,12 avril 1986,28,33,Italie,Napoli   ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,16,241,Gelson Fernandes,3. Milieu,2 septembre 1986,27,47,Allemagne,SC Freiburg  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,8,260,Gökhan Inler (c),3. Milieu,27 juin 1984,29,71,Italie,Napoli   ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,10,266,Granit Xhaka,3. Milieu,27 septembre 1992,21,25,Allemagne,Borussia Mönchengladbach  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,7,689,Tranquillo Barnetta,3. Milieu,22 mai 1985,29,73,Allemagne,Eintracht Frankfurt  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,14,692,Valentin Stocker,3. Milieu,12 avril 1989,25,23,Suisse,Basel   ,OUI,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,11,693,Valon Behrami,3. Milieu,19 avril 1985,29,47,Italie,Napoli   ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,23,721,Xherdan Shaqiri,3. Milieu,10 octobre 1991,22,32,Allemagne,Bayern Munich  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,18,7,Admir Mehmedi,4. Attaquant,16 mars 1991,23,20,Allemagne,SC Freiburg  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,9,271,Haris Seferovic,4. Attaquant,22 février 1992,22,10,Espagne,Real Sociedad  ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,19,366,Josip Drmic,4. Attaquant,8 août 1992,21,6,Allemagne,1. FC Nürnberg ,NON,32
+E,http://bit.ly/1kEEEVi,Suisse,6,Ottmar Hitzfeld,Allemagne,13-mai,17,456,Mario Gavranovic,4. Attaquant,24 novembre 1989,24,10,Suisse,Zürich   ,OUI,32
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,12,13,Agustin Orion,1. Gardien,26 juillet 1981,32,3,Argentine,Boca Juniors  ,OUI,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,21,454,Mariano Andujar,1. Gardien,30 juillet 1983,30,10,Italie,Catania   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,1,645,Sergio Romero,1. Gardien,22 février 1987,27,45,France,Monaco   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,2,210,Ezequiel Garay,2. Defenseur,10 octobre 1986,27,18,Portugal,Benfica   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,17,220,Federico Fernandez,2. Defenseur,21 février 1989,25,24,Italie,Napoli   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,3,288,Hugo Campagnaro,2. Defenseur,27 juin 1980,33,13,Italie,Internazionale   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,23,360,Jose Maria Basanta,2. Defenseur,3 avril 1984,30,8,Mexique,Monterrey   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,16,453,Marcos Rojo,2. Defenseur,20 mars 1990,24,20,Portugal,Sporting   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,15,465,Martin Demichelis,2. Defenseur,20 décembre 1980,33,37,Angleterre,Manchester City  ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,4,555,Pablo Zabaleta,2. Defenseur,16 janvier 1985,29,36,Angleterre,Manchester City  ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,7,55,angel di Maria,3. Milieu,14 février 1988,26,45,Espagne,Real Madrid  ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,13,71,Augusto Fernandez,3. Milieu,10 avril 1986,28,7,Espagne,Celta Vigo  ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,8,201,Enzo Perez,3. Milieu,22 février 1986,28,5,Portugal,Benfica   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,5,224,Fernando Gago,3. Milieu,10 avril 1986,28,47,Argentine,Boca Juniors  ,OUI,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,14,321,Javier Mascherano,3. Milieu,8 juin 1984,29,96,Espagne,Barcelona   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,6,426,Lucas Biglia,3. Milieu,30 janvier 1986,28,16,Italie,Lazio   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,11,490,Maxi Rodriguez,3. Milieu,2 janvier 1981,33,53,Argentine,Newell's Old Boys ,OUI,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,19,598,Ricardo alvarez,3. Milieu,12 avril 1988,26,5,Italie,Internazionale   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,22,211,Ezequiel Lavezzi,4. Attaquant,3 mai 1985,29,29,France,Paris Saint-Germain  ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,9,261,Gonzalo Higuain,4. Attaquant,10 décembre 1987,26,36,Italie,Napoli   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,10,421,Lionel Messi (c),4. Attaquant,24 juin 1987,26,84,Espagne,Barcelona   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,18,606,Rodrigo Palacio,4. Attaquant,5 février 1982,32,15,Italie,Internazionale   ,NON,44
+F,http://bit.ly/1kEEIoe,Argentine,5,Alejandro Sabella,Argentine,2-juin,20,642,Sergio Agüero,4. Attaquant,2 juin 1988,26,50,Angleterre,Manchester City  ,NON,44
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,22,68,Asmir Avdukic,1. Gardien,13 mai 1981,33,3,Bosnie-Herzegovine,and Herzegovina Borac Banja,OUI,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,1,69,Asmir Begovic,1. Gardien,20 juin 1987,26,30,Angleterre,Stoke City  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,12,314,Jasmin Fejzic,1. Gardien,15 mai 1986,28,0,Allemagne,VfR Aalen  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,2,74,Avdija Vrsajevic,2. Defenseur,6 mars 1986,28,13,Croatie,Hajduk Split  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,4,197,Emir Spahic (c),2. Defenseur,18 août 1980,33,74,Allemagne,Bayer Leverkusen  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,3,203,Ermin Bicakcic,2. Defenseur,24 janvier 1990,24,7,Allemagne,Eintracht Braunschweig  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,13,500,Mensur Mujdza,2. Defenseur,28 mars 1984,30,24,Allemagne,SC Freiburg  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,7,525,Muhamed Besic,2. Defenseur,10 septembre 1992,21,9,Hongrie,Ferencvaros   ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,6,539,Ognjen Vranjes,2. Defenseur,24 octobre 1989,24,13,Turquie,Elazığspor   ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,5,632,Sead Kolasinac,2. Defenseur,20 juin 1993,20,4,Allemagne,Schalke 4  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,15,687,Toni sunjic,2. Defenseur,15 décembre 1988,25,7,Ukraine,Zorya Luhansk  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,20,54,Anel Hadzic,3. Milieu,16 août 1989,24,2,Autriche,Sturm Graz  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,18,270,Haris Medunjanin,3. Milieu,8 mars 1985,29,35,Turquie,Gaziantepspor   ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,14,304,Izet Hajrovic,3. Milieu,4 août 1991,22,7,Turquie,Galatasaray   ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,8,518,Miralem Pjanic,3. Milieu,2 avril 1990,24,48,Italie,Roma   ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,23,635,Sejad Salihovic,3. Milieu,8 octobre 1984,29,42,Allemagne,1899 Hoffenheim  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,16,636,Senad Lulic,3. Milieu,18 janvier 1986,28,33,Italie,Lazio   ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,17,637,Senijad Ibricic,3. Milieu,26 septembre 1985,28,42,Turquie,Kayseri Erciyesspor  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,21,683,Tino-Sven Susic,3. Milieu,13 février 1992,22,2,Croatie,Hajduk Split  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,10,736,Zvjezdan Misimovic,3. Milieu,5 juin 1982,32,82,Chine,Guizhou Renhe  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,11,183,Edin Dzeko,4. Attaquant,17 mars 1986,28,62,Angleterre,Manchester City  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,19,184,Edin Visca,4. Attaquant,17 février 1990,24,10,Turquie,İstanbul BB  ,NON,26
+F,http://bit.ly/1kEEIoe,Bosnie-Herzegovine,21,Safet Susic,Bosnie-Herzegovine,2-juin,9,697,Vedad Ibisevic,4. Attaquant,6 août 1984,29,55,Allemagne,VfB Stuttgart  ,NON,26
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,12,36,Alireza Haghighi,1. Gardien,2 mai 1988,26,5,Portugal,Sporting Covilhã  ,NON,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,22,138,Daniel Davari,1. Gardien,6 janvier 1988,26,4,Allemagne,Eintracht Braunschweig  ,NON,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,1,584,Rahman Ahmadi,1. Gardien,30 juillet 1980,33,10,Iran,Sepahan   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,17,14,Ahmad Alnameh,2. Defenseur,10 octobre 1982,31,9,Iran,Naft Tehran  ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,5,41,Amir Hossein Sadeghi,2. Defenseur,6 septembre 1981,32,16,Iran,Esteghlal   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,19,273,Hashem Beikzadeh,2. Defenseur,22 janvier 1984,30,17,Iran,Esteghlal   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,13,285,Hossein Mahini,2. Defenseur,16 septembre 1986,27,21,Iran,Persepolis   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,4,308,Jalal Hosseini,2. Defenseur,3 février 1982,32,84,Iran,Persepolis   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,23,498,Mehrdad Pouladi,2. Defenseur,26 février 1987,27,19,Iran,Persepolis   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,15,569,Pejman Montazeri,2. Defenseur,6 septembre 1983,30,21,Qatar,Umm Salal  ,NON,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,20,665,Steven Beitashour,2. Defenseur,1 février 1987,27,6,Etats-Unis,Vancouver Whitecaps  ,NON,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,14,42,Andranik Teymourian,3. Milieu,6 mars 1983,31,78,Iran,Esteghlal   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,21,67,Ashkan Dejagah,3. Milieu,5 juillet 1986,27,13,Angleterre,Fulham   ,NON,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,18,79,Bakhtiar Rahmani,3. Milieu,23 septembre 1991,22,4,Iran,Foolad   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,3,192,Ehsan Hajsafi,3. Milieu,25 février 1990,24,61,Iran,Sepahan   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,11,247,Ghasem Haddadifar,3. Milieu,12 juillet 1983,30,16,Iran,Zob Ahan  ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,6,317,Javad Nekounam (c),3. Milieu,7 octobre 1980,33,139,Koweit,Al-Kuwait   ,NON,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,2,391,Khosro Heydari,3. Milieu,14 septembre 1983,30,48,Iran,Esteghlal   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,7,470,Masoud Shojaei,3. Milieu,9 juin 1984,29,49,Espagne,Las Palmas  ,NON,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,8,597,Reza Haghighi,3. Milieu,1 février 1989,25,7,Iran,Persepolis   ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,9,37,Alireza Jahanbakhsh,4. Attaquant,11 août 1993,20,6,Pays-Bas,NEC   ,NON,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,10,382,Karim Ansarifard,4. Attaquant,3 avril 1990,24,41,Iran,Tractor Sazi  ,OUI,25
+F,http://bit.ly/1kEEIoe,Iran,43,Carlos Queiroz,Portugal,1-juin,16,596,Reza Ghoochannejhad,4. Attaquant,20 septembre 1987,26,13,Angleterre,Charlton Athletic  ,NON,25
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,16,73,Austin Ejide,1. Gardien,8 avril 1984,30,32,Israel,Hapoel Be'er Sheva ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,21,115,Chigozie Agbim,1. Gardien,28 novembre 1984,29,11,Nigeria,Gombe United  ,OUI,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,1,706,Vincent Enyeama (c),1. Gardien,29 août 1982,31,90,France,Lille   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,6,76,Azubuike Egwuekwe,2. Defenseur,16 juillet 1989,24,32,Nigeria,Warri Wolves  ,OUI,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,5,190,Efe Ambrose,2. Defenseur,18 octobre 1988,25,36,Ecosse,Celtic   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,14,259,Go2. Defenseurrey Oboabona,2. Defenseur,16 août 1990,23,35,Turquie,caykur Rizespor  ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,2,365,Joseph Yobo,2. Defenseur,6 septembre 1980,33,96,Angleterre,Norwich City  ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,13,381,Juwon Oshaniwa,2. Defenseur,14 septembre 1990,23,10,Israel,Ashdod   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,22,385,Kenneth Omeruo,2. Defenseur,17 octobre 1993,20,17,Angleterre,Middlesbrough   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,12,405,Kunle Odunlami,2. Defenseur,5 mars 1990,24,10,Nigeria,Sunshine Stars  ,OUI,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,3,691,Uwa Elderson Echiejile,2. Defenseur,20 janvier 1988,26,42,France,Monaco   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,10,344,John Obi Mikel,3. Milieu,22 avril 1987,27,59,Angleterre,Chelsea   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,18,503,Michael Babatunde,3. Milieu,24 décembre 1992,21,4,Ukraine,Volyn Lutsk  ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,17,538,Ogenyi Onazi,3. Milieu,25 décembre 1992,21,20,Italie,Lazio   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,15,586,Ramon Azeez,3. Milieu,12 décembre 1992,21,1,Espagne,Almeria   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,4,595,Reuben Gabriel,3. Milieu,25 septembre 1990,23,11,Belgique,Waasland-Beveren   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,11,702,Victor Moses,3. Milieu,12 décembre 1990,23,20,Angleterre,Liverpool   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,7,15,Ahmed Musa,4. Attaquant,14 octobre 1992,21,35,Russie,CSKA Moscow  ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,9,199,Emmanuel Emenike,4. Attaquant,10 mai 1987,27,22,Turquie,Fenerbahce   ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,20,508,Michael Uchebo,4. Attaquant,2 février 1990,24,3,Belgique,Cercle Brugge  ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,8,573,Peter Odemwingie,4. Attaquant,15 juillet 1981,32,60,Angleterre,Stoke City  ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,23,648,Shola Ameobi,4. Attaquant,12 octobre 1981,32,6,Angleterre,Newcastle United  ,NON,30
+F,http://bit.ly/1kEEIoe,Nigeria,44,Stephen Keshi,Nigeria,2-juin,19,690,Uche Nwofor,4. Attaquant,17 septembre 1991,22,6,Pays-Bas,Heerenveen   ,NON,30
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,1,444,Manuel Neuer,1. Gardien,27 mars 1986,28,45,Allemagne,Bayern Munich  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,22,610,Roman Weidenfeller,1. Gardien,6 août 1980,33,2,Allemagne,Borussia Dortmund  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,12,613,Ron-Robert Zieler,1. Gardien,12 février 1989,25,3,Allemagne,Hannover 96  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,4,83,Benedikt Höwedes,2. Defenseur,29 février 1988,26,20,Allemagne,Schalke 4  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,15,202,Erik Durm,2. Defenseur,12 mai 1992,22,1,Allemagne,Borussia Dortmund  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,20,329,Jerôme Boateng,2. Defenseur,3 septembre 1988,25,38,Allemagne,Bayern Munich  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,2,387,Kevin Großkreutz,2. Defenseur,19 juillet 1988,25,4,Allemagne,Borussia Dortmund  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,5,478,Mats Hummels,2. Defenseur,16 décembre 1988,25,29,Allemagne,Borussia Dortmund  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,17,572,Per Mertesacker,2. Defenseur,29 septembre 1984,29,97,Angleterre,Arsenal   ,NON,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,16,576,Philipp Lahm (c),2. Defenseur,11 novembre 1983,30,105,Allemagne,Bayern Munich  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,9,45,Andre Schürrle,3. Milieu,6 novembre 1990,23,32,Angleterre,Chelsea   ,NON,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,7,80,Bastian Schweinsteiger,3. Milieu,1 août 1984,29,101,Allemagne,Bayern Munich  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,23,122,Christoph Kramer,3. Milieu,12 février 1991,23,2,Allemagne,Borussia Mönchengladbach  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,14,376,Julian Draxler,3. Milieu,20 septembre 1993,20,11,Allemagne,Schalke 4  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,19,457,Mario Götze,3. Milieu,3 juin 1992,22,28,Allemagne,Bayern Munich  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,3,483,Matthias Ginter,3. Milieu,19 janvier 1994,20,2,Allemagne,SC Freiburg  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,8,501,Mesut Özil,3. Milieu,15 octobre 1988,25,54,Angleterre,Arsenal   ,NON,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,6,622,Sami Khedira,3. Milieu,4 avril 1987,27,45,Espagne,Real Madrid  ,NON,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,13,677,Thomas Müller,3. Milieu,13 septembre 1989,24,48,Allemagne,Bayern Munich  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,18,686,Toni Kroos,3. Milieu,4 janvier 1990,24,43,Allemagne,Bayern Munich  ,OUI,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,10,435,Lukas Podolski,4. Attaquant,4 juin 1985,29,113,Angleterre,Arsenal   ,NON,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,2-juin,11,519,Miroslav Klose,4. Attaquant,9 juin 1978,35,131,Italie,Lazio   ,NON,43
+G,http://bit.ly/1kEEMUL,Allemagne,2,Joachim Low,Allemagne,7-juin,21,450,Shkodran Mustafi,Défenseur,17 avril 1992,22,1,Italie,Sampdoria,NON,43
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,12,92,Brad Guzan,1. Gardien,9 septembre 1984,29,25,Angleterre,Aston Villa  ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,22,531,Nick Rimando,1. Gardien,17 juin 1979,34,14,Etats-Unis,Real Salt Lake ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,1,680,Tim Howard,1. Gardien,6 mars 1979,35,99,Angleterre,Everton   ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,7,135,DaMarcus Beasley,2. Defenseur,24 mai 1982,32,115,Mexique,Puebla   ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,2,156,DeAndre Yedlin,2. Defenseur,9 juillet 1993,20,4,Etats-Unis,Seattle Sounders FC ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,23,212,Fabian Johnson,2. Defenseur,11 décembre 1987,26,21,Allemagne,1899 Hoffenheim  ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,20,242,Geoff Cameron,2. Defenseur,11 juillet 1985,28,26,Angleterre,Stoke City  ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,6,343,John Brooks,2. Defenseur,28 janvier 1993,21,4,Allemagne,Hertha BSC  ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,5,479,Matt Besler,2. Defenseur,11 février 1987,27,16,Etats-Unis,Sporting Kansas City ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,3,545,Omar Gonzalez,2. Defenseur,11 octobre 1988,25,19,Etats-Unis,Los Angeles Galaxy ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,21,682,Timothy Chandler,2. Defenseur,29 mars 1990,24,12,Allemagne,1. FC Nürnberg ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,11,21,Alejandro Bedoya,3. Milieu,29 avril 1987,27,27,France,Nantes   ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,14,91,Brad Davis,3. Milieu,8 novembre 1981,32,16,Etats-Unis,Houston Dynamo  ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,19,265,Graham Zusi,3. Milieu,18 août 1986,27,22,Etats-Unis,Sporting Kansas City ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,13,328,Jermaine Jones,3. Milieu,3 novembre 1981,32,41,Turquie,Besiktas   ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,16,377,Julian Green,3. Milieu,6 juin 1995,19,2,Allemagne,Bayern Munich  ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,15,408,Kyle Beckerman,3. Milieu,23 avril 1982,32,36,Etats-Unis,Real Salt Lake ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,4,505,Michael Bradley,3. Milieu,31 juillet 1987,26,85,Etats-Unis,Toronto FC  ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,10,516,Mikkel Diskerud,3. Milieu,2 octobre 1990,23,19,Norvege,Rosenborg   ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,9,63,Aron Johannsson,4. Attaquant,10 novembre 1990,23,8,Pays-Bas,AZ   ,NON,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,18,117,Chris Wondolowski,4. Attaquant,28 janvier 1983,31,20,Etats-Unis,San Jose Earthquakes ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,8,127,Clint Dempsey (c),4. Attaquant,9 mars 1983,31,104,Etats-Unis,Seattle Sounders FC ,OUI,31
+G,http://bit.ly/1kEEMUL,Etats-Unis,13,Jurgen Klinsmann,Allemagne,22-mai,17,367,Jozy Altidore,4. Attaquant,6 novembre 1989,24,69,Angleterre,Sunderland   ,NON,31
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,12,4,Adam Kwarasey,1. Gardien,12 décembre 1987,26,21,Norvege,Strømsgodset   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,16,219,Fatau Dauda,1. Gardien,6 avril 1985,29,17,Afrique du Sud,Orlando Pirates  ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,1,664,Steven Adams,1. Gardien,28 septembre 1989,24,7,Ghana,Aduana Stars  ,OUI,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,4,139,Daniel Opare,2. Defenseur,18 octobre 1990,23,16,Belgique,Standard Liege  ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,23,272,Harrison Afful,2. Defenseur,24 juin 1986,27,40,Tunisie,Esperance   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,21,342,John Boye,2. Defenseur,23 avril 1987,27,29,France,Rennes   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,19,348,Jonathan Mensah,2. Defenseur,13 juillet 1990,23,26,France,evian   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,15,589,Rashid Sumaila,2. Defenseur,18 décembre 1992,21,6,Afrique du Sud,Mamelodi Sundowns  ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,2,627,Samuel Inkoom,2. Defenseur,1 juin 1989,25,46,Grece,Platanias   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,6,12,Acquah Afriyie,3. Milieu,5 janvier 1992,22,4,Italie,Parma   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,14,18,Albert Adomah,3. Milieu,13 décembre 1987,26,14,Angleterre,Middlesbrough   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,10,44,Andre Ayew,3. Milieu,17 décembre 1989,24,48,France,Marseille   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,7,118,Christian Atsu,3. Milieu,10 janvier 1992,22,22,Pays-Bas,Vitesse   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,8,198,Emmanuel Agyemang-Badu,3. Milieu,2 décembre 1990,23,48,Italie,Udinese   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,20,406,Kwadwo Asamoah,3. Milieu,9 décembre 1988,25,61,Italie,Juventus   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,5,506,Michael Essien,3. Milieu,3 décembre 1982,31,57,Italie,Milan   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,17,522,Mohammed Rabiu,3. Milieu,31 décembre 1989,24,16,Russie,Kuban Krasnodar  ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,11,669,Sulley Muntari,3. Milieu,27 août 1984,29,81,Italie,Milan   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,22,709,Wakaso Mubarak,3. Milieu,25 juillet 1990,23,16,Russie,Rubin Kazan  ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,3,66,Asamoah Gyan (c),4. Attaquant,22 novembre 1985,28,78,EAU,Al-Ain   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,13,349,Jordan Ayew,4. Attaquant,11 septembre 1991,22,12,France,Sochaux   ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,9,389,Kevin-Prince Boateng,4. Attaquant,6 mars 1987,27,12,Allemagne,Schalke 4  ,NON,26
+G,http://bit.ly/1kEEMUL,Ghana,37,James Kwesi Appiah,Ghana,1-juin,18,439,Majeed Waris,4. Attaquant,19 septembre 1991,22,9,France,Valenciennes   ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,22,87,Beto,1. Gardien,1 mai 1982,32,7,Espagne,Sevilla   ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,1,188,Eduardo,1. Gardien,19 septembre 1982,31,33,Portugal,Braga   ,OUI,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,12,618,Rui Patricio,1. Gardien,15 février 1988,26,29,Portugal,Sporting   ,OUI,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,19,43,Andre Almeida,2. Defenseur,10 septembre 1990,23,3,Portugal,Benfica   ,OUI,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,2,94,Bruno Alves,2. Defenseur,27 novembre 1981,32,71,Turquie,Fenerbahce   ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,5,215,Fabio Coentrão,2. Defenseur,11 mars 1988,26,43,Espagne,Real Madrid  ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,21,335,João Pereira,2. Defenseur,25 février 1984,30,35,Espagne,Valencia   ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,14,430,Luis Neto,2. Defenseur,26 mai 1988,26,7,Russie,Zenit Saint Petersburg ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,3,570,Pepe,2. Defenseur,26 février 1983,31,57,Espagne,Real Madrid  ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,13,599,Ricardo Costa,2. Defenseur,16 mai 1981,33,18,Espagne,Valencia   ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,8,334,João Moutinho,3. Milieu,8 septembre 1986,27,66,France,Monaco   ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,4,514,Miguel Veloso,3. Milieu,11 mai 1986,28,47,Ukraine,Dynamo Kyiv  ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,17,529,Nani,3. Milieu,17 novembre 1986,27,73,Angleterre,Manchester United  ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,15,580,Rafa Silva,3. Milieu,17 mai 1993,21,2,Portugal,Braga   ,OUI,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,16,592,Raul Meireles,3. Milieu,17 mars 1983,31,73,Turquie,Fenerbahce   ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,20,617,Ruben Amorim,3. Milieu,27 janvier 1985,29,11,Portugal,Benfica   ,OUI,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,18,651,Silvestre Varela,3. Milieu,2 février 1985,29,22,Portugal,Porto   ,OUI,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,10,703,Vieirinha,3. Milieu,24 janvier 1986,28,7,Allemagne,VfL Wolfsburg  ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,6,716,William Carvalho,3. Milieu,7 avril 1992,22,3,Portugal,Sporting   ,OUI,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,7,132,Cristiano Ronaldo (c),4. Attaquant,5 février 1985,29,110,Espagne,Real Madrid  ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,11,180,eder,4. Attaquant,22 décembre 1987,26,7,Portugal,Braga   ,OUI,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,23,278,Helder Postiga,4. Attaquant,2 août 1982,31,67,Italie,Lazio   ,NON,26
+G,http://bit.ly/1kEEMUL,Portugal,4,Paulo Bento,Portugal,19-mai,9,287,Hugo Almeida,4. Attaquant,23 mai 1984,30,54,Turquie,Besiktas   ,NON,26
+H,http://bit.ly/1kEEPA5,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,1,108,Cedric Si Mohamed,1. Gardien,9 janvier 1985,29,1,Algerie,CS Constantine  ,OUI,29
+H,http://bit.ly/1kEEPA6,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,16,521,Mohamed Zemmamouche,1. Gardien,19 mars 1985,29,7,Algerie,USM Alger  ,OUI,29
+H,http://bit.ly/1kEEPA10,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,23,579,Raes M'Bolhi,1. Gardien,25 avril 1986,28,27,Bulgarie,CSKA Sofia  ,NON,29
+H,http://bit.ly/1kEEPA17,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,20,11,Aissa Mandi,2. Defenseur,22 octobre 1991,22,2,France,Reims   ,NON,29
+H,http://bit.ly/1kEEPA18,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,7,98,Carl Medjani,2. Defenseur,15 mai 1985,29,25,France,Valenciennes   ,NON,29
+H,http://bit.ly/1kEEPA20,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,6,173,Djamel Mesbah,2. Defenseur,9 octobre 1984,29,26,Italie,Livorno   ,NON,29
+H,http://bit.ly/1kEEPA9,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,4,204,Essaed Belkalem,2. Defenseur,1 janvier 1989,25,13,Angleterre,Watford   ,NON,29
+H,http://bit.ly/1kEEPA21,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,3,217,Faouzi Ghoulam,2. Defenseur,1 février 1991,23,5,Italie,Napoli   ,NON,29
+H,http://bit.ly/1kEEPA14,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,17,420,Liassine Cadamuro-Bentaeba,2. Defenseur,5 mars 1988,26,6,Espagne,Mallorca   ,NON,29
+H,http://bit.ly/1kEEPA26,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,2,437,Madjid Bougherra (c),2. Defenseur,7 octobre 1982,31,61,Qatar,Lekhwiya   ,NON,29
+H,http://bit.ly/1kEEPA23,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,5,582,Rafik Halliche,2. Defenseur,2 septembre 1986,27,28,Portugal,Academica   ,NON,29
+H,http://bit.ly/1kEEPA27,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,18,1,Abdelmoumene Djabou,3. Milieu,31 janvier 1987,27,76,Tunisie,Club Africain  ,NON,29
+H,http://bit.ly/1kEEPA22,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,8,274,Hassan Yebda,3. Milieu,14 mai 1984,30,24,Italie,Udinese   ,NON,29
+H,http://bit.ly/1kEEPA12,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,12,496,Medhi Lacen,3. Milieu,15 mai 1984,30,29,Espagne,Getafe   ,NON,29
+H,http://bit.ly/1kEEPA16,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,22,497,Mehdi Mostefa,3. Milieu,30 août 1983,30,22,France,Ajaccio   ,NON,29
+H,http://bit.ly/1kEEPA8,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,14,526,Nabil Bentaleb,3. Milieu,24 novembre 1994,19,2,Angleterre,Tottenham Hotspur  ,NON,29
+H,http://bit.ly/1kEEPA7,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,21,603,Riyad Mahrez,3. Milieu,21 février 1991,23,1,Angleterre,Leicester City  ,NON,29
+H,http://bit.ly/1kEEPA19,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,19,630,Saphir Taeder,3. Milieu,29 février 1992,22,10,Italie,Internazionale   ,NON,29
+H,http://bit.ly/1kEEPA15,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,10,654,Sofiane Feghouli,3. Milieu,26 décembre 1989,24,18,Espagne,Valencia   ,NON,29
+H,http://bit.ly/1kEEPA13,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,11,722,Yacine Brahimi,3. Milieu,8 février 1990,24,5,Espagne,Granada   ,NON,29
+H,http://bit.ly/1kEEPA11,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,15,194,El Arbi Hillel Soudani,4. Attaquant,25 novembre 1987,26,21,Croatie,Dinamo Zagreb  ,NON,29
+H,http://bit.ly/1kEEPA25,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,13,297,Islam Slimani,4. Attaquant,18 juin 1988,25,19,Portugal,Sporting CP  ,NON,29
+H,http://bit.ly/1kEEPA24,Algerie,22,Vahid Halilhodzic,Bosnie-Herzegovine,2-juin,9,527,Nabil Ghilas,4. Attaquant,20 avril 1990,24,5,Portugal,Porto   ,NON,29
+H,http://bit.ly/1kEEPA43,Belgique,11,Marc Wilmots,Belgique,2-juin,13,624,Sammy Bossut,1. Gardien,11 août 1985,28,1,Belgique,Zulte Waregem  ,OUI,34
+H,http://bit.ly/1kEEPA34,Belgique,11,Marc Wilmots,Belgique,2-juin,12,653,Simon Mignolet,1. Gardien,6 août 1988,25,14,Angleterre,Liverpool   ,NON,34
+H,http://bit.ly/1kEEPA44,Belgique,11,Marc Wilmots,Belgique,2-juin,1,676,Thibaut Courtois,1. Gardien,11 mai 1992,22,16,Espagne,Atletico Madrid  ,NON,34
+H,http://bit.ly/1kEEPA41,Belgique,11,Marc Wilmots,Belgique,2-juin,21,57,Anthony Vanden Borre,2. Defenseur,24 octobre 1987,26,25,Belgique,Anderlecht   ,OUI,34
+H,http://bit.ly/1kEEPA28,Belgique,11,Marc Wilmots,Belgique,2-juin,15,141,Daniel Van Buyten,2. Defenseur,7 février 1978,36,79,Allemagne,Bayern Munich  ,NON,34
+H,http://bit.ly/1kEEPA38,Belgique,11,Marc Wilmots,Belgique,2-juin,5,313,Jan Vertonghen,2. Defenseur,24 avril 1987,27,56,Angleterre,Tottenham Hotspur  ,NON,34
+H,http://bit.ly/1kEEPA42,Belgique,11,Marc Wilmots,Belgique,2-juin,23,410,Laurent Ciman,2. Defenseur,5 août 1985,28,8,Belgique,Standard Liege  ,OUI,34
+H,http://bit.ly/1kEEPA50,Belgique,11,Marc Wilmots,Belgique,2-juin,18,533,Nicolas Lombaerts,2. Defenseur,20 mars 1985,29,26,Russie,Zenit Saint Petersburg ,NON,34
+H,http://bit.ly/1kEEPA30,Belgique,11,Marc Wilmots,Belgique,2-juin,3,678,Thomas Vermaelen,2. Defenseur,14 novembre 1985,28,48,Angleterre,Arsenal   ,NON,34
+H,http://bit.ly/1kEEPA45,Belgique,11,Marc Wilmots,Belgique,2-juin,2,684,Toby Alderweireld,2. Defenseur,2 mars 1989,25,34,Espagne,Atletico Madrid  ,NON,34
+H,http://bit.ly/1kEEPA35,Belgique,11,Marc Wilmots,Belgique,2-juin,4,707,Vincent Kompany (c),2. Defenseur,10 avril 1986,28,59,Angleterre,Manchester City  ,NON,34
+H,http://bit.ly/1kEEPA37,Belgique,11,Marc Wilmots,Belgique,2-juin,20,8,Adnan Januzaj,3. Milieu,5 février 1995,19,1,Angleterre,Manchester United  ,NON,34
+H,http://bit.ly/1kEEPA49,Belgique,11,Marc Wilmots,Belgique,2-juin,6,75,Axel Witsel,3. Milieu,12 janvier 1989,25,48,Russie,Zenit Saint Petersburg ,NON,34
+H,http://bit.ly/1kEEPA31,Belgique,11,Marc Wilmots,Belgique,2-juin,10,179,Eden Hazard,3. Milieu,7 janvier 1991,23,45,Angleterre,Chelsea   ,NON,34
+H,http://bit.ly/1kEEPA29,Belgique,11,Marc Wilmots,Belgique,2-juin,7,386,Kevin De Bruyne,3. Milieu,28 juin 1991,22,22,Allemagne,VfL Wolfsburg  ,NON,34
+H,http://bit.ly/1kEEPA33,Belgique,11,Marc Wilmots,Belgique,2-juin,11,388,Kevin Mirallas,3. Milieu,5 octobre 1987,26,44,Angleterre,Everton   ,NON,34
+H,http://bit.ly/1kEEPA36,Belgique,11,Marc Wilmots,Belgique,2-juin,8,463,Marouane Fellaini,3. Milieu,22 novembre 1987,26,50,Angleterre,Manchester United  ,NON,34
+H,http://bit.ly/1kEEPA39,Belgique,11,Marc Wilmots,Belgique,2-juin,19,523,Mousa Dembele,3. Milieu,16 juillet 1987,26,55,Angleterre,Tottenham Hotspur  ,NON,34
+H,http://bit.ly/1kEEPA40,Belgique,11,Marc Wilmots,Belgique,2-juin,22,528,Nacer Chadli,3. Milieu,2 octobre 1989,24,20,Angleterre,Tottenham Hotspur  ,NON,34
+H,http://bit.ly/1kEEPA48,Belgique,11,Marc Wilmots,Belgique,2-juin,16,666,Steven Defour,3. Milieu,15 avril 1988,26,43,Portugal,Porto   ,NON,34
+H,http://bit.ly/1kEEPA46,Belgique,11,Marc Wilmots,Belgique,2-juin,17,172,Divock Origi,4. Attaquant,18 avril 1995,19,2,France,Lille   ,NON,34
+H,http://bit.ly/1kEEPA47,Belgique,11,Marc Wilmots,Belgique,2-juin,14,177,Dries Mertens,4. Attaquant,6 mai 1987,27,24,Italie,Napoli   ,NON,34
+H,http://bit.ly/1kEEPA32,Belgique,11,Marc Wilmots,Belgique,2-juin,9,611,Romelu Lukaku,4. Attaquant,13 mai 1993,21,29,Angleterre,Everton   ,NON,34
+H,http://bit.ly/1kEEPA66,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,1,379,Jung Sung-Ryong,1. Gardien,4 janvier 1985,29,60,Coree du Sud,Suwon Bluewings  ,OUI,25
+H,http://bit.ly/1kEEPA69,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,21,395,Kim Seung-Gyu,1. Gardien,30 septembre 1990,23,5,Coree du Sud,Ulsan Hyundai  ,OUI,25
+H,http://bit.ly/1kEEPA64,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,23,413,Lee Bum-Young,1. Gardien,2 avril 1989,25,0,Coree du Sud,Busan I'Park  ,OUI,25
+H,http://bit.ly/1kEEPA53,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,20,284,Hong Jeong-Ho,2. Defenseur,12 août 1989,24,24,Allemagne,FC Augsburg  ,NON,25
+H,http://bit.ly/1kEEPA72,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,6,291,Hwang Seok-Ho,2. Defenseur,27 juin 1989,24,3,Japon,Sanfrecce Hiroshima  ,NON,25
+H,http://bit.ly/1kEEPA70,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,2,394,Kim Chang-Soo,2. Defenseur,12 septembre 1985,28,8,Japon,Kashiwa Reysol  ,NON,25
+H,http://bit.ly/1kEEPA62,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,5,397,Kim Young-Gwon,2. Defenseur,27 février 1990,24,20,Chine,Guangzhou Evergrande  ,NON,25
+H,http://bit.ly/1kEEPA60,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,4,407,Kwak Tae-Hwi,2. Defenseur,8 juillet 1981,32,34,Arabie Saoudite,Al-Hilal   ,NON,25
+H,http://bit.ly/1kEEPA67,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,12,416,Lee Yong,2. Defenseur,24 décembre 1986,27,11,Coree du Sud,Ulsan Hyundai  ,OUI,25
+H,http://bit.ly/1kEEPA55,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,22,561,Park Joo-Ho,2. Defenseur,16 janvier 1987,27,13,Allemagne,Mainz 5  ,NON,25
+H,http://bit.ly/1kEEPA57,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,3,731,Yun Suk-Young,2. Defenseur,13 février 1990,24,3,Angleterre,Queens Park Rangers ,NON,25
+H,http://bit.ly/1kEEPA61,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,8,268,Ha Dae-Sung,3. Milieu,2 mars 1985,29,13,Chine,Beijing Guoan  ,NON,25
+H,http://bit.ly/1kEEPA71,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,14,269,Han Kook-Young,3. Milieu,19 avril 1990,24,9,Japon,Kashiwa Reysol  ,NON,25
+H,http://bit.ly/1kEEPA58,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,16,392,Ki Sung-Yueng,3. Milieu,24 janvier 1989,25,58,Angleterre,Sunderland   ,NON,25
+H,http://bit.ly/1kEEPA73,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,7,393,Kim Bo-Kyung,3. Milieu,6 octobre 1989,24,27,Angleterre,Cardiff City  ,NON,25
+H,http://bit.ly/1kEEPA54,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,13,401,Koo Ja-Cheol (c),3. Milieu,27 février 1989,25,36,Allemagne,Mainz 5  ,NON,25
+H,http://bit.ly/1kEEPA56,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,17,414,Lee Chung-Yong,3. Milieu,2 juillet 1988,25,54,Angleterre,Bolton Wanderers  ,NON,25
+H,http://bit.ly/1kEEPA63,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,15,560,Park Jong-Woo,3. Milieu,10 mars 1989,25,10,Chine,Guangzhou R&F  ,NON,25
+H,http://bit.ly/1kEEPA52,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,19,332,Ji Dong-Won,4. Attaquant,28 mai 1991,23,27,Allemagne,FC Augsburg  ,NON,25
+H,http://bit.ly/1kEEPA68,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,18,396,Kim Shin-Wook,4. Attaquant,14 avril 1988,26,26,Coree du Sud,Ulsan Hyundai  ,OUI,25
+H,http://bit.ly/1kEEPA65,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,11,415,Lee Keun-Ho,4. Attaquant,11 avril 1985,29,63,Coree du Sud,Sangju Sangmu  ,OUI,25
+H,http://bit.ly/1kEEPA59,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,10,559,Park Chu-Young,4. Attaquant,10 juillet 1985,28,63,Angleterre,Watford   ,NON,25
+H,http://bit.ly/1kEEPA51,Coree du Sud,57,Hong Myung-Bo,Coree du Sud,8-mai,9,657,Son Heung-Min,4. Attaquant,8 juillet 1992,21,24,Allemagne,Bayer Leverkusen  ,NON,25
+H,http://bit.ly/1kEEPA75,Russie,19,Fabio Capello,Italie,2-juin,1,293,Igor Akinfeev,1. Gardien,8 avril 1986,28,67,Russie,CSKA Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA88,Russie,19,Fabio Capello,Italie,2-juin,16,641,Sergey Ryzhikov,1. Gardien,19 septembre 1980,33,1,Russie,Rubin Kazan  ,OUI,25
+H,http://bit.ly/1kEEPA94,Russie,19,Fabio Capello,Italie,2-juin,12,732,Yuri Lodygin,1. Gardien,26 mai 1990,24,2,Russie,Zenit Saint Petersburg ,OUI,25
+H,http://bit.ly/1kEEPA80,Russie,19,Fabio Capello,Italie,2-juin,2,26,Aleksei Kozlov,2. Defenseur,16 novembre 1986,27,10,Russie,Dynamo Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA92,Russie,19,Fabio Capello,Italie,2-juin,6,49,Andrei Semyonov,2. Defenseur,24 mars 1989,25,1,Russie,Terek Grozny  ,OUI,25
+H,http://bit.ly/1kEEPA74,Russie,19,Fabio Capello,Italie,2-juin,22,52,Andrey Yeshchenko,2. Defenseur,9 février 1984,30,11,Russie,Anzhi Makhachkala  ,OUI,25
+H,http://bit.ly/1kEEPA91,Russie,19,Fabio Capello,Italie,2-juin,23,174,Dmitri Kombarov,2. Defenseur,22 janvier 1987,27,21,Russie,Spartak Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA76,Russie,19,Fabio Capello,Italie,2-juin,3,243,Georgi Shchennikov,2. Defenseur,27 avril 1991,23,3,Russie,CSKA Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA77,Russie,19,Fabio Capello,Italie,2-juin,4,640,Sergei Ignashevich,2. Defenseur,14 juillet 1979,34,95,Russie,CSKA Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA79,Russie,19,Fabio Capello,Italie,2-juin,14,695,Vasili Berezutski,2. Defenseur,20 juin 1982,31,77,Russie,CSKA Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA84,Russie,19,Fabio Capello,Italie,2-juin,13,708,Vladimir Granat,2. Defenseur,22 mai 1987,27,4,Russie,Dynamo Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA78,Russie,19,Fabio Capello,Italie,2-juin,10,16,Alan Dzagoev,3. Milieu,17 juin 1990,23,31,Russie,CSKA Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA90,Russie,19,Fabio Capello,Italie,2-juin,8,158,Denis Glushakov,3. Milieu,27 janvier 1987,27,26,Russie,Spartak Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA82,Russie,19,Fabio Capello,Italie,2-juin,7,294,Igor Denisov,3. Milieu,17 mai 1984,30,42,Russie,Dynamo Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA95,Russie,19,Fabio Capello,Italie,2-juin,17,541,Oleg Shatov,3. Milieu,29 juillet 1990,23,6,Russie,Zenit Saint Petersburg ,OUI,25
+H,http://bit.ly/1kEEPA86,Russie,19,Fabio Capello,Italie,6-juin,15,609,Pavel Mogilevets,3. Milieu,25 janvier 1993,21,1,Russie,Rubin Kazan  ,OUI,25
+H,http://bit.ly/1kEEPA96,Russie,19,Fabio Capello,Italie,2-juin,20,704,Viktor Fayzulin,3. Milieu,22 avril 1986,28,18,Russie,Zenit Saint Petersburg ,OUI,25
+H,http://bit.ly/1kEEPA93,Russie,19,Fabio Capello,Italie,2-juin,11,22,Aleksandr Kerzhakov,4. Attaquant,27 novembre 1982,31,79,Russie,Zenit Saint Petersburg ,OUI,25
+H,http://bit.ly/1kEEPA83,Russie,19,Fabio Capello,Italie,2-juin,9,23,Aleksandr Kokorin,4. Attaquant,19 mars 1991,23,20,Russie,Dynamo Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA87,Russie,19,Fabio Capello,Italie,2-juin,19,24,Aleksandr Samedov,4. Attaquant,19 juillet 1984,29,16,Russie,Lokomotiv Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA85,Russie,19,Fabio Capello,Italie,2-juin,18,25,Aleksei Ionov,4. Attaquant,18 février 1989,25,5,Russie,Dynamo Moscow  ,OUI,25
+H,http://bit.ly/1kEEPA89,Russie,19,Fabio Capello,Italie,2-juin,21,441,Maksim Kanunnikov,4. Attaquant,14 juillet 1991,22,2,Russie,Rubin Kazan  ,OUI,25
+H,http://bit.ly/1kEEPA81,Russie,19,Fabio Capello,Italie,2-juin,5,733,Yuri Zhirkov,4. Attaquant,20 août 1983,30,59,Russie,Dynamo Moscow  ,OUI,25

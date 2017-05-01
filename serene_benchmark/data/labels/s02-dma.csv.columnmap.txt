@@ -1,13 +1,13 @@
 key,column_name,source_name,semantic_type
-ObjectFacetValue1,ObjectFacetValue1,s02-dma.csv,CulturalHeritageObject---medium
-ObjectWorkType,ObjectWorkType,s02-dma.csv,Concept---prefLabel
+"Object Facet Value 1","Object Facet Value 1",s02-dma.csv,CulturalHeritageObject---medium
+"Object Work Type","Object Work Type",s02-dma.csv,Concept---prefLabel
 dimensions,dimensions,s02-dma.csv,CulturalHeritageObject---extent
-ArtistBirthDate,ArtistBirthDate,s02-dma.csv,Person---dateOfBirth
-ObjectID,ObjectID,s02-dma.csv,CulturalHeritageObject---accessionNumber
-ObjectRights,ObjectRights,s02-dma.csv,CulturalHeritageObject---provenance
-ObjectTitle,ObjectTitle,s02-dma.csv,CulturalHeritageObject---title
-ArtistNationality,ArtistNationality,s02-dma.csv,Person---countryAssociatedWithThePerson
-ArtistName,ArtistName,s02-dma.csv,Person---nameOfThePerson
-ArtistDeathDate,ArtistDeathDate,s02-dma.csv,Person---dateOfDeath
-ObjectEarliestDateDisplay,ObjectEarliestDateDisplay,s02-dma.csv,CulturalHeritageObject---created
-ObjectLinkSource,ObjectLinkSource,s02-dma.csv,CulturalHeritageObject---rightsHolder
+"Artist Birth Date","Artist Birth Date",s02-dma.csv,Person---dateOfBirth
+"ObjectID","Object ID",s02-dma.csv,CulturalHeritageObject---accessionNumber
+"Object Rights","Object Rights",s02-dma.csv,CulturalHeritageObject---provenance
+"Object Title","Object Title",s02-dma.csv,CulturalHeritageObject---title
+"Artist Nationality","Artist Nationality",s02-dma.csv,Person---countryAssociatedWithThePerson
+"Artist Name","Artist Name",s02-dma.csv,Person---nameOfThePerson
+"Artist Death Date","Artist Death Date",s02-dma.csv,Person---dateOfDeath
+"Object Earliest Date Display","Object Earliest Date Display",s02-dma.csv,CulturalHeritageObject---created
+"Object Link Source","Object Link Source",s02-dma.csv,CulturalHeritageObject---rightsHolder

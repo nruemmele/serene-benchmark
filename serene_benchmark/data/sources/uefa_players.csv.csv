@@ -1,988 +1,988 @@
-"ht","ag","nt","cn","ln","sn","no","cb","go/at","ps","fn","db"
-"187","26","ESP","GRE","Bot  a","Bot  a","3","Olympiacos","1","2","Alberto","27.01.1989"
-"186","22","GRE","GRE","Bouchalakis","Bouchalakis","8","Olympiacos","0","3","Andreas","05.04.1993"
-"180","26","NGA","GRE","Brown","Ideye","99","Olympiacos","4","4","Ideye","10.10.1988"
-"177","35","ARG","GRE","Cambiasso","Cambiasso","91","Olympiacos","6","3","Esteban","18.08.1980"
-"192","21","GRE","GRE","Choutesiotis","Choutesiotis","33","Olympiacos","0","1","Lefteris","20.07.1994"
-"191","29","MAR","GRE","da Costa","Da Costa","6","Olympiacos","0","2","Manuel","06.05.1986"
-"175","34","ARG","GRE","Dom  nguez","Dom  nguez","10","Olympiacos","7","3","Alejandro","10.06.1981"
-"179","23","NOR","GRE","Elabdellaoui","Elabdellaoui","14","Olympiacos","0","2","Omar","05.12.1991"
-"181","26","ISL","GRE","Finnbogason","Finnbogason","9","Olympiacos","1","4","Alfred","01.02.1989"
-"182","22","GRE","GRE","Fortounis","Fortounis","7","Olympiacos","0","3","Kostas","16.10.1992"
-"180","24","POR","GRE","Hern ni","Hern ni","77","Olympiacos","0","4","Stefanos","20.08.1991"
-"193","21","GRE","GRE","Kapino","Kapino","37","Olympiacos","0","1","Pajtim","18.03.1994"
-"187","23","SUI","GRE","Kasami","Kasami","11","Olympiacos","1","3","Qazim","02.06.1992"
-"176","19","ALB","GRE","Laci","Laci","15","Olympiacos","0","3","Giannis","19.01.1996"
-"168","30","BRA","GRE","Leandro Salino","Leandro Salino","30","Olympiacos","0","2","Arthur","22.04.1985"
-"178","28","GRE","GRE","Maniatis","Maniatis","2","Olympiacos","1","2","Luka","12.10.1986"
-"179","21","FRA","GRE","Masuaku","Masuaku","26","Olympiacos","1","2","Felipe","07.11.1993"
-"182","24","SRB","GRE","Milivojevi ","Milivojevi ","5","Olympiacos","0","3","Alan","07.04.1991"
-"175","25","COL","GRE","Pardo","Pardo","90","Olympiacos","0","4","Manolis","17.08.1990"
-"195","24","MEX","GRE","Pulido","Pulido","17","Olympiacos","0","4","Dimitris","08.03.1991"
-"175","29","ESP","GRE","Roberto","Roberto","16","Olympiacos","0","1","Praxitelis","10.02.1986"
-"182","19","GRE","GRE","Saliakas","Saliakas","34","Olympiacos","0","2","Nana","12.09.1996"
-"191","23","BRA","GRE","Seb ","Seb ","92","Olympiacos","0","4","Kalifa","08.06.1992"
-"183","27","GRE","GRE","Siovas","Siovas","23","Olympiacos","0","2","Brecht","16.09.1988"
-"175","20","GRE","GRE","Vouros","Vouros","29","Olympiacos","0","2","Laurent","05.05.1995"
-"197","29","GHA","BEL","Asare","Asare","21","Gent","0","2","Thomas","11.07.1986"
-"174","24","MLI","BEL","Coulibaly","Coulibaly","7","Gent","0","3","Erik","21.08.1991"
-"191","24","BEL","BEL","Dejaegere","Dejaegere","19","Gent","0","3","Sven","29.05.1991"
-"177","26","BEL","BEL","Depoitre","Depoitre","9","Gent","0","4","Thomas","07.12.1988"
-"180","20","BEL","BEL","Foket","Foket","32","Gent","0","3","Danijel","25.09.1994"
-"178","26","SWE","BEL","Johansson","E. Johansson","5","Gent","0","2","Stefan","30.12.1988"
-"180","27","BEL","BEL","Kums","Kums","14","Gent","0","3","Lasse","26.02.1988"
-"177","29","BEL","BEL","Matton","Matton","8","Gent","0","3","Nicklas","24.10.1985"
-"185","29","SUI","BEL","Milicevic","Milicevic","77","Gent","1","3","Marko","05.01.1986"
-"187","25","SRB","BEL","Mitrovi ","S. Mitrovi ","13","Gent","0","2","Benito","22.05.1990"
-"187","27","DEN","BEL","Nielsen","L. Nielsen","23","Gent","0","2","Kenneth","08.01.1988"
-"182","27","DEN","BEL","Pedersen","Pedersen","28","Gent","0","4","Matz","10.10.1987"
-"172","22","SRB","BEL","Poletanovi ","Poletanovi ","12","Gent","0","3","Moses","20.07.1993"
-"187","33","BRA","BEL","Rafinha","Rafinha","4","Gent","1","2","Yannick","29.06.1982"
-"176","20","BEL","BEL","Raman","Raman","26","Gent","0","4","Hannes","07.11.1994"
-"188","23","BRA","BEL","Renato Neto","Renato Neto","10","Gent","0","3","Brian","27.09.1991"
-"166","21","ISR","BEL","Saief","Saief","15","Gent","0","3","Uro","17.12.1993"
-"180","23","BEL","BEL","Sels","Sels","1","Gent","0","1","Anthony","26.02.1992"
-"196","20","NGA","BEL","Simon","Simon","27","Gent","0","4","Houssem","12.07.1995"
-"187","25","BEL","BEL","Thoelen","Thoelen","20","Gent","0","1","Claudio","18.07.1990"
-"174","22","BEL","BEL","Van der Bruggen","Van der Bruggen","17","Gent","0","3","Henri","01.04.1993"
-"180","33","BEL","BEL","Vandenbussche","Vandenbussche","25","Gent","0","1","Abdenour","24.09.1981"
-"187","23","SRB","BEL","Vitas","Vitas","3","Gent","0","2","Adil","06.07.1992"
-"179","17","FRA","FRA","Adel","Adel","66","Lyon","0","3","Milan","11.01.1998"
-"173","17","FRA","FRA","Aouar","Aouar","47","Lyon","0","3","Timoth  ","30.06.1998"
-"172","27","FRA","FRA","Beauvue","Beauvue","9","Lyon","0","4","Maxwel","16.04.1988"
-"182","31","CMR","FRA","Bedimo","Bedimo","3","Lyon","0","2","Maxime","04.06.1984"
-"185","16","FRA","FRA","Belkacemi","Belkacemi","49","Lyon","0","3","J  r  my","18.09.1999"
-"187","18","FRA","FRA","Benjeddi","Benjeddi","51","Lyon","0","2","Romain","29.01.1997"
-"186","32","SRB","FRA","Bievac","Bievac","5","Lyon","1","2","Mouctar","31.08.1983"
-"178","17","FRA","FRA","Cognat","Cognat","54","Lyon","0","3","Alan","25.01.1998"
-"188","18","FRA","FRA","Cornet","Cornet","27","Lyon","0","4","Nabil","27.09.1996"
-"178","19","FRA","FRA","D'Arpino","D'Arpino","34","Lyon","0","3","Jordan","17.06.1996"
-"175","19","FRA","FRA","De Sousa","De Sousa","52","Lyon","0","3","Jordy","16.01.1996"
-"184","19","FRA","FRA","Del Castillo","Del Castillo","36","Lyon","0","3","Rachid","29.03.1996"
-"168","18","FRA","FRA","Diakhaby","Diakhaby","41","Lyon","0","2","Maxime","19.12.1996"
-"182","18","FRA","FRA","Dzabana","Dzabana","55","Lyon","0","4","Mathieu","25.03.1997"
-"197","22","FRA","FRA","Fekir","Fekir","18","Lyon","0","3","Dorian","18.07.1993"
-"176","23","FRA","FRA","Ferri","Ferri","12","Lyon","0","3","Cl  ment","12.03.1992"
-"172","18","FRA","FRA","Gaspar","Gaspar","56","Lyon","0","2","Isaac","23.04.1997"
-"172","23","FRA","FRA","Ghezzal","Ghezzal","11","Lyon","0","3","Christophe","09.05.1992"
-"184","26","FRA","FRA","Gonalons","Gonalons","21","Lyon","2","3","Ulrik","10.03.1989"
-"180","25","FRA","FRA","Gorgelin","Gorgelin","30","Lyon","0","1","Aldo","05.08.1990"
-"181","19","FRA","FRA","Grange","Grange","50","Lyon","0","1","G  d  on","10.05.1996"
-"180","24","FRA","FRA","Grenier","Grenier","7","Lyon","1","3","Olivier","07.01.1991"
-"167","18","GHA","FRA","Hemans Arday","Hemans Arday","58","Lyon","0","2","Bakary","26.12.1996"
-"184","31","FRA","FRA","Jallet","Jallet","13","Lyon","1","2","Zakarie","31.10.1983"
-"175","19","NOR","FRA","Jenssen","U. Jenssen","35","Lyon","0","2","Alexandre","17.07.1996"
-"183","19","FRA","FRA","Kalulu","Kalulu","26","Lyon","0","3","Stanislas","21.01.1996"
-"189","18","FRA","FRA","Kalulu","Kalulu","65","Lyon","0","2","Enzo","29.08.1997"
-"190","19","FRA","FRA","Kemen","Kemen","24","Lyon","0","3","Anthony","20.07.1996"
-"172","27","BFA","FRA","Kon  ","B. Kon  ","4","Lyon","2","2","Steed","27.04.1988"
-"190","20","FRA","FRA","Labidi","Labidi","32","Lyon","0","3","Yoann","08.02.1995"
-"178","24","FRA","FRA","Lacazette","Lacazette","10","Lyon","2","4","Christopher","28.05.1991"
-"170","17","FRA","FRA","Lebongo","Lebongo","40","Lyon","0","1","Dylan","21.09.1997"
-"175","17","FRA","FRA","Loisi","Loisi","67","Lyon","0","3","Lucas","15.06.1998"
-"185","24","POR","FRA","Lopes","Anthony Lopes","1","Lyon","0","1","J  r  my","01.10.1990"
-"172","35","FRA","FRA","Malbranque","Malbranque","17","Lyon","2","3","Fahd","06.01.1980"
-"190","18","FRA","FRA","Martelat","Martelat","59","Lyon","0","3","Samuel","16.01.1997"
-"176","18","LUX","FRA","Martins","C. Martins","46","Lyon","0","3","Arnold","19.02.1997"
-"195","19","FRA","FRA","Mboumbouni","Mboumbouni","37","Lyon","0","2","C  sar","20.02.1996"
-"170","21","FRA","FRA","Mocio","Mocio","16","Lyon","0","1","Romaric","11.05.1994"
-"184","31","FRA","FRA","Morel","Morel","15","Lyon","0","2","Elisha","02.04.1984"
-"193","19","FRA","FRA","Moufi","Moufi","38","Lyon","0","2","Kilian","05.05.1996"
-"186","19","FRA","FRA","Moutoussamy","Moutoussamy","43","Lyon","0","2","Mour","12.08.1996"
-"193","30","FRA","FRA","Mvuemba","Mvuemba","28","Lyon","0","3","Ga tan","28.01.1985"
-"172","16","FRA","FRA","Neto","Neto","60","Lyon","0","2","Thomas","26.02.1999"
-"170","20","FRA","FRA","Ngouma","Ngouma","44","Lyon","0","2","Lindsay","28.01.1995"
-"181","17","FRA","FRA","Owusu","Owusu","61","Lyon","0","3","Alexandre","07.11.1997"
-"179","19","SUI","FRA","Pagliuca","Pagliuca","39","Lyon","0","4","Ahamadou","02.09.1996"
-"194","21","FRA","FRA","Paye","Paye","31","Lyon","0","4","Corentin","24.05.1994"
-"170","19","FRA","FRA","Perrin","Perrin","62","Lyon","0","3","Lucas","07.06.1996"
-"192","25","BRA","FRA","Rafael","Rafael","20","Lyon","0","2","Samuel","09.07.1990"
-"180","18","FRA","FRA","Richard","Richard","63","Lyon","0","4","Mathieu","21.03.1997"
-"181","23","FRA","FRA","Rose","Rose","22","Lyon","0","2","Mapou","08.02.1992"
-"176","18","FRA","FRA","Roselli","Roselli","64","Lyon","0","2","David","17.03.1997"
-"180","21","ESP","FRA","Sergi Darder","Sergi Darder","14","Lyon","0","3","Xabi","22.12.1993"
-"186","17","FRA","FRA","Sy","Sy","68","Lyon","0","2","Holger","05.01.1998"
-"183","21","FRA","FRA","Tolisso","Tolisso","8","Lyon","0","3","Medhi","03.08.1994"
-"171","18","FRA","FRA","Tousart","Tousart","29","Lyon","0","3","Fabian","29.04.1997"
-"184","21","FRA","FRA","Umtiti","Umtiti","23","Lyon","0","2","Juan","14.11.1993"
-"191","30","FRA","FRA","Valbuena","Valbuena","19","Lyon","3","4","J  r  me","28.09.1984"
-"179","26","FRA","FRA","Yanga-Mbiwa","Yanga-Mbiwa","2","Lyon","0","2","Kingsley","15.05.1989"
-"184","23","AUT","GER","Alaba","Alaba","27","Bayern","4","2","Niklas","24.06.1992"
-"175","33","ESP","GER","Alonso","Xabi Alonso","14","Bayern","5","3","Gianluca","25.11.1981"
-"180","26","GER","GER","Badstuber","Badstuber","28","Bayern","1","2","Mario","13.03.1989"
-"178","28","MAR","GER","Benatia","Benatia","5","Bayern","1","2","Julian","17.04.1987"
-"179","17","GER","GER","Benko","Benko","40","Bayern","0","3","David","05.06.1998"
-"180","22","ESP","GER","Bernat","Bernat","18","Bayern","0","2","Joshua","01.03.1993"
-"182","27","GER","GER","Boateng","Boateng","17","Bayern","3","2","Jan","03.09.1988"
-"173","19","FRA","GER","Coman","Coman","29","Bayern","0","4","Philipp","13.06.1996"
-"174","17","GER","GER","Dorsch","Dorsch","30","Bayern","0","3","Robert","15.01.1998"
-"181","25","BRA","GER","Douglas Costa","Douglas Costa","11","Bayern","6","3","Ivan","14.09.1990"
-"171","18","GER","GER","Gaudino","Gaudino","16","Bayern","0","3","Thomas","11.11.1996"
-"178","23","GER","GER","G  tze","G  tze","19","Bayern","10","3","Manuel","03.06.1992"
-"184","20","USA","GER","Green","Green","37","Bayern","0","3","Felix","06.06.1995"
-"170","18","GER","GER","Hundertmark","Hundertmark","34","Bayern","0","1","Franck","06.08.1997"
-"187","27","ESP","GER","Javi Mart  nez","Javi Mart  nez","8","Bayern","0","3","Arjen","02.09.1988"
-"183","20","GER","GER","Kimmich","Kimmich","32","Bayern","0","3","Sebastian","08.02.1995"
-"184","24","GER","GER","Kirchhoff","Kirchhoff","15","Bayern","0","2","Tom","01.10.1990"
-"191","31","GER","GER","Lahm","Lahm","21","Bayern","0","2","Sven","11.11.1983"
-"187","27","POL","GER","Lewandowski","Lewandowski","9","Bayern","23","4","Arturo","21.08.1988"
-"178","20","AUT","GER","Lucic","Lucic","33","Bayern","0","1","Patrick","23.03.1995"
-"175","26","GER","GER","M ller","M ller","25","Bayern","30","4"," lvaro","13.09.1989"
-"171","29","GER","GER","Neuer","Neuer","1","Bayern","0","1","Gareth","27.03.1986"
-"187","18","GER","GER","Pohl","Pohl","38","Bayern","0","2","Karim","11.12.1996"
-"172","30","BRA","GER","Rafinha","Rafinha","13","Bayern","2","2","Dani","07.09.1985"
-"181","32","FRA","GER","Rib  ry","Rib  ry","7","Bayern","17","3","Kiko","07.04.1983"
-"186","31","NED","GER","Robben","Robben","10","Bayern","25","4","Denis","23.01.1984"
-"188","24","GER","GER","Rode","Rode","20","Bayern","1","3","Mateo","11.10.1990"
-"189","34","GER","GER","Starke","Starke","22","Bayern","0","1","Toni","18.03.1981"
-"169","24","ESP","GER","Thiago Alc ntara","Thiago Alc ntara","6","Bayern","2","3","Marcos","11.04.1991"
-"182","27","GER","GER","Ulreich","Ulreich","26","Bayern","0","1","Borja","03.08.1988"
-"182","28","CHI","GER","Vidal","Vidal","23","Bayern","9","3","Luka","22.05.1987"
-"189","21","GER","GER","Weihrauch","Weihrauch","36","Bayern","0","4","Keylor","03.03.1994"
-"189","19","BRA","ESP","Abner","Abner","30","Real Madrid","0","2","Martin","30.05.1996"
-"173","32","ESP","ESP","Arbeloa","Arbeloa","17","Real Madrid","3","2","Sergio","17.01.1983"
-"195","26","WAL","ESP","Bale","Bale","11","Real Madrid","12","3","Cristiano","16.07.1989"
-"183","27","FRA","ESP","Benzema","Benzema","9","Real Madrid","43","4","Rapha l","19.12.1987"
-"186","23","ESP","ESP","Carvajal","Carvajal","15","Real Madrid","0","2","Rub  n","11.01.1992"
-"176","23","BRA","ESP","Casemiro","Casemiro","14","Real Madrid","1","3","Suently","23.02.1992"
-"180","28","ESP","ESP","Casilla","Casilla","13","Real Madrid","0","1","Santiago","02.10.1986"
-"176","24","RUS","ESP","Cheryshev","Cheryshev","21","Real Madrid","0","3","Steven","26.12.1990"
-"183","24","BRA","ESP","Danilo","Danilo","23","Real Madrid","1","2","Jesse","15.07.1991"
-"178","23","ESP","ESP","Isco","Isco","22","Real Madrid","6","3","Aleksandar","21.04.1992"
-"177","24","COL","ESP","James Rodr  guez","James Rodr  guez","10","Real Madrid","3","3","Joshua","12.07.1991"
-"186","22","ESP","ESP","Jes  ","Jes  ","20","Real Madrid","0","4","Jeffrey","26.02.1993"
-"188","21","CRO","ESP","Kovai ","Kovai ","16","Real Madrid","1","3","Luuk","06.05.1994"
-"186","25","GER","ESP","Kroos","Kroos","8","Real Madrid","6","3","Jordy","04.01.1990"
-"189","20","ESP","ESP","Llorente","Llorente","28","Real Madrid","0","3","Bob","30.01.1995"
-"177","24","ESP","ESP","Lucas V zquez","Lucas V zquez","18","Real Madrid","0","3","Andr  s","01.07.1991"
-"174","27","BRA","ESP","Marcelo","Marcelo","12","Real Madrid","5","2","Albert","12.05.1988"
-"181","18","ESP","ESP","Mayoral","Mayoral","29","Real Madrid","0","4","Sander","05.04.1997"
-"175","30","CRO","ESP","Modri ","Modri ","19","Real Madrid","5","3","Jorrit","09.09.1985"
-"180","25","ESP","ESP","Nacho","Nacho","6","Real Madrid","0","2","Hj  rtur","18.01.1990"
-"170","28","CRC","ESP","Navas","Navas","1","Real Madrid","0","1","Nicolas","15.12.1986"
-"186","16","NOR","ESP","  degaard","  degaard","27","Real Madrid","0","3","Florian","17.12.1998"
-"184","32","POR","ESP","Pepe","Pepe","3","Real Madrid","3","2","Menno","26.02.1983"
-"178","29","ESP","ESP","Ramos","Ramos","4","Real Madrid","8","2","Luuk","30.03.1986"
-"174","30","POR","ESP","Ronaldo","Ronaldo","7","Real Madrid","81","4","Sam","05.02.1985"
-"182","22","FRA","ESP","Varane","Varane","2","Real Madrid","0","2","Nikolai","25.04.1993"
-"175","21","ESP","ESP","Y  ez","Y  ez","31","Real Madrid","0","1","Clint","12.10.1993"
-"169","19","NED","NED","Alberto","Alberto","33","PSV","0","2","Maxime","09.06.1996"
-"177","23","COL","NED","Arias","Arias","4","PSV","0","2","J rgen","13.01.1992"
-"185","17","NED","NED","Bergwijn","Bergwijn","27","PSV","0","4","Augustine","08.10.1997"
-"181","20","NED","NED","Bertrams","J. Bertrams","31","PSV","0","1","Ramon-Pascal","22.12.1994"
-"188","19","MNE","NED","Boljevi ","Boljevi ","39","PSV","0","4","Adam","12.12.1995"
-"185","21","NED","NED","Brenet","Brenet","20","PSV","0","2","H  ctor","20.03.1994"
-"179","23","NED","NED","Bruma","Bruma","5","PSV","0","2","Luciano","13.11.1991"
-"177","25","NED","NED","de Jong","De Jong","9","PSV","2","4","Kenneth","27.08.1990"
-"189","20","NED","NED","De Wijs","De Wijs","30","PSV","0","2","Remko","08.01.1995"
-"183","19","NED","NED","Groenendijk","Groenendijk","48","PSV","0","2","Gast  n","15.05.1996"
-"186","28","MEX","NED","Guardado","Guardado","18","PSV","0","3","Simon","28.09.1986"
-"185","18","ISL","NED","Gu mundsson","Al. Gu mundsson","49","PSV","0","3","Davy","15.06.1997"
-"180","20","NED","NED","Heesakkers","Heesakkers","36","PSV","0","2","Olivier","08.01.1995"
-"179","20","NED","NED","Hendrix","Hendrix","29","PSV","0","2","Moussa","06.02.1995"
-"190","20","ISL","NED","Hermannsson","Hermannsson","35","PSV","0","2","Stijn","08.02.1995"
-"189","23","FRA","NED","Isimat-Mirin","Isimat-Mirin","2","PSV","0","2","Yanick","15.11.1991"
-"187","24","NED","NED","Jozefzoon","Jozefzoon","17","PSV","0","4","Bram","09.02.1991"
-"173","21","NED","NED","Koch","Koch","25","PSV","0","2","Rai","02.07.1994"
-"182","21","NED","NED","Koopmans","Koopmans","21","PSV","0","1","Jetro","18.11.1993"
-"181","18","NED","NED","Lammers","Lammers","50","PSV","0","4","Jeroen","30.04.1997"
-"182","17","DEN","NED","Laursen","Laursen","37","PSV","0","4","Vincent","19.02.1998"
-"171","20","NED","NED","Leemans","Leemans","26","PSV","0","2","Yacine","15.09.1995"
-"180","23","BEL","NED","Lestienne","Lestienne","16","PSV","0","4","Andr  ","17.06.1992"
-"178","21","NED","NED","Locadia","Locadia","19","PSV","1","4","Iker","07.11.1993"
-"181","19","NED","NED","Loof","Loof","45","PSV","0","2","Aly","01.01.1996"
-"178","18","SWE","NED","Lundqvist","Lundqvist","38","PSV","0","3","Jes s","10.05.1997"
-"178","22","NED","NED","Maher","Maher","10","PSV","0","3","Hector","20.07.1993"
-"180","27","MEX","NED","Moreno","Moreno","3","PSV","1","2","Giannelli","17.01.1988"
-"180","25","NED","NED","Narsingh","Narsingh","11","PSV","1","4","Miguel","13.09.1990"
-"183","18","NED","NED","Paal","Paal","32","PSV","0","3","Iv n","24.06.1997"
-"182","31","NED","NED","Pasveer","Pasveer","22","PSV","0","1","Bruno","08.11.1983"
-"190","20","URU","NED","Pereiro","Pereiro","7","PSV","0","3","Pablo","11.06.1995"
-"184","30","DEN","NED","Poulsen","S. Poulsen","14","PSV","0","2","Tom s","07.10.1984"
-"184","24","NED","NED","Pr  pper","Pr  pper","6","PSV","0","3","Cristian","02.09.1991"
-"168","20","BEL","NED","Rommens","Rommens","40","PSV","0","3","Silvestre","03.02.1995"
-"195","20","NED","NED","Sanoh","Sanoh","44","PSV","0","4","Lionel","20.07.1995"
-"185","31","NED","NED","Schaars","Schaars","8","PSV","0","3","Aur  lien","11.01.1984"
-"184","18","NED","NED","van Osch","van Osch","41","PSV","0","1","Jason","24.03.1997"
-"183","19","NED","NED","van Vlerken","van Vlerken","34","PSV","0","2","Koray","07.10.1995"
-"178","20","NED","NED","Vloet","Vloet","23","PSV","0","3","Fernando","08.05.1995"
-"180","21","NED","NED","Willems","Willems","15","PSV","0","2","Lukas","30.03.1994"
-"190","24","NED","NED","Zoet","Zoet","1","PSV","0","1","Wesley","06.01.1991"
-"176","23","CMR","POR","Aboubakar","Aboubakar","9","Porto","5","4","David","22.01.1992"
-"182","27","ESP","POR","Alberto Bueno","Alberto Bueno","23","Porto","0","4","Marc","20.03.1988"
-"170","26","POR","POR","Andr   Andr  ","Andr   Andr  ","20","Porto","0","3","Claudio","26.08.1989"
-"182","19","POR","POR","Andr   Silva","Andr   Silva","19","Porto","0","4","Sergio","06.11.1995"
-"182","25","ALG","POR","Brahimi","Brahimi","8","Porto","6","3","Juan","08.02.1990"
-"179","18","POR","POR","Bruno Costa","Bruno Costa","87","Porto","0","4","Alejandro","19.04.1997"
-"170","21","POR","POR","Caio","Caio","91","Porto","0","1","Gerard","23.02.1994"
-"172","34","ESP","POR","Casillas","Casillas","12","Porto","0","1","Andr  s","20.05.1981"
-"184","28","FRA","POR","Cissokho","Cissokho","28","Porto","1","2","Javier","15.09.1987"
-"179","22","MEX","POR","Corona","Corona","17","Porto","0","4","Jordi","06.01.1993"
-"172","24","POR","POR","Danilo","Danilo","22","Porto","0","3","J  r  my","09.09.1991"
-"183","18","POR","POR","David Sualehe","David Sualehe","65","Porto","0","2","Lionel","23.03.1997"
-"184","18","POR","POR","Diogo Sousa","Diogo Sousa","73","Porto","0","2","Gerard","26.10.1996"
-"189","29","BRA","POR","Evandro","Evandro","15","Porto","0","3","Ivan","23.08.1986"
-"173","18","POR","POR","Fernando","Fernando","72","Porto","0","2","Sergi","14.03.1997"
-"171","18","POR","POR","Filipe Ferreira","Filipe Ferreira","51","Porto","0","1","Jos   Aurelio","20.09.1996"
-"170","20","POR","POR","Francisco Ramos","Francisco Ramos","48","Porto","0","3","Luis","10.04.1995"
-"188","37","BRA","POR","Helton","Helton","1","Porto","0","1","Marc-Andr  ","18.05.1978"
-"170","25","MEX","POR","Herrera","Herrera","16","Porto","4","3","Thomas","19.04.1990"
-"170","23","FRA","POR","Imbula","Imbula","25","Porto","0","3","Karim","12.09.1992"
-"174","18","POR","POR","Jo o Cardoso","Jo o Cardoso","78","Porto","0","3","Lars","10.02.1997"
-"179","19","POR","POR","Jo o Costa","Jo o Costa","41","Porto","0","1","Sebastian","02.02.1996"
-"189","20","POR","POR","Jo o Gra  a","Jo o Gra  a","50","Porto","0","3","Julian","18.06.1995"
-"169","18","POR","POR","Jorge","Jorge","64","Porto","0","2","Giulio","02.04.1997"
-"175","27","MEX","POR","Lay n","Lay n","21","Porto","0","2","Marlon","25.06.1988"
-"175","18","POR","POR","Lu  s Mata","Lu  s Mata","97","Porto","0","4","Javier","06.07.1997"
-"192","27","BRA","POR","Maicon","Maicon","4","Porto","0","2","Roberto","14.09.1988"
-"174","28","ESP","POR","Marcano","Marcano","5","Porto","0","2","Tin","23.06.1987"
-"184","23","NED","POR","Martins Indi","Martins Indi","3","Porto","0","2","Kevin","08.02.1992"
-"181","31","URU","POR","Maxi Pereira","Maxi Pereira","2","Porto","3","2","Stefan","08.06.1984"
-"175","29","ITA","POR","Osvaldo","Osvaldo","10","Porto","0","4","Christoph","12.01.1986"
-"177","20","POR","POR","Podstawski","Podstawski","56","Porto","0","3","Dario","30.01.1995"
-"191","20","POR","POR","Rafa","Rafa","55","Porto","0","2","Bernd","09.05.1995"
-"181","19","POR","POR","R ben Macedo","R ben Macedo","77","Porto","0","4","Admir","09.03.1996"
-"187","18","POR","POR","R ben Neves","R ben Neves","6","Porto","0","3","Kyriakos","13.03.1997"
-"180","19","POR","POR","Rui Moreira","Rui Moreira","60","Porto","0","3","Seung-Woo","31.05.1996"
-"182","23","POR","POR","S  rgio Oliveira","S  rgio Oliveira","13","Porto","0","3","Jonathan","02.06.1992"
-"183","19","POR","POR","S  rgio Ribeiro","S  rgio Ribeiro","70","Porto","0","4","David","18.01.1996"
-"183","24","ESP","POR","Tello","Tello","11","Porto","5","4","Vladlen","11.08.1991"
-"191","30","POR","POR","Varela","Varela","7","Porto","3","4","Dami n","02.02.1985"
-"183","32","TUR","TUR","Bilal Kisa","Bilal Kisa","5","Galatasaray","0","3","Bernab  ","22.06.1983"
-"181","30","TUR","TUR","Burak Ylmaz","Burak Ylmaz","17","Galatasaray","10","4"," ngel","15.07.1985"
-"176","24","FRA","TUR","Carole","Carole","23","Galatasaray","0","2","Oscar","12.04.1991"
-"175","27","TUR","TUR","Cenk G  nen","Cenk G  nen","99","Galatasaray","0","1","Yannick","21.02.1988"
-"182","30","CMR","TUR","Chedjou","Chedjou","21","Galatasaray","2","2","Jes s","20.06.1985"
-"184","20","BEL","TUR","Denayer","Denayer","64","Galatasaray","0","2","Jos   Mar  a","28.06.1995"
-"180","24","TUR","TUR","Emre   olak","Emre   olak","52","Galatasaray","0","3","Diego","20.05.1991"
-"191","24","TUR","TUR","Eray  can","Eray  can","67","Galatasaray","0","1","Antoine","19.07.1991"
-"190","21","GER","TUR","G nter","G nter","28","Galatasaray","0","2","Mario","16.08.1994"
-"199","32","TUR","TUR","Hakan Balta","Hakan Balta","22","Galatasaray","1","2","Jackson","23.03.1983"
-"188","32","TUR","TUR","Hamit Altntop","Hamit Altntop","4","Galatasaray","2","3","Carlos","08.12.1982"
-"183","26","TUR","TUR","Jem Paul Karacan","Jem Paul Karacan","6","Galatasaray","0","3","Miguel  ngel","21.02.1989"
-"186","20","ESP","TUR","Jos   Rodr  guez","Jos   Rodr  guez","14","Galatasaray","0","3"," lvaro","16.12.1994"
-"183","29","URU","TUR","Muslera","Muslera","1","Galatasaray","0","1","Roberto","16.06.1986"
-"176","29","TUR","TUR","Olcan Adn","Olcan Adn","29","Galatasaray","0","3","Jan","30.09.1985"
-"194","30","GER","TUR","Podolski","Podolski","11","Galatasaray","11","4","Thomas","04.06.1985"
-"178","31","TUR","TUR","Sabri Saro lu","Sabri Saro lu","55","Galatasaray","2","2","Alberto","26.07.1984"
-"178","30","TUR","TUR","Sel  uk nan","Sel  uk nan","8","Galatasaray","0","3","Miguel","10.02.1985"
-"185","24","TUR","TUR","Semih Kaya","Semih Kaya","26","Galatasaray","0","2","Arona","24.02.1991"
-"174","21","TUR","TUR","Sinan G m s","Sinan G m s","18","Galatasaray","0","4","Stefan","15.01.1994"
-"180","31","NED","TUR","Sneijder","Sneijder","10","Galatasaray","15","3","Guilherme","09.06.1984"
-"188","24","TUR","TUR","Tark   amdal","Tark   amdal","38","Galatasaray","0","2","Gonzalo","24.03.1991"
-"180","32","TUR","TUR","Umut Bulut","Umut Bulut","9","Galatasaray","4","4","Fernando","15.03.1983"
-"182","28","TUR","TUR","Yasin   ztekin","Yasin   ztekin","7","Galatasaray","0","3","Luciano","19.03.1987"
-"185","30","BRA","ESP","Adriano","Adriano","21","Barcelona","1","2","Samuel","26.10.1984"
-"186","21","MKD","ESP","Babunski","David Babunski","29","Barcelona","0","3","Elio","01.03.1994"
-"176","24","ESP","ESP","Bartra","Bartra","15","Barcelona","0","2","Lorenzo","15.01.1991"
-"175","32","CHI","ESP","Bravo","Bravo","13","Barcelona","0","1","Daniele","13.04.1983"
-"180","27","ESP","ESP","Busquets","Busquets","5","Barcelona","4","3","Morgan","16.07.1988"
-"178","21","ESP","ESP","C mara","C mara","27","Barcelona","0","3","Lorenzo","13.02.1994"
-"180","32","BRA","ESP","Dani Alves","Dani Alves","6","Barcelona","7","2","Lucas","06.05.1983"
-"184","25","BRA","ESP","Douglas","Douglas","2","Barcelona","0","2","Christian","06.08.1990"
-"189","19","ESP","ESP","Grimaldo","Grimaldo","30","Barcelona","0","2","Edin","20.09.1995"
-"180","20","ESP","ESP","Gumbau","Gumbau","28","Barcelona","0","3","Iago","18.12.1994"
-"186","31","ESP","ESP","Iniesta","Iniesta","8","Barcelona","10","3","Alessandro","11.05.1984"
-"178","26","ESP","ESP","Jordi Alba","Jordi Alba","18","Barcelona","2","2","Juan Manuel","21.03.1989"
-"185","31","ARG","ESP","Mascherano","Mascherano","14","Barcelona","0","2","Seydou","08.06.1984"
-"180","26","ESP","ESP","Masip","Masip","25","Barcelona","0","1","Kostas","03.01.1989"
-"186","31","FRA","ESP","Mathieu","Mathieu","24","Barcelona","0","2","Riccardo","29.10.1983"
-"183","28","ARG","ESP","Messi","Messi","10","Barcelona","77","4","Radja","24.06.1987"
-"183","20","ESP","ESP","Munir El Haddadi","Munir El Haddadi","17","Barcelona","0","4","Miralem","01.09.1995"
-"186","23","BRA","ESP","Neymar","Neymar","11","Barcelona","14","4","Antonio","05.02.1992"
-"173","28","ESP","ESP","Piqu  ","Piqu  ","3","Barcelona","9","2","Mohamed","02.02.1987"
-"176","22","ESP","ESP","Rafinha","Rafinha","12","Barcelona","0","3","Edoardo","12.02.1993"
-"179","27","CRO","ESP","Rakiti ","Rakiti ","4","Barcelona","2","3","Wojciech","10.03.1988"
-"185","20","ESP","ESP","Samper","Samper","26","Barcelona","0","3","Vasilis","20.01.1995"
-"184","20","ESP","ESP","Sandro Ram  rez","Sandro Ram  rez","19","Barcelona","1","4","Francesco","09.07.1995"
-"190","23","ESP","ESP","Sergi Roberto","Sergi Roberto","20","Barcelona","1","3","Marco","07.02.1992"
-"178","19","ESP","ESP","Su rez","Su rez","31","Barcelona","0","1","William","18.12.1995"
-"193","28","URU","ESP","Su rez","Su rez","9","Barcelona","13","4","Emil","24.01.1987"
-"172","23","GER","ESP","ter Stegen","ter Stegen","1","Barcelona","0","1","Andrea","30.04.1992"
-"173","29","BEL","ESP","Vermaelen","Vermaelen","23","Barcelona","1","2","Leonardo","14.11.1985"
-"179","23","BRA","GER","Andr   Ramalho","Andr   Ramalho","2","Leverkusen","0","2","Gianluigi","16.02.1992"
-"169","25","GER","GER","Bellarabi","Bellarabi","38","Leverkusen","3","3","Mart  n","08.04.1990"
-"183","26","GER","GER","Bender","L. Bender","8","Leverkusen","1","3","Giorgio","27.04.1989"
-"184","28","POL","GER","Boenisch","Boenisch","17","Leverkusen","0","2","Juan","01.02.1987"
-"184","19","GER","GER","Brandt","Brandt","19","Leverkusen","0","3","Paulo","02.05.1996"
-"186","25","ITA","GER","Donati","Donati","26","Leverkusen","1","2","Patrice","05.02.1990"
-"176","19","GER","GER","Frey","Frey","37","Leverkusen","0","3","Sami","24.03.1996"
-"180","21","TUR","GER","Hakan   alhano lu","Hakan   alhano lu","10","Leverkusen","6","3","Mario","08.02.1994"
-"190","27","MEX","GER","Hern ndez","Hern ndez","7","Leverkusen","9","4","Stephan","01.06.1988"
-"175","30","GER","GER","Hilbert","Hilbert","13","Leverkusen","0","2","Mario","16.10.1984"
-"182","19","CRO","GER","Jedvaj","Jedvaj","16","Leverkusen","0","2","Claudio","28.11.1995"
-"195","24","SVN","GER","Kampl","Kampl","44","Leverkusen","0","3"," lvaro","09.10.1990"
-"185","31","GER","GER","Kiessling","Kiessling","11","Leverkusen","7","4","Roberto","25.01.1984"
-"180","24","GER","GER","Kramer","Kramer","23","Leverkusen","0","3","Paul","19.02.1991"
-"179","31","CRO","GER","Krei ","Krei ","25","Leverkusen","0","1","Daniele","11.01.1984"
-"179","23","GER","GER","Leno","Leno","1","Leverkusen","0","1","Stefano","04.03.1992"
-"189","24","SUI","GER","Mehmedi","Mehmedi","14","Leverkusen","4","4","Simone","16.03.1991"
-"186","26","TUR","GER","  mer Toprak","  mer Toprak","21","Leverkusen","2","2","Mehdi","21.07.1989"
-"190","23","GRE","GER","Papadopoulos","Papadopoulos","5","Leverkusen","1","2","Bryan","23.02.1992"
-"192","21","KOR","GER","Ryu","Ryu","24","Leverkusen","0","4","Ljubomir","17.12.1993"
-"182","19","GER","GER","Tah","Tah","4","Leverkusen","0","2","Nicol s","11.02.1996"
-"186","22","BRA","GER","Wendell","Wendell","18","Leverkusen","0","2","Ra l","20.07.1993"
-"176","33","USA","GER","Yelldell","Yelldell","22","Leverkusen","0","1","Victor","01.10.1981"
-"177","21","UKR","GER","Yurchenko","Yurchenko","35","Leverkusen","0","3","Kostas","22.01.1994"
-"175","18","ESP","ESP","Ag ero","Ag ero","33","Atl  tico","0","4","Bilal","18.01.1997"
-"180","22","ESP","ESP","Barrag n","Barrag n","25","Atl  tico","0","1","Andreas","18.02.1993"
-"189","21","GHA","ESP","Benjam  n","Benjam  n","29","Atl  tico","0","3","N  lson","04.01.1994"
-"182","20","ESP","ESP","Ca ete","Ca ete","28","Atl  tico","0","2","Adel","22.04.1995"
-"180","20","ARG","ESP","Correa","Correa","16","Atl  tico","0","3","Enoch Kofi","09.03.1995"
-"186","17","ESP","ESP","Del Amo","Del Amo","35","Atl  tico","0","2","Erik","24.10.1997"
-"179","22","BEL","ESP","Ferreira-Carrasco","Ferreira-Carrasco","21","Atl  tico","1","4","Fredrik","04.09.1993"
-"187","30","BRA","ESP","Filipe Lu  s","Filipe Lu  s","3","Atl  tico","1","2","K ri","09.08.1985"
-"191","32","ESP","ESP","Gabi","Gabi","14","Atl  tico","0","3","Zlatan","10.07.1983"
-"184","30","ESP","ESP","G mez","G mez","18","Atl  tico","0","2","Rasmus","10.04.1985"
-"186","20","URU","ESP","Gim  nez","Gim  nez","24","Atl  tico","0","2","Jo Inge","20.01.1995"
-"188","29","URU","ESP","God  n","God  n","2","Atl  tico","3","2","Franz","16.02.1986"
-"178","24","FRA","ESP","Griezmann","Griezmann","7","Atl  tico","5","3","Felipe","21.03.1991"
-"186","18","ESP","ESP","Guille P  rez","Guille P  rez","41","Atl  tico","0","1","Pawe ","10.01.1997"
-"182","16","ESP","ESP","Hern ndez","Hern ndez","37","Atl  tico","0","2","Nikola","25.01.1999"
-"185","18","ESP","ESP","Jaime Almagro","Jaime Almagro","34","Atl  tico","0","3","Magnus","14.03.1997"
-"176","18","ESP","ESP","Juan Moreno","Juan Moreno","39","Atl  tico","0","3","Marko","11.05.1997"
-"186","30","ESP","ESP","Juanfran","Juanfran","20","Atl  tico","0","2","Pa","09.01.1985"
-"188","23","ESP","ESP","Koke","Koke","6","Atl  tico","3","3","Simon","08.01.1992"
-"175","19","FRA","ESP","Lucas Hern ndez","Lucas Hern ndez","19","Atl  tico","0","2","Oscar","14.02.1996"
-"185","28","COL","ESP","Mart  nez","Mart  nez","11","Atl  tico","13","4","Agon","03.10.1986"
-"173","19","ESP","ESP","Morales","Morales","38","Atl  tico","0","1","Guillermo","28.07.1996"
-"179","31","ESP","ESP","Moy ","Moy ","1","Atl  tico","0","1","Mahmut","02.04.1984"
-"192","18","ESP","ESP","Muguruza","Muguruza","40","Atl  tico","0","2","Petar","10.05.1997"
-"190","21","ESP","ESP","Nacho Monsalve","Nacho Monsalve","27","Atl  tico","0","2","Erdal","27.04.1994"
-"178","18","ESP","ESP","Nica Gomes","Nica Gomes","36","Atl  tico","0","3","Vladimir","07.07.1997"
-"186","19","ESP","ESP","Nu ez","Nu ez","30","Atl  tico","0","4","Markus","03.01.1996"
-"178","22","SVN","ESP","Oblak","Oblak","13","Atl  tico","0","1","Tobias","07.01.1993"
-"181","20","ESP","ESP","  liver Torres","  liver Torres","10","Atl  tico","0","3","Mattias","10.11.1994"
-"186","22","GHA","ESP","Partey","Partey","22","Atl  tico","0","3","Anton","13.06.1993"
-"187","18","ESP","ESP","Rentero","Rentero","42","Atl  tico","0","3","Andreas","24.03.1997"
-"187","18","ESP","ESP","San Rom n","San Rom n","43","Atl  tico","0","1","Johan","14.07.1997"
-"193","20","SEN","ESP","San  ","San  ","31","Atl  tico","0","3","Yoshimar","21.06.1995"
-"193","20","ESP","ESP","Sa l     guez","Sa l     guez","17","Atl  tico","0","3","Arijan","21.11.1994"
-"188","24","MNE","ESP","Savi ","Savi ","15","Atl  tico","0","2","Domagoj","08.01.1991"
-"179","29","ITA","ESP","Siqueira","Siqueira","4","Atl  tico","0","2","Filip","28.04.1986"
-"167","18","ESP","ESP","Talavera","Talavera","44","Atl  tico","0","2","Endri","15.07.1997"
-"186","34","POR","ESP","Tiago","Tiago","5","Atl  tico","4","3","Ante","02.05.1981"
-"172","31","ESP","ESP","Torres","Torres","9","Atl  tico","18","4","Junior","20.03.1984"
-"172","21","ARG","ESP","Vietto","Vietto","23","Atl  tico","0","4","Amer","05.12.1993"
-"189","21","ESP","ESP","Villa","Villa","32","Atl  tico","0","4"," ngelo","16.09.1994"
-"177","21","CHN","ESP","Xu Xin","Xu Xin","26","Atl  tico","0","3","Armin","19.04.1994"
-"178","19","ITA","ITA","Capradossi","Capradossi","95","Roma","0","2","Antonijo","11.03.1996"
-"180","17","ITA","ITA","Crisanto","Crisanto","98","Roma","0","1","Alexandru","20.04.1998"
-"178","32","ITA","ITA","De Rossi","De Rossi","16","Roma","4","3","Marko","24.07.1983"
-"171","38","ITA","ITA","De Sanctis","De Sanctis","26","Roma","0","1","Mario","26.03.1977"
-"180","18","ITA","ITA","Di Livio","Di Livio","52","Roma","0","3","Domagoj","11.01.1997"
-"183","22","FRA","ITA","Digne","Digne","3","Roma","1","2","Josip","20.07.1993"
-"186","18","ITA","ITA","D'Urso","D'Urso","53","Roma","0","3","Marko","26.07.1997"
-"184","29","BIH","ITA","D eko","D eko","9","Roma","7","4","Marko","17.03.1986"
-"182","25","ESP","ITA","Falqu  ","Falqu  ","14","Roma","0","3","Gordon","04.01.1990"
-"185","24","ITA","ITA","Florenzi","Florenzi","24","Roma","1","3","Leonardo","11.03.1991"
-"173","28","CIV","ITA","Gervinho","Gervinho","27","Roma","5","4","El Arabi Hilal","27.05.1987"
-"172","22","PAR","ITA","Iturbe","Iturbe","7","Roma","1","3","Damir","04.06.1993"
-"180","35","MLI","ITA","Keita","Keita","20","Roma","6","3","J  r  my","16.01.1980"
-"183","28","BRA","ITA","Leandro Cast n","Leandro Cast n","5","Roma","0","2","Aymen","05.11.1986"
-"186","34","BRA","ITA","Maicon","Maicon","13","Roma","5","2","Antonio","26.07.1981"
-"179","24","GRE","ITA","Manolas","Manolas","44","Roma","2","2","Rodrigo","14.06.1991"
-"175","17","ITA","ITA","Marchizza","Marchizza","91","Roma","0","2","Sofiane","26.03.1998"
-"185","27","BEL","ITA","Nainggolan","Nainggolan","4","Roma","0","3","Jos  ","04.05.1988"
-"173","25","BIH","ITA","Pjani ","Pjani ","15","Roma","6","3","Nacho","02.04.1990"
-"175","22","GER","ITA","R diger","R diger","2","Roma","0","2","Antonio","03.03.1993"
-"188","23","EGY","ITA","Salah","Salah","11","Roma","5","4","Shkodran","15.06.1992"
-"183","21","TUR","ITA","Salih U  an","Salih U  an","48","Roma","0","3"," lvaro","06.01.1994"
-"180","17","ITA","ITA","Soleri","Soleri","92","Roma","0","4","Lucas","19.10.1997"
-"177","25","POL","ITA","Szcz sny","Szcz sny","25","Roma","0","1","Daniel","18.04.1990"
-"190","30","GRE","ITA","Torosidis","Torosidis","35","Roma","2","2","Andr  s","10.06.1985"
-"181","38","ITA","ITA","Totti","Totti","10","Roma","17","4","Enzo","27.09.1976"
-"185","16","ITA","ITA","Tumminello","Tumminello","93","Roma","0","4","Pablo","06.11.1998"
-"180","26","FRA","ITA","Vainqueur","Vainqueur","21","Roma","0","3","Mathew","19.11.1988"
-"184","24","BRA","ITA","Alex Sandro","Alex Sandro","12","Juventus","0","2","Antonio","26.01.1991"
-"193","18","ITA","ITA","Audero","Audero","38","Juventus","0","1","Mikel","18.01.1997"
-"187","34","ITA","ITA","Barzagli","Barzagli","15","Juventus","0","2","H  ctor","08.05.1981"
-"174","28","ITA","ITA","Bonucci","Bonucci","19","Juventus","1","2","Joel","01.05.1987"
-"176","37","ITA","ITA","Buffon","Buffon","1","Juventus","0","1","Petr","28.01.1978"
-"183","28","URU","ITA","C ceres","C ceres","4","Juventus","0","2","Calum","07.04.1987"
-"191","31","ITA","ITA","Chiellini","Chiellini","3","Juventus","2","2","Francis","14.08.1984"
-"179","27","COL","ITA","Cuadrado","Cuadrado","16","Juventus","0","4","Mathieu","26.05.1988"
-"177","21","ARG","ITA","Dybala","Dybala","21","Juventus","0","4","Mathieu","15.11.1993"
-"191","34","FRA","ITA","Evra","Evra","33","Juventus","2","2","Kieran","15.05.1981"
-"187","30","BRA","ITA","Hernanes","Hernanes","11","Juventus","0","3","Olivier","29.05.1985"
-"185","28","GER","ITA","Khedira","Khedira","6","Juventus","1","3","Kaylen","04.04.1987"
-"187","22","FRA","ITA","Lemina","Lemina","18","Juventus","0","3","Ryan","01.09.1993"
-"178","31","SUI","ITA","Lichtsteiner","Lichtsteiner","26","Juventus","0","2","Deyan","16.01.1984"
-"183","29","CRO","ITA","Mand uki ","Mand uki ","17","Juventus","19","4","Alex","21.05.1986"
-"186","29","ITA","ITA","Marchisio","Marchisio","8","Juventus","2","3","Chiori","19.01.1986"
-"184","22","ESP","ITA","Morata","Morata","9","Juventus","7","4","Glen","23.10.1992"
-"178","26","BRA","ITA","Neto","Neto","25","Juventus","0","1","Laurent","19.07.1989"
-"179","24","ARG","ITA","Pereyra","Pereyra","37","Juventus","0","3","Matt","07.01.1991"
-"163","22","FRA","ITA","Pogba","Pogba","10","Juventus","1","3","Stephy","15.03.1993"
-"180","21","ITA","ITA","Rugani","Rugani","24","Juventus","0","2","Per","29.07.1994"
-"182","22","ITA","ITA","Sturaro","Sturaro","27","Juventus","0","3","Nacho","09.03.1993"
-"168","24","ITA","ITA","Zaza","Zaza","7","Juventus","0","4","Tafari","25.06.1991"
-"183","20","POR","POR","Alex Alfaiate","Alex Alfaiate","75","Benfica","0","2","Stefan","17.08.1995"
-"177","25","POR","POR","Andr   Almeida","Andr   Almeida","34","Benfica","0","2","David","10.09.1990"
-"178","19","POR","POR","Andr   Ferreira","Andr   Ferreira","86","Benfica","0","1","Alex","29.05.1996"
-"196","18","POR","POR","Buta","Buta","94","Benfica","0","4","Mesut","10.02.1997"
-"183","26","MAR","POR","Carcela-Gonz lez","Carcela-Gonz lez","39","Benfica","0","3","Aaron","01.07.1989"
-"178","20","ITA","POR","Cristante","Cristante","24","Benfica","0","3","Jeff","03.03.1995"
-"177","22","BRA","POR","Ederson","Ederson","1","Benfica","0","1","Tyrell","17.08.1993"
-"178","31","POR","POR","Eliseu","Eliseu","19","Benfica","5","2","Tom ","01.10.1983"
-"185","27","SRB","POR","Fejsa","Fejsa","5","Benfica","0","3","Theo","14.08.1988"
-"178","18","POR","POR","Francisco Ferreira","Francisco Ferreira","97","Benfica","0","2","Danny","26.03.1997"
-"192","27","ARG","POR","Gait n","Gait n","10","Benfica","3","3","Chris","23.02.1988"
-"180","18","POR","POR","Gilson Costa","Gilson Costa","55","Benfica","0","3","Jack","24.09.1996"
-"191","18","POR","POR","Gon  alo Guedes","Gon  alo Guedes","20","Benfica","0","4","Daley","29.11.1996"
-"180","18","POR","POR","Gon  alo Rodrigues","Gon  alo Rodrigues","68","Benfica","0","3","Michael","18.07.1997"
-"175","19","POR","POR","Hildeberto Pereira","Hildeberto Pereira","99","Benfica","0","4","Matteo","02.03.1996"
-"183","29","BRA","POR","Jardel","Jardel","33","Benfica","0","2","David","29.03.1986"
-"186","24","MEX","POR","Jim  nez","Jim  nez","9","Benfica","0","4","Memphis","05.05.1991"
-"198","18","POR","POR","Jo o Carvalho","Jo o Carvalho","90","Benfica","0","3","Marouane","09.03.1997"
-"178","18","POR","POR","Jo o Escoval","Jo o Escoval","65","Benfica","0","2","Sam","08.05.1997"
-"173","19","POR","POR","Jo o Lima","Jo o Lima","96","Benfica","0","2","Phil","23.06.1996"
-"186","19","POR","POR","Jo o Nunes","Jo o Nunes","63","Benfica","0","2","Jesse","19.11.1995"
-"183","21","POR","POR","Jo o Teixeira","Jo o Teixeira","40","Benfica","0","3","Anthony","06.02.1994"
-"180","31","BRA","POR","Jonas","Jonas","17","Benfica","8","4","Paddy","01.04.1984"
-"183","36","BRA","POR","J lio C  sar","J lio C  sar","12","Benfica","0","1","Andreas","03.09.1979"
-"177","21","SWE","POR","Lindel  f","Lindel  f","14","Benfica","0","2","Nick","17.07.1994"
-"178","26","ARG","POR","Lisandro L  pez","Lisandro L  pez","2","Benfica","0","2","Marcos","01.09.1989"
-"168","34","BRA","POR","Luis o","Luis o","4","Benfica","5","2","Sergio","13.02.1981"
-"176","20","POR","POR","Miguel Santos","Miguel Santos","87","Benfica","0","1","Wayne","21.10.1994"
-"185","27","GRE","POR","Mitroglou","Mitroglou","11","Benfica","14","4","Morgan","12.03.1988"
-"180","20","POR","POR","Nuno Santos","Nuno Santos","38","Benfica","0","4","Bastian","13.02.1995"
-"172","18","NED","POR","Ould-Chikh","Ould-Chikh","8","Benfica","0","4","Luke","28.07.1997"
-"182","37","POR","POR","Paulo Lopes","Paulo Lopes","13","Benfica","0","1","Chris","29.06.1978"
-"180","18","POR","POR","Pedro Rodrigues","Pedro Rodrigues","88","Benfica","0","3","Antonio","20.05.1997"
-"188","25","POR","POR","Pizzi","Pizzi","21","Benfica","0","4","Guillermo","06.10.1989"
-"182","20","POR","POR","Rebocho","Rebocho","60","Benfica","0","2","James","23.01.1995"
-"192","18","POR","POR","Renato Sanches","Renato Sanches","85","Benfica","0","3","Ashley","18.08.1997"
-"176","19","POR","POR","Ricardo Carvalho","Ricardo Carvalho","73","Benfica","0","2","M rcio","06.03.1996"
-"194","18","POR","POR","R ben Dias","R ben Dias","66","Benfica","0","2","Facundo","14.05.1997"
-"180","26","GRE","POR","Samaris","Samaris","7","Benfica","0","3","Olexandr","13.06.1989"
-"170","21","POR","POR","Sancidino Silva","Sancidino Silva","77","Benfica","0","4","Serhiy","05.03.1994"
-"181","21","POR","POR","Semedo","Semedo","50","Benfica","0","2","Anton","16.11.1993"
-"183","27","POR","POR","S  lvio","S  lvio","28","Benfica","0","2","Vasyl","28.09.1987"
-"187","26","MAR","POR","Taarabt","Taarabt","23","Benfica","0","4","Viktor","24.05.1989"
-"192","21","BRA","POR","Talisca","Talisca","30","Benfica","1","4","Serhiy","01.02.1994"
-"176","17","POR","POR","Tiago Dias","Tiago Dias","78","Benfica","0","4","Olexandr","04.05.1998"
-"183","19","BRA","POR","Victor Andrade","Victor Andrade","31","Benfica","0","3","Maksym","30.09.1995"
-"194","18","POR","POR","Yuri Ribeiro","Yuri Ribeiro","95","Benfica","0","2","Mykola","24.01.1997"
-"178","25","GHA","SWE","Adu","Adu","8","Malm  ","0","3","Ivan","14.09.1990"
-"173","18","SWE","SWE","Andersson","Andersson","14","Malm  ","0","3","Andriy","03.05.1997"
-"177","26","SWE","SWE","Andersson","Andersson","29","Malm  ","0","1","Yaroslav","25.10.1988"
-"173","32","ISL","SWE"," rnason"," rnason","21","Malm  ","0","2","Bohdan","13.10.1982"
-"173","27","SWE","SWE","Azinovic","Azinovic","27","Malm  ","0","1","Vyacheslav","31.01.1988"
-"164","29","SWE","SWE","Bengtsson","Bengtsson","17","Malm  ","0","2","Darijo","26.06.1986"
-"177","25","NOR","SWE","Berget","Berget","23","Malm  ","3","4","Taras","11.09.1990"
-"178","19","SWE","SWE","Brorsson","Brorsson","31","Malm  ","0","2","Marco","30.01.1996"
-"187","22","URU","SWE","Carvalho","Carvalho","25","Malm  ","0","2","  ver","18.09.1993"
-"169","21","SWE","SWE","Cibicki","Cibicki","15","Malm  ","0","3","David","09.01.1994"
-"188","29","SRB","SWE","Djurdji ","Djurdji ","28","Malm  ","1","4","Antonio","01.04.1986"
-"177","25","NOR","SWE","Eikrem","Eikrem","19","Malm  ","1","3","Sebasti n","08.08.1990"
-"191","17","SWE","SWE","Johansson","Johansson","30","Malm  ","0","1","Sergio","25.08.1998"
-"180","21","SWE","SWE","Konate","Konate","2","Malm  ","0","2","Kevin","25.04.1994"
-"186","22","SWE","SWE","Kroon","Kroon","7","Malm  ","1","3","Vicente","16.06.1993"
-"186","23","SWE","SWE","Lewicki","Lewicki","6","Malm  ","0","3","Ciro","14.07.1992"
-"184","25","SWE","SWE","Mehmeti","Mehmeti","11","Malm  ","1","4","Ga l","20.11.1989"
-"181","26","SWE","SWE","Molins","Molins","10","Malm  ","1","3","Timoth  e","26.09.1988"
-"173","27","SWE","SWE","  zen","  zen","24","Malm  ","0","2","Yevhen","01.09.1988"
-"194","20","SWE","SWE","Petrovi ","Petrovi ","18","Malm  ","0","3","Michael","15.09.1995"
-"190","19","SWE","SWE","Rakip","Rakip","5","Malm  ","0","3","Grzegorz","13.02.1996"
-"180","22","SRB","SWE","Rodi ","Rodi ","20","Malm  ","1","3","Fernando","07.09.1993"
-"180","32","SWE","SWE","Rosenberg","Rosenberg","9","Malm  ","14","4","Steven","27.09.1982"
-"182","26","SWE","SWE","Sana","Sana","22","Malm  ","0","4","Adil","11.07.1989"
-"181","16","SWE","SWE","Svanberg","Svanberg","32","Malm  ","0","3","Jos   Antonio","05.01.1999"
-"172","24","SWE","SWE","Tinnerholm","Tinnerholm","3","Malm  ","1","2","Sergio","26.02.1991"
-"165","20","NOR","SWE","Vindheim","Vindheim","26","Malm  ","0","2"," lvaro","04.08.1995"
-"187","34","SWE","SWE","Wiland","Wiland","1","Malm  ","0","1","David","24.01.1981"
-"174","25","PER","SWE","Yot n","Yot n","13","Malm  ","0","2","Beno  t","07.04.1990"
-"186","24","CRO","CRO","Ademi","Ademi","16","Dinamo Zagreb","2","3","Younes","29.05.1991"
-"175","25","CRO","CRO","Antoli ","Antoli ","8","Dinamo Zagreb","1","3","Valery","30.06.1990"
-"176","18","CRO","CRO","Benkovi ","Benkovi ","26","Dinamo Zagreb","0","2","Mykyta","13.07.1997"
-"176","18","ALB","CRO","  eki  i","  eki  i","17","Dinamo Zagreb","0","4","Georgiy","23.11.1996"
-"173","18","CRO","CRO"," ori "," ori ","24","Dinamo Zagreb","0","3","Vitaliy","14.04.1997"
-"182","32","POR","CRO","Eduardo","Eduardo","34","Dinamo Zagreb","0","1","Aleksandar","19.09.1982"
-"176","27","CHI","CRO","Fernandes","Fernandes","11","Dinamo Zagreb","4","4","Denys","10.04.1988"
-"172","18","BIH","CRO","Gojak","Gojak","14","Dinamo Zagreb","0","3","Derlis","13.02.1997"
-"190","28","POR","CRO","Gon  alo Santos","Gon  alo Santos","13","Dinamo Zagreb","0","3","Oleh","15.11.1986"
-"181","21","CHI","CRO","Henr  quez","Henr  quez","9","Dinamo Zagreb","2","4","Yevhen","13.04.1994"
-"169","20","BIH","CRO","Hod i ","Ar. Hod i ","15","Dinamo Zagreb","1","4","Niko","17.11.1994"
-"182","25","POR","CRO","Ivo Pinto","Ivo Pinto","6","Dinamo Zagreb","0","2","Artem","07.01.1990"
-"182","26","CRO","CRO","Je ina","Je ina","1","Dinamo Zagreb","0","1","Pavlo","05.06.1989"
-"172","25","ROU","CRO","Mel","Mel","77","Dinamo Zagreb","0","2","Yevhen","17.10.1989"
-"185","21","CRO","CRO","Mikuli ","Mikuli ","33","Dinamo Zagreb","0","1","Mykola","30.01.1994"
-"176","25","CRO","CRO","Musa","Musa","3","Dinamo Zagreb","0","3","Serhiy","06.07.1990"
-"170","29","POR","CRO","Paulo Machado","Paulo Machado","10","Dinamo Zagreb","1","3","Andrii","31.03.1986"
-"186","21","CRO","CRO","Pavii ","Pavii ","18","Dinamo Zagreb","0","3","Pavlo","09.03.1994"
-"195","26","CRO","CRO","Pivari ","Pivari ","19","Dinamo Zagreb","2","3","Radosav","30.01.1989"
-"180","20","CRO","CRO","Pjaca","Pjaca","20","Dinamo Zagreb","3","4","Serhiy","06.05.1995"
-"177","20","CRO","CRO","Rog","Rog","30","Dinamo Zagreb","2","3","Olexandr","19.07.1995"
-"190","30","CRO","CRO","Schildenfeld","Schildenfeld","23","Dinamo Zagreb","0","2","Olexandr","18.03.1985"
-"190","28","ARG","CRO","Sigali","Sigali","22","Dinamo Zagreb","0","2","Serhiy","29.05.1987"
-"178","27","ALG","CRO","Soudani","Soudani","2","Dinamo Zagreb","8","4","ukasz","25.11.1987"
-"194","25","CRO","CRO","ovi ","ovi ","4","Dinamo Zagreb","0","3","Domagoj","05.02.1990"
-"192","28","FRA","CRO","Taravel","Taravel","87","Dinamo Zagreb","1","2","Roman","17.04.1987"
-"173","26","TUN","ESP","Abdennour","Abdennour","23","Valencia","1","2","Andriy","06.08.1989"
-"183","26","BRA","ESP","Aderlan Santos","Aderlan Santos","4","Valencia","0","2","Jean-K  vin","09.04.1989"
-"175","22","POR","ESP","Andr   Gomes","Andr   Gomes","21","Valencia","1","3","Serge","30.07.1993"
-"174","28","ESP","ESP","Barrag n","Barrag n","19","Valencia","0","2","Edinson","12.06.1987"
-"191","19","BRA","ESP","Danilo Barbosa","Danilo Barbosa","12","Valencia","0","3","R  my","28.02.1996"
-"187","21","ARG","ESP","De Paul","De Paul","20","Valencia","0","4"," ngel","24.05.1994"
-"201","25","ALG","ESP","Feghouli","Feghouli","8","Valencia","4","3","Nicolas","26.12.1989"
-"170","17","ESP","ESP","Fran Villalba","Fran Villalba","30","Valencia","0","3","Zlatan","11.05.1998"
-"185","20","ESP","ESP","Gay ","Gay ","14","Valencia","0","2","Presnel","25.05.1995"
-"185","20","ESP","ESP","Gil","Gil","33","Valencia","0","3","Layvin","09.09.1995"
-"187","24","ESP","ESP","Jaume Dom  nech","Jaume Dom  nech","24","Valencia","0","1","Ezequiel","05.11.1990"
-"172","31","ESP","ESP","Javi Fuego","Javi Fuego","18","Valencia","0","3","Blaise","04.01.1984"
-"179","21","POR","ESP","Jo o Cancelo","Jo o Cancelo","2","Valencia","1","2","Christopher","27.05.1994"
-"176","17","ESP","ESP","Latorre","Latorre","36","Valencia","0","2","Hervin","21.11.1997"
-"197","23","GER","ESP","Mustafi","Mustafi","5","Valencia","0","2","Javier","17.04.1992"
-"185","30","ESP","ESP","Negredo","Negredo","7","Valencia","7","4","Adrien","20.08.1985"
-"185","26","ESP","ESP","Orb n","Orb n","6","Valencia","0","2","Salvatore","03.02.1989"
-"182","22","ESP","ESP","Paco Alc cer","Paco Alc cer","9","Valencia","0","4","Benjamin","30.08.1993"
-"180","26","ESP","ESP","Parejo","Parejo","10","Valencia","1","3","Kevin","16.04.1989"
-"176","18","ESP","ESP","Pascual","Pascual","34","Valencia","0","4","Gregory","18.11.1996"
-"167","29","ARG","ESP","P  rez","P  rez","15","Valencia","0","3","Marco","22.02.1986"
-"193","26","ARG","ESP","Piatti","Piatti","11","Valencia","0","4","Roel","31.03.1989"
-"176","24","ESP","ESP","Rodrigo","Rodrigo","17","Valencia","3","4","Andreas","06.03.1991"
-"193","21","POR","ESP","R ben Vezo","R ben Vezo","3","Valencia","0","2","Mahmoud","25.04.1994"
-"191","23","AUS","ESP","Ryan","Ryan","25","Valencia","0","1"," lvaro","08.04.1992"
-"188","19","ESP","ESP","Santi Mina","Santi Mina","22","Valencia","0","4","Josip","07.12.1995"
-"185","19","ESP","ESP","Sivera","Sivera","35","Valencia","0","1","Nico","11.08.1996"
-"184","20","ESP","ESP","Tropi","Tropi","28","Valencia","0","3","Andr  ","12.05.1995"
-"187","27","ESP","ESP","Yoel","Yoel","13","Valencia","0","1","Thorgan","28.08.1988"
-"177","26","CHI","ENG","Alexis S nchez","Alexis S nchez","17","Arsenal","7","4","Christofer","19.12.1988"
-"176","33","ESP","ENG","Arteta","Arteta","8","Arsenal","3","3","Patrick","26.03.1982"
-"184","20","ESP","ENG","Beller  n","Beller  n","24","Arsenal","0","2","Branimir","19.03.1995"
-"188","23","CRC","ENG","Campbell","Campbell","28","Arsenal","1","4","Tony","26.06.1992"
-"180","33","CZE","ENG"," ech"," ech","33","Arsenal","0","1","Fabian","20.05.1982"
-"186","20","ENG","ENG","Chambers","Chambers","21","Arsenal","0","2","Martin","20.01.1995"
-"194","24","FRA","ENG","Coquelin","Coquelin","34","Arsenal","0","3","Julian","13.05.1991"
-"183","30","FRA","ENG","Debuchy","Debuchy","2","Arsenal","0","2","Tsiy-William","28.07.1985"
-"182","31","FRA","ENG","Flamini","Flamini","20","Arsenal","1","3","H vard","07.03.1984"
-"173","24","BRA","ENG","Gabriel","Gabriel","5","Arsenal","0","2","Marlon","26.11.1990"
-"172","25","ENG","ENG","Gibbs","Gibbs","3","Arsenal","2","2","Marvin","26.09.1989"
-"183","28","FRA","ENG","Giroud","Giroud","12","Arsenal","6","4","Nico","30.09.1986"
-"175","17","ENG","ENG","Hinds","Hinds","42","Arsenal","0","4","Tobias","28.01.1998"
-"177","18","ENG","ENG","Huddart","Huddart","43","Arsenal","0","1","Yann","06.03.1997"
-"169","20","BUL","ENG","Iliev","Iliev","44","Arsenal","0","1","Lars","25.02.1995"
-"187","19","ENG","ENG","Iwobi","Iwobi","45","Arsenal","0","4","Martin","03.05.1996"
-"188","17","ENG","ENG","Johnson","Johnson","46","Arsenal","0","2","Ibrahima","05.10.1997"
-"192","19","FIN","ENG","Kamara","Kamara","47","Arsenal","0","3","Oscar","28.10.1995"
-"180","30","FRA","ENG","Koscielny","Koscielny","6","Arsenal","2","2","Granit","10.09.1985"
-"183","21","ENG","ENG","Macey","Macey","49","Arsenal","0","1","Aleksandr","09.09.1994"
-"183","17","ENG","ENG","Mavididi","Mavididi","50","Arsenal","0","4","Dmitri","31.05.1998"
-"189","30","GER","ENG","Mertesacker","Mertesacker","4","Arsenal","2","2","Domenico","29.09.1984"
-"172","29","ESP","ENG","Monreal","Monreal","18","Arsenal","0","2","Pavel","26.02.1986"
-"165","18","ENG","ENG","Moore","Moore","51","Arsenal","0","2","Artem","05.07.1997"
-"190","18","ENG","ENG","O'Connor","O'Connor","52","Arsenal","0","2","Aleksei","23.01.1997"
-"188","27","COL","ENG","Ospina","Ospina","13","Arsenal","0","1","Viktor","31.08.1988"
-"176","22","ENG","ENG","Oxlade-Chamberlain","Oxlade-Chamberlain","15","Arsenal","3","4","Ezequiel","15.08.1993"
-"189","26","GER","ENG","  zil","  zil","11","Arsenal","5","3","Ivan","15.10.1988"
-"181","24","WAL","ENG","Ramsey","Ramsey","16","Arsenal","11","3","Andrei","26.12.1990"
-"188","17","FRA","ENG","Reine-Ad  la  de","Reine-Ad  la  de","54","Arsenal","0","3","Maksim","17.01.1998"
-"185","18","ENG","ENG","Robinson","Robinson","55","Arsenal","0","3","Mikhail","16.09.1997"
-"174","34","CZE","ENG","Rosick ","Rosick ","7","Arsenal","12","3","Pavel","04.10.1980"
-"194","30","ESP","ENG","Santi Cazorla","Santi Cazorla","19","Arsenal","0","3","Ilya","13.12.1984"
-"179","26","ENG","ENG","Walcott","Walcott","14","Arsenal","13","4","Yuri","16.03.1989"
-"182","24","ENG","ENG","Welbeck","Welbeck","23","Arsenal","7","4","Nicolas","26.11.1990"
-"177","17","ENG","ENG","Willock","Willock","59","Arsenal","0","4","Vyacheslav","31.01.1998"
-"183","23","ENG","ENG","Wilshere","Wilshere","10","Arsenal","4","3","Evgeni","01.01.1992"
-"186","26","ESP","ENG","Ander Herrera","Ander Herrera","21","Man. United","1","3","Mikhail","14.08.1989"
-"177","25","NED","ENG","Blind","Blind","17","Man. United","0","3","Pavel","09.03.1990"
-"186","34","ENG","ENG","Carrick","Carrick","16","Man. United","4","3","Igor","28.07.1981"
-"174","25","ITA","ENG","Darmian","Darmian","36","Man. United","0","2","Pavel","02.12.1989"
-"170","24","ESP","ENG","de Gea","De Gea","1","Man. United","0","1","Stepan","07.11.1990"
-"186","21","NED","ENG","Depay","Depay","7","Man. United","4","4","Maksim","13.02.1994"
-"180","27","BEL","ENG","Fellaini","Fellaini","27","Man. United","1","3","Aleksandr","22.11.1987"
-"183","22","ENG","ENG","Johnstone","Johnstone","50","Man. United","0","1","Oleg","25.03.1993"
-"180","23","ENG","ENG","Jones","Jones","4","Man. United","2","2","Igor","21.02.1992"
-"190","27","ESP","ENG","Juan Mata","Juan Mata","8","Man. United","6","3","Konstantin","28.04.1988"
-"172","22","ENG","ENG","Lingard","Lingard","35","Man. United","0","3","Aleksandr","15.12.1992"
-"181","19","FRA","ENG","Martial","Martial","9","Man. United","1","4","Axel","05.12.1995"
-"186","20","NIR","ENG","McNair","McNair","33","Man. United","0","2","Danila","27.04.1995"
-"178","19","BEL","ENG","Pereira","Pereira","44","Man. United","0","3","Artur","01.01.1996"
-"175","21","ENG","ENG","Powell","Powell","22","Man. United","0","3","Ilya","23.03.1994"
-"183","25","ARG","ENG","Rojo","Rojo","5","Man. United","0","2","Ola","20.03.1990"
-"178","28","ARG","ENG","Romero","Romero","20","Man. United","0","1","C  sar","22.02.1987"
-"187","29","ENG","ENG","Rooney","Rooney","10","Man. United","33","4","Abdul Rahman","24.10.1985"
-"194","25","FRA","ENG","Schneiderlin","Schneiderlin","28","Man. United","0","3","Asmir","08.11.1989"
-"183","31","GER","ENG","Schweinsteiger","Schweinsteiger","31","Man. United","13","3","Jamal","01.08.1984"
-"176","20","ENG","ENG","Shaw","Shaw","23","Man. United","0","2","Gary","12.07.1995"
-"192","25","ENG","ENG","Smalling","Smalling","12","Man. United","1","2","Bradley","22.11.1989"
-"180","30","ECU","ENG","Valencia","A. Valencia","25","Man. United","6","3","Thibaut","04.08.1985"
-"179","22","URU","ENG","Varela","Varela","30","Man. United","0","2","Cesc","24.03.1993"
-"187","19","ENG","ENG","Wilson","Wilson","19","Man. United","0","4","Radamel","01.12.1995"
-"176","30","ENG","ENG","Young","Young","18","Man. United","1","3","Eden","09.07.1985"
-"189","25","BRA","UKR","Alex Teixeira","Alex Teixeira","29","Shakhtar Donetsk","9","3","Branislav","06.01.1990"
-"180","29","BRA","UKR","Azevedo","Azevedo","66","Shakhtar Donetsk","0","2","Ruben","05.02.1986"
-"187","23","BRA","UKR","Bernard","Bernard","10","Shakhtar Donetsk","0","3","Nemanja","08.09.1992"
-"188","26","BRA","UKR","Dentinho","Dentinho","9","Shakhtar Donetsk","0","3","John Obi","19.01.1989"
-"187","32","CRO","UKR","Eduardo","Eduardo","22","Shakhtar Donetsk","12","4","Lo  c","25.02.1983"
-"185","24","ARG","UKR","Ferreyra","Ferreyra","19","Shakhtar Donetsk","0","4","John","14.03.1991"
-"200","22","BRA","UKR","Fred","Fred","8","Shakhtar Donetsk","0","3","Bertrand","05.03.1993"
-"177","28","UKR","UKR","Gladkiy","Gladkiy","21","Shakhtar Donetsk","7","4","Kurt","24.08.1987"
-"190","21","UKR","UKR","Gryn","Gryn","24","Shakhtar Donetsk","0","4","Tosin","06.06.1994"
-"176","25","BRA","UKR","Ismaily","Ismaily","31","Shakhtar Donetsk","1","2","Sergio","11.01.1990"
-"184","27","UKR","UKR","Kanibolotskiy","Kanibolotskiy","32","Shakhtar Donetsk","0","1","Thierry","16.05.1988"
-"182","30","UKR","UKR","Kobin","Kobin","14","Shakhtar Donetsk","0","3","Brandon","24.05.1985"
-"176","19","UKR","UKR","Kovalenko","Kovalenko","74","Shakhtar Donetsk","0","3","Denzil","14.02.1996"
-"173","24","UKR","UKR","Kryvtsov","Kryvtsov","38","Shakhtar Donetsk","0","2","Wilfried","15.03.1991"
-"178","32","UKR","UKR","Kucher","Kucher","5","Shakhtar Donetsk","0","2","Kean","22.10.1982"
-"190","22","UKR","UKR","Malyshev","Malyshev","17","Shakhtar Donetsk","0","3","Sinan","24.12.1992"
-"183","27","BRA","UKR","Marlos","Marlos","11","Shakhtar Donetsk","2","3","Willy","07.06.1988"
-"181","19","UKR","UKR","Matviyenko","Matviyenko","25","Shakhtar Donetsk","0","2","Ga l","02.05.1996"
-"179","23","UKR","UKR","Ordets","Ordets","18","Shakhtar Donetsk","0","2","Kevin","08.07.1992"
-"183","31","UKR","UKR","Pyatov","Pyatov","30","Shakhtar Donetsk","0","1","Fabian","28.06.1984"
-"178","26","UKR","UKR","Rakitskiy","Rakitskiy","44","Shakhtar Donetsk","1","2","Mart  n","03.08.1989"
-"196","20","UKR","UKR","Sarnavskiy","Sarnavskiy","23","Shakhtar Donetsk","0","1","George","29.01.1995"
-"196","36","UKR","UKR","Shevchuk","Shevchuk","13","Shakhtar Donetsk","0","2","George","13.05.1979"
-"188","33","CRO","UKR","Srna","Srna","33","Shakhtar Donetsk","5","2","Angus","01.05.1982"
-"199","26","UKR","UKR","Stepanenko","Stepanenko","6","Shakhtar Donetsk","2","3","Joe","08.08.1989"
-"188","27","BRA","UKR","Taison","Taison","28","Shakhtar Donetsk","1","3","Aleksandar","13.01.1988"
-"175","23","BRA","UKR","Wellington Nem","Wellington Nem","7","Shakhtar Donetsk","0","3","Vincent","06.02.1992"
-"177","29","ITA","ESP","Andreolli","Andreolli","17","Sevilla","0","2","Ian","10.06.1986"
-"170","27","ARG","ESP","Banega","Banega","19","Sevilla","1","3","Pablo","20.06.1988"
-"188","19","ESP","ESP","Carlos Fern ndez","Carlos Fern ndez","28","Sevilla","0","4","Eliaquim","22.05.1996"
-"192","18","ESP","ESP","Carmona","Carmona","26","Sevilla","0","2","Samir","11.01.1997"
-"193","28","ESP","ESP","Coke","Coke","23","Sevilla","0","2","Aaron","26.04.1987"
-"188","19","ESP","ESP","Cot n","Cot n","27","Sevilla","0","3","Nicol s","19.05.1996"
-"180","22","URU","ESP","Crist  foro","Crist  foro","14","Sevilla","0","3","Ellis","23.08.1993"
-"167","27","POR","ESP","Daniel Carri  o","Daniel Carri  o","6","Sevilla","0","3","Bacary","04.08.1988"
-"180","26","ESP","ESP","Escudero","Escudero","18","Sevilla","0","2","David","02.09.1989"
-"184","28","FRA","ESP","Gameiro","Gameiro","9","Sevilla","1","4","Ashley","09.05.1987"
-"187","27","ESP","ESP","Iborra","Iborra","8","Sevilla","0","3","Raheem","16.01.1988"
-"177","25","ITA","ESP","Immobile","Immobile","11","Sevilla","4","4","Samuel","20.02.1990"
-"173","20","ESP","ESP","Jos   Matos","Jos   Matos","29","Sevilla","0","2","Yaya","06.05.1995"
-"190","19","ESP","ESP","Juan Mu oz","Juan Mu oz","30","Sevilla","0","4","Marcus","12.11.1995"
-"172","18","ESP","ESP","Juan Soriano","Juan Soriano","33","Sevilla","0","1","Pablo","23.08.1997"
-"182","24","FRA","ESP","Kakuta","Kakuta","12","Sevilla","0","3","Igor","21.06.1991"
-"182","23","FRA","ESP","Kolodziejczak","Kolodziejczak","5","Sevilla","0","2","Aleksei","01.10.1991"
-"185","25","UKR","ESP","Konoplyanka","Konoplyanka","22","Sevilla","1","3","Vasili","29.09.1989"
-"186","32","DEN","ESP","Krohn-Dehli","Krohn-Dehli","7","Sevilla","0","3","Aleksandrs","06.06.1983"
-"176","25","POL","ESP","Krychowiak","Krychowiak","4","Sevilla","0","3","Sergei","29.01.1990"
-"180","30","ESP","ESP","Llorente","Llorente","24","Sevilla","3","4","Nikita","26.02.1985"
-"174","23","ESP","ESP","Luismi","Luismi","16","Sevilla","0","3","Seydou","05.05.1992"
-"184","29","BRA","ESP","Mariano Ferreira","Mariano Ferreira","25","Sevilla","0","2","Alan","23.06.1986"
-"184","26","FRA","ESP","N'Zonzi","N'Zonzi","15","Sevilla","0","3","Roman","15.12.1988"
-"176","29","FRA","ESP","Rami","Rami","3","Sevilla","2","2","Aleksandr","27.12.1985"
-"185","32","ESP","ESP","Reyes","Reyes","10","Sevilla","3","3","Sergei","01.09.1983"
-"177","22","ESP","ESP","Rico","Rico","1","Sevilla","0","1","Aleksandr","01.09.1993"
-"196","17","ESP","ESP","Rodriguez","Rodriguez","35","Sevilla","0","1","Georgi","18.02.1998"
-"196","22","ESP","ESP","Soria","Soria","31","Sevilla","0","1","Ahmed","04.04.1993"
-"170","29","FRA","ESP","Tr  moulinas","Tr  moulinas","2","Sevilla","0","2","Kirill","28.12.1985"
-"187","25","ESP","ESP","Vitolo","Vitolo","20","Sevilla","0","3","Bibras","02.11.1989"
-"190","28","POR","UKR","Antunes","Antunes","5","Dynamo Kyiv","0","2","Kirill","01.04.1987"
-"193","25","MAR","UKR","Belhanda","Belhanda","90","Dynamo Kyiv","2","3","Ilya","25.02.1990"
-"187","21","UKR","UKR","Boldenkov","Boldenkov","44","Dynamo Kyiv","0","2","Georgi","08.09.1994"
-"175","20","UKR","UKR","Burda","Burda","26","Dynamo Kyiv","0","2","Zoran","24.03.1995"
-"183","21","UKR","UKR","Bushchan","Bushchan","52","Dynamo Kyiv","0","1","Viktor","31.05.1994"
-"176","22","UKR","UKR","Buyalskiy","Buyalskiy","29","Dynamo Kyiv","1","3","Pontus","06.01.1993"
-"170","28","BRA","UKR","Danilo Silva","Danilo Silva","2","Dynamo Kyiv","0","2","Gal","24.11.1986"
-"170","24","AUT","UKR","Dragovic","Dragovic","6","Dynamo Kyiv","0","2","Suhail","06.03.1991"
-"191","25","UKR","UKR","Garmash","Garmash","19","Dynamo Kyiv","1","3","Shlomy","19.04.1990"
-"176","21","PAR","UKR","Gonz lez","Gonz lez","25","Dynamo Kyiv","3","3","Eden","20.03.1994"
-"185","32","UKR","UKR","Gusev","Gusev","20","Dynamo Kyiv","9","3","Tal","25.04.1983"
-"190","28","BRA","UKR","J nior Moraes","J nior Moraes","11","Dynamo Kyiv","0","4","Tal","04.04.1987"
-"189","28","UKR","UKR","Khacheridi","Khacheridi","34","Dynamo Kyiv","0","2","Omri","28.07.1987"
-"174","31","CRO","UKR","Kranjar","Kranjar","21","Dynamo Kyiv","2","3","Eliazer","13.08.1984"
-"185","26","UKR","UKR","Kravets","Kravets","22","Dynamo Kyiv","0","4","Daniel","03.06.1989"
-"189","19","UKR","UKR","Lukyanchuk","Lukyanchuk","42","Dynamo Kyiv","0","2","Dan","19.05.1996"
-"179","24","UKR","UKR","Makarenko","Makarenko","27","Dynamo Kyiv","0","2","Sean","21.05.1991"
-"179","29","POR","UKR","Miguel Veloso","Miguel Veloso","4","Dynamo Kyiv","3","3","Sahar","11.05.1986"
-"180","27","UKR","UKR","Morozyuk","Morozyuk","9","Dynamo Kyiv","0","2","Nosakhare","17.01.1988"
-"186","22","UKR","UKR","Myakushko","Myakushko","88","Dynamo Kyiv","0","3","Barak","15.04.1993"
-"189","19","UKR","UKR","Nesterenko","Nesterenko","45","Dynamo Kyiv","0","2","Daniel","14.05.1996"
-"184","19","UKR","UKR","Orikhovskiy","Orikhovskiy","48","Dynamo Kyiv","0","3","Dor","13.05.1996"
-"170","26","SRB","UKR","Petrovi ","Petrovi ","8","Dynamo Kyiv","1","3","Nikola","08.03.1989"
-"176","25","UKR","UKR","Rybalka","Rybalka","17","Dynamo Kyiv","0","3","Haviv","01.04.1990"
-"175","28","UKR","UKR","Rybka","Rybka","23","Dynamo Kyiv","0","1","Dor","10.04.1987"
-"185","40","UKR","UKR","Shovkovskiy","Shovkovskiy","1","Dynamo Kyiv","0","1","Dejan","02.01.1975"
-"189","24","UKR","UKR","Sydorchuk","Sydorchuk","16","Dynamo Kyiv","0","3","Predrag","02.05.1991"
-"178","24","POL","UKR","Teodorczyk","Teodorczyk","91","Dynamo Kyiv","0","4","Oz","03.06.1991"
-"171","26","CRO","UKR","Vida","Vida","24","Dynamo Kyiv","2","2","Avraham","29.04.1989"
-"192","19","UKR","UKR","Yaremchuk","Yaremchuk","41","Dynamo Kyiv","0","4","Yuval","27.11.1995"
-"187","25","UKR","UKR","Yarmolenko","Yarmolenko","10","Dynamo Kyiv","3","4","Eytan","23.10.1989"
-"180","18","FRA","FRA","Augustin","Augustin","29","Paris","0","4","Gil","16.06.1997"
-"175","22","CIV","FRA","Aurier","Aurier","19","Paris","0","2","Eran","24.12.1992"
-"186","28","URU","FRA","Cavani","Cavani","9","Paris","16","4","Yoav","14.02.1987"
-"182","28","BRA","FRA","David Luiz","David Luiz","32","Paris","5","2","Maximilian","22.04.1987"
-"174","19","FRA","FRA","Descamps","Descamps","40","Paris","0","1","Carlos","25.06.1996"
-"180","27","ARG","FRA","Di Mar  a","Di Mar  a","11","Paris","9","3","Diego","14.02.1988"
-"168","35","FRA","FRA","Douchez","Douchez","1","Paris","0","1","Nicklas","22.04.1980"
-"174","33","SWE","FRA","Ibrahimovi ","Ibrahimovi ","10","Paris","44","4","Daniel","03.10.1981"
-"182","20","FRA","FRA","Kimpembe","Kimpembe","3","Paris","0","2","Koen","13.08.1995"
-"178","23","FRA","FRA","Kurzawa","Kurzawa","20","Paris","2","2","Bas","04.09.1992"
-"184","30","ARG","FRA","Lavezzi","Lavezzi","22","Paris","9","4","Julian","03.05.1985"
-"178","23","BRA","FRA","Lucas","Lucas","7","Paris","0","3","Max","13.08.1992"
-"194","21","BRA","FRA","Marquinhos","Marquinhos","5","Paris","3","2","Josuha","14.05.1994"
-"190","28","FRA","FRA","Matuidi","Matuidi","14","Paris","4","3","Sebastian","09.04.1987"
-"182","34","BRA","FRA","Maxwell","Maxwell","17","Paris","0","2","Timm","27.08.1981"
-"197","17","FRA","FRA","Nkunku","Nkunku","33","Paris","0","3","Robin","14.11.1997"
-"188","20","FRA","FRA","Ongenda","Ongenda","35","Paris","0","4","Max","24.06.1995"
-"196","26","ARG","FRA","Pastore","Pastore","27","Paris","4","3","Francisco","20.06.1989"
-"183","20","FRA","FRA","Rabiot","Rabiot","25","Paris","0","3","Ricardo","03.04.1995"
-"192","28","ITA","FRA","Sirigu","Sirigu","30","Paris","0","1","Marcel","12.01.1987"
-"187","25","FRA","FRA","Stambouli","Stambouli","4","Paris","0","3","Andr  ","13.08.1990"
-"179","33","ITA","FRA","Thiago Motta","Thiago Motta","8","Paris","5","3","Paul","28.08.1982"
-"193","30","BRA","FRA","Thiago Silva","Thiago Silva","2","Paris","4","2","Moritz","22.09.1984"
-"190","25","GER","FRA","Trapp","Trapp","16","Paris","0","1","Sebastian","08.07.1990"
-"180","27","NED","FRA","van der Wiel","Van der Wiel","23","Paris","1","2","Christian","03.02.1988"
-"187","22","ITA","FRA","Verratti","Verratti","6","Paris","1","3","Ilya","05.11.1992"
-"198","33","NED","GER","Brouwers","Brouwers","4","M  nchengladbach","0","2","Dmitri","28.11.1981"
-"191","19","DEN","GER","Christensen","Christensen","3","M  nchengladbach","0","2","Dmitri","10.04.1996"
-"180","19","GER","GER","Dahoud","Dahoud","8","M  nchengladbach","0","3","Dmitri","01.01.1996"
-"182","26","ESP","GER","Dom  nguez"," lvaro Dom  nguez","15","M  nchengladbach","0","2","Pavel","16.05.1989"
-"184","23","SUI","GER","Drmic","Drmic","9","M  nchengladbach","0","4","Sergei","08.08.1992"
-"186","18","SUI","GER","Elvedi","Elvedi","30","M  nchengladbach","0","2","Anton","30.09.1996"
-"190","25","GER","GER","Hahn","Hahn","28","M  nchengladbach","0","3","Kaspars","13.08.1990"
-"182","22","BEL","GER","Hazard","Hazard","10","M  nchengladbach","0","3","Vitali","29.03.1993"
-"181","34","GER","GER","Heimeroth","Heimeroth","33","M  nchengladbach","0","1","Mikhail","01.08.1981"
-"176","24","GER","GER","Herrmann","Herrmann","7","M  nchengladbach","0","4","Aleksandr","12.02.1991"
-"173","22","SWE","GER","Hrgota","Hrgota","31","M  nchengladbach","0","4","Aleksandar","12.01.1993"
-"174","25","GER","GER","Jantschke","Jantschke","24","M  nchengladbach","0","2","Aleksandr","07.04.1990"
-"182","27","GER","GER","Johnson","Johnson","19","M  nchengladbach","0","2","Dmitri","11.12.1987"
-"187","23","GER","GER","Kompalla","Kompalla","41","M  nchengladbach","0","1","Nemanja","26.08.1992"
-"186","23","GER","GER","Korb","Korb","27","M  nchengladbach","0","2","Filip","21.03.1992"
-"185","18","GER","GER","Ndenge","Ndenge","44","M  nchengladbach","0","3","Dmitri","13.06.1997"
-"176","25","NOR","GER","Nordtveit","Nordtveit","6","M  nchengladbach","0","3","Nemanja","21.06.1990"
-"185","30","BRA","GER","Raffael","Raffael","11","M  nchengladbach","0","4","Edgar","28.03.1985"
-"187","20","GER","GER","Ritter","Ritter","36","M  nchengladbach","0","3","Denis","15.10.1994"
-"180","20","GER","GER","Schulz","M. Schulz","18","M  nchengladbach","0","2","Aleksei","15.01.1995"
-"180","22","GER","GER","Schulz","N. Schulz","14","M  nchengladbach","0","3","Vitali","01.04.1993"
-"190","27","GER","GER","Sippel","Sippel","21","M  nchengladbach","0","1","Maksim","22.03.1988"
-"182","26","SUI","GER","Sommer","Sommer","1","M  nchengladbach","0","1","Denis","17.12.1988"
-"183","27","GER","GER","Stindl","Stindl","13","M  nchengladbach","0","3","Nikolai","26.08.1988"
-"184","35","AUT","GER","Stranzl","Stranzl","39","M  nchengladbach","0","2","Artem","16.06.1980"
-"179","27","GNB","GER","Traor  ","Traor  ","16","M  nchengladbach","0","3","Igor","21.04.1988"
-"197","29","SWE","GER","Wendt","Wendt","17","M  nchengladbach","0","2","Aleksandr","24.10.1985"
-"194","22","SUI","GER","Xhaka","Xhaka","34","M  nchengladbach","1","3","Maksim","27.09.1992"
-"184","32","RUS","RUS","Anyukov","Anyukov","2","Zenit","0","2","Evgeni","28.09.1982"
-"178","21","RUS","RUS","Bogaev","Bogaev","70","Zenit","0","4","Maksim","24.01.1994"
-"177","28","ITA","RUS","Criscito","Criscito","4","Zenit","0","2","Yeldos","30.12.1986"
-"174","32","POR","RUS","Danny","Danny","10","Zenit","11","3","Marin","07.08.1983"
-"182","19","RUS","RUS","Dolgov","Dolgov","92","Zenit","0","4","Abzal","16.08.1996"
-"185","27","RUS","RUS","Dzyuba","Dzyuba","22","Zenit","1","4","Roger","22.08.1988"
-"187","21","RUS","RUS","Evseev","Evseev","94","Zenit","0","3","Denys","30.03.1994"
-"","29","RUS","RUS","Fayzulin","Fayzulin","20","Zenit","2","3","Baurzhan","22.04.1986"
-"","28","ARG","RUS","Garay","Garay","24","Zenit","1","2","Nenad","10.10.1986"
-"","29","BRA","RUS","Hulk","Hulk","7","Zenit","18","4","Mikhail","25.07.1986"
-"","19","RUS","RUS","Ivanidi","Ivanidi","53","Zenit","0","2","Branko","14.06.1996"
-"","21","RUS","RUS","Ivanov","Ivanov","52","Zenit","0","2","Junior","02.09.1994"
-"","28","ESP","RUS","Javi Garc  a","Javi Garc  a","21","Zenit","2","3","Foxi","08.02.1987"
-"","20","RUS","RUS","Karpov","Karpov","50","Zenit","0","2","Rinat","17.03.1995"
-"","28","RUS","RUS","Kerzhakov","Kerzhakov","41","Zenit","0","1","Zhakyp","28.01.1987"
-"","21","RUS","RUS","Kireenko","Kireenko","76","Zenit","0","4","Vladimir","14.06.1994"
-"","19","RUS","RUS","Kubyshkin","Kubyshkin","96","Zenit","0","2","Nemanja","12.01.1996"
-"","25","RUS","RUS","Lodygin","Lodygin","1","Zenit","0","1","Serikzhan","26.05.1990"
-"","30","BEL","RUS","Lombaerts","Lombaerts","6","Zenit","1","2","Tanat","20.03.1985"
-"","27","POR","RUS","Lu  s Neto","Lu  s Neto","13","Zenit","0","2","Igor","26.05.1988"
-"","36","RUS","RUS","Malafeev","Malafeev","16","Zenit","0","1","Evgeni","04.03.1979"
-"","21","RUS","RUS","Markov","Markov","89","Zenit","0","4","Aleksei","07.07.1994"
-"","20","RUS","RUS","Mzhelski","Mzhelski","80","Zenit","0","1","Dmitri","29.03.1995"
-"","19","RUS","RUS","Nazimov","Nazimov","43","Zenit","0","4","Patrick","04.02.1996"
-"","19","RUS","RUS","Obukhov","Obukhov","83","Zenit","0","1","Georgi","29.05.1996"
-"","19","RUS","RUS","Osipov","Osipov","73","Zenit","0","3","","28.01.1996"
-"","20","RUS","RUS","Rebenko","Rebenko","62","Zenit","0","2","","01.05.1995"
-"","19","RUS","RUS","Rudakov","Rudakov","51","Zenit","0","1","","22.01.1996"
-"","29","RUS","RUS","Ryazantsev","Ryazantsev","5","Zenit","1","3","","05.09.1986"
-"","25","RUS","RUS","Shatov","Shatov","17","Zenit","2","3","","29.07.1990"
-"","27","RUS","RUS","Smolnikov","Smolnikov","19","Zenit","0","2","","08.08.1988"
-"","19","RUS","RUS","Troyanov","Troyanov","79","Zenit","0","3","","18.11.1995"
-"","20","RUS","RUS","Vasyutin","Vasyutin","95","Zenit","0","1","","04.03.1995"
-"","26","BEL","RUS","Witsel","Witsel","28","Zenit","4","3","","12.01.1989"
-"","20","RUS","RUS","Yaschuk","Yaschuk","65","Zenit","0","3","","13.03.1995"
-"","26","RUS","RUS","Yusupov","Yusupov","14","Zenit","0","3","","01.09.1989"
-"","21","RUS","RUS","Zuev","Zuev","58","Zenit","0","2","","25.01.1994"
-"","18","ENG","ENG","Aina","Aina","34","Chelsea","0","2","","08.10.1996"
-"","26","ESP","ENG","Azpilicueta","Azpilicueta","28","Chelsea","0","2","","28.08.1989"
-"","21","GHA","ENG","Baba","Baba","6","Chelsea","0","2","","02.07.1994"
-"","28","BIH","ENG","Begovi ","Begovi ","1","Chelsea","0","1","","20.06.1987"
-"","21","ENG","ENG","Blackman","Blackman","27","Chelsea","0","1","","27.10.1993"
-"","29","ENG","ENG","Cahill","Cahill","24","Chelsea","3","2","","19.12.1985"
-"","18","ENG","ENG","Collins","Collins","40","Chelsea","0","1","","18.02.1997"
-"","23","BEL","ENG","Courtois","Courtois","13","Chelsea","0","1","","11.05.1992"
-"","26","ESP","ENG","Diego Costa","Diego Costa","19","Chelsea","9","4","","07.10.1988"
-"","28","ESP","ENG","F bregas","F bregas","4","Chelsea","23","3","","04.05.1987"
-"","29","COL","ENG","Falcao","Falcao","9","Chelsea","4","4","","10.02.1986"
-"","24","BEL","ENG","Hazard","Hazard","10","Chelsea","5","3","","07.01.1991"
-"","31","SRB","ENG","Ivanovi ","Ivanovi ","2","Chelsea","7","2","","22.02.1984"
-"","19","BRA","ENG","Kenedy","Kenedy","16","Chelsea","0","3","","08.02.1996"
-"","19","ENG","ENG","Loftus-Cheek","Loftus-Cheek","36","Chelsea","0","3","","23.01.1996"
-"","27","SRB","ENG","Mati ","Mati ","21","Chelsea","3","3","","01.08.1988"
-"","28","NGA","ENG","Mikel","Mikel","12","Chelsea","1","3","","22.04.1987"
-"","24","BRA","ENG","Oscar","Oscar","8","Chelsea","7","3","","09.09.1991"
-"","28","ESP","ENG","Pedro Rodr  guez","Pedro Rodr  guez","17","Chelsea","15","4","","28.07.1987"
-"","28","BRA","ENG","Ramires","Ramires","7","Chelsea","7","3","","24.03.1987"
-"","28","FRA","ENG","R  my","R  my","18","Chelsea","5","4","","02.01.1987"
-"","34","ENG","ENG","Terry","Terry","26","Chelsea","10","2","","07.12.1980"
-"","20","BFA","ENG","Traor  ","Traor  ","14","Chelsea","0","3","","06.09.1995"
-"","27","BRA","ENG","Willian","Willian","22","Chelsea","11","3","","09.08.1988"
-"","20","FRA","ENG","Zouma","Zouma","5","Chelsea","0","2","","27.10.1994"
-"","17","ENG","ENG","Adarabioyo","Adarabioyo","53","Man. City","0","2","","24.09.1997"
-"","27","ARG","ENG","Ag ero","Ag ero","10","Man. City","23","4","","02.06.1988"
-"","18","FRA","ENG","Ambrose","Ambrose","68","Man. City","0","4","","28.03.1997"
-"","18","ENG","ENG","Barker","Barker","62","Man. City","0","4","","04.10.1996"
-"","18","ENG","ENG","Boadu","Boadu","49","Man. City","0","3","","20.02.1997"
-"","26","CIV","ENG","Bony","Bony","14","Man. City","2","4","","10.12.1988"
-"","18","ENG","ENG","Bryan","Bryan","52","Man. City","0","3","","01.11.1996"
-"","20","AUT","ENG","Bytyqi","Bytyqi","63","Man. City","0","3","","15.01.1995"
-"","33","ARG","ENG","Caballero","Caballero","13","Man. City","0","1","","28.09.1981"
-"","30","FRA","ENG","Clichy","Clichy","22","Man. City","0","2","","26.07.1985"
-"","24","BEL","ENG","De Bruyne","De Bruyne","17","Man. City","0","4","","28.06.1991"
-"","25","ENG","ENG","Delph","Delph","18","Man. City","0","3","","21.11.1989"
-"","34","ARG","ENG","Demichelis","Demichelis","26","Man. City","3","2","","20.12.1980"
-"","20","ENG","ENG","Evans","Evans","70","Man. City","0","3","","13.12.1994"
-"","30","BRA","ENG","Fernandinho","Fernandinho","25","Man. City","6","3","","04.05.1985"
-"","28","BRA","ENG","Fernando","Fernando","6","Man. City","0","3","","25.07.1987"
-"","20","WAL","ENG","Glendon","Glendon","73","Man. City","0","3","","03.05.1995"
-"","19","ENG","ENG","Gunn","Gunn","54","Man. City","0","1","","22.01.1996"
-"","28","ENG","ENG","Hart","Hart","1","Man. City","0","1","","19.04.1987"
-"","29","ESP","ENG","Jes s Navas","Jes s Navas","15","Man. City","3","3","","21.11.1985"
-"","19","POR","ENG","Jorge Intima","Jorge Intima","65","Man. City","0","3","","21.09.1995"
-"","29","SRB","ENG","Kolarov","Kolarov","11","Man. City","3","2","","10.11.1985"
-"","29","BEL","ENG","Kompany","Kompany","4","Man. City","2","2","","10.04.1986"
-"","20","IRL","ENG","Lawlor","Lawlor","45","Man. City","0","1","","27.10.1994"
-"","18","ESP","ENG","Maffeo","Maffeo","50","Man. City","0","2","","12.07.1997"
-"","24","FRA","ENG","Mangala","Mangala","20","Man. City","1","2","","13.02.1991"
-"","28","FRA","ENG","Nasri","Nasri","8","Man. City","9","3","","26.06.1987"
-"","18","ENG","ENG","Nemane","Nemane","57","Man. City","0","4","","26.06.1997"
-"","27","ARG","ENG","Otamendi","Otamendi","30","Man. City","0","2","","12.02.1988"
-"","21","ENG","ENG","Plummer","Plummer","74","Man. City","0","2","","02.09.1994"
-"","32","FRA","ENG","Sagna","Sagna","3","Man. City","0","2","","14.02.1983"
-"","29","ESP","ENG","Silva","Silva","21","Man. City","6","3","","08.01.1986"
-"","19","ENG","ENG","Smith-Brown","Smith-Brown","56","Man. City","0","2","","31.03.1996"
-"","20","ENG","ENG","Sterling","Sterling","7","Man. City","0","3","","08.12.1994"
-"","19","ENG","ENG","Tattum","Tattum","67","Man. City","0","3","","03.09.1996"
-"","32","CIV","ENG","Tour  ","Tour  ","42","Man. City","7","3","","13.05.1983"
-"","17","ENG","ENG","Wood","Wood","71","Man. City","0","3","","12.02.1998"
-"","30","ARG","ENG","Zabaleta","Zabaleta","5","Man. City","1","2","","16.01.1985"
-"","29","RUS","RUS","Akinfeev","Akinfeev","35","CSKA Moskva","0","1","","08.04.1986"
-"","33","RUS","RUS","Berezutski","A. Berezutski","6","CSKA Moskva","0","2","","20.06.1982"
-"","33","RUS","RUS","Berezutski","V. Berezutski","24","CSKA Moskva","3","2","","20.06.1982"
-"","27","LVA","RUS","Cau a","Cau a","19","CSKA Moskva","1","3","","19.01.1988"
-"","30","RUS","RUS","Chepchugov","Chepchugov","1","CSKA Moskva","0","1","","15.07.1985"
-"","19","RUS","RUS","Chernov","Chernov","91","CSKA Moskva","0","2","","14.01.1996"
-"","27","CIV","RUS","Doumbia","Doumbia","88","CSKA Moskva","13","4","","31.12.1987"
-"","25","RUS","RUS","Dzagoev","Dzagoev","10","CSKA Moskva","6","3","","17.06.1990"
-"","28","FIN","RUS","Eremenko","Eremenko","25","CSKA Moskva","1","3","","19.03.1987"
-"","19","RUS","RUS","Golovin","Golovin","60","CSKA Moskva","0","3","","30.05.1996"
-"","36","RUS","RUS","Ignashevich","Ignashevich","4","CSKA Moskva","5","2","","14.07.1979"
-"","19","RUS","RUS","Makarov","Makarov","43","CSKA Moskva","0","4","","24.04.1996"
-"","24","BRA","RUS","M rio Fernandes","M rio Fernandes","2","CSKA Moskva","0","2","","28.06.1991"
-"","23","BUL","RUS","Milanov","Milanov","23","CSKA Moskva","0","3","","19.02.1992"
-"","22","NGA","RUS","Musa","Musa","18","CSKA Moskva","5","4","","14.10.1992"
-"","29","RUS","RUS","Nababkin","Nababkin","14","CSKA Moskva","0","2","","08.09.1986"
-"","27","ISR","RUS","Natcho","Natcho","66","CSKA Moskva","3","3","","18.02.1988"
-"","25","RUS","RUS","Panchenko","Panchenko","8","CSKA Moskva","0","4","","19.10.1989"
-"","19","RUS","RUS","Pomazun","Pomazun","45","CSKA Moskva","0","1","","16.08.1996"
-"","24","RUS","RUS","Schennikov","Schennikov","42","CSKA Moskva","0","2","","27.04.1991"
-"","28","SRB","RUS","Toi ","Toi ","7","CSKA Moskva","5","3","","28.04.1987"
-"","26","RUS","RUS","Vasin","Vasin","5","CSKA Moskva","0","2","","06.10.1988"
-"","29","SWE","RUS","Wernbloom","Wernbloom","3","CSKA Moskva","3","3","","25.06.1986"
-"","32","ISR","ISR","Alberman","Alberman","6","M. Tel-Aviv","1","3","","17.04.1983"
-"","19","ISR","ISR","Armaly","Armaly","29","M. Tel-Aviv","0","3","","10.01.1996"
-"","25","ISR","ISR","Azulay","Azulay","16","M. Tel-Aviv","0","3","","30.03.1990"
-"","29","ISR","ISR","Ben Basat","Ben Basat","9","M. Tel-Aviv","1","4","","08.09.1986"
-"","33","ISR","ISR","Ben Haim I","Ben Haim I","26","M. Tel-Aviv","0","2","","31.03.1982"
-"","26","ISR","ISR","Ben Haim II","Ben Haim II","11","M. Tel-Aviv","4","4","","05.08.1989"
-"","25","ISR","ISR","Ben Harush","Ben Harush","20","M. Tel-Aviv","0","2","","07.03.1990"
-"","31","ESP","ISR","Carlos Garc  a","Carlos Garc  a","31","M. Tel-Aviv","0","2","","29.04.1984"
-"","22","ISR","ISR","Dasa","Dasa","2","M. Tel-Aviv","0","2","","03.12.1992"
-"","26","ISR","ISR","Einbinder","Einbinder","17","M. Tel-Aviv","0","3","","16.02.1989"
-"","18","ISR","ISR","Glazer","Glazer","33","M. Tel-Aviv","0","3","","20.09.1996"
-"","20","ISR","ISR","Goldberg","Goldberg","23","M. Tel-Aviv","0","2","","13.06.1995"
-"","19","ISR","ISR","Hasson","Hasson","41","M. Tel-Aviv","0","1","","24.04.1996"
-"","24","NGA","ISR","Igiebor","Igiebor","40","M. Tel-Aviv","2","3","","09.11.1990"
-"","30","ISR","ISR","Itzhaki","Itzhaki","10","M. Tel-Aviv","3","4","","25.09.1984"
-"","27","ISR","ISR","Lifshitz","Lifshitz","1","M. Tel-Aviv","0","1","","24.04.1988"
-"","23","ISR","ISR","Miha","Miha","15","M. Tel-Aviv","0","3","","02.03.1992"
-"","28","SRB","ISR","Mitrovi ","Mitrovi ","24","M. Tel-Aviv","0","3","","02.01.1987"
-"","17","ISR","ISR","Ohayon","Ohayon","55","M. Tel-Aviv","0","1","","17.08.1998"
-"","20","ISR","ISR","Peretz","Peretz","42","M. Tel-Aviv","0","3","","17.05.1995"
-"","25","CRO","ISR","Radonji ","Radonji ","99","M. Tel-Aviv","0","4","","23.07.1990"
-"","19","SRB","ISR","Rajkovi ","Rajkovi ","95","M. Tel-Aviv","0","1","","31.10.1995"
-"","27","ISR","ISR","Raly","Raly","27","M. Tel-Aviv","0","2","","22.12.1987"
-"","27","ISR","ISR","Rikan","Rikan","22","M. Tel-Aviv","0","3","","10.09.1988"
-"","28","ISR","ISR","Shpungin","Shpungin","3","M. Tel-Aviv","0","2","","03.04.1987"
-"","27","ISR","ISR","Tibi","Tibi","18","M. Tel-Aviv","0","2","","16.11.1987"
-"","30","ISR","ISR","Vermouth","Vermouth","28","M. Tel-Aviv","0","3","","05.08.1985"
-"","28","ISR","ISR","Zahavi","Zahavi","7","M. Tel-Aviv","15","3","","25.07.1987"
-"","34","ISR","ISR","Ziv","Ziv","14","M. Tel-Aviv","0","2","","16.03.1981"
-"","21","GER","GER","Arnold","Arnold","27","Wolfsburg","0","3","","27.05.1994"
-"","23","PER","GER","Ascues","Ascues","6","Wolfsburg","0","2","","19.06.1992"
-"","32","SUI","GER","Benaglio","Benaglio","1","Wolfsburg","0","1","","08.09.1983"
-"","27","DEN","GER","Bendtner","Bendtner","3","Wolfsburg","9","4","","16.01.1988"
-"","27","GER","GER","Caligiuri","Caligiuri","7","Wolfsburg","0","3","","15.01.1988"
-"","23","BEL","GER","Casteels","Casteels","28","Wolfsburg","0","1","","25.06.1992"
-"","31","BRA","GER","Dante","Dante","18","Wolfsburg","0","2","","18.10.1983"
-"","26","NED","GER","Dost","Dost","12","Wolfsburg","0","4","","31.05.1989"
-"","21","GER","GER","Draxler","Draxler","10","Wolfsburg","6","3","","20.09.1993"
-"","28","GER","GER","Gr n","Gr n","20","Wolfsburg","0","1","","05.04.1987"
-"","24","FRA","GER","Guilavogui","Guilavogui","23","Wolfsburg","0","3","","19.09.1990"
-"","25","GER","GER","Jung","Jung","24","Wolfsburg","0","2","","22.06.1990"
-"","27","SUI","GER","Klose","Klose","5","Wolfsburg","0","2","","09.05.1988"
-"","23","GER","GER","Knoche","Knoche","31","Wolfsburg","0","2","","22.05.1992"
-"","27","GER","GER","Kruse","Kruse","11","Wolfsburg","0","4","","19.03.1988"
-"","28","BRA","GER","Luiz Gustavo","Luiz Gustavo","22","Wolfsburg","0","3","","23.07.1987"
-"","33","BRA","GER","Naldo","Naldo","25","Wolfsburg","0","2","","10.09.1982"
-"","20","SUI","GER","Rodriguez","Rodriguez","35","Wolfsburg","0","3","","14.09.1995"
-"","23","SUI","GER","Rodriguez","Rodriguez","34","Wolfsburg","0","2","","25.08.1992"
-"","31","GER","GER","Sch  fer","Sch  fer","4","Wolfsburg","0","2","","07.06.1984"
-"","24","GER","GER","Sch rrle","Sch rrle","17","Wolfsburg","3","3","","06.11.1990"
-"","20","GER","GER","Seguin","Seguin","30","Wolfsburg","0","3","","29.03.1995"
-"","20","GER","GER","Sprenger","Sprenger","37","Wolfsburg","0","2","","22.02.1995"
-"","20","GER","GER","Stolze","Stolze","33","Wolfsburg","0","4","","29.01.1995"
-"","28","GER","GER","Tr  sch","Tr  sch","15","Wolfsburg","1","3","","01.09.1987"
-"","29","POR","GER","Vieirinha","Vieirinha","8","Wolfsburg","1","3","","24.01.1986"
-"","24","BLR","BLR","Aleksievich","Aleksievich","9","BATE","0","3","","10.02.1991"
-"","18","BLR","BLR","Antilevski","Antilevski","44","BATE","0","4","","12.06.1997"
-"","25","BLR","BLR","Baga","Baga","55","BATE","0","3","","04.01.1990"
-"","19","BLR","BLR","Baiduk","Baiduk","27","BATE","0","2","","03.08.1996"
-"","19","BLR","BLR","Bogush","Bogush","29","BATE","0","3","","24.01.1996"
-"","27","BLR","BLR","Chernik","Chernik","16","BATE","0","1","","20.07.1988"
-"","20","BLR","BLR","Chichkan","Chichkan","35","BATE","0","1","","10.07.1995"
-"","24","LVA","BLR","Dubra","Dubra","4","BATE","0","2","","20.12.1990"
-"","26","BLR","BLR","Gaiduchik","Gaiduchik","3","BATE","0","2","","12.07.1989"
-"","25","BLR","BLR","Gordeichuk","Gordeichuk","62","BATE","3","4","","23.10.1989"
-"","34","BLR","BLR","Hleb","Hleb","81","BATE","4","3","","01.05.1981"
-"","30","SRB","BLR","Jevti ","A. Jevti ","11","BATE","0","4","","30.03.1985"
-"","26","BLR","BLR","Karnitski","Karnitski","7","BATE","3","3","","14.02.1989"
-"","37","BLR","BLR","Likhtarovich","Likhtarovich","2","BATE","1","3","","01.03.1978"
-"","26","SRB","BLR","Milunovi ","Milunovi ","19","BATE","1","2","","31.05.1989"
-"","24","SRB","BLR","Mladenovi ","Mladenovi ","25","BATE","0","2","","15.08.1991"
-"","30","BLR","BLR","Mozolevski","Mozolevski","18","BATE","3","4","","30.04.1985"
-"","27","MNE","BLR","Nikoli ","Nikoli ","10","BATE","1","3","","01.01.1988"
-"","28","BLR","BLR","Olekhnovich","Olekhnovich","23","BATE","1","3","","17.05.1987"
-"","24","BLR","BLR","Polyakov","Polyakov","33","BATE","1","2","","17.04.1991"
-"","28","BLR","BLR","Rios","Rios","17","BATE","0","3","","14.05.1987"
-"","31","BLR","BLR","Rodionov","Rodionov","20","BATE","14","4","","11.12.1983"
-"","19","BLR","BLR","Rovbut","Rovbut","28","BATE","0","2","","24.05.1996"
-"","19","BLR","BLR","Scherbitski","Scherbitski","48","BATE","0","1","","14.04.1996"
-"","23","BLR","BLR","Signevich","Signevich","13","BATE","0","4","","20.02.1992"
-"","23","BLR","BLR","Soroko","Soroko","34","BATE","0","1","","01.04.1992"
-"","29","BLR","BLR","Stasevich","Stasevich","22","BATE","4","3","","21.10.1985"
-"","29","BLR","BLR","Volodko","A. Volodko","8","BATE","4","3","","18.06.1986"
-"","22","BLR","BLR","Volodko","M. Volodko","42","BATE","0","3","","10.11.1992"
-"","20","BLR","BLR","Yablonski","Yablonski","5","BATE","1","3","","10.05.1995"
-"","30","BLR","BLR","Zhavnerchik","Zhavnerchik","15","BATE","0","2","","09.02.1985"
-"","25","KAZ","KAZ","Akhmetov","Y. Akhmetov","2","Astana","0","2","","01.06.1990"
-"","26","BIH","KAZ","Anii ","Anii ","5","Astana","0","2","","17.08.1989"
-"","22","KAZ","KAZ","Beysebekov","Beysebekov","15","Astana","0","2","","30.11.1992"
-"","25","COL","KAZ","Ca as","Ca as","88","Astana","2","3","","27.03.1990"
-"","28","UKR","KAZ","Dedechko","Dedechko","24","Astana","0","3","","02.07.1987"
-"","25","KAZ","KAZ","Dzholchiyev","Dzholchiyev","22","Astana","2","4","","08.05.1990"
-"","33","KAZ","KAZ","Eri ","Eri ","1","Astana","0","1","","26.05.1982"
-"","20","KAZ","KAZ","Golubnichi","Golubnichi","40","Astana","0","1","","31.01.1995"
-"","32","SVN","KAZ","Ili ","B. Ili ","33","Astana","0","2","","06.02.1983"
-"","26","COD","KAZ","Kabananga","Kabananga","89","Astana","0","4","","04.04.1989"
-"","29","CTA","KAZ","K  th  voama","K  th  voama","10","Astana","0","3","","30.05.1986"
-"","21","KAZ","KAZ","Khairullin","Khairullin","18","Astana","0","3","","19.02.1994"
-"","23","KAZ","KAZ","Kozhamberdy","Kozhamberdy","20","Astana","0","3","","26.02.1992"
-"","29","KAZ","KAZ","Loginovski","Loginovski","85","Astana","0","1","","08.10.1985"
-"","20","SRB","KAZ","Maksimovi ","Maksimovi ","6","Astana","1","3","","26.01.1995"
-"","26","KAZ","KAZ","Muzhikov","Muzhikov","11","Astana","0","3","","17.06.1989"
-"","28","KAZ","KAZ","Nuserbayev","Nuserbayev","17","Astana","0","4","","01.01.1987"
-"","23","KAZ","KAZ","Pikalkin","Pikalkin","12","Astana","0","2","","19.03.1992"
-"","29","KAZ","KAZ","Postnikov","Postnikov","44","Astana","1","2","","16.04.1986"
-"","24","KAZ","KAZ","Schetkin","Schetkin","9","Astana","0","4","","21.05.1991"
-"","25","KAZ","KAZ","Shomko","Shomko","77","Astana","1","2","","19.03.1990"
-"","21","GHA","KAZ","Twumasi","Twumasi","23","Astana","2","4","","09.05.1994"
-"","20","KAZ","KAZ","Zhukov","Zhukov","8","Astana","0","3","","19.11.1994"
+id,sn,fn,ln,no,ps,nt,db,ag,ht,ap/se,ap/qs,ap/ts,ap/at,go/se,go/qs,go/ts,go/at,ci,cb,cn
+250006566,Bot??a,Alberto,Bot??a,3,2,ESP,27.01.1989,26,187,0,0,0,6,0,0,0,1,2610,Olympiacos,GRE
+250050346,Bouchalakis,Andreas,Bouchalakis,8,3,GRE,05.04.1993,22,186,0,0,0,1,0,0,0,0,2610,Olympiacos,GRE
+250017864,Ideye,Ideye,Brown,99,4,NGA,10.10.1988,26,180,1,0,1,13,0,0,0,4,2610,Olympiacos,GRE
+66176,Cambiasso,Esteban,Cambiasso,91,3,ARG,18.08.1980,35,177,1,0,1,81,0,0,0,6,2610,Olympiacos,GRE
+250023172,Choutesiotis,Lefteris,Choutesiotis,33,1,GRE,20.07.1994,21,192,0,0,0,0,0,0,0,0,2610,Olympiacos,GRE
+106620,Da Costa,Manuel,da Costa,6,2,MAR,06.05.1986,29,191,1,0,1,5,0,0,0,0,2610,Olympiacos,GRE
+95071,Dom??nguez,Alejandro,Dom??nguez,10,3,ARG,10.06.1981,34,175,1,0,1,31,0,0,0,7,2610,Olympiacos,GRE
+1905535,Elabdellaoui,Omar,Elabdellaoui,14,2,NOR,05.12.1991,23,179,1,0,1,7,0,0,0,0,2610,Olympiacos,GRE
+250011522,Finnbogason,Alfred,Finnbogason,9,4,ISL,01.02.1989,26,181,0,0,0,4,0,0,0,1,2610,Olympiacos,GRE
+250017753,Fortounis,Kostas,Fortounis,7,3,GRE,16.10.1992,22,182,1,0,1,1,0,0,0,0,2610,Olympiacos,GRE
+250063842,Hern?õni,,Hern?õni,77,4,POR,20.08.1991,24,180,1,0,1,2,0,0,0,0,2610,Olympiacos,GRE
+250013050,Kapino,Stefanos,Kapino,37,1,GRE,18.03.1994,21,193,0,0,0,0,0,0,0,0,2610,Olympiacos,GRE
+250017994,Kasami,Pajtim,Kasami,11,3,SUI,02.06.1992,23,187,1,0,1,7,0,0,0,1,2610,Olympiacos,GRE
+250056159,Laci,Qazim,Laci,15,3,ALB,19.01.1996,19,176,0,0,0,0,0,0,0,0,2610,Olympiacos,GRE
+250007925,Leandro Salino,,Leandro Salino,30,2,BRA,22.04.1985,30,168,1,0,1,24,0,0,0,0,2610,Olympiacos,GRE
+97657,Maniatis,Giannis,Maniatis,2,2,GRE,12.10.1986,28,178,0,0,0,22,0,0,0,1,2610,Olympiacos,GRE
+250075783,Masuaku,Arthur,Masuaku,26,2,FRA,07.11.1993,21,179,1,0,1,7,0,0,0,1,2610,Olympiacos,GRE
+1909310,Milivojevié?,Luka,Milivojevié?,5,3,SRB,07.04.1991,24,182,0,0,0,9,0,0,0,0,2610,Olympiacos,GRE
+250063448,Pardo,Felipe,Pardo,90,4,COL,17.08.1990,25,,1,0,1,1,0,0,0,0,2610,Olympiacos,GRE
+250070426,Pulido,Alan,Pulido,17,4,MEX,08.03.1991,24,175,0,0,0,0,0,0,0,0,2610,Olympiacos,GRE
+69166,Roberto,,Roberto,16,1,ESP,10.02.1986,29,195,1,0,1,22,0,0,0,0,2610,Olympiacos,GRE
+250054646,Saliakas,Manolis,Saliakas,34,2,GRE,12.09.1996,19,175,0,0,0,0,0,0,0,0,2610,Olympiacos,GRE
+250057664,Seb?≠,,Seb?≠,92,4,BRA,08.06.1992,23,182,1,0,1,1,0,0,0,0,2610,Olympiacos,GRE
+108849,Siovas,Dimitris,Siovas,23,2,GRE,16.09.1988,27,191,1,0,1,11,0,0,0,0,2610,Olympiacos,GRE
+250041550,Vouros,Praxitelis,Vouros,29,2,GRE,05.05.1995,20,183,0,0,0,0,0,0,0,0,2610,Olympiacos,GRE
+250019923,Asare,Nana,Asare,21,2,GHA,11.07.1986,29,175,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250042844,Coulibaly,Kalifa,Coulibaly,7,3,MLI,21.08.1991,24,197,0,0,0,0,0,0,0,0,4608,Gent,BEL
+250026212,Dejaegere,Brecht,Dejaegere,19,3,BEL,29.05.1991,24,174,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250086334,Depoitre,Laurent,Depoitre,9,4,BEL,07.12.1988,26,191,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250052801,Foket,Thomas,Foket,32,3,BEL,25.09.1994,20,177,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250059469,E. Johansson,Erik,Johansson,5,2,SWE,30.12.1988,26,180,0,0,0,10,0,0,0,0,4608,Gent,BEL
+106571,Kums,Sven,Kums,14,3,BEL,26.02.1988,27,178,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250008207,Matton,Thomas,Matton,8,3,BEL,24.10.1985,29,180,1,0,1,1,0,0,0,0,4608,Gent,BEL
+1905564,Milicevic,Danijel,Milicevic,77,3,SUI,05.01.1986,29,177,1,0,1,1,1,0,1,1,4608,Gent,BEL
+250070377,S. Mitrovié?,Stefan,Mitrovié?,13,2,SRB,22.05.1990,25,,1,0,1,1,0,0,0,0,4608,Gent,BEL
+1902553,L. Nielsen,Lasse,Nielsen,23,2,DEN,08.01.1988,27,185,1,0,1,4,0,0,0,0,4608,Gent,BEL
+1905619,Pedersen,Nicklas,Pedersen,28,4,DEN,10.10.1987,27,187,0,0,0,0,0,0,0,0,4608,Gent,BEL
+250014227,Poletanovié?,Marko,Poletanovié?,12,3,SRB,20.07.1993,22,187,0,0,0,0,0,0,0,0,4608,Gent,BEL
+250001584,Rafinha,,Rafinha,4,2,BRA,29.06.1982,33,182,1,0,1,12,0,0,0,1,4608,Gent,BEL
+250012556,Raman,Benito,Raman,26,4,BEL,07.11.1994,20,172,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250010916,Renato Neto,,Renato Neto,10,3,BRA,27.09.1991,23,187,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250043054,Saief,Kenneth,Saief,15,3,ISR,17.12.1993,21,176,0,0,0,0,0,0,0,0,4608,Gent,BEL
+250007046,Sels,Matz,Sels,1,1,BEL,26.02.1992,23,188,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250072874,Simon,Moses,Simon,27,4,NGA,12.07.1995,20,166,1,0,1,1,0,0,0,0,4608,Gent,BEL
+250023865,Thoelen,Yannick,Thoelen,20,1,BEL,18.07.1990,25,,0,0,0,0,0,0,0,0,4608,Gent,BEL
+250012558,Van der Bruggen,Hannes,Van der Bruggen,17,3,BEL,01.04.1993,22,180,0,0,0,0,0,0,0,0,4608,Gent,BEL
+95783,Vandenbussche,Brian,Vandenbussche,25,1,BEL,24.09.1981,33,196,0,0,0,0,0,0,0,0,4608,Gent,BEL
+250006017,Vitas,Uroè≠,Vitas,3,2,SRB,06.07.1992,23,187,0,0,0,0,0,0,0,0,4608,Gent,BEL
+250087991,Adel,Anthony,Adel,66,3,FRA,11.01.1998,17,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250074007,Aouar,Houssem,Aouar,47,3,FRA,30.06.1998,17,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250075910,Beauvue,Claudio,Beauvue,9,4,FRA,16.04.1988,27,174,1,0,1,1,0,0,0,0,5312,Lyon,FRA
+250021592,Bedimo,Henri,Bedimo,3,2,CMR,04.06.1984,31,180,0,0,0,5,0,0,0,0,5312,Lyon,FRA
+250089120,Belkacemi,Abdenour,Belkacemi,49,3,FRA,18.09.1999,16,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250074008,Benjeddi,Adil,Benjeddi,51,2,FRA,29.01.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+93628,Biè≠evac,Milan,Biè≠evac,5,2,SRB,31.08.1983,32,187,0,0,0,11,0,0,0,1,5312,Lyon,FRA
+250074009,Cognat,Timoth??,Cognat,54,3,FRA,25.01.1998,17,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250054950,Cornet,Maxwel,Cornet,27,4,FRA,27.09.1996,18,179,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250062627,D'Arpino,Maxime,D'Arpino,34,3,FRA,17.06.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250062628,De Sousa,J??r??my,De Sousa,52,3,FRA,16.01.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250074010,Del Castillo,Romain,Del Castillo,36,3,FRA,29.03.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250073903,Diakhaby,Mouctar,Diakhaby,41,2,FRA,19.12.1996,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250074012,Dzabana,Alan,Dzabana,55,4,FRA,25.03.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250062148,Fekir,Nabil,Fekir,18,3,FRA,18.07.1993,22,173,0,0,0,1,0,0,0,0,5312,Lyon,FRA
+250011569,Ferri,Jordan,Ferri,12,3,FRA,12.03.1992,23,172,1,0,1,2,0,0,0,0,5312,Lyon,FRA
+250087986,Gaspar,Jordy,Gaspar,56,2,FRA,23.04.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250039725,Ghezzal,Rachid,Ghezzal,11,3,FRA,09.05.1992,23,182,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+1905737,Gonalons,Maxime,Gonalons,21,3,FRA,10.03.1989,26,185,1,0,1,26,0,0,0,2,5312,Lyon,FRA
+107754,Gorgelin,Mathieu,Gorgelin,30,1,FRA,05.08.1990,25,187,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250054954,Grange,Dorian,Grange,50,1,FRA,10.05.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+1908192,Grenier,Cl??ment,Grenier,7,3,FRA,07.01.1991,24,186,0,0,0,6,0,0,0,1,5312,Lyon,FRA
+250089119,Hemans Arday,Isaac,Hemans Arday,58,2,GHA,26.12.1996,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+1901367,Jallet,Christophe,Jallet,13,2,FRA,31.10.1983,31,178,1,0,1,13,1,0,1,1,5312,Lyon,FRA
+250055373,U. Jenssen,Ulrik,Jenssen,35,2,NOR,17.07.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250057033,Kalulu,Aldo,Kalulu,26,3,FRA,21.01.1996,19,,1,0,1,1,0,0,0,0,5312,Lyon,FRA
+250087988,Kalulu,G??d??on,Kalulu,65,2,FRA,29.08.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250054957,Kemen,Olivier,Kemen,24,3,FRA,20.07.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250008012,B. Kon??,Bakary,Kon??,4,2,BFA,27.04.1988,27,188,0,0,0,12,0,0,0,2,5312,Lyon,FRA
+250042776,Labidi,Zakarie,Labidi,32,3,FRA,08.02.1995,20,178,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+1908196,Lacazette,Alexandre,Lacazette,10,4,FRA,28.05.1991,24,175,1,0,1,13,0,0,0,2,5312,Lyon,FRA
+250067767,Lebongo,Stanislas,Lebongo,40,1,FRA,21.09.1997,17,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250087998,Loisi,Enzo,Loisi,67,3,FRA,15.06.1998,17,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+1901643,Anthony Lopes,Anthony,Lopes,1,1,POR,01.10.1990,24,184,1,0,1,5,0,0,0,0,5312,Lyon,FRA
+30670,Malbranque,Steed,Malbranque,17,3,FRA,06.01.1980,35,168,1,0,1,16,0,0,0,2,5312,Lyon,FRA
+250074013,Martelat,Yoann,Martelat,59,3,FRA,16.01.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250047077,C. Martins,Christopher,Martins,46,3,LUX,19.02.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250057034,Mboumbouni,Dylan,Mboumbouni,37,2,FRA,20.02.1996,19,182,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250054827,Mocio,Lucas,Mocio,16,1,FRA,11.05.1994,21,197,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+66372,Morel,J??r??my,Morel,15,2,FRA,02.04.1984,31,176,1,0,1,14,0,0,0,0,5312,Lyon,FRA
+250073904,Moufi,Fahd,Moufi,38,2,FRA,05.05.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250064194,Moutoussamy,Samuel,Moutoussamy,43,2,FRA,12.08.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+73850,Mvuemba,Arnold,Mvuemba,28,3,FRA,28.01.1985,30,172,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250074014,Neto,C??sar,Neto,60,2,FRA,26.02.1999,16,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250057035,Ngouma,Romaric,Ngouma,44,2,FRA,28.01.1995,20,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250086990,Owusu,Elisha,Owusu,61,3,FRA,07.11.1997,17,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250055741,Pagliuca,Kilian,Pagliuca,39,4,SUI,02.09.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250054828,Paye,Mour,Paye,31,4,FRA,24.05.1994,21,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250062684,Perrin,Ga?Ætan,Perrin,62,3,FRA,07.06.1996,19,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250002767,Rafael,,Rafael,20,2,BRA,09.07.1990,25,172,1,0,1,27,0,0,0,0,5312,Lyon,FRA
+250062683,Richard,Thomas,Richard,63,4,FRA,21.03.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250024286,Rose,Lindsay,Rose,22,2,FRA,08.02.1992,23,184,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250074015,Roselli,Alexandre,Roselli,64,2,FRA,17.03.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250016660,Sergi Darder,,Sergi Darder,14,3,ESP,22.12.1993,21,180,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250087989,Sy,Ahamadou,Sy,68,2,FRA,05.01.1998,17,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250054829,Tolisso,Corentin,Tolisso,8,3,FRA,03.08.1994,21,181,1,0,1,1,0,0,0,0,5312,Lyon,FRA
+250081923,Tousart,Lucas,Tousart,29,3,FRA,29.04.1997,18,,0,0,0,0,0,0,0,0,5312,Lyon,FRA
+250014003,Umtiti,Samuel,Umtiti,23,2,FRA,14.11.1993,21,180,1,0,1,4,0,0,0,0,5312,Lyon,FRA
+105575,Valbuena,Mathieu,Valbuena,19,4,FRA,28.09.1984,30,167,1,0,1,38,0,0,0,3,5312,Lyon,FRA
+250013471,Yanga-Mbiwa,Mapou,Yanga-Mbiwa,2,2,FRA,15.05.1989,26,184,1,0,1,12,0,0,0,0,5312,Lyon,FRA
+1906540,Alaba,David,Alaba,27,2,AUT,24.06.1992,23,175,1,0,1,43,0,0,0,4,50037,Bayern,GER
+54091,Xabi Alonso,Xabi,Alonso,14,3,ESP,25.11.1981,33,183,1,0,1,113,0,0,0,5,50037,Bayern,GER
+250000142,Badstuber,Holger,Badstuber,28,2,GER,13.03.1989,26,189,0,0,0,37,0,0,0,1,50037,Bayern,GER
+250075724,Benatia,Medhi,Benatia,5,2,MAR,17.04.1987,28,190,0,0,0,11,0,0,0,1,50037,Bayern,GER
+150182140,Benko,Fabian,Benko,40,3,GER,05.06.1998,17,,0,0,0,0,0,0,0,0,50037,Bayern,GER
+250013892,Bernat,Juan,Bernat,18,2,ESP,01.03.1993,22,172,1,0,1,13,0,0,0,0,50037,Bayern,GER
+98865,Boateng,J??r??me,Boateng,17,2,GER,03.09.1988,27,190,1,0,1,45,0,0,0,3,50037,Bayern,GER
+250054949,Coman,Kingsley,Coman,29,4,FRA,13.06.1996,19,178,1,0,1,3,0,0,0,0,50037,Bayern,GER
+250081687,Dorsch,Niklas,Dorsch,30,3,GER,15.01.1998,17,,0,0,0,0,0,0,0,0,50037,Bayern,GER
+250016027,Douglas Costa,,Douglas Costa,11,3,BRA,14.09.1990,25,170,1,0,1,35,0,0,0,6,50037,Bayern,GER
+150182145,Gaudino,Gianluca,Gaudino,16,3,GER,11.11.1996,18,175,0,0,0,1,0,0,0,0,50037,Bayern,GER
+250007605,G??tze,Mario,G??tze,19,3,GER,03.06.1992,23,185,1,0,1,40,1,0,1,10,50037,Bayern,GER
+250063830,Green,Julian,Green,37,3,USA,06.06.1995,20,172,0,0,0,1,0,0,0,0,50037,Bayern,GER
+250075710,Hundertmark,David,Hundertmark,34,1,GER,06.08.1997,18,,0,0,0,0,0,0,0,0,50037,Bayern,GER
+98953,Javi Mart??nez,,Javi Mart??nez,8,3,ESP,02.09.1988,27,190,0,0,0,20,0,0,0,0,50037,Bayern,GER
+250070417,Kimmich,Joshua,Kimmich,32,3,GER,08.02.1995,20,176,1,0,1,1,0,0,0,0,50037,Bayern,GER
+250003830,Kirchhoff,Jan,Kirchhoff,15,2,GER,01.10.1990,24,195,0,0,0,2,0,0,0,0,50037,Bayern,GER
+63033,Lahm,Philipp,Lahm,21,2,GER,11.11.1983,31,170,1,0,1,96,0,0,0,0,50037,Bayern,GER
+250002096,Lewandowski,Robert,Lewandowski,9,4,POL,21.08.1988,27,184,1,0,1,41,0,0,0,23,50037,Bayern,GER
+250052805,Lucic,Ivan,Lucic,33,1,AUT,23.03.1995,20,193,0,0,0,0,0,0,0,0,50037,Bayern,GER
+250003318,M?¨ller,Thomas,M?¨ller,25,4,GER,13.09.1989,26,186,1,0,1,71,2,0,2,30,50037,Bayern,GER
+97923,Neuer,Manuel,Neuer,1,1,GER,27.03.1986,29,193,1,0,1,74,0,0,0,0,50037,Bayern,GER
+250063828,Pohl,Felix,Pohl,38,2,GER,11.12.1996,18,,0,0,0,0,0,0,0,0,50037,Bayern,GER
+101594,Rafinha,,Rafinha,13,2,BRA,07.09.1985,30,172,0,0,0,45,0,0,0,2,50037,Bayern,GER
+95665,Rib??ry,Franck,Rib??ry,7,3,FRA,07.04.1983,32,170,0,0,0,61,0,0,0,17,50037,Bayern,GER
+57134,Robben,Arjen,Robben,10,4,NED,23.01.1984,31,181,0,0,0,87,0,0,0,25,50037,Bayern,GER
+250008351,Rode,Sebastian,Rode,20,3,GER,11.10.1990,24,179,0,0,0,7,0,0,0,1,50037,Bayern,GER
+43126,Starke,Tom,Starke,22,1,GER,18.03.1981,34,194,0,0,0,0,0,0,0,0,50037,Bayern,GER
+1906776,Thiago Alc?≠ntara,,Thiago Alc?≠ntara,6,3,ESP,11.04.1991,24,170,1,0,1,19,0,0,0,2,50037,Bayern,GER
+1902445,Ulreich,Sven,Ulreich,26,1,GER,03.08.1988,27,192,0,0,0,0,0,0,0,0,50037,Bayern,GER
+1906016,Vidal,Arturo,Vidal,23,3,CHI,22.05.1987,28,180,1,0,1,28,0,0,0,9,50037,Bayern,GER
+250024055,Weihrauch,Patrick,Weihrauch,36,4,GER,03.03.1994,21,181,0,0,0,0,0,0,0,0,50037,Bayern,GER
+250075736,Abner,,Abner,30,2,BRA,30.05.1996,19,176,0,0,0,0,0,0,0,0,50051,Real Madrid,ESP
+58676,Arbeloa,?Ålvaro,Arbeloa,17,2,ESP,17.01.1983,32,180,0,0,0,70,0,0,0,3,50051,Real Madrid,ESP
+102225,Bale,Gareth,Bale,11,3,WAL,16.07.1989,26,186,1,0,1,34,0,0,0,12,50051,Real Madrid,ESP
+93321,Benzema,Karim,Benzema,9,4,FRA,19.12.1987,27,183,1,0,1,74,1,0,1,43,50051,Real Madrid,ESP
+250024448,Carvajal,Dani,Carvajal,15,2,ESP,11.01.1992,23,171,1,0,1,16,0,0,0,0,50051,Real Madrid,ESP
+250057680,Casemiro,,Casemiro,14,3,BRA,23.02.1992,23,184,0,0,0,16,0,0,0,1,50051,Real Madrid,ESP
+95349,Casilla,Kiko,Casilla,13,1,ESP,02.10.1986,28,191,0,0,0,0,0,0,0,0,50051,Real Madrid,ESP
+250039177,Cheryshev,Denis,Cheryshev,21,3,RUS,26.12.1990,24,179,0,0,0,0,0,0,0,0,50051,Real Madrid,ESP
+250039931,Danilo,,Danilo,23,2,BRA,15.07.1991,24,184,0,0,0,23,0,0,0,1,50051,Real Madrid,ESP
+250024454,Isco,,Isco,22,3,ESP,21.04.1992,23,175,1,0,1,36,0,0,0,6,50051,Real Madrid,ESP
+250021636,James Rodr??guez,,James Rodr??guez,10,3,COL,12.07.1991,24,180,0,0,0,23,0,0,0,3,50051,Real Madrid,ESP
+250016661,Jes??,,Jes??,20,4,ESP,26.02.1993,22,178,0,0,0,8,0,0,0,0,50051,Real Madrid,ESP
+250023551,Kovaéçié?,Mateo,Kovaéçié?,16,3,CRO,06.05.1994,21,179,1,0,1,21,0,0,0,1,50051,Real Madrid,ESP
+103147,Kroos,Toni,Kroos,8,3,GER,04.01.1990,25,180,1,0,1,56,0,0,0,6,50051,Real Madrid,ESP
+250079670,Llorente,Marcos,Llorente,28,3,ESP,30.01.1995,20,182,0,0,0,0,0,0,0,0,50051,Real Madrid,ESP
+250040521,Lucas V?≠zquez,,Lucas V?≠zquez,18,3,ESP,01.07.1991,24,173,0,0,0,0,0,0,0,0,50051,Real Madrid,ESP
+1900737,Marcelo,,Marcelo,12,2,BRA,12.05.1988,27,174,1,0,1,57,0,0,0,5,50051,Real Madrid,ESP
+250076701,Mayoral,Borja,Mayoral,29,4,ESP,05.04.1997,18,181,0,0,0,0,0,0,0,0,50051,Real Madrid,ESP
+74699,Modrié?,Luka,Modrié?,19,3,CRO,09.09.1985,30,171,1,0,1,48,0,0,0,5,50051,Real Madrid,ESP
+1900122,Nacho,,Nacho,6,2,ESP,18.01.1990,25,178,1,0,1,11,0,0,0,0,50051,Real Madrid,ESP
+250031037,Navas,Keylor,Navas,1,1,CRC,15.12.1986,28,184,1,0,1,3,0,0,0,0,50051,Real Madrid,ESP
+250081341,??degaard,Martin,??degaard,27,3,NOR,17.12.1998,16,170,0,0,0,1,0,0,0,0,50051,Real Madrid,ESP
+95417,Pepe,,Pepe,3,2,POR,26.02.1983,32,187,1,0,1,78,0,0,0,3,50051,Real Madrid,ESP
+93649,Ramos,Sergio,Ramos,4,2,ESP,30.03.1986,29,183,1,0,1,83,0,0,0,8,50051,Real Madrid,ESP
+63706,Ronaldo,Cristiano,Ronaldo,7,4,POR,05.02.1985,30,184,1,0,1,120,3,0,3,81,50051,Real Madrid,ESP
+250025891,Varane,Rapha?Æl,Varane,2,2,FRA,25.04.1993,22,191,1,0,1,35,0,0,0,0,50051,Real Madrid,ESP
+250086341,Y?≠?Òez,Rub??n,Y?≠?Òez,31,1,ESP,12.10.1993,21,187,0,0,0,0,0,0,0,0,50051,Real Madrid,ESP
+250056620,Alberto,Suently,Alberto,33,2,NED,09.06.1996,19,178,0,0,0,0,0,0,0,0,50062,PSV,NED
+250040545,Arias,Santiago,Arias,4,2,COL,13.01.1992,23,175,1,0,1,1,0,0,0,0,50062,PSV,NED
+250066551,Bergwijn,Steven,Bergwijn,27,4,NED,08.10.1997,17,171,0,0,0,0,0,0,0,0,50062,PSV,NED
+250062264,J. Bertrams,Jesse,Bertrams,31,1,NED,22.12.1994,20,187,0,0,0,0,0,0,0,0,50062,PSV,NED
+250042343,Boljevié?,Aleksandar,Boljevié?,39,4,MNE,12.12.1995,19,172,0,0,0,0,0,0,0,0,50062,PSV,NED
+250053787,Brenet,Joshua,Brenet,20,2,NED,20.03.1994,21,181,1,0,1,5,0,0,0,0,50062,PSV,NED
+250008514,Bruma,Jeffrey,Bruma,5,2,NED,13.11.1991,23,186,1,0,1,7,0,0,0,0,50062,PSV,NED
+250005343,De Jong,Luuk,de Jong,9,4,NED,27.08.1990,25,188,1,0,1,13,0,0,0,2,50062,PSV,NED
+250074030,De Wijs,Jordy,De Wijs,30,2,NED,08.01.1995,20,189,0,0,0,0,0,0,0,0,50062,PSV,NED
+250088102,Groenendijk,Bob,Groenendijk,48,2,NED,15.05.1996,19,,0,0,0,0,0,0,0,0,50062,PSV,NED
+250067766,Guardado,Andr??s,Guardado,18,3,MEX,28.09.1986,28,169,1,0,1,10,0,0,0,0,50062,PSV,NED
+250055351,Al. Gu?¯mundsson,Albert,Gu?¯mundsson,49,3,ISL,15.06.1997,18,,0,0,0,0,0,0,0,0,50062,PSV,NED
+250062259,Heesakkers,Sander,Heesakkers,36,2,NED,08.01.1995,20,182,0,0,0,0,0,0,0,0,50062,PSV,NED
+250042712,Hendrix,Jorrit,Hendrix,29,2,NED,06.02.1995,20,182,1,0,1,1,0,0,0,0,50062,PSV,NED
+250023158,Hermannsson,Hj??rtur,Hermannsson,35,2,ISL,08.02.1995,20,189,0,0,0,0,0,0,0,0,50062,PSV,NED
+250025998,Isimat-Mirin,Nicolas,Isimat-Mirin,2,2,FRA,15.11.1991,23,189,0,0,0,0,0,0,0,0,50062,PSV,NED
+1909101,Jozefzoon,Florian,Jozefzoon,17,4,NED,09.02.1991,24,173,0,0,0,4,0,0,0,0,50062,PSV,NED
+250024857,Koch,Menno,Koch,25,2,NED,02.07.1994,21,195,0,0,0,0,0,0,0,0,50062,PSV,NED
+250087096,Koopmans,Luuk,Koopmans,21,1,NED,18.11.1993,21,,0,0,0,0,0,0,0,0,50062,PSV,NED
+250088106,Lammers,Sam,Lammers,50,4,NED,30.04.1997,18,,0,0,0,0,0,0,0,0,50062,PSV,NED
+250074051,Laursen,Nikolai,Laursen,37,4,DEN,19.02.1998,17,183,0,0,0,0,0,0,0,0,50062,PSV,NED
+250062059,Leemans,Clint,Leemans,26,2,NED,15.09.1995,20,186,0,0,0,0,0,0,0,0,50062,PSV,NED
+250007014,Lestienne,Maxime,Lestienne,16,4,BEL,17.06.1992,23,176,1,0,1,2,0,0,0,0,50062,PSV,NED
+250013866,Locadia,J?¨rgen,Locadia,19,4,NED,07.11.1993,21,180,1,0,1,4,0,0,0,1,50062,PSV,NED
+250058024,Loof,Augustine,Loof,45,2,NED,01.01.1996,19,,0,0,0,0,0,0,0,0,50062,PSV,NED
+250066763,Lundqvist,Ramon-Pascal,Lundqvist,38,3,SWE,10.05.1997,18,,0,0,0,0,0,0,0,0,50062,PSV,NED
+250016667,Maher,Adam,Maher,10,3,NED,20.07.1993,22,176,0,0,0,4,0,0,0,0,50062,PSV,NED
+250007960,Moreno,H??ctor,Moreno,3,2,MEX,17.01.1988,27,183,1,0,1,7,1,0,1,1,50062,PSV,NED
+108917,Narsingh,Luciano,Narsingh,11,4,NED,13.09.1990,25,178,1,0,1,1,1,0,1,1,50062,PSV,NED
+250056621,Paal,Kenneth,Paal,32,3,NED,24.06.1997,18,177,0,0,0,0,0,0,0,0,50062,PSV,NED
+98834,Pasveer,Remko,Pasveer,22,1,NED,08.11.1983,31,186,0,0,0,0,0,0,0,0,50062,PSV,NED
+250086340,Pereiro,Gast??n,Pereiro,7,3,URU,11.06.1995,20,188,0,0,0,0,0,0,0,0,50062,PSV,NED
+67840,S. Poulsen,Simon,Poulsen,14,2,DEN,07.10.1984,30,186,0,0,0,3,0,0,0,0,50062,PSV,NED
+250014667,Pr??pper,Davy,Pr??pper,6,3,NED,02.09.1991,24,189,1,0,1,1,0,0,0,0,50062,PSV,NED
+250074031,Rommens,Olivier,Rommens,40,3,BEL,03.02.1995,20,177,0,0,0,0,0,0,0,0,50062,PSV,NED
+250046911,Sanoh,Moussa,Sanoh,44,4,NED,20.07.1995,20,174,0,0,0,0,0,0,0,0,50062,PSV,NED
+68456,Schaars,Stijn,Schaars,8,3,NED,11.01.1984,31,181,1,0,1,11,0,0,0,0,50062,PSV,NED
+250066563,van Osch,Yanick,van Osch,41,1,NED,24.03.1997,18,,0,0,0,0,0,0,0,0,50062,PSV,NED
+250042720,van Vlerken,Bram,van Vlerken,34,2,NED,07.10.1995,19,175,0,0,0,0,0,0,0,0,50062,PSV,NED
+250042721,Vloet,Rai,Vloet,23,3,NED,08.05.1995,20,180,0,0,0,0,0,0,0,0,50062,PSV,NED
+250024859,Willems,Jetro,Willems,15,2,NED,30.03.1994,21,170,0,0,0,4,0,0,0,0,50062,PSV,NED
+108911,Zoet,Jeroen,Zoet,1,1,NED,06.01.1991,24,186,1,0,1,5,0,0,0,0,50062,PSV,NED
+250017920,Aboubakar,Vincent,Aboubakar,9,4,CMR,22.01.1992,23,184,1,0,1,5,2,0,2,5,50064,Porto,POR
+98959,Alberto Bueno,,Alberto Bueno,23,4,ESP,20.03.1988,27,178,0,0,0,1,0,0,0,0,50064,Porto,POR
+250063840,Andr?? Andr??,,Andr?? Andr??,20,3,POR,26.08.1989,26,174,1,0,1,1,0,0,0,0,50064,Porto,POR
+250042521,Andr?? Silva,,Andr?? Silva,19,4,POR,06.11.1995,19,182,0,0,0,0,0,0,0,0,50064,Porto,POR
+107762,Brahimi,Yacine,Brahimi,8,3,ALG,08.02.1990,25,175,1,0,1,12,0,0,0,6,50064,Porto,POR
+250063924,Bruno Costa,,Bruno Costa,87,4,POR,19.04.1997,18,169,0,0,0,0,0,0,0,0,50064,Porto,POR
+250063927,Caio,Andr??,Caio,91,1,POR,23.02.1994,21,177,0,0,0,0,0,0,0,0,50064,Porto,POR
+34694,Casillas,Iker,Casillas,12,1,ESP,20.05.1981,34,185,1,0,1,153,0,0,0,0,50064,Porto,POR
+250003441,Cissokho,Aly,Cissokho,28,2,FRA,15.09.1987,28,181,0,0,0,40,0,0,0,1,50064,Porto,POR
+250074281,Corona,Jes?ßs,Corona,17,4,MEX,06.01.1993,22,,1,0,1,1,0,0,0,0,50064,Porto,POR
+250014528,Danilo,,Danilo,22,3,POR,09.09.1991,24,188,1,0,1,1,0,0,0,0,50064,Porto,POR
+250076660,David Sualehe,,David Sualehe,65,2,POR,23.03.1997,18,,0,0,0,0,0,0,0,0,50064,Porto,POR
+250055272,Diogo Sousa,,Diogo Sousa,73,2,POR,26.10.1996,18,185,0,0,0,0,0,0,0,0,50064,Porto,POR
+250029855,Evandro,,Evandro,15,3,BRA,23.08.1986,29,179,0,0,0,7,0,0,0,0,50064,Porto,POR
+250076681,Fernando,,Fernando,72,2,POR,14.03.1997,18,,0,0,0,0,0,0,0,0,50064,Porto,POR
+250064522,Filipe Ferreira,,Filipe Ferreira,51,1,POR,20.09.1996,18,,0,0,0,0,0,0,0,0,50064,Porto,POR
+250042516,Francisco Ramos,,Francisco Ramos,48,3,POR,10.04.1995,20,177,0,0,0,0,0,0,0,0,50064,Porto,POR
+71766,Helton,,Helton,1,1,BRA,18.05.1978,37,189,0,0,0,51,0,0,0,0,50064,Porto,POR
+250060117,Herrera,Hector,Herrera,16,3,MEX,19.04.1990,25,183,1,0,1,15,0,0,0,4,50064,Porto,POR
+250011623,Imbula,Giannelli,Imbula,25,3,FRA,12.09.1992,23,186,0,0,0,4,0,0,0,0,50064,Porto,POR
+250076670,Jo?úo Cardoso,,Jo?úo Cardoso,78,3,POR,10.02.1997,18,,0,0,0,0,0,0,0,0,50064,Porto,POR
+250040614,Jo?úo Costa,,Jo?úo Costa,41,1,POR,02.02.1996,19,185,0,0,0,0,0,0,0,0,50064,Porto,POR
+250063928,Jo?úo Gra??a,,Jo?úo Gra??a,50,3,POR,18.06.1995,20,180,0,0,0,0,0,0,0,0,50064,Porto,POR
+250076679,Jorge,,Jorge,64,2,POR,02.04.1997,18,,0,0,0,0,0,0,0,0,50064,Porto,POR
+250040109,Lay?ßn,Miguel,Lay?ßn,21,2,MEX,25.06.1988,27,,1,0,1,1,0,0,0,0,50064,Porto,POR
+250057871,Lu??s Mata,,Lu??s Mata,97,4,POR,06.07.1997,18,179,0,0,0,0,0,0,0,0,50064,Porto,POR
+250007919,Maicon,,Maicon,4,2,BRA,14.09.1988,27,190,1,0,1,22,0,0,0,0,50064,Porto,POR
+250003525,Marcano,Iv?≠n,Marcano,5,2,ESP,23.06.1987,28,189,0,0,0,13,0,0,0,0,50064,Porto,POR
+250017880,Martins Indi,Bruno,Martins Indi,3,2,NED,08.02.1992,23,187,1,0,1,14,0,0,0,0,50064,Porto,POR
+1905761,Maxi Pereira,,Maxi Pereira,2,2,URU,08.06.1984,31,173,1,0,1,40,0,0,0,3,50064,Porto,POR
+1905807,Osvaldo,Pablo,Osvaldo,10,4,ITA,12.01.1986,29,182,1,0,1,6,0,0,0,0,50064,Porto,POR
+250024749,Podstawski,Tom?≠s,Podstawski,56,3,POR,30.01.1995,20,181,0,0,0,0,0,0,0,0,50064,Porto,POR
+250040613,Rafa,,Rafa,55,2,POR,09.05.1995,20,182,0,0,0,0,0,0,0,0,50064,Porto,POR
+250057870,R?ßben Macedo,,R?ßben Macedo,77,4,POR,09.03.1996,19,171,0,0,0,0,0,0,0,0,50064,Porto,POR
+250055271,R?ßben Neves,,R?ßben Neves,6,3,POR,13.03.1997,18,180,1,0,1,10,0,0,0,0,50064,Porto,POR
+250055268,Rui Moreira,,Rui Moreira,60,3,POR,31.05.1996,19,178,0,0,0,0,0,0,0,0,50064,Porto,POR
+250003853,S??rgio Oliveira,,S??rgio Oliveira,13,3,POR,02.06.1992,23,181,0,0,0,1,0,0,0,0,50064,Porto,POR
+250055277,S??rgio Ribeiro,,S??rgio Ribeiro,70,4,POR,18.01.1996,19,178,0,0,0,0,0,0,0,0,50064,Porto,POR
+250017465,Tello,Cristian,Tello,11,4,ESP,11.08.1991,24,178,1,0,1,18,0,0,0,5,50064,Porto,POR
+73319,Varela,Silvestre,Varela,7,4,POR,02.02.1985,30,180,0,0,0,25,0,0,0,3,50064,Porto,POR
+95698,Bilal Kisa,,Bilal Kisa,5,3,TUR,22.06.1983,32,180,0,0,0,0,0,0,0,0,50067,Galatasaray,TUR
+62309,Burak YéÒlmaz,,Burak YéÒlmaz,17,4,TUR,15.07.1985,30,183,1,0,1,36,0,0,0,10,50067,Galatasaray,TUR
+250025888,Carole,Lionel,Carole,23,2,FRA,12.04.1991,24,182,1,0,1,1,0,0,0,0,50067,Galatasaray,TUR
+99202,Cenk G??nen,,Cenk G??nen,99,1,TUR,21.02.1988,27,190,0,0,0,0,0,0,0,0,50067,Galatasaray,TUR
+1900724,Chedjou,Aur??lien,Chedjou,21,2,CMR,20.06.1985,30,184,0,0,0,24,0,0,0,2,50067,Galatasaray,TUR
+250064362,Denayer,Jason,Denayer,64,2,BEL,28.06.1995,20,184,1,0,1,2,0,0,0,0,50067,Galatasaray,TUR
+1901682,Emre ??olak,,Emre ??olak,52,3,TUR,20.05.1991,24,168,1,0,1,9,0,0,0,0,50067,Galatasaray,TUR
+250013120,Eray é¯è?can,,Eray é¯è?can,67,1,TUR,19.07.1991,24,195,0,0,0,2,0,0,0,0,50067,Galatasaray,TUR
+250024671,G?¨nter,Koray,G?¨nter,28,2,GER,16.08.1994,21,185,0,0,0,0,0,0,0,0,50067,Galatasaray,TUR
+61752,Hakan Balta,,Hakan Balta,22,2,TUR,23.03.1983,32,184,1,0,1,9,0,0,0,1,50067,Galatasaray,TUR
+58613,Hamit AltéÒntop,,Hamit AltéÒntop,4,3,TUR,08.12.1982,32,183,0,0,0,41,0,0,0,2,50067,Galatasaray,TUR
+103866,Jem Paul Karacan,,Jem Paul Karacan,6,3,TUR,21.02.1989,26,178,0,0,0,0,0,0,0,0,50067,Galatasaray,TUR
+250024398,Jos?? Rodr??guez,,Jos?? Rodr??guez,14,3,ESP,16.12.1994,20,180,0,0,0,1,0,0,0,0,50067,Galatasaray,TUR
+1905755,Muslera,Fernando,Muslera,1,1,URU,16.06.1986,29,190,1,0,1,22,0,0,0,0,50067,Galatasaray,TUR
+74637,Olcan AdéÒn,,Olcan AdéÒn,29,3,TUR,30.09.1985,29,176,0,0,0,2,0,0,0,0,50067,Galatasaray,TUR
+62594,Podolski,Lukas,Podolski,11,4,GER,04.06.1985,30,182,1,0,1,26,0,0,0,11,50067,Galatasaray,TUR
+52321,Sabri SaréÒoé?lu,,Sabri SaréÒoé?lu,55,2,TUR,26.07.1984,31,170,1,0,1,21,0,0,0,2,50067,Galatasaray,TUR
+62307,Sel??uk é¯nan,,Sel??uk é¯nan,8,3,TUR,10.02.1985,30,182,1,0,1,23,0,0,0,0,50067,Galatasaray,TUR
+107285,Semih Kaya,,Semih Kaya,26,2,TUR,24.02.1991,24,182,1,0,1,23,0,0,0,0,50067,Galatasaray,TUR
+250086329,Sinan G?¨m?¨s,,Sinan G?¨m?¨s,18,4,TUR,15.01.1994,21,179,1,0,1,1,0,0,0,0,50067,Galatasaray,TUR
+57132,Sneijder,Wesley,Sneijder,10,3,NED,09.06.1984,31,170,1,0,1,77,0,0,0,15,50067,Galatasaray,TUR
+250013144,TaréÒk ??amdal,,TaréÒk ??amdal,38,2,TUR,24.03.1991,24,172,0,0,0,5,0,0,0,0,50067,Galatasaray,TUR
+61369,Umut Bulut,,Umut Bulut,9,4,TUR,15.03.1983,32,184,1,0,1,24,0,0,0,4,50067,Galatasaray,TUR
+250003423,Yasin ??ztekin,,Yasin ??ztekin,7,3,TUR,19.03.1987,28,179,1,0,1,4,0,0,0,0,50067,Galatasaray,TUR
+98593,Adriano,,Adriano,21,2,BRA,26.10.1984,30,172,0,0,0,41,0,0,0,1,50080,Barcelona,ESP
+250022918,David Babunski,David,Babunski,29,3,MKD,01.03.1994,21,,0,0,0,0,0,0,0,0,50080,Barcelona,ESP
+250010245,Bartra,Marc,Bartra,15,2,ESP,15.01.1991,24,183,0,0,0,18,0,0,0,0,50080,Barcelona,ESP
+250075672,Bravo,Claudio,Bravo,13,1,CHI,13.04.1983,32,184,0,0,0,7,0,0,0,0,50080,Barcelona,ESP
+250002704,Busquets,Sergio,Busquets,5,3,ESP,16.07.1988,27,189,1,0,1,68,0,0,0,4,50080,Barcelona,ESP
+250024392,C?≠mara,Juan,C?≠mara,27,3,ESP,13.02.1994,21,,0,0,0,0,0,0,0,0,50080,Barcelona,ESP
+95724,Dani Alves,,Dani Alves,6,2,BRA,06.05.1983,32,173,0,0,0,83,0,0,0,7,50080,Barcelona,ESP
+250075674,Douglas,,Douglas,2,2,BRA,06.08.1990,25,171,0,0,0,0,0,0,0,0,50080,Barcelona,ESP
+250042422,Grimaldo,Alejandro,Grimaldo,30,2,ESP,20.09.1995,19,170,0,0,0,0,0,0,0,0,50080,Barcelona,ESP
+250086317,Gumbau,Gerard,Gumbau,28,3,ESP,18.12.1994,20,188,0,0,0,0,0,0,0,0,50080,Barcelona,ESP
+58031,Iniesta,Andr??s,Iniesta,8,3,ESP,11.05.1984,31,170,1,0,1,110,0,0,0,10,50080,Barcelona,ESP
+250000036,Jordi Alba,,Jordi Alba,18,2,ESP,21.03.1989,26,170,1,0,1,32,0,0,0,2,50080,Barcelona,ESP
+104264,Mascherano,Javier,Mascherano,14,2,ARG,08.06.1984,31,174,1,0,1,81,0,0,0,0,50080,Barcelona,ESP
+104025,Masip,Jordi,Masip,25,1,ESP,03.01.1989,26,179,0,0,0,0,0,0,0,0,50080,Barcelona,ESP
+65012,Mathieu,J??r??my,Mathieu,24,2,FRA,29.10.1983,31,189,1,0,1,24,0,0,0,0,50080,Barcelona,ESP
+95803,Messi,Lionel,Messi,10,4,ARG,24.06.1987,28,169,1,0,1,100,0,0,0,77,50080,Barcelona,ESP
+250063866,Munir El Haddadi,,Munir El Haddadi,17,4,ESP,01.09.1995,20,175,0,0,0,3,0,0,0,0,50080,Barcelona,ESP
+250039508,Neymar,,Neymar,11,4,BRA,05.02.1992,23,175,1,0,1,23,0,0,0,14,50080,Barcelona,ESP
+93148,Piqu??,Gerard,Piqu??,3,2,ESP,02.02.1987,28,192,1,0,1,77,0,0,0,9,50080,Barcelona,ESP
+250013895,Rafinha,,Rafinha,12,3,ESP,12.02.1993,22,174,1,0,1,9,0,0,0,0,50080,Barcelona,ESP
+97744,Rakitié?,Ivan,Rakitié?,4,3,CRO,10.03.1988,27,184,1,0,1,27,0,0,0,2,50080,Barcelona,ESP
+250042429,Samper,Sergi,Samper,26,3,ESP,20.01.1995,20,181,0,0,0,1,0,0,0,0,50080,Barcelona,ESP
+250042431,Sandro Ram??rez,,Sandro Ram??rez,19,4,ESP,09.07.1995,20,175,0,0,0,3,0,0,0,1,50080,Barcelona,ESP
+250006092,Sergi Roberto,,Sergi Roberto,20,3,ESP,07.02.1992,23,177,1,0,1,10,0,0,0,1,50080,Barcelona,ESP
+250063875,Su?≠rez,Jos?? Aurelio,Su?≠rez,31,1,ESP,18.12.1995,19,191,0,0,0,0,0,0,0,0,50080,Barcelona,ESP
+106375,Su?≠rez,Luis,Su?≠rez,9,4,URU,24.01.1987,28,181,1,0,1,22,1,0,1,13,50080,Barcelona,ESP
+250007631,ter Stegen,Marc-Andr??,ter Stegen,1,1,GER,30.04.1992,23,187,1,0,1,16,0,0,0,0,50080,Barcelona,ESP
+71982,Vermaelen,Thomas,Vermaelen,23,2,BEL,14.11.1985,29,180,0,0,0,36,0,0,0,1,50080,Barcelona,ESP
+250030823,Andr?? Ramalho,,Andr?? Ramalho,2,2,BRA,16.02.1992,23,182,1,1,0,7,0,0,0,0,50109,Leverkusen,GER
+250025456,Bellarabi,Karim,Bellarabi,38,3,GER,08.04.1990,25,183,3,2,1,15,1,1,0,3,50109,Leverkusen,GER
+103790,L. Bender,Lars,Bender,8,3,GER,27.04.1989,26,183,3,2,1,24,0,0,0,1,50109,Leverkusen,GER
+103586,Boenisch,Sebastian,Boenisch,17,2,POL,01.02.1987,28,191,0,0,0,15,0,0,0,0,50109,Leverkusen,GER
+250046522,Brandt,Julian,Brandt,19,3,GER,02.05.1996,19,183,3,2,1,11,0,0,0,0,50109,Leverkusen,GER
+250016023,Donati,Giulio,Donati,26,2,ITA,05.02.1990,25,181,0,0,0,12,0,0,0,1,50109,Leverkusen,GER
+250064511,Frey,Marlon,Frey,37,3,GER,24.03.1996,19,,0,0,0,0,0,0,0,0,50109,Leverkusen,GER
+250022829,Hakan ??alhanoé?lu,,Hakan ??alhanoé?lu,10,3,TUR,08.02.1994,21,176,3,2,1,13,3,1,2,6,50109,Leverkusen,GER
+250017851,Hern?≠ndez,Javier,Hern?≠ndez,7,4,MEX,01.06.1988,27,175,3,2,1,35,1,0,1,9,50109,Leverkusen,GER
+98870,Hilbert,Roberto,Hilbert,13,2,GER,16.10.1984,30,182,3,2,1,17,0,0,0,0,50109,Leverkusen,GER
+250042622,Jedvaj,Tin,Jedvaj,16,2,CRO,28.11.1995,19,184,0,0,0,5,0,0,0,0,50109,Leverkusen,GER
+250014636,Kampl,Kevin,Kampl,44,3,SVN,09.10.1990,24,180,1,0,1,8,0,0,0,0,50109,Leverkusen,GER
+98328,Kiessling,Stefan,Kiessling,11,4,GER,25.01.1984,31,191,3,2,1,28,0,0,0,7,50109,Leverkusen,GER
+250021626,Kramer,Christoph,Kramer,23,3,GER,19.02.1991,24,190,3,2,1,3,0,0,0,0,50109,Leverkusen,GER
+57892,Kreè≠ié?,Dario,Kreè≠ié?,25,1,CRO,11.01.1984,31,199,0,0,0,2,0,0,0,0,50109,Leverkusen,GER
+250007620,Leno,Bernd,Leno,1,1,GER,04.03.1992,23,188,3,2,1,29,0,0,0,0,50109,Leverkusen,GER
+1905353,Mehmedi,Admir,Mehmedi,14,4,SUI,16.03.1991,24,183,3,2,1,12,2,1,1,4,50109,Leverkusen,GER
+250000927,??mer Toprak,,??mer Toprak,21,2,TUR,21.07.1989,26,186,0,0,0,23,0,0,0,2,50109,Leverkusen,GER
+1901610,Papadopoulos,Kyriakos,Papadopoulos,5,2,GRE,23.02.1992,23,183,3,2,1,21,0,0,0,1,50109,Leverkusen,GER
+250086073,Ryu,Seung-Woo,Ryu,24,4,KOR,17.12.1993,21,,0,0,0,0,0,0,0,0,50109,Leverkusen,GER
+250055660,Tah,Jonathan,Tah,4,2,GER,11.02.1996,19,,3,2,1,3,0,0,0,0,50109,Leverkusen,GER
+250074376,Wendell,,Wendell,18,2,BRA,20.07.1993,22,176,3,2,1,8,0,0,0,0,50109,Leverkusen,GER
+250040598,Yelldell,David,Yelldell,22,1,USA,01.10.1981,33,194,0,0,0,0,0,0,0,0,50109,Leverkusen,GER
+250024897,Yurchenko,Vladlen,Yurchenko,35,3,UKR,22.01.1994,21,178,0,0,0,0,0,0,0,0,50109,Leverkusen,GER
+250076125,Ag?¨ero,Dami?≠n,Ag?¨ero,33,4,ESP,18.01.1997,18,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250087086,Barrag?≠n,Bernab??,Barrag?≠n,25,1,ESP,18.02.1993,22,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250075538,Benjam??n,,Benjam??n,29,3,GHA,04.01.1994,21,178,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250063807,Ca?Òete,,Ca?Òete,28,2,ESP,22.04.1995,20,185,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250086315,Correa,?Ångel,Correa,16,3,ARG,09.03.1995,20,174,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250087516,Del Amo,Oscar,Del Amo,35,2,ESP,24.10.1997,17,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250040959,Ferreira-Carrasco,Yannick,Ferreira-Carrasco,21,4,BEL,04.09.1993,22,180,0,0,0,10,0,0,0,1,50124,Atl??tico,ESP
+95813,Filipe Lu??s,,Filipe Lu??s,3,2,BRA,09.08.1985,30,188,0,0,0,15,0,0,0,1,50124,Atl??tico,ESP
+93951,Gabi,,Gabi,14,3,ESP,10.07.1983,32,180,1,0,1,20,0,0,0,0,50124,Atl??tico,ESP
+250008066,G?≠mez,Jes?ßs,G?≠mez,18,2,ESP,10.04.1985,30,182,0,0,0,13,0,0,0,0,50124,Atl??tico,ESP
+250063505,Gim??nez,Jos?? Mar??a,Gim??nez,24,2,URU,20.01.1995,20,185,1,0,1,5,0,0,0,0,50124,Atl??tico,ESP
+1906224,God??n,Diego,God??n,2,2,URU,16.02.1986,29,186,1,0,1,27,0,0,0,3,50124,Atl??tico,ESP
+250019498,Griezmann,Antoine,Griezmann,7,3,FRA,21.03.1991,24,176,1,0,1,18,2,0,2,5,50124,Atl??tico,ESP
+250076124,Guille P??rez,,Guille P??rez,41,1,ESP,10.01.1997,18,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250087524,Hern?≠ndez,Mario,Hern?≠ndez,37,2,ESP,25.01.1999,16,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250068442,Jaime Almagro,,Jaime Almagro,34,3,ESP,14.03.1997,18,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250075541,Juan Moreno,,Juan Moreno,39,3,ESP,11.05.1997,18,175,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+69172,Juanfran,,Juanfran,20,2,ESP,09.01.1985,30,180,1,0,1,23,0,0,0,0,50124,Atl??tico,ESP
+1909917,Koke,,Koke,6,3,ESP,08.01.1992,23,178,1,0,1,23,0,0,0,3,50124,Atl??tico,ESP
+250063803,Lucas Hern?≠ndez,,Lucas Hern?≠ndez,19,2,FRA,14.02.1996,19,180,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250052989,Mart??nez,Jackson,Mart??nez,11,4,COL,03.10.1986,28,184,1,0,1,25,0,0,0,13,50124,Atl??tico,ESP
+250058051,Morales,Carlos,Morales,38,1,ESP,28.07.1996,19,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+58032,Moy?ˇ,Miguel ?Ångel,Moy?ˇ,1,1,ESP,02.04.1984,31,189,0,0,0,8,0,0,0,0,50124,Atl??tico,ESP
+250087257,Muguruza,?Ålvaro,Muguruza,40,2,ESP,10.05.1997,18,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250053746,Nacho Monsalve,,Nacho Monsalve,27,2,ESP,27.04.1994,21,180,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250087512,Nica Gomes,,Nica Gomes,36,3,ESP,07.07.1997,18,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250056269,Nu?Òez,Roberto,Nu?Òez,30,4,ESP,03.01.1996,19,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250012069,Oblak,Jan,Oblak,13,1,SVN,07.01.1993,22,186,1,0,1,5,0,0,0,0,50124,Atl??tico,ESP
+250050353,??liver Torres,,??liver Torres,10,3,ESP,10.11.1994,20,178,1,0,1,15,0,0,0,0,50124,Atl??tico,ESP
+250086316,Partey,Thomas,Partey,22,3,GHA,13.06.1993,22,185,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250087511,Rentero,Alberto,Rentero,42,3,ESP,24.03.1997,18,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250087513,San Rom?≠n,Miguel,San Rom?≠n,43,1,ESP,14.07.1997,18,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250063892,San??,Arona,San??,31,3,SEN,21.06.1995,20,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250017725,Sa?ßl ????guez,,Sa?ßl ????guez,17,3,ESP,21.11.1994,20,180,1,0,1,6,0,0,0,0,50124,Atl??tico,ESP
+1907998,Savié?,Stefan,Savié?,15,2,MNE,08.01.1991,24,186,0,0,0,6,0,0,0,0,50124,Atl??tico,ESP
+250064116,Siqueira,Guilherme,Siqueira,4,2,ITA,28.04.1986,29,183,1,0,1,10,0,0,0,0,50124,Atl??tico,ESP
+250087514,Talavera,Gonzalo,Talavera,44,2,ESP,15.07.1997,18,,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+52694,Tiago,,Tiago,5,3,POR,02.05.1981,34,183,1,0,1,46,0,0,0,4,50124,Atl??tico,ESP
+58686,Torres,Fernando,Torres,9,4,ESP,20.03.1984,31,186,1,0,1,57,0,0,0,18,50124,Atl??tico,ESP
+250074566,Vietto,Luciano,Vietto,23,4,ARG,05.12.1993,21,173,1,0,1,1,0,0,0,0,50124,Atl??tico,ESP
+250075547,Villa,Samuel,Villa,32,4,ESP,16.09.1994,21,176,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250075548,Xu Xin,,Xu Xin,26,3,CHN,19.04.1994,21,179,0,0,0,0,0,0,0,0,50124,Atl??tico,ESP
+250056198,Capradossi,Elio,Capradossi,95,2,ITA,11.03.1996,19,185,0,0,0,0,0,0,0,0,50137,Roma,ITA
+250076729,Crisanto,Lorenzo,Crisanto,98,1,ITA,20.04.1998,17,,0,0,0,0,0,0,0,0,50137,Roma,ITA
+58656,De Rossi,Daniele,De Rossi,16,3,ITA,24.07.1983,32,184,1,0,1,42,0,0,0,4,50137,Roma,ITA
+27132,De Sanctis,Morgan,De Sanctis,26,1,ITA,26.03.1977,38,190,1,0,1,22,0,0,0,0,50137,Roma,ITA
+250076732,Di Livio,Lorenzo,Di Livio,52,3,ITA,11.01.1997,18,,0,0,0,0,0,0,0,0,50137,Roma,ITA
+250014002,Digne,Lucas,Digne,3,2,FRA,20.07.1993,22,178,1,0,1,11,0,0,0,1,50137,Roma,ITA
+250076735,D'Urso,Christian,D'Urso,53,3,ITA,26.07.1997,18,,0,0,0,0,0,0,0,0,50137,Roma,ITA
+72048,Dè?eko,Edin,Dè?eko,9,4,BIH,17.03.1986,29,193,1,0,1,31,0,0,0,7,50137,Roma,ITA
+1902206,Falqu??,Iago,Falqu??,14,3,ESP,04.01.1990,25,172,1,0,1,1,0,0,0,0,50137,Roma,ITA
+250026962,Florenzi,Alessandro,Florenzi,24,3,ITA,11.03.1991,24,173,1,0,1,7,1,0,1,1,50137,Roma,ITA
+250011036,Gervinho,,Gervinho,27,4,CIV,27.05.1987,28,179,0,0,0,19,0,0,0,5,50137,Roma,ITA
+250039164,Iturbe,Juan Manuel,Iturbe,7,3,PAR,04.06.1993,22,169,1,0,1,7,0,0,0,1,50137,Roma,ITA
+51580,Keita,Seydou,Keita,20,3,MLI,16.01.1980,35,183,1,0,1,64,0,0,0,6,50137,Roma,ITA
+1905226,Leandro Cast?≠n,,Leandro Cast?≠n,5,2,BRA,05.11.1986,28,184,0,0,0,0,0,0,0,0,50137,Roma,ITA
+95291,Maicon,,Maicon,13,2,BRA,26.07.1981,34,184,0,0,0,61,0,0,0,5,50137,Roma,ITA
+250012954,Manolas,Kostas,Manolas,44,2,GRE,14.06.1991,24,186,1,0,1,20,0,0,0,2,50137,Roma,ITA
+250076738,Marchizza,Riccardo,Marchizza,91,2,ITA,26.03.1998,17,,0,0,0,0,0,0,0,0,50137,Roma,ITA
+1906233,Nainggolan,Radja,Nainggolan,4,3,BEL,04.05.1988,27,176,1,0,1,7,0,0,0,0,50137,Roma,ITA
+104071,Pjanié?,Miralem,Pjanié?,15,3,BIH,02.04.1990,25,180,0,0,0,31,0,0,0,6,50137,Roma,ITA
+250028211,R?¨diger,Antonio,R?¨diger,2,2,GER,03.03.1993,22,190,1,0,1,1,0,0,0,0,50137,Roma,ITA
+250052469,Salah,Mohamed,Salah,11,4,EGY,15.06.1992,23,175,1,0,1,15,0,0,0,5,50137,Roma,ITA
+250022826,Salih U??an,,Salih U??an,48,3,TUR,06.01.1994,21,182,0,0,0,0,0,0,0,0,50137,Roma,ITA
+250076744,Soleri,Edoardo,Soleri,92,4,ITA,19.10.1997,17,,0,0,0,0,0,0,0,0,50137,Roma,ITA
+108501,Szczé?sny,Wojciech,Szczé?sny,25,1,POL,18.04.1990,25,195,1,0,1,30,0,0,0,0,50137,Roma,ITA
+72623,Torosidis,Vasilis,Torosidis,35,2,GRE,10.06.1985,30,185,1,0,1,27,0,0,0,2,50137,Roma,ITA
+15895,Totti,Francesco,Totti,10,4,ITA,27.09.1976,38,180,0,0,0,55,0,0,0,17,50137,Roma,ITA
+250076748,Tumminello,Marco,Tumminello,93,4,ITA,06.11.1998,16,,0,0,0,0,0,0,0,0,50137,Roma,ITA
+1902406,Vainqueur,William,Vainqueur,21,3,FRA,19.11.1988,26,179,0,0,0,0,0,0,0,0,50137,Roma,ITA
+250039930,Alex Sandro,,Alex Sandro,12,2,BRA,26.01.1991,24,179,0,0,0,23,0,0,0,0,50139,Juventus,ITA
+250058117,Audero,Emil,Audero,38,1,ITA,18.01.1997,18,189,0,0,0,0,0,0,0,0,50139,Juventus,ITA
+74055,Barzagli,Andrea,Barzagli,15,2,ITA,08.05.1981,34,186,1,0,1,22,0,0,0,0,50139,Juventus,ITA
+250017925,Bonucci,Leonardo,Bonucci,19,2,ITA,01.05.1987,28,190,1,0,1,30,0,0,0,1,50139,Juventus,ITA
+21307,Buffon,Gianluigi,Buffon,1,1,ITA,28.01.1978,37,192,1,0,1,97,0,0,0,0,50139,Juventus,ITA
+250002700,C?≠ceres,Mart??n,C?≠ceres,4,2,URU,07.04.1987,28,182,0,0,0,15,0,0,0,0,50139,Juventus,ITA
+59142,Chiellini,Giorgio,Chiellini,3,2,ITA,14.08.1984,31,186,1,0,1,44,0,0,0,2,50139,Juventus,ITA
+250015966,Cuadrado,Juan,Cuadrado,16,4,COL,26.05.1988,27,176,1,0,1,2,0,0,0,0,50139,Juventus,ITA
+250086333,Dybala,Paulo,Dybala,21,4,ARG,15.11.1993,21,177,1,0,1,1,0,0,0,0,50139,Juventus,ITA
+68468,Evra,Patrice,Evra,33,2,FRA,15.05.1981,34,175,1,0,1,100,0,0,0,2,50139,Juventus,ITA
+250024953,Hernanes,,Hernanes,11,3,BRA,29.05.1985,30,180,1,0,1,1,0,0,0,0,50139,Juventus,ITA
+74327,Khedira,Sami,Khedira,6,3,GER,04.04.1987,28,189,0,0,0,47,0,0,0,1,50139,Juventus,ITA
+250064108,Lemina,Mario,Lemina,18,3,FRA,01.09.1993,22,182,0,0,0,4,0,0,0,0,50139,Juventus,ITA
+56942,Lichtsteiner,Stephan,Lichtsteiner,26,2,SUI,16.01.1984,31,180,1,0,1,32,0,0,0,0,50139,Juventus,ITA
+99350,Mandè?ukié?,Mario,Mandè?ukié?,17,4,CRO,21.05.1986,29,186,1,0,1,45,1,0,1,19,50139,Juventus,ITA
+1902468,Marchisio,Claudio,Marchisio,8,3,ITA,19.01.1986,29,179,0,0,0,34,0,0,0,2,50139,Juventus,ITA
+250024456,Morata,?Ålvaro,Morata,9,4,ESP,23.10.1992,22,187,1,0,1,19,1,0,1,7,50139,Juventus,ITA
+250061507,Neto,,Neto,25,1,BRA,19.07.1989,26,191,0,0,0,0,0,0,0,0,50139,Juventus,ITA
+250040576,Pereyra,Roberto,Pereyra,37,3,ARG,07.01.1991,24,184,0,0,0,14,0,0,0,0,50139,Juventus,ITA
+250015808,Pogba,Paul,Pogba,10,3,FRA,15.03.1993,22,186,1,0,1,25,0,0,0,1,50139,Juventus,ITA
+250024963,Rugani,Daniele,Rugani,24,2,ITA,29.07.1994,21,188,0,0,0,0,0,0,0,0,50139,Juventus,ITA
+250014297,Sturaro,Stefano,Sturaro,27,3,ITA,09.03.1993,22,178,1,0,1,3,0,0,0,0,50139,Juventus,ITA
+250020649,Zaza,Simone,Zaza,7,4,ITA,25.06.1991,24,186,0,0,0,0,0,0,0,0,50139,Juventus,ITA
+250042508,Alex Alfaiate,,Alex Alfaiate,75,2,POR,17.08.1995,20,182,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250005487,Andr?? Almeida,,Andr?? Almeida,34,2,POR,10.09.1990,25,185,0,0,0,14,0,0,0,0,50147,Benfica,POR
+250064489,Andr?? Ferreira,,Andr?? Ferreira,86,1,POR,29.05.1996,19,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250066107,Buta,,Buta,94,4,POR,10.02.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+103344,Carcela-Gonz?≠lez,Mehdi,Carcela-Gonz?≠lez,39,3,MAR,01.07.1989,26,176,0,0,0,7,0,0,0,0,50147,Benfica,POR
+250041741,Cristante,Bryan,Cristante,24,3,ITA,03.03.1995,20,186,0,0,0,4,0,0,0,0,50147,Benfica,POR
+250073809,Ederson,,Ederson,1,1,BRA,17.08.1993,22,188,0,0,0,0,0,0,0,0,50147,Benfica,POR
+65288,Eliseu,,Eliseu,19,2,POR,01.10.1983,31,175,1,0,1,13,0,0,0,5,50147,Benfica,POR
+105823,Fejsa,Ljubomir,Fejsa,5,3,SRB,14.08.1988,27,185,1,0,1,12,0,0,0,0,50147,Benfica,POR
+250066118,Francisco Ferreira,,Francisco Ferreira,97,2,POR,26.03.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250020656,Gait?≠n,Nicol?≠s,Gait?≠n,10,3,ARG,23.02.1988,27,173,1,0,1,34,1,0,1,3,50147,Benfica,POR
+250064481,Gilson Costa,,Gilson Costa,55,3,POR,24.09.1996,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250054760,Gon??alo Guedes,,Gon??alo Guedes,20,4,POR,29.11.1996,18,179,1,0,1,1,0,0,0,0,50147,Benfica,POR
+250066104,Gon??alo Rodrigues,,Gon??alo Rodrigues,68,3,POR,18.07.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250064483,Hildeberto Pereira,,Hildeberto Pereira,99,4,POR,02.03.1996,19,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250026741,Jardel,,Jardel,33,2,BRA,29.03.1986,29,192,1,0,1,13,0,0,0,0,50147,Benfica,POR
+250060115,Jim??nez,Ra?ßl,Jim??nez,9,4,MEX,05.05.1991,24,190,1,0,1,2,0,0,0,0,50147,Benfica,POR
+250068945,Jo?úo Carvalho,,Jo?úo Carvalho,90,3,POR,09.03.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250087569,Jo?úo Escoval,,Jo?úo Escoval,65,2,POR,08.05.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250057873,Jo?úo Lima,,Jo?úo Lima,96,2,POR,23.06.1996,19,178,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250042511,Jo?úo Nunes,,Jo?úo Nunes,63,2,POR,19.11.1995,19,186,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250024750,Jo?úo Teixeira,,Jo?úo Teixeira,40,3,POR,06.02.1994,21,178,0,0,0,1,0,0,0,0,50147,Benfica,POR
+250026742,Jonas,,Jonas,17,4,BRA,01.04.1984,31,181,1,0,1,15,0,0,0,8,50147,Benfica,POR
+91862,J?ßlio C??sar,,J?ßlio C??sar,12,1,BRA,03.09.1979,36,186,1,0,1,58,0,0,0,0,50147,Benfica,POR
+250055905,Lindel??f,Victor,Lindel??f,14,2,SWE,17.07.1994,21,187,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250075775,Lisandro L??pez,,Lisandro L??pez,2,2,ARG,01.09.1989,26,187,0,0,0,2,0,0,0,0,50147,Benfica,POR
+72580,Luis?úo,,Luis?úo,4,2,BRA,13.02.1981,34,193,1,0,1,56,0,0,0,5,50147,Benfica,POR
+250075977,Miguel Santos,,Miguel Santos,87,1,POR,21.10.1994,20,193,0,0,0,0,0,0,0,0,50147,Benfica,POR
+103218,Mitroglou,Kostas,Mitroglou,11,4,GRE,12.03.1988,27,188,1,0,1,34,1,0,1,14,50147,Benfica,POR
+250064482,Nuno Santos,,Nuno Santos,38,4,POR,13.02.1995,20,179,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250069828,Ould-Chikh,Bilal,Ould-Chikh,8,4,NED,28.07.1997,18,167,0,0,0,0,0,0,0,0,50147,Benfica,POR
+40760,Paulo Lopes,,Paulo Lopes,13,1,POR,29.06.1978,37,186,0,0,0,1,0,0,0,0,50147,Benfica,POR
+250066115,Pedro Rodrigues,,Pedro Rodrigues,88,3,POR,20.05.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250075765,Pizzi,,Pizzi,21,4,POR,06.10.1989,25,172,1,0,1,2,0,0,0,0,50147,Benfica,POR
+250042507,Rebocho,,Rebocho,60,2,POR,23.01.1995,20,172,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250058218,Renato Sanches,,Renato Sanches,85,3,POR,18.08.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250055276,Ricardo Carvalho,,Ricardo Carvalho,73,2,POR,06.03.1996,19,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250058220,R?ßben Dias,,R?ßben Dias,66,2,POR,14.05.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+1907791,Samaris,Andreas,Samaris,7,3,GRE,13.06.1989,26,189,1,0,1,12,0,0,0,0,50147,Benfica,POR
+250014116,Sancidino Silva,,Sancidino Silva,77,4,POR,05.03.1994,21,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250086090,Semedo,N??lson,Semedo,50,2,POR,16.11.1993,21,177,1,0,1,1,0,0,0,0,50147,Benfica,POR
+250038947,S??lvio,,S??lvio,28,2,POR,28.09.1987,27,178,0,0,0,2,0,0,0,0,50147,Benfica,POR
+103893,Taarabt,Adel,Taarabt,23,4,MAR,24.05.1989,26,180,0,0,0,2,0,0,0,0,50147,Benfica,POR
+250075767,Talisca,,Talisca,30,4,BRA,01.02.1994,21,178,1,0,1,7,0,0,0,1,50147,Benfica,POR
+250087574,Tiago Dias,,Tiago Dias,78,4,POR,04.05.1998,17,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250087055,Victor Andrade,,Victor Andrade,31,3,BRA,30.09.1995,19,171,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250066114,Yuri Ribeiro,,Yuri Ribeiro,95,2,POR,24.01.1997,18,,0,0,0,0,0,0,0,0,50147,Benfica,POR
+250021061,Adu,Enoch Kofi,Adu,8,3,GHA,14.09.1990,25,180,5,4,1,21,0,0,0,0,50152,Malm??,SWE
+250066765,Andersson,Erik,Andersson,14,3,SWE,03.05.1997,18,,0,0,0,0,0,0,0,0,50152,Malm??,SWE
+250085796,Andersson,Fredrik,Andersson,29,1,SWE,25.10.1988,26,,0,0,0,0,0,0,0,0,50152,Malm??,SWE
+98970,?Årnason,K?≠ri,?Årnason,21,2,ISL,13.10.1982,32,,5,4,1,6,0,0,0,0,50152,Malm??,SWE
+96871,Azinovic,Zlatan,Azinovic,27,1,SWE,31.01.1988,27,183,2,2,0,2,0,0,0,0,50152,Malm??,SWE
+250008391,Bengtsson,Rasmus,Bengtsson,17,2,SWE,26.06.1986,29,186,6,5,1,8,0,0,0,0,50152,Malm??,SWE
+108933,Berget,Jo Inge,Berget,23,4,NOR,11.09.1990,25,184,7,6,1,16,2,2,0,3,50152,Malm??,SWE
+250076449,Brorsson,Franz,Brorsson,31,2,SWE,30.01.1996,19,,2,2,0,2,0,0,0,0,50152,Malm??,SWE
+250085328,Carvalho,Felipe,Carvalho,25,2,URU,18.09.1993,22,,5,4,1,5,0,0,0,0,50152,Malm??,SWE
+250059465,Cibicki,Paweè?,Cibicki,15,3,SWE,09.01.1994,21,182,1,1,0,8,0,0,0,0,50152,Malm??,SWE
+1902731,Djurdjié?,Nikola,Djurdjié?,28,4,SRB,01.04.1986,29,185,5,4,1,7,1,1,0,1,50152,Malm??,SWE
+108931,Eikrem,Magnus,Eikrem,19,3,NOR,08.08.1990,25,173,4,4,0,8,0,0,0,1,50152,Malm??,SWE
+250076447,Johansson,Marko,Johansson,30,1,SWE,25.08.1998,17,,1,1,0,1,0,0,0,0,50152,Malm??,SWE
+250064624,Konate,Pa,Konate,2,2,SWE,25.04.1994,21,172,0,0,0,4,0,0,0,0,50152,Malm??,SWE
+250034743,Kroon,Simon,Kroon,7,3,SWE,16.06.1993,22,180,1,1,0,10,0,0,0,1,50152,Malm??,SWE
+250005568,Lewicki,Oscar,Lewicki,6,3,SWE,14.07.1992,23,,7,6,1,7,0,0,0,0,50152,Malm??,SWE
+250000110,Mehmeti,Agon,Mehmeti,11,4,SWE,20.11.1989,25,183,2,2,0,12,0,0,0,1,50152,Malm??,SWE
+1902712,Molins,Guillermo,Molins,10,3,SWE,26.09.1988,26,186,0,0,0,2,0,0,0,1,50152,Malm??,SWE
+250087058,??zen,Mahmut,??zen,24,2,SWE,01.09.1988,27,179,0,0,0,0,0,0,0,0,50152,Malm??,SWE
+250059468,Petrovié?,Petar,Petrovié?,18,3,SWE,15.09.1995,20,,0,0,0,0,0,0,0,0,50152,Malm??,SWE
+250058142,Rakip,Erdal,Rakip,5,3,SWE,13.02.1996,19,175,6,5,1,10,0,0,0,0,50152,Malm??,SWE
+250085612,Rodié?,Vladimir,Rodié?,20,3,SRB,07.09.1993,22,,5,4,1,5,1,1,0,1,50152,Malm??,SWE
+70390,Rosenberg,Markus,Rosenberg,9,4,SWE,27.09.1982,32,185,6,5,1,42,2,2,0,14,50152,Malm??,SWE
+250007763,Sana,Tobias,Sana,22,4,SWE,11.07.1989,26,173,4,4,0,9,0,0,0,0,50152,Malm??,SWE
+250076479,Svanberg,Mattias,Svanberg,32,3,SWE,05.01.1999,16,,0,0,0,0,0,0,0,0,50152,Malm??,SWE
+250037611,Tinnerholm,Anton,Tinnerholm,3,2,SWE,26.02.1991,24,175,7,6,1,17,1,1,0,1,50152,Malm??,SWE
+250067400,Vindheim,Andreas,Vindheim,26,2,NOR,04.08.1995,20,,1,1,0,1,0,0,0,0,50152,Malm??,SWE
+43836,Wiland,Johan,Wiland,1,1,SWE,24.01.1981,34,188,5,4,1,38,0,0,0,0,50152,Malm??,SWE
+250039591,Yot?ßn,Yoshimar,Yot?ßn,13,2,PER,07.04.1990,25,,7,6,1,7,0,0,0,0,50152,Malm??,SWE
+250005231,Ademi,Arijan,Ademi,16,3,CRO,29.05.1991,24,183,4,3,1,25,1,1,0,2,50164,Dinamo Zagreb,CRO
+250000060,Antolié?,Domagoj,Antolié?,8,3,CRO,30.06.1990,25,180,4,3,1,11,0,0,0,1,50164,Dinamo Zagreb,CRO
+250066137,Benkovié?,Filip,Benkovié?,26,2,CRO,13.07.1997,18,,2,1,1,2,0,0,0,0,50164,Dinamo Zagreb,CRO
+250042019,??eki??i,Endri,??eki??i,17,4,ALB,23.11.1996,18,,1,1,0,1,0,0,0,0,50164,Dinamo Zagreb,CRO
+250066128,é?orié?,Ante,é?orié?,24,3,CRO,14.04.1997,18,177,4,3,1,5,0,0,0,0,50164,Dinamo Zagreb,CRO
+49116,Eduardo,,Eduardo,34,1,POR,19.09.1982,32,190,7,6,1,11,0,0,0,0,50164,Dinamo Zagreb,CRO
+250052972,Fernandes,Junior,Fernandes,11,4,CHI,10.04.1988,27,181,5,4,1,11,1,0,1,4,50164,Dinamo Zagreb,CRO
+250066067,Gojak,Amer,Gojak,14,3,BIH,13.02.1997,18,,0,0,0,0,0,0,0,0,50164,Dinamo Zagreb,CRO
+250072784,Gon??alo Santos,,Gon??alo Santos,13,3,POR,15.11.1986,28,185,4,4,0,7,0,0,0,0,50164,Dinamo Zagreb,CRO
+250053906,Henr??quez,?Ångelo,Henr??quez,9,4,CHI,13.04.1994,21,180,4,4,0,4,2,2,0,2,50164,Dinamo Zagreb,CRO
+250024626,Ar. Hodè?ié?,Armin,Hodè?ié?,15,4,BIH,17.11.1994,20,,4,4,0,6,1,1,0,1,50164,Dinamo Zagreb,CRO
+1901644,Ivo Pinto,,Ivo Pinto,6,2,POR,07.01.1990,25,184,6,5,1,26,0,0,0,0,50164,Dinamo Zagreb,CRO
+108565,Jeè?ina,Antonijo,Jeè?ina,1,1,CRO,05.06.1989,26,193,0,0,0,0,0,0,0,0,50164,Dinamo Zagreb,CRO
+104663,Méüèúel,Alexandru,Méüèúel,77,2,ROU,17.10.1989,25,,2,2,0,2,0,0,0,0,50164,Dinamo Zagreb,CRO
+250023560,Mikulié?,Marko,Mikulié?,33,1,CRO,30.01.1994,21,187,0,0,0,0,0,0,0,0,50164,Dinamo Zagreb,CRO
+250005234,Musa,Mario,Musa,3,3,CRO,06.07.1990,25,,0,0,0,0,0,0,0,0,50164,Dinamo Zagreb,CRO
+70094,Paulo Machado,,Paulo Machado,10,3,POR,31.03.1986,29,174,6,5,1,20,0,0,0,1,50164,Dinamo Zagreb,CRO
+250012527,Paviéçié?,Domagoj,Paviéçié?,18,3,CRO,09.03.1994,21,,0,0,0,0,0,0,0,0,50164,Dinamo Zagreb,CRO
+103298,Pivarié?,Josip,Pivarié?,19,3,CRO,30.01.1989,26,176,7,6,1,25,2,1,1,2,50164,Dinamo Zagreb,CRO
+250042632,Pjaca,Marko,Pjaca,20,4,CRO,06.05.1995,20,183,7,6,1,11,3,3,0,3,50164,Dinamo Zagreb,CRO
+250071671,Rog,Marko,Rog,30,3,CRO,19.07.1995,20,,7,6,1,7,2,2,0,2,50164,Dinamo Zagreb,CRO
+1903908,Schildenfeld,Gordon,Schildenfeld,23,2,CRO,18.03.1985,30,191,0,0,0,7,0,0,0,0,50164,Dinamo Zagreb,CRO
+250072786,Sigali,Leonardo,Sigali,22,2,ARG,29.05.1987,28,179,6,5,1,8,0,0,0,0,50164,Dinamo Zagreb,CRO
+250039656,Soudani,El Arabi Hilal,Soudani,2,4,ALG,25.11.1987,27,177,7,6,1,16,3,3,0,8,50164,Dinamo Zagreb,CRO
+250028687,èˇovè≠ié?,Damir,èˇovè≠ié?,4,3,CRO,05.02.1990,25,,0,0,0,0,0,0,0,0,50164,Dinamo Zagreb,CRO
+250008202,Taravel,J??r??my,Taravel,87,2,FRA,17.04.1987,28,191,6,5,1,6,1,1,0,1,50164,Dinamo Zagreb,CRO
+250016090,Abdennour,Aymen,Abdennour,23,2,TUN,06.08.1989,26,187,1,0,1,7,0,0,0,1,52268,Valencia,ESP
+250061603,Aderlan Santos,,Aderlan Santos,4,2,BRA,09.04.1989,26,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250017709,Andr?? Gomes,,Andr?? Gomes,21,3,POR,30.07.1993,22,185,1,0,1,5,1,0,1,1,52268,Valencia,ESP
+98405,Barrag?≠n,Antonio,Barrag?≠n,19,2,ESP,12.06.1987,28,187,2,2,0,9,0,0,0,0,52268,Valencia,ESP
+250086036,Danilo Barbosa,,Danilo Barbosa,12,3,BRA,28.02.1996,19,,1,1,0,1,0,0,0,0,52268,Valencia,ESP
+250086037,De Paul,Rodrigo,De Paul,20,4,ARG,24.05.1994,21,,1,1,0,1,0,0,0,0,52268,Valencia,ESP
+250003440,Feghouli,Sofiane,Feghouli,8,3,ALG,26.12.1989,25,178,3,2,1,18,1,1,0,4,52268,Valencia,ESP
+250079394,Fran Villalba,,Fran Villalba,30,3,ESP,11.05.1998,17,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250047086,Gay?ˇ,Jos??,Gay?ˇ,14,2,ESP,25.05.1995,20,,3,2,1,3,0,0,0,0,52268,Valencia,ESP
+250086274,Gil,Nacho,Gil,33,3,ESP,09.09.1995,20,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250064017,Jaume Dom??nech,,Jaume Dom??nech,24,1,ESP,05.11.1990,24,,1,0,1,1,0,0,0,0,52268,Valencia,ESP
+69797,Javi Fuego,,Javi Fuego,18,3,ESP,04.01.1984,31,,3,2,1,3,0,0,0,0,52268,Valencia,ESP
+250024746,Jo?úo Cancelo,,Jo?úo Cancelo,2,2,POR,27.05.1994,21,,1,0,1,1,1,0,1,1,52268,Valencia,ESP
+250086275,Latorre,Antonio,Latorre,36,2,ESP,21.11.1997,17,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250007624,Mustafi,Shkodran,Mustafi,5,2,GER,17.04.1992,23,183,3,2,1,3,0,0,0,0,52268,Valencia,ESP
+101672,Negredo,?Ålvaro,Negredo,7,4,ESP,20.08.1985,30,186,3,2,1,20,1,1,0,7,52268,Valencia,ESP
+250086038,Orb?≠n,Lucas,Orb?≠n,6,2,ESP,03.02.1989,26,184,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250007584,Paco Alc?≠cer,,Paco Alc?≠cer,9,4,ESP,30.08.1993,22,,3,2,1,3,0,0,0,0,52268,Valencia,ESP
+104033,Parejo,Daniel,Parejo,10,3,ESP,16.04.1989,26,178,3,2,1,11,1,1,0,1,52268,Valencia,ESP
+250086307,Pascual,Andr??s,Pascual,34,4,ESP,18.11.1996,18,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250038976,P??rez,Enzo,P??rez,15,3,ARG,22.02.1986,29,179,3,2,1,20,0,0,0,0,52268,Valencia,ESP
+250015969,Piatti,Pablo,Piatti,11,4,ARG,31.03.1989,26,163,3,2,1,9,0,0,0,0,52268,Valencia,ESP
+250014558,Rodrigo,,Rodrigo,17,4,ESP,06.03.1991,24,180,3,2,1,18,1,1,0,3,52268,Valencia,ESP
+250067395,R?ßben Vezo,,R?ßben Vezo,3,2,POR,25.04.1994,21,,2,2,0,2,0,0,0,0,52268,Valencia,ESP
+250062159,Ryan,Mathew,Ryan,25,1,AUS,08.04.1992,23,182,2,2,0,2,0,0,0,0,52268,Valencia,ESP
+250059143,Santi Mina,,Santi Mina,22,4,ESP,07.12.1995,19,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250080576,Sivera,Antonio,Sivera,35,1,ESP,11.08.1996,19,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250086306,Tropi,,Tropi,28,3,ESP,12.05.1995,20,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+106680,Yoel,,Yoel,13,1,ESP,28.08.1988,27,,0,0,0,0,0,0,0,0,52268,Valencia,ESP
+250003528,Alexis S?≠nchez,,Alexis S?≠nchez,17,4,CHI,19.12.1988,26,168,1,0,1,34,0,0,0,7,52280,Arsenal,ENG
+48233,Arteta,Mikel,Arteta,8,3,ESP,26.03.1982,33,183,1,0,1,36,0,0,0,3,52280,Arsenal,ENG
+250047082,Beller??n,H??ctor,Beller??n,24,2,ESP,19.03.1995,20,177,0,0,0,4,0,0,0,0,52280,Arsenal,ENG
+250039158,Campbell,Joel,Campbell,28,4,CRC,26.06.1992,23,178,1,0,1,9,0,0,0,1,52280,Arsenal,ENG
+49029,é?ech,Petr,é?ech,33,1,CZE,20.05.1982,33,196,0,0,0,106,0,0,0,0,52280,Arsenal,ENG
+250047102,Chambers,Calum,Chambers,21,2,ENG,20.01.1995,20,183,0,0,0,7,0,0,0,0,52280,Arsenal,ENG
+1909628,Coquelin,Francis,Coquelin,34,3,FRA,13.05.1991,24,178,1,0,1,10,0,0,0,0,52280,Arsenal,ENG
+69160,Debuchy,Mathieu,Debuchy,2,2,FRA,28.07.1985,30,177,1,0,1,22,0,0,0,0,52280,Arsenal,ENG
+72430,Flamini,Mathieu,Flamini,20,3,FRA,07.03.1984,31,178,0,0,0,56,0,0,0,1,52280,Arsenal,ENG
+250074556,Gabriel,,Gabriel,5,2,BRA,26.11.1990,24,185,1,0,1,1,0,0,0,0,52280,Arsenal,ENG
+1905136,Gibbs,Kieran,Gibbs,3,2,ENG,26.09.1989,25,178,1,0,1,33,0,0,0,2,52280,Arsenal,ENG
+250020851,Giroud,Olivier,Giroud,12,4,FRA,30.09.1986,28,192,1,0,1,20,0,0,0,6,52280,Arsenal,ENG
+250081336,Hinds,Kaylen,Hinds,42,4,ENG,28.01.1998,17,180,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250064352,Huddart,Ryan,Huddart,43,1,ENG,06.03.1997,18,191,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250064296,Iliev,Deyan,Iliev,44,1,BUL,25.02.1995,20,,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250064351,Iwobi,Alex,Iwobi,45,4,ENG,03.05.1996,19,180,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250081196,Johnson,Chiori,Johnson,46,2,ENG,05.10.1997,17,175,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250056954,Kamara,Glen,Kamara,47,3,FIN,28.10.1995,19,183,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250018623,Koscielny,Laurent,Koscielny,6,2,FRA,10.09.1985,30,186,1,0,1,31,0,0,0,2,52280,Arsenal,ENG
+250074433,Macey,Matt,Macey,49,1,ENG,09.09.1994,21,,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250076077,Mavididi,Stephy,Mavididi,50,4,ENG,31.05.1998,17,,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+97575,Mertesacker,Per,Mertesacker,4,2,GER,29.09.1984,30,198,0,0,0,55,0,0,0,2,52280,Arsenal,ENG
+99092,Monreal,Nacho,Monreal,18,2,ESP,26.02.1986,29,178,0,0,0,20,0,0,0,0,52280,Arsenal,ENG
+250064349,Moore,Tafari,Moore,51,2,ENG,05.07.1997,18,173,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250064348,O'Connor,Stefan,O'Connor,52,2,ENG,23.01.1997,18,186,0,0,0,1,0,0,0,0,52280,Arsenal,ENG
+250034526,Ospina,David,Ospina,13,1,COL,31.08.1988,27,183,1,0,1,4,0,0,0,0,52280,Arsenal,ENG
+250021048,Oxlade-Chamberlain,Alex,Oxlade-Chamberlain,15,4,ENG,15.08.1993,22,180,1,0,1,20,0,0,0,3,52280,Arsenal,ENG
+103697,??zil,Mesut,??zil,11,3,GER,15.10.1988,26,183,1,0,1,55,0,0,0,5,52280,Arsenal,ENG
+103769,Ramsey,Aaron,Ramsey,16,3,WAL,26.12.1990,24,177,0,0,0,41,0,0,0,11,52280,Arsenal,ENG
+250079419,Reine-Ad??la??de,Jeff,Reine-Ad??la??de,54,3,FRA,17.01.1998,17,,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+250081197,Robinson,Tyrell,Robinson,55,3,ENG,16.09.1997,18,,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+33466,Rosick?´,Tom?≠è≠,Rosick?´,7,3,CZE,04.10.1980,34,178,0,0,0,83,0,0,0,12,52280,Arsenal,ENG
+72644,Santi Cazorla,,Santi Cazorla,19,3,ESP,13.12.1984,30,168,1,0,1,35,0,0,0,0,52280,Arsenal,ENG
+93279,Walcott,Theo,Walcott,14,4,ENG,16.03.1989,26,176,1,0,1,56,1,0,1,13,52280,Arsenal,ENG
+1901680,Welbeck,Danny,Welbeck,23,4,ENG,26.11.1990,24,185,0,0,0,22,0,0,0,7,52280,Arsenal,ENG
+250081345,Willock,Chris,Willock,59,4,ENG,31.01.1998,17,180,0,0,0,0,0,0,0,0,52280,Arsenal,ENG
+1907893,Wilshere,Jack,Wilshere,10,3,ENG,01.01.1992,23,172,0,0,0,27,0,0,0,4,52280,Arsenal,ENG
+250014680,Ander Herrera,,Ander Herrera,21,3,ESP,14.08.1989,26,182,2,1,1,2,1,1,0,1,52682,Man. United,ENG
+108908,Blind,Daley,Blind,17,3,NED,09.03.1990,25,180,3,2,1,17,0,0,0,0,52682,Man. United,ENG
+50909,Carrick,Michael,Carrick,16,3,ENG,28.07.1981,34,188,2,2,0,70,0,0,0,4,52682,Man. United,ENG
+103806,Darmian,Matteo,Darmian,36,2,ITA,02.12.1989,25,182,3,2,1,3,0,0,0,0,52682,Man. United,ENG
+1901746,De Gea,David,de Gea,1,1,ESP,07.11.1990,24,192,1,0,1,23,0,0,0,0,52682,Man. United,ENG
+250024860,Depay,Memphis,Depay,7,4,NED,13.02.1994,21,176,3,2,1,7,3,2,1,4,52682,Man. United,ENG
+104237,Fellaini,Marouane,Fellaini,27,3,BEL,22.11.1987,27,194,2,1,1,11,1,1,0,1,52682,Man. United,ENG
+250007234,Johnstone,Sam,Johnstone,50,1,ENG,25.03.1993,22,,0,0,0,0,0,0,0,0,52682,Man. United,ENG
+250014728,Jones,Phil,Jones,4,2,ENG,21.02.1992,23,180,0,0,0,17,0,0,0,2,52682,Man. United,ENG
+104584,Juan Mata,,Juan Mata,8,3,ESP,28.04.1988,27,170,3,2,1,31,0,0,0,6,52682,Man. United,ENG
+250043859,Lingard,Jesse,Lingard,35,3,ENG,15.12.1992,22,,0,0,0,0,0,0,0,0,52682,Man. United,ENG
+250042781,Martial,Anthony,Martial,9,4,FRA,05.12.1995,19,181,5,4,1,12,1,1,0,1,52682,Man. United,ENG
+250042799,McNair,Paddy,McNair,33,2,NIR,27.04.1995,20,,0,0,0,0,0,0,0,0,52682,Man. United,ENG
+250056635,Pereira,Andreas,Pereira,44,3,BEL,01.01.1996,19,,0,0,0,0,0,0,0,0,52682,Man. United,ENG
+250024793,Powell,Nick,Powell,22,3,ENG,23.03.1994,21,183,0,0,0,2,0,0,0,0,52682,Man. United,ENG
+250026718,Rojo,Marcos,Rojo,5,2,ARG,20.03.1990,25,187,1,0,1,1,0,0,0,0,52682,Man. United,ENG
+1905918,Romero,Sergio,Romero,20,1,ARG,22.02.1987,28,192,2,2,0,8,0,0,0,0,52682,Man. United,ENG
+63891,Rooney,Wayne,Rooney,10,4,ENG,24.10.1985,29,176,2,2,0,84,3,3,0,33,52682,Man. United,ENG
+103891,Schneiderlin,Morgan,Schneiderlin,28,3,FRA,08.11.1989,25,,1,1,0,1,0,0,0,0,52682,Man. United,ENG
+67496,Schweinsteiger,Bastian,Schweinsteiger,31,3,GER,01.08.1984,31,183,3,2,1,94,0,0,0,13,52682,Man. United,ENG
+250042705,Shaw,Luke,Shaw,23,2,ENG,12.07.1995,20,,3,2,1,3,0,0,0,0,52682,Man. United,ENG
+250011196,Smalling,Chris,Smalling,12,2,ENG,22.11.1989,25,194,3,2,1,25,0,0,0,1,52682,Man. United,ENG
+101303,A. Valencia,Antonio,Valencia,25,3,ECU,04.08.1985,30,178,1,0,1,36,0,0,0,6,52682,Man. United,ENG
+250075737,Varela,Guillermo,Varela,30,2,URU,24.03.1993,22,173,0,0,0,0,0,0,0,0,52682,Man. United,ENG
+250064534,Wilson,James,Wilson,19,4,ENG,01.12.1995,19,,0,0,0,0,0,0,0,0,52682,Man. United,ENG
+106602,Young,Ashley,Young,18,3,ENG,09.07.1985,30,177,2,1,1,15,0,0,0,1,52682,Man. United,ENG
+250022242,Alex Teixeira,,Alex Teixeira,29,3,BRA,06.01.1990,25,173,5,4,1,40,1,1,0,9,52707,Shakhtar Donetsk,UKR
+250061115,Azevedo,M?≠rcio,Azevedo,66,2,BRA,05.02.1986,29,173,3,2,1,7,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250059205,Bernard,,Bernard,10,3,BRA,08.09.1992,23,164,3,2,1,14,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250040615,Dentinho,,Dentinho,9,3,BRA,19.01.1989,26,177,0,0,0,0,0,0,0,0,52707,Shakhtar Donetsk,UKR
+61511,Eduardo,,Eduardo,22,4,CRO,25.02.1983,32,178,4,4,0,42,0,0,0,12,52707,Shakhtar Donetsk,UKR
+250062178,Ferreyra,Facundo,Ferreyra,19,4,ARG,14.03.1991,24,187,0,0,0,5,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250062176,Fred,,Fred,8,3,BRA,05.03.1993,22,169,5,4,1,15,0,0,0,0,52707,Shakhtar Donetsk,UKR
+73035,Gladkiy,Olexandr,Gladkiy,21,4,UKR,24.08.1987,28,188,5,4,1,22,2,2,0,7,52707,Shakhtar Donetsk,UKR
+250058924,Gryn,Serhiy,Gryn,24,4,UKR,06.06.1994,21,,0,0,0,0,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250053792,Ismaily,,Ismaily,31,2,BRA,11.01.1990,25,177,0,0,0,6,0,0,0,1,52707,Shakhtar Donetsk,UKR
+1905028,Kanibolotskiy,Anton,Kanibolotskiy,32,1,UKR,16.05.1988,27,191,0,0,0,0,0,0,0,0,52707,Shakhtar Donetsk,UKR
+94109,Kobin,Vasyl,Kobin,14,3,UKR,24.05.1985,30,180,0,0,0,3,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250056865,Kovalenko,Viktor,Kovalenko,74,3,UKR,14.02.1996,19,186,3,2,1,3,0,0,0,0,52707,Shakhtar Donetsk,UKR
+107955,Kryvtsov,Serhiy,Kryvtsov,38,2,UKR,15.03.1991,24,186,1,1,0,3,0,0,0,0,52707,Shakhtar Donetsk,UKR
+71596,Kucher,Olexandr,Kucher,5,2,UKR,22.10.1982,32,184,3,2,1,50,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250067453,Malyshev,Maksym,Malyshev,17,3,UKR,24.12.1992,22,181,3,2,1,3,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250045024,Marlos,,Marlos,11,3,BRA,07.06.1988,27,173,5,4,1,13,2,2,0,2,52707,Shakhtar Donetsk,UKR
+250064444,Matviyenko,Mykola,Matviyenko,25,2,UKR,02.05.1996,19,,0,0,0,0,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250004737,Ordets,Ivan,Ordets,18,2,UKR,08.07.1992,23,194,2,2,0,3,0,0,0,0,52707,Shakhtar Donetsk,UKR
+67855,Pyatov,Andriy,Pyatov,30,1,UKR,28.06.1984,31,190,5,4,1,57,0,0,0,0,52707,Shakhtar Donetsk,UKR
+250008930,Rakitskiy,Yaroslav,Rakitskiy,44,2,UKR,03.08.1989,26,180,5,4,1,41,0,0,0,1,52707,Shakhtar Donetsk,UKR
+250027153,Sarnavskiy,Bohdan,Sarnavskiy,23,1,UKR,29.01.1995,20,,0,0,0,0,0,0,0,0,52707,Shakhtar Donetsk,UKR
+55031,Shevchuk,Vyacheslav,Shevchuk,13,2,UKR,13.05.1979,36,180,2,2,0,27,0,0,0,0,52707,Shakhtar Donetsk,UKR
+48893,Srna,Darijo,Srna,33,2,CRO,01.05.1982,33,182,5,4,1,82,1,1,0,5,52707,Shakhtar Donetsk,UKR
+1902685,Stepanenko,Taras,Stepanenko,6,3,UKR,08.08.1989,26,181,5,4,1,20,0,0,0,2,52707,Shakhtar Donetsk,UKR
+250022354,Taison,,Taison,28,3,BRA,13.01.1988,27,172,5,4,1,21,0,0,0,1,52707,Shakhtar Donetsk,UKR
+250062177,Wellington Nem,,Wellington Nem,7,3,BRA,06.02.1992,23,165,0,0,0,2,0,0,0,0,52707,Shakhtar Donetsk,UKR
+68573,Andreolli,Marco,Andreolli,17,2,ITA,10.06.1986,29,187,1,0,1,3,0,0,0,0,52714,Sevilla,ESP
+250003399,Banega,??ver,Banega,19,3,ARG,20.06.1988,27,174,1,0,1,17,1,0,1,1,52714,Sevilla,ESP
+250067964,Carlos Fern?≠ndez,,Carlos Fern?≠ndez,28,4,ESP,22.05.1996,19,186,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250086008,Carmona,David,Carmona,26,2,ESP,11.01.1997,18,175,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250035949,Coke,,Coke,23,2,ESP,26.04.1987,28,176,1,0,1,1,0,0,0,0,52714,Sevilla,ESP
+250047084,Cot?≠n,Antonio,Cot?≠n,27,3,ESP,19.05.1996,19,176,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250063974,Crist??foro,Sebasti?≠n,Crist??foro,14,3,URU,23.08.1993,22,173,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250039787,Daniel Carri??o,,Daniel Carri??o,6,3,POR,04.08.1988,27,182,0,0,0,6,0,0,0,0,52714,Sevilla,ESP
+250022295,Escudero,Sergio,Escudero,18,2,ESP,02.09.1989,26,176,0,0,0,4,0,0,0,0,52714,Sevilla,ESP
+101528,Gameiro,Kevin,Gameiro,9,4,FRA,09.05.1987,28,172,1,0,1,4,1,0,1,1,52714,Sevilla,ESP
+250051268,Iborra,Vicente,Iborra,8,3,ESP,16.01.1988,27,190,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250005254,Immobile,Ciro,Immobile,11,4,ITA,20.02.1990,25,181,1,0,1,8,0,0,0,4,52714,Sevilla,ESP
+250086007,Jos?? Matos,,Jos?? Matos,29,2,ESP,06.05.1995,20,169,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250073998,Juan Mu?Òoz,,Juan Mu?Òoz,30,4,ESP,12.11.1995,19,182,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250068979,Juan Soriano,,Juan Soriano,33,1,ESP,23.08.1997,18,182,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+1908193,Kakuta,Ga?Æl,Kakuta,12,3,FRA,21.06.1991,24,172,0,0,0,6,0,0,0,0,52714,Sevilla,ESP
+1908195,Kolodziejczak,Timoth??e,Kolodziejczak,5,2,FRA,01.10.1991,23,185,1,0,1,3,0,0,0,0,52714,Sevilla,ESP
+1905873,Konoplyanka,Yevhen,Konoplyanka,22,3,UKR,29.09.1989,25,176,1,0,1,3,1,0,1,1,52714,Sevilla,ESP
+63344,Krohn-Dehli,Michael,Krohn-Dehli,7,3,DEN,06.06.1983,32,170,1,0,1,1,0,0,0,0,52714,Sevilla,ESP
+102092,Krychowiak,Grzegorz,Krychowiak,4,3,POL,29.01.1990,25,186,1,0,1,1,0,0,0,0,52714,Sevilla,ESP
+69176,Llorente,Fernando,Llorente,24,4,ESP,26.02.1985,30,195,0,0,0,14,0,0,0,3,52714,Sevilla,ESP
+250063765,Luismi,,Luismi,16,3,ESP,05.05.1992,23,180,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250049643,Mariano Ferreira,,Mariano Ferreira,25,2,BRA,23.06.1986,29,177,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250012024,N'Zonzi,Steven,N'Zonzi,15,3,FRA,15.12.1988,26,190,1,0,1,1,0,0,0,0,52714,Sevilla,ESP
+1909693,Rami,Adil,Rami,3,2,FRA,27.12.1985,29,190,0,0,0,14,0,0,0,2,52714,Sevilla,ESP
+52988,Reyes,Jos?? Antonio,Reyes,10,3,ESP,01.09.1983,32,178,1,0,1,35,0,0,0,3,52714,Sevilla,ESP
+250062440,Rico,Sergio,Rico,1,1,ESP,01.09.1993,22,194,1,0,1,1,0,0,0,0,52714,Sevilla,ESP
+250089261,Rodriguez,?Ålvaro,Rodriguez,35,1,ESP,18.02.1998,17,,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+250081368,Soria,David,Soria,31,1,ESP,04.04.1993,22,192,0,0,0,0,0,0,0,0,52714,Sevilla,ESP
+106603,Tr??moulinas,Beno??t,Tr??moulinas,2,2,FRA,28.12.1985,29,173,1,0,1,10,0,0,0,0,52714,Sevilla,ESP
+250062154,Vitolo,,Vitolo,20,3,ESP,02.11.1989,25,183,1,0,1,1,0,0,0,0,52714,Sevilla,ESP
+102812,Antunes,,Antunes,5,2,POR,01.04.1987,28,175,1,0,1,6,0,0,0,0,52723,Dynamo Kyiv,UKR
+250020844,Belhanda,Younes,Belhanda,90,3,MAR,25.02.1990,25,174,1,0,1,7,0,0,0,2,52723,Dynamo Kyiv,UKR
+250086323,Boldenkov,Valery,Boldenkov,44,2,UKR,08.09.1994,21,191,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250042636,Burda,Mykyta,Burda,26,2,UKR,24.03.1995,20,187,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250024883,Bushchan,Georgiy,Bushchan,52,1,UKR,31.05.1994,21,201,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250024124,Buyalskiy,Vitaliy,Buyalskiy,29,3,UKR,06.01.1993,22,170,1,0,1,1,1,0,1,1,52723,Dynamo Kyiv,UKR
+250020488,Danilo Silva,,Danilo Silva,2,2,BRA,24.11.1986,28,185,1,0,1,14,0,0,0,0,52723,Dynamo Kyiv,UKR
+1909713,Dragovic,Aleksandar,Dragovic,6,2,AUT,06.03.1991,24,185,1,0,1,15,0,0,0,0,52723,Dynamo Kyiv,UKR
+1902207,Garmash,Denys,Garmash,19,3,UKR,19.04.1990,25,187,1,0,1,13,0,0,0,1,52723,Dynamo Kyiv,UKR
+250070712,Gonz?≠lez,Derlis,Gonz?≠lez,25,3,PAR,20.03.1994,21,172,1,0,1,9,0,0,0,3,52723,Dynamo Kyiv,UKR
+68316,Gusev,Oleh,Gusev,20,3,UKR,25.04.1983,32,179,1,0,1,53,1,0,1,9,52723,Dynamo Kyiv,UKR
+250036166,J?ßnior Moraes,,J?ßnior Moraes,11,4,BRA,04.04.1987,28,176,1,0,1,1,0,0,0,0,52723,Dynamo Kyiv,UKR
+250011944,Khacheridi,Yevhen,Khacheridi,34,2,UKR,28.07.1987,28,197,1,0,1,13,0,0,0,0,52723,Dynamo Kyiv,UKR
+57902,Kranjéçar,Niko,Kranjéçar,21,3,CRO,13.08.1984,31,185,0,0,0,18,0,0,0,2,52723,Dynamo Kyiv,UKR
+103841,Kravets,Artem,Kravets,22,4,UKR,03.06.1989,26,185,1,0,1,9,0,0,0,0,52723,Dynamo Kyiv,UKR
+250056862,Lukyanchuk,Pavlo,Lukyanchuk,42,2,UKR,19.05.1996,19,,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250063372,Makarenko,Yevhen,Makarenko,27,2,UKR,21.05.1991,24,182,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+70090,Miguel Veloso,,Miguel Veloso,4,3,POR,11.05.1986,29,180,1,0,1,33,0,0,0,3,52723,Dynamo Kyiv,UKR
+98125,Morozyuk,Mykola,Morozyuk,9,2,UKR,17.01.1988,27,176,0,0,0,3,0,0,0,0,52723,Dynamo Kyiv,UKR
+250043091,Myakushko,Serhiy,Myakushko,88,3,UKR,15.04.1993,22,167,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250087700,Nesterenko,Andrii,Nesterenko,45,2,UKR,14.05.1996,19,,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250056867,Orikhovskiy,Pavlo,Orikhovskiy,48,3,UKR,13.05.1996,19,,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250002316,Petrovié?,Radosav,Petrovié?,8,3,SRB,08.03.1989,26,193,0,0,0,17,0,0,0,1,52723,Dynamo Kyiv,UKR
+250010235,Rybalka,Serhiy,Rybalka,17,3,UKR,01.04.1990,25,176,1,0,1,1,0,0,0,0,52723,Dynamo Kyiv,UKR
+73021,Rybka,Olexandr,Rybka,23,1,UKR,10.04.1987,28,193,1,0,1,10,0,0,0,0,52723,Dynamo Kyiv,UKR
+23137,Shovkovskiy,Olexandr,Shovkovskiy,1,1,UKR,02.01.1975,40,191,0,0,0,101,0,0,0,0,52723,Dynamo Kyiv,UKR
+250008250,Sydorchuk,Serhiy,Sydorchuk,16,3,UKR,02.05.1991,24,188,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250026024,Teodorczyk,èÅukasz,Teodorczyk,91,4,POL,03.06.1991,24,185,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+108567,Vida,Domagoj,Vida,24,2,CRO,29.04.1989,26,184,0,0,0,24,0,0,0,2,52723,Dynamo Kyiv,UKR
+250047100,Yaremchuk,Roman,Yaremchuk,41,4,UKR,27.11.1995,19,,0,0,0,0,0,0,0,0,52723,Dynamo Kyiv,UKR
+250000069,Yarmolenko,Andriy,Yarmolenko,10,4,UKR,23.10.1989,25,187,0,0,0,22,0,0,0,3,52723,Dynamo Kyiv,UKR
+250064581,Augustin,Jean-K??vin,Augustin,29,4,FRA,16.06.1997,18,177,0,0,0,0,0,0,0,0,52747,Paris,FRA
+250025875,Aurier,Serge,Aurier,19,2,CIV,24.12.1992,22,176,0,0,0,0,0,0,0,0,52747,Paris,FRA
+1905813,Cavani,Edinson,Cavani,9,4,URU,14.02.1987,28,184,1,0,1,27,1,0,1,16,52747,Paris,FRA
+1900733,David Luiz,,David Luiz,32,2,BRA,22.04.1987,28,188,1,0,1,45,0,0,0,5,52747,Paris,FRA
+250064587,Descamps,R??my,Descamps,40,1,FRA,25.06.1996,19,,0,0,0,0,0,0,0,0,52747,Paris,FRA
+1905153,Di Mar??a,?Ångel,Di Mar??a,11,3,ARG,14.02.1988,27,180,1,0,1,47,1,0,1,9,52747,Paris,FRA
+1901440,Douchez,Nicolas,Douchez,1,1,FRA,22.04.1980,35,186,0,0,0,2,0,0,0,0,52747,Paris,FRA
+59217,Ibrahimovié?,Zlatan,Ibrahimovié?,10,4,SWE,03.10.1981,33,194,1,0,1,114,0,0,0,44,52747,Paris,FRA
+250064583,Kimpembe,Presnel,Kimpembe,3,2,FRA,13.08.1995,20,183,0,0,0,0,0,0,0,0,52747,Paris,FRA
+250024288,Kurzawa,Layvin,Kurzawa,20,2,FRA,04.09.1992,23,182,3,3,0,11,2,2,0,2,52747,Paris,FRA
+250000688,Lavezzi,Ezequiel,Lavezzi,22,4,ARG,03.05.1985,30,173,1,0,1,36,0,0,0,9,52747,Paris,FRA
+250039525,Lucas,,Lucas,7,3,BRA,13.08.1992,23,172,0,0,0,22,0,0,0,0,52747,Paris,FRA
+250064064,Marquinhos,,Marquinhos,5,2,BRA,14.05.1994,21,183,0,0,0,15,0,0,0,3,52747,Paris,FRA
+103546,Matuidi,Blaise,Matuidi,14,3,FRA,09.04.1987,28,175,1,0,1,29,0,0,0,4,52747,Paris,FRA
+60805,Maxwell,,Maxwell,17,2,BRA,27.08.1981,34,177,1,0,1,85,0,0,0,0,52747,Paris,FRA
+250076654,Nkunku,Christopher,Nkunku,33,3,FRA,14.11.1997,17,,0,0,0,0,0,0,0,0,52747,Paris,FRA
+250042784,Ongenda,Hervin,Ongenda,35,4,FRA,24.06.1995,20,169,0,0,0,0,0,0,0,0,52747,Paris,FRA
+250015986,Pastore,Javier,Pastore,27,3,ARG,20.06.1989,26,187,1,0,1,27,0,0,0,4,52747,Paris,FRA
+250053905,Rabiot,Adrien,Rabiot,25,3,FRA,03.04.1995,20,188,0,0,0,11,0,0,0,0,52747,Paris,FRA
+106737,Sirigu,Salvatore,Sirigu,30,1,ITA,12.01.1987,28,192,0,0,0,30,0,0,0,0,52747,Paris,FRA
+250016042,Stambouli,Benjamin,Stambouli,4,3,FRA,13.08.1990,25,180,0,0,0,4,0,0,0,0,52747,Paris,FRA
+56451,Thiago Motta,,Thiago Motta,8,3,ITA,28.08.1982,33,183,1,0,1,66,0,0,0,5,52747,Paris,FRA
+250011954,Thiago Silva,,Thiago Silva,2,2,BRA,22.09.1984,30,183,1,0,1,43,0,0,0,4,52747,Paris,FRA
+1902188,Trapp,Kevin,Trapp,16,1,GER,08.07.1990,25,189,1,0,1,1,0,0,0,0,52747,Paris,FRA
+106762,Van der Wiel,Gregory,van der Wiel,23,2,NED,03.02.1988,27,172,1,0,1,38,0,0,0,1,52747,Paris,FRA
+250006200,Verratti,Marco,Verratti,6,3,ITA,05.11.1992,22,165,1,0,1,25,0,0,0,1,52747,Paris,FRA
+61714,Brouwers,Roel,Brouwers,4,2,NED,28.11.1981,33,190,1,0,1,2,0,0,0,0,52757,M??nchengladbach,GER
+250041718,Christensen,Andreas,Christensen,3,2,DEN,10.04.1996,19,188,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+250074777,Dahoud,Mahmoud,Dahoud,8,3,GER,01.01.1996,19,176,1,0,1,1,0,0,0,0,52757,M??nchengladbach,GER
+1907235,?Ålvaro Dom??nguez,?Ålvaro,Dom??nguez,15,2,ESP,16.05.1989,26,189,0,0,0,6,0,0,0,0,52757,M??nchengladbach,GER
+250017664,Drmic,Josip,Drmic,9,4,SUI,08.08.1992,23,181,1,0,1,13,0,0,0,0,52757,M??nchengladbach,GER
+250055734,Elvedi,Nico,Elvedi,30,2,SUI,30.09.1996,18,188,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+250068760,Hahn,Andr??,Hahn,28,3,GER,13.08.1990,25,185,1,0,1,1,0,0,0,0,52757,M??nchengladbach,GER
+250012551,Hazard,Thorgan,Hazard,10,3,BEL,29.03.1993,22,174,1,0,1,3,0,0,0,0,52757,M??nchengladbach,GER
+54644,Heimeroth,Christofer,Heimeroth,33,1,GER,01.08.1981,34,194,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+1908298,Herrmann,Patrick,Herrmann,7,4,GER,12.02.1991,24,179,0,0,0,2,0,0,0,0,52757,M??nchengladbach,GER
+250041531,Hrgota,Branimir,Hrgota,31,4,SWE,12.01.1993,22,182,0,0,0,1,0,0,0,0,52757,M??nchengladbach,GER
+1901608,Jantschke,Tony,Jantschke,24,2,GER,07.04.1990,25,177,1,0,1,3,0,0,0,0,52757,M??nchengladbach,GER
+74321,Johnson,Fabian,Johnson,19,2,GER,11.12.1987,27,183,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+250056906,Kompalla,Martin,Kompalla,41,1,GER,26.08.1992,23,186,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+250007611,Korb,Julian,Korb,27,2,GER,21.03.1992,23,177,1,0,1,1,0,0,0,0,52757,M??nchengladbach,GER
+250086962,Ndenge,Tsiy-William,Ndenge,44,3,GER,13.06.1997,18,,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+108925,Nordtveit,H?ùvard,Nordtveit,6,3,NOR,21.06.1990,25,186,1,0,1,3,0,0,0,0,52757,M??nchengladbach,GER
+101154,Raffael,,Raffael,11,4,BRA,28.03.1985,30,174,1,0,1,8,0,0,0,0,52757,M??nchengladbach,GER
+250074778,Ritter,Marlon,Ritter,36,3,GER,15.10.1994,20,170,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+250074365,M. Schulz,Marvin,Schulz,18,2,GER,15.01.1995,20,186,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+250014332,N. Schulz,Nico,Schulz,14,3,GER,01.04.1993,22,,1,0,1,1,0,0,0,0,52757,M??nchengladbach,GER
+250002891,Sippel,Tobias,Sippel,21,1,GER,22.03.1988,27,180,0,0,0,0,0,0,0,0,52757,M??nchengladbach,GER
+97746,Sommer,Yann,Sommer,1,1,SUI,17.12.1988,26,183,1,0,1,24,0,0,0,0,52757,M??nchengladbach,GER
+250011790,Stindl,Lars,Stindl,13,3,GER,26.08.1988,27,180,1,0,1,1,0,0,0,0,52757,M??nchengladbach,GER
+31461,Stranzl,Martin,Stranzl,39,2,AUT,16.06.1980,35,190,0,0,0,19,0,0,0,0,52757,M??nchengladbach,GER
+250001818,Traor??,Ibrahima,Traor??,16,3,GNB,21.04.1988,27,172,1,0,1,1,0,0,0,0,52757,M??nchengladbach,GER
+99714,Wendt,Oscar,Wendt,17,2,SWE,24.10.1985,29,181,1,0,1,22,0,0,0,0,52757,M??nchengladbach,GER
+250004721,Xhaka,Granit,Xhaka,34,3,SUI,27.09.1992,22,186,0,0,0,14,0,0,0,1,52757,M??nchengladbach,GER
+57318,Anyukov,Aleksandr,Anyukov,2,2,RUS,28.09.1982,32,178,1,0,1,37,0,0,0,0,52826,Zenit,RUS
+250062301,Bogaev,Dmitri,Bogaev,70,4,RUS,24.01.1994,21,175,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+69737,Criscito,Domenico,Criscito,4,2,ITA,30.12.1986,28,183,1,0,1,28,0,0,0,0,52826,Zenit,RUS
+61148,Danny,,Danny,10,3,POR,07.08.1983,32,178,1,0,1,40,0,0,0,11,52826,Zenit,RUS
+250063900,Dolgov,Pavel,Dolgov,92,4,RUS,16.08.1996,19,187,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+97787,Dzyuba,Artem,Dzyuba,22,4,RUS,22.08.1988,27,194,1,0,1,10,0,0,0,1,52826,Zenit,RUS
+250051730,Evseev,Aleksei,Evseev,94,3,RUS,30.03.1994,21,183,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+1905337,Fayzulin,Viktor,Fayzulin,20,3,RUS,22.04.1986,29,176,1,0,1,34,0,0,0,2,52826,Zenit,RUS
+250038975,Garay,Ezequiel,Garay,24,2,ARG,10.10.1986,28,192,1,0,1,38,0,0,0,1,52826,Zenit,RUS
+250003325,Hulk,,Hulk,7,4,BRA,25.07.1986,29,180,1,0,1,50,2,0,2,18,52826,Zenit,RUS
+250063897,Ivanidi,Ivan,Ivanidi,53,2,RUS,14.06.1996,19,,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250054403,Ivanov,Andrei,Ivanov,52,2,RUS,02.09.1994,21,179,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+69555,Javi Garc??a,,Javi Garc??a,21,3,ESP,08.02.1987,28,187,1,0,1,39,0,0,0,2,52826,Zenit,RUS
+250066368,Karpov,Maksim,Karpov,50,2,RUS,17.03.1995,20,176,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+72819,Kerzhakov,Mikhail,Kerzhakov,41,1,RUS,28.01.1987,28,189,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250089126,Kireenko,Pavel,Kireenko,76,4,RUS,14.06.1994,21,,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250062298,Kubyshkin,Ilya,Kubyshkin,96,2,RUS,12.01.1996,19,180,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250062290,Lodygin,Yuri,Lodygin,1,1,RUS,26.05.1990,25,187,1,0,1,22,0,0,0,0,52826,Zenit,RUS
+62369,Lombaerts,Nicolas,Lombaerts,6,2,BEL,20.03.1985,30,188,1,0,1,41,0,0,0,1,52826,Zenit,RUS
+250034990,Lu??s Neto,,Lu??s Neto,13,2,POR,26.05.1988,27,187,1,0,1,10,0,0,0,0,52826,Zenit,RUS
+34521,Malafeev,Vyacheslav,Malafeev,16,1,RUS,04.03.1979,36,185,0,0,0,24,0,0,0,0,52826,Zenit,RUS
+250024501,Markov,Evgeni,Markov,89,4,RUS,07.07.1994,21,,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250062289,Mzhelski,Mikhail,Mzhelski,80,1,RUS,29.03.1995,20,200,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250066997,Nazimov,Pavel,Nazimov,43,4,RUS,04.02.1996,19,177,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250062292,Obukhov,Igor,Obukhov,83,1,RUS,29.05.1996,19,190,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250062293,Osipov,Pavel,Osipov,73,3,RUS,28.01.1996,19,176,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250042597,Rebenko,Stepan,Rebenko,62,2,RUS,01.05.1995,20,184,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250062299,Rudakov,Maksim,Rudakov,51,1,RUS,22.01.1996,19,182,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+69617,Ryazantsev,Aleksandr,Ryazantsev,5,3,RUS,05.09.1986,29,176,0,0,0,16,0,0,0,1,52826,Zenit,RUS
+250008904,Shatov,Oleg,Shatov,17,3,RUS,29.07.1990,25,173,1,0,1,18,0,0,0,2,52826,Zenit,RUS
+108017,Smolnikov,Igor,Smolnikov,19,2,RUS,08.08.1988,27,178,1,0,1,17,0,0,0,0,52826,Zenit,RUS
+250065763,Troyanov,Konstantin,Troyanov,79,3,RUS,18.11.1995,19,,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250046941,Vasyutin,Aleksandr,Vasyutin,95,1,RUS,04.03.1995,20,190,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+103335,Witsel,Axel,Witsel,28,3,BEL,12.01.1989,26,183,1,0,1,46,1,0,1,4,52826,Zenit,RUS
+250042599,Yaschuk,Danila,Yaschuk,65,3,RUS,13.03.1995,20,181,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250007698,Yusupov,Artur,Yusupov,14,3,RUS,01.09.1989,26,179,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250027062,Zuev,Ilya,Zuev,58,2,RUS,25.01.1994,21,183,0,0,0,0,0,0,0,0,52826,Zenit,RUS
+250064538,Aina,Ola,Aina,34,2,ENG,08.10.1996,18,,0,0,0,0,0,0,0,0,52914,Chelsea,ENG
+103827,Azpilicueta,C??sar,Azpilicueta,28,2,ESP,28.08.1989,26,178,1,0,1,28,0,0,0,0,52914,Chelsea,ENG
+250086844,Baba,Abdul Rahman,Baba,6,2,GHA,02.07.1994,21,,1,0,1,1,0,0,0,0,52914,Chelsea,ENG
+250012196,Begovié?,Asmir,Begovié?,1,1,BIH,20.06.1987,28,196,1,0,1,1,0,0,0,0,52914,Chelsea,ENG
+250040703,Blackman,Jamal,Blackman,27,1,ENG,27.10.1993,21,196,0,0,0,0,0,0,0,0,52914,Chelsea,ENG
+1902472,Cahill,Gary,Cahill,24,2,ENG,19.12.1985,29,188,1,0,1,26,0,0,0,3,52914,Chelsea,ENG
+250066865,Collins,Bradley,Collins,40,1,ENG,18.02.1997,18,,0,0,0,0,0,0,0,0,52914,Chelsea,ENG
+250011668,Courtois,Thibaut,Courtois,13,1,BEL,11.05.1992,23,199,0,0,0,17,0,0,0,0,52914,Chelsea,ENG
+1900730,Diego Costa,,Diego Costa,19,4,ESP,07.10.1988,26,188,1,0,1,17,1,0,1,9,52914,Chelsea,ENG
+70072,F?ˇbregas,Cesc,F?ˇbregas,4,3,ESP,04.05.1987,28,175,1,0,1,96,1,0,1,23,52914,Chelsea,ENG
+250011928,Falcao,Radamel,Falcao,9,4,COL,10.02.1986,29,177,0,0,0,8,0,0,0,4,52914,Chelsea,ENG
+1902160,Hazard,Eden,Hazard,10,3,BEL,07.01.1991,24,170,1,0,1,29,0,0,0,5,52914,Chelsea,ENG
+93629,Ivanovié?,Branislav,Ivanovié?,2,2,SRB,22.02.1984,31,188,0,0,0,54,0,0,0,7,52914,Chelsea,ENG
+250086845,Kenedy,,Kenedy,16,3,BRA,08.02.1996,19,,0,0,0,0,0,0,0,0,52914,Chelsea,ENG
+250056566,Loftus-Cheek,Ruben,Loftus-Cheek,36,3,ENG,23.01.1996,19,192,1,0,1,2,0,0,0,0,52914,Chelsea,ENG
+250005348,Matié?,Nemanja,Matié?,21,3,SRB,01.08.1988,27,193,0,0,0,29,0,0,0,3,52914,Chelsea,ENG
+69271,Mikel,John Obi,Mikel,12,3,NGA,22.04.1987,28,188,0,0,0,55,0,0,0,1,52914,Chelsea,ENG
+250053633,Oscar,,Oscar,8,3,BRA,09.09.1991,24,180,1,0,1,24,1,0,1,7,52914,Chelsea,ENG
+250002701,Pedro Rodr??guez,,Pedro Rodr??guez,17,4,ESP,28.07.1987,28,167,0,0,0,61,0,0,0,15,52914,Chelsea,ENG
+250011599,Ramires,,Ramires,7,3,BRA,24.03.1987,28,180,1,0,1,41,0,0,0,7,52914,Chelsea,ENG
+106631,R??my,Lo??c,R??my,18,4,FRA,02.01.1987,28,184,1,0,1,23,0,0,0,5,52914,Chelsea,ENG
+45902,Terry,John,Terry,26,2,ENG,07.12.1980,34,187,0,0,0,107,0,0,0,10,52914,Chelsea,ENG
+250062165,Traor??,Bertrand,Traor??,14,3,BFA,06.09.1995,20,177,1,0,1,1,0,0,0,0,52914,Chelsea,ENG
+1905688,Willian,,Willian,22,3,BRA,09.08.1988,27,173,1,0,1,53,1,0,1,11,52914,Chelsea,ENG
+250024983,Zouma,Kurt,Zouma,5,2,FRA,27.10.1994,20,190,1,0,1,5,0,0,0,0,52914,Chelsea,ENG
+250064355,Adarabioyo,Tosin,Adarabioyo,53,2,ENG,24.09.1997,17,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+1903543,Ag?¨ero,Sergio,Ag?¨ero,10,4,ARG,02.06.1988,27,172,1,0,1,42,0,0,0,23,52919,Man. City,ENG
+250065921,Ambrose,Thierry,Ambrose,68,4,FRA,28.03.1997,18,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250064361,Barker,Brandon,Barker,62,4,ENG,04.10.1996,18,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250067249,Boadu,Denzil,Boadu,49,3,ENG,20.02.1997,18,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250002338,Bony,Wilfried,Bony,14,4,CIV,10.12.1988,26,182,1,0,1,9,0,0,0,2,52919,Man. City,ENG
+250056557,Bryan,Kean,Bryan,52,3,ENG,01.11.1996,18,182,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250041703,Bytyqi,Sinan,Bytyqi,63,3,AUT,15.01.1995,20,185,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250075757,Caballero,Willy,Caballero,13,1,ARG,28.09.1981,33,186,0,0,0,11,0,0,0,0,52919,Man. City,ENG
+62975,Clichy,Ga?Æl,Clichy,22,2,FRA,26.07.1985,30,176,0,0,0,66,0,0,0,0,52919,Man. City,ENG
+250008901,De Bruyne,Kevin,De Bruyne,17,4,BEL,28.06.1991,24,180,1,0,1,10,0,0,0,0,52919,Man. City,ENG
+250000920,Delph,Fabian,Delph,18,3,ENG,21.11.1989,25,174,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+72455,Demichelis,Mart??n,Demichelis,26,2,ARG,20.12.1980,34,184,0,0,0,65,0,0,0,3,52919,Man. City,ENG
+250054429,Evans,George,Evans,70,3,ENG,13.12.1994,20,184,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+101299,Fernandinho,,Fernandinho,25,3,BRA,04.05.1985,30,176,1,0,1,57,0,0,0,6,52919,Man. City,ENG
+250003327,Fernando,,Fernando,6,3,BRA,25.07.1987,28,185,0,0,0,39,0,0,0,0,52919,Man. City,ENG
+250054431,Glendon,George,Glendon,73,3,WAL,03.05.1995,20,177,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250047105,Gunn,Angus,Gunn,54,1,ENG,22.01.1996,19,196,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+104231,Hart,Joe,Hart,1,1,ENG,19.04.1987,28,196,1,0,1,28,0,0,0,0,52919,Man. City,ENG
+69173,Jes?ßs Navas,,Jes?ßs Navas,15,3,ESP,21.11.1985,29,170,0,0,0,35,0,0,0,3,52919,Man. City,ENG
+250064359,Jorge Intima,,Jorge Intima,65,3,POR,21.09.1995,19,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+105814,Kolarov,Aleksandar,Kolarov,11,2,SRB,10.11.1985,29,187,1,0,1,25,0,0,0,3,52919,Man. City,ENG
+71507,Kompany,Vincent,Kompany,4,2,BEL,10.04.1986,29,190,1,0,1,51,0,0,0,2,52919,Man. City,ENG
+250023237,Lawlor,Ian,Lawlor,45,1,IRL,27.10.1994,20,193,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250064825,Maffeo,Pablo,Maffeo,50,2,ESP,12.07.1997,18,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250003745,Mangala,Eliaquim,Mangala,20,2,FRA,13.02.1991,24,187,1,0,1,24,0,0,0,1,52919,Man. City,ENG
+93324,Nasri,Samir,Nasri,8,3,FRA,26.06.1987,28,175,1,0,1,54,0,0,0,9,52919,Man. City,ENG
+250076609,Nemane,Aaron,Nemane,57,4,ENG,26.06.1997,18,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250017040,Otamendi,Nicol?≠s,Otamendi,30,2,ARG,12.02.1988,27,183,1,0,1,18,0,0,0,0,52919,Man. City,ENG
+250024792,Plummer,Ellis,Plummer,74,2,ENG,02.09.1994,21,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+72795,Sagna,Bacary,Sagna,3,2,FRA,14.02.1983,32,176,1,0,1,52,0,0,0,0,52919,Man. City,ENG
+64257,Silva,David,Silva,21,3,ESP,08.01.1986,29,170,1,0,1,41,0,0,0,6,52919,Man. City,ENG
+250056571,Smith-Brown,Ashley,Smith-Brown,56,2,ENG,31.03.1996,19,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+250024795,Sterling,Raheem,Sterling,7,3,ENG,08.12.1994,20,170,1,0,1,7,0,0,0,0,52919,Man. City,ENG
+250056603,Tattum,Samuel,Tattum,67,3,ENG,03.09.1996,19,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+95082,Tour??,Yaya,Tour??,42,3,CIV,13.05.1983,32,191,1,0,1,59,0,0,0,7,52919,Man. City,ENG
+250076600,Wood,Marcus,Wood,71,3,ENG,12.02.1998,17,,0,0,0,0,0,0,0,0,52919,Man. City,ENG
+101608,Zabaleta,Pablo,Zabaleta,5,2,ARG,16.01.1985,30,176,0,0,0,21,0,0,0,1,52919,Man. City,ENG
+66794,Akinfeev,Igor,Akinfeev,35,1,RUS,08.04.1986,29,185,5,4,1,49,0,0,0,0,54266,CSKA Moskva,RUS
+49086,A. Berezutski,Aleksei,Berezutski,6,2,RUS,20.06.1982,33,190,4,4,0,53,0,0,0,0,54266,CSKA Moskva,RUS
+49083,V. Berezutski,Vasili,Berezutski,24,2,RUS,20.06.1982,33,189,4,3,1,47,0,0,0,3,54266,CSKA Moskva,RUS
+98086,Cauè?a,Aleksandrs,Cauè?a,19,3,LVA,19.01.1988,27,174,0,0,0,8,0,0,0,1,54266,CSKA Moskva,RUS
+250000510,Chepchugov,Sergei,Chepchugov,1,1,RUS,15.07.1985,30,185,0,0,0,2,0,0,0,0,54266,CSKA Moskva,RUS
+250055119,Chernov,Nikita,Chernov,91,2,RUS,14.01.1996,19,189,0,0,0,0,0,0,0,0,54266,CSKA Moskva,RUS
+250002480,Doumbia,Seydou,Doumbia,88,4,CIV,31.12.1987,27,179,3,2,1,18,3,3,0,13,54266,CSKA Moskva,RUS
+108426,Dzagoev,Alan,Dzagoev,10,3,RUS,17.06.1990,25,179,5,4,1,25,2,2,0,6,54266,CSKA Moskva,RUS
+72529,Eremenko,Roman,Eremenko,25,3,FIN,19.03.1987,28,180,5,4,1,29,0,0,0,1,54266,CSKA Moskva,RUS
+250058227,Golovin,Aleksandr,Golovin,60,3,RUS,30.05.1996,19,,1,1,0,1,0,0,0,0,54266,CSKA Moskva,RUS
+55543,Ignashevich,Sergei,Ignashevich,4,2,RUS,14.07.1979,36,186,5,4,1,81,0,0,0,5,54266,CSKA Moskva,RUS
+250055125,Makarov,Aleksandr,Makarov,43,4,RUS,24.04.1996,19,,0,0,0,0,0,0,0,0,54266,CSKA Moskva,RUS
+250052963,M?≠rio Fernandes,,M?≠rio Fernandes,2,2,BRA,28.06.1991,24,189,5,4,1,11,0,0,0,0,54266,CSKA Moskva,RUS
+250004244,Milanov,Georgi,Milanov,23,3,BUL,19.02.1992,23,184,5,4,1,24,0,0,0,0,54266,CSKA Moskva,RUS
+250044943,Musa,Ahmed,Musa,18,4,NGA,14.10.1992,22,170,5,4,1,19,3,3,0,5,54266,CSKA Moskva,RUS
+69615,Nababkin,Kirill,Nababkin,14,2,RUS,08.09.1986,29,176,4,4,0,16,0,0,0,0,54266,CSKA Moskva,RUS
+97869,Natcho,Bibras,Natcho,66,3,ISR,18.02.1988,27,175,4,3,1,18,0,0,0,3,54266,CSKA Moskva,RUS
+250075649,Panchenko,Kirill,Panchenko,8,4,RUS,19.10.1989,25,185,0,0,0,1,0,0,0,0,54266,CSKA Moskva,RUS
+250063906,Pomazun,Ilya,Pomazun,45,1,RUS,16.08.1996,19,189,0,0,0,0,0,0,0,0,54266,CSKA Moskva,RUS
+1906987,Schennikov,Georgi,Schennikov,42,2,RUS,27.04.1991,24,178,3,2,1,29,0,0,0,0,54266,CSKA Moskva,RUS
+93114,Toè≠ié?,Zoran,Toè≠ié?,7,3,SRB,28.04.1987,28,171,5,4,1,23,1,1,0,5,54266,CSKA Moskva,RUS
+250021646,Vasin,Viktor,Vasin,5,2,RUS,06.10.1988,26,192,0,0,0,0,0,0,0,0,54266,CSKA Moskva,RUS
+99720,Wernbloom,Pontus,Wernbloom,3,3,SWE,25.06.1986,29,187,5,4,1,22,0,0,0,3,54266,CSKA Moskva,RUS
+62650,Alberman,Gal,Alberman,6,3,ISR,17.04.1983,32,180,7,6,1,16,0,0,0,1,57477,M. Tel-Aviv,ISR
+250085065,Armaly,Suhail,Armaly,29,3,ISR,10.01.1996,19,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+250083461,Azulay,Shlomy,Azulay,16,3,ISR,30.03.1990,25,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+69561,Ben Basat,Eden,Ben Basat,9,4,ISR,08.09.1986,29,,4,4,0,6,0,0,0,1,57477,M. Tel-Aviv,ISR
+59690,Ben Haim I,Tal,Ben Haim I,26,2,ISR,31.03.1982,33,,7,6,1,11,0,0,0,0,57477,M. Tel-Aviv,ISR
+250005319,Ben Haim II,Tal,Ben Haim II,11,4,ISR,05.08.1989,26,175,7,6,1,15,1,1,0,4,57477,M. Tel-Aviv,ISR
+250005476,Ben Harush,Omri,Ben Harush,20,2,ISR,07.03.1990,25,,6,5,1,11,0,0,0,0,57477,M. Tel-Aviv,ISR
+58025,Carlos Garc??a,,Carlos Garc??a,31,2,ESP,29.04.1984,31,,3,3,0,11,0,0,0,0,57477,M. Tel-Aviv,ISR
+250024646,Dasa,Eliazer,Dasa,2,2,ISR,03.12.1992,22,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+1907202,Einbinder,Daniel,Einbinder,17,3,ISR,16.02.1989,26,186,0,0,0,5,0,0,0,0,57477,M. Tel-Aviv,ISR
+250056097,Glazer,Dan,Glazer,33,3,ISR,20.09.1996,18,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+250042078,Goldberg,Sean,Goldberg,23,2,ISR,13.06.1995,20,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+250056084,Hasson,Sahar,Hasson,41,1,ISR,24.04.1996,19,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+250036953,Igiebor,Nosakhare,Igiebor,40,3,NGA,09.11.1990,24,182,7,6,1,9,2,2,0,2,57477,M. Tel-Aviv,ISR
+69636,Itzhaki,Barak,Itzhaki,10,4,ISR,25.09.1984,30,174,5,5,0,13,1,1,0,3,57477,M. Tel-Aviv,ISR
+250002478,Lifshitz,Daniel,Lifshitz,1,1,ISR,24.04.1988,27,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+250024650,Miha,Dor,Miha,15,3,ISR,02.03.1992,23,,7,6,1,13,0,0,0,0,57477,M. Tel-Aviv,ISR
+93141,Mitrovié?,Nikola,Mitrovié?,24,3,SRB,02.01.1987,28,180,6,5,1,8,0,0,0,0,57477,M. Tel-Aviv,ISR
+250066919,Ohayon,Haviv,Ohayon,55,1,ISR,17.08.1998,17,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+250042083,Peretz,Dor,Peretz,42,3,ISR,17.05.1995,20,,3,2,1,3,0,0,0,0,57477,M. Tel-Aviv,ISR
+250072785,Radonjié?,Dejan,Radonjié?,99,4,CRO,23.07.1990,25,,1,0,1,2,0,0,0,0,57477,M. Tel-Aviv,ISR
+250042207,Rajkovié?,Predrag,Rajkovié?,95,1,SRB,31.10.1995,19,,1,0,1,1,0,0,0,0,57477,M. Tel-Aviv,ISR
+105910,Raly,Oz,Raly,27,2,ISR,22.12.1987,27,,0,0,0,0,0,0,0,0,57477,M. Tel-Aviv,ISR
+97870,Rikan,Avraham,Rikan,22,3,ISR,10.09.1988,27,168,5,4,1,5,0,0,0,0,57477,M. Tel-Aviv,ISR
+70028,Shpungin,Yuval,Shpungin,3,2,ISR,03.04.1987,28,,6,5,1,8,0,0,0,0,57477,M. Tel-Aviv,ISR
+106179,Tibi,Eytan,Tibi,18,2,ISR,16.11.1987,27,,5,4,1,13,0,0,0,0,57477,M. Tel-Aviv,ISR
+63137,Vermouth,Gil,Vermouth,28,3,ISR,05.08.1985,30,174,3,3,0,15,0,0,0,0,57477,M. Tel-Aviv,ISR
+1906423,Zahavi,Eran,Zahavi,7,3,ISR,25.07.1987,28,182,6,5,1,26,7,7,0,15,57477,M. Tel-Aviv,ISR
+55778,Ziv,Yoav,Ziv,14,2,ISR,16.03.1981,34,178,2,2,0,10,0,0,0,0,57477,M. Tel-Aviv,ISR
+250024713,Arnold,Maximilian,Arnold,27,3,GER,27.05.1994,21,184,1,0,1,1,0,0,0,0,64332,Wolfsburg,GER
+250086345,Ascues,Carlos,Ascues,6,2,PER,19.06.1992,23,178,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+53001,Benaglio,Diego,Benaglio,1,1,SUI,08.09.1983,32,194,1,0,1,7,0,0,0,0,64332,Wolfsburg,GER
+92996,Bendtner,Nicklas,Bendtner,3,4,DEN,16.01.1988,27,190,1,0,1,34,0,0,0,9,64332,Wolfsburg,GER
+250024586,Caligiuri,Daniel,Caligiuri,7,3,GER,15.01.1988,27,182,1,0,1,1,0,0,0,0,64332,Wolfsburg,GER
+250003911,Casteels,Koen,Casteels,28,1,BEL,25.06.1992,23,197,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+93921,Dante,,Dante,18,2,BRA,18.10.1983,31,188,1,0,1,31,0,0,0,0,64332,Wolfsburg,GER
+250014661,Dost,Bas,Dost,12,4,NED,31.05.1989,26,196,1,0,1,1,0,0,0,0,64332,Wolfsburg,GER
+250026763,Draxler,Julian,Draxler,10,3,GER,20.09.1993,21,183,1,0,1,26,1,0,1,6,64332,Wolfsburg,GER
+74316,Gr?¨n,Max,Gr?¨n,20,1,GER,05.04.1987,28,192,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+250006494,Guilavogui,Josuha,Guilavogui,23,3,FRA,19.09.1990,24,187,1,0,1,3,0,0,0,0,64332,Wolfsburg,GER
+250022114,Jung,Sebastian,Jung,24,2,GER,22.06.1990,25,179,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+250021927,Klose,Timm,Klose,5,2,SUI,09.05.1988,27,193,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+250064226,Knoche,Robin,Knoche,31,2,GER,22.05.1992,23,190,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+108132,Kruse,Max,Kruse,11,4,GER,19.03.1988,27,180,1,0,1,1,0,0,0,0,64332,Wolfsburg,GER
+250008103,Luiz Gustavo,,Luiz Gustavo,22,3,BRA,23.07.1987,28,187,1,0,1,25,0,0,0,0,64332,Wolfsburg,GER
+250075659,Naldo,,Naldo,25,2,BRA,10.09.1982,33,198,1,0,1,1,0,0,0,0,64332,Wolfsburg,GER
+250066212,Rodriguez,Francisco,Rodriguez,35,3,SUI,14.09.1995,20,191,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+250011089,Rodriguez,Ricardo,Rodriguez,34,2,SUI,25.08.1992,23,180,1,0,1,5,0,0,0,0,64332,Wolfsburg,GER
+250003478,Sch??fer,Marcel,Sch??fer,4,2,GER,07.06.1984,31,182,0,0,0,6,0,0,0,0,64332,Wolfsburg,GER
+250005337,Sch?¨rrle,Andr??,Sch?¨rrle,17,3,GER,06.11.1990,24,184,1,0,1,23,0,0,0,3,64332,Wolfsburg,GER
+250075660,Seguin,Paul,Seguin,30,3,GER,29.03.1995,20,186,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+250064504,Sprenger,Moritz,Sprenger,37,2,GER,22.02.1995,20,190,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+250073720,Stolze,Sebastian,Stolze,33,4,GER,29.01.1995,20,182,0,0,0,0,0,0,0,0,64332,Wolfsburg,GER
+1905801,Tr??sch,Christian,Tr??sch,15,3,GER,01.09.1987,28,181,1,0,1,7,0,0,0,1,64332,Wolfsburg,GER
+70099,Vieirinha,,Vieirinha,8,3,POR,24.01.1986,29,176,0,0,0,3,0,0,0,1,64332,Wolfsburg,GER
+250012884,Aleksievich,Ilya,Aleksievich,9,3,BLR,10.02.1991,24,173,6,5,1,15,0,0,0,0,66168,BATE,BLR
+250066726,Antilevski,Dmitri,Antilevski,44,4,BLR,12.06.1997,18,174,0,0,0,0,0,0,0,0,66168,BATE,BLR
+1903601,Baga,Dmitri,Baga,55,3,BLR,04.01.1990,25,182,6,5,1,25,0,0,0,0,66168,BATE,BLR
+250061653,Baiduk,Dmitri,Baiduk,27,2,BLR,03.08.1996,19,,0,0,0,0,0,0,0,0,66168,BATE,BLR
+250055169,Bogush,Pavel,Bogush,29,3,BLR,24.01.1996,19,,0,0,0,0,0,0,0,0,66168,BATE,BLR
+250072764,Chernik,Sergei,Chernik,16,1,BLR,20.07.1988,27,187,7,6,1,18,0,0,0,0,66168,BATE,BLR
+250084987,Chichkan,Anton,Chichkan,35,1,BLR,10.07.1995,20,186,0,0,0,0,0,0,0,0,66168,BATE,BLR
+1907541,Dubra,Kaspars,Dubra,4,2,LVA,20.12.1990,24,,5,4,1,7,0,0,0,0,66168,BATE,BLR
+250011530,Gaiduchik,Vitali,Gaiduchik,3,2,BLR,12.07.1989,26,185,0,0,0,7,0,0,0,0,66168,BATE,BLR
+250011531,Gordeichuk,Mikhail,Gordeichuk,62,4,BLR,23.10.1989,25,176,7,6,1,27,1,1,0,3,66168,BATE,BLR
+41331,Hleb,Aleksandr,Hleb,81,3,BLR,01.05.1981,34,185,3,2,1,68,0,0,0,4,66168,BATE,BLR
+99725,A. Jevtié?,Aleksandar,Jevtié?,11,4,SRB,30.03.1985,30,,0,0,0,0,0,0,0,0,66168,BATE,BLR
+250072766,Karnitski,Aleksandr,Karnitski,7,3,BLR,14.02.1989,26,187,6,5,1,16,2,2,0,3,66168,BATE,BLR
+21904,Likhtarovich,Dmitri,Likhtarovich,2,3,BLR,01.03.1978,37,180,0,0,0,53,0,0,0,1,66168,BATE,BLR
+250001842,Milunovié?,Nemanja,Milunovié?,19,2,SRB,31.05.1989,26,,7,6,1,7,1,0,1,1,66168,BATE,BLR
+250040558,Mladenovié?,Filip,Mladenovié?,25,2,SRB,15.08.1991,24,180,7,6,1,15,0,0,0,0,66168,BATE,BLR
+106157,Mozolevski,Dmitri,Mozolevski,18,4,BLR,30.04.1985,30,190,0,0,0,10,0,0,0,3,66168,BATE,BLR
+1903365,Nikolié?,Nemanja,Nikolié?,10,3,MNE,01.01.1988,27,182,4,4,0,4,1,1,0,1,66168,BATE,BLR
+250019846,Olekhnovich,Edgar,Olekhnovich,23,3,BLR,17.05.1987,28,183,0,0,0,34,0,0,0,1,66168,BATE,BLR
+250039153,Polyakov,Denis,Polyakov,33,2,BLR,17.04.1991,24,184,3,2,1,25,0,0,0,1,66168,BATE,BLR
+1902972,Rios,Aleksei,Rios,17,3,BLR,14.05.1987,28,,4,4,0,4,0,0,0,0,66168,BATE,BLR
+98996,Rodionov,Vitali,Rodionov,20,4,BLR,11.12.1983,31,179,6,6,0,58,0,0,0,14,66168,BATE,BLR
+250076219,Rovbut,Maksim,Rovbut,28,2,BLR,24.05.1996,19,,0,0,0,0,0,0,0,0,66168,BATE,BLR
+250055182,Scherbitski,Denis,Scherbitski,48,1,BLR,14.04.1996,19,197,0,0,0,0,0,0,0,0,66168,BATE,BLR
+250027769,Signevich,Nikolai,Signevich,13,4,BLR,20.02.1992,23,194,6,5,1,18,0,0,0,0,66168,BATE,BLR
+250052720,Soroko,Artem,Soroko,34,1,BLR,01.04.1992,23,184,0,0,0,1,0,0,0,0,66168,BATE,BLR
+94720,Stasevich,Igor,Stasevich,22,3,BLR,21.10.1985,29,178,5,4,1,26,1,1,0,4,66168,BATE,BLR
+250020170,A. Volodko,Aleksandr,Volodko,8,3,BLR,18.06.1986,29,177,2,1,1,47,0,0,0,4,66168,BATE,BLR
+250012008,M. Volodko,Maksim,Volodko,42,3,BLR,10.11.1992,22,174,4,3,1,14,0,0,0,0,66168,BATE,BLR
+250061655,Yablonski,Evgeni,Yablonski,5,3,BLR,10.05.1995,20,182,3,3,0,8,1,1,0,1,66168,BATE,BLR
+100174,Zhavnerchik,Maksim,Zhavnerchik,15,2,BLR,09.02.1985,30,,6,6,0,18,0,0,0,0,66168,BATE,BLR
+250028700,Y. Akhmetov,Yeldos,Akhmetov,2,2,KAZ,01.06.1990,25,,0,0,0,0,0,0,0,0,2600605,Astana,KAZ
+1903867,Aniéçié?,Marin,Aniéçié?,5,2,BIH,17.08.1989,26,,7,6,1,9,0,0,0,0,2600605,Astana,KAZ
+250006908,Beysebekov,Abzal,Beysebekov,15,2,KAZ,30.11.1992,22,,6,5,1,6,0,0,0,0,2600605,Astana,KAZ
+250021756,Ca?Òas,Roger,Ca?Òas,88,3,COL,27.03.1990,25,,6,5,1,14,2,2,0,2,2600605,Astana,KAZ
+73029,Dedechko,Denys,Dedechko,24,3,UKR,02.07.1987,28,,3,2,1,3,0,0,0,0,2600605,Astana,KAZ
+250020100,Dzholchiyev,Baurzhan,Dzholchiyev,22,4,KAZ,08.05.1990,25,,7,6,1,9,2,2,0,2,2600605,Astana,KAZ
+68517,Erié?,Nenad,Erié?,1,1,KAZ,26.05.1982,33,,5,4,1,5,0,0,0,0,2600605,Astana,KAZ
+250042355,Golubnichi,Mikhail,Golubnichi,40,1,KAZ,31.01.1995,20,185,0,0,0,0,0,0,0,0,2600605,Astana,KAZ
+63312,B. Ilié?,Branko,Ilié?,33,2,SVN,06.02.1983,32,187,7,6,1,9,0,0,0,0,2600605,Astana,KAZ
+250085061,Kabananga,Junior,Kabananga,89,4,COD,04.04.1989,26,,5,4,1,5,0,0,0,0,2600605,Astana,KAZ
+250007798,K??th??voama,Foxi,K??th??voama,10,3,CTA,30.05.1986,29,,7,6,1,7,0,0,0,0,2600605,Astana,KAZ
+250022965,Khairullin,Rinat,Khairullin,18,3,KAZ,19.02.1994,21,,0,0,0,0,0,0,0,0,2600605,Astana,KAZ
+250082023,Kozhamberdy,Zhakyp,Kozhamberdy,20,3,KAZ,26.02.1992,23,,0,0,0,0,0,0,0,0,2600605,Astana,KAZ
+95489,Loginovski,Vladimir,Loginovski,85,1,KAZ,08.10.1985,29,,2,2,0,2,0,0,0,0,2600605,Astana,KAZ
+250059162,Maksimovié?,Nemanja,Maksimovié?,6,3,SRB,26.01.1995,20,,7,6,1,7,1,1,0,1,2600605,Astana,KAZ
+250012081,Muzhikov,Serikzhan,Muzhikov,11,3,KAZ,17.06.1989,26,,2,2,0,2,0,0,0,0,2600605,Astana,KAZ
+108828,Nuserbayev,Tanat,Nuserbayev,17,4,KAZ,01.01.1987,28,,6,6,0,6,0,0,0,0,2600605,Astana,KAZ
+250003870,Pikalkin,Igor,Pikalkin,12,2,KAZ,19.03.1992,23,,0,0,0,0,0,0,0,0,2600605,Astana,KAZ
+250019963,Postnikov,Evgeni,Postnikov,44,2,KAZ,16.04.1986,29,,7,6,1,7,1,1,0,1,2600605,Astana,KAZ
+250028701,Schetkin,Aleksei,Schetkin,9,4,KAZ,21.05.1991,24,,3,2,1,3,0,0,0,0,2600605,Astana,KAZ
+107398,Shomko,Dmitri,Shomko,77,2,KAZ,19.03.1990,25,,7,6,1,7,1,1,0,1,2600605,Astana,KAZ
+250073020,Twumasi,Patrick,Twumasi,23,4,GHA,09.05.1994,21,,4,4,0,4,2,2,0,2,2600605,Astana,KAZ
+250062398,Zhukov,Georgi,Zhukov,8,3,KAZ,19.11.1994,20,,7,6,1,7,0,0,0,0,2600605,Astana,KAZ

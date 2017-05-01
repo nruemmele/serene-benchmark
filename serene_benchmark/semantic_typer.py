@@ -14,6 +14,7 @@ import time
 import pandas as pd
 import numpy as np
 import tempfile
+import csv
 
 import sklearn.metrics
 
@@ -84,9 +85,56 @@ class SemanticTyper(object):
         # this will keep track of classes which are present in the semantic typer at the training stage
         # it will be initialized only for DINTModel and NNetModel
         self.classes = None
+        self.resampling_strategy = "NoResampling"
+        self.parameters = None  # additional parameters of the model
 
     def reset(self):
         pass
+
+    @staticmethod
+    def find_source_encoding(file_path, limit=100):
+        """
+        Helper function to determine encoding of the file.
+        For now 5 encodings are checked.
+        :param file_path: Path of the file.
+        :param limit: How many lines will be read in to determine the encoding.
+        :return:
+        """
+        encodings = ["utf-8", "utf-16", "iso-8859-1", "latin-1", "windows-1252"]
+        for enc in encodings:
+            try:
+                with open(file_path, "r", encoding=enc) as f:
+                    [f.readline() for _ in range(limit)]
+                return enc
+            except:
+                continue
+        logging.error("Correct encoding was not found: {}".format(file_path))
+        return
+
+    @staticmethod
+    def _get_label(col_name, name_labels):
+        """
+        Helper method to correctly grab label for column name.
+        Used for DINTModel and NNetModel
+        :param col_name: string
+        :param name_labels: dictionary
+        :return:
+        """
+        def _strip_colname(colname):
+            """
+            Helper method to remove all whitespace characters from column name.
+            Used for DINTModel and NNetModel
+            :param colname: string
+            :return:
+            """
+            return "".join(colname.split())
+
+        if col_name in name_labels:
+            return name_labels[col_name]
+        elif _strip_colname(col_name) in name_labels:
+            return name_labels[_strip_colname(col_name)]
+        else:  # we add unknown class
+            return "unknown"
 
     def define_training_data(self, train_sources, train_labels):
         pass
@@ -150,7 +198,9 @@ class SemanticTyper(object):
         logging.debug("true scores: {}".format(y_true_scores))
         y_true_scores = np.array(y_true_scores)
 
-        performance = {"model": self.model_type, "description": self.description}
+        performance = {"model": self.model_type,
+                       "description": self.description,
+                       "ignore_unknown": self.ignore_unknown}
         if 'categorical_accuracy' in self.metrics:
             logging.info("Calculating categorical accuracy for {}".format(self))
             performance['categorical_accuracy'] = sklearn.metrics.accuracy_score(y_true,
@@ -169,8 +219,6 @@ class SemanticTyper(object):
         logging.info("Calculated performance: {}".format(performance))
         print("Calculated performance: {}".format(performance))
         return pd.DataFrame(performance, index=[0])
-
-
 
 
     def __str__(self):
@@ -203,6 +251,7 @@ class DINTModel(SemanticTyper):
         self.resampling_strategy = resampling_strategy
         self.classifier = None
         self.datasets = [] # list of associated datasets for this model
+        self.parameters = str(feature_config)
 
     def reset(self):
         """
@@ -226,6 +275,24 @@ class DINTModel(SemanticTyper):
 
         self.classifier = None
 
+    def _read_labelData(self, filepath, header_column="column_name", header_label="class"):
+        """
+        This method reads in .csv as a Pandas data frame, selects columns "column_name" and "class",
+        drops NaN and converts these two columns into dictionary.
+        We obtain a lookup dictionary
+        where the key is the column name and the value is the class label.
+        :param filepath: string where .csv file is located.
+        :param header_column: header for the column with column names
+        :param header_label: header for the column with labels
+        :return:
+        """
+        frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
+        logging.debug("  --> headers {}".format(frame.columns))
+        logging.debug("  --> dtypes {}".format(frame.dtypes))
+        # dictionary (column_name, class_label)
+        name_labels = frame[[header_column, header_label]].dropna().set_index(header_column)[header_label].to_dict()
+        return name_labels
+
     def _construct_labelData(self, matcher_dataset, filepath, header_column="column_name", header_label="class"):
         """
         We want to construct a dictionary {column_id:class_label} for the dataset based on a .csv file.
@@ -247,18 +314,21 @@ class DINTModel(SemanticTyper):
         logging.debug("--> Labels in {}".format(filepath))
         label_data = {}  # we need this dictionary (column_id, class_label)
         try:
-            frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
-            logging.debug("  --> headers {}".format(frame.columns))
-            logging.debug("  --> dtypes {}".format(frame.dtypes))
             # dictionary (column_name, class_label)
-            name_labels = frame[[header_column, header_label]].dropna().set_index(header_column)[header_label].to_dict()
+            name_labels = self._read_labelData(filepath, header_column, header_label)
             column_map = [(col.id, col.name) for col in matcher_dataset.columns]
             logging.debug("  --> column_map {}".format(column_map))
+
+            # we check if all column labels are found
+            cols = set([colname for (id, colname) in column_map])
+            check = set(name_labels.keys()).difference(cols)
+            check = check.difference("".join(colname.split()) for colname in cols)
+            if len(check):
+                logging.warning("Not all column labels {} found for {}".format(check, matcher_dataset.filename))
+
             for col_id, col_name in column_map:
-                if col_name in name_labels:
-                    label_data[int(col_id)] = name_labels[col_name]
-                else: # we add unknown class
-                    label_data[int(col_id)] = "unknown"
+                label_data[int(col_id)] = self._get_label(col_name, name_labels)
+
         except Exception as e:
             raise InternalError("construct_labelData", e)
 
@@ -271,7 +341,7 @@ class DINTModel(SemanticTyper):
         :return:
         """
         filename = os.path.join(self.data_dir, source + ".csv")
-        if self.ignore_unknown:
+        if not(self.ignore_unknown):
             # upload source to the schema matcher server and we do not make any alterations to the original source
             matcher_dataset = self.server.create_dataset(file_path=filename,
                                                          description="traindata",
@@ -281,22 +351,21 @@ class DINTModel(SemanticTyper):
             try:
                 # we need to filter out unknown columns
                 logging.info("Removing unknown class columns from the source {}".format(source))
-                df = pd.read_csv(filename, dtype=str)  # read the data source as a DataFrame
+                correct_encoding = self.find_source_encoding(filename) # find encoding
+                df = pd.read_csv(filename, dtype=str, encoding=correct_encoding,
+                                 quotechar='"', quoting=csv.QUOTE_ALL)  # read the data source as a DataFrame
+                logging.info(" original source size {}".format(df.size))
                 filepath = os.path.join(self.label_dir, source + ".columnmap.txt") # labels here
-                header_column = "column_name"
-                header_label = "semantic_type"
-                frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
-                # dictionary (column_name, class_label)
-                name_labels = frame[[header_column, header_label]].dropna().set_index(
-                    header_column)[header_label].to_dict()
+                name_labels = self._read_labelData(filepath,
+                                                   header_column="column_name", header_label="semantic_type")
                 for col_name in df.columns:
-                    if col_name in name_labels:
-                        if name_labels[col_name] == "unknown":
-                            del df[col_name]
-                    else:  # we remove unknown class column from the source
+                    label = self._get_label(col_name, name_labels)
+                    if label == "unknown":
+                        # we remove unknown class column from the source
                         del df[col_name]
                 path = os.path.join(tempfile.gettempdir(), source + ".csv")
-                df.to_csv(path, index=False)
+                df.to_csv(path, index=False, encoding=correct_encoding, na_rep=" ", quoting=csv.QUOTE_ALL, quotechar='"')
+                logging.info(" after removing source size {}".format(df.size))
             except Exception as e:
                 logging.warning("unknown class column removal failed {} due {}".format(source, e))
                 path = filename
@@ -377,6 +446,7 @@ class DINTModel(SemanticTyper):
         predict_df["source_name"] = source
         predict_df["model"] = self.model_type
         predict_df["model_description"] = self.description
+        predict_df["ignore_unknown"] = self.ignore_unknown
         label_dict = self._construct_labelData(matcher_dataset,
                                              filepath=os.path.join(self.label_dir, source + ".columnmap.txt"),
                                              header_column="column_name",
@@ -472,6 +542,7 @@ class KarmaDSLModel(SemanticTyper):
             df.append(row)
         df = pd.DataFrame(df)
         df["running_time"] = predicted["running_time"]
+        df["ignore_unknown"] = self.ignore_unknown
         return df
 
 
@@ -506,6 +577,8 @@ class NNetModel(SemanticTyper):
         self.labeler = None
         self.train_cols = None   # placeholder for a list of training cols (Column objects)
         self.classes = []
+        self.resampling_strategy = "Bagging(numBags={},bagSize={})".format(hp["n_samples"], hp["subsize"])
+        self.parameters = str("add_headers={}, p_header={}".format(add_headers, p_header))
 
     def _read(self, source, label_source=None):
         """
@@ -522,7 +595,8 @@ class NNetModel(SemanticTyper):
         else:
             label_filename = os.path.join(self.label_dir, label_source)
         logging.debug("Reading source for NNet: {}".format(filename))
-        df = pd.read_csv(filename, dtype=str)  # read the data source as a DataFrame
+        correct_encoding = self.find_source_encoding(filename)  # find encoding
+        df = pd.read_csv(filename, dtype=str, encoding=correct_encoding)  # read the data source as a DataFrame
         # labels = pd.read_csv(label_filename)   # read the semantic labels of columns in df
 
         labels_frame = pd.read_csv(label_filename, na_values=[""], dtype={'column_name': 'str'})
@@ -534,10 +608,7 @@ class NNetModel(SemanticTyper):
         source_cols = []
         for c in df.columns:
             # label = str(labels.get_value(labels[labels['column_name'] == c].index[0], 'semantic_type'))   # extract semantic label of column c
-            if c in labels:
-                label = labels[c]
-            else:
-                label = 'unknown'
+            label = self._get_label(c, labels)
             if self.ignore_unknown and label == "unknown":
                 # we skip unknown columns
                 continue
@@ -647,4 +718,6 @@ class NNetModel(SemanticTyper):
             predictions_proba_dict.append(row)
         logging.info("NNetModel predict: success.")
         # Return the predictions df:
-        return pd.DataFrame(predictions_proba_dict)
+        df = pd.DataFrame(predictions_proba_dict)
+        df["ignore_unknown"] = self.ignore_unknown
+        return df

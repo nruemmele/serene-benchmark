@@ -1,501 +1,501 @@
-"Club","Tag","Country","Position","Birthdate","Name"
-"Bor. Mnchengladbach","3","Dnemark","DF","10.04.1996","Christensen; Andreas"
-"Bor. Mnchengladbach","28","Deutschland","FW","13.08.1990","Hahn; Andr"
-"Bor. Mnchengladbach","19","USA","MF","11.12.1987","Johnson; Fabian"
-"Bor. Mnchengladbach","14","Deutschland","MF","01.04.1993","Schulz; Nico"
-"Bor. Mnchengladbach","18","Deutschland","DF","15.01.1995","Schulz; Marvin"
-"Bor. Mnchengladbach","17","Schweden","DF","24.10.1985","Wendt; Oscar"
-"Bor. Mnchengladbach","30","Schweiz","DF","30.09.1996","Elvedi; Nico"
-"Bor. Mnchengladbach","34","Schweiz","MF","27.09.1992","Xhaka; Granit"
-"Bor. Mnchengladbach","33","Deutschland","GK","01.08.1981","Heimeroth; Christofer"
-"Bor. Mnchengladbach","31","Schweden","FW","12.01.1993","Hrgota; Branimir"
-"Bor. Mnchengladbach","39","sterreich","DF","16.06.1980","Stranzl; Martin"
-"Bor. Mnchengladbach","36","Deutschland","FW","15.10.1994","Ritter; Marlon"
-"Bor. Mnchengladbach","10","Belgien","MF","29.03.1993","Hazard; Thorgan"
-"Bor. Mnchengladbach","21","Deutschland","GK","22.03.1988","Sippel; Tobias"
-"Bor. Mnchengladbach","13","Deutschland","MF","26.08.1988","Stindl; Lars"
-"Bor. Mnchengladbach","9","Schweiz","FW","08.08.1992","Drmic; Josip"
-"Bor. Mnchengladbach","1","Schweiz","GK","17.12.1988","Sommer; Yann"
-"Bor. Mnchengladbach","11","Brasilien","FW","28.03.1985","Raffael"
-"Bor. Mnchengladbach","27","Deutschland","DF","21.03.1992","Korb; Julian"
-"Bor. Mnchengladbach","6","Norwegen","MF","21.06.1990","Nordtveit; Havard"
-"Bor. Mnchengladbach","8","Deutschland","MF","01.01.1996","Dahoud; Mahmoud"
-"Bor. Mnchengladbach","7","Deutschland","MF","12.02.1991","Herrmann; Patrick"
-"Bor. Mnchengladbach","4","Niederlande","DF","28.11.1981","Brouwers; Roel"
-"Bor. Mnchengladbach","15","Spanien","DF","16.05.1989","Alvaro Dominguez"
-"Bor. Mnchengladbach","24","Deutschland","DF","07.04.1990","Jantschke; Tony"
-"Bor. Mnchengladbach","16","Guinea","MF","21.04.1988","Traor; Ibrahima"
-"VfL Wolfsburg","6","Peru","DF","06.06.1992","Ascues; Carlos"
-"VfL Wolfsburg","30","Deutschland","MF","29.03.1995","Seguin; Paul"
-"VfL Wolfsburg","20","Deutschland","GK","05.04.1987","Grn; Max"
-"VfL Wolfsburg","4","Deutschland","DF","07.06.1984","Schfer; Marcel"
-"VfL Wolfsburg","22","Brasilien","MF","23.07.1987","Luiz Gustavo"
-"VfL Wolfsburg","12","Niederlande","FW","31.05.1989","Dost; Bas"
-"VfL Wolfsburg","17","Deutschland","MF","06.11.1990","Schrrle; Andr"
-"VfL Wolfsburg","3","Dnemark","FW","16.01.1988","Bendtner; Nicklas"
-"VfL Wolfsburg","xx","Deutschland","MF","20.09.1993","Draxler; Julian"
-"VfL Wolfsburg","34","Schweiz","DF","25.08.1992","Rodriguez; Ricardo"
-"VfL Wolfsburg","8","Portugal","DF","24.01.1986","Vieirinha"
-"VfL Wolfsburg","33","Deutschland","FW","29.01.1995","Stolze; Sebastian"
-"VfL Wolfsburg","32","Polen","FW","01.02.1996","Zawada; Oskar"
-"VfL Wolfsburg","27","Deutschland","MF","27.05.1994","Arnold; Maximilian"
-"VfL Wolfsburg","15","Deutschland","DF","01.09.1987","Trsch; Christian"
-"VfL Wolfsburg","31","Deutschland","DF","22.05.1992","Knoche; Robin"
-"VfL Wolfsburg","18","Brasilien","DF","18.10.1983","Dante"
-"VfL Wolfsburg","26","Brasilien","DF","07.08.1987","Felipe"
-"VfL Wolfsburg","25","Brasilien","DF","10.09.1982","Naldo"
-"VfL Wolfsburg","11","Deutschland","FW","19.03.1988","Kruse; Max"
-"VfL Wolfsburg","37","Deutschland","DF","22.02.1995","Sprenger; Moritz"
-"VfL Wolfsburg","38","Belgien","MF","06.01.1998","Azzaoui; Ismail"
-"VfL Wolfsburg","7","Italien","MF","15.01.1988","Caligiuri; Daniel"
-"VfL Wolfsburg","24","Deutschland","DF","22.06.1990","Jung; Sebastian"
-"VfL Wolfsburg","23","Frankreich","MF","19.09.1990","Guilavogui; Josuha"
-"VfL Wolfsburg","35","Schweiz","MF","14.09.1995","Rodriguez; Francisco"
-"VfL Wolfsburg","5","Schweiz","DF","09.05.1988","Klose; Timm"
-"VfL Wolfsburg","1","Schweiz","GK","08.09.1983","Benaglio; Diego"
-"VfL Wolfsburg","28","Belgien","GK","25.06.1992","Casteels; Koen"
-"Borussia Dortmund","7","Deutschland","MF","14.07.1992","Hofmann; Jonas"
-"Borussia Dortmund","18","Trkei","MF","05.09.1988","Sahin; Nuri"
-"Borussia Dortmund","39","Deutschland","GK","22.01.1994","Bonmann; Hendrik"
-"Borussia Dortmund","25","Griechenland","DF","09.06.1988","Sokratis"
-"Borussia Dortmund","14","Deutschland","MF","08.12.1992","Leitner; Moritz"
-"Borussia Dortmund","17","Gabun","FW","18.06.1989","Aubameyang; Pierre-Emerick"
-"Borussia Dortmund","23","Japan","MF","17.03.1989","Kagawa; Shinji"
-"Borussia Dortmund","11","Deutschland","MF","31.05.1989","Reus; Marco"
-"Borussia Dortmund","29","Deutschland","DF","22.01.1988","Schmelzer; Marcel"
-"Borussia Dortmund","6","Deutschland","MF","27.04.1989","Bender; Sven"
-"Borussia Dortmund","19","Deutschland","MF","19.07.1988","Grokreutz; Kevin"
-"Borussia Dortmund","28","Deutschland","DF","19.01.1994","Ginter; Matthias"
-"Borussia Dortmund","9","Belgien","MF","05.02.1995","Januzaj; Adnan"
-"Borussia Dortmund","10","Armenien","MF","21.01.1989","Mkhitaryan; Henrikh"
-"Borussia Dortmund","4","Serbien","DF","10.12.1988","Subotic; Neven"
-"Borussia Dortmund","3","Sdkorea","DF","16.01.1987","Park; Joo-Ho"
-"Borussia Dortmund","1","Deutschland","GK","06.08.1980","Weidenfeller; Roman"
-"Borussia Dortmund","15","Deutschland","DF","16.12.1988","Hummels; Mats"
-"Borussia Dortmund","38","Schweiz","GK","14.11.1990","Brki; Roman"
-"Borussia Dortmund","33","Deutschland","MF","08.09.1995","Weigl; Julian"
-"Borussia Dortmund","8","Deutschland","MF","24.10.1990","Gndogan; Ilkay"
-"Borussia Dortmund","37","Deutschland","DF","12.05.1992","Durm; Erik"
-"Borussia Dortmund","26","Polen","DF","03.06.1985","Piszczek; Lukasz"
-"Borussia Dortmund","20","Kolumbien","FW","22.01.1986","Ramos; Adrian"
-"Borussia Dortmund","27","Deutschland","MF","11.06.1987","Castro; Gonzalo"
-"Werder Bremen","2","Argentinien","DF","08.07.1988","Garcia; Santiago"
-"Werder Bremen","38","Deutschland","DF","08.12.1994","Busch; Marnon"
-"Werder Bremen","42","Deutschland","GK","15.03.1990","Wiedwald; Felix"
-"Werder Bremen","35","Deutschland","MF","08.12.1996","Eggestein; Maximilian"
-"Werder Bremen","18","Deutschland","MF","12.03.1991","Kroos; Felix"
-"Werder Bremen","4","Spanien","DF","06.06.1989","Galvez; Alejandro"
-"Werder Bremen","21","Nigeria","FW","14.10.1990","Ujah; Anthony"
-"Werder Bremen","30","Deutschland","GK","12.07.1995","Zetterer; Michael"
-"Werder Bremen","10","Deutschland","MF","12.02.1994","Aycicek; Levent"
-"Werder Bremen","20","Schweiz","DF","11.01.1996","Garcia; Ulisses"
-"Werder Bremen","40","Deutschland","GK","05.02.1996","Husic; Raif"
-"Werder Bremen","16","sterreich","MF","26.09.1987","Junuzovic; Zlatko"
-"Werder Bremen","28","Deutschland","FW","26.11.1994","Lorenzen; Melvyn"
-"Werder Bremen","27","sterreich","MF","07.08.1995","Grillitsch; Florian"
-"Werder Bremen","15","Kroatien","DF","09.06.1990","Pavlovic; Mateo"
-"Werder Bremen","1","Deutschland","GK","06.06.1988","Wolf; Raphael"
-"Werder Bremen","17","Deutschland","MF","10.04.1993","Yildirim; zkan"
-"Werder Bremen","44","Deutschland","MF","03.03.1989","Bargfrede; Philipp"
-"Werder Bremen","5","DR Kongo","DF","25.01.1986","Lukimya; Assani"
-"Werder Bremen","25","Deutschland","DF","17.02.1993","Hsing; Oliver"
-"Werder Bremen","7","Dnemark","DF","03.08.1992","Vestergaard; Jannik"
-"Werder Bremen","9","USA","FW","10.11.1990","Johannsson; Aron"
-"Werder Bremen","23","Tschechien","DF","24.12.1986","Gebre Selassie; Theodor"
-"Werder Bremen","37","Deutschland","DF","19.10.1992","Sternberg; Janek"
-"Werder Bremen","19","Deutschland","DF","09.08.1995","Zander; Luca-Milan"
-"Werder Bremen","39","Deutschland","MF","23.01.1995","Frde; Lukas"
-"Werder Bremen","26","Deutschland","MF","14.02.1994","von Haacke; Julian"
-"Werder Bremen","22","Deutschland","MF","07.02.1987","Bartels; Fin"
-"Werder Bremen","8","Deutschland","MF","07.12.1980","Fritz; Clemens"
-"Werder Bremen","11","Deutschland","MF","15.03.1996","ztunali; Levin"
-"FC Augsburg","25","Paraguay","FW","18.06.1987","Bobadilla; Raul"
-"FC Augsburg","16","Deutschland","DF","14.02.1985","Janker; Christoph"
-"FC Augsburg","31","Deutschland","DF","30.09.1993","Max; Philipp"
-"FC Augsburg","37","Trkei","MF","14.09.1995","Ekin; Arif"
-"FC Augsburg","18","Deutschland","DF","23.09.1984","Callsen-Bracker; Jan-Ingwer"
-"FC Augsburg","33","Deutschland","FW","20.03.1985","Mlders; Sascha"
-"FC Augsburg","20","Sdkorea","DF","12.08.1989","Hong; Jeong-Ho"
-"FC Augsburg","1","sterreich","GK","04.06.1977","Manninger; Alexander"
-"FC Augsburg","15","Deutschland","MF","22.03.1984","Trochowski; Piotr"
-"FC Augsburg","4","Ghana","DF","18.10.1990","Opare; Daniel"
-"FC Augsburg","8","Deutschland","MF","12.02.1982","Feulner; Markus"
-"FC Augsburg","40","Deutschland","DF","03.09.1993","Rieder; Tim"
-"FC Augsburg","9","Deutschland","MF","07.03.1993","Parker; Shawn"
-"FC Augsburg","21","Deutschland","MF","31.01.1994","Kohr; Dominik"
-"FC Augsburg","10","Deutschland","MF","18.05.1984","Baier; Daniel"
-"FC Augsburg","22","Sdkorea","FW","28.05.1991","Ji; Dong-Won"
-"FC Augsburg","24","Griechenland","GK","24.04.1992","Gelios; Ioannis"
-"FC Augsburg","5","Estland","DF","30.10.1985","Klavan; Ragnar"
-"FC Augsburg","32","Deutschland","DF","06.09.1995","Framberger; Raphael"
-"FC Augsburg","14","Tschechien","MF","01.11.1989","Moravek; Jan"
-"FC Augsburg","29","Deutschland","MF","10.10.1995","Schuster; Marco"
-"FC Augsburg","39","Deutschland","DF","23.05.1994","Uhde; Maik"
-"FC Augsburg","23","Slowenien","FW","13.01.1989","Matavz; Tim"
-"FC Augsburg","19","Sdkorea","MF","27.02.1989","Koo; Ja-Cheol"
-"FC Augsburg","7","Trkei","MF","08.12.1982","Altintop; Halil"
-"FC Augsburg","28","Deutschland","GK","19.11.1996","Oettl; Yannik"
-"FC Augsburg","3","Griechenland","DF","02.12.1993","Stafylidis; Konstantinos"
-"FC Augsburg","11","Deutschland","MF","25.03.1990","Esswein; Alexander"
-"FC Augsburg","30","Brasilien","MF","14.07.1988","Caiuby"
-"FC Augsburg","35","Schweiz","GK","18.09.1987","Hitz; Marwin"
-"FC Augsburg","2","Niederlande","DF","01.09.1983","Verhaegh; Paul"
-"FC Augsburg","26","Deutschland","DF","23.09.1996","Kurz; Bastian"
-"FC Augsburg","36","Italien","MF","22.03.1995","Reinthaler; Max"
-"FC Augsburg","13","Deutschland","MF","19.07.1985","Werner; Tobias"
-"Hamburger SV","3","Brasilien","DF","05.12.1990","Cleber"
-"Hamburger SV","5","Schweiz","DF","18.01.1987","Djourou; Johan"
-"Hamburger SV","20","Schweden","MF","28.07.1989","Ekdal; Albin"
-"Hamburger SV","1","Tschechien","GK","18.10.1979","Drobny; Jaroslav"
-"Hamburger SV","30","Schweiz","GK","25.03.1993","Hirzel; Andreas"
-"Hamburger SV","31","Mosambik","DF","01.10.1993","Marcos; Ronny"
-"Hamburger SV","14","Deutschland","MF","04.09.1986","Hunt; Aaron"
-"Hamburger SV","28","Deutschland","DF","12.09.1994","Jung; Gideon"
-"Hamburger SV","9","Deutschland","FW","08.11.1988","Schipplock; Sven"
-"Hamburger SV","17","Ungarn","MF","16.10.1988","Stieber; Zoltan"
-"Hamburger SV","39","Deutschland","DF","16.07.1993","Gtz; Ashton-Phillip"
-"Hamburger SV","10","Deutschland","FW","15.12.1991","Lasogga; Pierre-Michel"
-"Hamburger SV","40","Serbien","MF","26.01.1987","Kacar; Gojko"
-"Hamburger SV","26","Deutschland","FW","03.03.1995","Mller; Philipp"
-"Hamburger SV","27","Deutschland","MF","25.09.1987","Mller; Nicolai"
-"Hamburger SV","4","Bosnien-Herzegowina","DF","18.08.1980","Spahic; Emir"
-"Hamburger SV","16","Lettland","FW","13.01.1988","Rudnevs; Artjoms"
-"Hamburger SV","22","Deutschland","DF","05.06.1990","Ostrzolek; Matthias"
-"Hamburger SV","21","Chile","MF","30.12.1986","Diaz; Marcelo"
-"Hamburger SV","11","Kroatien","FW","14.09.1979","Olic; Ivica"
-"Hamburger SV","2","Deutschland","DF","20.10.1989","Diekmeier; Dennis"
-"Hamburger SV","8","Deutschland","MF","18.09.1990","Holtby; Lewis"
-"Hamburger SV","15","Deutschland","GK","15.01.1985","Adler; Ren"
-"Hamburger SV","23","sterreich","FW","18.04.1994","Gregoritsch; Michael"
-"Hamburger SV","33","Trkei","FW","14.03.1996","Altintas; Batuhan"
-"Hamburger SV","24","Japan","DF","14.03.1991","Sakai; Gotoku"
-"Hamburger SV","7","Kroatien","MF","14.11.1986","Ilicevic; Ivo"
-"1. FC Kln","6","Deutschland","MF","23.09.1991","Vogt; Kevin"
-"1. FC Kln","16","Polen","DF","13.02.1990","Olkowski; Pawel"
-"1. FC Kln","13","Japan","FW","18.05.1990","Osako; Yuya"
-"1. FC Kln","25","Japan","MF","16.12.1991","Nagasawa; Kazuki"
-"1. FC Kln","18","Deutschland","GK","20.01.1986","Kessler; Thomas"
-"1. FC Kln","4","Dnemark","DF","14.04.1992","Srensen; Frederik"
-"1. FC Kln","21","Deutschland","MF","19.12.1993","Bittencourt; Leonardo"
-"1. FC Kln","27","Frankreich","FW","14.04.1988","Modeste; Anthony"
-"1. FC Kln","26","Norwegen","FW","13.02.1995","Finne; Bard"
-"1. FC Kln","15","sterreich","FW","15.05.1989","Hosiner; Philipp"
-"1. FC Kln","5","Slowenien","DF","04.03.1987","Maroh; Dominic"
-"1. FC Kln","31","Deutschland","MF","13.03.1994","Gerhardt; Yannick"
-"1. FC Kln","29","Slowakei","MF","01.08.1985","Svento; Dusan"
-"1. FC Kln","37","Deutschland","GK","24.07.1995","Mesenhler; Daniel"
-"1. FC Kln","3","Deutschland","DF","15.08.1993","Heintz; Dominique"
-"1. FC Kln","7","Deutschland","MF","17.12.1989","Risse; Marcel"
-"1. FC Kln","19","Albanien","DF","09.06.1986","Mavraj; Mergim"
-"1. FC Kln","8","Serbien","MF","19.03.1992","Jojic; Milos"
-"1. FC Kln","14","Deutschland","DF","27.05.1990","Hector; Jonas"
-"1. FC Kln","33","Deutschland","MF","28.05.1983","Lehmann; Matthias"
-"1. FC Kln","11","Deutschland","FW","26.06.1991","Zoller; Simon"
-"1. FC Kln","1","Deutschland","GK","12.05.1993","Horn; Timo"
-"1. FSV Mainz 05","17","Spanien","MF","11.07.1993","Jairo"
-"1. FSV Mainz 05","25","Dnemark","MF","19.04.1985","Zimling; Niki"
-"1. FSV Mainz 05","14","sterreich","MF","02.01.1988","Baumgartlinger; Julian"
-"1. FSV Mainz 05","2","Chile","DF","29.08.1985","Jara; Gonzalo"
-"1. FSV Mainz 05","33","Deutschland","GK","15.04.1994","Huth; Jannik"
-"1. FSV Mainz 05","8","Deutschland","MF","27.01.1990","Moritz; Christoph"
-"1. FSV Mainz 05","7","Schweden","DF","12.04.1988","Bengtsson; Pierre"
-"1. FSV Mainz 05","15","Kolumbien","FW","11.05.1993","Cordoba; Jhon"
-"1. FSV Mainz 05","32","Argentinien","FW","04.02.1988","De Blasis; Pablo"
-"1. FSV Mainz 05","23","Italien","GK","12.07.1985","Curci; Gianluca"
-"1. FSV Mainz 05","19","Kolumbien","MF","04.08.1980","Soto; Elkin"
-"1. FSV Mainz 05","9","Japan","FW","15.07.1992","Muto; Yoshinori"
-"1. FSV Mainz 05","31","Deutschland","FW","24.10.1990","Niederlechner; Florian"
-"1. FSV Mainz 05","6","Deutschland","MF","07.12.1989","Latza; Danny"
-"1. FSV Mainz 05","10","Deutschland","MF","24.02.1992","Malli; Yunus"
-"1. FSV Mainz 05","16","Deutschland","DF","24.08.1991","Bell; Stefan"
-"1. FSV Mainz 05","1","Deutschland","GK","22.06.1993","Karius; Loris"
-"1. FSV Mainz 05","27","Deutschland","MF","04.08.1991","Clemens; Christian"
-"1. FSV Mainz 05","24","Frankreich","DF","02.02.1991","Bussmann; Gaetan"
-"1. FSV Mainz 05","11","Deutschland","MF","06.09.1990","Beister; Maximilian"
-"1. FSV Mainz 05","26","Deutschland","DF","24.10.1986","Bungert; Niko"
-"1. FSV Mainz 05","18","Deutschland","DF","17.07.1988","Brosinski; Daniel"
-"1. FSV Mainz 05","20","Schweiz","MF","08.01.1989","Frei; Fabian"
-"1. FSV Mainz 05","29","Deutschland","MF","16.03.1996","Parker; Devante"
-"1. FSV Mainz 05","xx","Deutschland","MF","11.04.1997","Serdar; Suat"
-"1. FSV Mainz 05","28","Bulgarien","MF","07.02.1993","Nedelev; Todor"
-"1. FSV Mainz 05","3","Nigeria","DF","28.06.1988","Balogun; Leon"
-"1. FSV Mainz 05","5","Portugal","DF","18.05.1985","Sereno; Henrique"
-"Bayern Mnchen","13","Brasilien","DF","07.09.1985","Rafinha"
-"Bayern Mnchen","32","Deutschland","MF","08.02.1995","Kimmich; Joshua"
-"Bayern Mnchen","28","Deutschland","DF","13.03.1989","Badstuber; Holger"
-"Bayern Mnchen","37","USA","MF","06.06.1995","Green; Julian"
-"Bayern Mnchen","29","Frankreich","MF","13.06.1996","Coman; Kingsley"
-"Bayern Mnchen","16","Deutschland","MF","11.11.1996","Gaudino; Gianluca"
-"Bayern Mnchen","8","Spanien","DF","02.09.1988","Javi Martinez"
-"Bayern Mnchen","20","Deutschland","MF","11.10.1990","Rode; Sebastian"
-"Bayern Mnchen","10","Niederlande","MF","23.01.1984","Robben; Arjen"
-"Bayern Mnchen","23","Chile","MF","22.05.1987","Vidal; Arturo"
-"Bayern Mnchen","17","Deutschland","DF","03.09.1988","Boateng; Jerome"
-"Bayern Mnchen","26","Deutschland","GK","03.08.1988","Ulreich; Sven"
-"Bayern Mnchen","14","Spanien","MF","25.11.1981","Xabi Alonso"
-"Bayern Mnchen","15","Deutschland","DF","01.10.1990","Kirchhoff; Jan"
-"Bayern Mnchen","1","Deutschland","GK","27.03.1986","Neuer; Manuel"
-"Bayern Mnchen","24","Deutschland","FW","23.07.1996","Kurt; Sinan"
-"Bayern Mnchen","11","Brasilien","MF","14.09.1990","Douglas Costa"
-"Bayern Mnchen","19","Deutschland","MF","03.06.1992","Gtze; Mario"
-"Bayern Mnchen","21","Deutschland","MF","11.11.1983","Lahm; Philipp"
-"Bayern Mnchen","6","Spanien","MF","11.04.1991","Thiago"
-"Bayern Mnchen","22","Deutschland","GK","18.03.1981","Starke; Tom"
-"Bayern Mnchen","27","sterreich","DF","24.06.1992","Alaba; David"
-"Bayern Mnchen","25","Deutschland","MF","13.09.1989","Mller; Thomas"
-"Bayern Mnchen","7","Frankreich","MF","07.04.1983","Ribery; Franck"
-"Bayern Mnchen","18","Spanien","DF","01.03.1993","Juan Bernat"
-"Bayern Mnchen","9","Polen","FW","21.08.1988","Lewandowski; Robert"
-"Bayern Mnchen","xx","Deutschland","FW","03.03.1994","Weihrauch; Patrick"
-"Bayern Mnchen","5","Marokko","DF","17.04.1987","Benatia; Medhi"
-"Hannover 96","7","Deutschland","MF","15.12.1989","Prib; Edgar"
-"Hannover 96","23","Deutschland","MF","30.05.1993","Hirsch; Maurice"
-"Hannover 96","8","Deutschland","MF","05.12.1988","Schmiedebach; Manuel"
-"Hannover 96","14","Frankreich","FW","12.03.1997","Saint-Maximin; Allan"
-"Hannover 96","1","Deutschland","GK","12.02.1989","Zieler; Ron-Robert"
-"Hannover 96","6","Trkei","MF","25.12.1987","Glselam; Ceyhun"
-"Hannover 96","11","Deutschland","MF","13.09.1992","Klaus; Felix"
-"Hannover 96","3","Chile","DF","30.11.1990","Albornoz; Miiko"
-"Hannover 96","33","Deutschland","MF","10.08.1995","Bhre; Mike-Steven"
-"Hannover 96","10","Japan","MF","12.11.1989","Kiyotake; Hiroshi"
-"Hannover 96","27","Deutschland","DF","27.06.1993","Rankovic; Vladimir"
-"Hannover 96","19","Deutschland","DF","01.04.1983","Schulz; Christian"
-"Hannover 96","2","Dnemark","MF","23.04.1983","Andreasen; Leon"
-"Hannover 96","40","Deutschland","GK","05.04.1997","Knigsmann; Timo"
-"Hannover 96","5","Senegal","MF","25.08.1990","San; Salif"
-"Hannover 96","31","Deutschland","DF","20.07.1996","Anton; Waldemar"
-"Hannover 96","29","Deutschland","DF","29.05.1990","Sorg; Oliver"
-"Hannover 96","30","sterreich","GK","07.11.1992","Radlinger; Samuel"
-"Hannover 96","37","Deutschland","DF","07.02.1996","Teichgrber; Niklas"
-"Hannover 96","39","Trkei","FW","25.02.1987","Erdinc; Mevlt"
-"Hannover 96","25","Brasilien","DF","20.05.1987","Marcelo"
-"Hannover 96","20","Brasilien","DF","15.05.1987","Felipe"
-"Hannover 96","15","Deutschland","DF","28.02.1993","Hoffmann; Andre"
-"Hannover 96","26","Trkei","FW","05.03.1994","Karaman; Kenan"
-"Hannover 96","34","Deutschland","MF","15.01.1996","Dieren; Tim"
-"Hannover 96","36","Deutschland","MF","04.03.1995","Ernst; Sebastian"
-"Hannover 96","4","Japan","DF","12.04.1990","Sakai; Hiroki"
-"Hannover 96","35","Niederlande","FW","21.08.1989","Benschop; Charlison"
-"Hannover 96","17","Dnemark","MF","13.01.1993","Bech; Uffe"
-"Hannover 96","13","Deutschland","GK","03.11.1985","Tschauner; Philipp"
-"Hannover 96","9","Polen","FW","12.06.1990","Sobiech; Artur"
-"Hannover 96","38","Albanien","MF","01.02.1996","Sulejmani; Valmir"
-"Eintracht Frankfurt","25","Serbien","MF","20.11.1990","Medojevic; Slobodan"
-"Eintracht Frankfurt","31","Deutschland","DF","12.12.1995","Kinsombi; David"
-"Eintracht Frankfurt","23","Brasilien","DF","10.01.1988","Anderson"
-"Eintracht Frankfurt","20","Japan","MF","18.01.1984","Hasebe; Makoto"
-"Eintracht Frankfurt","27","Serbien","DF","27.01.1991","Ignjovski; Aleksandar"
-"Eintracht Frankfurt","7","Deutschland","MF","01.01.1989","Reinartz; Stefan"
-"Eintracht Frankfurt","11","Serbien","MF","08.02.1995","Gacinovic; Mijat"
-"Eintracht Frankfurt","15","Elfenbeinkste","DF","17.10.1986","Djakpa; Constant"
-"Eintracht Frankfurt","28","Deutschland","MF","06.01.1993","Kittel; Sonny"
-"Eintracht Frankfurt","9","Schweiz","FW","22.02.1992","Seferovic; Haris"
-"Eintracht Frankfurt","32","Deutschland","MF","09.10.1995","Gerezgiher; Joel"
-"Eintracht Frankfurt","13","sterreich","GK","17.07.1990","Lindner; Heinz"
-"Eintracht Frankfurt","22","USA","DF","29.03.1990","Chandler; Timothy"
-"Eintracht Frankfurt","30","Niederlande","FW","27.09.1992","Castaignos; Luc"
-"Eintracht Frankfurt","18","Deutschland","MF","14.12.1987","Flum; Johannes"
-"Eintracht Frankfurt","10","Tschechien","FW","20.05.1992","Kadlec; Vaclav"
-"Eintracht Frankfurt","19","Argentinien","DF","15.07.1986","Abraham; David"
-"Eintracht Frankfurt","4","Deutschland","DF","04.08.1985","Russ; Marco"
-"Eintracht Frankfurt","14","Deutschland","FW","17.01.1983","Meier; Alexander"
-"Eintracht Frankfurt","29","Aserbaidschan","GK","17.04.1994","Balayev; Emil"
-"Eintracht Frankfurt","1","Finnland","GK","24.11.1989","Hradecky; Lukas"
-"Eintracht Frankfurt","5","Peru","DF","10.07.1989","Zambrano; Carlos"
-"Eintracht Frankfurt","24","Deutschland","FW","19.05.1996","Waldschmidt; Luca"
-"Eintracht Frankfurt","21","Deutschland","MF","10.12.1995","Stendera; Marc"
-"Eintracht Frankfurt","16","Deutschland","MF","20.08.1987","Aigner; Stefan"
-"Eintracht Frankfurt","33","Deutschland","GK","26.03.1996","Zummack; Yannick"
-"Eintracht Frankfurt","6","Deutschland","DF","12.01.1989","Oczipka; Bastian"
-"Hertha BSC","10","Tunesien","MF","18.07.1988","Ben-Hatira; nis"
-"Hertha BSC","23","Deutschland","DF","21.11.1986","van den Bergh; Johannes"
-"Hertha BSC","29","Deutschland","GK","13.11.1996","Krber; Nils-Jonathan"
-"Hertha BSC","31","Deutschland","MF","03.04.1995","Kohls; Florian"
-"Hertha BSC","22","Norwegen","GK","29.09.1984","Jarstein; Rune"
-"Hertha BSC","17","Deutschland","MF","23.03.1992","Cigerci; Tolga"
-"Hertha BSC","5","Deutschland","DF","14.04.1995","Stark; Niklas"
-"Hertha BSC","35","Deutschland","GK","20.06.1995","Gersbeck; Marius"
-"Hertha BSC","11","Tunesien","FW","28.05.1986","Allagui; Sami"
-"Hertha BSC","8","Elfenbeinkste","FW","05.08.1985","Kalou; Salomon"
-"Hertha BSC","13","Deutschland","MF","22.01.1988","Hegeler; Jens"
-"Hertha BSC","21","Deutschland","DF","26.01.1992","Plattenhardt; Marvin"
-"Hertha BSC","14","Schweiz","MF","12.04.1989","Stocker; Valentin"
-"Hertha BSC","3","Norwegen","MF","16.06.1987","Skjelbred; Per Ciljan"
-"Hertha BSC","9","Deutschland","MF","23.01.1987","Baumjohann; Alexander"
-"Hertha BSC","24","Japan","MF","09.05.1991","Haraguchi; Genki"
-"Hertha BSC","12","Brasilien","MF","11.05.1986","Ronny"
-"Hertha BSC","25","USA","DF","28.01.1993","Brooks; John Anthony"
-"Hertha BSC","20","Deutschland","MF","21.04.1994","Weiser; Mitchell"
-"Hertha BSC","19","Bosnien-Herzegowina","FW","06.08.1984","Ibisevic; Vedad"
-"Hertha BSC","28","Schweiz","MF","02.05.1988","Lustenberger; Fabian"
-"Hertha BSC","2","Slowakei","DF","30.10.1986","Pekarik; Peter"
-"Hertha BSC","15","Deutschland","DF","15.01.1988","Langkamp; Sebastian"
-"Hertha BSC","6","Tschechien","MF","08.08.1990","Darida; Vladimir"
-"Hertha BSC","27","Niederlande","MF","22.12.1987","Beerens; Roy"
-"Hertha BSC","16","Deutschland","FW","13.02.1989","Schieber; Julian"
-"Hertha BSC","1","Deutschland","GK","22.07.1988","Kraft; Thomas"
-"Hertha BSC","34","Deutschland","DF","18.03.1997","Mittelstdt; Maximilian"
-"TSG Hoffenheim","1","Deutschland","GK","02.06.1990","Baumann; Oliver"
-"TSG Hoffenheim","31","Deutschland","FW","30.07.1992","Volland; Kevin"
-"TSG Hoffenheim","8","Polen","MF","17.03.1986","Polanski; Eugen"
-"TSG Hoffenheim","22","Deutschland","FW","02.03.1982","Kuranyi; Kevin"
-"TSG Hoffenheim","14","Norwegen","MF","23.02.1988","Elyounoussi; Tarik"
-"TSG Hoffenheim","20","Sdkorea","DF","13.06.1992","Kim; Jin-Su"
-"TSG Hoffenheim","12","Deutschland","DF","12.05.1990","Strobl; Tobias"
-"TSG Hoffenheim","28","Ungarn","FW","09.12.1987","Szalai; Adam"
-"TSG Hoffenheim","10","Frankreich","MF","22.06.1990","Schmid; Jonathan"
-"TSG Hoffenheim","21","Deutschland","DF","13.12.1996","Rapp; Nicolai"
-"TSG Hoffenheim","40","Brasilien","FW","14.08.1996","Joelinton"
-"TSG Hoffenheim","5","Schweiz","DF","20.12.1991","Schr; Fabian"
-"TSG Hoffenheim","13","Deutschland","GK","22.09.1988","Grahl; Jens"
-"TSG Hoffenheim","6","Deutschland","MF","28.02.1990","Rudy; Sebastian"
-"TSG Hoffenheim","xx","Serbien","MF","18.11.1992","Malbasic; Filip"
-"TSG Hoffenheim","17","Schweiz","MF","17.08.1991","Zuber; Steven"
-"TSG Hoffenheim","3","Tschechien","DF","25.04.1992","Kaderabek; Pavel"
-"TSG Hoffenheim","30","Deutschland","FW","17.04.1997","Ochs; Philipp"
-"TSG Hoffenheim","25","Deutschland","DF","03.09.1995","Sle; Niklas"
-"TSG Hoffenheim","16","Schweiz","MF","09.03.1987","Schwegler; Pirmin"
-"TSG Hoffenheim","38","Deutschland","MF","27.06.1984","Herdling; Kai"
-"TSG Hoffenheim","32","Deutschland","DF","19.02.1997","Gimber; Benedikt"
-"TSG Hoffenheim","9","Chile","MF","20.11.1989","Vargas; Eduardo"
-"TSG Hoffenheim","4","Bosnien-Herzegowina","DF","24.01.1990","Bicakcic; Ermin"
-"TSG Hoffenheim","18","Deutschland","MF","27.10.1996","Amiri; Nadiem"
-"TSG Hoffenheim","11","Schweden","MF","06.11.1990","Hamad; Jiloan"
-"TSG Hoffenheim","19","Deutschland","FW","24.08.1991","Uth; Mark"
-"TSG Hoffenheim","33","Deutschland","GK","13.10.1983","Stolz; Alexander"
-"TSG Hoffenheim","15","Deutschland","DF","08.08.1994","Toljan; Jeremy"
-"FC Ingolstadt 04","10","Deutschland","MF","15.06.1991","Gro; Pascal"
-"FC Ingolstadt 04","7","Australien","FW","04.02.1991","Leckie; Mathew"
-"FC Ingolstadt 04","25","Deutschland","FW","22.04.1992","Kachunga; Elias"
-"FC Ingolstadt 04","18","Frankreich","DF","09.08.1986","Bregerie; Romain"
-"FC Ingolstadt 04","26","Norwegen","GK","10.09.1990","Nyland; rjan"
-"FC Ingolstadt 04","28","Deutschland","DF","22.11.1986","Levels; Tobias"
-"FC Ingolstadt 04","16","sterreich","FW","28.03.1991","Hinterseer; Lukas"
-"FC Ingolstadt 04","xx","Deutschland","MF","15.12.1996","Multhaup; Maurice"
-"FC Ingolstadt 04","15","Brasilien","DF","29.10.1991","Danilo"
-"FC Ingolstadt 04","20","Kasachstan","DF","27.07.1988","Engel; Konstantin"
-"FC Ingolstadt 04","30","Deutschland","MF","23.05.1994","Pledl; Thomas"
-"FC Ingolstadt 04","39","Deutschland","GK","14.01.1995","Ortag; Christian"
-"FC Ingolstadt 04","23","Deutschland","MF","09.04.1995","Bauer; Robert"
-"FC Ingolstadt 04","19","Deutschland","MF","25.09.1996","Christiansen; Max"
-"FC Ingolstadt 04","6","USA","MF","12.05.1990","Morales; Alfredo"
-"FC Ingolstadt 04","5","Deutschland","DF","04.07.1989","Hbner; Benjamin"
-"FC Ingolstadt 04","29","sterreich","DF","16.04.1987","Suttner; Markus"
-"FC Ingolstadt 04","8","Brasilien","MF","10.08.1985","Roger"
-"FC Ingolstadt 04","36","Israel","MF","01.09.1988","Cohen; Almog"
-"FC Ingolstadt 04","11","Tschechien","FW","26.05.1989","Pekhart; Tomas"
-"FC Ingolstadt 04","1","sterreich","GK","28.06.1984","zcan; Ramazan"
-"FC Ingolstadt 04","21","Deutschland","DF","13.07.1993","da Costa; Danny"
-"FC Ingolstadt 04","34","Kamerun","DF","25.09.1985","Matip; Marvin"
-"FC Ingolstadt 04","14","Deutschland","MF","27.11.1989","Lex; Stefan"
-"FC Ingolstadt 04","22","Deutschland","MF","19.01.1992","Wannenwetsch; Stefan"
-"FC Ingolstadt 04","9","Deutschland","FW","20.06.1986","Hartmann; Moritz"
-"VfB Stuttgart","11","Ecuador","MF","19.04.1995","Gruezo; Carlos"
-"VfB Stuttgart","1","Australien","GK","22.08.1988","Langerak; Mitchell"
-"VfB Stuttgart","14","Deutschland","DF","20.06.1991","Heise; Philip"
-"VfB Stuttgart","19","Deutschland","FW","06.03.1996","Werner; Timo"
-"VfB Stuttgart","22","Polen","GK","04.01.1987","Tyton; Przemyslaw"
-"VfB Stuttgart","18","Serbien","MF","01.11.1992","Kostic; Filip"
-"VfB Stuttgart","20","Deutschland","MF","14.08.1985","Gentner; Christian"
-"VfB Stuttgart","31","Deutschland","MF","07.09.1997","Ferati; Arianit"
-"VfB Stuttgart","26","Elfenbeinkste","MF","07.11.1984","Serey Di"
-"VfB Stuttgart","4","Bosnien-Herzegowina","DF","15.12.1988","Sunjic; Toni"
-"VfB Stuttgart","10","Deutschland","MF","21.02.1990","Didavi; Daniel"
-"VfB Stuttgart","5","Deutschland","DF","04.03.1996","Baumgartl; Timo"
-"VfB Stuttgart","3","Deutschland","DF","23.08.1988","Schwaab; Daniel"
-"VfB Stuttgart","21","Tschechien","DF","20.12.1988","Hlousek; Adam"
-"VfB Stuttgart","2","Argentinien","DF","07.01.1989","Insua; Emiliano"
-"VfB Stuttgart","6","Deutschland","DF","26.02.1986","Niedermeier; Georg"
-"VfB Stuttgart","16","sterreich","DF","17.11.1986","Klein; Florian"
-"VfB Stuttgart","28","Deutschland","MF","07.05.1993","Wanitzek; Marvin"
-"VfB Stuttgart","42","USA","FW","09.02.1993","Kiesewetter; Jerome"
-"VfB Stuttgart","33","Deutschland","FW","13.04.1991","Ginczek; Daniel"
-"VfB Stuttgart","9","Australien","FW","05.10.1988","Kruse; Robbie"
-"VfB Stuttgart","7","sterreich","FW","10.06.1987","Harnik; Martin"
-"VfB Stuttgart","44","Rumnien","MF","08.07.1990","Maxim; Alexandru"
-"VfB Stuttgart","27","Deutschland","MF","07.07.1996","Ristl; Mart"
-"VfB Stuttgart","17","Deutschland","GK","26.04.1994","Vlachodimos; Odisseas"
-"VfB Stuttgart","39","Tschechien","FW","01.09.1993","Kliment; Jan"
-"VfB Stuttgart","8","Deutschland","MF","08.01.1991","Rupp; Lukas"
-"Bayer 04 Leverkusen","23","Deutschland","MF","19.02.1991","Kramer; Christoph"
-"Bayer 04 Leverkusen","24","Sdkorea","MF","17.12.1993","Ryu; Seung-Woo"
-"Bayer 04 Leverkusen","7","Mexiko","FW","01.06.1988","Hernandez; Javier"
-"Bayer 04 Leverkusen","37","Deutschland","MF","24.03.1996","Frey; Marlon"
-"Bayer 04 Leverkusen","16","Kroatien","DF","28.11.1995","Jedvaj; Tin"
-"Bayer 04 Leverkusen","4","Deutschland","DF","11.02.1996","Tah; Jonathan"
-"Bayer 04 Leverkusen","1","Deutschland","GK","04.03.1992","Leno; Bernd"
-"Bayer 04 Leverkusen","13","Deutschland","DF","16.10.1984","Hilbert; Roberto"
-"Bayer 04 Leverkusen","18","Brasilien","DF","20.07.1993","Wendell"
-"Bayer 04 Leverkusen","11","Deutschland","FW","25.01.1984","Kieling; Stefan"
-"Bayer 04 Leverkusen","10","Trkei","MF","08.02.1994","Calhanoglu; Hakan"
-"Bayer 04 Leverkusen","21","Trkei","DF","21.07.1989","Toprak; mer"
-"Bayer 04 Leverkusen","25","Kroatien","GK","11.01.1984","Kresic; Dario"
-"Bayer 04 Leverkusen","17","Polen","DF","01.02.1987","Boenisch; Sebastian"
-"Bayer 04 Leverkusen","22","USA","GK","01.10.1981","Yelldell; David"
-"Bayer 04 Leverkusen","33","Deutschland","DF","18.04.1997","Boeder; Lukas"
-"Bayer 04 Leverkusen","19","Deutschland","FW","02.05.1996","Brandt; Julian"
-"Bayer 04 Leverkusen","26","Italien","DF","05.02.1990","Donati; Giulio"
-"Bayer 04 Leverkusen","44","Slowenien","MF","09.10.1990","Kampl; Kevin"
-"Bayer 04 Leverkusen","5","Griechenland","DF","23.02.1992","Papadopoulos; Kyriakos"
-"Bayer 04 Leverkusen","20","Chile","MF","17.04.1989","Aranguiz; Charles"
-"Bayer 04 Leverkusen","2","Brasilien","DF","16.02.1992","Ramalho; Andr"
-"Bayer 04 Leverkusen","35","Ukraine","MF","22.01.1994","Yurchenko; Vladlen"
-"Bayer 04 Leverkusen","14","Schweiz","FW","16.03.1991","Mehmedi; Admir"
-"Bayer 04 Leverkusen","38","Deutschland","FW","08.04.1990","Bellarabi; Karim"
-"Bayer 04 Leverkusen","8","Deutschland","MF","27.04.1989","Bender; Lars"
-"SV Darmstadt 98","7","Deutschland","FW","16.11.1985","Sailer; Marco"
-"SV Darmstadt 98","36","Deutschland","MF","02.01.1997","Finger; Jan"
-"SV Darmstadt 98","32","Deutschland","DF","11.07.1990","Holland; Fabian"
-"SV Darmstadt 98","37","Deutschland","MF","30.06.1997","Kazimi; Ali"
-"SV Darmstadt 98","27","Slowakei","MF","26.11.1983","Ivana; Milan"
-"SV Darmstadt 98","20","Deutschland","MF","12.02.1986","Heller; Marcel"
-"SV Darmstadt 98","23","Deutschland","MF","27.01.1989","Jungwirth; Florian"
-"SV Darmstadt 98","33","Italien","DF","01.02.1991","Caldirola; Luca"
-"SV Darmstadt 98","38","Deutschland","MF","12.11.1997","Volk; Nick"
-"SV Darmstadt 98","5","Deutschland","DF","15.04.1984","Gorka; Benjamin"
-"SV Darmstadt 98","17","Deutschland","DF","07.10.1988","Sirigu; Sandro"
-"SV Darmstadt 98","34","Deutschland","MF","15.03.1990","Rausch; Konstantin"
-"SV Darmstadt 98","39","Deutschland","DF","15.03.1997","Wembacher; Noel"
-"SV Darmstadt 98","31","Deutschland","GK","31.03.1992","Mathenia; Christian"
-"SV Darmstadt 98","15","Costa Rica","DF","12.09.1983","Junior Diaz"
-"SV Darmstadt 98","14","Deutschland","FW","29.11.1987","Wagner; Sandro"
-"SV Darmstadt 98","9","Deutschland","FW","27.11.1985","Stroh-Engel; Dominik"
-"SV Darmstadt 98","6","Bosnien-Herzegowina","MF","23.05.1989","Vrancic; Mario"
-"SV Darmstadt 98","18","Deutschland","MF","22.11.1983","Niemeyer; Peter"
-"SV Darmstadt 98","3","Deutschland","DF","12.01.1985","Stegmayer; Michael"
-"SV Darmstadt 98","13","sterreich","DF","08.03.1984","Garics; Gyrgy"
-"SV Darmstadt 98","4","Trkei","DF","11.12.1985","Sulu; Aytac"
-"SV Darmstadt 98","10","Deutschland","MF","07.04.1986","Rosenthal; Jan"
-"SV Darmstadt 98","8","Deutschland","MF","26.06.1988","Gondorf; Jerome"
-"SV Darmstadt 98","11","Deutschland","MF","27.06.1989","Kempe; Tobias"
-"SV Darmstadt 98","1","Deutschland","GK","19.04.1983","Platins; Patrick"
-"SV Darmstadt 98","25","Deutschland","MF","28.10.1990","Stark; Yannick"
-"FC Schalke 04","36","Deutschland","FW","11.02.1996","Platte; Felix"
-"FC Schalke 04","35","Deutschland","GK","30.09.1996","Nbel; Alexander"
-"FC Schalke 04","3","Brasilien","DF","27.04.1989","Junior Caicara"
-"FC Schalke 04","xx","Ghana","MF","06.03.1987","Boateng; Kevin-Prince"
-"FC Schalke 04","13","Kamerun","FW","23.03.1989","Choupo-Moting; Eric Maxim"
-"FC Schalke 04","5","Deutschland","MF","17.08.1993","Geis; Johannes"
-"FC Schalke 04","18","Deutschland","FW","31.01.1988","Sam; Sidney"
-"FC Schalke 04","6","Bosnien-Herzegowina","DF","20.06.1993","Kolasinac; Sead"
-"FC Schalke 04","7","Deutschland","MF","18.09.1995","Meyer; Max"
-"FC Schalke 04","1","Deutschland","GK","27.09.1988","Fhrmann; Ralf"
-"FC Schalke 04","2","Deutschland","DF","13.12.1995","Friedrich; Marvin"
-"FC Schalke 04","15","Deutschland","DF","14.01.1987","Aogo; Dennis"
-"FC Schalke 04","20","Deutschland","DF","21.09.1996","Kehrer; Thilo"
-"FC Schalke 04","34","Deutschland","GK","17.05.1990","Giefer; Fabian"
-"FC Schalke 04","31","Serbien","DF","28.03.1993","Nastasic; Matija"
-"FC Schalke 04","4","Deutschland","DF","29.02.1988","Hwedes; Benedikt"
-"FC Schalke 04","24","Trkei","DF","10.11.1994","Ayhan; Kaan"
-"FC Schalke 04","30","sterreich","GK","02.05.1981","Gspurning; Michael"
-"FC Schalke 04","8","Deutschland","MF","06.02.1995","Goretzka; Leon"
-"FC Schalke 04","23","Dnemark","MF","05.08.1995","Hjbjerg; Pierre-Emile"
-"FC Schalke 04","19","Deutschland","FW","11.01.1996","San; Leroy"
-"FC Schalke 04","33","Deutschland","MF","18.02.1988","Neustdter; Roman"
-"FC Schalke 04","25","Niederlande","FW","12.08.1983","Huntelaar; Klaas Jan"
-"FC Schalke 04","27","Deutschland","DF","23.03.1983","Riether; Sascha"
-"FC Schalke 04","9","Argentinien","FW","07.04.1989","di Santo; Franco"
-"FC Schalke 04","22","Japan","DF","27.03.1988","Uchida; Atsuto"
-"FC Schalke 04","32","Kamerun","DF","08.08.1991","Matip; Joel"
-"FC Schalke 04","28","Brasilien","DF","17.03.1986","Felipe Santana"
-"FC Schalke 04","12","Deutschland","MF","16.09.1989","Hger; Marco"
+Club,Name,Country,Tag,Birthdate,Position
+Bor. Mönchengladbach,Christensen; Andreas,Dänemark,3,10.04.1996,DF
+Bor. Mönchengladbach,Hahn; André,Deutschland,28,13.08.1990,FW
+Bor. Mönchengladbach,Johnson; Fabian,USA,19,11.12.1987,MF
+Bor. Mönchengladbach,Schulz; Nico,Deutschland,14,01.04.1993,MF
+Bor. Mönchengladbach,Schulz; Marvin,Deutschland,18,15.01.1995,DF
+Bor. Mönchengladbach,Wendt; Oscar,Schweden,17,24.10.1985,DF
+Bor. Mönchengladbach,Elvedi; Nico,Schweiz,30,30.09.1996,DF
+Bor. Mönchengladbach,Xhaka; Granit,Schweiz,34,27.09.1992,MF
+Bor. Mönchengladbach,Heimeroth; Christofer,Deutschland,33,01.08.1981,GK
+Bor. Mönchengladbach,Hrgota; Branimir,Schweden,31,12.01.1993,FW
+Bor. Mönchengladbach,Stranzl; Martin,Österreich,39,16.06.1980,DF
+Bor. Mönchengladbach,Ritter; Marlon,Deutschland,36,15.10.1994,FW
+Bor. Mönchengladbach,Hazard; Thorgan,Belgien,10,29.03.1993,MF
+Bor. Mönchengladbach,Sippel; Tobias,Deutschland,21,22.03.1988,GK
+Bor. Mönchengladbach,Stindl; Lars,Deutschland,13,26.08.1988,MF
+Bor. Mönchengladbach,Drmic; Josip,Schweiz,9,08.08.1992,FW
+Bor. Mönchengladbach,Sommer; Yann,Schweiz,1,17.12.1988,GK
+Bor. Mönchengladbach,Raffael,Brasilien,11,28.03.1985,FW
+Bor. Mönchengladbach,Korb; Julian,Deutschland,27,21.03.1992,DF
+Bor. Mönchengladbach,Nordtveit; Havard,Norwegen,6,21.06.1990,MF
+Bor. Mönchengladbach,Dahoud; Mahmoud,Deutschland,8,01.01.1996,MF
+Bor. Mönchengladbach,Herrmann; Patrick,Deutschland,7,12.02.1991,MF
+Bor. Mönchengladbach,Brouwers; Roel,Niederlande,4,28.11.1981,DF
+Bor. Mönchengladbach,Alvaro Dominguez,Spanien,15,16.05.1989,DF
+Bor. Mönchengladbach,Jantschke; Tony,Deutschland,24,07.04.1990,DF
+Bor. Mönchengladbach,Traoré; Ibrahima,Guinea,16,21.04.1988,MF
+VfL Wolfsburg,Ascues; Carlos,Peru,6,06.06.1992,DF
+VfL Wolfsburg,Seguin; Paul,Deutschland,30,29.03.1995,MF
+VfL Wolfsburg,Grün; Max,Deutschland,20,05.04.1987,GK
+VfL Wolfsburg,Schäfer; Marcel,Deutschland,4,07.06.1984,DF
+VfL Wolfsburg,Luiz Gustavo,Brasilien,22,23.07.1987,MF
+VfL Wolfsburg,Dost; Bas,Niederlande,12,31.05.1989,FW
+VfL Wolfsburg,Schürrle; André,Deutschland,17,06.11.1990,MF
+VfL Wolfsburg,Bendtner; Nicklas,Dänemark,3,16.01.1988,FW
+VfL Wolfsburg,Draxler; Julian,Deutschland,xx,20.09.1993,MF
+VfL Wolfsburg,Rodriguez; Ricardo,Schweiz,34,25.08.1992,DF
+VfL Wolfsburg,Vieirinha,Portugal,8,24.01.1986,DF
+VfL Wolfsburg,Stolze; Sebastian,Deutschland,33,29.01.1995,FW
+VfL Wolfsburg,Zawada; Oskar,Polen,32,01.02.1996,FW
+VfL Wolfsburg,Arnold; Maximilian,Deutschland,27,27.05.1994,MF
+VfL Wolfsburg,Träsch; Christian,Deutschland,15,01.09.1987,DF
+VfL Wolfsburg,Knoche; Robin,Deutschland,31,22.05.1992,DF
+VfL Wolfsburg,Dante,Brasilien,18,18.10.1983,DF
+VfL Wolfsburg,Felipe,Brasilien,26,07.08.1987,DF
+VfL Wolfsburg,Naldo,Brasilien,25,10.09.1982,DF
+VfL Wolfsburg,Kruse; Max,Deutschland,11,19.03.1988,FW
+VfL Wolfsburg,Sprenger; Moritz,Deutschland,37,22.02.1995,DF
+VfL Wolfsburg,Azzaoui; Ismail,Belgien,38,06.01.1998,MF
+VfL Wolfsburg,Caligiuri; Daniel,Italien,7,15.01.1988,MF
+VfL Wolfsburg,Jung; Sebastian,Deutschland,24,22.06.1990,DF
+VfL Wolfsburg,Guilavogui; Josuha,Frankreich,23,19.09.1990,MF
+VfL Wolfsburg,Rodriguez; Francisco,Schweiz,35,14.09.1995,MF
+VfL Wolfsburg,Klose; Timm,Schweiz,5,09.05.1988,DF
+VfL Wolfsburg,Benaglio; Diego,Schweiz,1,08.09.1983,GK
+VfL Wolfsburg,Casteels; Koen,Belgien,28,25.06.1992,GK
+Borussia Dortmund,Hofmann; Jonas,Deutschland,7,14.07.1992,MF
+Borussia Dortmund,Sahin; Nuri,Türkei,18,05.09.1988,MF
+Borussia Dortmund,Bonmann; Hendrik,Deutschland,39,22.01.1994,GK
+Borussia Dortmund,Sokratis,Griechenland,25,09.06.1988,DF
+Borussia Dortmund,Leitner; Moritz,Deutschland,14,08.12.1992,MF
+Borussia Dortmund,Aubameyang; Pierre-Emerick,Gabun,17,18.06.1989,FW
+Borussia Dortmund,Kagawa; Shinji,Japan,23,17.03.1989,MF
+Borussia Dortmund,Reus; Marco,Deutschland,11,31.05.1989,MF
+Borussia Dortmund,Schmelzer; Marcel,Deutschland,29,22.01.1988,DF
+Borussia Dortmund,Bender; Sven,Deutschland,6,27.04.1989,MF
+Borussia Dortmund,Großkreutz; Kevin,Deutschland,19,19.07.1988,MF
+Borussia Dortmund,Ginter; Matthias,Deutschland,28,19.01.1994,DF
+Borussia Dortmund,Januzaj; Adnan,Belgien,9,05.02.1995,MF
+Borussia Dortmund,Mkhitaryan; Henrikh,Armenien,10,21.01.1989,MF
+Borussia Dortmund,Subotic; Neven,Serbien,4,10.12.1988,DF
+Borussia Dortmund,Park; Joo-Ho,Südkorea,3,16.01.1987,DF
+Borussia Dortmund,Weidenfeller; Roman,Deutschland,1,06.08.1980,GK
+Borussia Dortmund,Hummels; Mats,Deutschland,15,16.12.1988,DF
+Borussia Dortmund,Bürki; Roman,Schweiz,38,14.11.1990,GK
+Borussia Dortmund,Weigl; Julian,Deutschland,33,08.09.1995,MF
+Borussia Dortmund,Gündogan; Ilkay,Deutschland,8,24.10.1990,MF
+Borussia Dortmund,Durm; Erik,Deutschland,37,12.05.1992,DF
+Borussia Dortmund,Piszczek; Lukasz,Polen,26,03.06.1985,DF
+Borussia Dortmund,Ramos; Adrian,Kolumbien,20,22.01.1986,FW
+Borussia Dortmund,Castro; Gonzalo,Deutschland,27,11.06.1987,MF
+Werder Bremen,Garcia; Santiago,Argentinien,2,08.07.1988,DF
+Werder Bremen,Busch; Marnon,Deutschland,38,08.12.1994,DF
+Werder Bremen,Wiedwald; Felix,Deutschland,42,15.03.1990,GK
+Werder Bremen,Eggestein; Maximilian,Deutschland,35,08.12.1996,MF
+Werder Bremen,Kroos; Felix,Deutschland,18,12.03.1991,MF
+Werder Bremen,Galvez; Alejandro,Spanien,4,06.06.1989,DF
+Werder Bremen,Ujah; Anthony,Nigeria,21,14.10.1990,FW
+Werder Bremen,Zetterer; Michael,Deutschland,30,12.07.1995,GK
+Werder Bremen,Aycicek; Levent,Deutschland,10,12.02.1994,MF
+Werder Bremen,Garcia; Ulisses,Schweiz,20,11.01.1996,DF
+Werder Bremen,Husic; Raif,Deutschland,40,05.02.1996,GK
+Werder Bremen,Junuzovic; Zlatko,Österreich,16,26.09.1987,MF
+Werder Bremen,Lorenzen; Melvyn,Deutschland,28,26.11.1994,FW
+Werder Bremen,Grillitsch; Florian,Österreich,27,07.08.1995,MF
+Werder Bremen,Pavlovic; Mateo,Kroatien,15,09.06.1990,DF
+Werder Bremen,Wolf; Raphael,Deutschland,1,06.06.1988,GK
+Werder Bremen,Yildirim; Özkan,Deutschland,17,10.04.1993,MF
+Werder Bremen,Bargfrede; Philipp,Deutschland,44,03.03.1989,MF
+Werder Bremen,Lukimya; Assani,DR Kongo,5,25.01.1986,DF
+Werder Bremen,Hüsing; Oliver,Deutschland,25,17.02.1993,DF
+Werder Bremen,Vestergaard; Jannik,Dänemark,7,03.08.1992,DF
+Werder Bremen,Johannsson; Aron,USA,9,10.11.1990,FW
+Werder Bremen,Gebre Selassie; Theodor,Tschechien,23,24.12.1986,DF
+Werder Bremen,Sternberg; Janek,Deutschland,37,19.10.1992,DF
+Werder Bremen,Zander; Luca-Milan,Deutschland,19,09.08.1995,DF
+Werder Bremen,Fröde; Lukas,Deutschland,39,23.01.1995,MF
+Werder Bremen,von Haacke; Julian,Deutschland,26,14.02.1994,MF
+Werder Bremen,Bartels; Fin,Deutschland,22,07.02.1987,MF
+Werder Bremen,Fritz; Clemens,Deutschland,8,07.12.1980,MF
+Werder Bremen,Öztunali; Levin,Deutschland,11,15.03.1996,MF
+FC Augsburg,Bobadilla; Raul,Paraguay,25,18.06.1987,FW
+FC Augsburg,Janker; Christoph,Deutschland,16,14.02.1985,DF
+FC Augsburg,Max; Philipp,Deutschland,31,30.09.1993,DF
+FC Augsburg,Ekin; Arif,Türkei,37,14.09.1995,MF
+FC Augsburg,Callsen-Bracker; Jan-Ingwer,Deutschland,18,23.09.1984,DF
+FC Augsburg,Mölders; Sascha,Deutschland,33,20.03.1985,FW
+FC Augsburg,Hong; Jeong-Ho,Südkorea,20,12.08.1989,DF
+FC Augsburg,Manninger; Alexander,Österreich,1,04.06.1977,GK
+FC Augsburg,Trochowski; Piotr,Deutschland,15,22.03.1984,MF
+FC Augsburg,Opare; Daniel,Ghana,4,18.10.1990,DF
+FC Augsburg,Feulner; Markus,Deutschland,8,12.02.1982,MF
+FC Augsburg,Rieder; Tim,Deutschland,40,03.09.1993,DF
+FC Augsburg,Parker; Shawn,Deutschland,9,07.03.1993,MF
+FC Augsburg,Kohr; Dominik,Deutschland,21,31.01.1994,MF
+FC Augsburg,Baier; Daniel,Deutschland,10,18.05.1984,MF
+FC Augsburg,Ji; Dong-Won,Südkorea,22,28.05.1991,FW
+FC Augsburg,Gelios; Ioannis,Griechenland,24,24.04.1992,GK
+FC Augsburg,Klavan; Ragnar,Estland,5,30.10.1985,DF
+FC Augsburg,Framberger; Raphael,Deutschland,32,06.09.1995,DF
+FC Augsburg,Moravek; Jan,Tschechien,14,01.11.1989,MF
+FC Augsburg,Schuster; Marco,Deutschland,29,10.10.1995,MF
+FC Augsburg,Uhde; Maik,Deutschland,39,23.05.1994,DF
+FC Augsburg,Matavz; Tim,Slowenien,23,13.01.1989,FW
+FC Augsburg,Koo; Ja-Cheol,Südkorea,19,27.02.1989,MF
+FC Augsburg,Altintop; Halil,Türkei,7,08.12.1982,MF
+FC Augsburg,Oettl; Yannik,Deutschland,28,19.11.1996,GK
+FC Augsburg,Stafylidis; Konstantinos,Griechenland,3,02.12.1993,DF
+FC Augsburg,Esswein; Alexander,Deutschland,11,25.03.1990,MF
+FC Augsburg,Caiuby,Brasilien,30,14.07.1988,MF
+FC Augsburg,Hitz; Marwin,Schweiz,35,18.09.1987,GK
+FC Augsburg,Verhaegh; Paul,Niederlande,2,01.09.1983,DF
+FC Augsburg,Kurz; Bastian,Deutschland,26,23.09.1996,DF
+FC Augsburg,Reinthaler; Max,Italien,36,22.03.1995,MF
+FC Augsburg,Werner; Tobias,Deutschland,13,19.07.1985,MF
+Hamburger SV,Cleber,Brasilien,3,05.12.1990,DF
+Hamburger SV,Djourou; Johan,Schweiz,5,18.01.1987,DF
+Hamburger SV,Ekdal; Albin,Schweden,20,28.07.1989,MF
+Hamburger SV,Drobny; Jaroslav,Tschechien,1,18.10.1979,GK
+Hamburger SV,Hirzel; Andreas,Schweiz,30,25.03.1993,GK
+Hamburger SV,Marcos; Ronny,Mosambik,31,01.10.1993,DF
+Hamburger SV,Hunt; Aaron,Deutschland,14,04.09.1986,MF
+Hamburger SV,Jung; Gideon,Deutschland,28,12.09.1994,DF
+Hamburger SV,Schipplock; Sven,Deutschland,9,08.11.1988,FW
+Hamburger SV,Stieber; Zoltan,Ungarn,17,16.10.1988,MF
+Hamburger SV,Götz; Ashton-Phillip,Deutschland,39,16.07.1993,DF
+Hamburger SV,Lasogga; Pierre-Michel,Deutschland,10,15.12.1991,FW
+Hamburger SV,Kacar; Gojko,Serbien,40,26.01.1987,MF
+Hamburger SV,Müller; Philipp,Deutschland,26,03.03.1995,FW
+Hamburger SV,Müller; Nicolai,Deutschland,27,25.09.1987,MF
+Hamburger SV,Spahic; Emir,Bosnien-Herzegowina,4,18.08.1980,DF
+Hamburger SV,Rudnevs; Artjoms,Lettland,16,13.01.1988,FW
+Hamburger SV,Ostrzolek; Matthias,Deutschland,22,05.06.1990,DF
+Hamburger SV,Diaz; Marcelo,Chile,21,30.12.1986,MF
+Hamburger SV,Olic; Ivica,Kroatien,11,14.09.1979,FW
+Hamburger SV,Diekmeier; Dennis,Deutschland,2,20.10.1989,DF
+Hamburger SV,Holtby; Lewis,Deutschland,8,18.09.1990,MF
+Hamburger SV,Adler; René,Deutschland,15,15.01.1985,GK
+Hamburger SV,Gregoritsch; Michael,Österreich,23,18.04.1994,FW
+Hamburger SV,Altintas; Batuhan,Türkei,33,14.03.1996,FW
+Hamburger SV,Sakai; Gotoku,Japan,24,14.03.1991,DF
+Hamburger SV,Ilicevic; Ivo,Kroatien,7,14.11.1986,MF
+1. FC Köln,Vogt; Kevin,Deutschland,6,23.09.1991,MF
+1. FC Köln,Olkowski; Pawel,Polen,16,13.02.1990,DF
+1. FC Köln,Osako; Yuya,Japan,13,18.05.1990,FW
+1. FC Köln,Nagasawa; Kazuki,Japan,25,16.12.1991,MF
+1. FC Köln,Kessler; Thomas,Deutschland,18,20.01.1986,GK
+1. FC Köln,Sörensen; Frederik,Dänemark,4,14.04.1992,DF
+1. FC Köln,Bittencourt; Leonardo,Deutschland,21,19.12.1993,MF
+1. FC Köln,Modeste; Anthony,Frankreich,27,14.04.1988,FW
+1. FC Köln,Finne; Bard,Norwegen,26,13.02.1995,FW
+1. FC Köln,Hosiner; Philipp,Österreich,15,15.05.1989,FW
+1. FC Köln,Maroh; Dominic,Slowenien,5,04.03.1987,DF
+1. FC Köln,Gerhardt; Yannick,Deutschland,31,13.03.1994,MF
+1. FC Köln,Svento; Dusan,Slowakei,29,01.08.1985,MF
+1. FC Köln,Mesenhöler; Daniel,Deutschland,37,24.07.1995,GK
+1. FC Köln,Heintz; Dominique,Deutschland,3,15.08.1993,DF
+1. FC Köln,Risse; Marcel,Deutschland,7,17.12.1989,MF
+1. FC Köln,Mavraj; Mergim,Albanien,19,09.06.1986,DF
+1. FC Köln,Jojic; Milos,Serbien,8,19.03.1992,MF
+1. FC Köln,Hector; Jonas,Deutschland,14,27.05.1990,DF
+1. FC Köln,Lehmann; Matthias,Deutschland,33,28.05.1983,MF
+1. FC Köln,Zoller; Simon,Deutschland,11,26.06.1991,FW
+1. FC Köln,Horn; Timo,Deutschland,1,12.05.1993,GK
+1. FSV Mainz 05,Jairo,Spanien,17,11.07.1993,MF
+1. FSV Mainz 05,Zimling; Niki,Dänemark,25,19.04.1985,MF
+1. FSV Mainz 05,Baumgartlinger; Julian,Österreich,14,02.01.1988,MF
+1. FSV Mainz 05,Jara; Gonzalo,Chile,2,29.08.1985,DF
+1. FSV Mainz 05,Huth; Jannik,Deutschland,33,15.04.1994,GK
+1. FSV Mainz 05,Moritz; Christoph,Deutschland,8,27.01.1990,MF
+1. FSV Mainz 05,Bengtsson; Pierre,Schweden,7,12.04.1988,DF
+1. FSV Mainz 05,Cordoba; Jhon,Kolumbien,15,11.05.1993,FW
+1. FSV Mainz 05,De Blasis; Pablo,Argentinien,32,04.02.1988,FW
+1. FSV Mainz 05,Curci; Gianluca,Italien,23,12.07.1985,GK
+1. FSV Mainz 05,Soto; Elkin,Kolumbien,19,04.08.1980,MF
+1. FSV Mainz 05,Muto; Yoshinori,Japan,9,15.07.1992,FW
+1. FSV Mainz 05,Niederlechner; Florian,Deutschland,31,24.10.1990,FW
+1. FSV Mainz 05,Latza; Danny,Deutschland,6,07.12.1989,MF
+1. FSV Mainz 05,Malli; Yunus,Deutschland,10,24.02.1992,MF
+1. FSV Mainz 05,Bell; Stefan,Deutschland,16,24.08.1991,DF
+1. FSV Mainz 05,Karius; Loris,Deutschland,1,22.06.1993,GK
+1. FSV Mainz 05,Clemens; Christian,Deutschland,27,04.08.1991,MF
+1. FSV Mainz 05,Bussmann; Gaetan,Frankreich,24,02.02.1991,DF
+1. FSV Mainz 05,Beister; Maximilian,Deutschland,11,06.09.1990,MF
+1. FSV Mainz 05,Bungert; Niko,Deutschland,26,24.10.1986,DF
+1. FSV Mainz 05,Brosinski; Daniel,Deutschland,18,17.07.1988,DF
+1. FSV Mainz 05,Frei; Fabian,Schweiz,20,08.01.1989,MF
+1. FSV Mainz 05,Parker; Devante,Deutschland,29,16.03.1996,MF
+1. FSV Mainz 05,Serdar; Suat,Deutschland,xx,11.04.1997,MF
+1. FSV Mainz 05,Nedelev; Todor,Bulgarien,28,07.02.1993,MF
+1. FSV Mainz 05,Balogun; Leon,Nigeria,3,28.06.1988,DF
+1. FSV Mainz 05,Sereno; Henrique,Portugal,5,18.05.1985,DF
+Bayern München,Rafinha,Brasilien,13,07.09.1985,DF
+Bayern München,Kimmich; Joshua,Deutschland,32,08.02.1995,MF
+Bayern München,Badstuber; Holger,Deutschland,28,13.03.1989,DF
+Bayern München,Green; Julian,USA,37,06.06.1995,MF
+Bayern München,Coman; Kingsley,Frankreich,29,13.06.1996,MF
+Bayern München,Gaudino; Gianluca,Deutschland,16,11.11.1996,MF
+Bayern München,Javi Martinez,Spanien,8,02.09.1988,DF
+Bayern München,Rode; Sebastian,Deutschland,20,11.10.1990,MF
+Bayern München,Robben; Arjen,Niederlande,10,23.01.1984,MF
+Bayern München,Vidal; Arturo,Chile,23,22.05.1987,MF
+Bayern München,Boateng; Jerome,Deutschland,17,03.09.1988,DF
+Bayern München,Ulreich; Sven,Deutschland,26,03.08.1988,GK
+Bayern München,Xabi Alonso,Spanien,14,25.11.1981,MF
+Bayern München,Kirchhoff; Jan,Deutschland,15,01.10.1990,DF
+Bayern München,Neuer; Manuel,Deutschland,1,27.03.1986,GK
+Bayern München,Kurt; Sinan,Deutschland,24,23.07.1996,FW
+Bayern München,Douglas Costa,Brasilien,11,14.09.1990,MF
+Bayern München,Götze; Mario,Deutschland,19,03.06.1992,MF
+Bayern München,Lahm; Philipp,Deutschland,21,11.11.1983,MF
+Bayern München,Thiago,Spanien,6,11.04.1991,MF
+Bayern München,Starke; Tom,Deutschland,22,18.03.1981,GK
+Bayern München,Alaba; David,Österreich,27,24.06.1992,DF
+Bayern München,Müller; Thomas,Deutschland,25,13.09.1989,MF
+Bayern München,Ribery; Franck,Frankreich,7,07.04.1983,MF
+Bayern München,Juan Bernat,Spanien,18,01.03.1993,DF
+Bayern München,Lewandowski; Robert,Polen,9,21.08.1988,FW
+Bayern München,Weihrauch; Patrick,Deutschland,xx,03.03.1994,FW
+Bayern München,Benatia; Medhi,Marokko,5,17.04.1987,DF
+Hannover 96,Prib; Edgar,Deutschland,7,15.12.1989,MF
+Hannover 96,Hirsch; Maurice,Deutschland,23,30.05.1993,MF
+Hannover 96,Schmiedebach; Manuel,Deutschland,8,05.12.1988,MF
+Hannover 96,Saint-Maximin; Allan,Frankreich,14,12.03.1997,FW
+Hannover 96,Zieler; Ron-Robert,Deutschland,1,12.02.1989,GK
+Hannover 96,Gülselam; Ceyhun,Türkei,6,25.12.1987,MF
+Hannover 96,Klaus; Felix,Deutschland,11,13.09.1992,MF
+Hannover 96,Albornoz; Miiko,Chile,3,30.11.1990,DF
+Hannover 96,Bähre; Mike-Steven,Deutschland,33,10.08.1995,MF
+Hannover 96,Kiyotake; Hiroshi,Japan,10,12.11.1989,MF
+Hannover 96,Rankovic; Vladimir,Deutschland,27,27.06.1993,DF
+Hannover 96,Schulz; Christian,Deutschland,19,01.04.1983,DF
+Hannover 96,Andreasen; Leon,Dänemark,2,23.04.1983,MF
+Hannover 96,Königsmann; Timo,Deutschland,40,05.04.1997,GK
+Hannover 96,Sané; Salif,Senegal,5,25.08.1990,MF
+Hannover 96,Anton; Waldemar,Deutschland,31,20.07.1996,DF
+Hannover 96,Sorg; Oliver,Deutschland,29,29.05.1990,DF
+Hannover 96,Radlinger; Samuel,Österreich,30,07.11.1992,GK
+Hannover 96,Teichgräber; Niklas,Deutschland,37,07.02.1996,DF
+Hannover 96,Erdinc; Mevlüt,Türkei,39,25.02.1987,FW
+Hannover 96,Marcelo,Brasilien,25,20.05.1987,DF
+Hannover 96,Felipe,Brasilien,20,15.05.1987,DF
+Hannover 96,Hoffmann; Andre,Deutschland,15,28.02.1993,DF
+Hannover 96,Karaman; Kenan,Türkei,26,05.03.1994,FW
+Hannover 96,Dierßen; Tim,Deutschland,34,15.01.1996,MF
+Hannover 96,Ernst; Sebastian,Deutschland,36,04.03.1995,MF
+Hannover 96,Sakai; Hiroki,Japan,4,12.04.1990,DF
+Hannover 96,Benschop; Charlison,Niederlande,35,21.08.1989,FW
+Hannover 96,Bech; Uffe,Dänemark,17,13.01.1993,MF
+Hannover 96,Tschauner; Philipp,Deutschland,13,03.11.1985,GK
+Hannover 96,Sobiech; Artur,Polen,9,12.06.1990,FW
+Hannover 96,Sulejmani; Valmir,Albanien,38,01.02.1996,MF
+Eintracht Frankfurt,Medojevic; Slobodan,Serbien,25,20.11.1990,MF
+Eintracht Frankfurt,Kinsombi; David,Deutschland,31,12.12.1995,DF
+Eintracht Frankfurt,Anderson,Brasilien,23,10.01.1988,DF
+Eintracht Frankfurt,Hasebe; Makoto,Japan,20,18.01.1984,MF
+Eintracht Frankfurt,Ignjovski; Aleksandar,Serbien,27,27.01.1991,DF
+Eintracht Frankfurt,Reinartz; Stefan,Deutschland,7,01.01.1989,MF
+Eintracht Frankfurt,Gacinovic; Mijat,Serbien,11,08.02.1995,MF
+Eintracht Frankfurt,Djakpa; Constant,Elfenbeinküste,15,17.10.1986,DF
+Eintracht Frankfurt,Kittel; Sonny,Deutschland,28,06.01.1993,MF
+Eintracht Frankfurt,Seferovic; Haris,Schweiz,9,22.02.1992,FW
+Eintracht Frankfurt,Gerezgiher; Joel,Deutschland,32,09.10.1995,MF
+Eintracht Frankfurt,Lindner; Heinz,Österreich,13,17.07.1990,GK
+Eintracht Frankfurt,Chandler; Timothy,USA,22,29.03.1990,DF
+Eintracht Frankfurt,Castaignos; Luc,Niederlande,30,27.09.1992,FW
+Eintracht Frankfurt,Flum; Johannes,Deutschland,18,14.12.1987,MF
+Eintracht Frankfurt,Kadlec; Vaclav,Tschechien,10,20.05.1992,FW
+Eintracht Frankfurt,Abraham; David,Argentinien,19,15.07.1986,DF
+Eintracht Frankfurt,Russ; Marco,Deutschland,4,04.08.1985,DF
+Eintracht Frankfurt,Meier; Alexander,Deutschland,14,17.01.1983,FW
+Eintracht Frankfurt,Balayev; Emil,Aserbaidschan,29,17.04.1994,GK
+Eintracht Frankfurt,Hradecky; Lukas,Finnland,1,24.11.1989,GK
+Eintracht Frankfurt,Zambrano; Carlos,Peru,5,10.07.1989,DF
+Eintracht Frankfurt,Waldschmidt; Luca,Deutschland,24,19.05.1996,FW
+Eintracht Frankfurt,Stendera; Marc,Deutschland,21,10.12.1995,MF
+Eintracht Frankfurt,Aigner; Stefan,Deutschland,16,20.08.1987,MF
+Eintracht Frankfurt,Zummack; Yannick,Deutschland,33,26.03.1996,GK
+Eintracht Frankfurt,Oczipka; Bastian,Deutschland,6,12.01.1989,DF
+Hertha BSC,Ben-Hatira; Änis,Tunesien,10,18.07.1988,MF
+Hertha BSC,van den Bergh; Johannes,Deutschland,23,21.11.1986,DF
+Hertha BSC,Körber; Nils-Jonathan,Deutschland,29,13.11.1996,GK
+Hertha BSC,Kohls; Florian,Deutschland,31,03.04.1995,MF
+Hertha BSC,Jarstein; Rune,Norwegen,22,29.09.1984,GK
+Hertha BSC,Cigerci; Tolga,Deutschland,17,23.03.1992,MF
+Hertha BSC,Stark; Niklas,Deutschland,5,14.04.1995,DF
+Hertha BSC,Gersbeck; Marius,Deutschland,35,20.06.1995,GK
+Hertha BSC,Allagui; Sami,Tunesien,11,28.05.1986,FW
+Hertha BSC,Kalou; Salomon,Elfenbeinküste,8,05.08.1985,FW
+Hertha BSC,Hegeler; Jens,Deutschland,13,22.01.1988,MF
+Hertha BSC,Plattenhardt; Marvin,Deutschland,21,26.01.1992,DF
+Hertha BSC,Stocker; Valentin,Schweiz,14,12.04.1989,MF
+Hertha BSC,Skjelbred; Per Ciljan,Norwegen,3,16.06.1987,MF
+Hertha BSC,Baumjohann; Alexander,Deutschland,9,23.01.1987,MF
+Hertha BSC,Haraguchi; Genki,Japan,24,09.05.1991,MF
+Hertha BSC,Ronny,Brasilien,12,11.05.1986,MF
+Hertha BSC,Brooks; John Anthony,USA,25,28.01.1993,DF
+Hertha BSC,Weiser; Mitchell,Deutschland,20,21.04.1994,MF
+Hertha BSC,Ibisevic; Vedad,Bosnien-Herzegowina,19,06.08.1984,FW
+Hertha BSC,Lustenberger; Fabian,Schweiz,28,02.05.1988,MF
+Hertha BSC,Pekarik; Peter,Slowakei,2,30.10.1986,DF
+Hertha BSC,Langkamp; Sebastian,Deutschland,15,15.01.1988,DF
+Hertha BSC,Darida; Vladimir,Tschechien,6,08.08.1990,MF
+Hertha BSC,Beerens; Roy,Niederlande,27,22.12.1987,MF
+Hertha BSC,Schieber; Julian,Deutschland,16,13.02.1989,FW
+Hertha BSC,Kraft; Thomas,Deutschland,1,22.07.1988,GK
+Hertha BSC,Mittelstädt; Maximilian,Deutschland,34,18.03.1997,DF
+TSG Hoffenheim,Baumann; Oliver,Deutschland,1,02.06.1990,GK
+TSG Hoffenheim,Volland; Kevin,Deutschland,31,30.07.1992,FW
+TSG Hoffenheim,Polanski; Eugen,Polen,8,17.03.1986,MF
+TSG Hoffenheim,Kuranyi; Kevin,Deutschland,22,02.03.1982,FW
+TSG Hoffenheim,Elyounoussi; Tarik,Norwegen,14,23.02.1988,MF
+TSG Hoffenheim,Kim; Jin-Su,Südkorea,20,13.06.1992,DF
+TSG Hoffenheim,Strobl; Tobias,Deutschland,12,12.05.1990,DF
+TSG Hoffenheim,Szalai; Adam,Ungarn,28,09.12.1987,FW
+TSG Hoffenheim,Schmid; Jonathan,Frankreich,10,22.06.1990,MF
+TSG Hoffenheim,Rapp; Nicolai,Deutschland,21,13.12.1996,DF
+TSG Hoffenheim,Joelinton,Brasilien,40,14.08.1996,FW
+TSG Hoffenheim,Schär; Fabian,Schweiz,5,20.12.1991,DF
+TSG Hoffenheim,Grahl; Jens,Deutschland,13,22.09.1988,GK
+TSG Hoffenheim,Rudy; Sebastian,Deutschland,6,28.02.1990,MF
+TSG Hoffenheim,Malbasic; Filip,Serbien,xx,18.11.1992,MF
+TSG Hoffenheim,Zuber; Steven,Schweiz,17,17.08.1991,MF
+TSG Hoffenheim,Kaderabek; Pavel,Tschechien,3,25.04.1992,DF
+TSG Hoffenheim,Ochs; Philipp,Deutschland,30,17.04.1997,FW
+TSG Hoffenheim,Süle; Niklas,Deutschland,25,03.09.1995,DF
+TSG Hoffenheim,Schwegler; Pirmin,Schweiz,16,09.03.1987,MF
+TSG Hoffenheim,Herdling; Kai,Deutschland,38,27.06.1984,MF
+TSG Hoffenheim,Gimber; Benedikt,Deutschland,32,19.02.1997,DF
+TSG Hoffenheim,Vargas; Eduardo,Chile,9,20.11.1989,MF
+TSG Hoffenheim,Bicakcic; Ermin,Bosnien-Herzegowina,4,24.01.1990,DF
+TSG Hoffenheim,Amiri; Nadiem,Deutschland,18,27.10.1996,MF
+TSG Hoffenheim,Hamad; Jiloan,Schweden,11,06.11.1990,MF
+TSG Hoffenheim,Uth; Mark,Deutschland,19,24.08.1991,FW
+TSG Hoffenheim,Stolz; Alexander,Deutschland,33,13.10.1983,GK
+TSG Hoffenheim,Toljan; Jeremy,Deutschland,15,08.08.1994,DF
+FC Ingolstadt 04,Groß; Pascal,Deutschland,10,15.06.1991,MF
+FC Ingolstadt 04,Leckie; Mathew,Australien,7,04.02.1991,FW
+FC Ingolstadt 04,Kachunga; Elias,Deutschland,25,22.04.1992,FW
+FC Ingolstadt 04,Bregerie; Romain,Frankreich,18,09.08.1986,DF
+FC Ingolstadt 04,Nyland; Örjan,Norwegen,26,10.09.1990,GK
+FC Ingolstadt 04,Levels; Tobias,Deutschland,28,22.11.1986,DF
+FC Ingolstadt 04,Hinterseer; Lukas,Österreich,16,28.03.1991,FW
+FC Ingolstadt 04,Multhaup; Maurice,Deutschland,xx,15.12.1996,MF
+FC Ingolstadt 04,Danilo,Brasilien,15,29.10.1991,DF
+FC Ingolstadt 04,Engel; Konstantin,Kasachstan,20,27.07.1988,DF
+FC Ingolstadt 04,Pledl; Thomas,Deutschland,30,23.05.1994,MF
+FC Ingolstadt 04,Ortag; Christian,Deutschland,39,14.01.1995,GK
+FC Ingolstadt 04,Bauer; Robert,Deutschland,23,09.04.1995,MF
+FC Ingolstadt 04,Christiansen; Max,Deutschland,19,25.09.1996,MF
+FC Ingolstadt 04,Morales; Alfredo,USA,6,12.05.1990,MF
+FC Ingolstadt 04,Hübner; Benjamin,Deutschland,5,04.07.1989,DF
+FC Ingolstadt 04,Suttner; Markus,Österreich,29,16.04.1987,DF
+FC Ingolstadt 04,Roger,Brasilien,8,10.08.1985,MF
+FC Ingolstadt 04,Cohen; Almog,Israel,36,01.09.1988,MF
+FC Ingolstadt 04,Pekhart; Tomas,Tschechien,11,26.05.1989,FW
+FC Ingolstadt 04,Özcan; Ramazan,Österreich,1,28.06.1984,GK
+FC Ingolstadt 04,da Costa; Danny,Deutschland,21,13.07.1993,DF
+FC Ingolstadt 04,Matip; Marvin,Kamerun,34,25.09.1985,DF
+FC Ingolstadt 04,Lex; Stefan,Deutschland,14,27.11.1989,MF
+FC Ingolstadt 04,Wannenwetsch; Stefan,Deutschland,22,19.01.1992,MF
+FC Ingolstadt 04,Hartmann; Moritz,Deutschland,9,20.06.1986,FW
+VfB Stuttgart,Gruezo; Carlos,Ecuador,11,19.04.1995,MF
+VfB Stuttgart,Langerak; Mitchell,Australien,1,22.08.1988,GK
+VfB Stuttgart,Heise; Philip,Deutschland,14,20.06.1991,DF
+VfB Stuttgart,Werner; Timo,Deutschland,19,06.03.1996,FW
+VfB Stuttgart,Tyton; Przemyslaw,Polen,22,04.01.1987,GK
+VfB Stuttgart,Kostic; Filip,Serbien,18,01.11.1992,MF
+VfB Stuttgart,Gentner; Christian,Deutschland,20,14.08.1985,MF
+VfB Stuttgart,Ferati; Arianit,Deutschland,31,07.09.1997,MF
+VfB Stuttgart,Serey Dié,Elfenbeinküste,26,07.11.1984,MF
+VfB Stuttgart,Sunjic; Toni,Bosnien-Herzegowina,4,15.12.1988,DF
+VfB Stuttgart,Didavi; Daniel,Deutschland,10,21.02.1990,MF
+VfB Stuttgart,Baumgartl; Timo,Deutschland,5,04.03.1996,DF
+VfB Stuttgart,Schwaab; Daniel,Deutschland,3,23.08.1988,DF
+VfB Stuttgart,Hlousek; Adam,Tschechien,21,20.12.1988,DF
+VfB Stuttgart,Insua; Emiliano,Argentinien,2,07.01.1989,DF
+VfB Stuttgart,Niedermeier; Georg,Deutschland,6,26.02.1986,DF
+VfB Stuttgart,Klein; Florian,Österreich,16,17.11.1986,DF
+VfB Stuttgart,Wanitzek; Marvin,Deutschland,28,07.05.1993,MF
+VfB Stuttgart,Kiesewetter; Jerome,USA,42,09.02.1993,FW
+VfB Stuttgart,Ginczek; Daniel,Deutschland,33,13.04.1991,FW
+VfB Stuttgart,Kruse; Robbie,Australien,9,05.10.1988,FW
+VfB Stuttgart,Harnik; Martin,Österreich,7,10.06.1987,FW
+VfB Stuttgart,Maxim; Alexandru,Rumänien,44,08.07.1990,MF
+VfB Stuttgart,Ristl; Mart,Deutschland,27,07.07.1996,MF
+VfB Stuttgart,Vlachodimos; Odisseas,Deutschland,17,26.04.1994,GK
+VfB Stuttgart,Kliment; Jan,Tschechien,39,01.09.1993,FW
+VfB Stuttgart,Rupp; Lukas,Deutschland,8,08.01.1991,MF
+Bayer 04 Leverkusen,Kramer; Christoph,Deutschland,23,19.02.1991,MF
+Bayer 04 Leverkusen,Ryu; Seung-Woo,Südkorea,24,17.12.1993,MF
+Bayer 04 Leverkusen,Hernandez; Javier,Mexiko,7,01.06.1988,FW
+Bayer 04 Leverkusen,Frey; Marlon,Deutschland,37,24.03.1996,MF
+Bayer 04 Leverkusen,Jedvaj; Tin,Kroatien,16,28.11.1995,DF
+Bayer 04 Leverkusen,Tah; Jonathan,Deutschland,4,11.02.1996,DF
+Bayer 04 Leverkusen,Leno; Bernd,Deutschland,1,04.03.1992,GK
+Bayer 04 Leverkusen,Hilbert; Roberto,Deutschland,13,16.10.1984,DF
+Bayer 04 Leverkusen,Wendell,Brasilien,18,20.07.1993,DF
+Bayer 04 Leverkusen,Kießling; Stefan,Deutschland,11,25.01.1984,FW
+Bayer 04 Leverkusen,Calhanoglu; Hakan,Türkei,10,08.02.1994,MF
+Bayer 04 Leverkusen,Toprak; Ömer,Türkei,21,21.07.1989,DF
+Bayer 04 Leverkusen,Kresic; Dario,Kroatien,25,11.01.1984,GK
+Bayer 04 Leverkusen,Boenisch; Sebastian,Polen,17,01.02.1987,DF
+Bayer 04 Leverkusen,Yelldell; David,USA,22,01.10.1981,GK
+Bayer 04 Leverkusen,Boeder; Lukas,Deutschland,33,18.04.1997,DF
+Bayer 04 Leverkusen,Brandt; Julian,Deutschland,19,02.05.1996,FW
+Bayer 04 Leverkusen,Donati; Giulio,Italien,26,05.02.1990,DF
+Bayer 04 Leverkusen,Kampl; Kevin,Slowenien,44,09.10.1990,MF
+Bayer 04 Leverkusen,Papadopoulos; Kyriakos,Griechenland,5,23.02.1992,DF
+Bayer 04 Leverkusen,Aranguiz; Charles,Chile,20,17.04.1989,MF
+Bayer 04 Leverkusen,Ramalho; André,Brasilien,2,16.02.1992,DF
+Bayer 04 Leverkusen,Yurchenko; Vladlen,Ukraine,35,22.01.1994,MF
+Bayer 04 Leverkusen,Mehmedi; Admir,Schweiz,14,16.03.1991,FW
+Bayer 04 Leverkusen,Bellarabi; Karim,Deutschland,38,08.04.1990,FW
+Bayer 04 Leverkusen,Bender; Lars,Deutschland,8,27.04.1989,MF
+SV Darmstadt 98,Sailer; Marco,Deutschland,7,16.11.1985,FW
+SV Darmstadt 98,Finger; Jan,Deutschland,36,02.01.1997,MF
+SV Darmstadt 98,Holland; Fabian,Deutschland,32,11.07.1990,DF
+SV Darmstadt 98,Kazimi; Ali,Deutschland,37,30.06.1997,MF
+SV Darmstadt 98,Ivana; Milan,Slowakei,27,26.11.1983,MF
+SV Darmstadt 98,Heller; Marcel,Deutschland,20,12.02.1986,MF
+SV Darmstadt 98,Jungwirth; Florian,Deutschland,23,27.01.1989,MF
+SV Darmstadt 98,Caldirola; Luca,Italien,33,01.02.1991,DF
+SV Darmstadt 98,Volk; Nick,Deutschland,38,12.11.1997,MF
+SV Darmstadt 98,Gorka; Benjamin,Deutschland,5,15.04.1984,DF
+SV Darmstadt 98,Sirigu; Sandro,Deutschland,17,07.10.1988,DF
+SV Darmstadt 98,Rausch; Konstantin,Deutschland,34,15.03.1990,MF
+SV Darmstadt 98,Wembacher; Noel,Deutschland,39,15.03.1997,DF
+SV Darmstadt 98,Mathenia; Christian,Deutschland,31,31.03.1992,GK
+SV Darmstadt 98,Junior Diaz,Costa Rica,15,12.09.1983,DF
+SV Darmstadt 98,Wagner; Sandro,Deutschland,14,29.11.1987,FW
+SV Darmstadt 98,Stroh-Engel; Dominik,Deutschland,9,27.11.1985,FW
+SV Darmstadt 98,Vrancic; Mario,Bosnien-Herzegowina,6,23.05.1989,MF
+SV Darmstadt 98,Niemeyer; Peter,Deutschland,18,22.11.1983,MF
+SV Darmstadt 98,Stegmayer; Michael,Deutschland,3,12.01.1985,DF
+SV Darmstadt 98,Garics; György,Österreich,13,08.03.1984,DF
+SV Darmstadt 98,Sulu; Aytac,Türkei,4,11.12.1985,DF
+SV Darmstadt 98,Rosenthal; Jan,Deutschland,10,07.04.1986,MF
+SV Darmstadt 98,Gondorf; Jerome,Deutschland,8,26.06.1988,MF
+SV Darmstadt 98,Kempe; Tobias,Deutschland,11,27.06.1989,MF
+SV Darmstadt 98,Platins; Patrick,Deutschland,1,19.04.1983,GK
+SV Darmstadt 98,Stark; Yannick,Deutschland,25,28.10.1990,MF
+FC Schalke 04,Platte; Felix,Deutschland,36,11.02.1996,FW
+FC Schalke 04,Nübel; Alexander,Deutschland,35,30.09.1996,GK
+FC Schalke 04,Junior Caicara,Brasilien,3,27.04.1989,DF
+FC Schalke 04,Boateng; Kevin-Prince,Ghana,xx,06.03.1987,MF
+FC Schalke 04,Choupo-Moting; Eric Maxim,Kamerun,13,23.03.1989,FW
+FC Schalke 04,Geis; Johannes,Deutschland,5,17.08.1993,MF
+FC Schalke 04,Sam; Sidney,Deutschland,18,31.01.1988,FW
+FC Schalke 04,Kolasinac; Sead,Bosnien-Herzegowina,6,20.06.1993,DF
+FC Schalke 04,Meyer; Max,Deutschland,7,18.09.1995,MF
+FC Schalke 04,Fährmann; Ralf,Deutschland,1,27.09.1988,GK
+FC Schalke 04,Friedrich; Marvin,Deutschland,2,13.12.1995,DF
+FC Schalke 04,Aogo; Dennis,Deutschland,15,14.01.1987,DF
+FC Schalke 04,Kehrer; Thilo,Deutschland,20,21.09.1996,DF
+FC Schalke 04,Giefer; Fabian,Deutschland,34,17.05.1990,GK
+FC Schalke 04,Nastasic; Matija,Serbien,31,28.03.1993,DF
+FC Schalke 04,Höwedes; Benedikt,Deutschland,4,29.02.1988,DF
+FC Schalke 04,Ayhan; Kaan,Türkei,24,10.11.1994,DF
+FC Schalke 04,Gspurning; Michael,Österreich,30,02.05.1981,GK
+FC Schalke 04,Goretzka; Leon,Deutschland,8,06.02.1995,MF
+FC Schalke 04,Höjbjerg; Pierre-Emile,Dänemark,23,05.08.1995,MF
+FC Schalke 04,Sané; Leroy,Deutschland,19,11.01.1996,FW
+FC Schalke 04,Neustädter; Roman,Deutschland,33,18.02.1988,MF
+FC Schalke 04,Huntelaar; Klaas Jan,Niederlande,25,12.08.1983,FW
+FC Schalke 04,Riether; Sascha,Deutschland,27,23.03.1983,DF
+FC Schalke 04,di Santo; Franco,Argentinien,9,07.04.1989,FW
+FC Schalke 04,Uchida; Atsuto,Japan,22,27.03.1988,DF
+FC Schalke 04,Matip; Joel,Kamerun,32,08.08.1991,DF
+FC Schalke 04,Felipe Santana,Brasilien,28,17.03.1986,DF
+FC Schalke 04,Höger; Marco,Deutschland,12,16.09.1989,MF
