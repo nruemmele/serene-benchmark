@@ -1,4 +1,7 @@
-"key","column_name","source_name","semantic_type"
-"AUTHOR","AUTHOR","data/datasets/museum/data/s08-s-17-edited.xml","E82_Actor_Appellation---rdf-schema#label"
-"DESCRIPTION","DESCRIPTION","data/datasets/museum/data/s08-s-17-edited.xml","E22_Man-Made_Object---P3_has_note"
-"VIDEO","VIDEO","data/datasets/museum/data/s08-s-17-edited.xml","E31_Document---dev#classLink"
+key,column_name,source_name,semantic_type
+ARCHIVE.ENTRY.IMAGE.IMAGESRC,ARCHIVE.ENTRY.IMAGE.IMAGESRC,s08-s-17-edited.xml,WebResource---classLink
+ARCHIVE.ENTRY.TITLE,ARCHIVE.ENTRY.TITLE,s08-s-17-edited.xml,CulturalHeritageObject---title
+ARCHIVE.ENTRY.DESCRIPTION,ARCHIVE.ENTRY.DESCRIPTION,s08-s-17-edited.xml,CulturalHeritageObject---description
+ARCHIVE.ENTRY.VIDEO,ARCHIVE.ENTRY.VIDEO,s08-s-17-edited.xml,WebResource---classLink
+ARCHIVE.ENTRY.IMAGE.CAPTION,ARCHIVE.ENTRY.IMAGE.CAPTION,s08-s-17-edited.xml,CulturalHeritageObject---provenance
+ARCHIVE.ENTRY.AUTHOR,ARCHIVE.ENTRY.AUTHOR,s08-s-17-edited.xml,Person---nameOfThePerson

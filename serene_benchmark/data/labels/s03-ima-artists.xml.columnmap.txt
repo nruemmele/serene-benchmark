@@ -1,3 +1,3 @@
-"key","column_name","source_name","semantic_type"
-"nationality","nationality","data/datasets/museum/data/s03-ima-artists.xml","E74_Group---rdf-schema#label"
-"title","title","data/datasets/museum/data/s03-ima-artists.xml","E35_Title---rdf-schema#label"
+key,column_name,source_name,semantic_type
+artists.artist.nationality,artists.artist.nationality,s03-ima-artists.xml,Person---countryAssociatedWithThePerson
+artists.artist.name,artists.artist.name,s03-ima-artists.xml,Person---nameOfThePerson

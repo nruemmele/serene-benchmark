@@ -1,8 +1,9 @@
-"key","column_name","source_name","semantic_type"
-"artist","artist","data/datasets/museum/data/s24-s-norton-simon.json","E82_Actor_Appellation---rdf-schema#label"
-"image_url","image_url","data/datasets/museum/data/s24-s-norton-simon.json","E38_Image---dev#classLink"
-"prov","prov","data/datasets/museum/data/s24-s-norton-simon.json","E8_Acquisition---P3_has_note"
-"nationality","nationality","data/datasets/museum/data/s24-s-norton-simon.json","E74_Group---rdf-schema#label"
-"title","title","data/datasets/museum/data/s24-s-norton-simon.json","E35_Title---rdf-schema#label"
-"dim","dim","data/datasets/museum/data/s24-s-norton-simon.json","E54_Dimension---P3_has_note"
-"made","made","data/datasets/museum/data/s24-s-norton-simon.json","E52_Time-Span---P82_at_some_time_within"
+key,column_name,source_name,semantic_type
+access,access,s24-s-norton-simon.json,CulturalHeritageObject---accessionNumber
+prov,prov,s24-s-norton-simon.json,CulturalHeritageObject---provenance
+title,title,s24-s-norton-simon.json,CulturalHeritageObject---title
+image_url,image_url,s24-s-norton-simon.json,WebResource---classLink
+dim,dim,s24-s-norton-simon.json,CulturalHeritageObject---extent
+nationality,nationality,s24-s-norton-simon.json,Person---countryAssociatedWithThePerson
+made,made,s24-s-norton-simon.json,CulturalHeritageObject---created
+artist_period,artist_period,s24-s-norton-simon.json,Person---nameOfThePerson

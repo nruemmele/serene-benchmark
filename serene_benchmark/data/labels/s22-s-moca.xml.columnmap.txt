@@ -1,6 +1,7 @@
-"key","column_name","source_name","semantic_type"
-"Process","Process","data/datasets/museum/data/s22-s-moca.xml","E12_Production---P3_has_note"
-"name","name","data/datasets/museum/data/s22-s-moca.xml","E82_Actor_Appellation---rdf-schema#label"
-"Dimensions","Dimensions","data/datasets/museum/data/s22-s-moca.xml","E54_Dimension---P3_has_note"
-"image","image","data/datasets/museum/data/s22-s-moca.xml","E38_Image---dev#classLink"
-"Provenance","Provenance","data/datasets/museum/data/s22-s-moca.xml","E8_Acquisition---P3_has_note"
+key,column_name,source_name,semantic_type
+artworks.Artist_Name.Process,artworks.Artist_Name.Process,s22-s-moca.xml,CulturalHeritageObject---medium
+artworks.Artist_Name.Assension_Number,artworks.Artist_Name.Assension_Number,s22-s-moca.xml,CulturalHeritageObject---accessionNumber
+artworks.Artist_Name.Provenance,artworks.Artist_Name.Provenance,s22-s-moca.xml,CulturalHeritageObject---provenance
+artworks.Artist_Name.image,artworks.Artist_Name.image,s22-s-moca.xml,WebResource---classLink
+artworks.Artist_Name.Dimensions,artworks.Artist_Name.Dimensions,s22-s-moca.xml,CulturalHeritageObject---extent
+artworks.Artist_Name.Artist_Name,artworks.Artist_Name.Artist_Name,s22-s-moca.xml,Person---nameOfThePerson

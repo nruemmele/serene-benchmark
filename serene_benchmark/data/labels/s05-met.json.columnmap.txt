@@ -1,9 +1,15 @@
-"key","column_name","source_name","semantic_type"
-"Geography","Geography","data/datasets/museum/data/s05-met.json","E44_Place_Appellation---rdf-schema#label"
-"Date","Date","data/datasets/museum/data/s05-met.json","E52_Time-Span---P82_at_some_time_within"
-"Culture","Culture","data/datasets/museum/data/s05-met.json","E55_Type---rdf-schema#label"
-"Classification","Classification","data/datasets/museum/data/s05-met.json","E55_Type---rdf-schema#label"
-"Medium","Medium","data/datasets/museum/data/s05-met.json","E55_Type---rdf-schema#label"
-"image","image","data/datasets/museum/data/s05-met.json","E38_Image---dev#classLink"
-"Who","Who","data/datasets/museum/data/s05-met.json","E82_Actor_Appellation---rdf-schema#label"
-"Description","Description","data/datasets/museum/data/s05-met.json","E22_Man-Made_Object---P3_has_note"
+key,column_name,source_name,semantic_type
+id,id,s05-met.json,CulturalHeritageObject---objectId
+What,What,s05-met.json,Concept---prefLabel
+Credit Line,Credit Line,s05-met.json,CulturalHeritageObject---provenance
+related-artworks,related-artworks,s05-met.json,CulturalHeritageObject---objectId
+Classification,Classification,s05-met.json,Concept---prefLabel
+Dimensions,Dimensions,s05-met.json,CulturalHeritageObject---extent
+Who,Who,s05-met.json,Person---nameOfThePerson
+Medium,Medium,s05-met.json,CulturalHeritageObject---medium
+Provenance,Provenance,s05-met.json,CulturalHeritageObject---provenance
+Accession Number,Accession Number,s05-met.json,CulturalHeritageObject---accessionNumber
+Geography,Geography,s05-met.json,Place---label
+Date,Date,s05-met.json,CulturalHeritageObject---created
+image,image,s05-met.json,WebResource---classLink
+Description,Description,s05-met.json,CulturalHeritageObject---description

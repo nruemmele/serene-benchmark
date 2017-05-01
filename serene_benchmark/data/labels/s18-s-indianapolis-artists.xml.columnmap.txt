@@ -1,4 +1,4 @@
-"key","column_name","source_name","semantic_type"
-"name","name","data/datasets/museum/data/s18-s-indianapolis-artists.xml","E82_Actor_Appellation---rdf-schema#label"
-"title","title","data/datasets/museum/data/s18-s-indianapolis-artists.xml","E35_Title---rdf-schema#label"
-"nationality","nationality","data/datasets/museum/data/s18-s-indianapolis-artists.xml","E74_Group---rdf-schema#label"
+key,column_name,source_name,semantic_type
+artists.artist.title,artists.artist.title,s18-s-indianapolis-artists.xml,CulturalHeritageObject---title
+artists.artist.nationality,artists.artist.nationality,s18-s-indianapolis-artists.xml,Person---countryAssociatedWithThePerson
+artists.artist.name,artists.artist.name,s18-s-indianapolis-artists.xml,Person---nameOfThePerson
