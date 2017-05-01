@@ -157,7 +157,8 @@ class Experiment(object):
                 predicted_df1["experiment"] = self.experiment_type
                 predicted_df1["experiment_description"] = self.description
                 predicted_df1["train_run_time"] = run_time
-                # TODO: change labels in the test resource to unknown if the correct label is not among those in the training set
+                # change labels in the test resource to unknown if the correct label is not among those in the training set
+                # this is done in SemanticTyper.evaluate() method
                 frames.append(predicted_df1)
             predicted_df = pd.concat(frames, ignore_index=True)
             return predicted_df

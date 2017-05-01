@@ -245,7 +245,6 @@ class DINTModel(SemanticTyper):
 
         """
         logging.debug("--> Labels in {}".format(filepath))
-        # TODO: we filter out unknown or include unkowns!
         label_data = {}  # we need this dictionary (column_id, class_label)
         try:
             frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
@@ -512,11 +511,11 @@ class NNetModel(SemanticTyper):
         """
         Read columns from source, and return them as a list of Column objects
         (as defined in neural_nets.museum_data_reader).
+        Unknown class columns get filtered out depending on the valua of ignore_unknown
         :param source:
         :param label_source:
         :return:
         """
-        # TODO: we filter out unknown or include unknowns!
         filename = os.path.join(self.data_dir, source+".csv")
         if label_source is None:
             label_filename = os.path.join(self.label_dir, source + ".columnmap.txt")
