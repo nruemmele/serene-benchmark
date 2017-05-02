@@ -14,7 +14,7 @@ To run evaluation benchmark,
 3. Neural nets: tensorflow and keras python packages.
 4. [Serene Python client](https://github.com/NICTA/serene-python-client) should be installed.
 
-
+Decompress sources and labels in data folder.
 
 ### How to test
 Nose unittests needs to be installed. To run the tests:
