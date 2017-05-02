@@ -1,9 +1,0 @@
-key,column_name,source_name,semantic_type
-Items.Item.Typeofartwork,Items.Item.Typeofartwork,s13-s-art-institute-of-chicago.xml,CulturalHeritageObject---medium
-Items.Item.Accessionid,Items.Item.Accessionid,s13-s-art-institute-of-chicago.xml,CulturalHeritageObject---accessionNumber
-Items.Item.Credit,Items.Item.Credit,s13-s-art-institute-of-chicago.xml,CulturalHeritageObject---provenance
-Items.Item.Titleofartwork,Items.Item.Titleofartwork,s13-s-art-institute-of-chicago.xml,CulturalHeritageObject---title
-Items.Item.ImageURL,Items.Item.ImageURL,s13-s-art-institute-of-chicago.xml,WebResource---classLink
-Items.Item.Dimensions,Items.Item.Dimensions,s13-s-art-institute-of-chicago.xml,CulturalHeritageObject---extent
-Items.Item.Nationality,Items.Item.Nationality,s13-s-art-institute-of-chicago.xml,Person---countryAssociatedWithThePerson
-Items.Item.Artistname,Items.Item.Artistname,s13-s-art-institute-of-chicago.xml,Person---nameOfThePerson

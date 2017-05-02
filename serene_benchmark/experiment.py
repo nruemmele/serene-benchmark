@@ -169,8 +169,8 @@ class Experiment(object):
 
     def _process_frames(self, frames, model, domain):
         """
-
-        :param frames: pandas stuff
+        Aggregates single prediction result frames per model into a performance data frame.
+        :param frames: list of pandas data frames with prediction results
         :param model: SemanticTyper object
         :param domain: string
         :return:
@@ -217,7 +217,7 @@ class Experiment(object):
         for c in columns:
             if c not in performance.columns:
                 performance[c] = np.nan
-        return performance[columns] # fixing order of the columns
+        return performance[columns]  # fixing order of the columns
 
     def _leave_one_out(self):
         """
@@ -309,35 +309,6 @@ class Experiment(object):
             for idx, model in model_lookup.items():
                 logging.info("Concatenating performance frames per model")
                 performance = self._process_frames(frames[idx], model, domain)
-                # if len(frames[idx]) > 0:
-                #     predicted_df = pd.concat(frames[idx])
-                #     if self.debug_csv:
-                #         if model.debug_csv:
-                #             debug_csv = model.debug_csv + "_" + domain + ".csv"
-                #         else:
-                #             debug_csv = self.debug_csv + "_" + domain + ".csv"
-                #         predicted_df.to_csv(debug_csv, index=False, header=True, mode="w+")
-                #
-                #     performance = model.evaluate(predicted_df)
-                #     performance["train_run_time"] = predicted_df["train_run_time"].mean()
-                #     performance["experiment"] = self.experiment_type
-                #     performance["experiment_description"] = self.description
-                #     performance["predict_run_time"] = predicted_df["running_time"].mean()
-                #     performance["domain"] = domain
-                #     if len(frames[idx]) == num:
-                #         performance["status"] = "success"
-                #     else:
-                #         performance["status"] = "completed_" + str(len(frames[idx]))
-                #     performance["model"] = model.model_type
-                #     performance["model_description"] = model.description
-                # else:
-                #     res = {"model": model.model_type,
-                #            "model_description": model.description,
-                #            "experiment": self.experiment_type,
-                #            "experiment_description": self.description,
-                #            "status": "failure",
-                #            "domain": domain}
-                #     performance = pd.DataFrame(res, index=[0])
                 performance_frames.append(performance)
                 # print("performance: ", performance)
 
@@ -354,6 +325,7 @@ class Experiment(object):
     def run(self, ):
         """
         Execute experiment
+        Supported experiment types: leave_one_out, repeated_holdout
         :return:
         """
         if len(self.domains) < 1:

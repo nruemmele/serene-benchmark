@@ -1,6 +1,0 @@
-key,column_name,source_name,semantic_type
-collections.collection.item.year,collections.collection.item.year,s16-s-hammer.xml,CulturalHeritageObject---created
-collections.collection.item.title,collections.collection.item.title,s16-s-hammer.xml,CulturalHeritageObject---title
-collections.collection.item.image,collections.collection.item.image,s16-s-hammer.xml,WebResource---classLink
-collections.collection.item.artist,collections.collection.item.artist,s16-s-hammer.xml,Person---nameOfThePerson
-collections.collection.item.description,collections.collection.item.description,s16-s-hammer.xml,CulturalHeritageObject---description

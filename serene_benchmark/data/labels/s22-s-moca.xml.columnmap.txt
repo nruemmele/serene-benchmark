@@ -1,7 +1,0 @@
-key,column_name,source_name,semantic_type
-artworks.Artist_Name.Process,artworks.Artist_Name.Process,s22-s-moca.xml,CulturalHeritageObject---medium
-artworks.Artist_Name.Assension_Number,artworks.Artist_Name.Assension_Number,s22-s-moca.xml,CulturalHeritageObject---accessionNumber
-artworks.Artist_Name.Provenance,artworks.Artist_Name.Provenance,s22-s-moca.xml,CulturalHeritageObject---provenance
-artworks.Artist_Name.image,artworks.Artist_Name.image,s22-s-moca.xml,WebResource---classLink
-artworks.Artist_Name.Dimensions,artworks.Artist_Name.Dimensions,s22-s-moca.xml,CulturalHeritageObject---extent
-artworks.Artist_Name.Artist_Name,artworks.Artist_Name.Artist_Name,s22-s-moca.xml,Person---nameOfThePerson

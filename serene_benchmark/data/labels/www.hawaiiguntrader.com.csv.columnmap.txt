@@ -1,8 +1,0 @@
-"key","column_name","source_name","semantic_type"
-"Home0832","Home0832","data/datasets/weapon-lod/data/www.hawaiiguntrader.com.csv","Firearm---category"
-"Listed0891","Listed0891","data/datasets/weapon-lod/data/www.hawaiiguntrader.com.csv","Offer---datePosted"
-"file_name","file_name","data/datasets/weapon-lod/data/www.hawaiiguntrader.com.csv","CreativeWork---name"
-"Listed1222","Listed1222","data/datasets/weapon-lod/data/www.hawaiiguntrader.com.csv","PersonOrOrganization---identifier"
-"0036","0036","data/datasets/weapon-lod/data/www.hawaiiguntrader.com.csv","Offer---name"
-"org1609","org1609","data/datasets/weapon-lod/data/www.hawaiiguntrader.com.csv","CreativeWork---copyrightYear"
-"Description0920","Description0920","data/datasets/weapon-lod/data/www.hawaiiguntrader.com.csv","Offer---description"

@@ -1,5 +1,0 @@
-key,column_name,source_name,semantic_type
-occupation,occupation,s11-s-19-artists.json,Person---professionOrOccupation
-nationality,nationality,s11-s-19-artists.json,Person---countryAssociatedWithThePerson
-artist_name,artist_name,s11-s-19-artists.json,Person---nameOfThePerson
-long_biography,long_biography,s11-s-19-artists.json,Person---biographicalInformation

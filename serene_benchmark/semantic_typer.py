@@ -262,16 +262,16 @@ class DINTModel(SemanticTyper):
         """
         logging.info("Resetting DINTModel.")
         # now serene will not allow dataset deletion if there is a dependent model
-        # if self.classifier:
-        #     try:
-        #         self.server.remove_model(self.classifier)
-        #     except Exception as e:
-        #         logging.warning("Failed to delete DINTModel: {}".format(e))
-        # for ds in self.datasets:
-        #     try:
-        #         self.server.remove_dataset(ds)
-        #     except Exception as e:
-        #         logging.warning("Failed to delete dataset: {}".format(e))
+        if self.classifier:
+            try:
+                self.server.remove_model(self.classifier)
+            except Exception as e:
+                logging.warning("Failed to delete DINTModel: {}".format(e))
+        for ds in self.datasets:
+            try:
+                self.server.remove_dataset(ds)
+            except Exception as e:
+                logging.warning("Failed to delete dataset: {}".format(e))
 
         self.classifier = None
 
@@ -364,7 +364,8 @@ class DINTModel(SemanticTyper):
                         # we remove unknown class column from the source
                         del df[col_name]
                 path = os.path.join(tempfile.gettempdir(), source + ".csv")
-                df.to_csv(path, index=False, encoding=correct_encoding, na_rep=" ", quoting=csv.QUOTE_ALL, quotechar='"')
+                df.to_csv(path, index=False, encoding=correct_encoding,
+                          quoting=csv.QUOTE_ALL, quotechar='"')
                 logging.info(" after removing source size {}".format(df.size))
             except Exception as e:
                 logging.warning("unknown class column removal failed {} due {}".format(source, e))
@@ -409,8 +410,8 @@ class DINTModel(SemanticTyper):
                                                    description=self.description,
                                                    labels=label_dict,
                                                    resampling_strategy=self.resampling_strategy,
-                                                   num_bags=50,
-                                                   bag_size=100)
+                                                   num_bags=10,
+                                                   bag_size=50)
 
         logging.debug("DINT model created on the server!")
 

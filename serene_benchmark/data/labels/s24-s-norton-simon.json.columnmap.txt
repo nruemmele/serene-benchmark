@@ -1,9 +1,0 @@
-key,column_name,source_name,semantic_type
-access,access,s24-s-norton-simon.json,CulturalHeritageObject---accessionNumber
-prov,prov,s24-s-norton-simon.json,CulturalHeritageObject---provenance
-title,title,s24-s-norton-simon.json,CulturalHeritageObject---title
-image_url,image_url,s24-s-norton-simon.json,WebResource---classLink
-dim,dim,s24-s-norton-simon.json,CulturalHeritageObject---extent
-nationality,nationality,s24-s-norton-simon.json,Person---countryAssociatedWithThePerson
-made,made,s24-s-norton-simon.json,CulturalHeritageObject---created
-artist_period,artist_period,s24-s-norton-simon.json,Person---nameOfThePerson

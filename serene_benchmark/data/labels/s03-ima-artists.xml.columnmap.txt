@@ -1,3 +1,0 @@
-key,column_name,source_name,semantic_type
-artists.artist.nationality,artists.artist.nationality,s03-ima-artists.xml,Person---countryAssociatedWithThePerson
-artists.artist.name,artists.artist.name,s03-ima-artists.xml,Person---nameOfThePerson

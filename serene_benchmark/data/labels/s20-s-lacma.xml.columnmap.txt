@@ -1,6 +1,0 @@
-key,column_name,source_name,semantic_type
-Items.Item.Origin,Items.Item.Origin,s20-s-lacma.xml,CulturalHeritageObject---accessionNumber
-Items.Item.Artwork_Details,Items.Item.Artwork_Details,s20-s-lacma.xml,CulturalHeritageObject---description
-Items.Item.Image_URL,Items.Item.Image_URL,s20-s-lacma.xml,WebResource---classLink
-Items.Item.Artist_Name,Items.Item.Artist_Name,s20-s-lacma.xml,Person---nameOfThePerson
-Items.Item.ID,Items.Item.ID,s20-s-lacma.xml,CulturalHeritageObject---objectId

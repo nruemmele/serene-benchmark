@@ -10,22 +10,23 @@ import os
 import logging
 
 
-def create_dint_model(dm, features="full", resampling_strategy="NoResampling"):
+def create_dint_model(dm, features="full", resampling_strategy="NoResampling", ignore_uknown=True):
     """
     Create dint model with specified parameters
     :param dm: SchemaMatcher
-    :param features: string ("full", "single", "noheader", "chardist")
+    :param features: string ("full", "single", "noheader", "fullchardist", "chardistonly","chardist-rfknn")
     :param resampling_strategy: resampling strategy, default None
     :return:
     """
     # dictionary with features
     feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
-                                                "ratio-alpha-chars", "prop-numerical-chars",
-                                                "prop-whitespace-chars", "prop-entries-with-at-sign",
-                                                "prop-entries-with-hyphen", "prop-entries-with-paren",
-                                                "prop-entries-with-currency-symbol", "mean-commas-per-entry",
-                                                "mean-forward-slashes-per-entry",
-                                                "prop-range-format", "is-discrete", "entropy-for-discrete-values"]
+                                         "ratio-alpha-chars", "prop-numerical-chars",
+                                         "prop-whitespace-chars", "prop-entries-with-at-sign",
+                                         "prop-entries-with-hyphen", "prop-entries-with-paren",
+                                         "prop-entries-with-currency-symbol", "mean-commas-per-entry",
+                                         "mean-forward-slashes-per-entry",
+                                         "prop-range-format", "is-discrete",
+                                         "entropy-for-discrete-values", "shannon-entropy"]
                       }
     if features == "full":
         feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
@@ -33,7 +34,7 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling"):
                                               "prop-whitespace-chars", "prop-entries-with-at-sign",
                                               "prop-entries-with-hyphen", "prop-entries-with-paren",
                                               "prop-entries-with-currency-symbol", "mean-commas-per-entry",
-                                              "mean-forward-slashes-per-entry",
+                                              "mean-forward-slashes-per-entry", "shannon-entropy",
                                               "prop-range-format", "is-discrete", "entropy-for-discrete-values"],
                            "activeFeatureGroups": ["stats-of-text-length",
                                                    "stats-of-numerical-type",
@@ -51,13 +52,13 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling"):
                                                        "max-comparisons-per-class": 5
                                                        }]
                            }
-    elif features=="chardist":
+    elif features=="fullchardist":
         feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
                                                   "ratio-alpha-chars", "prop-numerical-chars",
                                                   "prop-whitespace-chars", "prop-entries-with-at-sign",
                                                   "prop-entries-with-hyphen", "prop-entries-with-paren",
                                                   "prop-entries-with-currency-symbol", "mean-commas-per-entry",
-                                                  "mean-forward-slashes-per-entry",
+                                                  "shannon-entropy", "mean-forward-slashes-per-entry",
                                                   "prop-range-format", "is-discrete", "entropy-for-discrete-values"],
                                "activeFeatureGroups": ["char-dist-features", "stats-of-text-length",
                                                        "stats-of-numerical-type",
@@ -67,16 +68,16 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling"):
                                                        "min-wordnet-jcn-distance-from-class-examples",
                                                        "min-wordnet-lin-distance-from-class-examples"],
                                "featureExtractorParams": [{"name": "prop-instances-per-class-in-knearestneighbours",
-                                                           "num-neighbours": 5
+                                                           "num-neighbours": 3
                                                            }, {"name": "min-wordnet-jcn-distance-from-class-examples",
-                                                               "max-comparisons-per-class": 5
+                                                               "max-comparisons-per-class": 3
                                                                },
                                                           {"name": "min-wordnet-lin-distance-from-class-examples",
-                                                           "max-comparisons-per-class": 5
+                                                           "max-comparisons-per-class": 3
                                                            }]
                                }
     elif features=="chardistonly":
-        feature_config = {"activeFeatures": ["entropy-for-discrete-values"],
+        feature_config = {"activeFeatures": ["shannon-entropy"],
                                "activeFeatureGroups": ["char-dist-features"]}
     elif features=="noheader":
         feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
@@ -84,18 +85,30 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling"):
                                                   "prop-whitespace-chars", "prop-entries-with-at-sign",
                                                   "prop-entries-with-hyphen", "prop-entries-with-paren",
                                                   "prop-entries-with-currency-symbol", "mean-commas-per-entry",
-                                                  "mean-forward-slashes-per-entry",
+                                                  "shannon-entropy", "mean-forward-slashes-per-entry",
                                                   "prop-range-format", "is-discrete", "entropy-for-discrete-values"],
                                "activeFeatureGroups": ["char-dist-features", "stats-of-text-length",
                                                        "stats-of-numerical-type",
                                                        "mean-character-cosine-similarity-from-class-examples"]
                                }
+    elif features=="chardist-rfknn":
+        feature_config = {"activeFeatures": ["shannon-entropy"],
+                          "activeFeatureGroups": ["char-dist-features",
+                                                  "prop-instances-per-class-in-knearestneighbours"],
+                          "featureExtractorParams": [{"name": "prop-instances-per-class-in-knearestneighbours",
+                                                      "num-neighbours": 5
+                                                      }]
+                          }
+    else:
+        features="single"
 
     dint_model = DINTModel(dm, feature_config,
                            resampling_strategy,
                            "DINTModel: resampling {}, features {}".format(resampling_strategy, features),
                            debug_csv=os.path.join("results",
-                                                  "debug_dint_{}_{}.csv".format(resampling_strategy, features)))
+                                                  "debug_dint_{}_{}_ignore{}.csv".format(
+                                                      resampling_strategy, features, ignore_uknown)),
+                           ignore_unknown=ignore_uknown)
     return dint_model
 
 
@@ -532,6 +545,36 @@ if __name__ == "__main__":
     # test_resampletomean()
     # test_simple(ignore_uknown=True, domains=["weapons"])
 
-    test_simple(ignore_uknown=True, domains=["museum"])
-    # test_simple(ignore_uknown=False)
+    ignore = [True, False]
+    resampling_strategies = ["NoResampling", "BaggingToMean", "ResampleToMean", "Bagging"]
+    features = ["chardistonly", "chardist-rfknn", "single", "noheader", "full", "fullchardist"]
+    experiments = ["leave_one_out", "repeated_holdout"]
+
+    dm = SchemaMatcher(host="localhost", port=8080)
+
+    logging.info("Cleaning models from DINT server")
+    for m in dm.models:
+        dm.remove_model(m)
+    logging.info("Cleaning datasets from DINT server")
+    for ds in dm.datasets:
+        dm.remove_dataset(ds)
+
+    for strat in resampling_strategies:
+        print("Picking strategy: ", strat)
+        for ig in ignore:
+            print("Setting ignore_unknown: ", ig)
+            for exp in experiments:
+                print("Performing experiment:", exp)
+                models = [create_dint_model(dm, feat, strat, ig) for feat in features]
+                experiment = Experiment(models,
+                                        experiment_type=exp,
+                                        description=exp+"_ignore"+str(ig)+"_strategy"+strat,
+                                        result_csv=os.path.join('results', "performance_dint_{}_ignore{}.csv".format(
+                                            strat, ig)
+                                                                ),
+                                        debug_csv=os.path.join("results", "debug_dint_{}_ignore{}.csv".format(
+                                            strat, ig)
+                                                               ))
+
+                experiment.run()
 
