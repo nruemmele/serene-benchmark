@@ -19,9 +19,9 @@ class Experiment(object):
 
     """
     # this is the path to benchmark resources
-    if "SERENEPATH" in os.environ:
-        data_dir = os.path.join(os.environ["SERENEPATH"], "sources")
-        label_dir = os.path.join(os.environ["SERENEPATH"], "labels")
+    if "SERENEBENCH" in os.environ:
+        data_dir = os.path.join(os.environ["SERENEBENCH"], "sources")
+        label_dir = os.path.join(os.environ["SERENEBENCH"], "labels")
     else:
         data_dir = os.path.join("data", "sources")
         label_dir = os.path.join("data", "labels")
@@ -167,6 +167,38 @@ class Experiment(object):
             logging.warning("Model evaluation failed: {}".format(e))
             return None
 
+    def _check_success(self, domain, num_frames):
+        """
+        Check if experiment was successful for this domain.
+        It means that at every iteration prediction was successfully computed.
+        :param domain: string
+        :param num_frames: integer
+        :return: "success" if all iterations are successful or number of successful iterations otherwise
+        """
+        if (num_frames == len(self.benchmark[domain]) and self.experiment_type == "leave_one_out") or \
+                (self.experiment_type == "repeated_holdout" and num_frames == self.num):
+            return "success"
+        else:
+            return "completed_{}".format(num_frames)
+
+    @staticmethod
+    def _standardize_performance_df(performance):
+        """
+        We want to ensure that secific columns are present in the performance dataframe and we want to
+        fix their order.
+        :param performance: pandas dataframe
+        :return:
+        """
+        # ensure that these columns are in the frame
+        columns = ["model", "domain", "status", "MRR", "categorical_accuracy", "fmeasure",
+                   "experiment", "ignore_unknown", "train_run_time", "predict_run_time",
+                   "experiment_description", "description",
+                   "model_description", "resampling_strategy", "model_parameters"]
+        for c in columns:
+            if c not in performance.columns:
+                performance[c] = np.nan
+        return performance[columns]  # fixing order of the columns
+
     def _process_frames(self, frames, model, domain):
         """
         Aggregates single prediction result frames per model into a performance data frame.
@@ -190,10 +222,7 @@ class Experiment(object):
             performance["experiment_description"] = self.description
             performance["predict_run_time"] = predicted_df["running_time"].mean()
             performance["domain"] = domain
-            if len(frames) == len(self.benchmark[domain]):
-                performance["status"] = "success"
-            else:
-                performance["status"] = "completed_" + str(len(frames))
+            performance["status"] = self._check_success(domain, len(frames))
             performance["model"] = model.model_type
             performance["model_description"] = model.description
             performance["ignore_unknown"] = model.ignore_unknown
@@ -202,6 +231,8 @@ class Experiment(object):
         else:
             res = {"model": model.model_type,
                    "model_description": model.description,
+                   "model_parameters": model.parameters,
+                   "resampling_strategy": model.resampling_strategy,
                    "ignore_unknown": model.ignore_unknown,
                    "experiment": self.experiment_type,
                    "experiment_description": self.description,
@@ -209,15 +240,7 @@ class Experiment(object):
                    "domain": domain}
             performance = pd.DataFrame(res, index=[0])
 
-        # ensure that these columns are in the frame
-        columns = ["model", "domain", "status", "MRR", "categorical_accuracy", "fmeasure",
-                   "experiment", "ignore_unknown", "train_run_time", "predict_run_time",
-                   "experiment_description", "description",
-                   "model_description", "resampling_strategy", "parameters"]
-        for c in columns:
-            if c not in performance.columns:
-                performance[c] = np.nan
-        return performance[columns]  # fixing order of the columns
+        return self._standardize_performance_df(performance)
 
     def _leave_one_out(self):
         """
@@ -322,7 +345,7 @@ class Experiment(object):
 
         return True
 
-    def run(self, ):
+    def run(self):
         """
         Execute experiment
         Supported experiment types: leave_one_out, repeated_holdout

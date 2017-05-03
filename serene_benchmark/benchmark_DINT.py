@@ -8,6 +8,7 @@ from serene_benchmark import Experiment, DINTModel, NNetModel
 from serene.matcher.core import SchemaMatcher
 import os
 import logging
+from logging.handlers import RotatingFileHandler
 
 
 def create_dint_model(dm, features="full", resampling_strategy="NoResampling", ignore_uknown=True):
@@ -110,6 +111,73 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling", i
                                                       resampling_strategy, features, ignore_uknown)),
                            ignore_unknown=ignore_uknown)
     return dint_model
+
+
+def test_simple(ignore_uknown=True, domains=None):
+    # ******* setting up DINTModel
+    dm = SchemaMatcher(host="localhost", port=8080)
+    # dictionary with features
+
+    single_feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
+                                                "ratio-alpha-chars", "prop-numerical-chars", "shannon-entropy",
+                                                "prop-whitespace-chars", "prop-entries-with-at-sign"]
+                             }
+    # resampling strategy
+    resampling_strategy = "NoResampling"
+    dint_model = DINTModel(dm, single_feature_config,
+                           resampling_strategy,
+                           "DINTModel with simple feature config",
+                           debug_csv=os.path.join("results","debug_dint_simple.csv"),
+                           ignore_unknown=ignore_uknown)
+
+    models = [dint_model]
+
+    loo_experiment = Experiment(models,
+                                experiment_type="leave_one_out",
+                                description="plain loo",
+                                result_csv=os.path.join('results', "performance_simple.csv"),
+                                debug_csv=os.path.join("results", "debug_simple.csv"))
+
+    weapons = ["www.theoutdoorstrader.com.csv", "www.tennesseegunexchange.com.csv",
+                    "www.montanagunclassifieds.com.csv", "www.kyclassifieds.com.csv",
+                    "www.hawaiiguntrader.com.csv", "www.gunsinternational.com.csv",
+                    "www.floridaguntrader.com.csv", "www.floridagunclassifieds.com.csv",
+                    "www.elpasoguntrader.com.csv", "www.dallasguns.com.csv",
+                    "www.armslist.com.csv", "www.alaskaslist.com.csv"
+                    ]
+
+    if domains:
+        loo_experiment.change_domains(domains)
+    loo_experiment.run()
+
+
+def test_simple_holdout():
+    # ******* setting up DINTModel
+    dm = SchemaMatcher(host="localhost", port=8080)
+    # dictionary with features
+
+    single_feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
+                                                "ratio-alpha-chars", "prop-numerical-chars",
+                                                "prop-whitespace-chars", "prop-entries-with-at-sign"]
+                             }
+    # resampling strategy
+    resampling_strategy = "NoResampling"
+    dint_model = DINTModel(dm, single_feature_config,
+                           resampling_strategy,
+                           "DINTModel with simple feature config",
+                           debug_csv=os.path.join("results","debug_dint_simple_holdout.csv"))
+
+    models = [dint_model]
+
+    loo_experiment = Experiment(models,
+                                experiment_type="repeated_holdout",
+                                description="repeated_holdout_0.5_2",
+                                result_csv=os.path.join('results', "performance_simple_holdout.csv"),
+                                debug_csv=os.path.join("results", "debug_simple_holdout.csv"),
+                                holdout=0.5,
+                                num=2)
+
+    loo_experiment.run()
 
 
 def test_fullfeature_noresampling():
@@ -318,72 +386,6 @@ def test_singlefeatures():
     loo_experiment.run()
 
 
-def test_simple(ignore_uknown=True, domains=None):
-    # ******* setting up DINTModel
-    dm = SchemaMatcher(host="localhost", port=8080)
-    # dictionary with features
-
-    single_feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
-                                                "ratio-alpha-chars", "prop-numerical-chars", "shannon-entropy",
-                                                "prop-whitespace-chars", "prop-entries-with-at-sign"]
-                             }
-    # resampling strategy
-    resampling_strategy = "NoResampling"
-    dint_model = DINTModel(dm, single_feature_config,
-                           resampling_strategy,
-                           "DINTModel with simple feature config",
-                           debug_csv=os.path.join("results","debug_dint_simple.csv"),
-                           ignore_unknown=ignore_uknown)
-
-    models = [dint_model]
-
-    loo_experiment = Experiment(models,
-                                experiment_type="leave_one_out",
-                                description="plain loo",
-                                result_csv=os.path.join('results', "performance_simple.csv"),
-                                debug_csv=os.path.join("results", "debug_simple.csv"))
-
-    weapons = ["www.theoutdoorstrader.com.csv", "www.tennesseegunexchange.com.csv",
-                    "www.montanagunclassifieds.com.csv", "www.kyclassifieds.com.csv",
-                    "www.hawaiiguntrader.com.csv", "www.gunsinternational.com.csv",
-                    "www.floridaguntrader.com.csv", "www.floridagunclassifieds.com.csv",
-                    "www.elpasoguntrader.com.csv", "www.dallasguns.com.csv",
-                    "www.armslist.com.csv", "www.alaskaslist.com.csv"
-                    ]
-
-    if domains:
-        loo_experiment.change_domains(domains)
-    loo_experiment.run()
-
-
-def test_simple_holdout():
-    # ******* setting up DINTModel
-    dm = SchemaMatcher(host="localhost", port=8080)
-    # dictionary with features
-
-    single_feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
-                                                "ratio-alpha-chars", "prop-numerical-chars",
-                                                "prop-whitespace-chars", "prop-entries-with-at-sign"]
-                             }
-    # resampling strategy
-    resampling_strategy = "NoResampling"
-    dint_model = DINTModel(dm, single_feature_config,
-                           resampling_strategy,
-                           "DINTModel with simple feature config",
-                           debug_csv=os.path.join("results","debug_dint_simple_holdout.csv"))
-
-    models = [dint_model]
-
-    loo_experiment = Experiment(models,
-                                experiment_type="repeated_holdout",
-                                description="repeated_holdout_0.5_2",
-                                result_csv=os.path.join('results', "performance_simple_holdout.csv"),
-                                debug_csv=os.path.join("results", "debug_simple_holdout.csv"),
-                                holdout=0.5,
-                                num=2)
-
-    loo_experiment.run()
-
 def test_models():
     # ******* setting up DINTModel
     dm = SchemaMatcher(host="localhost", port=8080)
@@ -528,15 +530,25 @@ def test_resampletomean():
     loo_experiment.run()
 
 
-
 if __name__ == "__main__":
 
     # setting up the logging
-    log_file = 'benchmark_dint.log'
-    logging.basicConfig(filename=os.path.join('results', log_file),
-                        level=logging.DEBUG, filemode='w+',
-                        format='%(asctime)s %(levelname)s %(module)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+    log_file = os.path.join('results', 'benchmark_dint.log')
+    log_formatter = logging.Formatter('%(asctime)s %(levelname)s %(module)s: %(message)s',
+                                      '%Y-%m-%d %H:%M:%S')
+    my_handler = RotatingFileHandler(log_file, mode='a', maxBytes=5*1024*1024,
+                                 backupCount=5, encoding=None, delay=0)
+    my_handler.setFormatter(log_formatter)
+    my_handler.setLevel(logging.DEBUG)
+    # logging.basicConfig(filename=log_file,
+    #                     level=logging.DEBUG, filemode='w+',
+    #                     format='%(asctime)s %(levelname)s %(module)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
+    log = logging.getLogger()
+    log.setLevel(logging.DEBUG)
+    log.addHandler(my_handler)
+
+    # test_simple(ignore_uknown=False, domains=["museum"])
     # test_simple_holdout()
     # test_models()
     # test_models_holdout()
@@ -547,7 +559,8 @@ if __name__ == "__main__":
 
     ignore = [True, False]
     resampling_strategies = ["NoResampling", "BaggingToMean", "ResampleToMean", "Bagging"]
-    features = ["chardistonly", "chardist-rfknn", "single", "noheader", "full", "fullchardist"]
+    #features = ["chardistonly", "chardist-rfknn", "single", "noheader", "full", "fullchardist"]
+    features = ["chardistonly", "chardist-rfknn", "single", "noheader"]
     experiments = ["leave_one_out", "repeated_holdout"]
 
     dm = SchemaMatcher(host="localhost", port=8080)

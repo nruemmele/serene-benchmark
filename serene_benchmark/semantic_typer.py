@@ -251,7 +251,7 @@ class DINTModel(SemanticTyper):
         self.resampling_strategy = resampling_strategy
         self.classifier = None
         self.datasets = [] # list of associated datasets for this model
-        self.parameters = str(feature_config)
+        self.parameters = str(self.feature_config)
 
     def reset(self):
         """
@@ -264,18 +264,21 @@ class DINTModel(SemanticTyper):
         # now serene will not allow dataset deletion if there is a dependent model
         if self.classifier:
             try:
-                self.server.remove_model(self.classifier)
+                self.server.remove_model(self.classifier.id)
             except Exception as e:
                 logging.warning("Failed to delete DINTModel: {}".format(e))
+
         for ds in self.datasets:
             try:
-                self.server.remove_dataset(ds)
+                self.server.remove_dataset(ds.id)
             except Exception as e:
                 logging.warning("Failed to delete dataset: {}".format(e))
 
         self.classifier = None
+        self.datasets = []
 
-    def _read_labelData(self, filepath, header_column="column_name", header_label="class"):
+    @staticmethod
+    def _read_labelData(filepath, header_column="column_name", header_label="class"):
         """
         This method reads in .csv as a Pandas data frame, selects columns "column_name" and "class",
         drops NaN and converts these two columns into dictionary.
@@ -341,7 +344,7 @@ class DINTModel(SemanticTyper):
         :return:
         """
         filename = os.path.join(self.data_dir, source + ".csv")
-        if not(self.ignore_unknown):
+        if not self.ignore_unknown:
             # upload source to the schema matcher server and we do not make any alterations to the original source
             matcher_dataset = self.server.create_dataset(file_path=filename,
                                                          description="traindata",
@@ -412,7 +415,7 @@ class DINTModel(SemanticTyper):
                                                    resampling_strategy=self.resampling_strategy,
                                                    num_bags=10,
                                                    bag_size=50)
-
+        self.parameters = str(self.feature_config)
         logging.debug("DINT model created on the server!")
 
         return True
@@ -469,13 +472,13 @@ class KarmaDSLModel(SemanticTyper):
         # only these sources can be used for training or testing by different classifiers of SemanticTyper
         allowed_sources += sources
 
-    def __init__(self, karma_session, description, debug_csv=None):
+    def __init__(self, karma_session, description, debug_csv=None, ignore_unknown=True):
         logging.info("Initializing KarmaDSL model.")
         if not (type(karma_session) is KarmaSession):
             logging.error("KarmaDSLModel init: KarmaSession instance required.")
             raise InternalError("KarmaDSLModel init", "KarmaSession instance required")
 
-        super().__init__("KarmaDSL", description=description,debug_csv=debug_csv)
+        super().__init__("KarmaDSL", description=description, debug_csv=debug_csv, ignore_unknown=ignore_unknown)
         self.karma_session = karma_session
         self.karma_session.reset_semantic_labeler() # we immediately reset their semantic labeller
         self.folder_names = None
@@ -585,7 +588,7 @@ class NNetModel(SemanticTyper):
         """
         Read columns from source, and return them as a list of Column objects
         (as defined in neural_nets.museum_data_reader).
-        Unknown class columns get filtered out depending on the valua of ignore_unknown
+        Unknown class columns get filtered out depending on the value of ignore_unknown
         :param source:
         :param label_source:
         :return:
