@@ -72,7 +72,7 @@ if __name__ == "__main__":
         print("Setting ignore_unknown: ", ig)
         for exp in experiments:
             print("Performing experiment:", exp)
-            test_cnn(ignore_unknown=ig, experiment_type=exp, domains=["weather"])
+            test_cnn(ignore_unknown=ig, experiment_type=exp)
 
 
 

@@ -59,7 +59,8 @@ RUN pip3 --no-cache-dir install \
     python3 -m ipykernel.kernelspec
 
 # Install TensorFlow GPU version.
-RUN pip3 --no-cache-dir install tensorflow_gpu==0.10.0rc0
+RUN pip3 --no-cache-dir install tensorflow_gpu
+#RUN pip3 --no-cache-dir install tensorflow_gpu==0.10.0rc0
 # http://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-manylinux1_x86_64.whl
 # http://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-linux_x86_64.whl
 # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
@@ -121,7 +122,6 @@ RUN mkdir -p serene-python-client && chown -R $username:$username serene-python-
 COPY serene-python-client/ serene-python-client/
 RUN mkdir -p serene-benchmark  && chown -R $username:$username serene-benchmark
 COPY serene-benchmark/ serene-benchmark/
-
 # Install them
 USER root
 RUN pip3 install -e serene-python-client/.
@@ -130,7 +130,7 @@ RUN pip3 install -e serene-benchmark/.
 #
 # Set environment variable for SERENEPATH where benchmark datasets are lying
 #
-ENV SERENEPATH /home/$username/serene-benchmark/serene_benchmark/data
+ENV SERENEBENCH /home/$username/serene-benchmark/serene_benchmark/data
 USER $username
 
 # TensorBoard
