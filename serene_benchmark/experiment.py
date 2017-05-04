@@ -217,12 +217,12 @@ class Experiment(object):
                 predicted_df.to_csv(debug_csv, index=False, header=True, mode="w+")
 
             performance = model.evaluate(predicted_df)
+            performance["status"] = self._check_success(domain, len(frames))
             performance["train_run_time"] = predicted_df["train_run_time"].mean()
             performance["experiment"] = self.experiment_type
             performance["experiment_description"] = self.description
             performance["predict_run_time"] = predicted_df["running_time"].mean()
             performance["domain"] = domain
-            performance["status"] = self._check_success(domain, len(frames))
             performance["model"] = model.model_type
             performance["model_description"] = model.description
             performance["ignore_unknown"] = model.ignore_unknown
@@ -241,6 +241,7 @@ class Experiment(object):
             performance = pd.DataFrame(res, index=[0])
 
         return self._standardize_performance_df(performance)
+
 
     def _leave_one_out(self):
         """

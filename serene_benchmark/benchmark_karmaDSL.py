@@ -22,8 +22,8 @@ def test_karma(ignore_unknown=True, experiment_type="leave_one_out", domains=Non
     experiment = Experiment(models,
                             experiment_type=experiment_type,
                             description=experiment_type,
-                            result_csv=os.path.join('results', "performance_dsl_{}.csv".format(experiment_type)),
-                            debug_csv=os.path.join("results", "debug_dsl_{}.csv".format(experiment_type)))
+                            result_csv=os.path.join('results', "performance_dsl_{}_{}.csv".format(experiment_type, "museum_soccer")),
+                            debug_csv=os.path.join("results", "debug_dsl_{}_{}.csv".format(experiment_type, "museum_soccer")))
 
     if domains:
         experiment.change_domains(domains)
@@ -60,4 +60,4 @@ if __name__ == "__main__":
         print("Setting ignore_unknown: ", ig)
         for exp in experiments:
             print("Performing experiment:", exp)
-            test_karma(ignore_unknown=ig, experiment_type=exp, domains=["weather"])
+            test_karma(ignore_unknown=ig, experiment_type=exp, domains=["museum", "soccer"])
