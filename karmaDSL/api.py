@@ -65,6 +65,22 @@ class KarmaSession(object):
         self._handle_errors(r, "GET " + uri)
         return r.json()['folder_names']
 
+    def ftu(self):
+        """
+        First time use endpoint. Just to get some trained model!
+        Returns: list of folder names.
+        Raises: InternalDIError on failure.
+        """
+        logging.info('Sending request to KarmaDSL to train some model.')
+        uri = urljoin(self._uri, 'ftu')
+        try:
+            r = self.session.get(uri)
+        except Exception as e:
+            logging.error(e)
+            raise InternalError("ftu", e)
+        self._handle_errors(r, "GET " + uri)
+        return r.json()
+
     def reset_semantic_labeler(self):
         """
         Resets semantic labeler on Karma DSL server.
@@ -95,6 +111,25 @@ class KarmaSession(object):
         copy_uri = urljoin(self._uri, 'copy')
         try:
             data = {"folder": folder_name, "files": file_list}
+            r = self.session.post(copy_uri, json=data)
+        except Exception as e:
+            logging.error(e)
+            raise InternalError("post_folder", e)
+        self._handle_errors(r, "POST " + copy_uri)
+        return r.json()
+
+    def index_folder(self, folder_name):
+        """
+        Create a new folder on the server with the specified list of files.
+        Args:
+             folder_name: name of the new folder
+        Returns: Dictionary.
+        """
+
+        logging.info('Sending request to KarmaDSL server to index folder.')
+        copy_uri = urljoin(self._uri, 'domain')
+        try:
+            data = {"folder": folder_name}
             r = self.session.post(copy_uri, json=data)
         except Exception as e:
             logging.error(e)
@@ -152,6 +187,27 @@ class KarmaSession(object):
             logging.error(e)
             raise InternalError("predict_model", e)
         self._handle_errors(r, "GET " + uri)
+        return r.json()
+
+    def predict_column(self, source_name, header, values):
+        """
+        Predict semantic types for a column.
+        :param source_name: name of the source in which this column occured
+        :param header: column's header
+        :param values: values in the column
+        :return:
+        """
+        logging.info('Sending request to the KarmaDSL to preform prediction for the column.')
+        uri = urljoin(self._uri, "column")
+        try:
+            data = {"source": source_name,
+                    "header": header,
+                    "values": [str(v) for v in values]} # we make sure those are string since this is the requirement on the server side
+            r = self.session.post(uri, json=data, headers={'Content-type': 'application/json; charset=utf-8'})
+        except Exception as e:
+            logging.error(e)
+            raise InternalError("predict_column", e)
+        self._handle_errors(r, "POST " + uri)
         return r.json()
 
     def _test_connection(self, root):

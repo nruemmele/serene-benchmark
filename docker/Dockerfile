@@ -1,3 +1,6 @@
+#
+# Docker file for the serene benchmark
+#
 FROM nvidia/cuda:8.0-cudnn5-devel
 
 MAINTAINER Data61 CSIRO
@@ -59,7 +62,7 @@ RUN pip3 --no-cache-dir install \
     python3 -m ipykernel.kernelspec
 
 # Install TensorFlow GPU version.
-RUN pip3 --no-cache-dir install tensorflow_gpu
+RUN pip3 --no-cache-dir install tensorflow_gpu==0.12.0rc1
 #RUN pip3 --no-cache-dir install tensorflow_gpu==0.10.0rc0
 # http://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-manylinux1_x86_64.whl
 # http://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-linux_x86_64.whl
@@ -124,8 +127,19 @@ RUN mkdir -p serene-benchmark  && chown -R $username:$username serene-benchmark
 COPY serene-benchmark/ serene-benchmark/
 # Install them
 USER root
-RUN pip3 install -e serene-python-client/.
+RUN pip3 install serene-python-client/*.gz
+RUN rm -r serene-python-client/
 RUN pip3 install -e serene-benchmark/.
+
+# Set the locale
+RUN locale-gen en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+
+# configure python encodings
+ENV PYTHONIOENCODING=utf-8
+ENV PYTHONENCODING=utf-8
 
 #
 # Set environment variable for SERENEPATH where benchmark datasets are lying

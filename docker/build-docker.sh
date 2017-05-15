@@ -23,8 +23,7 @@ cp setup.py docker/serene-benchmark/
 # Copy across python source code for serene python client
 #
 mkdir docker/serene-python-client/
-cp -r ../serene-python-client/serene/ docker/serene-python-client/serene/
-cp -r ../serene-python-client/setup.py docker/serene-python-client/
+cp -r ../serene-python-client/dist/serene-python-client-0.2.0.tar.gz docker/serene-python-client/
 
 
 #

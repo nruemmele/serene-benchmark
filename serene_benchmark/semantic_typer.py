@@ -32,16 +32,16 @@ benchmark = {
     "dbpedia": ['s5.txt', 's2.txt', 's6.txt',
                 's3.txt', 's4.txt', 's9.txt',
                 's8.txt', 's7.txt', 's10.txt', 's1.txt'],
-    "museum": ['s02-dma.csv', 's26-s-san-francisco-moma.json', 's27-s-the-huntington.json',
-               's16-s-hammer.xml', 's20-s-lacma.xml', 's15-s-detroit-institute-of-art.json',
-               's28-wildlife-art.csv', 's04-ima-artworks.xml', 's25-s-oakland-museum-paintings.json',
-               's29-gilcrease.csv', 's05-met.json', 's13-s-art-institute-of-chicago.xml',
-               's14-s-california-african-american.json', 's07-s-13.json', 's21-s-met.json',
-               's12-s-19-artworks.json', 's08-s-17-edited.xml', 's19-s-indianapolis-artworks.xml',
-               's11-s-19-artists.json', 's22-s-moca.xml', 's17-s-houston-museum-of-fine-arts.json',
-               's18-s-indianapolis-artists.xml', 's23-s-national-portrait-gallery.json',
-               's03-ima-artists.xml', 's24-s-norton-simon.json', 's06-npg.json',
-               's09-s-18-artists.json', 's01-cb.csv'],
+    "museum": ['s01-cb.csv', 's02-dma.csv', 's03-ima-artists.xml', 's04-ima-artworks.xml', 's05-met.json',
+                    's06-npg.json', 's07-s-13.json', 's08-s-17-edited.xml',
+                    's09-s-18-artists.json', "s10-s-18-artworks.json",
+                    's11-s-19-artists.json', 's12-s-19-artworks.json', 's13-s-art-institute-of-chicago.xml',
+                    's14-s-california-african-american.json', 's15-s-detroit-institute-of-art.json',
+                    's16-s-hammer.xml', 's17-s-houston-museum-of-fine-arts.json', 's18-s-indianapolis-artists.xml',
+                    's19-s-indianapolis-artworks.xml', 's20-s-lacma.xml', 's21-s-met.json', 's22-s-moca.xml',
+                    's23-s-national-portrait-gallery.json', 's24-s-norton-simon.json',
+                    's25-s-oakland-museum-paintings.json', 's26-s-san-francisco-moma.json',
+                    's27-s-the-huntington.json', 's28-wildlife-art.csv', 's29-gilcrease.csv'],
     "weather": ['w1.txt', 'w3.txt', 'w2.txt', 'w4.txt'],
     "weapons": ["www.theoutdoorstrader.com.csv", "www.tennesseegunexchange.com.csv",
                 "www.shooterswap.com.csv", "www.nextechclassifieds.com.csv", "www.msguntrader.com.csv",
@@ -136,6 +136,50 @@ class SemanticTyper(object):
         else:  # we add unknown class
             return "unknown"
 
+    def _construct_labels(self, source):
+        """
+        Read columns from source, and read its label data.
+        Unknown class columns get filtered out depending on the value of ignore_unknown
+        :param source:
+        :return:
+        """
+        filename = os.path.join(self.data_dir, source+".csv")
+        label_filename = os.path.join(self.label_dir, source + ".columnmap.txt")
+        logging.debug("Reading source to construct labels: {}".format(filename))
+        correct_encoding = self.find_source_encoding(filename)  # find encoding
+        df = pd.read_csv(filename, dtype=str, encoding=correct_encoding)  # read the data source as a DataFrame
+
+        read_labels = self._read_labelData(label_filename)
+        logging.debug("Labels read.")
+
+        labels = {}
+        for c in df.columns:
+            label = self._get_label(c, read_labels)
+            if self.ignore_unknown and label == "unknown":
+                # we skip unknown columns
+                continue
+            labels[c] = label
+
+        return labels
+
+    @staticmethod
+    def _read_labelData(filepath, header_column="column_name", header_label="semantic_type"):
+        """
+        This method reads in .csv as a Pandas data frame, selects columns "column_name" and "class",
+        drops NaN and converts these two columns into dictionary.
+        We obtain a lookup dictionary
+        where the key is the column name and the value is the class label.
+        :param filepath: string where .csv file is located.
+        :param header_column: header for the column with column names
+        :param header_label: header for the column with labels
+        :return:
+        """
+        frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
+        # dictionary (column_name, class_label)
+        name_labels = frame[[header_column, header_label]].dropna().set_index(header_column)[header_label].to_dict()
+        logging.debug(" labeldata read: {}".format(name_labels))
+        return name_labels
+
     def define_training_data(self, train_sources, train_labels):
         pass
 
@@ -160,9 +204,10 @@ class SemanticTyper(object):
             predicted_df = predicted_df[predicted_df["user_label"] != "unknown"]
         else:
             # change correct labels to unknown if correct label is absent in training classes
+            # if the label is "fail", we leave it like that
             if self.classes and len(self.classes):
                 predicted_df["user_label"] = predicted_df["user_label"].apply(
-                    lambda x: "unknown" if x not in self.classes else x)
+                    lambda x: "unknown" if x not in self.classes and x != "fail" else x)
         logging.info("Size of the predicted df after unknown filter: {}".format(predicted_df.size))
         return predicted_df
 
@@ -230,7 +275,8 @@ class DINTModel(SemanticTyper):
     Wrapper for DINT schema matcher.
     """
     def __init__(self, schema_matcher, feature_config, resampling_strategy,
-                 description, debug_csv=None, ignore_unknown=True):
+                 description, debug_csv=None, ignore_unknown=True,
+                 num_bags=100, bag_size=100):
         """
         Initializes DINT model with the specified feature configuration and resampling strategy.
         The model gets created at schema_matcher server.
@@ -238,6 +284,10 @@ class DINTModel(SemanticTyper):
         :param feature_config: Dictionary with feature configuration for DINT
         :param resampling_strategy: Resampling strategy
         :param description: Description
+        :param debug_csv: optional file name to write prediction at each iteration
+        :param ignore_unknown: boolean indicating how to treat unknow
+        :param num_bags: number of bags to be generated per column
+        :param bag_size: number of rows to be randomly sampled per bag
         """
         logging.info("Initializing DINT model.")
         if not(type(schema_matcher) is SchemaMatcher):
@@ -252,6 +302,8 @@ class DINTModel(SemanticTyper):
         self.classifier = None
         self.datasets = [] # list of associated datasets for this model
         self.parameters = str(self.feature_config)
+        self.num_bags = num_bags
+        self.bag_size = bag_size
 
     def reset(self):
         """
@@ -276,25 +328,6 @@ class DINTModel(SemanticTyper):
 
         self.classifier = None
         self.datasets = []
-
-    @staticmethod
-    def _read_labelData(filepath, header_column="column_name", header_label="class"):
-        """
-        This method reads in .csv as a Pandas data frame, selects columns "column_name" and "class",
-        drops NaN and converts these two columns into dictionary.
-        We obtain a lookup dictionary
-        where the key is the column name and the value is the class label.
-        :param filepath: string where .csv file is located.
-        :param header_column: header for the column with column names
-        :param header_label: header for the column with labels
-        :return:
-        """
-        frame = pd.read_csv(filepath, na_values=[""], dtype={header_column: 'str'})
-        logging.debug("  --> headers {}".format(frame.columns))
-        logging.debug("  --> dtypes {}".format(frame.dtypes))
-        # dictionary (column_name, class_label)
-        name_labels = frame[[header_column, header_label]].dropna().set_index(header_column)[header_label].to_dict()
-        return name_labels
 
     def _construct_labelData(self, matcher_dataset, filepath, header_column="column_name", header_label="class"):
         """
@@ -413,9 +446,9 @@ class DINTModel(SemanticTyper):
                                                    description=self.description,
                                                    labels=label_dict,
                                                    resampling_strategy=self.resampling_strategy,
-                                                   num_bags=10,
-                                                   bag_size=50)
-        self.parameters = str(self.feature_config)
+                                                   num_bags=self.num_bags,
+                                                   bag_size=self.bag_size)
+        self.parameters = str(self.feature_config)+", num_bags={}, bag_size={}".format(self.num_bags, self.bag_size)
         logging.debug("DINT model created on the server!")
 
         return True
@@ -472,7 +505,15 @@ class KarmaDSLModel(SemanticTyper):
         # only these sources can be used for training or testing by different classifiers of SemanticTyper
         allowed_sources += sources
 
-    def __init__(self, karma_session, description, debug_csv=None, ignore_unknown=True):
+    def __init__(self, karma_session, description, debug_csv=None, ignore_unknown=True, prediction_type="column"):
+        """
+        Initialize DSL
+        :param karma_session:
+        :param description:
+        :param debug_csv:
+        :param ignore_unknown:
+        :param prediction_type: "column" , "folder"
+        """
         logging.info("Initializing KarmaDSL model.")
         if not (type(karma_session) is KarmaSession):
             logging.error("KarmaDSLModel init: KarmaSession instance required.")
@@ -484,10 +525,44 @@ class KarmaDSLModel(SemanticTyper):
         self.folder_names = None
         self.train_sizes = None
 
+        if prediction_type not in ["column", "folder", "enhanced"]:
+            logging.warning("Unsupported prediction type for DSL. Setting by default column.")
+            prediction_type = "column"
+        self.parameters = "prediction_type={}".format(prediction_type)
+        self.prediction_type = prediction_type
+
     def reset(self):
         self.karma_session.reset_semantic_labeler()
         self.folder_names = None
         self.train_sizes = None
+
+    def _get_classes(self, train_sources):
+        """
+
+        :param train_sources:
+        :return:
+        """
+        logging.debug("Getting classes from the train set")
+        classes = set()
+        for source in train_sources:
+            classes = classes.union(set(self._construct_labels(source).values()))
+        logging.debug("Classes: {}".format(classes))
+        return classes
+
+    def _enhance_domains(self, train_sources):
+        """
+        Enhance the labeler with domains to which train_sources do not belong.
+        We also need to read in them on the DSL server.
+        :param train_sources:
+        :return:
+        """
+        plus_domains = [k for k, v in benchmark.items() if not (bool(set(v) & set(train_sources)))]
+        logging.info("Domains to be added: {}".format(plus_domains))
+        for d in plus_domains:
+            print("Indexing domain ", d)
+            logging.info("Enhancing train data for KarmaDSL: {}".format(
+                self.karma_session.index_folder(d)))
+        return plus_domains
 
     def define_training_data(self, train_sources, train_labels=None):
         """
@@ -499,8 +574,13 @@ class KarmaDSLModel(SemanticTyper):
         # copy train_sources
         logging.info("Defining train data for KarmaDSL: {}".format(
             self.karma_session.post_folder("train_data", train_sources)))
-        self.folder_names = ["train_data"]
-        self.train_sizes = [len(train_sources)-1]  # TODO: check that it should be exactly this
+        if self.prediction_type == "enhanced":
+            self.folder_names = ["train_data"] + self._enhance_domains(train_sources)
+            self.train_sizes = [1]
+        else:
+            self.folder_names = ["train_data"]
+            self.train_sizes = [len(train_sources)-1]
+        self.classes = self._get_classes(train_sources)
         return True
 
     def train(self):
@@ -512,10 +592,10 @@ class KarmaDSLModel(SemanticTyper):
         logging.error("KarmaDSL cannot be trained since training data is not specified.")
         raise InternalError("KarmaDSL train", "training data absent")
 
-    def predict(self, source):
+    def _predict_folder_source(self, source):
         """
-
-        :param source:
+        Perform karma prediction by indexing folder
+        :param source: name of the source
         :return:
         """
         if source not in self.allowed_sources:
@@ -526,7 +606,74 @@ class KarmaDSLModel(SemanticTyper):
         predicted = self.karma_session.predict_folder("test_data")
         logging.info("KarmaDSL prediction finished: {}".format(predicted["running_time"]))
         print("     KarmaDSL prediction finished: {}".format(predicted["running_time"]))
-        df = []
+        return self._process_predicted_df(predicted, source)
+
+    @staticmethod
+    def _update_predictions(column_predict, predicted, labels, source, column_name):
+        """
+
+        :param column_predict:
+        :param predicted:
+        :param labels:
+        :return:
+        """
+        logging.info("Updating predictions for column {}".format(column_name))
+        if len(column_predict["predictions"]) and len(column_predict["predictions"]) == 1:
+            val = column_predict["predictions"][0]
+            if val["column_name"] in labels:
+                val["correct_label"] = labels[val["column_name"]]  # take the label from here
+            else:
+                val["correct_label"] = "unknown"
+        else:
+            val = {'source_name': source,
+                   'column_name': column_name,
+                   'correct_label': labels[column_name],
+                   'scores': [(1.0, 'fail')]
+                   }
+        predicted["predictions"].append(val)
+        predicted["running_time"] += column_predict["running_time"]
+
+        return predicted
+
+    def _predict_column_source(self, source):
+        """
+        Apply dsl to each column separately in the source
+        :param source:
+        :return:
+        """
+        logging.debug("DSL prediction for source: {}".format(source))
+        # source file name
+        filename = os.path.join(self.data_dir, source + ".csv")
+        # label file name for this source
+        label_filename = os.path.join(self.label_dir, source + ".columnmap.txt")
+
+        correct_encoding = self.find_source_encoding(filename)  # find encoding
+        df = pd.read_csv(filename, dtype=str, encoding=correct_encoding)  # read the data source as a DataFrame
+
+        labels = self._construct_labels(source)
+        logging.debug("Labels read for DSL: {}".format(labels))
+
+        predicted = {"folder_name": "", "running_time": 0.0, "predictions": []}
+        for c in df.columns:
+            label = self._get_label(c, labels)
+            if self.ignore_unknown and label == "unknown":
+                # we skip unknown columns
+                continue
+            column_values = list(df[c])
+            column_predict = self.karma_session.predict_column(source, c, column_values)
+            logging.info("DSL success for column: {} in source {}".format(c, source))
+            predicted = self._update_predictions(column_predict, predicted, labels, source, c)
+
+        return self._process_predicted_df(predicted, source)
+
+    def _process_predicted_df(self, predicted, source):
+        """
+
+        :param predicted:
+        :param source:
+        :return:
+        """
+        predicted_df = []
         for val in predicted["predictions"]:
             correct_lab = val["correct_label"] if val["correct_label"] is not None else 'unknown'
             row = {"column_name": val["column_name"],
@@ -536,17 +683,33 @@ class KarmaDSLModel(SemanticTyper):
                    "model_description": self.description
                    }
             max = 0
-            label = "fail"
+            label = "unknown"
             for sc in val["scores"]:
-                row["scores_"+sc[1]] = sc[0]
+                row["scores_" + sc[1]] = sc[0]
                 if sc[0] > max:
                     max = sc[0]
                     label = sc[1]
             row["label"] = label
-            df.append(row)
-        df = pd.DataFrame(df)
-        df["running_time"] = predicted["running_time"]
-        df["ignore_unknown"] = self.ignore_unknown
+            row["scores_unknown"] = 1.0 if label == "unknown" else 0.0
+            predicted_df.append(row)
+        predicted_df = pd.DataFrame(predicted_df)
+        predicted_df["running_time"] = predicted["running_time"]
+        predicted_df["ignore_unknown"] = self.ignore_unknown
+        return predicted_df
+
+    def predict(self, source):
+        """
+
+        :param source:
+        :return:
+        """
+        if self.prediction_type == "column":
+            logging.info("Starting column-wise prediction for source {}".format(source))
+            df = self._predict_column_source(source)
+        else:
+            logging.info("Starting folder-wise prediction for source {}".format(source))
+            df = self._predict_folder_source(source)
+
         return df
 
 
@@ -603,10 +766,7 @@ class NNetModel(SemanticTyper):
         df = pd.read_csv(filename, dtype=str, encoding=correct_encoding)  # read the data source as a DataFrame
         # labels = pd.read_csv(label_filename)   # read the semantic labels of columns in df
 
-        labels_frame = pd.read_csv(label_filename, na_values=[""], dtype={'column_name': 'str'})
-        # dictionary (column_name, class_label)
-        labels = labels_frame[['column_name', 'semantic_type']].dropna().set_index(
-            'column_name')['semantic_type'].to_dict()
+        labels = self._read_labelData(label_filename)
         logging.debug("Labels read for NNet.")
 
         source_cols = []

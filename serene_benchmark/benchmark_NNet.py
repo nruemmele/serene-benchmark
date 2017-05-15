@@ -41,7 +41,8 @@ def test_cnn(ignore_unknown=True, experiment_type="leave_one_out", domains=None)
                             result_csv=os.path.join('results', "performance_nnet_ignore{}_{}.csv".format(
                                 ignore_unknown, experiment_type)),
                             debug_csv=os.path.join("results", "debug_nnet_ignore{}_{}.csv".format(
-                                ignore_unknown, experiment_type)))
+                                ignore_unknown, experiment_type)),
+                            holdout=0.2)
 
     if domains:
         experiment.change_domains(domains)
@@ -66,13 +67,21 @@ if __name__ == "__main__":
     log.addHandler(my_handler)
 
     experiments = ["leave_one_out", "repeated_holdout"]
-    ignore = [True, False]
+    experiments = ["repeated_holdout"]
 
+    ignore = [True]
     for ig in ignore:
         print("Setting ignore_unknown: ", ig)
         for exp in experiments:
             print("Performing experiment:", exp)
             test_cnn(ignore_unknown=ig, experiment_type=exp)
+
+    ignore = [False]
+    for ig in ignore:
+        print("Setting ignore_unknown: ", ig)
+        for exp in experiments:
+            print("Performing experiment:", exp)
+            test_cnn(ignore_unknown=ig, experiment_type=exp, domains=["soccer", "museum"])
 
 
 
