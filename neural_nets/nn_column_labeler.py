@@ -793,12 +793,12 @@ class NN_Column_Labeler(object):
 
 
 class Ensemble_Average(object):
-    """Ensemble models (classifiers in labeler and, optionally, Paul's model in paul_labeler) via unweighted averaging of their class probability predictions"""
+    """Ensemble models (classifiers in labeler and, optionally, DINT model in dint_labeler) via unweighted averaging of their class probability predictions"""
 
-    def __init__(self, labeler, paul_labeler=None):
+    def __init__(self, labeler, dint_labeler=None):
         self.labeler = labeler
-        self.paul_labeler = paul_labeler
-        if paul_labeler is not None: self.paul_predictions_file = paul_labeler.predictions_file
+        self.paul_labeler = dint_labeler
+        if dint_labeler is not None: self.paul_predictions_file = dint_labeler.predictions_file
 
     def predict_proba(self, query_cols):
         """Predict average class probabilities, by averaging class probabilities of all models in self.labeler and self.paul_labeler"""
