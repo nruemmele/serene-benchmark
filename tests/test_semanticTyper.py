@@ -1,3 +1,8 @@
+"""
+Copyright (C) 2016 Data61 CSIRO
+Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
+
+"""
 from unittest import TestCase
 from serene_benchmark.semantic_typer import SemanticTyper
 import pandas as pd

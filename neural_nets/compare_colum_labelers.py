@@ -1,3 +1,8 @@
+"""
+Copyright (C) 2016 Data61 CSIRO
+Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
+
+"""
 # coding: utf-8
 
 # This notebook compares semantic type predictions of several column labelers: Paul's model with elaborate engineered features, and "my" models with simple features (padded character sequences and/or character frequencies+entropy of examples generated from columns through bagging).
