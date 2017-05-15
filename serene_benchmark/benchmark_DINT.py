@@ -53,6 +53,27 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling", i
                                                        "max-comparisons-per-class": 5
                                                        }]
                            }
+    elif features=="fullcity":
+        feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
+                                                  "ratio-alpha-chars", "prop-numerical-chars",
+                                                  "prop-whitespace-chars", "prop-entries-with-at-sign",
+                                                  "prop-entries-with-hyphen", "prop-entries-with-paren",
+                                                  "prop-entries-with-currency-symbol", "mean-commas-per-entry",
+                                                  "mean-forward-slashes-per-entry",
+                                                  "prop-range-format", "is-discrete", "entropy-for-discrete-values",
+                                                  "shannon-entropy"],
+                               "activeFeatureGroups": ["char-dist-features", "stats-of-text-length",
+                                                       "stats-of-numerical-type",
+                                                       "mean-character-cosine-similarity-from-class-examples"],
+                               "featureExtractorParams": [{"name": "prop-instances-per-class-in-knearestneighbours",
+                                                           "num-neighbours": 5
+                                                           }, {"name": "min-wordnet-jcn-distance-from-class-examples",
+                                                               "max-comparisons-per-class": 5
+                                                               },
+                                                          {"name": "min-wordnet-lin-distance-from-class-examples",
+                                                           "max-comparisons-per-class": 5
+                                                           }]
+                          }
     elif features=="fullchardist":
         feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
                                                   "ratio-alpha-chars", "prop-numerical-chars",
@@ -76,6 +97,11 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling", i
                                                           {"name": "min-wordnet-lin-distance-from-class-examples",
                                                            "max-comparisons-per-class": 3
                                                            }]
+                               }
+    elif features=="chardist-edit":
+        feature_config = {"activeFeatures": ["shannon-entropy"],
+                               "activeFeatureGroups": ["char-dist-features",
+                                                       "min-editdistance-from-class-examples"]
                                }
     elif features=="chardistonly":
         feature_config = {"activeFeatures": ["shannon-entropy"],
@@ -180,9 +206,7 @@ def test_simple_holdout():
     loo_experiment.run()
 
 
-def test_fullfeature_noresampling():
-    # ******* setting up DINTModel
-    dm = SchemaMatcher(host="localhost", port=8080)
+def test_city(dm):
     # dictionary with features
     full_feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
                                               "ratio-alpha-chars", "prop-numerical-chars",
@@ -190,14 +214,11 @@ def test_fullfeature_noresampling():
                                               "prop-entries-with-hyphen", "prop-entries-with-paren",
                                               "prop-entries-with-currency-symbol", "mean-commas-per-entry",
                                               "mean-forward-slashes-per-entry",
-                                              "prop-range-format", "is-discrete", "entropy-for-discrete-values"],
+                                              "prop-range-format", "is-discrete", "entropy-for-discrete-values",
+                                              "shannon-entropy"],
                            "activeFeatureGroups": ["char-dist-features", "stats-of-text-length",
                                                    "stats-of-numerical-type",
-                                                   "prop-instances-per-class-in-knearestneighbours",
-                                                   "mean-character-cosine-similarity-from-class-examples",
-                                                   "min-editdistance-from-class-examples",
-                                                   "min-wordnet-jcn-distance-from-class-examples",
-                                                   "min-wordnet-lin-distance-from-class-examples"],
+                                                   "mean-character-cosine-similarity-from-class-examples"],
                            "featureExtractorParams": [{"name": "prop-instances-per-class-in-knearestneighbours",
                                                        "num-neighbours": 5
                                                        }, {"name": "min-wordnet-jcn-distance-from-class-examples",
@@ -209,10 +230,10 @@ def test_fullfeature_noresampling():
                            }
 
     # resampling strategy
-    resampling_strategy = "NoResampling"
+    resampling_strategy = "Bagging"
     dint_model = DINTModel(dm, full_feature_config,
                            resampling_strategy,
-                           "DINTModel with chardist and no resampling and changed headers",
+                           "DINTModel: resampling {}, features fullchardist".format(resampling_strategy),
                            debug_csv=os.path.join("results","debug_dint_chardist_noresampling_head.csv"))
 
     # models for experiments
@@ -222,6 +243,7 @@ def test_fullfeature_noresampling():
                                 description="plain loo",
                                 result_csv=os.path.join('results', "performance_noresampling_chardist.csv"),
                                 debug_csv=os.path.join("results", "debug_noresampling_head.csv"))
+    loo_experiment.change_domains(domains=["dbpedia"])
     loo_experiment.run()
 
 
@@ -530,6 +552,126 @@ def test_resampletomean():
     loo_experiment.run()
 
 
+def make_experiment(dm_session, strategies, cur_experiments, cur_features, unknown_ignore, domains=None):
+    for strat in strategies:
+        print("Picking strategy: ", strat)
+        for exp in cur_experiments:
+            print("Performing experiment:", exp)
+            for ig in unknown_ignore:
+                print("Setting ignore_unknown: ", ig)
+                models = [create_dint_model(dm_session, feat, strat, ig) for feat in cur_features]
+                experiment = Experiment(models,
+                                        experiment_type=exp,
+                                        description=exp + "_ignore" + str(ig) + "_strategy" + strat,
+                                        result_csv=os.path.join('results', "performance_dint_{}_ignore{}.csv".format(
+                                            strat, ig)
+                                                                ),
+                                        debug_csv=os.path.join("results", "debug_dint_{}_ignore{}.csv".format(
+                                            strat, ig)
+                                                               ),
+                                        holdout=0.2, num=10)
+
+                if domains:
+                    experiment.change_domains(domains)
+                experiment.run()
+
+
+def benchmark_bagging_num(dm_session):
+    feature_config = {"activeFeatures": ["shannon-entropy"],
+                      "activeFeatureGroups": ["char-dist-features"]}
+    print("Picking strategy: Bagging")
+    print("Performing experiment: repeated_holdout", )
+    print("Setting ignore_unknown: True")
+
+    d1 = DINTModel(dm_session, feature_config,
+                   "Bagging",
+                   "DINTModel: resampling Bagging, chardistonly",
+                   debug_csv=os.path.join("results", "debug_dint_Bagging_chardist.csv"),
+                   ignore_unknown=True,
+                   num_bags=100, bag_size=100)
+    d2 = DINTModel(dm_session, feature_config,
+                   "Bagging",
+                   "DINTModel: resampling Bagging, chardistonly",
+                   debug_csv=os.path.join("results", "debug_dint_Bagging_chardist.csv"),
+                   ignore_unknown=True,
+                   num_bags=10, bag_size=100)
+    d3 = DINTModel(dm_session, feature_config,
+                   "Bagging",
+                   "DINTModel: resampling Bagging, chardistonly",
+                   debug_csv=os.path.join("results", "debug_dint_Bagging_chardist.csv"),
+                   ignore_unknown=True,
+                   num_bags=150, bag_size=100)
+    d4 = DINTModel(dm_session, feature_config,
+                   "Bagging",
+                   "DINTModel: resampling Bagging, chardistonly",
+                   debug_csv=os.path.join("results", "debug_dint_Bagging_chardist.csv"),
+                   ignore_unknown=True,
+                   num_bags=50, bag_size=100)
+
+    experiment = Experiment([d1,d2,d3,d4],
+                            experiment_type="repeated_holdout",
+                            description="repeated_holdout_ignoreTrue_strategyBagging",
+                            result_csv=os.path.join('results', "performance_dint_Bagging_ignoreTrue.csv"),
+                            debug_csv=os.path.join("results", "debug_dint_Bagging_ignoreTrue.csv"),
+                            holdout=0.2, num=10)
+    experiment.run()
+
+    # experiment = Experiment([d1, d2, d3, d4],
+    #                         experiment_type="leave_one_out",
+    #                         description="leave_one_out_ignoreFalse_strategyBagging",
+    #                         result_csv=os.path.join('results', "performance_dint_Bagging_ignoreFalse.csv"),
+    #                         debug_csv=os.path.join("results", "debug_dint_Bagging_ignoreFalse.csv"),
+    #                         holdout=0.2, num=10)
+    # experiment.run()
+
+def benchmark_bagging_size(dm_session):
+    feature_config = {"activeFeatures": ["shannon-entropy"],
+                      "activeFeatureGroups": ["char-dist-features"]}
+    print("Picking strategy: Bagging")
+    print("Performing experiment: repeated_holdout", )
+    print("Setting ignore_unknown: True")
+
+    d1 = DINTModel(dm_session, feature_config,
+                   "Bagging",
+                   "DINTModel: resampling Bagging, chardistonly",
+                   debug_csv=os.path.join("results", "debug_dint_Bagging_chardist_ignoreTrue.csv"),
+                   ignore_unknown=True,
+                   num_bags=50, bag_size=10)
+    d2 = DINTModel(dm_session, feature_config,
+                   "Bagging",
+                   "DINTModel: resampling Bagging, chardistonly",
+                   debug_csv=os.path.join("results", "debug_dint_Bagging_chardist_ignoreTrue.csv"),
+                   ignore_unknown=True,
+                   num_bags=50, bag_size=30)
+    d3 = DINTModel(dm_session, feature_config,
+                   "Bagging",
+                   "DINTModel: resampling Bagging, chardistonly",
+                   debug_csv=os.path.join("results", "debug_dint_Bagging_chardist_ignoreTrue.csv"),
+                   ignore_unknown=True,
+                   num_bags=50, bag_size=50)
+    # d4 = DINTModel(dm_session, feature_config,
+    #                "Bagging",
+    #                "DINTModel: resampling Bagging, chardistonly",
+    #                debug_csv=os.path.join("results", "debug_dint_Bagging_chardist_ignoreTrue.csv"),
+    #                ignore_unknown=True,
+    #                num_bags=50, bag_size=80)
+    d5 = DINTModel(dm_session, feature_config,
+                   "Bagging",
+                   "DINTModel: resampling Bagging, chardistonly",
+                   debug_csv=os.path.join("results", "debug_dint_Bagging_chardist_ignoreTrue.csv"),
+                   ignore_unknown=True,
+                   num_bags=50, bag_size=100)
+
+    experiment = Experiment([d1,d2,d3,d5],
+                            experiment_type="repeated_holdout",
+                            description="repeated_holdout_ignoreTrue_strategyBagging",
+                            result_csv=os.path.join('results', "performance_dint_Bagging_ignoreTrue.csv"),
+                            debug_csv=os.path.join("results", "debug_dint_Bagging_ignoreTrue.csv"),
+                            holdout=0.2, num=10)
+    experiment.change_domains(domains=["soccer", "museum","dbpedia","weather", "weapons"])
+    experiment.run()
+
+
 if __name__ == "__main__":
 
     # setting up the logging
@@ -557,37 +699,49 @@ if __name__ == "__main__":
     # test_resampletomean()
     # test_simple(ignore_uknown=True, domains=["weapons"])
 
-    ignore = [True, False]
-    resampling_strategies = ["NoResampling", "BaggingToMean", "ResampleToMean", "Bagging"]
-    #features = ["chardistonly", "chardist-rfknn", "single", "noheader", "full", "fullchardist"]
-    features = ["chardistonly", "chardist-rfknn", "single", "noheader"]
-    experiments = ["leave_one_out", "repeated_holdout"]
-
+    # establish connection to Serene server
     dm = SchemaMatcher(host="localhost", port=8080)
-
     logging.info("Cleaning models from DINT server")
-    for m in dm.models:
-        dm.remove_model(m)
-    logging.info("Cleaning datasets from DINT server")
-    for ds in dm.datasets:
-        dm.remove_dataset(ds)
+    # for m in dm.models:
+    #     dm.remove_model(m)
+    # logging.info("Cleaning datasets from DINT server")
+    # for ds in dm.datasets:
+    #     dm.remove_dataset(ds)
 
-    for strat in resampling_strategies:
-        print("Picking strategy: ", strat)
-        for ig in ignore:
-            print("Setting ignore_unknown: ", ig)
-            for exp in experiments:
-                print("Performing experiment:", exp)
-                models = [create_dint_model(dm, feat, strat, ig) for feat in features]
-                experiment = Experiment(models,
-                                        experiment_type=exp,
-                                        description=exp+"_ignore"+str(ig)+"_strategy"+strat,
-                                        result_csv=os.path.join('results', "performance_dint_{}_ignore{}.csv".format(
-                                            strat, ig)
-                                                                ),
-                                        debug_csv=os.path.join("results", "debug_dint_{}_ignore{}.csv".format(
-                                            strat, ig)
-                                                               ))
+    ######################################
+    # all will be run only for no resampling
+    # features = ["fullchardist"]
+    # experiments = ["repeated_holdout"]
+    # make_experiment(dm_session=dm, strategies=["NoResampling"],
+    #                 cur_experiments=experiments, cur_features=features,
+    #                 unknown_ignore=[True])
 
-                experiment.run()
+    # make_experiment(dm_session=dm, strategies=["NoResampling"],
+    #                 cur_experiments=experiments, cur_features=features,
+    #                 unknown_ignore=[False], domains=["soccer"])
 
+    ######################################
+    resampling_strategies = ["Bagging"]
+    #features = ["chardistonly", "chardist-rfknn", "single", "noheader", "full", "fullchardist"]
+    experiments = ["leave_one_out"]
+
+    # features = ["chardist-edit","fullcity"]
+    # make_experiment(dm_session=dm, strategies=resampling_strategies,
+    #                 cur_experiments=experiments, cur_features=features,
+    #                 unknown_ignore=[True], domains=["dbpedia"])
+
+    features = ["fullchardist"]
+    make_experiment(dm_session=dm, strategies=resampling_strategies,
+                    cur_experiments=experiments, cur_features=features,
+                    unknown_ignore=[False], domains=["soccer", "museum"])
+
+    features = ["fullchardist"]
+    make_experiment(dm_session=dm, strategies=resampling_strategies,
+                    cur_experiments=["repeated_holdout"], cur_features=features,
+                    unknown_ignore=[False], domains=["soccer", "museum"])
+
+
+    ####################################
+    # test_city(dm)
+    # benchmark_bagging_num(dm)
+    # benchmark_bagging_size(dm)
