@@ -135,7 +135,8 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling", i
                            debug_csv=os.path.join("results",
                                                   "debug_dint_{}_{}_ignore{}.csv".format(
                                                       resampling_strategy, features, ignore_uknown)),
-                           ignore_unknown=ignore_uknown)
+                           ignore_unknown=ignore_uknown,
+                           num_bags=100, bag_size=100)
     return dint_model
 
 

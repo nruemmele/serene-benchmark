@@ -1,3 +1,8 @@
+"""
+Copyright (C) 2016 Data61 CSIRO
+Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
+
+"""
 import itertools as it
 import os
 import os.path
@@ -134,7 +139,7 @@ class Reader(object):
             for col in cols:
                 X_single, y_single = col.bagging(size, n, add_header, p_header)
                 for x_s, y_s in zip(X_single, y_single):
-                    flattened = [ord(char) for char in '\n'.join(x_s)]   # concatenate elements of x_s (column lines) into one string, and replace chars with their unicode indices
+                    flattened = [ord(char) for char in '\n'.join(str(v) for v in x_s)]   # concatenate elements of x_s (column lines) into one string, and replace chars with their unicode indices
                     X.append(flattened)
                     if y_s in label_lookup:
                         y.append(label_lookup[y_s])

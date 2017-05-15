@@ -14,16 +14,36 @@ from logging.handlers import RotatingFileHandler
 def test_karma(ignore_unknown=True, experiment_type="leave_one_out", domains=None):
     # ******** setting up KarmaDSL model
     dsl = KarmaSession(host="localhost", port=8000)
-    dsl_model = KarmaDSLModel(dsl, "default KarmaDSL model", ignore_unknown=ignore_unknown)
+    dsl_model1 = KarmaDSLModel(dsl, "default KarmaDSL model",
+                               ignore_unknown=ignore_unknown, prediction_type="column",
+                               debug_csv=os.path.join("results",
+                                                      "debug_dsl_column_{}_ignore{}.csv".format(
+                                                          experiment_type, ignore_unknown)
+                                                      ))
+    dsl_model2 = KarmaDSLModel(dsl, "KarmaDSL",
+                               ignore_unknown=ignore_unknown, prediction_type="folder",
+                               debug_csv=os.path.join("results",
+                                                      "debug_dsl_folder_{}_ignore{}.csv".format(
+                                                          experiment_type, ignore_unknown)
+                                                      ))
+    dsl_model_plus = KarmaDSLModel(dsl, "KarmaDSL+",
+                               ignore_unknown=ignore_unknown, prediction_type="enhanced",
+                               debug_csv=os.path.join("results",
+                                                      "debug_dsl_column_{}_ignore{}.csv".format(
+                                                          experiment_type, ignore_unknown)
+                                                      ))
 
     # models for experiments
-    models = [dsl_model]
+    models = [dsl_model1, dsl_model2]
+    models = [dsl_model_plus]
 
     experiment = Experiment(models,
                             experiment_type=experiment_type,
                             description=experiment_type,
-                            result_csv=os.path.join('results', "performance_dsl_{}_{}.csv".format(experiment_type, "museum_soccer")),
-                            debug_csv=os.path.join("results", "debug_dsl_{}_{}.csv".format(experiment_type, "museum_soccer")))
+                            result_csv=os.path.join('results', "performance_dsl_{}_{}.csv".format(experiment_type, "all")),
+                            debug_csv=os.path.join("results", "debug_dsl_{}_{}.csv".format(experiment_type, "all")),
+                            holdout=0.2
+                            )
 
     if domains:
         experiment.change_domains(domains)
@@ -53,11 +73,21 @@ if __name__ == "__main__":
     #     print("Performing experiment:", exp)
     #     test_karma(experiment_type=exp, domains=["weather"])
 
-    experiments = ["leave_one_out", "repeated_holdout"]
-    ignore = [True, False]
+    experiments = [ "repeated_holdout"]
+    # experiments = ["repeated_holdout"]
+    # ignore = [False, True]
+    ignore = [True]
 
     for ig in ignore:
         print("Setting ignore_unknown: ", ig)
         for exp in experiments:
             print("Performing experiment:", exp)
-            test_karma(ignore_unknown=ig, experiment_type=exp, domains=["museum", "soccer"])
+            test_karma(ignore_unknown=ig, experiment_type=exp)
+
+    ignore = [False]
+    for ig in ignore:
+        print("Setting ignore_unknown: ", ig)
+        for exp in experiments:
+            print("Performing experiment:", exp)
+            test_karma(ignore_unknown=ig, experiment_type=exp, domains=["soccer", "museum"])
+

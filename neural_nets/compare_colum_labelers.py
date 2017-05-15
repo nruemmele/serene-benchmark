@@ -1,6 +1,11 @@
+"""
+Copyright (C) 2016 Data61 CSIRO
+Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
+
+"""
 # coding: utf-8
 
-# This notebook compares semantic type predictions of several column labelers: Paul's model with elaborate engineered features, and "my" models with simple features (padded character sequences and/or character frequencies+entropy of examples generated from columns through bagging).
+# This notebook compares semantic type predictions of several column labelers: DINT model with elaborate engineered features, and "my" models with simple features (padded character sequences and/or character frequencies+entropy of examples generated from columns through bagging).
 #
 # The aim is to compare the column labelers, and see whether they can mutually enforce each other when their predictions are combined.
 
@@ -672,28 +677,28 @@ class Column_Labeler(object):
 # In[59]:
 
 class Ensemble_Average(object):
-    """Ensemble models (classifiers in labeler and, optionally, Paul's model in paul_labeler) via unweighted averaging of their class probability predictions"""
+    """Ensemble models (classifiers in labeler and, optionally, DINT model in dint_labeler) via unweighted averaging of their class probability predictions"""
 
-    def __init__(self, labeler, paul_labeler=None):
+    def __init__(self, labeler, dint_labeler=None):
         self.labeler = labeler
-        self.paul_labeler = paul_labeler
-        if paul_labeler is not None: self.paul_predictions_file = paul_labeler.predictions_file
+        self.dint_labeler = dint_labeler
+        if dint_labeler is not None: self.dint_predictions_file = dint_labeler.predictions_file
 
     def predict_proba(self, query_cols):
-        """Predict average class probabilities, by averaging class probabilities of all models in self.labeler and self.paul_labeler"""
+        """Predict average class probabilities, by averaging class probabilities of all models in self.labeler and self.dint_labeler"""
         predictions_proba = self.labeler.predict_proba(
             query_cols)  # this is a list of dicts, each dict has key=model, value=np.array(class probabilities)
         try:
-            predictions_proba_paul, _ = self.paul_labeler.predict(query_cols,
-                                                                  self.paul_predictions_file)  # this is a list of dicts, each dict has key=semantic class, value=class probability
-            # Convert predictions_proba_paul to the same format as predictions_proba, and add to predictions_proba:
-            for i, paul_pred in enumerate(predictions_proba_paul):
-                y_pred = np.array([paul_pred[l] for l in [self.labeler.inverted_lookup[i] for i in range(len(
-                    self.labeler.labels))]])  # Paul's model's predicted class probabilities for column query_cols[i]
+            predictions_proba_dint, _ = self.dint_labeler.predict(query_cols,
+                                                                  self.dint_predictions_file)  # this is a list of dicts, each dict has key=semantic class, value=class probability
+            # Convert predictions_proba_dint to the same format as predictions_proba, and add to predictions_proba:
+            for i, dint_pred in enumerate(predictions_proba_dint):
+                y_pred = np.array([dint_pred[l] for l in [self.labeler.inverted_lookup[i] for i in range(len(
+                    self.labeler.labels))]])  # dint's model's predicted class probabilities for column query_cols[i]
                 predictions_proba[i][
-                    'paul'] = y_pred  # add Paul's model's predicted class probabilities to predictions_proba
+                    'dint'] = y_pred  # add dint's model's predicted class probabilities to predictions_proba
         except:
-            None  # if paul_labeler is not passed as an argument, do nothing here, and just ensemble predictions_proba by 'my' classifiers only
+            None  # if dint_labeler is not passed as an argument, do nothing here, and just ensemble predictions_proba by 'my' classifiers only
 
         for p in predictions_proba:  # loop over predictions_proba for query_cols
             p['ensemble_avg'] = np.mean(np.dstack([p.popitem()[1] for _ in range(len(p.items()))]),
@@ -735,8 +740,8 @@ class Ensemble_Average(object):
 
 # In[60]:
 
-class Paul_Code_Runner(object):
-    """Train and predict semantic labels using Paul's model"""
+class dint_Code_Runner(object):
+    """Train and predict semantic labels using dint's model"""
 
     def __init__(self, path, repo, resampling):
         self.path = path
@@ -777,8 +782,8 @@ class Paul_Code_Runner(object):
         return stdout, stderr, proc.returncode
 
 
-class Paul_Labeler(object):
-    """Paul's column labeler"""
+class dint_labeler(object):
+    """dint's column labeler"""
 
     def _save_columns(self, directory, cols):
         """Save columns from cols to data files with cols.title names, in specified directory"""
@@ -786,7 +791,7 @@ class Paul_Labeler(object):
         for i, c in enumerate(cols, start=1):
             # Save the column c to a unique csv file:
             df = pd.DataFrame()  # columns=[c.title])
-            #             df[re.sub(c.title, '<CENSORED>', c.colname)] = c.lines  # we are removing c.title from c.colname, since c.title is the target label, and Paul's code uses colnames as predictors
+            #             df[re.sub(c.title, '<CENSORED>', c.colname)] = c.lines  # we are removing c.title from c.colname, since c.title is the target label, and dint's code uses colnames as predictors
             df['<CENSORED>'] = c.lines  # we censor the column name completely, to avoid leaking the class label
             filename = c.filename + '_' + str(i) + '.csv'
             df.to_csv(directory + filename, index=False)
@@ -800,7 +805,7 @@ class Paul_Labeler(object):
         return pd.DataFrame(semtype_labels, columns=['attr_id', 'class'])
 
     def __init__(self, labeler, repo_path):
-        """Initialise Paul's labeler: save labeler.train_cols and labeler.test_cols to repo, etc."""
+        """Initialise dint's labeler: save labeler.train_cols and labeler.test_cols to repo, etc."""
         self.labels = labeler.labels
         self.label_lookup = labeler.label_lookup
         self.inverted_lookup = labeler.inverted_lookup
@@ -820,31 +825,31 @@ class Paul_Labeler(object):
     def predict(self, cols, predictions_file, verbose=False):
         """Predict labels of cols using predicted labels in label_file"""
         self.predictions_file = predictions_file
-        if verbose: print('Extracting Paul code\'s predictions...')
-        paul_pred_df = pd.read_csv(self.predictions_file)
-        paul_pred_df = paul_pred_df[['id', 'label', 'confidence'] + list(self.labels)]
+        if verbose: print('Extracting dint code\'s predictions...')
+        dint_pred_df = pd.read_csv(self.predictions_file)
+        dint_pred_df = dint_pred_df[['id', 'label', 'confidence'] + list(self.labels)]
 
-        paul_soft_labels_pred = dict()
-        paul_hard_labels_pred = dict()
-        for i in paul_pred_df.index:
-            i_id = paul_pred_df.get_value(i, 'id')
-            paul_hard_labels_pred[i_id] = paul_pred_df.get_value(i, 'label')
-            paul_soft_labels_pred[i_id] = {k: paul_pred_df.get_value(i, k) for k in self.labels}
+        dint_soft_labels_pred = dict()
+        dint_hard_labels_pred = dict()
+        for i in dint_pred_df.index:
+            i_id = dint_pred_df.get_value(i, 'id')
+            dint_hard_labels_pred[i_id] = dint_pred_df.get_value(i, 'label')
+            dint_soft_labels_pred[i_id] = {k: dint_pred_df.get_value(i, k) for k in self.labels}
 
         # for col in cols:
-        #             col.label_paul = paul_hard_labels_pred[col.id]
+        #             col.label_dint = dint_hard_labels_pred[col.id]
         predictions_proba = []
         predictions = []
         for col in cols:
-            predictions_proba.append(paul_soft_labels_pred[col.id])
-            predictions.append(paul_hard_labels_pred[col.id])
+            predictions_proba.append(dint_soft_labels_pred[col.id])
+            predictions.append(dint_hard_labels_pred[col.id])
 
         return predictions_proba, predictions
 
     def evaluate(self, cols, predictions_file):
-        """Evaluate Paul's labeler on cols"""
+        """Evaluate dint's labeler on cols"""
         #         try:
-        #             assert(all([hasattr(c,'label_paul') for c in cols]))
+        #             assert(all([hasattr(c,'label_dint') for c in cols]))
         #         except:
         #             print("Labels not predicted for all passed columns. Extracting label predictions...",end=" ")
         #             self.predict(cols,predictions_file,verbose=False)
@@ -860,7 +865,7 @@ class Paul_Labeler(object):
                                                      verbose=False))  # list of dictionaries with key=semantic class, value=probability
 
         y_pred = np.array(y_pred)
-        y_pred_proba = np.array([np.array([y[l] for l in paul_labeler.inverted_lookup.values()]) for y in
+        y_pred_proba = np.array([np.array([y[l] for l in dint_labeler.inverted_lookup.values()]) for y in
                                  y_pred_proba])  # convert into a 2d array, each row is a class probability vector
 
         if 'categorical_accuracy' in metrics:
@@ -1016,22 +1021,22 @@ performance
 # In[75]:
 
 repo_path = './data/museum_repo_jupyter/'
-paul_labeler = Paul_Labeler(labeler, repo_path)
+dint_labeler = dint_labeler(labeler, repo_path)
 
 # In[76]:
 
-# RUN PAUL'S CODE:
+# RUN dint'S CODE:
 resampling = 'NoResampling'
-paul_code_runner = Paul_Code_Runner(
+dint_code_runner = dint_Code_Runner(
     path='/home/yuriy/Projects/Data_integration/code/data-integration/prototype/semantic_type_classifier/',
     repo='museum_repo_jupyter/', resampling=resampling)
-print("Training Paul's model...", end=' ')
-stdout_train, stderr_train, returncode_train = paul_code_runner.train()
+print("Training dint's model...", end=' ')
+stdout_train, stderr_train, returncode_train = dint_code_runner.train()
 
 if returncode_train is None or returncode_train == 0:
     print('OK')
     print('Predicting labels...', end=' ')
-    stdout_predict, stderr_predict, returncode_predict = paul_code_runner.predict()
+    stdout_predict, stderr_predict, returncode_predict = dint_code_runner.predict()
 
     if returncode_predict is None or returncode_predict == 0:
         print('OK')
@@ -1052,17 +1057,17 @@ os.getcwd()
 # In[78]:
 
 query_cols = copy.deepcopy(labeler.test_cols)
-paul_predictions_file = repo_path + "labels/predicted/pred_test.csv.derivedfeatures.csv"
-performance_paul, _, _ = paul_labeler.evaluate(query_cols, paul_predictions_file)
+dint_predictions_file = repo_path + "labels/predicted/pred_test.csv.derivedfeatures.csv"
+performance_dint, _, _ = dint_labeler.evaluate(query_cols, dint_predictions_file)
 
-for k in performance_paul.keys():
-    performance[k]['paul' + '_' + resampling] = performance_paul[k]
+for k in performance_dint.keys():
+    performance[k]['dint' + '_' + resampling] = performance_dint[k]
 
 performance
 
 # In[79]:
 
-ensemble_all = Ensemble_Average(labeler, paul_labeler)  # ensemble all models (classifiers in labeler and Paul's model)
+ensemble_all = Ensemble_Average(labeler, dint_labeler)  # ensemble all models (classifiers in labeler and dint's model)
 performance_ensemble_all, _, _ = ensemble_all.evaluate(query_cols)
 
 for k in performance_ensemble_all.keys():
