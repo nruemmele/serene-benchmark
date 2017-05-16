@@ -38,7 +38,7 @@ For NNetModel, allowed model types are: 'cnn@charseq' (CNN on character sequence
 DINT feature configuration is explained [here](http://github.com/NICTA/serene-benchmark/blob/experimental/doc/features.txt),
 and resampling strategy [here](http://github.com/NICTA/serene-benchmark/blob/experimental/doc/resampling-strategy).
 
-DSL has only one default model with no further configuration available to the user.
+DSL can be run in two modes: "normal" when labeled data is used only from one domain or "enhanced" when labeled from other domains is used.
 
 
 To install the package 'serene-benchmark', run
