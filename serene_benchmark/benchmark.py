@@ -82,6 +82,27 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling", i
                                "activeFeatureGroups": ["char-dist-features",
                                                        "min-editdistance-from-class-examples"]
                                }
+    elif features=="fullcity":
+        feature_config = {"activeFeatures": ["num-unique-vals", "prop-unique-vals", "prop-missing-vals",
+                                                  "ratio-alpha-chars", "prop-numerical-chars",
+                                                  "prop-whitespace-chars", "prop-entries-with-at-sign",
+                                                  "prop-entries-with-hyphen", "prop-entries-with-paren",
+                                                  "prop-entries-with-currency-symbol", "mean-commas-per-entry",
+                                                  "mean-forward-slashes-per-entry",
+                                                  "prop-range-format", "is-discrete", "entropy-for-discrete-values",
+                                                  "shannon-entropy"],
+                               "activeFeatureGroups": ["char-dist-features", "stats-of-text-length",
+                                                       "stats-of-numerical-type",
+                                                       "mean-character-cosine-similarity-from-class-examples"],
+                               "featureExtractorParams": [{"name": "prop-instances-per-class-in-knearestneighbours",
+                                                           "num-neighbours": 3
+                                                           }, {"name": "min-wordnet-jcn-distance-from-class-examples",
+                                                               "max-comparisons-per-class": 3
+                                                               },
+                                                          {"name": "min-wordnet-lin-distance-from-class-examples",
+                                                           "max-comparisons-per-class": 3
+                                                           }]
+                          }
     elif features=="chardistonly":
         feature_config = {"activeFeatures": ["shannon-entropy"],
                                "activeFeatureGroups": ["char-dist-features"]}
@@ -133,7 +154,7 @@ def create_models(dm_session, dsl_session, experiment, ignore, dint_resampling, 
     dsl_model_plus = KarmaDSLModel(dsl_session, "DSL+",
                                    ignore_unknown=ignore, prediction_type="enhanced",
                                    debug_csv=os.path.join("results",
-                                                          "debug_dsl_column_{}_ignore{}.csv".format(
+                                                          "debug_dsl_plus_column_{}_ignore{}.csv".format(
                                                               experiment, ignore)
                                                           ))
     cnn_model = NNetModel(['cnn@charseq'], 'cnn@charseq model: no headers',
@@ -178,11 +199,12 @@ if __name__ == "__main__":
     dm = SchemaMatcher(host="localhost", port=8080)
 
     resampling_strategies = ["NoResampling", "ResampleToMean", "Bagging"]
-    features = ["chardist-edit", "chardistonly", "fullchardist"]
+    features = ["chardist-edit", "chardistonly", "fullchardist", "fullcity"]
 
     domains = None
     experiments = ["leave_one_out", "repeated_holdout"]
 
+    ######################ignore unmapped attributes##########################
     print("Setting ignore_unknown: ", True)
     for experiment_type in experiments:
 
@@ -196,7 +218,7 @@ if __name__ == "__main__":
                                                         "performance_{}_ignore{}.csv".format(
                                                             experiment_type, True)),
                                 debug_csv=os.path.join("results", "debug.csv"),
-                                holdout=0.2
+                                holdout=0.2, num=1
                                 )
 
         if domains:
@@ -216,7 +238,7 @@ if __name__ == "__main__":
                                                         "performance_{}_ignore{}.csv".format(
                                                             experiment_type, False)),
                                 debug_csv=os.path.join("results", "debug.csv"),
-                                holdout=0.2
+                                holdout=0.2, num=10
                                 )
 
         experiment.change_domains(domains=["museum", "soccer"])

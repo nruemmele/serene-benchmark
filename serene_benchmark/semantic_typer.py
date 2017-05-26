@@ -58,7 +58,7 @@ class SemanticTyper(object):
     """
     Abstract model for semantic labelling/typing.
     Evaluation will be based on this abstract model.
-    We do not fix domains here, though Karma evaluation is possible only for 4 domains.
+    We do not fix domains here, though DSL evaluation is possible only for 5 domains.
     """
     if "SERENEBENCH" in os.environ:
         data_dir = os.path.join(os.environ["SERENEBENCH"], "sources")
@@ -73,9 +73,10 @@ class SemanticTyper(object):
     def __init__(self, model_type, description="", debug_csv=None, ignore_unknown=True):
         """
         General initialization of semantic typer
-        :param model_type:
-        :param description:
-        :param debug_csv:
+        Children should implement system specific initialization
+        :param model_type: string to specify the type of the semantic labeling system
+        :param description: string with additional description
+        :param debug_csv: name of the file to output debugging info
         :param ignore_unknown: boolean to filter out columns of unknown class from training and testing
         """
         self.model_type = model_type
@@ -83,13 +84,10 @@ class SemanticTyper(object):
         self.debug_csv = debug_csv
         self.ignore_unknown = ignore_unknown
         # this will keep track of classes which are present in the semantic typer at the training stage
-        # it will be initialized only for DINTModel and NNetModel
         self.classes = None
         self.resampling_strategy = "NoResampling"
         self.parameters = None  # additional parameters of the model
 
-    def reset(self):
-        pass
 
     @staticmethod
     def find_source_encoding(file_path, limit=100):
@@ -123,7 +121,6 @@ class SemanticTyper(object):
         def _strip_colname(colname):
             """
             Helper method to remove all whitespace characters from column name.
-            Used for DINTModel and NNetModel
             :param colname: string
             :return:
             """
@@ -181,12 +178,28 @@ class SemanticTyper(object):
         return name_labels
 
     def define_training_data(self, train_sources, train_labels):
+        """
+        Children have to provide implementation for this method.
+        Define training data in the format acceptable to the semantic labeling system.
+        """
         pass
 
     def train(self):
+        """Children have to provide implementation for this method"""
         pass
 
     def predict(self, source):
+        """
+        Children have to provide implementation for this method.
+        Perform prediction for the specified source.
+        """
+        pass
+
+    def reset(self):
+        """
+        Children have to provide implementation for this method.
+        This method cleans the state of the semantic labeling system.
+        """
         pass
 
     def _filter_unknown(self, predicted_df):
@@ -207,7 +220,7 @@ class SemanticTyper(object):
             # if the label is "fail", we leave it like that
             if self.classes and len(self.classes):
                 predicted_df["user_label"] = predicted_df["user_label"].apply(
-                    lambda x: "unknown" if x not in self.classes and x != "fail" else x)
+                    lambda x: "unknown" if x not in self.classes else x)
         logging.info("Size of the predicted df after unknown filter: {}".format(predicted_df.size))
         return predicted_df
 
@@ -264,7 +277,6 @@ class SemanticTyper(object):
         logging.info("Calculated performance: {}".format(performance))
         print("Calculated performance: {}".format(performance))
         return pd.DataFrame(performance, index=[0])
-
 
     def __str__(self):
         return "<SemanticTyper: model_type={}, description={}>".format(self.model_type, self.description)
@@ -495,11 +507,11 @@ class DINTModel(SemanticTyper):
 
 class KarmaDSLModel(SemanticTyper):
     """
-    Wrapper for Karma DSL semantic labeller.
+    Wrapper for the DSL semantic labeler.
     KarmaDSL server can hold only one model.
     """
 
-    # Karma can work only with these sources
+    # DSL can work only with these sources
     allowed_sources = []
     for sources in benchmark.values():
         # only these sources can be used for training or testing by different classifiers of SemanticTyper
@@ -628,7 +640,7 @@ class KarmaDSLModel(SemanticTyper):
             val = {'source_name': source,
                    'column_name': column_name,
                    'correct_label': labels[column_name],
-                   'scores': [(1.0, 'fail')]
+                   'scores': [(1.0, 'unknown')]
                    }
         predicted["predictions"].append(val)
         predicted["running_time"] += column_predict["running_time"]
@@ -666,6 +678,22 @@ class KarmaDSLModel(SemanticTyper):
 
         return self._process_predicted_df(predicted, source)
 
+    @staticmethod
+    def _process_dsl_label(label):
+        """
+        Substitute hashes in the string.
+        :param label:
+        :return:
+        """
+        if "#" in label:
+            try:
+                class_part, prop_part = label.split("---")
+                return class_part.split("#")[-1] + "---" + prop_part.split("#")[-1]
+            except Exception as e:
+                logging.error("Splitting label {} failed: {}".format(label, e.args[0]))
+        else:
+            return label
+
     def _process_predicted_df(self, predicted, source):
         """
 
@@ -685,10 +713,10 @@ class KarmaDSLModel(SemanticTyper):
             max = 0
             label = "unknown"
             for sc in val["scores"]:
-                row["scores_" + sc[1]] = sc[0]
+                row["scores_" + self._process_dsl_label(sc[1])] = sc[0]
                 if sc[0] > max:
                     max = sc[0]
-                    label = sc[1]
+                    label = self._process_dsl_label(sc[1])
             row["label"] = label
             row["scores_unknown"] = 1.0 if label == "unknown" else 0.0
             predicted_df.append(row)

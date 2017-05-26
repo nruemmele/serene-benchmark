@@ -18,10 +18,9 @@ Currently it is in a proprietary state, but a python egg file can be obtained up
 
 Decompress sources and labels in the data folder.
 
-### How to test
-Nose unittests needs to be installed. To run the tests:
+To install the package 'serene-benchmark', run
 ```
-nosetests
+python setup.py install
 ```
 
 ### Run
@@ -32,18 +31,25 @@ There are three different approaches for semantic typing which can be currently 
 3. NNet: deep neural nets MLP and CNN.
  Additionally, there is an implementation of a random forest using scikit.
 
-For NNetModel, allowed model types are: 'cnn@charseq' (CNN on character sequences), 'mlp@charfreq' (MLP on character freqs + entropy), 'rf@charfreq' (RF on character freqs + entropy)
-'rf@charfreq' uses scikit implementation of random forests while DINT uses Spark mllib.
+#### Deep learning
+For NNetModel, allowed model types are: 'cnn@charseq' (CNN on character sequences) and 'mlp@charfreq' (MLP on character freqs + entropy).
+There is also 'rf@charfreq' which uses scikit implementation of random forests while DINT uses Spark mllib.
 
+#### DINT
 DINT feature configuration is explained [here](http://github.com/NICTA/serene-benchmark/blob/experimental/doc/features.txt),
 and resampling strategy [here](http://github.com/NICTA/serene-benchmark/blob/experimental/doc/resampling-strategy).
 
-DSL can be run in two modes: "normal" when labeled data is used only from one domain or "enhanced" when labeled from other domains is used.
-
-
-To install the package 'serene-benchmark', run
-```
-python setup.py install
-```
+#### DSL
+DSL can be run in two modes: "normal" when labeled data is used only from one domain or "enhanced" when labeled data from other domains is used.
+Its approach is exaplained in the [paper](http://usc-isi-i2.github.io/papers/pham16-iswc.pdf).
 
 [benchmark.py](https://github.com/NICTA/serene-benchmark/blob/experimental/serene_benchmark/benchmark.py) provides a running example of two experiments to evaluate different approaches for semantic labeling.
+
+To add another semantic labeling approach to the benchmark, one needs to create a class which inherits from SemanticTyper and implements 4 methods:
+degifine_training_data, train, reset and predict. One can also modify initialization of the class instance.
+
+### How to test
+Nose unittests needs to be installed. To run the tests:
+```
+nosetests
+```

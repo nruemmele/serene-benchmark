@@ -101,7 +101,7 @@ def create_dint_model(dm, features="full", resampling_strategy="NoResampling", i
     elif features=="chardist-edit":
         feature_config = {"activeFeatures": ["shannon-entropy"],
                                "activeFeatureGroups": ["char-dist-features",
-                                                       "min-editdistance-from-class-examples"]
+                                                       "min-editdistqance-from-class-examples"]
                                }
     elif features=="chardistonly":
         feature_config = {"activeFeatures": ["shannon-entropy"],
@@ -668,7 +668,7 @@ def benchmark_bagging_size(dm_session):
                             description="repeated_holdout_ignoreTrue_strategyBagging",
                             result_csv=os.path.join('results', "performance_dint_Bagging_ignoreTrue.csv"),
                             debug_csv=os.path.join("results", "debug_dint_Bagging_ignoreTrue.csv"),
-                            holdout=0.2, num=10)
+                            holdout=0.2, num=3)
     experiment.change_domains(domains=["soccer", "museum","dbpedia","weather", "weapons"])
     experiment.run()
 
@@ -722,24 +722,26 @@ if __name__ == "__main__":
     #                 unknown_ignore=[False], domains=["soccer"])
 
     ######################################
-    resampling_strategies = ["Bagging"]
-    #features = ["chardistonly", "chardist-rfknn", "single", "noheader", "full", "fullchardist"]
+    resampling_strategies = ["Bagging", "ResampleToMean", "NoResampling"]
+    resampling_strategies = ["NoResampling"]
+    features = ["chardistonly", "fullcity", "fullchardist", "chardist-edit"]
     experiments = ["leave_one_out"]
 
-    # features = ["chardist-edit","fullcity"]
+    # features = ["chardist-edit","fullcity"]sys
     # make_experiment(dm_session=dm, strategies=resampling_strategies,
     #                 cur_experiments=experiments, cur_features=features,
     #                 unknown_ignore=[True], domains=["dbpedia"])
 
-    features = ["fullchardist"]
+    # features = ["fullchardist"]
+    # make_experiment(dm_session=dm, strategies=resampling_strategies,
+    #                 cur_experiments=experiments, cur_features=features,
+    #                 unknown_ignore=[True])
+
+    resampling_strategies = ["Bagging", "ResampleToMean", "NoResampling"]
+    features = ["fullchardist", "chardist-edit"]
     make_experiment(dm_session=dm, strategies=resampling_strategies,
                     cur_experiments=experiments, cur_features=features,
-                    unknown_ignore=[False], domains=["soccer", "museum"])
-
-    features = ["fullchardist"]
-    make_experiment(dm_session=dm, strategies=resampling_strategies,
-                    cur_experiments=["repeated_holdout"], cur_features=features,
-                    unknown_ignore=[False], domains=["soccer", "museum"])
+                    unknown_ignore=[False], domains=["museum"])
 
 
     ####################################

@@ -35,14 +35,14 @@ def test_karma(ignore_unknown=True, experiment_type="leave_one_out", domains=Non
 
     # models for experiments
     models = [dsl_model1, dsl_model2]
-    models = [dsl_model_plus]
+    models = [dsl_model1]
 
     experiment = Experiment(models,
                             experiment_type=experiment_type,
                             description=experiment_type,
                             result_csv=os.path.join('results', "performance_dsl_{}_{}.csv".format(experiment_type, "all")),
                             debug_csv=os.path.join("results", "debug_dsl_{}_{}.csv".format(experiment_type, "all")),
-                            holdout=0.2
+                            holdout=0.2, num=1
                             )
 
     if domains:
@@ -73,7 +73,7 @@ if __name__ == "__main__":
     #     print("Performing experiment:", exp)
     #     test_karma(experiment_type=exp, domains=["weather"])
 
-    experiments = [ "repeated_holdout"]
+    experiments = [ "leave_one_out"]
     # experiments = ["repeated_holdout"]
     # ignore = [False, True]
     ignore = [True]
