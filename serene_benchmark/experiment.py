@@ -89,7 +89,6 @@ class Experiment(object):
         else:
             self.num = 10
 
-
     def _get_source_stats(self, source):
         """
         Read columns from source, and read its label data including the unknown class.
@@ -148,7 +147,7 @@ class Experiment(object):
                           "labels_avg": float(sum(label_distribution)) / len(label_distribution)\
                               if len(label_distribution) else 0.0})
             label_distro[domain] = label_distribution
-        return pd.DataFrame(stats), pd.DataFrame(dict([ (k, pd.Series(v)) for k, v in label_distro.items()]))
+        return pd.DataFrame(stats), pd.DataFrame(dict([(k, pd.Series(v)) for k, v in label_distro.items()]))
 
     def add_domain(self, domain_name, sources):
         """

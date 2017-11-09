@@ -6,15 +6,12 @@ Currently, the framework supports evaluation of three approaches for semantic la
 
 ### Prerequisites
 
-
 To run evaluation benchmark,
 
 1. The server for [Karma DSL](https://github.com/NICTA/iswc-2016-semantic-labeling) needs to be installed and started.
 2. The server for [Serene](https://github.com/NICTA/serene) needs to be started.
-Currently it is in a proprietary state, but an executable can be obtained upon request.
 3. Neural nets: tensorflow and keras python packages.
 4. [Serene Python client](https://github.com/NICTA/serene-python-client) should be installed.
-Currently it is in a proprietary state, but a python egg file can be obtained upon request.
 
 Decompress sources and labels in the data folder.
 
