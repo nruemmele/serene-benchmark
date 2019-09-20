@@ -11,6 +11,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 from serene.matcher.core import SchemaMatcher
 
+
 def create_dint_model(dm, features="full", resampling_strategy="NoResampling", ignore_uknown=True):
     """
     Create dint model with specified parameters

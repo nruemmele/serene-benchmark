@@ -60,17 +60,19 @@ class Experiment(object):
     }
 
     def __init__(self, models, experiment_type, description, result_csv, debug_csv,
-                 holdout=None, num=None):
+                 holdout=None, num=None, train_sources=None, test_sources=None):
         """
         Initialize experiment.
         To run the experiment, please call "run" explicitly.
         :param models:
-        :param experiment_type: "leave_one_out", "repeated_holdout"
+        :param experiment_type: "leave_one_out", "repeated_holdout", "train_test"
         :param description:
         :param result_csv:
         :param debug_csv:
         :param holdout: (0,1) range float number
         :param num: integer > 0
+        :param train_sources:
+        :param test_sources:
         """
         logging.info("Initializing experiment...")
         self.models = models
@@ -88,6 +90,12 @@ class Experiment(object):
             self.num = num
         else:
             self.num = 10
+
+        self.train_sources, self.test_sources = None, None
+        if train_sources:
+            self.train_sources = train_sources
+        if test_sources:
+            self.test_sources = test_sources
 
     def _get_source_stats(self, source):
         """
@@ -172,6 +180,8 @@ class Experiment(object):
                                                             "already exists in the experiment. Change domain_name")
         avail_sources = os.listdir(self.data_dir)
         avail_labels = os.listdir(self.label_dir)
+        logging.info("Available sources: {}".format(avail_sources))
+        logging.info("Available labels: {}".format(avail_labels))
 
         new_sources = [s for s in sources
                        if s + ".csv" in avail_sources and s + ".columnmap.txt" in avail_labels]
@@ -420,6 +430,52 @@ class Experiment(object):
 
         return True
 
+    def _train_test(self):
+        """
+        This experiment does serene_benchmark evaluation for each domain using provided manually
+        train and test data sources
+        :return:
+        """
+        logging.info("Train/test experiment")
+        performance_frames = []
+        # we just set key on models
+        model_lookup = {i: model for i, model in enumerate(self.models)}
+
+        for domain in self.domains:
+            print("Working on domain: {}".format(domain))
+            logging.info("Working on domain: {}".format(domain))
+
+            # keep track of evaluated models in this dictionary
+            frames = defaultdict(list)
+
+            if self.test_sources is None:
+                self.test_sources = list(set(self.benchmark[domain]) - set(self.train_sources))
+            logging.info("----> {} train sources: {}".format(len(self.train_sources), self.train_sources))
+            logging.info("----> {} test sources: {}".format(len(self.test_sources), self.test_sources))
+
+            for idx, model in model_lookup.items():
+                logging.info("--> evaluating model: {}".format(model))
+                predicted_df = self._evaluate_model(model)
+                if predicted_df is not None:
+                    logging.info("---- appending frame")
+                    frames[idx].append(predicted_df)
+
+            for idx, model in model_lookup.items():
+                logging.info("Concatenating performance frames per model")
+                performance = self._process_frames(frames[idx], model, domain)
+                performance_frames.append(performance)
+                # print("performance: ", performance)
+
+        logging.info("Concatenating performance frames for all models")
+        performance = pd.concat(performance_frames, ignore_index=True)
+        if self.performance_csv:
+            if os.path.exists(self.performance_csv):
+                performance.to_csv(self.performance_csv, index=False, header=False, mode="a")
+            else:
+                performance.to_csv(self.performance_csv, index=False, header=True, mode="w+")
+
+        return True
+
     def run(self):
         """
         Execute experiment
@@ -435,6 +491,9 @@ class Experiment(object):
             return True
         elif self.experiment_type == "repeated_holdout":
             self._repeated_holdout(self.holdout, self.num)
+            return True
+        elif self.experiment_type == "train_test":
+            self._train_test()
             return True
         else:
             logging.warning("Unsupported experiment type!!!")
